@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "wikis": {
+    "gtx-1060-headless-ai-server": {
+      "path": "topics/gtx-1060-headless-ai-server",
+      "created": "2026-05-21",
+      "status": "active",
+      "summary": "Repurposing an MSI GS63VR (Pascal GTX 1060 6GB mobile, i7-7700HQ, 16GB RAM) as a headless Ubuntu 22.04 LTS server for local audio transcription (faster-whisper/WhisperX + pyannote.audio) and farm vision tasks (herd counting)."
+    },
+    "rust-multi-platform": {
+      "path": "topics/rust-multi-platform",
+      "created": "2026-05-21",
+      "status": "active",
+      "summary": "Survey of Rust's multi-platform surfaces: mobile FFI (UniFFI/swift-bridge/jni-rs), desktop cross-compilation (cross/zigbuild/cargo-dist), cross-platform UI frameworks (Tauri/Dioxus/Slint/egui/Iced), WASM (browser + WASI server-side)."
+    },
+    "sv2-p2pool-integration": {
+      "path": "topics/sv2-p2pool-integration",
+      "created": "2026-05-22",
+      "status": "active",
+      "summary": "How to integrate p2poolv2 (decentralized share-chain pool) with sv2-apps (Stratum V2 reference implementation). Architecture surface, share-accounting, JDS job-validation, and operational paths."
+    },
+    "iroh-transport-stratum-v2": {
+      "path": "topics/iroh-transport-stratum-v2",
+      "created": "2026-05-22",
+      "moved-from-local": "2026-05-22",
+      "status": "active",
+      "summary": "Iroh (n0-computer QUIC + raw-public-key TLS + relay-fallback) as an alternative SV2 transport alongside Noise-over-TCP. Motivation (DNS-free pool addressing, Erosion mitigation), Fedimint reference implementation, full integration playbook, risks (UDP throttling, QUIC perf ceiling), implementation plan executed in this repo's feat/iroh-transport branch."
+    }
+  },
+  "local_wikis": [
+    {
+      "name": "compost-marketplace",
+      "path": "/Users/garykrause/repos/fGw/.wiki",
+      "created": "2026-05-20",
+      "status": "active",
+      "summary": "Knowledge base for fGw — Powder Keg WV chapter Farming God's Way compost marketplace on Nostr. Captures FGW invariants, app architecture, all 35 SPECs, decision log, post-MVP follow-ups, and reference research (Pyramid relay, Blossom, NIPs)."
+    },
+    {
+      "name": "pool-v4-infra",
+      "path": "/Users/garykrause/repos/pool-v4-infra/.wiki",
+      "created": "2026-05-20",
+      "moved-from-hub": "2026-05-22",
+      "status": "active",
+      "sensitivity": "company-proprietary",
+      "summary": "Knowledge base for pool-v4-infra — MARA's Stratum V2 mining pool deployment infrastructure. K8s-vs-alternatives research arc (3 theses), pool-v4-infra repo assessments, primitive-usage catalog, M1 materialize plan, Stack A parallel playbook. Moved out of the public-shareable hub on 2026-05-22 because contents are MARA-specific."
+    }
+  ]
+}

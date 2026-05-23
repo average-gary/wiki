@@ -1,0 +1,2 @@
+## [2026-05-23] scan | 14 articles, 14 stale (structural — missing `verified:` + `volatility:`), 0 low-quality (passes: staleness, quality)
+## [2026-05-23] librarian | added `verified: 2026-05-20` and `volatility:` to all 14 articles. Volatility tiers: hot (iroh-custom-transports, sv2-iroh-transport-playbook); cold (sv2-framing, nat-traversal-baseline, erosion-attack); warm (everything else). reference/specs-and-crates tagged `compiled-from: conversation`.

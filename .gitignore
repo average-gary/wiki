@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor / OS
+*.swp
+*.swo
+*~
+
+# Claude Code local-only settings (per-machine, may contain credentials)
+.claude/settings.local.json
+**/.claude/settings.local.json
+
+# Librarian transient scan state (keep REPORT.md + scan-results.json + log.md)
+.librarian/checkpoint.json
+.librarian/.checkpoint.tmp
+**/.librarian/checkpoint.json
+**/.librarian/.checkpoint.tmp

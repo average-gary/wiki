@@ -1,0 +1,36 @@
+---
+title: Wiki Hub
+type: hub
+created: 2026-05-20
+updated: 2026-05-22
+---
+
+# Wiki Hub
+
+LLM-compiled knowledge base. Topic wikis live under `topics/`.
+
+## Conventions
+
+- **The hub is publishable.** Treat `~/wiki/` as if it could be open-sourced at any time. Anything that can't go public does not belong here.
+- **Company-proprietary, employer-confidential, or repo-specific research belongs in a repo-local `.wiki/`**, not in the hub. This includes: assessments of internal repos, deployment plans tied to internal infra, ADR/SPEC commentary that isn't already public, forward-looking gap analyses naming an employer.
+- **Pattern:** `<repo>/.wiki/` next to the code it documents. Register it in `wikis.json` under `local_wikis` with a `sensitivity` field if proprietary. Existing examples: [compost-marketplace](#local-topics) (fGw), [pool-v4-infra](#local-topics) (MARA, moved from hub 2026-05-22).
+- **When in doubt, default local.** It's easier to promote a local wiki to the hub later than to redact a hub topic after publishing.
+
+## Active Topics
+
+- [gtx-1060-headless-ai-server](topics/gtx-1060-headless-ai-server/_index.md) — MSI GS63VR (Pascal GTX 1060 6GB mobile) as a headless Ubuntu 22.04 box for local audio transcription + diarization + farm vision tasks.
+- [rust-multi-platform](topics/rust-multi-platform/_index.md) — Survey of Rust's multi-platform surfaces: mobile FFI, desktop cross-compile, UI frameworks, WASM.
+- [sv2-p2pool-integration](topics/sv2-p2pool-integration/_index.md) — How p2poolv2 (decentralized share-chain pool) would integrate with sv2-apps (Stratum V2 reference implementation).
+
+## Local Topics
+
+- **compost-marketplace** at `/Users/garykrause/repos/fGw/.wiki` — Powder Keg WV chapter Farming God's Way compost marketplace on Nostr. (`fGw` repo)
+- **pool-v4-infra** at `/Users/garykrause/repos/pool-v4-infra/.wiki` — MARA Stratum V2 deployment infrastructure. K8s-vs-alternatives research arc, repo assessments, M1 materialize plan, Stack A parallel playbook. *Sensitivity: company-proprietary.* Moved from hub 2026-05-22.
+
+## Archived Topics
+
+(none)
+
+## Logs
+
+- [log.md](log.md) — hub-level activity log

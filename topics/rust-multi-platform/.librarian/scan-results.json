@@ -1,0 +1,56 @@
+{
+  "scan_id": "2026-05-23T00:00:01Z",
+  "wiki": "rust-multi-platform",
+  "completed_at": "2026-05-23T00:00:01Z",
+  "passes": ["staleness", "quality"],
+  "threshold": 70,
+  "summary": {
+    "articles_scanned": 6,
+    "stale_count": 0,
+    "low_quality_count": 0,
+    "avg_staleness": 99,
+    "avg_quality": 93,
+    "worst_staleness": { "article": "wiki/concepts/ui-framework-decision.md", "score": 96 },
+    "worst_quality": { "article": "wiki/concepts/ios-xcframework-aar-pipeline.md", "score": 90 }
+  },
+  "notes": "Re-scan after 2026-05-21 structural fix that backfilled `sources:`, `verified:`, and `volatility:` on all 6 articles. Cross-ref breakage from the previous scan persists.",
+  "articles": {
+    "wiki/concepts/ui-framework-decision.md": {
+      "staleness": { "score": 96, "factors": { "source_freshness": 23.87, "verification": 23.87, "compilation": 23.87, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["broken-xref:browser-wasm-frontend-frameworks"] },
+      "tier": 2,
+      "volatility": "hot"
+    },
+    "wiki/concepts/desktop-cross-compile-and-package.md": {
+      "staleness": { "score": 96, "factors": { "source_freshness": 23.87, "verification": 23.87, "compilation": 23.87, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["broken-xref:release-pipeline-canonical-2026"] },
+      "tier": 2,
+      "volatility": "hot"
+    },
+    "wiki/concepts/mobile-ffi-decision-tree.md": {
+      "staleness": { "score": 99, "factors": { "source_freshness": 24.6, "verification": 24.6, "compilation": 24.6, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["suspect-cross-wiki-xref"] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/concepts/wasm-browser-and-server.md": {
+      "staleness": { "score": 96, "factors": { "source_freshness": 23.87, "verification": 23.87, "compilation": 23.87, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["broken-xref:release-pipeline-canonical-2026"] },
+      "tier": 2,
+      "volatility": "hot"
+    },
+    "wiki/concepts/ios-xcframework-aar-pipeline.md": {
+      "staleness": { "score": 99, "factors": { "source_freshness": 24.6, "verification": 24.6, "compilation": 24.6, "integrity": 25 } },
+      "quality": { "score": 90, "dimensions": { "depth": 5, "source_quality": 4, "coherence": 5, "utility": 4 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/topics/rust-multi-platform-synthesis.md": {
+      "staleness": { "score": 98, "factors": { "verification": 24.6, "compilation": 24.6, "source_freshness_excluded": "compiled-from: conversation", "integrity_excluded": "compiled-from: conversation" } },
+      "quality": { "score": 90, "dimensions": { "depth": 4, "source_quality": 4, "coherence": 5, "utility": 5 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm",
+      "compiled_from": "conversation"
+    }
+  }
+}

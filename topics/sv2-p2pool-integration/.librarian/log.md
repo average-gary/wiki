@@ -1,0 +1,2 @@
+## [2026-05-23] scan | 11 articles, 11 stale (structural — missing `verified:` + `volatility:`), 0 low-quality (passes: staleness, quality)
+## [2026-05-23] librarian | added `verified: 2026-05-22` and `volatility:` (mostly warm; hot for p2poolv2/integration-paths/share-accounting-mapping/open-questions; cold for p2pool-history/repos) to all 11 articles. Reference and decision-log articles tagged `compiled-from: conversation`.

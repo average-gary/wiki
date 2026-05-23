@@ -1,0 +1,76 @@
+{
+  "scan_id": "2026-05-23T00:00:02Z",
+  "wiki": "sv2-p2pool-integration",
+  "completed_at": "2026-05-23T00:00:02Z",
+  "passes": ["staleness", "quality"],
+  "threshold": 70,
+  "summary": {
+    "articles_scanned": 11,
+    "stale_count": 11,
+    "low_quality_count": 0,
+    "avg_staleness": 49,
+    "avg_quality": 90,
+    "worst_staleness": { "article": "wiki/decisions/open-questions.md", "score": 25 },
+    "worst_quality": { "article": "wiki/reference/repos.md", "score": 70 }
+  },
+  "structural_finding": "All articles are missing `verified:` and `volatility:` fields. Per the staleness protocol, missing `verified:` zeroes the verification dimension (-25 points) and missing `volatility:` defaults to `warm` (90-day half-life). Most articles are 1 day old so source/compilation dimensions score full marks, but the verification penalty caps every article at ~50/100. Two reference/decision articles also lack `sources:` entirely.",
+  "articles": {
+    "wiki/concepts/sv2-integration-surface.md": {
+      "staleness": { "score": 50, "factors": { "source_freshness": 24.81, "verification": 0, "compilation": 24.81, "integrity": 25 } },
+      "quality": { "score": 90, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 4 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/concepts/stratum-v2-overview.md": {
+      "staleness": { "score": 50, "factors": { "source_freshness": 24.81, "verification": 0, "compilation": 24.81, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/concepts/braidpool.md": {
+      "staleness": { "score": 50, "factors": { "source_freshness": 24.81, "verification": 0, "compilation": 24.81, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/concepts/p2poolv2.md": {
+      "staleness": { "score": 50, "factors": { "source_freshness": 24.81, "verification": 0, "compilation": 24.81, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/concepts/p2pool-history.md": {
+      "staleness": { "score": 50, "factors": { "source_freshness": 24.81, "verification": 0, "compilation": 24.81, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/concepts/ocean-datum.md": {
+      "staleness": { "score": 50, "factors": { "source_freshness": 24.81, "verification": 0, "compilation": 24.81, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/topics/integration-paths.md": {
+      "staleness": { "score": 50, "factors": { "source_freshness": 24.81, "verification": 0, "compilation": 24.81, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/topics/why-decentralized-pools-struggle.md": {
+      "staleness": { "score": 50, "factors": { "source_freshness": 24.81, "verification": 0, "compilation": 24.81, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/topics/share-accounting-mapping.md": {
+      "staleness": { "score": 50, "factors": { "source_freshness": 24.81, "verification": 0, "compilation": 24.81, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified", "draft-status"] },
+      "tier": 2
+    },
+    "wiki/reference/repos.md": {
+      "staleness": { "score": 25, "factors": { "source_freshness": 0, "verification": 0, "compilation": 24.81, "integrity": 0 } },
+      "quality": { "score": 70, "dimensions": { "depth": 3, "source_quality": 2, "coherence": 5, "utility": 4 }, "flags": ["unverified", "no-sources", "thin-coverage"] },
+      "tier": 2,
+      "type": "reference"
+    },
+    "wiki/decisions/open-questions.md": {
+      "staleness": { "score": 25, "factors": { "source_freshness": 0, "verification": 0, "compilation": 24.81, "integrity": 0 } },
+      "quality": { "score": 80, "dimensions": { "depth": 4, "source_quality": 3, "coherence": 5, "utility": 4 }, "flags": ["unverified", "no-sources", "expected-for-decision-log"] },
+      "tier": 2,
+      "type": "decision-log"
+    }
+  }
+}

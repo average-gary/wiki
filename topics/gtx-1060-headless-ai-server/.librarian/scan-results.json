@@ -1,0 +1,86 @@
+{
+  "scan_id": "2026-05-23T00:00:00Z",
+  "wiki": "gtx-1060-headless-ai-server",
+  "completed_at": "2026-05-23T00:00:00Z",
+  "passes": ["staleness", "quality"],
+  "threshold": 70,
+  "summary": {
+    "articles_scanned": 11,
+    "stale_count": 0,
+    "low_quality_count": 0,
+    "avg_staleness": 98,
+    "avg_quality": 92,
+    "worst_staleness": { "article": "wiki/concepts/faster-whisper-on-gtx-1060.md", "score": 96 },
+    "worst_quality": { "article": "wiki/concepts/whisperx-known-broken-installs.md", "score": 85 }
+  },
+  "notes": "Re-scan after 2026-05-21 structural fix that backfilled `sources:`, `verified:`, and `volatility:` on all 11 articles. Staleness now reflects content currency rather than missing-frontmatter. Two days since verification.",
+  "articles": {
+    "wiki/concepts/pyannote-audio-3.x-on-pascal.md": {
+      "staleness": { "score": 99, "factors": { "source_freshness": 24.6, "verification": 24.6, "compilation": 24.6, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 4 }, "flags": [] },
+      "tier": 2,
+      "volatility": "warm"
+    },
+    "wiki/concepts/gpu-thermals-and-ops.md": {
+      "staleness": { "score": 99, "factors": { "source_freshness": 24.6, "verification": 24.6, "compilation": 24.6, "integrity": 25 } },
+      "quality": { "score": 100, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": [] },
+      "tier": 2,
+      "volatility": "warm"
+    },
+    "wiki/concepts/faster-whisper-on-gtx-1060.md": {
+      "staleness": { "score": 96, "factors": { "source_freshness": 23.87, "verification": 23.87, "compilation": 23.87, "integrity": 25 } },
+      "quality": { "score": 90, "dimensions": { "depth": 5, "source_quality": 4, "coherence": 5, "utility": 4 }, "flags": [] },
+      "tier": 2,
+      "volatility": "hot"
+    },
+    "wiki/concepts/farm-vision-on-gtx-1060.md": {
+      "staleness": { "score": 99, "factors": { "source_freshness": 24.6, "verification": 24.6, "compilation": 24.6, "integrity": 25 } },
+      "quality": { "score": 90, "dimensions": { "depth": 5, "source_quality": 4, "coherence": 4, "utility": 5 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/concepts/headless-ubuntu-laptop-baseline.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 24.91, "verification": 24.91, "compilation": 24.91, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 4, "coherence": 5, "utility": 5 }, "flags": [] },
+      "tier": 1,
+      "volatility": "cold"
+    },
+    "wiki/concepts/whisperx-vs-manual-pyannote-integration.md": {
+      "staleness": { "score": 96, "factors": { "source_freshness": 23.87, "verification": 23.87, "compilation": 23.87, "integrity": 25 } },
+      "quality": { "score": 90, "dimensions": { "depth": 4, "source_quality": 5, "coherence": 5, "utility": 4 }, "flags": [] },
+      "tier": 2,
+      "volatility": "hot"
+    },
+    "wiki/concepts/pascal-driver-cuda-pinning.md": {
+      "staleness": { "score": 99, "factors": { "source_freshness": 24.6, "verification": 24.6, "compilation": 24.6, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 4, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/concepts/ctranslate2-quantization-on-pascal.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 24.91, "verification": 24.91, "compilation": 24.91, "integrity": 25 } },
+      "quality": { "score": 80, "dimensions": { "depth": 3, "source_quality": 4, "coherence": 5, "utility": 4 }, "flags": ["single-source", "broken-xref:gtx-1060-rtfx-baseline"] },
+      "tier": 2,
+      "volatility": "cold"
+    },
+    "wiki/concepts/gpu-bench-and-smoke-tests.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 24.91, "verification": 24.91, "compilation": 24.91, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 4, "coherence": 5, "utility": 5 }, "flags": [] },
+      "tier": 1,
+      "volatility": "cold"
+    },
+    "wiki/concepts/whisperx-known-broken-installs.md": {
+      "staleness": { "score": 96, "factors": { "source_freshness": 23.87, "verification": 23.87, "compilation": 23.87, "integrity": 25 } },
+      "quality": { "score": 85, "dimensions": { "depth": 4, "source_quality": 4, "coherence": 4, "utility": 5 }, "flags": ["single-source"] },
+      "tier": 2,
+      "volatility": "hot"
+    },
+    "wiki/topics/gtx-1060-headless-ai-server-synthesis.md": {
+      "staleness": { "score": 98, "factors": { "verification": 24.6, "compilation": 24.6, "source_freshness_excluded": "compiled-from: conversation", "integrity_excluded": "compiled-from: conversation" } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 4 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm",
+      "compiled_from": "conversation"
+    }
+  }
+}

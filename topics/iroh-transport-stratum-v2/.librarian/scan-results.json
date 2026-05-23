@@ -1,0 +1,90 @@
+{
+  "scan_id": "2026-05-23T00:00:03Z",
+  "wiki": "iroh-transport-stratum-v2",
+  "completed_at": "2026-05-23T00:00:03Z",
+  "passes": ["staleness", "quality"],
+  "threshold": 70,
+  "summary": {
+    "articles_scanned": 14,
+    "stale_count": 14,
+    "low_quality_count": 0,
+    "avg_staleness": 47,
+    "avg_quality": 91,
+    "worst_staleness": { "article": "wiki/reference/specs-and-crates.md", "score": 24 },
+    "worst_quality": { "article": "wiki/reference/specs-and-crates.md", "score": 75 }
+  },
+  "structural_finding": "All articles are missing `verified:` and `volatility:` fields. Per the staleness protocol, missing `verified:` zeroes the verification dimension (-25 points) and missing `volatility:` defaults to `warm`. All articles are 3 days old (created 2026-05-20) so source/compilation dimensions score 24/25, but the verification penalty caps every article at ~49/100. One reference article also lacks `sources:` entirely.",
+  "articles": {
+    "wiki/concepts/sv2-noise-nx.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/concepts/sv2-framing.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 90, "dimensions": { "depth": 4, "source_quality": 4, "coherence": 5, "utility": 5 }, "flags": ["unverified", "single-source"] },
+      "tier": 2
+    },
+    "wiki/concepts/nat-traversal-baseline.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/concepts/iroh-custom-transports.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 80, "dimensions": { "depth": 3, "source_quality": 4, "coherence": 5, "utility": 4 }, "flags": ["unverified", "thin-coverage"] },
+      "tier": 2
+    },
+    "wiki/concepts/erosion-attack.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 90, "dimensions": { "depth": 4, "source_quality": 5, "coherence": 5, "utility": 4 }, "flags": ["unverified", "single-source"] },
+      "tier": 2
+    },
+    "wiki/concepts/fedimint-as-reference.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified", "single-source"] },
+      "tier": 2
+    },
+    "wiki/concepts/quic-performance-ceiling.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/concepts/iroh-relays.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/concepts/iroh-endpoint-and-alpn.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 90, "dimensions": { "depth": 4, "source_quality": 4, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 1
+    },
+    "wiki/concepts/integration-pattern-iroh-blobs.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 90, "dimensions": { "depth": 4, "source_quality": 4, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 1
+    },
+    "wiki/topics/risks-and-tradeoffs.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/topics/why-iroh-for-sv2.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/topics/sv2-iroh-transport-playbook.md": {
+      "staleness": { "score": 49, "factors": { "source_freshness": 24.42, "verification": 0, "compilation": 24.42, "integrity": 25 } },
+      "quality": { "score": 100, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 5 }, "flags": ["unverified"] },
+      "tier": 2
+    },
+    "wiki/reference/specs-and-crates.md": {
+      "staleness": { "score": 24, "factors": { "source_freshness": 0, "verification": 0, "compilation": 24.42, "integrity": 0 } },
+      "quality": { "score": 75, "dimensions": { "depth": 4, "source_quality": 2, "coherence": 5, "utility": 4 }, "flags": ["unverified", "no-sources"] },
+      "tier": 1,
+      "type": "reference"
+    }
+  }
+}
