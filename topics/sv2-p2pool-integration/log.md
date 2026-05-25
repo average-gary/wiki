@@ -9,3 +9,7 @@
 ## [2026-05-23] librarian | first scan: 11 articles, 11 stale (structural — missing `verified:` + `volatility:`), 0 low-quality (avg staleness 49, avg quality 90). Same fix-pattern that landed 2026-05-21 for gtx-1060 + rust-multi-platform. Two reference/decision-log articles also missing `sources:`.
 
 ## [2026-05-23] librarian | structural fix applied: `verified: 2026-05-22` + `volatility:` (warm/hot/cold per type) added to all 11 articles. Reference + decision-log tagged `compiled-from: conversation`. Re-scan should now show staleness ~95-99.
+
+## [2026-05-23] plan | "vendor p2poolv2 + sv2-apps into new SV2 Pool" → output/plan-sv2-p2pool-repo-2026-05-22.md (8 articles consulted, 2 architecture decisions, 3 phases)
+
+## [2026-05-25] plan | "agentic swarm completion of outstanding 10 issues" → output/plan-swarm-issues-2026-05-25.md (8 articles + 9 GH issues consulted, 5 architecture decisions, 4 tiers)
