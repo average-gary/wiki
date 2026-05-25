@@ -2,7 +2,7 @@
 title: Wiki Hub
 type: hub
 created: 2026-05-20
-updated: 2026-05-22
+updated: 2026-05-25
 ---
 
 # Wiki Hub
@@ -21,6 +21,9 @@ LLM-compiled knowledge base. Topic wikis live under `topics/`.
 - [gtx-1060-headless-ai-server](topics/gtx-1060-headless-ai-server/_index.md) — MSI GS63VR (Pascal GTX 1060 6GB mobile) as a headless Ubuntu 22.04 box for local audio transcription + diarization + farm vision tasks.
 - [rust-multi-platform](topics/rust-multi-platform/_index.md) — Survey of Rust's multi-platform surfaces: mobile FFI, desktop cross-compile, UI frameworks, WASM.
 - [sv2-p2pool-integration](topics/sv2-p2pool-integration/_index.md) — How p2poolv2 (decentralized share-chain pool) would integrate with sv2-apps (Stratum V2 reference implementation).
+- [bitcoin-mining-payout-schemas](topics/bitcoin-mining-payout-schemas/_index.md) — Mining-pool payout/accounting schemas: PPLNS, FPPS, PPS+, PPLNS-JD, hashpool.dev (Cashu), btc++ tracks, p2pool / p2poolv2.
+- [pf2e-worldbuilding-tool](topics/pf2e-worldbuilding-tool/_index.md) — Worldbuilding tool for Pathfinder 2e as a desktop + LLM app: PF2e SRD/ORC, tool landscape (Kanka/World Anvil/Foundry), desktop stacks, LLM integration, world data modeling.
+- [pf2e-biblical-reskin](topics/pf2e-biblical-reskin/_index.md) — Christian Biblical worldview reskin of Pathfinder 2e Remaster lore: prior Christian TTRPGs, Remaster fit for monotheism, cosmology/angelology mapping, the magic-vs-miracle problem, class/ancestry reskin.
 
 ## Local Topics
 

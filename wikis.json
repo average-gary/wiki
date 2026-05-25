@@ -25,6 +25,24 @@
       "moved-from-local": "2026-05-22",
       "status": "active",
       "summary": "Iroh (n0-computer QUIC + raw-public-key TLS + relay-fallback) as an alternative SV2 transport alongside Noise-over-TCP. Motivation (DNS-free pool addressing, Erosion mitigation), Fedimint reference implementation, full integration playbook, risks (UDP throttling, QUIC perf ceiling), implementation plan executed in this repo's feat/iroh-transport branch."
+    },
+    "bitcoin-mining-payout-schemas": {
+      "path": "topics/bitcoin-mining-payout-schemas",
+      "created": "2026-05-23",
+      "status": "active",
+      "summary": "Bitcoin mining pool payout & accounting schemas — PPLNS, FPPS, PPS+, SOLO, PPLNS-JD (Stratum V2 Job Declaration variant), hashpool.dev (Cashu ecash mints redenominating shares as bearer tokens), btc++ payout/accounting tracks, p2pool / p2poolv2 share-chain accounting. Risk-shifting, variance, custody and SV2-JDS interactions."
+    },
+    "pf2e-worldbuilding-tool": {
+      "path": "topics/pf2e-worldbuilding-tool",
+      "created": "2026-05-24",
+      "status": "active",
+      "summary": "Worldbuilding tool for the Pathfinder 2e (PF2e) tabletop RPG, shipped as a desktop app and an LLM-integrated app. Covers PF2e SRD/ORC licensing and data sources, worldbuilding-tool landscape (Kanka, World Anvil, Foundry, etc.), desktop app stacks (Tauri/Electron/Wails), LLM integration patterns (local Ollama, RAG over campaign notes, structured statblock generation), and world data modeling (graph vs document vs markdown-canonical)."
+    },
+    "pf2e-biblical-reskin": {
+      "path": "topics/pf2e-biblical-reskin",
+      "created": "2026-05-24",
+      "status": "active",
+      "summary": "Re-skinning Pathfinder 2e Remaster lore to fit a Christian Biblical worldview as a campaign setting / content pack. Covers prior Christian TTRPG history (DragonRaid, Testament d20, etc.), how the Remaster's alignment-removal + sanctification framework + typed energy damage make a monotheistic reskin mechanically natural, theological cosmology mapping (angelology, demonology, planes), the magic-vs-miracle problem for Bible-condemned sorcery, and class/ancestry reskin patterns."
     }
   },
   "local_wikis": [
