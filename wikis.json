@@ -43,6 +43,18 @@
       "created": "2026-05-24",
       "status": "active",
       "summary": "Re-skinning Pathfinder 2e Remaster lore to fit a Christian Biblical worldview as a campaign setting / content pack. Covers prior Christian TTRPG history (DragonRaid, Testament d20, etc.), how the Remaster's alignment-removal + sanctification framework + typed energy damage make a monotheistic reskin mechanically natural, theological cosmology mapping (angelology, demonology, planes), the magic-vs-miracle problem for Bible-condemned sorcery, and class/ancestry reskin patterns."
+    },
+    "frederick-county-va-crime-stats": {
+      "path": "topics/frederick-county-va-crime-stats",
+      "created": "2026-05-26",
+      "status": "active",
+      "summary": "Neutral compilation of crime statistics for Frederick County, Virginia (Winchester area) and adjacent jurisdictions. Sources: FBI UCR/NIBRS, Virginia State Police annual reports, Frederick County Sheriff's Office, Winchester PD, U.S. Census. Trends, categories, jurisdictional breakdown (FCSO vs Winchester PD vs VSP), clearance rates."
+    },
+    "ldk-server": {
+      "path": "topics/ldk-server",
+      "created": "2026-05-26",
+      "status": "active",
+      "summary": "LDK Server — a ready-to-use Lightning Network node binary built on top of LDK Node, exposing a gRPC (Protocol Buffers) API. Architecture, deployment, gRPC surface, comparison vs LND/CLN/Eclair, integration patterns, and operational notes."
     }
   },
   "local_wikis": [

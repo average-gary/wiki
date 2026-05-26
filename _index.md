@@ -2,7 +2,7 @@
 title: Wiki Hub
 type: hub
 created: 2026-05-20
-updated: 2026-05-25
+updated: 2026-05-26
 ---
 
 # Wiki Hub
@@ -24,6 +24,8 @@ LLM-compiled knowledge base. Topic wikis live under `topics/`.
 - [bitcoin-mining-payout-schemas](topics/bitcoin-mining-payout-schemas/_index.md) — Mining-pool payout/accounting schemas: PPLNS, FPPS, PPS+, PPLNS-JD, hashpool.dev (Cashu), btc++ tracks, p2pool / p2poolv2.
 - [pf2e-worldbuilding-tool](topics/pf2e-worldbuilding-tool/_index.md) — Worldbuilding tool for Pathfinder 2e as a desktop + LLM app: PF2e SRD/ORC, tool landscape (Kanka/World Anvil/Foundry), desktop stacks, LLM integration, world data modeling.
 - [pf2e-biblical-reskin](topics/pf2e-biblical-reskin/_index.md) — Christian Biblical worldview reskin of Pathfinder 2e Remaster lore: prior Christian TTRPGs, Remaster fit for monotheism, cosmology/angelology mapping, the magic-vs-miracle problem, class/ancestry reskin.
+- [frederick-county-va-crime-stats](topics/frederick-county-va-crime-stats/_index.md) — Neutral compilation of crime statistics for Frederick County, Virginia (Winchester area). FBI UCR/NIBRS, VA State Police, FCSO, Winchester PD, Census. Trends, categories, jurisdictional breakdown.
+- [ldk-server](topics/ldk-server/_index.md) — LDK Server: a ready-to-use Lightning Network node binary built on top of LDK Node, exposing a gRPC (Protocol Buffers) API. Architecture, deployment, gRPC surface, comparison vs LND/CLN/Eclair.
 
 ## Local Topics
 

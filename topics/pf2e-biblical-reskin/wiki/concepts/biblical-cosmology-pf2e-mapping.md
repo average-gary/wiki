@@ -9,12 +9,14 @@ confidence: high
 sources:
   - "[[2026-05-24-theology-frameworks-newadvent-angels]]"
   - "[[2026-05-24-theology-frameworks-sep-pseudo-dionysius]]"
+  - "[[2026-05-25-aquinas-summa-q108-angelic-hierarchy]]"
   - "[[2026-05-24-theology-frameworks-britannica-sheol]]"
   - "[[2026-05-24-theology-frameworks-britannica-nephilim]]"
   - "[[2026-05-24-theology-frameworks-newadvent-demons]]"
   - "[[2026-05-24-theology-frameworks-christian-eschatology-overview]]"
   - "[[2026-05-24-theology-frameworks-biblical-cosmology]]"
   - "[[2026-05-24-theology-frameworks-christian-angelology]]"
+  - "[[2026-05-25-1-enoch-book-of-watchers-ch6-16]]"
 tags: [theology, cosmology, angelology, demonology, eschatology, nephilim, planes, pf2e-mapping]
 ---
 
@@ -51,13 +53,23 @@ Two end-states. Present age is layered; eschaton is unified.
 
 ## Angelic hierarchy → PF2e celestial chain
 
-The **nine-rank Pseudo-Dionysian hierarchy** (~5th–6th century, *De Coelesti Hierarchia*; systematized by Aquinas in *Summa* I.108) is **traditional, not dogmatic**. Catholic teaching uses it but binds nothing. Three triads:
+The **nine-rank Pseudo-Dionysian hierarchy** (~5th–6th century, *De Coelesti Hierarchia*) is systematized by Aquinas in *Summa* I, q.108 ("De ordinatione angelorum secundum hierarchias et ordines") and is **traditional, not dogmatic**. Catholic teaching uses it but binds nothing.
+
+Aquinas's distinguishing principle (q.108 a.6) is **mode of receiving divine illumination**, not raw power tier:
+
+- **First hierarchy** contemplates types of things "proceeding from God as the first universal principle."
+- **Second hierarchy** considers types as they "depend on the universal created causes."
+- **Third hierarchy** applies them "to particular things as depending on their causes."
+
+He grounds the threefold structure in Pseudo-Dionysius (*Coel. Hier.* iii: "hierarchy is order, knowledge, and action") and the principle (q.108 a.2) that "every multitude has a beginning, a middle, and an end." Gregory the Great is cited as a variant ordering of Principalities/Virtues/Powers, which Aquinas reconciles rather than overrules.
 
 | Triad | Choirs | PF2e mapping |
 |---|---|---|
-| **Contemplative** (closest to God) | Seraphim, Cherubim, Thrones | Solar / Empyrean tier; biblical-form Cherubim (four-faced, Ezek 1) NOT putti |
-| **Governance** (cosmic order) | Dominions, Virtues, Powers | Planetar / astral deva tier with governance/miracle/war specialization |
-| **Engaged** (earthly affairs) | Principalities, Archangels, Angels | Principalities = nation-guardians (Dan 10); Archangels = unique named (Michael/Gabriel/Raphael); Angels = guardian angels (cassisian-tier) |
+| **Contemplative** (relation to God as first principle) | Seraphim, Cherubim, Thrones | Solar / Empyrean tier; biblical-form Cherubim (four-faced, Ezek 1) NOT putti |
+| **Governance** (universal created causes) | Dominions, Virtues, Powers | Planetar / astral deva tier with governance/miracle/war specialization |
+| **Engaged** (particulars / execution) | Principalities, Archangels, Angels | Principalities = nation-guardians (Dan 10); Archangels = unique named (Michael/Gabriel/Raphael); Angels = guardian angels (cassisian-tier) |
+
+**Design caveat from q.108**: Aquinas's hierarchy is not a CR ladder. "Angels" (lowest order) are messengers — the order most engaged with humans — not the weakest. PF2e's solar-as-pinnacle convention inverts the contemplation/execution axis; a faithful reskin should preserve mode-of-illumination, not collapse to power tier.
 
 **Named archangels — denominational split**:
 - **Catholic**: 3 (Michael, Gabriel, Raphael — Raphael from Tobit, deuterocanonical)
@@ -70,14 +82,14 @@ The **nine-rank Pseudo-Dionysian hierarchy** (~5th–6th century, *De Coelesti H
 Both should be aware in any reskin. They were originally distinct and are sometimes synthesized:
 
 1. **Lucifer's fall** — patristic reading of Isa 14 / Ezek 28; pride as the original sin; Michael casting the dragon down (Rev 12). Catholic and Orthodox mainstream; Reformed mainstream.
-2. **Watchers tradition** — 1 Enoch's fallen angels descending on Mt. Hermon, taking human wives, teaching forbidden arts (metallurgy, weapons, cosmetics, sorcery — the *pharmakeia* genealogy), fathering Nephilim. Cited obliquely in Jude 6 / 2 Pet 2:4. **Non-canonical to most Christians but enormously influential on the imagery.**
+2. **Watchers tradition** — per 1 Enoch 6 (R.H. Charles 1917; [[2026-05-25-1-enoch-book-of-watchers-ch6-16]]), 200 angels under **Semjâzâ** descend "in the days of Jared on the summit of Mount Hermon" and bind themselves by mutual imprecation (*Hermon* / *herem* etymology). Nineteen named chiefs of tens listed (1 En 6:7): Samîazâz, Arâkîba, Râmêêl, Kôkabîêl, Tâmîêl, Râmîêl, Dânêl, Êzêqêêl, Barâqîjâl, Asâêl, Armârôs, Batârêl, Anânêl, Zaqîêl, Samsâpêêl, Satarêl, Tûrêl, Jômjâêl, Sariêl. They take human wives, teach forbidden arts (1 En 8 — metallurgy/weapons by Azâzêl, root-cuttings/enchantments by Semjâzâ, astrology by Barâqîjâl — the *pharmakeia* genealogy), and father giants of "3,000 ells" (1 En 7:2). Judgment in 1 En 10 is fourfold: Uriel to Noah, Raphael binds Azâzêl in Dudâêl until the fire-judgment, Gabriel sets Nephilim against each other, Michael binds Semjâzâ for **70 generations** under the hills. Cited obliquely in Jude 6 / 2 Pet 2:4. **Non-canonical to most Christians but enormously influential on the imagery.**
 
 ### PF2e fiend-type mapping
 
 The PF2e three-track fiend system maps onto the Christian double-origin remarkably well:
 
 - **Devils** → Lucifer-fall hierarchy. Lawful, court-of-Hell, named (Beelzebub, Asmodeus, Mammon, Belial). Pride-fall; rule-bound deception; legalistic torment.
-- **Demons** → Watcher-fall hierarchy. Chaotic, primordial, Nephilim-spawning, named (Shemyaza, Azazel). Lust-fall; flesh-corruption; instinctive violence.
+- **Demons** → Watcher-fall hierarchy. Chaotic, primordial, Nephilim-spawning, named (Shemyaza, Azazel, **Armaros, Baraqijal, Kokabel, Sariel** as candidate demon-lord reskins). Lust-fall; flesh-corruption; instinctive violence. **1 Enoch 15:8-9 demon etiology**: demons in the Enochic line are the *spirits of the slaughtered Nephilim* — disembodied giant-spirits, distinct from pre-Adamic Lucifer-fall fallen angels. This etiology is what makes the PF2e demon-vs-devil split fit so cleanly: devils are the original-rank fallen, demons are their part-mortal offspring's discarnate spirits.
 - **Daemons** → plague/famine/death personifications drawn from Revelation horsemen. Death-aligned; impersonal; eschatological scourge.
 
 This is a stronger mapping than the OGL/Golarion default, which arbitrarily split fiends along an alignment grid that no longer exists.
@@ -91,7 +103,7 @@ This is a stronger mapping than the OGL/Golarion default, which arbitrarily spli
 Genesis 6:1–4 + Numbers 13:33. Three competing readings:
 
 1. **Sethite/Cainite intermarriage** — Augustine's reading; "sons of God" = Sethite line, "daughters of men" = Cainite line. Reformed-friendly. Less gameable.
-2. **Angelic-human hybrids** — 1 Enoch's reading; second-temple Jewish consensus. **Most worldbuilders pick this** because it's gameable.
+2. **Angelic-human hybrids** — 1 Enoch's reading (1 En 7:2 specifies the giants' size as 3,000 ells; 1 En 15:8-9 derives demons from their slain spirits — see [[2026-05-25-1-enoch-book-of-watchers-ch6-16]]); second-temple Jewish consensus. **Most worldbuilders pick this** because it's gameable.
 3. **Royal "men of renown" hyperbole** — modern critical-historical reading. Not gameable.
 
 **Recommendation for the PF2e reskin**: run reading #2 (angelic-hybrid). Maps directly onto the **Nephilim ancestry** (the Remaster merger of Aasimar / Tiefling / Aphorite / Ganzi). Half-Watcher heritage, giant-blooded, ancestral guilt + ancestral power. This is the **single biggest ancestry-reskin win in the Remaster** — see [[class-ancestry-reskin-verdicts]].
@@ -126,9 +138,8 @@ A worldbuilder must pick on each axis. They constrain campaign mechanics and end
 - [[class-ancestry-reskin-verdicts]] — Nephilim ancestry, Champion sanctifications, etc.
 - [[recommended-reskin-stack]] — synthesis
 
-## Open questions
+## Open questions (2026-05-25 update)
 
-- Direct primary text of Aquinas *Summa* I.108 (cited via secondary sources only).
-- Direct primary text of 1 Enoch *Book of the Watchers* (avoided per scope; mentioned via scholarly summaries).
+- ~~Direct primary text of 1 Enoch *Book of the Watchers*~~ — **resolved**: chapters 6-16 ingested verbatim from R.H. Charles 1917 via Wikisource; see [[2026-05-25-1-enoch-book-of-watchers-ch6-16]].
 - Lilith — contested, skipped due to thin Biblical basis (Isa 34:14 only).
 - SEP entry on Christian eschatology — none found at expected URL.

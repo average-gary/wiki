@@ -15,6 +15,18 @@ type: raw-index
 - [[2026-05-24-256-foundation-overview|256 Foundation]]
 - [[2026-05-24-hydrapool-256-foundation|Hydrapool]]
 
+## Parasite Pool (2026-05-26 round)
+
+- [[2026-05-26-zkshark-parasite-pool-substack|zk-shark Substack — founder rationale]]
+- [[2026-05-26-blockspace-media-parasite-emerges|Blockspace Media — technical narrative]]
+- [[2026-05-26-bitcoin-manual-parasite-pool|The Bitcoin Manual — economic critique]]
+- [[2026-05-26-coindesk-parasite-second-block|CoinDesk — Plebs Eat First, second block]]
+- [[2026-05-26-solosatoshi-bitaxe-parasite-setup|SoloSatoshi — Bitaxe setup guide]]
+
+## Adjacent novel schemes (2026-05-26 round)
+
+- [[2026-05-26-radpool-delvingbitcoin|Radpool — DLC + FROST decentralized FPPS]]
+
 ## p2poolv2 accounting (2026-05-24 round)
 
 - [[2026-05-24-p2poolv2-pplns-with-decay-wiki|p2poolv2 — PPLNS with Decay]]

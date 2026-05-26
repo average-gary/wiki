@@ -1,0 +1,67 @@
+Year,DrugClass,Geography,FIPS,Count,RatePer100k
+2019,All-Drug,Frederick County,51069,15,16.8
+2019,Any Opioids,Frederick County,51069,11,12.3
+2019,Benzodiazepine,Frederick County,51069,1,1.1
+2019,Cocaine,Frederick County,51069,4,4.5
+2019,Fentanyl and Other Synthetic Opioids,Frederick County,51069,9,10.1
+2019,Heroin,Frederick County,51069,3,3.4
+2019,Methadone,Frederick County,51069,1,1.1
+2019,Natural and Semi-Synthetic Opioids,Frederick County,51069,2,2.2
+2019,"Natural, Semi-Synthetic and Synthetic Opioids",Frederick County,51069,11,12.3
+2019,Prescription Pain Relievers,Frederick County,51069,2,2.2
+2019,Psychostimulant,Frederick County,51069,3,3.4
+2020,All-Drug,Frederick County,51069,27,29.6
+2020,Any Opioids,Frederick County,51069,24,26.3
+2020,Benzodiazepine,Frederick County,51069,4,4.4
+2020,Cocaine,Frederick County,51069,8,8.8
+2020,Fentanyl and Other Synthetic Opioids,Frederick County,51069,21,23.0
+2020,Heroin,Frederick County,51069,3,3.3
+2020,Methadone,Frederick County,51069,3,3.3
+2020,Natural and Semi-Synthetic Opioids,Frederick County,51069,3,3.3
+2020,"Natural, Semi-Synthetic and Synthetic Opioids",Frederick County,51069,24,26.3
+2020,Prescription Pain Relievers,Frederick County,51069,6,6.6
+2020,Psychostimulant,Frederick County,51069,7,7.7
+2021,All-Drug,Frederick County,51069,19,20.9
+2021,Any Opioids,Frederick County,51069,17,18.7
+2021,Benzodiazepine,Frederick County,51069,1,1.1
+2021,Cocaine,Frederick County,51069,3,3.3
+2021,Fentanyl and Other Synthetic Opioids,Frederick County,51069,12,13.2
+2021,Heroin,Frederick County,51069,0,0.0
+2021,Methadone,Frederick County,51069,5,5.5
+2021,Natural and Semi-Synthetic Opioids,Frederick County,51069,8,8.8
+2021,"Natural, Semi-Synthetic and Synthetic Opioids",Frederick County,51069,17,18.7
+2021,Prescription Pain Relievers,Frederick County,51069,11,12.1
+2021,Psychostimulant,Frederick County,51069,4,4.4
+2022,All-Drug,Frederick County,51069,16,17.6
+2022,Any Opioids,Frederick County,51069,14,15.4
+2022,Benzodiazepine,Frederick County,51069,1,1.1
+2022,Cocaine,Frederick County,51069,3,3.3
+2022,Fentanyl and Other Synthetic Opioids,Frederick County,51069,12,13.2
+2022,Heroin,Frederick County,51069,0,0.0
+2022,Methadone,Frederick County,51069,0,0.0
+2022,Natural and Semi-Synthetic Opioids,Frederick County,51069,4,4.4
+2022,"Natural, Semi-Synthetic and Synthetic Opioids",Frederick County,51069,14,15.4
+2022,Prescription Pain Relievers,Frederick County,51069,4,4.4
+2022,Psychostimulant,Frederick County,51069,5,5.5
+2023,All-Drug,Frederick County,51069,19,20.9
+2023,Any Opioids,Frederick County,51069,18,19.8
+2023,Benzodiazepine,Frederick County,51069,3,3.3
+2023,Cocaine,Frederick County,51069,5,5.5
+2023,Fentanyl and Other Synthetic Opioids,Frederick County,51069,13,14.3
+2023,Heroin,Frederick County,51069,0,0.0
+2023,Methadone,Frederick County,51069,4,4.4
+2023,Natural and Semi-Synthetic Opioids,Frederick County,51069,3,3.3
+2023,"Natural, Semi-Synthetic and Synthetic Opioids",Frederick County,51069,18,19.8
+2023,Prescription Pain Relievers,Frederick County,51069,6,6.6
+2023,Psychostimulant,Frederick County,51069,4,4.4
+2024*,All-Drug,Frederick County,51069,6,6.6
+2024*,Any Opioids,Frederick County,51069,6,6.6
+2024*,Benzodiazepine,Frederick County,51069,1,1.1
+2024*,Cocaine,Frederick County,51069,2,2.2
+2024*,Fentanyl and Other Synthetic Opioids,Frederick County,51069,5,5.5
+2024*,Heroin,Frederick County,51069,0,0.0
+2024*,Methadone,Frederick County,51069,1,1.1
+2024*,Natural and Semi-Synthetic Opioids,Frederick County,51069,2,2.2
+2024*,"Natural, Semi-Synthetic and Synthetic Opioids",Frederick County,51069,6,6.6
+2024*,Prescription Pain Relievers,Frederick County,51069,3,3.3
+2024*,Psychostimulant,Frederick County,51069,0,0.0

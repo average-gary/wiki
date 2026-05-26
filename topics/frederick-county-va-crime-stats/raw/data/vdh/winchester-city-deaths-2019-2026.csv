@@ -1,0 +1,67 @@
+Year,DrugClass,Geography,FIPS,Count,RatePer100k
+2019,All-Drug,Winchester City,51840,11,39.2
+2019,Any Opioids,Winchester City,51840,10,35.6
+2019,Benzodiazepine,Winchester City,51840,4,14.2
+2019,Cocaine,Winchester City,51840,2,7.1
+2019,Fentanyl and Other Synthetic Opioids,Winchester City,51840,7,24.9
+2019,Heroin,Winchester City,51840,1,3.6
+2019,Methadone,Winchester City,51840,2,7.1
+2019,Natural and Semi-Synthetic Opioids,Winchester City,51840,2,7.1
+2019,"Natural, Semi-Synthetic and Synthetic Opioids",Winchester City,51840,10,35.6
+2019,"Prescription Pain Relievers: Natural, Semi-Synthetic and Methadone",Winchester City,51840,3,10.7
+2019,Psychostimulant,Winchester City,51840,0,0
+2020,All-Drug,Winchester City,51840,16,57.8
+2020,Any Opioids,Winchester City,51840,15,54.2
+2020,Benzodiazepine,Winchester City,51840,2,7.2
+2020,Cocaine,Winchester City,51840,4,14.4
+2020,Fentanyl and Other Synthetic Opioids,Winchester City,51840,14,50.5
+2020,Heroin,Winchester City,51840,3,10.8
+2020,Methadone,Winchester City,51840,1,3.6
+2020,Natural and Semi-Synthetic Opioids,Winchester City,51840,2,7.2
+2020,"Natural, Semi-Synthetic and Synthetic Opioids",Winchester City,51840,15,54.2
+2020,"Prescription Pain Relievers: Natural, Semi-Synthetic and Methadone",Winchester City,51840,3,10.8
+2020,Psychostimulant,Winchester City,51840,2,7.2
+2021,All-Drug,Winchester City,51840,9,32.5
+2021,Any Opioids,Winchester City,51840,9,32.5
+2021,Benzodiazepine,Winchester City,51840,2,7.2
+2021,Cocaine,Winchester City,51840,3,10.8
+2021,Fentanyl and Other Synthetic Opioids,Winchester City,51840,7,25.3
+2021,Heroin,Winchester City,51840,0,0
+2021,Methadone,Winchester City,51840,1,3.6
+2021,Natural and Semi-Synthetic Opioids,Winchester City,51840,1,3.6
+2021,"Natural, Semi-Synthetic and Synthetic Opioids",Winchester City,51840,9,32.5
+2021,"Prescription Pain Relievers: Natural, Semi-Synthetic and Methadone",Winchester City,51840,2,7.2
+2021,Psychostimulant,Winchester City,51840,3,10.8
+2022,All-Drug,Winchester City,51840,9,32.5
+2022,Any Opioids,Winchester City,51840,8,28.9
+2022,Benzodiazepine,Winchester City,51840,1,3.6
+2022,Cocaine,Winchester City,51840,3,10.8
+2022,Fentanyl and Other Synthetic Opioids,Winchester City,51840,8,28.9
+2022,Heroin,Winchester City,51840,0,0
+2022,Methadone,Winchester City,51840,0,0
+2022,Natural and Semi-Synthetic Opioids,Winchester City,51840,0,0
+2022,"Natural, Semi-Synthetic and Synthetic Opioids",Winchester City,51840,8,28.9
+2022,"Prescription Pain Relievers: Natural, Semi-Synthetic and Methadone",Winchester City,51840,0,0
+2022,Psychostimulant,Winchester City,51840,1,3.6
+2023,All-Drug,Winchester City,51840,8,28.9
+2023,Any Opioids,Winchester City,51840,6,21.7
+2023,Benzodiazepine,Winchester City,51840,0,0
+2023,Cocaine,Winchester City,51840,2,7.2
+2023,Fentanyl and Other Synthetic Opioids,Winchester City,51840,6,21.7
+2023,Heroin,Winchester City,51840,1,3.6
+2023,Methadone,Winchester City,51840,0,0
+2023,Natural and Semi-Synthetic Opioids,Winchester City,51840,0,0
+2023,"Natural, Semi-Synthetic and Synthetic Opioids",Winchester City,51840,6,21.7
+2023,"Prescription Pain Relievers: Natural, Semi-Synthetic and Methadone",Winchester City,51840,0,0
+2023,Psychostimulant,Winchester City,51840,1,3.6
+2024*,All-Drug,Winchester City,51840,1,3.6
+2024*,Any Opioids,Winchester City,51840,0,0
+2024*,Benzodiazepine,Winchester City,51840,0,0
+2024*,Cocaine,Winchester City,51840,0,0
+2024*,Fentanyl and Other Synthetic Opioids,Winchester City,51840,0,0
+2024*,Heroin,Winchester City,51840,0,0
+2024*,Methadone,Winchester City,51840,0,0
+2024*,Natural and Semi-Synthetic Opioids,Winchester City,51840,0,0
+2024*,"Natural, Semi-Synthetic and Synthetic Opioids",Winchester City,51840,0,0
+2024*,"Prescription Pain Relievers: Natural, Semi-Synthetic and Methadone",Winchester City,51840,0,0
+2024*,Psychostimulant,Winchester City,51840,0,0

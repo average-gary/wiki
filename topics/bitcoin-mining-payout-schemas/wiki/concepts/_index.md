@@ -18,6 +18,8 @@ Definitions and primitives — schemes, attacks, variance.
 - [[p2pool-share-chain|p2pool / p2poolv2]] — on-chain PPLNS, no operator
 - [[p2poolv2-accounting|p2poolv2 Accounting (deep-dive)]] — code-level: 133k-share window, 90% uncle weight, atomic-swap HTLCs
 - [[hydrapool|Hydrapool — 256 Foundation pool]] — public-audit-API PPLNS, uses `p2poolv2_lib`
+- [[parasite-pool|Parasite Pool]] — lottery + decay-EMA hybrid, custodial Lightning fanout, Stratum V1
+- [[radpool|Radpool]] — DLC + FROST decentralized FPPS (proposal stage)
 
 ## Attacks
 

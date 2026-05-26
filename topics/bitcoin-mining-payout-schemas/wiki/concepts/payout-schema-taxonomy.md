@@ -28,6 +28,11 @@ Operator-reserve requirement is the structural barrier — only large/well-capit
 - **SLICE / PPLNS-JD** — DMND's PPLNS bound to SV2 Job Declaration. *See [[pplns-jd]].*
 - **p2pool / p2poolv2 share-chain** — on-chain PPLNS without a custodian. *See [[p2pool-share-chain]].*
 - **Geometric / DGM** (Rosenfeld) — tunable variance via parameters `f`, `c`, `o`. DGM was production at BTCDig 2013.
+- **Parasite Pool** — lottery (1 BTC finder bonus) + continuous-time decay-EMA residual. Lightning-only payouts, custodial. *See [[parasite-pool]].*
+
+## 2b. Decentralized FPPS (proposal stage)
+
+- **Radpool** — DLC settlement over a FROST federation of Mining Service Providers. Decentralizes FPPS without a sharechain. *See [[radpool]].*
 
 ## 3. Variance-as-tradeable-asset
 
@@ -39,15 +44,15 @@ Operator-reserve requirement is the structural barrier — only large/well-capit
 
 ## Cross-cutting axes
 
-| Axis | PPS | FPPS | PPS+ | PPLNS | TIDES | SLICE | eHash | p2poolv2 |
-|---|---|---|---|---|---|---|---|---|
-| Variance to | Pool | Pool | Pool (subsidy) / Miner (fees) | Miner | Miner | Miner | Tradeable | Miner |
-| Custody | Pool | Pool | Pool | Pool | None (coinbase) | None (coinbase) | Mint reserves | None (coinbase) |
-| Hop-resistant | N/A | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| IC-provable (Schrijvers) | Yes | Yes | Yes | Yes (parametric) | Likely | Likely | Open | Yes |
-| Operator reserve req | High | High | Medium | Low | None | None | Mint solvency | None |
-| Auditable on-chain | No | No | No | No | Yes | Yes | DLEQ | Yes |
-| Template control | Pool | Pool | Pool | Pool | Pool or DATUM | Miner (JD) | Pool | Miner |
+| Axis | PPS | FPPS | PPS+ | PPLNS | TIDES | SLICE | eHash | p2poolv2 | Parasite | Radpool |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Variance to | Pool | Pool | Pool (subsidy) / Miner (fees) | Miner | Miner | Miner | Tradeable | Miner | Miner (+ lottery) | Miner (MSP fronts) |
+| Custody | Pool | Pool | Pool | Pool | None (coinbase) | None (coinbase) | Mint reserves | None (coinbase) | Pool (LN fanout) | DLC (federation) |
+| Hop-resistant | N/A | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Partial | Yes |
+| IC-provable (Schrijvers) | Yes | Yes | Yes | Yes (parametric) | Likely | Likely | Open | Yes | No (PPLNS hybrid) | Yes (FPPS shape) |
+| Operator reserve req | High | High | Medium | Low | None | None | Mint solvency | None | Low (event-driven) | High (per MSP) |
+| Auditable on-chain | No | No | No | No | Yes | Yes | DLEQ | Yes | No | Partial (DLC oracle) |
+| Template control | Pool | Pool | Pool | Pool | Pool or DATUM | Miner (JD) | Pool | Miner | Pool (V1 only) | Per-MSP |
 
 ## Sources
 
@@ -56,6 +61,10 @@ Operator-reserve requirement is the structural barrier — only large/well-capit
 - [[../../raw/articles/2026-05-23-ocean-tides-spec|OCEAN TIDES doc]]
 - [[../../raw/articles/2026-05-23-dmnd-demand-pool|DMND / SLICE]]
 - [[../../raw/repos/2026-05-23-hashpool-vnprc|hashpool README]]
+- [[../../raw/articles/2026-05-26-zkshark-parasite-pool-substack|Parasite — zk-shark Substack]]
+- [[../../raw/repos/2026-05-26-parasitepool-para-github|`parasitepool/para` repo]]
+- [[../../raw/articles/2026-05-26-radpool-delvingbitcoin|Radpool delvingbitcoin]]
+- [[../../raw/papers/2026-05-26-kiayias-aft-2025-shapley-oceanic-games|Kiayias et al. AFT'25 — Shapley value pool design]]
 
 ## See also
 

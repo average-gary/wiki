@@ -1,0 +1,21 @@
+Year,DrugType,Geography,FIPS,CombinedLocality,Count,RatePer10kVisits
+2021,All Drug,Frederick County and Winchester City,51069,Yes,256,57.0
+2021,Heroin,Frederick County and Winchester City,51069,Yes,8,1.8
+2021,Opioid,Frederick County and Winchester City,51069,Yes,156,34.7
+2021,Stimulant,Frederick County and Winchester City,51069,Yes,3,0.7
+2022,All Drug,Frederick County and Winchester City,51069,Yes,271,56.1
+2022,Heroin,Frederick County and Winchester City,51069,Yes,5,1.0
+2022,Opioid,Frederick County and Winchester City,51069,Yes,157,32.5
+2022,Stimulant,Frederick County and Winchester City,51069,Yes,3,0.6
+2023,All Drug,Frederick County and Winchester City,51069,Yes,240,48.2
+2023,Heroin,Frederick County and Winchester City,51069,Yes,4,0.8
+2023,Opioid,Frederick County and Winchester City,51069,Yes,131,26.3
+2023,Stimulant,Frederick County and Winchester City,51069,Yes,4,0.8
+2024,All Drug,Frederick County and Winchester City,51069,Yes,238,47.1
+2024,Heroin,Frederick County and Winchester City,51069,Yes,0,0
+2024,Opioid,Frederick County and Winchester City,51069,Yes,112,22.2
+2024,Stimulant,Frederick County and Winchester City,51069,Yes,9,1.8
+2025,All Drug,Frederick County and Winchester City,51069,Yes,203,39.5
+2025,Heroin,Frederick County and Winchester City,51069,Yes,0,0
+2025,Opioid,Frederick County and Winchester City,51069,Yes,76,14.8
+2025,Stimulant,Frederick County and Winchester City,51069,Yes,*,0.6

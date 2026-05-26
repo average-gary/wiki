@@ -2,9 +2,9 @@
 title: Bitcoin Mining Payout & Accounting Schemas
 type: topic-index
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-05-26
 status: active
-summary: Payout and share-accounting schemas for Bitcoin mining pools — PPLNS, FPPS, PPS+, PPLNS-JD, hashpool.dev (Cashu ecash mints), btc++ event payout/accounting tracks, and p2pool / p2poolv2 share-chain accounting.
+summary: Payout and share-accounting schemas for Bitcoin mining pools — PPLNS, FPPS, PPS+, PPLNS-JD, hashpool.dev (Cashu ecash mints), btc++ event payout/accounting tracks, p2pool / p2poolv2 share-chain accounting, Parasite Pool (lottery + decay-EMA hybrid), Radpool (DLC+FROST decentralized FPPS).
 ---
 
 # Bitcoin Mining Payout & Accounting Schemas

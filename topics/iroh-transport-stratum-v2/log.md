@@ -9,3 +9,5 @@
 ## [2026-05-23] librarian | first scan: 14 articles, 14 stale (structural — missing `verified:` + `volatility:`), 0 low-quality (avg staleness 47, avg quality 91). Content quality is excellent; the playbook scores 100/100. Recommended fix is the same metadata backfill that landed in two other wikis on 2026-05-21.
 
 ## [2026-05-23] librarian | structural fix applied: `verified: 2026-05-20` + `volatility:` added to all 14 articles. Tiers: hot for living-doc articles, cold for paper/baseline-grounded articles, warm elsewhere. reference/specs-and-crates tagged `compiled-from: conversation`.
+
+## [2026-05-26] plan | "draft a branch with the network transport abstraction that would be an upstream PR to sv2-apps" → output/plan-sv2-transport-abstraction-pr-2026-05-26.md (7 articles consulted, 5 decisions, 9 phases)

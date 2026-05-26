@@ -27,8 +27,10 @@ relays, hole-punching, peer addressing via NodeId).
 
 - Sources ingested: 20 (3 papers, 13 articles, 4 repos)
 - Articles compiled: 12 (3 topics, 9 concepts, 1 reference)
+- Outputs: 1 plan ([sv2-transport-abstraction-pr-2026-05-26](output/plan-sv2-transport-abstraction-pr-2026-05-26.md))
 - Theses: 2 candidates
 - Last research session: 2026-05-20 (--deep, 8 parallel agents + Fedimint follow-up)
+- Last plan: 2026-05-26 (transport-abstraction upstream PR)
 
 ## Start here
 

@@ -45,19 +45,26 @@ The output should be useful to:
 - [class-ancestry-reskin-verdicts](wiki/concepts/class-ancestry-reskin-verdicts.md) — per-class verdict table (Champion / Thaumaturge / Oracle / Nephilim as the four big wins); cuts and rehoming
 - [denominational-lens-decision](wiki/concepts/denominational-lens-decision.md) — Catholic / Orthodox / Reformed / Pentecostal / Anglican-Lutheran / Lewisian; cessationism vs continuationism as the load-bearing axis
 
+## Reference Articles
+
+- [yhwh-deity-template](wiki/reference/yhwh-deity-template.md) — drop-in PF2e Remaster deity stat block for YHWH; constraint table from *Lost Omens: Divine Mysteries* (Aug 2024); per-lens fills (Catholic / Reformed / Pentecostal / Orthodox); Pharasma-precedent escape hatch (`sanctification: none`)
+- [biblical-miracle-to-pf2e-spell-map](wiki/reference/biblical-miracle-to-pf2e-spell-map.md) — ~50 mapped Bible miracles to PF2e Remaster spells, organized by Bible book; tradition-friction summary; 11 custom-spell candidates flagged
+
 ## Sources
 
-- [raw/_index.md](raw/_index.md) — 43 sources (37 articles, 5 papers, 1 repo)
+- [raw/_index.md](raw/_index.md) — 78 sources (60 articles, 16 papers, 2 repos; 43 round 1 + 35 gap round)
 
 ## Output
 
-- [output/_index.md](output/_index.md) — (no playbook artifact this round; topic-mode survey produced concept articles + synthesis)
+- [output/_index.md](output/_index.md) — (no playbook artifact yet; topic-mode survey produced concept + reference articles)
 
 ## Stats
 
-- Articles: 7 (1 topic synthesis + 6 concept)
-- Sources ingested: 43 (37 articles, 5 papers, 1 repo)
-- Research dates: 2026-05-24 (Round 1, --plan --deep, 6 paths × 8 agents)
+- Articles: 9 (1 topic synthesis + 6 concept + 2 reference)
+- Sources ingested: 78 (60 articles, 16 papers, 2 repos)
+- Research dates:
+  - 2026-05-24 — Round 1 (--plan --deep, 6 paths × 8 agents): 43 sources, 7 articles
+  - 2026-05-25 — Gap-closing round (10 parallel paths, with custom tooling at `~/wiki/.tools/`): 35 new sources, 2 new reference articles, 4 concept articles materially updated
 
 ## Cross-references to other HUB topics
 

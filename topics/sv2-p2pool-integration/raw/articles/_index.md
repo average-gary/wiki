@@ -18,3 +18,4 @@ type: index
 - [[2026-05-22-bitcoinwiki-stratum-v2|Bitcoin Wiki: Stratum v2]]
 - [[2026-05-22-opdup-rebooting-p2pool|opdup blog: Rebooting P2Pool]]
 - [[2026-05-22-bitcointalk-p2pool-original|bitcointalk: original P2Pool announcement]]
+- [[2026-05-26-process-compose-orchestrator|process-compose — non-containerized multi-process orchestrator]]

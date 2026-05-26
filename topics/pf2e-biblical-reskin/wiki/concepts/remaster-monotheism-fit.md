@@ -14,7 +14,11 @@ sources:
   - "[[2026-05-24-remaster-fit-for-monotheism-wikipedia-remaster-overview]]"
   - "[[2026-05-24-remaster-fit-for-monotheism-divine-tradition-analysis]]"
   - "[[2026-05-24-remaster-fit-for-monotheism-damage-types-energy]]"
-tags: [pf2e, remaster, sanctification, holy-unholy, alignment, monotheism, mechanical-fit]
+  - "[[2026-05-25-lost-omens-divine-mysteries-iomedae-sarenrae]]"
+  - "[[2026-05-25-lost-omens-divine-mysteries-pharasma-erastil]]"
+  - "[[2026-05-25-lost-omens-divine-mysteries-abadar-torag-asmodeus]]"
+  - "[[2026-05-25-lost-omens-divine-mysteries-yhwh-template-synthesis]]"
+tags: [pf2e, remaster, sanctification, holy-unholy, alignment, monotheism, mechanical-fit, deity-template]
 ---
 
 # PF2e Remaster mechanical fit for monotheism
@@ -32,7 +36,21 @@ These need **zero rules change** for a monotheistic reskin:
 - **Atone ritual** — restores lapsed devotion. Maps to confession/repentance.
 - **Holy/unholy damage interactions** — work across all four traditions.
 - **Spirit / vitality / void damage types** — vitality vs void echoes Augustinian privation-of-being metaphysics; spirit handles soul-affecting attacks.
-- **Deity stat block fields** (edicts, anathema, sanctification, divine font, domains, favored weapon, divine skill, divine ability, cleric spells, pantheon) — pure data. **Nothing in the template forces polytheism**; one deity entry suffices.
+- **Deity stat block fields** — pure data; **nothing in the template forces polytheism**; one deity entry suffices. Per *Lost Omens: Divine Mysteries* (Aug 2024) precedent, the Remaster shape is:
+
+  | Field | Length / shape |
+  |---|---|
+  | Edicts | **3–4 short imperatives**, comma-joined |
+  | Anathema | **3–4 short prohibitions**, comma-joined |
+  | Sanctification | **5 values**: holy / unholy / both / **none** / can-choose-X |
+  | Divine Font | heal / harm / heal-or-harm |
+  | Domains | **4 primary + 1–3 alternate** |
+  | Cleric Spells | **exactly 3, level-tagged** |
+  | Religious symbol / Sacred animal / Sacred colors | new fields in Remaster (absent from legacy CRB) |
+
+  **Anathema tone-shift design lesson** (Asmodeus precedent): Paizo themselves moved from archaic literal phrasings ("free a slave") to abstract ethical phrasings ("share power with the weak"). Apply this to the Decalogue in a Christian reskin — not "do not eat shellfish" but "violate the boundary set by your covenant community."
+
+  **The Pharasma escape hatch**: Pharasma's Remaster entry ships with `sanctification: none` — major canonical deity, no holy/unholy mechanic. **This is a real Paizo precedent for a strict-monotheism reskin** that refuses to mechanize the divine name as a damage trait. See [[yhwh-deity-template]] for the four denominational fills (Catholic / Reformed / Pentecostal / Orthodox) and the Pharasma-precedent variant.
 - **Champion's Aura** + reaction system — mechanically clean.
 - **Sense Holiness / Sense Unholiness feats** (renamed from Sense Good / Sense Evil) — work directly.
 
@@ -91,6 +109,23 @@ Pre-Remaster, the same reskin would have needed: alignment damage replacement, a
 ## Open questions
 
 - Primary rule text for holy/unholy traits and spirit damage from AoN — Rules.aspx ID lookups returned navigation chrome; Foundry journal is the working substitute.
-- *Lost Omens: Divine Mysteries* (Aug 2024) per-deity remasters not directly fetched.
-- Designer commentary (Logan Bonner, Mark Seifter) on the *theological* motivation for sanctification — only the licensing-driven motivation for alignment removal is documented publicly.
-- Reddit/forum community discussion on monotheistic homebrew — Reddit hard-blocked.
+- *Lost Omens: Divine Mysteries* (Aug 2024) per-deity remasters not directly fetched. Note: Loza confirms it was conceived *before* the OGL fiasco (see [[2026-05-25-sanctification-designer-commentary-loza-divine-mysteries-interview]]) — it is in-flight Golarion expansion retrofitted to the new mechanics, not a theological response to alignment removal.
+- Reddit/forum community discussion on monotheistic homebrew — Reddit JSON tooling now works; deeper dive deferred.
+
+## Designer commentary on sanctification — closed (negative finding)
+
+**Question (resolved 2026-05-25):** Did any Paizo designer (Logan Bonner, Mark Seifter, Luis Loza, James Case) publicly give a *theological* rationale for choosing the holy/unholy/spirit/vitality/void taxonomy or the sanctification framework?
+
+**Answer: No. Public commentary is exclusively licensing-driven and mechanical.**
+
+Three primary-source designer statements were located:
+
+1. **Logan Bonner, Player Core 2 Champion Preview** (Paizo blog, June 2024 — [[2026-05-25-sanctification-designer-commentary-bonner-champion-preview]]). Frames the sanctification redesign as *roleplaying flexibility*: replacing "an unbendable code" of alignment with edicts/anathema "tied to character choices" for "more well-rounded, nuanced characters." Sanctification is presented as an *optional* deity-driven flavor layer that adds an edict, anathema, and damage trait. **No theological framing whatsoever.**
+2. **Original Remaster Project announcement** (Paizo blog, April 2023 — [[2026-05-25-sanctification-designer-commentary-paizo-remaster-announcement]]). Alignment removal is grouped with "a small number of nostalgic creatures, spells, and magic items exclusive to the OGL" — pure license-flight surgery. **No design philosophy or worldbuilding rationale offered.**
+3. **Luis Loza, BadLuckGamer interview** (May 2024 — [[2026-05-25-sanctification-designer-commentary-loza-divine-mysteries-interview]]). Loza, the Creative Director responsible for *Lost Omens: Divine Mysteries*, calls "sanctification and wizard schools" the **"most egregious changes"** — i.e., backward-compatibility breaks to manage, not theological breakthroughs to celebrate. He also confirms Divine Mysteries was conceived *before* the OGL crisis.
+
+Cross-confirmed by community essay ([[2026-05-25-sanctification-designer-commentary-community-change-mgmt-essay]]): the holy/unholy/spirit traits were *expected* and *unsurprising* in the preview cycle — debated only by players who wanted to keep mechanical alignment, never as a theological/metaphysical reframing.
+
+**Why "spirit" damage exists** — no designer has publicly defined it in metaphysical terms. The official mechanical scope (a damage type that affects souls/incorporeal entities and bypasses certain physical resistances) is the only level at which it has been described.
+
+**Implication for this wiki's thesis:** The PF2e Remaster's monotheistic fit is genuinely *accidental* — emergent from designers reaching for the most generic divine/anti-divine vocabulary available once alignment terminology had to go. The Augustinian privation echo (vitality vs void) and the sanctification-as-deity-conformity structure are not authorial intent; they are the structural shadow cast by *removing* a polytheistic-pluralist alignment grid without replacing it with a different cosmology. This *strengthens* the reskin pitch: a Christian-Biblical reskin is not "fighting against" a designed pluralist intent; it is filling in a vacuum the Remaster left behind.
