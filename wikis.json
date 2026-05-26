@@ -55,6 +55,12 @@
       "created": "2026-05-26",
       "status": "active",
       "summary": "LDK Server — a ready-to-use Lightning Network node binary built on top of LDK Node, exposing a gRPC (Protocol Buffers) API. Architecture, deployment, gRPC surface, comparison vs LND/CLN/Eclair, integration patterns, and operational notes."
+    },
+    "home-garden-pruning": {
+      "path": "topics/home-garden-pruning",
+      "created": "2026-05-26",
+      "status": "active",
+      "summary": "Pruning playbooks for the user's home garden: Kristin and BlackGold sweet cherries, thornless blackberries, Knock Out shrub roses, raspberries, blueberries. Timing, technique, training systems, sanitation, and renewal strategy per plant."
     }
   },
   "local_wikis": [

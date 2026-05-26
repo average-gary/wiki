@@ -26,6 +26,7 @@ LLM-compiled knowledge base. Topic wikis live under `topics/`.
 - [pf2e-biblical-reskin](topics/pf2e-biblical-reskin/_index.md) — Christian Biblical worldview reskin of Pathfinder 2e Remaster lore: prior Christian TTRPGs, Remaster fit for monotheism, cosmology/angelology mapping, the magic-vs-miracle problem, class/ancestry reskin.
 - [frederick-county-va-crime-stats](topics/frederick-county-va-crime-stats/_index.md) — Neutral compilation of crime statistics for Frederick County, Virginia (Winchester area). FBI UCR/NIBRS, VA State Police, FCSO, Winchester PD, Census. Trends, categories, jurisdictional breakdown.
 - [ldk-server](topics/ldk-server/_index.md) — LDK Server: a ready-to-use Lightning Network node binary built on top of LDK Node, exposing a gRPC (Protocol Buffers) API. Architecture, deployment, gRPC surface, comparison vs LND/CLN/Eclair.
+- [home-garden-pruning](topics/home-garden-pruning/_index.md) — Pruning playbooks for the user's home garden: Kristin and BlackGold sweet cherries, thornless blackberries, Knock Out shrub roses, raspberries, blueberries.
 
 ## Local Topics
 
