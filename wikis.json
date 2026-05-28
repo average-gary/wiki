@@ -61,6 +61,24 @@
       "created": "2026-05-26",
       "status": "active",
       "summary": "Pruning playbooks for the user's home garden: Kristin and BlackGold sweet cherries, thornless blackberries, Knock Out shrub roses, raspberries, blueberries. Timing, technique, training systems, sanitation, and renewal strategy per plant."
+    },
+    "open-source-logos-suite": {
+      "path": "topics/open-source-logos-suite",
+      "created": "2026-05-27",
+      "status": "active",
+      "summary": "Engineering an open-source alternative to Logos Bible Software (logos.com). Feature surface, existing OSS landscape (SWORD, STEP Bible, Open Scriptures), open biblical data, client architecture, and decentralized infrastructure (IPFS, libp2p, Iroh, ATProto, Nostr, Hypercore) for text distribution and user-data sync."
+    },
+    "cdk-ldk-lnurl": {
+      "path": "topics/cdk-ldk-lnurl",
+      "created": "2026-05-28",
+      "status": "active",
+      "summary": "Deploying LNURL endpoints (LNURL-pay, LNURL-withdraw, Lightning Address) using Cashu Dev Kit (cashubtc/cdk) with the bundled LDK Node lightning backend. CDK lightning-backend feature flags, cdk-mintd binary topology, LDK Node embedding, persistence/channel management, and the LNURL surface needed in front of (or alongside) the mint."
+    },
+    "fedimint": {
+      "path": "topics/fedimint",
+      "created": "2026-05-28",
+      "status": "active",
+      "summary": "Federated Chaumian e-cash protocol for Bitcoin custody. Architecture (consensus, mint, wallet, lightning, custom modules), federation guardians, threshold custody, Lightning gateways, and ongoing research on multi-currency / multi-denomination support. Comparison with Cashu re: unit handling."
     }
   },
   "local_wikis": [

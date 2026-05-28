@@ -2,7 +2,7 @@
 title: Wiki Hub
 type: hub
 created: 2026-05-20
-updated: 2026-05-26
+updated: 2026-05-28
 ---
 
 # Wiki Hub
@@ -27,6 +27,9 @@ LLM-compiled knowledge base. Topic wikis live under `topics/`.
 - [frederick-county-va-crime-stats](topics/frederick-county-va-crime-stats/_index.md) — Neutral compilation of crime statistics for Frederick County, Virginia (Winchester area). FBI UCR/NIBRS, VA State Police, FCSO, Winchester PD, Census. Trends, categories, jurisdictional breakdown.
 - [ldk-server](topics/ldk-server/_index.md) — LDK Server: a ready-to-use Lightning Network node binary built on top of LDK Node, exposing a gRPC (Protocol Buffers) API. Architecture, deployment, gRPC surface, comparison vs LND/CLN/Eclair.
 - [home-garden-pruning](topics/home-garden-pruning/_index.md) — Pruning playbooks for the user's home garden: Kristin and BlackGold sweet cherries, thornless blackberries, Knock Out shrub roses, raspberries, blueberries.
+- [open-source-logos-suite](topics/open-source-logos-suite/_index.md) — Engineering an OSS alternative to Logos Bible Software: feature surface, OSS prior art, open biblical data, client architecture, and decentralized infrastructure (IPFS, libp2p, Iroh, ATProto, Nostr, Hypercore) for text distribution and user-data sync.
+- [cdk-ldk-lnurl](topics/cdk-ldk-lnurl/_index.md) — Deploying LNURL endpoints (LNURL-pay, LNURL-withdraw, Lightning Address) using Cashu Dev Kit (`cashubtc/cdk`) with the bundled LDK Node lightning backend. cdk-mintd topology, lightning-backend feature flags, LDK Node embedding, persistence/channel management, LNURL surface design.
+- [fedimint](topics/fedimint/_index.md) — Fedimint federated Chaumian e-cash protocol: architecture (consensus/mint/wallet/lightning/custom modules), guardians, threshold custody, Lightning gateways, multi-currency / multi-denomination support research.
 
 ## Local Topics
 
