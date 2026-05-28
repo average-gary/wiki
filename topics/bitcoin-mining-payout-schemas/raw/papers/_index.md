@@ -13,3 +13,4 @@ type: raw-index
 - [[2026-05-23-chatzigiannis-2022-diversification|Chatzigiannis et al. 2022 — Diversification Across Mining Pools]]
 - [[2026-05-24-fiberpool-2025|FiberPool — Sakurai & Shudo 2025 (formal-properties baseline)]]
 - [[2026-05-26-kiayias-aft-2025-shapley-oceanic-games|Kiayias et al. AFT'25 — Shapley Value vs Proportional in Oceanic Games]]
+- [[2026-05-26-keer-maffei-ark-formal-arxiv|Keer, Maffei, Argentieri, Camilleri, Avarikioti — Ark formal model (arXiv 2026)]]

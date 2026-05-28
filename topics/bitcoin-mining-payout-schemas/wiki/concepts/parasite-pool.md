@@ -77,7 +77,7 @@ Stripped of the marketing, three axes are genuinely new:
 - Hashrate fluctuating 24–182 PH/s.
 - Active dev cadence on `parasitepool/para` (v0.5.x in late 2025, ongoing commits May 2026).
 - BCH derivative pool (`bch.ee`) explicitly self-styled as the BCH parasite pool with its own variant (1 BCH bonus + 99% remainder + 1% fee).
-- One disputed claim worth flagging: a [GitHub issue](https://github.com/mweinberg/stratum-speed-test) by `Distortions81` (Dec 2025) alleges on-chain analysis showing 1 BTC to worker (31.72%) and 2.15 BTC to a single pool-controlled address (68.28%) rather than distributed. Whether this represents fanout-from-pool-hot-wallet or operator skim is not publicly resolved.
+- The "parasite.wtf scam" dispute (`Distortions81` GitHub issue, Dec 2025) is **half-true**. On-chain analysis ([[../../raw/articles/2026-05-26-parasite-pool-coinbase-onchain-analysis|verified against blocks 938,713 and 945,601]]) confirms output #1 always goes to a single pool-controlled address `bc1qkgef7pl8vdrtuc4wk8fssycz366xp5ukzsm8gp` rather than fanning out on-chain — but that address drains aggressively (8 txns total, 6.77 BTC received, ~700 sat retained). The behavior pattern matches a Lightning channel hot-wallet, not an accumulation sink. Whether the drained funds actually reach miners via LN as advertised is **unprovable from on-chain data alone** and requires operator-published payout proofs.
 
 ## Open questions / gaps
 

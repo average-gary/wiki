@@ -34,6 +34,30 @@ Operator-reserve requirement is the structural barrier — only large/well-capit
 
 - **Radpool** — DLC settlement over a FROST federation of Mining Service Providers. Decentralizes FPPS without a sharechain. *See [[radpool]].*
 
+## 2c. DAG sharechains (prototype stage)
+
+- **Braidpool** — DAG of beads grouped into cohorts; Full Proportional payout over 2016 blocks; covenant-based UHPO custody (APO+CTV). McElrath. *See [[braidpool]].*
+
+## 3a. Template-construction protocols (orthogonal to payout)
+
+These don't define payouts — they define who picks the transactions that go into the block, and at which fee level the pool can verify the result.
+
+- **DATUM** (OCEAN) — miner-side templates over Stratum v1 + GBT + custom encrypted protocol; no public RFC; production beta. *See [[datum]].*
+- **Stratum V2 Job Declaration** (DMND, Hydrapool, Braidpool) — standardized in `sv2-spec/06-Job-Declaration-Protocol.md`; supports coinbase-only privacy mode. Used by [[pplns-jd|SLICE]].
+
+## 3b. On-chain payout-fanout primitives (prototype stage)
+
+- **CTV coinbase fanout** (vnprc, Jun 2025) — single OP_CTV commitment in coinbase commits to a 319-output fanout tree; 179-byte coinbase. Blocked on BIP-119 activation.
+- **UHPO via APO+CTV** (McElrath, Jan 2025) — Rolling Coinbase Aggregation; signet PoC by AaronZhang Apr 2026.
+
+## 3c. Off-chain payout layers (hypothetical for mining)
+
+These are payout *layers* — orthogonal to the share-accounting scheme. They sit between the on-chain coinbase and the miner's wallet.
+
+- **Lightning channels** (used by Parasite today) — operator-run hot wallet, custodial during fanout window, no soft-fork required, mature.
+- **Cashu mints** (used by [[ehash]]) — blind-signed bearer tokens, custodial mint, no soft-fork required, production.
+- **Ark / VTXO** (hypothetical, [[ark-for-mining-payouts|see article]]) — ASP-coordinated transaction-tree batching, **named once** by Second.tech as a use case (BitMag Apr 2026); structural critiques: capital lockup, expiry sweep, asymmetric exit cost, receiver-presence requirement gates it on CTV+CSFS activation.
+
 ## 3. Variance-as-tradeable-asset
 
 - **eHash / hashpool** — Cashu blind-signature mint issues a bearer token per share. Token accrues BTC value during a maturity period; miner can hold (capture luck upside) or sell early on a secondary market (variance offloaded to buyer). Pool maintains no per-miner ledger. *See [[ehash]].*
@@ -44,15 +68,16 @@ Operator-reserve requirement is the structural barrier — only large/well-capit
 
 ## Cross-cutting axes
 
-| Axis | PPS | FPPS | PPS+ | PPLNS | TIDES | SLICE | eHash | p2poolv2 | Parasite | Radpool |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Variance to | Pool | Pool | Pool (subsidy) / Miner (fees) | Miner | Miner | Miner | Tradeable | Miner | Miner (+ lottery) | Miner (MSP fronts) |
-| Custody | Pool | Pool | Pool | Pool | None (coinbase) | None (coinbase) | Mint reserves | None (coinbase) | Pool (LN fanout) | DLC (federation) |
-| Hop-resistant | N/A | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Partial | Yes |
-| IC-provable (Schrijvers) | Yes | Yes | Yes | Yes (parametric) | Likely | Likely | Open | Yes | No (PPLNS hybrid) | Yes (FPPS shape) |
-| Operator reserve req | High | High | Medium | Low | None | None | Mint solvency | None | Low (event-driven) | High (per MSP) |
-| Auditable on-chain | No | No | No | No | Yes | Yes | DLEQ | Yes | No | Partial (DLC oracle) |
-| Template control | Pool | Pool | Pool | Pool | Pool or DATUM | Miner (JD) | Pool | Miner | Pool (V1 only) | Per-MSP |
+| Axis | PPS | FPPS | PPS+ | PPLNS | TIDES | SLICE | eHash | p2poolv2 | Parasite | Radpool | Braidpool |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Variance to | Pool | Pool | Pool (subsidy) / Miner (fees) | Miner | Miner | Miner | Tradeable | Miner | Miner (+ lottery) | Miner (MSP fronts) | Miner (faster sampling) |
+| Custody | Pool | Pool | Pool | Pool | None (coinbase) | None (coinbase) | Mint reserves | None (coinbase) | Pool (LN fanout) | DLC (federation) | Covenant (UHPO) |
+| Hop-resistant | N/A | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Partial | Yes | Yes (Full Proportional) |
+| IC-provable (Schrijvers) | Yes | Yes | Yes | Yes (parametric) | Likely | Likely | Open | Yes | No (PPLNS hybrid) | Yes (FPPS shape) | Open |
+| Operator reserve req | High | High | Medium | Low | None | None | Mint solvency | None | Low (event-driven) | High (per MSP) | None |
+| Auditable on-chain | No | No | No | No | Yes | Yes | DLEQ | Yes | No | Partial (DLC oracle) | Yes (UHPO + DAG) |
+| Template control | Pool | Pool | Pool | Pool | Pool or DATUM | Miner (JD) | Pool | Miner | Pool (V1 only) | Per-MSP | Miner (SV2+JD) |
+| Activation gate | — | — | — | — | — | — | — | — | — | — | APO+CTV |
 
 ## Sources
 

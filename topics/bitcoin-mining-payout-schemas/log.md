@@ -1,5 +1,57 @@
 # Log — bitcoin-mining-payout-schemas
 
+## [2026-05-26] research --deep | "second.tech Ark protocol for mining payouts" → 8 raw sources, 1 new concept article, taxonomy expanded with off-chain payout layers section
+
+8 parallel agents (Academic, Technical, Applied, News, Contrarian, Historical, Adjacent, Data/Stats). All returned substantively. Findings:
+
+- **Landmark academic paper**: Keer, Maffei, Argentieri, Camilleri, Avarikioti — "Ark: Offchain Transaction Batching in Bitcoin" (arXiv:2605.20952, 2026-05-20, 6 days before research round). First Bitcoin-compatible commit-chain with formal model and security proof. ~200 vB constant onchain commitment regardless of batch size; cooperative exit 1 output/user; unilateral O(log n) × ~150 vB/VTXO. **Does NOT discuss mining payouts.**
+- **Two-camp landscape clarified**: Second.tech (Steven Roose CEO + Erik De Smedt CTO, ex-Blockstream, $5.1M private funding, signet only, bark client) vs Ark Labs/Arkade (Burak Keceli's lineage, $7.7M cumulative incl. $5.2M Tether-led Mar 2026, Arkade live since Oct 2025). The original `ark-network` GitHub org renamed to `arkade-os`.
+- **Mining-payout pitch is one phrase in one Bitcoin Magazine article**: Apr 2026 Juan Galt profile of Second names "Mining pool payout distribution at higher frequencies" alongside payroll. **No pool operator has endorsed Ark.** No Optech newsletter, no conference talk, no second.tech blog post mentions mining. No academic paper. The "Ark > CTV for payouts" framing (AntoineP) lives entirely in the [[2026-05-26-vnprc-ctv-coinbase-delving]] thread.
+- **Critiques fatal for mining**: clArk (today's covenantless variant) requires presence-of-eventual-owner — pools cannot issue VTXOs to absent miners. hArk/Erk fix this but require CTV+CSFS (same activation gate as the CTV-coinbase proposals AntoineP claimed to dominate). VTXO 7-day default expiry / 4-week max — Bitaxe miners that wake intermittently lose funds to expiration sweep. Pickhardt: ASP must front capital × expiry window. roasbeef: asymmetric exit cost. Carvalho: blockspace-conservation cap on credible exits at pool population sizes.
+- **Counter to "Ark > CTV"**: covenant-free Ark can't issue to absent receivers AND is DoS-prone. Covenant-using Ark has the same activation dependency CTV-coinbase does. The "Ark > CTV" claim collapses into "Ark + CTV > CTV alone" — much weaker.
+
+**Ingested (8)**:
+- `papers/2026-05-26-keer-maffei-ark-formal-arxiv.md`
+- `articles/2026-05-26-ark-burak-original-proposal-2023.md`
+- `articles/2026-05-26-second-tech-ark-intro.md`
+- `articles/2026-05-26-bitcoinmag-second-bark-mining-payouts.md`
+- `articles/2026-05-26-ark-labs-tether-funding.md`
+- `articles/2026-05-26-ark-erik-de-smedt-ctv-csfs-delving.md`
+- `articles/2026-05-26-ark-pickhardt-channel-factory-delving.md`
+- `articles/2026-05-26-carvalho-credible-exit-blockspace.md`
+
+**New concept article**: `ark-for-mining-payouts.md` (synthesizes the two-camp landscape, three Ark variants, formal-model quantitative claims, six structural critiques, comparison table vs Lightning/Cashu, and the singular-Bitcoin-Magazine-mention reality check).
+
+**Updated**: `payout-schema-taxonomy.md` (new "Off-chain payout layers (hypothetical for mining)" section explicitly distinguishing payout layer from share-accounting scheme).
+
+Total wiki state: **67 raw sources, 21 concept articles**. Progress score this round ~80 (8 ingested + 1 article + ~9 cross-refs + avg credibility ~4.5).
+
+## [2026-05-26] research gap-close | 6 parallel paths (DMND ops / Public Pool / DATUM / Braidpool / vnprc CTV / Parasite coinbase dispute) → 8 raw sources, 2 new concept articles, taxonomy table expanded to 11 columns + 2 new sections
+
+5 paths returned, 1 interrupted (Public Pool — deferred). Findings:
+
+- **DMND** is the first production pool where SV2+JD is the *default* protocol path (not opt-in like DATUM). All-in-one proxy `demand_all_in_one_sv2`, SV2 port 34255, SV1 fallback `mining.dmnd.work:1000`. VC-backed (Trammell Venture Partners). 2-year founding-miner contract — non-trivial lock-in. Operator: Guru Protocol Ltd (UK).
+- **DATUM** (OCEAN) is OCEAN's miner-side template-construction protocol — orthogonal to TIDES (which is the payout layer). Custom encrypted protocol (no public RFC), Stratum v1 + GBT to ASICs/node. Knots highly recommended. Pool currently sees full template in beta; future version will be cryptographically blinded. 50% fee discount (1% vs 2%). Adoption fraction unpublished.
+- **Braidpool** (McElrath) is a DAG sharechain prototype (v0.01 CPUnet). Cohort-based consensus targeting ~2.42 beads/cohort, ~600ms latency floor. Full Proportional payout over 2016 blocks. Custody via UHPO (Unspent Hasher Payout Object) + RCA (Rolling Coinbase Aggregation), requires APO+CTV. AaronZhang demoed working signet PoC April 2026. Mainnet blocked on covenant activation.
+- **vnprc CTV-coinbase** (Jun 2025): single OP_CTV commitment in 179-byte coinbase commits to 319-output fanout tree. Motivation: break Bitmain firmware's coinbase-size limits (the constraint that killed P2Pool). AntoineP pushback: this is congestion control, not scaling — Ark/VTXOs are the real scalability answer. ErikDeSmedt hybrid: CTV fanout into VTXOs.
+- **Parasite Pool coinbase dispute (Distortions81 issue)**: half-true. Confirmed via mempool.space that blocks 938,713 and 945,601 both pay 2.14 BTC / 2.13 BTC to single address `bc1qkgef7pl…sm8gp` rather than fanning out on-chain. But that address drains aggressively (8 txns total, 6.77 BTC received, ~700 sats retained) — pattern matches a Lightning channel hot-wallet, not an embezzlement sink. Whether drained funds reach miners via LN is unprovable on-chain by design. Updated `parasite-pool.md` accordingly.
+
+**Ingested (8)**:
+- `articles/2026-05-26-nobsbitcoin-dmnd-sv2-solo-guide.md`
+- `articles/2026-05-26-bitcoinmag-dmnd-launch-vc.md`
+- `repos/2026-05-26-ocean-datum-gateway-github.md`
+- `repos/2026-05-26-braidpool-github.md`
+- `articles/2026-05-26-braidpool-covenants-delving.md`
+- `articles/2026-05-26-vnprc-ctv-coinbase-delving.md`
+- `repos/2026-05-26-vnprc-coinbase-playground-github.md`
+- `articles/2026-05-26-parasite-pool-coinbase-onchain-analysis.md`
+
+**New concept articles**: `braidpool.md`, `datum.md`. **Updated**: `parasite-pool.md` (dispute resolution), `payout-schema-taxonomy.md` (added Braidpool column + DAG-sharechain + template-construction + on-chain-fanout sections).
+
+**Skipped/deferred**: Public Pool path was interrupted before returning — re-run candidate.
+
+Total wiki state: **59 raw sources**, **20 concept articles**.
+
 ## [2026-05-26] research | "novel mining pool accounting like what Parasite pool is doing" → 8 raw sources ingested, 2 new concept articles, taxonomy expanded
 
 5 parallel agents (Academic, Technical, News, Applied/Practitioner, Contrarian). Confirmed Parasite Pool is real (zk-shark, launched 2025, 2 mainnet blocks) and was a clear gap in the wiki. Adjacent novel scheme uncovered: Radpool (jungly, DLC + FROST decentralized FPPS, Nov 2024).

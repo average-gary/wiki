@@ -20,6 +20,9 @@ Definitions and primitives — schemes, attacks, variance.
 - [[hydrapool|Hydrapool — 256 Foundation pool]] — public-audit-API PPLNS, uses `p2poolv2_lib`
 - [[parasite-pool|Parasite Pool]] — lottery + decay-EMA hybrid, custodial Lightning fanout, Stratum V1
 - [[radpool|Radpool]] — DLC + FROST decentralized FPPS (proposal stage)
+- [[braidpool|Braidpool]] — DAG sharechain, Full Proportional payout, covenant-based custody (prototype)
+- [[datum|DATUM]] — OCEAN's miner-side template-construction protocol (orthogonal to TIDES payout)
+- [[ark-for-mining-payouts|Ark for Mining Payouts]] — hypothetical ASP-backed payout layer; one BitMag mention; structural critiques on capital lockup, expiry, and exit cost
 
 ## Attacks
 

@@ -27,6 +27,24 @@ type: raw-index
 
 - [[2026-05-26-radpool-delvingbitcoin|Radpool — DLC + FROST decentralized FPPS]]
 
+## Gap-close round (2026-05-26)
+
+- [[2026-05-26-nobsbitcoin-dmnd-sv2-solo-guide|DMND SV2+JD operational guide]]
+- [[2026-05-26-bitcoinmag-dmnd-launch-vc|DMND launch + VC backing]]
+- [[2026-05-26-braidpool-covenants-delving|Braidpool covenants thread (McElrath)]]
+- [[2026-05-26-vnprc-ctv-coinbase-delving|vnprc CTV-coinbase proposal]]
+- [[2026-05-26-parasite-pool-coinbase-onchain-analysis|Parasite Pool on-chain analysis]]
+
+## Ark for mining payouts (2026-05-26 round)
+
+- [[2026-05-26-ark-burak-original-proposal-2023|Burak Keceli — original Ark proposal (2023)]]
+- [[2026-05-26-second-tech-ark-intro|Second.tech Ark spec]]
+- [[2026-05-26-bitcoinmag-second-bark-mining-payouts|Bitcoin Magazine — bark + mining payouts]]
+- [[2026-05-26-ark-labs-tether-funding|Ark Labs $5.2M Tether-led raise]]
+- [[2026-05-26-ark-erik-de-smedt-ctv-csfs-delving|Evolving Ark with CTV+CSFS (De Smedt + roasbeef)]]
+- [[2026-05-26-ark-pickhardt-channel-factory-delving|Ark as Channel Factory (Pickhardt + instagibbs)]]
+- [[2026-05-26-carvalho-credible-exit-blockspace|Credible Exit & Conservation of Blockspace (Carvalho)]]
+
 ## p2poolv2 accounting (2026-05-24 round)
 
 - [[2026-05-24-p2poolv2-pplns-with-decay-wiki|p2poolv2 — PPLNS with Decay]]
