@@ -1,0 +1,9 @@
+# Log — open-source-logos-suite
+
+## [2026-05-27] init | topic wiki created
+
+## [2026-05-27] research --deep | "How could you engineer an open source logos.com application suite? Is there decentralized infrastructure that could support something like this?" (7 parallel paths × ~5 sub-agents) → 40 sources ingested (36 articles + 4 repos), 16 wiki articles compiled (1 topic synthesis, 9 concepts, 4 reference, 2 decisions), 1 engineering playbook output. Headline findings: (a) the data substrate is now ~80% open thanks to STEPBible-Data CC BY 4.0 + MACULA Greek + OpenBible.info; (b) the gap is the integrated study-tool UX above the data — no OSS has Sermon Builder, Factbook, Passage Guide; (c) Tauri 2 + Rust core + UniFFI mobile shells + SQLite FTS5 + Yjs/yrs is the recommended client stack; (d) Iroh blobs + signed manifest over HTTPS + HTTP mirrors is the recommended library distribution; (e) ATProto did:plc with custodial-default + self-custody upgrade is the only identity model that degrades gracefully for non-technical users; (f) "credible exit" is the right marketing frame, not "decentralized" — Bluesky 99.9% on bsky.social, Anytype on hosted relays, Obsidian's plain-files dominance.
+
+## [2026-05-27] output | engineering playbook → output/playbook-engineering-2026-05-27.md (5-layer architecture, 4-phase build plan, decentralized-infra summary)
+
+## [2026-05-28] plan | "a replacement logos application for studying the bible" → output/plan-christ-is-lord-2026-05-28.md (17 articles consulted, 7 architecture decisions, 4 phases). Tailors the engineering playbook to repo /Users/garykrause/repos/christ-is-lord; user constraints: solo full-time max velocity, full Phase 0 wedge (STEP-Bible-clone-but-native-and-fast), desktop-only v1, Iroh library distribution + boring (hosted Yjs) sync. Phase 0 detailed week-by-week (8 weeks).
