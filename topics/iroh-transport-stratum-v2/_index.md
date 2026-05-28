@@ -25,12 +25,12 @@ relays, hole-punching, peer addressing via NodeId).
 
 ## Stats
 
-- Sources ingested: 20 (3 papers, 13 articles, 4 repos)
+- Sources ingested: 21 (3 papers, 14 articles, 4 repos)
 - Articles compiled: 12 (3 topics, 9 concepts, 1 reference)
-- Outputs: 1 plan ([sv2-transport-abstraction-pr-2026-05-26](output/plan-sv2-transport-abstraction-pr-2026-05-26.md))
+- Outputs: 2 plans ([iroh-rc-1-bump-2026-05-27](output/plan-iroh-rc-1-bump-2026-05-27.md), [sv2-transport-abstraction-pr-2026-05-26](output/plan-sv2-transport-abstraction-pr-2026-05-26.md))
 - Theses: 2 candidates
-- Last research session: 2026-05-20 (--deep, 8 parallel agents + Fedimint follow-up)
-- Last plan: 2026-05-26 (transport-abstraction upstream PR)
+- Last research session: 2026-05-27 (rc.1 release-notes ingest; iroh-endpoint-and-alpn + iroh-relays re-verified)
+- Last plan: 2026-05-27 (iroh rc.0 → rc.1 bump)
 
 ## Start here
 

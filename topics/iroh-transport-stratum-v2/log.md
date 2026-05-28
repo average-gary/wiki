@@ -11,3 +11,7 @@
 ## [2026-05-23] librarian | structural fix applied: `verified: 2026-05-20` + `volatility:` added to all 14 articles. Tiers: hot for living-doc articles, cold for paper/baseline-grounded articles, warm elsewhere. reference/specs-and-crates tagged `compiled-from: conversation`.
 
 ## [2026-05-26] plan | "draft a branch with the network transport abstraction that would be an upstream PR to sv2-apps" → output/plan-sv2-transport-abstraction-pr-2026-05-26.md (7 articles consulted, 5 decisions, 9 phases)
+
+## [2026-05-27] plan | "update to latest rc for iroh" → output/plan-iroh-rc-1-bump-2026-05-27.md (5 articles + 2 gap-fills consulted, 5 decisions, 6 phases). Gap research found rc.1 published today 2026-05-27; rc.0→rc.1 breakage surface (FourTuple Path API, AccessControl trait, IncomingLocalAddr rename, noq@1.0.0-rc.1) does not intersect SV2 transport code per grep audit.
+
+## [2026-05-27] gap-close | iroh 1.0.0-rc.1 release notes ingested (raw/articles/2026-05-27-iroh-1-0-0-rc-1.md); rc.0→rc.1 has zero impact on SV2 transport surface (verified via cargo build + full integration test suite — pool/jd/translator iroh tests + fallback_iroh_to_tcp all pass on rc.1 with no source code changes). iroh-endpoint-and-alpn.md + iroh-relays.md re-verified against docs.rs/iroh/1.0.0-rc.1; `verified: 2026-05-27`. Sources count 20 → 21.

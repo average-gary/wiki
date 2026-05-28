@@ -3,7 +3,7 @@ title: "iroh: Relays (DERP-style)"
 type: concept
 created: 2026-05-20
 updated: 2026-05-20
-verified: 2026-05-20
+verified: 2026-05-27
 volatility: warm
 confidence: high
 sources:
