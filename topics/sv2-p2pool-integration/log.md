@@ -19,3 +19,7 @@
 ## [2026-05-26] plan | "Phase 1 wiring" → output/plan-phase-1-wiring-2026-05-26.md (12+ articles consulted, 5 architecture decisions, 10 phases)
 
 ## [2026-05-26] research | "regtest test harness similar to fedimint's" → 8 sources ingested, 1 synthesis article (regtest-harness-design)
+
+## [2026-05-26] phase-1 complete | all 10 subphases merged via PRs #23-#28; binary builds + boots + accepts CLI; testenv skeleton ready for Phase 2 spawners
+
+## [2026-05-26] plan | "Phase 2-A: finish in-process share-chain integration" → output/plan-phase-2-2026-05-26.md (8 phases, ~6-7 days, iterative execution)

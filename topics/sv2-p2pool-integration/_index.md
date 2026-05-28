@@ -37,6 +37,7 @@ Topic wiki investigating how [p2poolv2](https://github.com/p2poolv2/p2poolv2) �
 - [[output/plan-sv2-p2pool-repo-2026-05-22|Spec: sv2-p2pool repo (2026-05-22)]] — vendoring plan, full pool replacement, capnp IPC Phase 2
 - [[output/plan-swarm-issues-2026-05-25|Roadmap: agentic swarm closing 9 issues (2026-05-25)]] — DAG, aggressive autonomy on impl, ADRs for design
 - [[output/plan-phase-1-wiring-2026-05-26|Roadmap: Phase 1 wiring (2026-05-26)]] — assemble engine + binary; iterative execution; regtest validation
+- [[output/plan-phase-2-2026-05-26|Roadmap: Phase 2-A (2026-05-26)]] — wire ChainStoreHandle + BitcoindLike into engine; real block reconstruction; E2E regtest test
 
 ## Log
 See [[log]].
