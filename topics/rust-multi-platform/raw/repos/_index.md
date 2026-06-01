@@ -1,10 +1,10 @@
 ---
 title: "Repos"
 type: index
-updated: 2026-05-21
+updated: 2026-06-01
 ---
 
-# Repos (12)
+# Repos (18)
 
 ## Mobile FFI
 - [2026-05-21-uniffi-rs](2026-05-21-uniffi-rs.md) — Mozilla, Swift+Kotlin+Python; UDL or proc-macros
@@ -23,3 +23,11 @@ updated: 2026-05-21
 
 ## WASM
 - [2026-05-21-wasm-bindgen](2026-05-21-wasm-bindgen.md) — Rust↔JS interop, web-sys, js-sys
+
+## Signed-envelope specs
+- [2026-06-01-dsse-envelope-spec](2026-06-01-dsse-envelope-spec.md) — DSSE envelope + PAE protocol (JSON, multi-sig)
+- [2026-06-01-tuf-spec](2026-06-01-tuf-spec.md) — TUF root rotation, dual-signed chain, content-addressed kid
+- [2026-06-01-sigstore-bundle-protobuf](2026-06-01-sigstore-bundle-protobuf.md) — protobuf + media-type versioning
+- [2026-06-01-paseto-v4-public](2026-06-01-paseto-v4-public.md) — version-as-prefix, footer-as-kid
+- [2026-06-01-in-toto-attestation-statement](2026-06-01-in-toto-attestation-statement.md) — three-layer URI versioning
+- [2026-06-01-uptane-standard](2026-06-01-uptane-standard.md) — automotive OTA, threshold + offline root + role separation

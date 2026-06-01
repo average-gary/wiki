@@ -79,6 +79,32 @@
       "created": "2026-05-28",
       "status": "active",
       "summary": "Federated Chaumian e-cash protocol for Bitcoin custody. Architecture (consensus, mint, wallet, lightning, custom modules), federation guardians, threshold custody, Lightning gateways, and ongoing research on multi-currency / multi-denomination support. Comparison with Cashu re: unit handling."
+    },
+    "sv2-coinbase-identity": {
+      "path": "topics/sv2-coinbase-identity",
+      "created": "2026-05-28",
+      "status": "active",
+      "summary": "Thesis: can the Stratum V2 user_identity field on OpenMiningChannel be used by the Pool to embed a per-miner unique tag/marker into the coinbase transaction the Pool constructs, without invoking Job Declaration Protocol? Investigates SV2 spec, sv2-apps Pool implementation, JD-vs-Pool coinbase ownership, per-channel coinbase variation surfaces (extranonce_prefix, NewMiningJob), and miner-tagging patterns."
+    },
+    "stratum-sri": {
+      "path": "topics/stratum-sri",
+      "created": "2026-05-28",
+      "status": "active",
+      "summary": "Stratum Reference Implementation (SRI) — the upstream stratum-mining/stratum repo of low-level SV2 crates: binary-sv2, buffer-sv2, codec-sv2, framing-sv2, noise-sv2, channels-sv2, handlers-sv2, parsers-sv2, extensions-sv2, subprotocols, plus the stratum-core workspace umbrella and stratum-translation (SV1↔SV2). Workspace layout, MSRV, release flow, contributing/security policy, and PR/commit history observed from main."
+    },
+    "sv1-upstream-reverse-translator": {
+      "path": "topics/sv1-upstream-reverse-translator",
+      "created": "2026-05-28",
+      "status": "active",
+      "summary": "Reverse-direction Stratum translator: SV2 stack (miner / proxy / pool-front) talking to a Stratum V1 upstream pool. Inverse of the SRI translator-proxy (which is SV1-miner → SV2-pool). Covers SV2↔SV1 primitive mapping, what SV2 capabilities are lost when upstream is SV1, prior art (Braiins farm-proxy, P2Pool SV1 frontend), SRI architectural placement using channels-sv2 / roles_logic_sv2, and use cases (pool inertia, gradual migration, hashrate brokers, multi-pool failover)."
+    },
+    "datum": {
+      "path": "topics/datum",
+      "created": "2026-05-28",
+      "renamed-from": "datum-gateway",
+      "renamed-on": "2026-06-01",
+      "status": "active",
+      "summary": "OCEAN's DATUM (Decentralized Alternative Templates for Universal Mining) — protocol primary documentation, gateway internals, and the engineering question of an SV2-downstream DATUM-capable proxy. Originally scoped to OCEAN-xyz/datum_gateway (Stratum v1 + GBT + DATUM Protocol upstream); 2026-06-01 broadened to include SV2-downstream architecture, prior art, and operator value/threat model for replacing the gateway's SV1-to-ASIC leg with SV2."
     }
   },
   "local_wikis": [
@@ -97,6 +123,13 @@
       "status": "active",
       "sensitivity": "company-proprietary",
       "summary": "Knowledge base for pool-v4-infra — MARA's Stratum V2 mining pool deployment infrastructure. K8s-vs-alternatives research arc (3 theses), pool-v4-infra repo assessments, primitive-usage catalog, M1 materialize plan, Stack A parallel playbook. Moved out of the public-shareable hub on 2026-05-22 because contents are MARA-specific."
+    },
+    {
+      "name": "garrys-mod",
+      "path": "/Users/garykrause/repos/implementations/garrys-mod/.wiki",
+      "created": "2026-05-28",
+      "status": "active",
+      "summary": "Local wiki for average-gary/bitcoin-garrys-mod — Bitcoin Core fork stacking jamesob's CTV/CSFS branch + Sjors's SV2 Template Provider stack (sv2-tp-0.1.19), activated on testnet4. First plan: rebase onto bitcoin/bitcoin master (5486ef8cc2)."
     }
   ]
 }

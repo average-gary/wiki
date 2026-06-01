@@ -1,10 +1,10 @@
 ---
 title: "Concepts"
 type: index
-updated: 2026-05-21
+updated: 2026-06-01
 ---
 
-# Concept Articles (5)
+# Concept Articles (8)
 
 ## Mobile (FFI + shipping)
 - [[mobile-ffi-decision-tree]] — UniFFI vs swift-bridge vs hand-rolled
@@ -18,3 +18,8 @@ updated: 2026-05-21
 
 ## WASM
 - [[wasm-browser-and-server]] — wasm-bindgen + Trunk + Yew/Leptos/Dioxus-web; Wasmtime + WASI 0.2/0.3
+
+## Edge fleet operations (added 2026-06-01)
+- [[single-slot-fleet-identity]] — Tailscale / K8s StatefulSet / Balena / Mender prior art; failure modes; recommendation
+- [[signed-identity-envelopes]] — TOML/CBOR/Protobuf encoding choices; three-layer versioning; ed25519 rotation idioms
+- [[append-only-audit-logs-edge-rpc]] — device-local Schneier-Kelsey + server-side CT/SCITT; witness frameworks

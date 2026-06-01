@@ -2,7 +2,7 @@
 title: "GTX 1060 6GB Headless AI Server (Ubuntu 22.04)"
 type: topic
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-06-01
 status: active
 ---
 
@@ -35,9 +35,11 @@ Hardware constraint: Pascal sm_61, 6GB VRAM, ~10 TFLOPS FP32, no native FP16/INT
 ## Topic Articles (synthesis)
 
 - [gtx-1060-headless-ai-server-synthesis](wiki/topics/gtx-1060-headless-ai-server-synthesis.md) — actionable single-page summary
+- [iroh-application-patterns-2026-synthesis](wiki/topics/iroh-application-patterns-2026-synthesis.md) — five Iroh-native patterns: multi-ALPN, MoQ, iroh-blobs, iroh-ssh, QR pairing
 
 ## Concept Articles
 
+### Hardware / AI stack
 - [pascal-driver-cuda-pinning](wiki/concepts/pascal-driver-cuda-pinning.md)
 - [ctranslate2-quantization-on-pascal](wiki/concepts/ctranslate2-quantization-on-pascal.md)
 - [faster-whisper-on-gtx-1060](wiki/concepts/faster-whisper-on-gtx-1060.md)
@@ -49,22 +51,41 @@ Hardware constraint: Pascal sm_61, 6GB VRAM, ~10 TFLOPS FP32, no native FP16/INT
 - [gpu-bench-and-smoke-tests](wiki/concepts/gpu-bench-and-smoke-tests.md)
 - [gpu-thermals-and-ops](wiki/concepts/gpu-thermals-and-ops.md)
 
+### Iroh application patterns 2026 (added 2026-06-01)
+- [multi-alpn-router-pattern](wiki/concepts/multi-alpn-router-pattern.md)
+- [moq-over-iroh-pattern](wiki/concepts/moq-over-iroh-pattern.md)
+- [iroh-blobs-resumable-uploads](wiki/concepts/iroh-blobs-resumable-uploads.md)
+- [iroh-as-ssh-transport](wiki/concepts/iroh-as-ssh-transport.md)
+- [iroh-tickets-and-qr-pairing](wiki/concepts/iroh-tickets-and-qr-pairing.md)
+
+### Iroh app token wrapper — Rust implementation (added 2026-06-01, R3)
+- [iroh-app-token-design](wiki/concepts/iroh-app-token-design.md) — token format choice + Rust crate matrix
+- [iroh-app-token-seed-rotation](wiki/concepts/iroh-app-token-seed-rotation.md) — Wesh-style revocation algorithm
+- [iroh-app-token-integration](wiki/concepts/iroh-app-token-integration.md) — AccessLimit + auth-hook + AppTicket bech32
+
 ## Sources
 
-- [raw/_index.md](raw/_index.md) — 30 sources
+- [raw/_index.md](raw/_index.md) — 92 sources
 
 ## Output
 
 - [output/playbook-gtx-1060-headless-ai-server-2026-05-21.md](output/playbook-gtx-1060-headless-ai-server-2026-05-21.md) — end-to-end setup runbook
 - [output/plan-gs63vr-headless-server-2026-05-21.md](output/plan-gs63vr-headless-server-2026-05-21.md) — implementation plan (parallel-track roadmap, Iroh p2p, Android v1 / iOS v2)
+- [output/assess-herd-scout-2026-06-01.md](output/assess-herd-scout-2026-06-01.md) — repo↔wiki↔market gap analysis for the herd-scout livestock-CV product
+- [output/design-iroh-app-token-wrapper-2026-06-01.md](output/design-iroh-app-token-wrapper-2026-06-01.md) — design doc for `iroh-app-token` Rust crate (filling the empty crates.io slot)
 
 ## Stats
 
-- Articles: 11 (1 topic synthesis + 10 concept)
-- Sources ingested: 30 (13 articles, 12 repos, 2 papers, 2 guides, 1 data)
+- Articles: 20 (2 topic syntheses + 18 concept)
+- Sources ingested: 92 (43 articles, 28 repos, 18 papers, 2 guides, 1 data)
 - Playbooks: 1
-- Plans: 1 (roadmap, parallel-track Iroh-everywhere; iOS deferred to v2)
-- Research dates: 2026-05-21 (Round 1, 8-agent --deep, question mode); 2026-05-21 (plan + 2-probe gap research)
+- Plans: 1
+- Designs: 1 (iroh-app-token wrapper)
+- Research dates:
+  - 2026-05-21 (Round 1, 8-agent --deep, question mode) — 30 sources, 11 articles
+  - 2026-05-21 (plan + 2-probe gap research)
+  - 2026-06-01 (Round 2, 8-agent --deep, "Iroh application patterns 2026") — 36 sources, 6 articles
+  - **2026-06-01 (Round 3, 5-agent standard, "iroh app token wrapper Rust impl") — 26 sources, 3 concept articles + 1 design doc**
 
 ## Logs
 
