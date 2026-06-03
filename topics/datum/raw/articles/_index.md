@@ -4,7 +4,7 @@ type: index
 updated: 2026-06-01
 ---
 
-# Articles (35)
+# Articles (60)
 
 ## Contents
 
@@ -62,8 +62,60 @@ updated: 2026-06-01
 - [2026-06-01-path5-braiins-sv2-features.md](2026-06-01-path5-braiins-sv2-features.md)
 - [2026-06-01-path5-template-similarity-bitmex.md](2026-06-01-path5-template-similarity-bitmex.md)
 
+## 2026-06-01 question-mode session — Q1 (drop-in surface)
+
+- [2026-06-01-dropinq1-cli-signals-exitcodes.md](2026-06-01-dropinq1-cli-signals-exitcodes.md)
+- [2026-06-01-dropinq1-log-format-and-rotation.md](2026-06-01-dropinq1-log-format-and-rotation.md)
+- [2026-06-01-dropinq1-network-ports-filesystem-docker.md](2026-06-01-dropinq1-network-ports-filesystem-docker.md)
+- [2026-06-01-dropinq1-ocean-keypair-tides-attribution.md](2026-06-01-dropinq1-ocean-keypair-tides-attribution.md) — **the de-risking finding** (no on-disk state)
+
+## 2026-06-01 — Q2 (Rust DATUM upstream)
+
+- [2026-06-01-dropinq2-rust-libsodium-crate-survey.md](2026-06-01-dropinq2-rust-libsodium-crate-survey.md)
+- [2026-06-01-dropinq2-handshake-and-pubkey-discovery.md](2026-06-01-dropinq2-handshake-and-pubkey-discovery.md)
+- [2026-06-01-dropinq2-rust-implementation-outline.md](2026-06-01-dropinq2-rust-implementation-outline.md)
+- [2026-06-01-dropinq2-known-unknowns-and-risks.md](2026-06-01-dropinq2-known-unknowns-and-risks.md)
+
+## 2026-06-01 — Q3 (non-stratum module ports)
+
+- [2026-06-01-dropinq3-non-stratum-modules.md](2026-06-01-dropinq3-non-stratum-modules.md)
+- [2026-06-01-dropinq3-block-found-flow.md](2026-06-01-dropinq3-block-found-flow.md)
+- [2026-06-01-dropinq3-api-endpoint-inventory.md](2026-06-01-dropinq3-api-endpoint-inventory.md)
+- [2026-06-01-dropinq3-rust-workspace-layout.md](2026-06-01-dropinq3-rust-workspace-layout.md)
+
+## 2026-06-01 — Q4 (dual-protocol downstream + risks)
+
+- [2026-06-01-dropinq4-dual-protocol-port-design.md](2026-06-01-dropinq4-dual-protocol-port-design.md)
+- [2026-06-01-dropinq4-failover-and-version-compat.md](2026-06-01-dropinq4-failover-and-version-compat.md)
+- [2026-06-01-dropinq4-keypair-and-state-persistence.md](2026-06-01-dropinq4-keypair-and-state-persistence.md)
+- [2026-06-01-dropinq4-miner-base-composition.md](2026-06-01-dropinq4-miner-base-composition.md)
+- [2026-06-01-dropinq4-switch-day-runbook-and-risk-matrix.md](2026-06-01-dropinq4-switch-day-runbook-and-risk-matrix.md)
+
+## 2026-06-01 — Q5 (build & distribution)
+
+- [2026-06-01-dropinq5-debian-packaging.md](2026-06-01-dropinq5-debian-packaging.md)
+- [2026-06-01-dropinq5-cmake-and-dockerfile.md](2026-06-01-dropinq5-cmake-and-dockerfile.md)
+- [2026-06-01-dropinq5-startos-package.md](2026-06-01-dropinq5-startos-package.md)
+- [2026-06-01-dropinq5-static-musl-and-coordination.md](2026-06-01-dropinq5-static-musl-and-coordination.md)
+
+## 2026-06-01 — Q6 (bitcoind RPC in Rust)
+
+- [2026-06-01-dropinq6-bitcoincore-rpc-archived.md](2026-06-01-dropinq6-bitcoincore-rpc-archived.md) — **archived 2025-11-25**
+- [2026-06-01-dropinq6-corepc-recommended-successor.md](2026-06-01-dropinq6-corepc-recommended-successor.md)
+- [2026-06-01-dropinq6-async-alternatives-survey.md](2026-06-01-dropinq6-async-alternatives-survey.md)
+- [2026-06-01-dropinq6-c-source-baseline.md](2026-06-01-dropinq6-c-source-baseline.md)
+- [2026-06-01-dropinq6-longpoll-async-pattern.md](2026-06-01-dropinq6-longpoll-async-pattern.md)
+
+## 2026-06-01 — Q7 (operator migration)
+
+- [2026-06-01-dropinq7-c-gateway-keypair-and-version-handshake.md](2026-06-01-dropinq7-c-gateway-keypair-and-version-handshake.md)
+- [2026-06-01-dropinq7-prior-art-survey-bitcoin-core-lnd-startos.md](2026-06-01-dropinq7-prior-art-survey-bitcoin-core-lnd-startos.md)
+- [2026-06-01-dropinq7-switch-day-runbook-draft.md](2026-06-01-dropinq7-switch-day-runbook-draft.md)
+- [2026-06-01-dropinq7-failure-mode-catalog-and-migrating-template.md](2026-06-01-dropinq7-failure-mode-catalog-and-migrating-template.md)
+
 ## Categories
 
 - **datum-collection**: 2026-05-28-datum-gateway-readme.md, 2026-05-28-datum-gateway-usernames.md
 - **ocean-docs collection**: 2026-05-28-ocean-docs-index.md, 2026-05-28-ocean-alternate-templates.md, 2026-05-28-ocean-datum-setup-guide.md, 2026-05-28-ocean-lightning-payouts.md, 2026-05-28-ocean-core-antispam-policy.md, 2026-05-28-ocean-core-policy.md, 2026-05-28-ocean-data-free-policy.md, 2026-05-28-ocean-node-policy.md, 2026-05-28-ocean-tides-technical-documentation.md, 2026-05-28-ocean-origins-of-datum.md, 2026-05-28-ocean-intro-to-lightning.md
-- **2026-06-01 session**: see per-path sections above
+- **2026-06-01 plan-mode session (sidecar)**: see Path 1-5 sections above
+- **2026-06-01 question-mode session (drop-in)**: see Q1-Q7 sections above

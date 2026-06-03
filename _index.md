@@ -2,7 +2,7 @@
 title: Wiki Hub
 type: hub
 created: 2026-05-20
-updated: 2026-05-28
+updated: 2026-06-02
 ---
 
 # Wiki Hub
@@ -40,6 +40,7 @@ LLM-compiled knowledge base. Topic wikis live under `topics/`.
 - **compost-marketplace** at `/Users/garykrause/repos/fGw/.wiki` — Powder Keg WV chapter Farming God's Way compost marketplace on Nostr. (`fGw` repo)
 - **pool-v4-infra** at `/Users/garykrause/repos/pool-v4-infra/.wiki` — MARA Stratum V2 deployment infrastructure. K8s-vs-alternatives research arc, repo assessments, M1 materialize plan, Stack A parallel playbook. *Sensitivity: company-proprietary.* Moved from hub 2026-05-22.
 - **garrys-mod** at `/Users/garykrause/repos/implementations/garrys-mod/.wiki` — `average-gary/bitcoin-garrys-mod` Bitcoin Core fork: jamesob CTV/CSFS + Sjors SV2 Template Provider (`sv2-tp-0.1.19`) + testnet4 activation. First plan: rebase onto bitcoin/bitcoin master HEAD (5486ef8cc2).
+- **christ-is-lord** at `/Users/garykrause/repos/christ-is-lord/.wiki` — v1.0.0 OSS desktop+mobile alternative to Logos.com. Repo-local assessments grounded in hub topics `open-source-logos-suite` (engineering basis) and `rust-multi-platform` (mobile/desktop validation). MIT-licensed; public-oss sensitivity. Created 2026-06-02.
 
 ## Archived Topics
 

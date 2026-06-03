@@ -41,7 +41,7 @@ The wire-level specification is **still not public**, but Path 1 of the 2026-06-
 Pure libsodium primitives. **Not Noise. Not TLS.**
 
 - **Handshake**: client sends a `crypto_box_seal()`-sealed hello carrying long-term + session Ed25519 + X25519 public keys, signed with the long-term Ed25519 key.
-- **Steady state**: `crypto_box_beforenm()` precomputation + `crypto_box_easy_afternm()` (ChaCha20-Poly1305, 24-byte nonces).
+- **Steady state**: `crypto_box_beforenm()` precomputation + `crypto_box_easy_afternm()` (XSalsa20Poly1305, 24-byte nonces — libsodium's `crypto_box_*_easy` default; **NOT** ChaCha20-Poly1305 as previously documented).
 - **Header obfuscation**: separate XOR-feedback chain seeded by client-chosen `nk`, evolved per packet via a MurmurHash3-32 finalizer. Original init constant is `0xb10cfeed`. **PR #202 (open) replaces the seed source with `randombytes_buf()`** — the original entropy was apparently weak.
 
 ## Share submission (`proto_cmd=5`, sub-opcode `0x27`)
@@ -72,6 +72,17 @@ The "unique identifier" is a **16-bit value (max 65,536 miners per pool)** hex-e
 ## DATUM Prime is closed source
 
 OCEAN-xyz GitHub org has only 2 public repos: `datum_gateway` (C client, 145 stars) and `datum-gateway-startos` (TS packaging, 12 stars). The pool-side daemon, TIDES calculator, and share-validation pipeline are all closed-source. **This sets a hard ceiling on offline development**: any third-party proxy, translator, or test harness must integration-test against the live OCEAN pool.
+
+## OCEAN's pool public key is hardcoded
+
+The 2026-06-01 drop-in research session (Q2) found OCEAN's long-term pool pubkey is a hardcoded default in `src/datum_conf.c`: `datum-beta1.mine.ocean.xyz:28915` paired with a 128-hex-char string. First 64 hex chars = Ed25519 public key; last 64 = X25519 public key. Parsed by `datum_pubkey_to_struct()`. Configurable via `datum.pool_host`, `datum.pool_port`, and `datum.pool_pubkey` keys, but most operators use the defaults.
+
+## No long-term gateway identity
+
+The C gateway calls `crypto_sign_keypair()` + `crypto_box_keypair()` fresh on every startup — gateway-side keypairs are **ephemeral, never written to disk**. There is no `--keyfile`, no `~/.datum/keys`, no `datum_keys.json`. This has two consequences:
+
+1. **Drop-in compatibility is free on the keypair axis**: a Rust replacement can adopt the same ephemeral model with zero state migration.
+2. **TIDES share-attribution does NOT key on gateway pubkey**: it keys on the per-share Bitcoin address parsed from `mining.authorize` (or its DATUM-protocol equivalent). Confirmed by reading `datum_protocol.c` share-message construction. Drop-in across binaries inherits the same TIDES window automatically.
 
 ## Stated design goals
 

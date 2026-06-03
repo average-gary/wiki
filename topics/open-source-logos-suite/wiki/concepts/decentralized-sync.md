@@ -2,8 +2,8 @@
 title: Decentralized Sync
 type: concept
 created: 2026-05-27
-updated: 2026-05-27
-verified: 2026-05-27
+updated: 2026-06-02
+verified: 2026-06-02
 volatility: warm
 status: active
 confidence: high
@@ -20,6 +20,8 @@ sources:
 # Decentralized Sync
 
 For user notes, highlights, reading plans, and sermon drafts that need to travel between devices. Honest evaluation of the candidates and the recommended hybrid model.
+
+> **Identity recommendation corrected 2026-06-02.** This article previously recommended ATProto `did:plc` as the primary identity model. Subsequent research at [[nostr-key-rotation]] and the v1.0 implementation choice confirmed Nostr (NIP-22242 + NIP-07) as the right identity layer for a Bible-study app, despite the unsolved rotation gap. **The CRDT-substrate analysis below remains valid; the identity recommendation has flipped.** See [[identity-and-recovery]] for the corrected model.
 
 ## Per-candidate evaluation
 
@@ -131,39 +133,39 @@ Every option fails the non-technical user the same way: **lose all devices = los
 
 **Recommendation**: build on ATProto-style custodial-default. Run a free hosted sync server (or PDS) for the 99%. Document and support self-hosting for the 1%. **NEVER force users to manage keys to use the app.**
 
-## Recommended hybrid model
+## Recommended hybrid model (corrected 2026-06-02)
 
-### Identity: ATProto (`did:plc`)
+### Identity: Nostr (NIP-22242 + NIP-07)
 
-- User signs up; project runs free PDS (or partners with one)
-- Email recovery flow built-in
-- Power users add rotation keys → self-custody
-- Power users self-host PDS → full sovereignty
-- Identity portable: did:plc lets users migrate PDS, keep handle and history
+- User generates or imports an `nsec`; pubkey IS the identity
+- NIP-07 (`window.nostr`) signer ecosystem: Alby, nos2x, Amber (Android), nsec.app (iOS/web)
+- NIP-22242 challenge/verify against the sync server (BIP-340 Schnorr, ±10-min `created_at` skew, atomic challenge consume)
+- Recovery hot path: NIP-46 bunker (the user's nsec lives in a bunker app; clients request signatures over a secure channel without holding the raw nsec)
+- Compromise path: kind:0 social-layer migration convention (best-effort, not a protocol primitive — see [[nostr-key-rotation]] for the rotation-gap caveat)
+- Optional: a secondary did:plc identity for users who want cross-protocol social discovery on Bluesky; treat as a plugin, not the default
 
-### User data CRDT: Yjs OR Automerge
+### User data CRDT: Yjs / yrs (today); evaluate Loro for v0.5+
 
-Pick one. Recommendation: **Yjs** for production-track-record + Rust port (`yrs`).
+- Production-track-record: Linear, JupyterLab RTC, AFFiNE, Evernote
+- Pluggable providers: `y-indexeddb` → `y-websocket` → `Hocuspocus`
+- Y.XmlElement maps to Cascadia-style annotations
+- **Trajectory note (2026-06)**: [[~/wiki/topics/rust-multi-platform/wiki/concepts/loro-vs-y-crdt-mobile|Loro v1.12 has overtaken yrs v0.18]] on the Rust-native-mobile axis (Loro post-1.0, monthly cadence, working UniFFI Swift xcframework; yswift dormant since April 2024; Yjs v14 still in RC). Yjs wire-compat is the only remaining yrs case. Re-evaluate at v0.5+.
 
-- Local: `y-indexeddb` (browser) or sled-backed (desktop)
-- Hosted: project-run `y-websocket` or `Hocuspocus`
-- Self-host: same Hocuspocus, deployed by user
+### Lightweight social: Nostr public sharing (NIP-23 / NIP-51 / NIP-94)
 
-### Lightweight social: Nostr (NIP-51)
+Same identity layer as the primary — no separate Nostr account needed. Public sharing is opt-in per-event-kind:
+- Sermon outlines → NIP-23 long-form (kind 30023)
+- Reading plans + curated libraries → NIP-51 sets (kind 30004 / 30002)
+- Library + plugin manifests → NIP-94 file-metadata (kind 1063)
 
-Optional opt-in feature for users who want public/group sharing:
-- Public reading plans → Nostr replaceable events
-- Shared highlights → Nostr text events
-- Small-group DMs about sermons → encrypted Nostr DMs
-
-This is a *plugin*, not a core dependency.
+The reader/publisher ecosystem already exists: Yakihonne and highlighter.com for long-form; standard NIP-51 set adoption across Damus/Amethyst/Primal.
 
 ### Result
 
-- 99% of users: free hosted account, sync just works, ATProto identity, no keys to manage
-- Power users: self-custody rotation keys + Nostr identity (separate from ATProto)
-- Sovereignty users: self-host PDS + Hocuspocus + Nostr relay
-- Project can shut down: data on disk + ATProto migration + self-host docs = users don't lose anything
+- 99% of users: free hosted Hocuspocus account, sync just works, single Nostr identity for both auth and public sharing
+- Power users: NIP-46 bunker + multiple relay sets they choose from
+- Sovereignty users: self-host Hocuspocus + run their own Nostr relay
+- Project can shut down: data on disk + Nostr nsec is portable to any other Nostr-aware app + content-addressed library packages survive = users don't lose anything
 
 ## What to NOT do
 
@@ -175,6 +177,9 @@ This is a *plugin*, not a core dependency.
 ## See Also
 
 - [[../topics/engineering-playbook|Engineering playbook]]
-- [[identity-and-recovery|Identity and recovery]]
+- [[identity-and-recovery|Identity and recovery]] — corrected 2026-06-02; Nostr is the recommended identity model
+- [[nostr-key-rotation|Nostr key-rotation: 2026 state of the art]] — the rotation gap that drove the correction
+- [[keyhive-small-group-sync|Keyhive: small-group E2EE CRDT sync]] — RIBLT reconciliation backportable into Hocuspocus path
+- [[~/wiki/topics/rust-multi-platform/wiki/concepts/loro-vs-y-crdt-mobile|Loro vs y-crdt for Rust-native mobile CRDT sync]] — substrate trajectory for v0.5+
 - [[credible-exit|Credible exit principle]]
 - [[file-over-app|File over app]]

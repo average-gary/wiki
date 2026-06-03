@@ -130,6 +130,13 @@
       "created": "2026-05-28",
       "status": "active",
       "summary": "Local wiki for average-gary/bitcoin-garrys-mod — Bitcoin Core fork stacking jamesob's CTV/CSFS branch + Sjors's SV2 Template Provider stack (sv2-tp-0.1.19), activated on testnet4. First plan: rebase onto bitcoin/bitcoin master (5486ef8cc2)."
+    },
+    {
+      "name": "christ-is-lord",
+      "path": "/Users/garykrause/repos/christ-is-lord/.wiki",
+      "created": "2026-06-02",
+      "status": "active",
+      "summary": "Knowledge base for christ-is-lord — v1.0.0 OSS desktop+mobile alternative to Logos.com. Repo-local assessments grounded in hub topics open-source-logos-suite (engineering basis) and rust-multi-platform (mobile/desktop validation). MIT-licensed; public-oss sensitivity."
     }
   ]
 }

@@ -1,0 +1,168 @@
+{
+  "scan_id": "2026-06-02T11:00:00Z",
+  "wiki": "open-source-logos-suite",
+  "completed_at": "2026-06-02T11:00:00Z",
+  "post_maintenance_at": "2026-06-02T15:00:00Z",
+  "passes": ["staleness", "quality"],
+  "threshold": 70,
+  "summary": {
+    "articles_scanned": 21,
+    "stale_count": 0,
+    "low_quality_count": 0,
+    "avg_staleness": 99,
+    "avg_quality": 80,
+    "worst_staleness": { "article": "wiki/concepts/biblical-data-licensing.md", "score": 97 },
+    "worst_quality": { "article": "wiki/concepts/file-over-app.md", "score": 65 }
+  },
+  "post_maintenance_changes": {
+    "articles_rewritten_or_edited": [
+      "wiki/concepts/identity-and-recovery.md",
+      "wiki/concepts/credible-exit.md",
+      "wiki/concepts/decentralized-sync.md",
+      "wiki/concepts/ai-bible-study-tools-2026.md",
+      "wiki/concepts/keyhive-small-group-sync.md",
+      "wiki/concepts/walled-translation-api-revocation-history.md",
+      "wiki/decisions/plugin-trust-model.md"
+    ],
+    "raw_sources_added": [
+      "raw/articles/2026-06-02-cyberhaven-chrome-extension-supply-chain.md"
+    ],
+    "content_drift_resolved": true,
+    "no_see_also_flags_cleared": 3,
+    "thin_sources_flag_cleared": ["wiki/decisions/plugin-trust-model.md"]
+  },
+  "advisory_content_drift": [],
+  "articles": {
+    "wiki/concepts/ai-bible-study-tools-2026.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 25, "verification": 25, "compilation": 25, "integrity": 25 } },
+      "quality": { "score": 100, "dimensions": { "depth": 5, "source_quality": 4, "coherence": 5, "utility": 5 }, "flags": [] },
+      "tier": 2,
+      "volatility": "hot"
+    },
+    "wiki/concepts/biblical-data-licensing.md": {
+      "staleness": { "score": 97, "factors": { "source_freshness": 24, "verification": 24, "compilation": 24, "integrity": 25 } },
+      "quality": { "score": 75, "dimensions": { "depth": 4, "source_quality": 5, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/concepts/client-architecture.md": {
+      "staleness": { "score": 97, "factors": { "source_freshness": 24, "verification": 24, "compilation": 24, "integrity": 25 } },
+      "quality": { "score": 70, "dimensions": { "depth": 4, "source_quality": 4, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/concepts/credible-exit.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 25, "verification": 25, "compilation": 25, "integrity": 25 } },
+      "quality": { "score": 80, "dimensions": { "depth": 5, "source_quality": 4, "coherence": 4, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "cold",
+      "note": "Edited 2026-06-02 to reflect Nostr-as-correct-identity correction; verified=2026-06-02."
+    },
+    "wiki/concepts/decentralized-sync.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 25, "verification": 25, "compilation": 25, "integrity": 25 } },
+      "quality": { "score": 80, "dimensions": { "depth": 5, "source_quality": 4, "coherence": 4, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm",
+      "note": "Edited 2026-06-02: identity recommendation flipped to Nostr; CRDT analysis preserved; verified=2026-06-02."
+    },
+    "wiki/concepts/decentralized-text-distribution.md": {
+      "staleness": { "score": 97, "factors": { "source_freshness": 24, "verification": 24, "compilation": 24, "integrity": 25 } },
+      "quality": { "score": 70, "dimensions": { "depth": 4, "source_quality": 4, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/concepts/file-over-app.md": {
+      "staleness": { "score": 99, "factors": { "source_freshness": 25, "verification": 25, "compilation": 25, "integrity": 25 } },
+      "quality": { "score": 65, "dimensions": { "depth": 4, "source_quality": 3, "coherence": 3, "utility": 3 }, "flags": ["thin-sources"] },
+      "tier": 1,
+      "volatility": "cold",
+      "note": "Only 2 sources; topic is well-established design principle so thin sourcing is defensible. No action recommended."
+    },
+    "wiki/concepts/identity-and-recovery.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 25, "verification": 25, "compilation": 25, "integrity": 25 } },
+      "quality": { "score": 95, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 5, "utility": 4 }, "flags": [] },
+      "tier": 2,
+      "volatility": "warm",
+      "note": "Rewritten 2026-06-02: recommendation flipped to Nostr; DID method comparison preserved; 4 new sources added (NIP-26, NIP-46, did:plc spec, nostr-how key safety); verified=2026-06-02."
+    },
+    "wiki/concepts/keyhive-small-group-sync.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 25, "verification": 25, "compilation": 25, "integrity": 25 } },
+      "quality": { "score": 100, "dimensions": { "depth": 5, "source_quality": 4, "coherence": 5, "utility": 5 }, "flags": [] },
+      "tier": 2,
+      "volatility": "hot"
+    },
+    "wiki/concepts/macula-syntactic-search.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 25, "verification": 25, "compilation": 25, "integrity": 25 } },
+      "quality": { "score": 80, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/concepts/nostr-key-rotation.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 25, "verification": 25, "compilation": 25, "integrity": 25 } },
+      "quality": { "score": 80, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/concepts/search-and-indexing.md": {
+      "staleness": { "score": 97, "factors": { "source_freshness": 24, "verification": 24, "compilation": 24, "integrity": 25 } },
+      "quality": { "score": 70, "dimensions": { "depth": 4, "source_quality": 4, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/concepts/study-tool-ux-gap.md": {
+      "staleness": { "score": 97, "factors": { "source_freshness": 24, "verification": 24, "compilation": 24, "integrity": 25 } },
+      "quality": { "score": 70, "dimensions": { "depth": 4, "source_quality": 4, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/concepts/walled-translation-api-revocation-history.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 25, "verification": 25, "compilation": 25, "integrity": 25 } },
+      "quality": { "score": 100, "dimensions": { "depth": 5, "source_quality": 4, "coherence": 5, "utility": 5 }, "flags": [] },
+      "tier": 2,
+      "volatility": "warm"
+    },
+    "wiki/decisions/library-distribution.md": {
+      "staleness": { "score": 99, "factors": { "source_freshness": 25, "verification": 25, "compilation": 25, "integrity": 25 } },
+      "quality": { "score": 70, "dimensions": { "depth": 4, "source_quality": 4, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "cold"
+    },
+    "wiki/decisions/plugin-trust-model.md": {
+      "staleness": { "score": 100, "factors": { "source_freshness": 25, "verification": 25, "compilation": 25, "integrity": 25 } },
+      "quality": { "score": 80, "dimensions": { "depth": 5, "source_quality": 4, "coherence": 4, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "cold",
+      "note": "Updated 2026-06-02: added Cyberhaven 2024-12 supply-chain case as reference threat + 'Update-signature enforcement' section; verified=2026-06-02; thin-sources flag cleared (3 sources now)."
+    },
+    "wiki/reference/decentralized-infra-candidates.md": {
+      "staleness": { "score": 97, "factors": { "source_freshness": 24, "verification": 24, "compilation": 24, "integrity": 25 } },
+      "quality": { "score": 75, "dimensions": { "depth": 4, "source_quality": 5, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/reference/logos-feature-surface.md": {
+      "staleness": { "score": 97, "factors": { "source_freshness": 24, "verification": 24, "compilation": 24, "integrity": 25 } },
+      "quality": { "score": 70, "dimensions": { "depth": 4, "source_quality": 4, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/reference/open-data-corpus.md": {
+      "staleness": { "score": 97, "factors": { "source_freshness": 24, "verification": 24, "compilation": 24, "integrity": 25 } },
+      "quality": { "score": 75, "dimensions": { "depth": 4, "source_quality": 5, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/reference/oss-bible-software-landscape.md": {
+      "staleness": { "score": 97, "factors": { "source_freshness": 24, "verification": 24, "compilation": 24, "integrity": 25 } },
+      "quality": { "score": 75, "dimensions": { "depth": 4, "source_quality": 5, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    },
+    "wiki/topics/engineering-playbook.md": {
+      "staleness": { "score": 97, "factors": { "source_freshness": 24, "verification": 24, "compilation": 24, "integrity": 25 } },
+      "quality": { "score": 80, "dimensions": { "depth": 5, "source_quality": 5, "coherence": 3, "utility": 3 }, "flags": [] },
+      "tier": 1,
+      "volatility": "warm"
+    }
+  }
+}

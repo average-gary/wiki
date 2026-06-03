@@ -2,7 +2,7 @@
 title: Open-Source Logos Suite
 type: topic-index
 created: 2026-05-27
-updated: 2026-05-28
+updated: 2026-06-02
 status: active
 summary: Engineering an open-source application suite with the feature surface of Logos Bible Software (logos.com) — library, reverse interlinear, syntactic search, lexicons, sermon tools, sync — and the question of whether decentralized infrastructure (IPFS, libp2p, Iroh, ATProto, Nostr, Hypercore) can support text distribution, identity, and user-data sync without a central server.
 ---

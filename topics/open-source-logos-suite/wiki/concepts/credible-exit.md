@@ -2,17 +2,18 @@
 title: Credible Exit Principle
 type: concept
 created: 2026-05-27
-updated: 2026-05-27
-verified: 2026-05-27
+updated: 2026-06-02
+verified: 2026-06-02
 volatility: cold
 status: active
 confidence: high
-tags: [decentralized, design-principle, atproto, bluesky]
+tags: [decentralized, design-principle, atproto, bluesky, nostr]
 sources:
   - "[[raw/articles/2026-05-27-case-bluesky-not-decentralized]]"
   - "[[raw/articles/2026-05-27-case-anytype-any-sync]]"
   - "[[raw/articles/2026-05-27-case-nostr-protocol]]"
   - "[[raw/articles/2026-05-27-case-file-over-app]]"
+  - "[[raw/articles/2026-06-02-nostr-how-key-safety-guidance]]"
 ---
 
 # Credible Exit Principle
@@ -95,7 +96,7 @@ Build for credible exit at every layer:
 | **Library** | USFM/JSON files; content-addressed packages users can keep offline |
 | **User data** | Plain markdown + JSONL files |
 | **Sync** | Multiple options (file-based, hosted CRDT, self-host) |
-| **Identity** | Did:plc OR file-only OR Nostr — pluggable |
+| **Identity** | Nostr nsec — portable, signer-pluggable (NIP-07, NIP-46 bunker), works against any relay; nsec backup IS the credible exit. (See [[identity-and-recovery]] for the corrected position; the original 2026-05-27 did:plc recommendation has been superseded.) |
 | **Plugins** | Sandboxed but open API; plugin output written to user files |
 | **Walled translations** | BYO API key — license travels with user, not project |
 
@@ -110,13 +111,13 @@ Build for credible exit at every layer:
 Use decentralized infrastructure where it solves a real problem:
 
 - **Library distribution** — content addressing prevents bit-rot, enables community mirrors, survives the project shutting down. ✅ Use Iroh + HTTPS.
-- **Identity portability** — `did:plc` lets users keep their handle across providers. ✅ Use ATProto identity layer.
+- **Identity portability** — Nostr `nsec` is portable across relays and signer apps; the keypair IS the identity, no host or directory required. ✅ Use Nostr (NIP-22242 + NIP-07). Be honest about the trade-off: rotation is unsolved at the protocol level (see [[nostr-key-rotation]]); the credible-exit story is "your nsec backup is your identity" + a kind:0 social-layer migration convention if compromised.
 - **Tamper detection** — BLAKE3 hashes signed by project key. ✅ Free.
 
 Don't use it where it creates friction without solving anything:
 
 - **Personal notes sync** — ❌ files-on-disk + Yjs hosted is fine
-- **App identity** — ❌ email + password is fine for 99%
+- **App identity recovery for non-technical users** — recommend NIP-46 bunker as the hot path; users who lose nsec without backup retain their on-disk data but lose authorship attribution under that pubkey. (See [[identity-and-recovery]] for the full recovery model.)
 - **Plugin distribution** — ❌ HTTPS + signature is fine
 
 ## The frame for users
@@ -130,4 +131,6 @@ That's the pitch. Decentralization is mechanism, not message.
 - [[file-over-app|File over app]]
 - [[decentralized-sync|Decentralized sync]]
 - [[decentralized-text-distribution|Decentralized text distribution]]
+- [[identity-and-recovery|Identity and recovery]] — corrected 2026-06-02; Nostr is the recommended identity model
+- [[nostr-key-rotation|Nostr key-rotation: 2026 state of the art]] — the rotation gap is real; document it
 - [[../topics/engineering-playbook|Engineering playbook]]

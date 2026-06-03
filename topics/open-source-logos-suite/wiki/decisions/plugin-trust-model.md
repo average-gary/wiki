@@ -2,15 +2,16 @@
 title: Decision — Plugin Trust Model
 type: decision
 created: 2026-05-27
-updated: 2026-05-27
-verified: 2026-05-27
+updated: 2026-06-02
+verified: 2026-06-02
 volatility: cold
 status: active
 confidence: high
-tags: [decision, plugin, trust, sandboxing, capabilities]
+tags: [decision, plugin, trust, sandboxing, capabilities, supply-chain]
 sources:
   - "[[raw/articles/2026-05-27-client-obsidian-plugin-arch]]"
   - "[[raw/articles/2026-05-27-case-file-over-app]]"
+  - "[[raw/articles/2026-06-02-cyberhaven-chrome-extension-supply-chain]]"
 ---
 
 # Decision — Plugin Trust Model
@@ -165,8 +166,29 @@ Plugins are signed by author key. Host verifies signature; warns if unsigned. Th
 - A user grants `network:any` and the plugin abuses it — user's choice
 - Plugin author publishes a backdoored plugin under known author key — out of scope (use marketplace moderation, signed reviews)
 - Side-channel attacks (timing, etc.) — out of scope for v1
+- **Compromised publisher key pushing a malicious update** — see "Update-signature enforcement" below
+
+## Update-signature enforcement (added 2026-06-02)
+
+The capability-manifest design above prevents *new* plugins from launching overprivileged. It does not, by itself, prevent a previously-trusted plugin from being maliciously updated by a compromised publisher account. The [[../../raw/articles/2026-06-02-cyberhaven-chrome-extension-supply-chain|Cyberhaven Chrome extension supply-chain attack of December 2024]] is the canonical reference threat: an attacker phished a publisher's Chrome Web Store account via OAuth-consent-flow phishing, pushed a malicious update to ~400k installed users through the legitimate publishing pipeline, and exfiltrated browser cookies/auth tokens before detection. **The malicious update passed Chrome's review pipeline because the publisher's own credentials signed it** — capability *declaration* doesn't help when the publisher credential is compromised.
+
+The mitigations:
+
+1. **Pin the publisher's Ed25519 key at install time.** Record the Ed25519 pubkey that signed the original `plugin.json`. Updates must be signed by the same key, or the host treats the update as a *new install* requiring user re-grant. This makes the attack's blast radius "users who explicitly accept a key change" rather than "every existing install silently."
+
+2. **Recompute the on-disk plugin.json BLAKE3 at every load** and compare to the value pinned at install. A plugin that is tampered with after install (file replaced on disk, manifest field bumped) fails verification and triggers a re-grant prompt.
+
+3. **Single-FQDN host capabilities limit exfiltration blast radius.** A plugin with `network:host:api.openai.com` cannot suddenly exfiltrate to `attacker.example.com` even if the publisher key is compromised — the host capability is single-FQDN by design and cannot be silently widened.
+
+4. **Per-plugin proxy/keychain integration** so secrets-read capabilities (`secrets.read:esv_api_key`) are mediated by the host process, not the plugin runtime. A compromised plugin's update cannot read secrets that were granted under the prior version's manifest without triggering a re-grant.
+
+5. **Publisher key cold-storage guidance** in the plugin SDK docs. Hot keys (development, CI) should never be the same as the release-signing key; the latter should live offline and be loaded only for release events.
+
+This was tracked in CHANGELOG known-follow-ups as "plugin runtime sandboxing v2" slated for v1.x. The Cyberhaven incident is the reason it has been pulled forward to a v1.0.x maintenance pass; see the gap-closing plan at `/Users/garykrause/repos/christ-is-lord/.wiki/output/plan-gap-closing-post-v1-2026-06-02.md` Phase 2.
 
 ## See Also
 
 - [[../concepts/client-architecture|Client architecture]]
+- [[ai-bible-study-tools-2026|AI Bible-study tools 2026]] — concrete plugin shape demonstrating capability-manifest patterns
+- [[walled-translation-api-revocation-history|Walled translation API revocation history]] — BYO API plugins as the canonical capability-restricted pattern
 - [[../topics/engineering-playbook|Engineering playbook]]

@@ -3,6 +3,7 @@ title: DATUM — Wiki
 type: wiki-root
 created: 2026-05-28
 updated: 2026-06-01
+last-plan: output/plan-bootstrap-datum-rs-2026-06-01.md
 renamed-from: datum-gateway
 renamed-on: 2026-06-01
 scope: hub-topic
@@ -44,16 +45,29 @@ The original scope (2026-05-28) covered the standard [DATUM Gateway](https://git
 - [[wiki/concepts/lightning-payouts|Lightning payouts]]
 - [[wiki/concepts/datum-history-and-motivation|DATUM history and motivation]]
 
-### SV2-downstream DATUM proxy (added 2026-06-01)
+### SV2-downstream DATUM proxy — sidecar pattern (2026-06-01 plan-mode session)
 
-- [[wiki/topics/datum-sv2-proxy-playbook|DATUM SV2-downstream proxy — playbook]] — synthesis topic article (read this first)
+- [[wiki/topics/datum-sv2-proxy-playbook|DATUM SV2-downstream proxy — playbook]] — synthesis topic article (read this first for sidecar)
 - [[wiki/concepts/sv2-downstream-architecture|SV2-downstream architecture]] — SRI codebase mapping; ~1500 LOC new + ~9600 LOC reuse
 - [[wiki/concepts/gateway-internals-c-architecture|Gateway internals — C architecture, threading, queue seam]]
-- [[wiki/concepts/ocean-sv2-stance-and-prior-art|OCEAN's SV2 stance and prior art]] — issue #146, electricalgrade/sv2, OCEAN docs rejection
-- [[wiki/concepts/operator-value-and-threat-model|Operator value and threat model]] — honest read on who deploys this
+- [[wiki/concepts/ocean-sv2-stance-and-prior-art|OCEAN's SV2 stance and prior art]]
+- [[wiki/concepts/operator-value-and-threat-model|Operator value and threat model]]
+
+### Drop-in Rust replacement (2026-06-01 question-mode session — the project endgame)
+
+- [[wiki/topics/drop-in-rust-datum-gateway|Drop-in Rust DATUM gateway — synthesis]] — read this first for drop-in
+- [[output/playbook-drop-in-rust-datum-gateway-2026-06-01|Playbook artifact]] — sequenced action plan (10 steps, ~4,000-5,500 Rust LOC)
+- [[output/plan-bootstrap-datum-rs-2026-06-01|Phase 1 plan: bootstrap datum-rs]] — 5-phase roadmap; full SV1+SV2 dual-protocol drop-in; distribution + observability deferred to Phase 2/3
+- [[wiki/concepts/drop-in-surface-inventory|Drop-in surface inventory]] — 35-row operator-facing surface
+- [[wiki/concepts/datum-protocol-rust-implementation|DATUM Protocol Rust implementation]] — `dryoc 0.8`, cipher correction
+- [[wiki/concepts/drop-in-rust-port-architecture|Rust port architecture]] — 11-crate Cargo workspace, LOC budget
+- [[wiki/concepts/dual-protocol-downstream|Dual-protocol downstream]] — SV1+SV2 in one binary
+- [[wiki/concepts/drop-in-distribution|Drop-in distribution]] — packaging + binary swap
+- [[wiki/concepts/switch-day-runbook|Switch-day runbook]] — F1-F8 failure catalog + MIGRATING.md skeleton
 
 ## Recent Changes
 
+- 2026-06-01: plan — Phase 1 implementation plan for `~/repos/datum-rs/` ([output/plan-bootstrap-datum-rs-2026-06-01.md](output/plan-bootstrap-datum-rs-2026-06-01.md)). Full dual-protocol drop-in: SV1 + SV2 downstream + DATUM upstream + single source-of-truth coinbase array. 5 phases, 8 wiki articles consulted, 9 architecture decisions. Phase 2/3 deferral list per user brief: distribution polish (StartOS, .deb, Docker push), observability extras (Prometheus, structured logs, `--migrate-config`).
 - 2026-06-01: rename `datum-gateway` → `datum`. Scope broadened to include SV2-downstream proxy design. New 5-path research session launched (DATUM protocol primary docs, gateway internals reread, SV2-downstream architecture, prior art, operator value & threat model).
 - 2026-05-28: compile — 11 ocean-docs sources → 4 new articles (datum-history-and-motivation, tides-payout, lightning-payouts, node-policy-variants), 3 updated (datum-gateway-overview, gateway-data-flow, deployment-and-node-config).
 - 2026-05-28: ingest `ocean-docs` — `https://ocean.xyz/docs` index + 10 sub-pages.

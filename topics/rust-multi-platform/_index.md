@@ -2,7 +2,7 @@
 title: "Rust Multi-Platform"
 type: topic
 created: 2026-05-21
-updated: 2026-06-01
+updated: 2026-06-02
 status: active
 ---
 
@@ -61,9 +61,13 @@ Survey the practical surfaces where Rust ships beyond the native Linux/x86 defau
 - [signed-identity-envelopes](wiki/concepts/signed-identity-envelopes.md) — encoding choice; three-layer versioning; ed25519 rotation idioms; hot/cold key split
 - [append-only-audit-logs-edge-rpc](wiki/concepts/append-only-audit-logs-edge-rpc.md) — device-local + server-side; SCITT shape; witness frameworks; throughput
 
+### Round 3 — christ-is-lord assess follow-up (2026-06-02)
+
+- [loro-vs-y-crdt-mobile](wiki/concepts/loro-vs-y-crdt-mobile.md) — Loro v1.12 (post-1.0, monthly cadence, UniFFI Swift xcframework) has overtaken yrs (v0.18 pre-1.0; yswift dormant at v0.2.1) as the Rust-native mobile CRDT substrate. Yjs v13 wire-compat preserves the only yrs case.
+
 ## Sources
 
-- [raw/_index.md](raw/_index.md) — 72 sources (29 from Round 1 + 43 from Round 2)
+- [raw/_index.md](raw/_index.md) — 83 sources (29 Round 1 + 43 Round 2 + 11 Round 3)
 
 ## Output
 
@@ -71,11 +75,12 @@ Survey the practical surfaces where Rust ships beyond the native Linux/x86 defau
 
 ## Stats
 
-- Articles: 10 (2 topic synthesis + 8 concept)
-- Sources ingested: 72 (40 articles, 18 repos, 5 guides, 8 papers, 1 data)
+- Articles: 11 (2 topic synthesis + 9 concept)
+- Sources ingested: 83 (51 articles, 18 repos, 5 guides, 8 papers, 1 data)
 - Research rounds:
   - 2026-05-21 — Round 1 (8-agent --deep, topic mode, 4 deployment scopes)
   - 2026-06-01 — Round 2 (8-agent --deep, topic mode, 3 fleet-ops pillars)
+  - 2026-06-02 — Round 3 (1 agent — Loro vs yrs, in support of christ-is-lord assess)
 
 ## Logs
 
