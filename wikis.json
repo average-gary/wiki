@@ -105,6 +105,12 @@
       "renamed-on": "2026-06-01",
       "status": "active",
       "summary": "OCEAN's DATUM (Decentralized Alternative Templates for Universal Mining) — protocol primary documentation, gateway internals, and the engineering question of an SV2-downstream DATUM-capable proxy. Originally scoped to OCEAN-xyz/datum_gateway (Stratum v1 + GBT + DATUM Protocol upstream); 2026-06-01 broadened to include SV2-downstream architecture, prior art, and operator value/threat model for replacing the gateway's SV1-to-ASIC leg with SV2."
+    },
+    "clink-protocol": {
+      "path": "topics/clink-protocol",
+      "created": "2026-06-09",
+      "status": "active",
+      "summary": "CLINK (Common Lightning Interface for Nostr Keys) — ShockNet-led Nostr-native standards for Lightning Network interactions. Three primitives (Offers, Debits, Manage), Nostr transport (NIP-05 identifiers, signed events, blinded paths, web-of-trust) replacing LNURL's HTTPS dependency. Comparisons to BOLT12, NWC (NIP-47), zaps (NIP-57), Lightning Address. Reference apps from ShockNet (Lightning.Pub, Shockwallet) and interoperating clients."
     }
   },
   "local_wikis": [

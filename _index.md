@@ -2,7 +2,7 @@
 title: Wiki Hub
 type: hub
 created: 2026-05-20
-updated: 2026-06-02
+updated: 2026-06-09
 ---
 
 # Wiki Hub
@@ -34,6 +34,7 @@ LLM-compiled knowledge base. Topic wikis live under `topics/`.
 - [stratum-sri](topics/stratum-sri/_index.md) — Stratum Reference Implementation (SRI) low-level repo (`stratum-mining/stratum`): the SV2 crate suite (`binary-sv2`/`codec-sv2`/`framing-sv2`/`noise-sv2`/`channels-sv2`/`handlers-sv2`/`parsers-sv2`/`extensions-sv2`/`subprotocols`), the `stratum-core` workspace umbrella, and `stratum-translation` (SV1↔SV2). Workspace layout, MSRV, release flow.
 - [sv1-upstream-reverse-translator](topics/sv1-upstream-reverse-translator/_index.md) — Reverse-direction Stratum translator: SV2 stack (miner / proxy / pool-front) talking to a Stratum V1 upstream pool. Inverse of the SRI translator-proxy. SV2↔SV1 primitive mapping, lost SV2 capabilities, prior art (Braiins farm-proxy, P2Pool SV1 frontend), SRI architectural placement (`channels-sv2`/`roles_logic_sv2`), and use cases (pool inertia, gradual migration, hashrate brokers, multi-pool failover).
 - [datum](topics/datum/_index.md) — OCEAN's DATUM (Decentralized Alternative Templates for Universal Mining) protocol and gateway, plus the engineering question of an SV2-downstream DATUM-capable proxy. Renamed from `datum-gateway` 2026-06-01 with scope broadened to include SV2-front proxy design (replacing the gateway's SV1-to-ASIC leg with SV2 channels while keeping DATUM upstream to OCEAN).
+- [clink-protocol](topics/clink-protocol/_index.md) — CLINK (Common Lightning Interface for Nostr Keys) — ShockNet-led Nostr-native standards for Lightning interactions. Three primitives (Offers, Debits, Manage), Nostr transport replacing LNURL's HTTPS dependency. Compared to BOLT12, NWC (NIP-47), zaps (NIP-57), Lightning Address. Reference apps from ShockNet plus interoperating clients.
 
 ## Local Topics
 
