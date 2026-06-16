@@ -2,7 +2,7 @@
 title: Wiki Hub
 type: hub
 created: 2026-05-20
-updated: 2026-06-09
+updated: 2026-06-15
 ---
 
 # Wiki Hub
@@ -35,6 +35,8 @@ LLM-compiled knowledge base. Topic wikis live under `topics/`.
 - [sv1-upstream-reverse-translator](topics/sv1-upstream-reverse-translator/_index.md) — Reverse-direction Stratum translator: SV2 stack (miner / proxy / pool-front) talking to a Stratum V1 upstream pool. Inverse of the SRI translator-proxy. SV2↔SV1 primitive mapping, lost SV2 capabilities, prior art (Braiins farm-proxy, P2Pool SV1 frontend), SRI architectural placement (`channels-sv2`/`roles_logic_sv2`), and use cases (pool inertia, gradual migration, hashrate brokers, multi-pool failover).
 - [datum](topics/datum/_index.md) — OCEAN's DATUM (Decentralized Alternative Templates for Universal Mining) protocol and gateway, plus the engineering question of an SV2-downstream DATUM-capable proxy. Renamed from `datum-gateway` 2026-06-01 with scope broadened to include SV2-front proxy design (replacing the gateway's SV1-to-ASIC leg with SV2 channels while keeping DATUM upstream to OCEAN).
 - [clink-protocol](topics/clink-protocol/_index.md) — CLINK (Common Lightning Interface for Nostr Keys) — ShockNet-led Nostr-native standards for Lightning interactions. Three primitives (Offers, Debits, Manage), Nostr transport replacing LNURL's HTTPS dependency. Compared to BOLT12, NWC (NIP-47), zaps (NIP-57), Lightning Address. Reference apps from ShockNet plus interoperating clients.
+- [nixos-reproducible-builds-bitcoin](topics/nixos-reproducible-builds-bitcoin/_index.md) — Nix and NixOS for reproducible builds of Bitcoin projects. Nix primitives (flakes, fixed-output / content-addressed derivations, store-hashing, IFD, bootstrap chain), Bitcoin Core's actual deterministic-build path (Gitian → Guix, with Nix as adjacent ecosystem), and the Nix-flake stacks shipped by Bitcoin downstreams (NixBitcoin, BTCPayServer, Fedimint, LDK, sv2-apps, signing-device firmware). Reproducibility verification, supply-chain provenance (SLSA, in-toto), tradeoffs vs Guix.
+- [bevy-game-engine](topics/bevy-game-engine/_index.md) — Bevy: data-driven Rust game engine + app framework (MIT/Apache-2.0). ECS architecture, wgpu renderer, plugin/scheduler/archetype design, ecosystem (bevy_rapier, avian, bevy_egui, lightyear, bevy_replicon), editor situation, production users, and comparisons vs Godot/Unity/Unreal/Fyrox.
 
 ## Local Topics
 

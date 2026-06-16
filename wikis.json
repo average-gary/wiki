@@ -111,6 +111,18 @@
       "created": "2026-06-09",
       "status": "active",
       "summary": "CLINK (Common Lightning Interface for Nostr Keys) — ShockNet-led Nostr-native standards for Lightning Network interactions. Three primitives (Offers, Debits, Manage), Nostr transport (NIP-05 identifiers, signed events, blinded paths, web-of-trust) replacing LNURL's HTTPS dependency. Comparisons to BOLT12, NWC (NIP-47), zaps (NIP-57), Lightning Address. Reference apps from ShockNet (Lightning.Pub, Shockwallet) and interoperating clients."
+    },
+    "nixos-reproducible-builds-bitcoin": {
+      "path": "topics/nixos-reproducible-builds-bitcoin",
+      "created": "2026-06-15",
+      "status": "active",
+      "summary": "Nix and NixOS for reproducible builds of Bitcoin projects. Covers Nix primitives (flakes, fixed-output / content-addressed derivations, store-hashing, IFD, bootstrap chain), Bitcoin Core's actual deterministic-build path (Gitian → Guix, with Nix as adjacent ecosystem), and the Nix-flake stacks shipped by Bitcoin downstreams (NixBitcoin, BTCPayServer Nix module, Fedimint, LDK, sv2-apps, Krux/ColdCard firmware). Reproducibility verification, supply-chain provenance (SLSA, in-toto), and tradeoffs vs Guix."
+    },
+    "bevy-game-engine": {
+      "path": "topics/bevy-game-engine",
+      "created": "2026-06-15",
+      "status": "active",
+      "summary": "Bevy — refreshingly-simple data-driven Rust game engine and app framework (MIT/Apache-2.0). ECS architecture, wgpu-based renderer, scheduler / archetype storage / plugin system, ecosystem (bevy_rapier, avian, bevy_egui, lightyear, bevy_replicon), editor situation, production users, and comparisons vs Godot/Unity/Unreal/Fyrox/Macroquad. Covers the Bevy 0.x → 1.0 trajectory, criticisms/limitations, and Bevy as a non-game application framework."
     }
   },
   "local_wikis": [
