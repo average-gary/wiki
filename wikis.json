@@ -123,6 +123,18 @@
       "created": "2026-06-15",
       "status": "active",
       "summary": "Bevy — refreshingly-simple data-driven Rust game engine and app framework (MIT/Apache-2.0). ECS architecture, wgpu-based renderer, scheduler / archetype storage / plugin system, ecosystem (bevy_rapier, avian, bevy_egui, lightyear, bevy_replicon), editor situation, production users, and comparisons vs Godot/Unity/Unreal/Fyrox/Macroquad. Covers the Bevy 0.x → 1.0 trajectory, criticisms/limitations, and Bevy as a non-game application framework."
+    },
+    "nostr-ecash-gaming": {
+      "path": "topics/nostr-ecash-gaming",
+      "created": "2026-06-17",
+      "status": "active",
+      "summary": "Game engines, protocols, and specs that combine Nostr (event transport, identity, NIPs) with Cashu/Fedimint ecash (bearer tokens, blinded notes, mints) for game state, in-game economy, and item ownership. Anchored on Ethan Tuttle's nutchain / kirk / manastr trio plus broader landscape (ZapArcade, AwakeMSE, Cashu game integrations, NIP-90 DVMs, NUT-11 P2PK)."
+    },
+    "open-source-civ-likes": {
+      "path": "topics/open-source-civ-likes",
+      "created": "2026-06-18",
+      "status": "active",
+      "summary": "Open-source / free software games in the Civilization-like (4X, grand strategy, empire-building) genre. Long-running implementations (Freeciv, C-evo), modern revivals (Freeciv21, Unciv), genre-adjacent OSS 4X (0 A.D., Unknown Horizons, OpenAge, Freeland), engines (Godot, Bevy, Qt, libSDL, web stacks), modding ecosystems, AI implementations, multiplayer architecture (turn-sync, lockstep, web), and licensing/governance."
     }
   },
   "local_wikis": [

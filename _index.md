@@ -2,7 +2,7 @@
 title: Wiki Hub
 type: hub
 created: 2026-05-20
-updated: 2026-06-15
+updated: 2026-06-18
 ---
 
 # Wiki Hub
@@ -37,6 +37,8 @@ LLM-compiled knowledge base. Topic wikis live under `topics/`.
 - [clink-protocol](topics/clink-protocol/_index.md) — CLINK (Common Lightning Interface for Nostr Keys) — ShockNet-led Nostr-native standards for Lightning interactions. Three primitives (Offers, Debits, Manage), Nostr transport replacing LNURL's HTTPS dependency. Compared to BOLT12, NWC (NIP-47), zaps (NIP-57), Lightning Address. Reference apps from ShockNet plus interoperating clients.
 - [nixos-reproducible-builds-bitcoin](topics/nixos-reproducible-builds-bitcoin/_index.md) — Nix and NixOS for reproducible builds of Bitcoin projects. Nix primitives (flakes, fixed-output / content-addressed derivations, store-hashing, IFD, bootstrap chain), Bitcoin Core's actual deterministic-build path (Gitian → Guix, with Nix as adjacent ecosystem), and the Nix-flake stacks shipped by Bitcoin downstreams (NixBitcoin, BTCPayServer, Fedimint, LDK, sv2-apps, signing-device firmware). Reproducibility verification, supply-chain provenance (SLSA, in-toto), tradeoffs vs Guix.
 - [bevy-game-engine](topics/bevy-game-engine/_index.md) — Bevy: data-driven Rust game engine + app framework (MIT/Apache-2.0). ECS architecture, wgpu renderer, plugin/scheduler/archetype design, ecosystem (bevy_rapier, avian, bevy_egui, lightyear, bevy_replicon), editor situation, production users, and comparisons vs Godot/Unity/Unreal/Fyrox.
+- [nostr-ecash-gaming](topics/nostr-ecash-gaming/_index.md) — Game engines and protocols that fuse Nostr (event transport, identity, NIPs) with Cashu/Fedimint ecash (bearer tokens, blinded notes, mints) for game state, economy, and item ownership. Anchored on Ethan Tuttle's nutchain / kirk / manastr trio.
+- [open-source-civ-likes](topics/open-source-civ-likes/_index.md) — Open-source civilization-like / 4X games. Freeciv (and Freeciv21, Freeciv-web), C-evo, Unciv, 0 A.D., Unknown Horizons, OpenAge, Freeland; engines, modding, AI, multiplayer architecture, licensing.
 
 ## Local Topics
 
