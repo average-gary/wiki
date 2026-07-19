@@ -1,10 +1,20 @@
 ---
 title: p2pool / p2poolv2 — share-chain accounting
-type: concept
+category: concept
 created: 2026-05-23
-updated: 2026-05-24
 confidence: high
 tags: [p2pool, p2poolv2, share-chain, decentralized, on-chain-PPLNS, work-bounded-window]
+volatility: warm
+updated: 2026-07-17
+verified: 2026-07-17
+sources:
+  - "raw/articles/2026-05-23-p2pool-historical-hashrate.md"
+  - "raw/articles/2026-05-24-jungly-delvingbitcoin-p2share.md"
+  - "raw/articles/2026-05-24-p2poolv2-pplns-with-decay-wiki.md"
+  - "raw/articles/2026-05-24-p2poolv2-trading-shares-htlc.md"
+  - "raw/articles/2026-05-24-p2poolv2-uncle-blocks-wiki.md"
+  - "raw/repos/2026-05-23-p2pool-and-p2poolv2.md"
+  - "raw/repos/2026-05-24-p2poolv2-accounting-modules.md"
 ---
 
 # p2pool / p2poolv2 share-chain
@@ -130,4 +140,5 @@ Each project removes a different point of trust:
 - [[../topics/payout-design-space|Payout Design Space]]
 - [[../topics/decentralization-and-pool-concentration|Decentralization & Pool Concentration]]
 - [[../topics/p2poolv2-and-256-foundation|p2poolv2 ↔ 256 Foundation relationship]]
+- [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — the CTV coinbase fanout whose MuSig-node endgame targets a P2Pool reboot; both attack the coinbase output-count cap
 - Sister wiki: [[../../../sv2-p2pool-integration/_index|sv2-p2pool-integration]]

@@ -1,0 +1,34 @@
+---
+title: Articles
+type: index
+updated: 2026-07-16
+---
+
+# Articles (18)
+
+## Contents
+
+| File | Summary | Tags | Updated |
+|------|---------|------|---------|
+| [2026-07-16-bip-118-anyprevout-spec.md](2026-07-16-bip-118-anyprevout-spec.md) | Normative BIP-118 spec: APO (0x40) / APOAS (0xc0) flag bytes, exact omission rules, 0x01 pubkey-prefix opt-in, key_version=0x01, tapscript-only, replay tradeoff. | bip-118, anyprevout, apo, apoas, sighash, taproot, specification | 2026-07-16 |
+| [2026-07-16-bip-341-342-taproot-sighash-baseline.md](2026-07-16-bip-341-342-taproot-sighash-baseline.md) | BIP-341/342 SigMsg field layout that BIP-118 is a delta on (sha_prevouts/amounts/scriptpubkeys/sequences, ANYONECANPAY per-input fields, tapleaf_hash, key_version, codesep_pos). | bip-341, bip-342, taproot, tapscript, sighash, baseline | 2026-07-16 |
+| [2026-07-16-optech-anyprevout-topic.md](2026-07-16-optech-anyprevout-topic.md) | Optech APO topic: rebindable-signatures definition, NOINPUT → NOINPUT_UNSAFE → ANYPREVOUT naming history, use-case list (eltoo, CoinPool, DLC, drivechains). | optech, anyprevout, naming-history, use-cases | 2026-07-16 |
+| [2026-07-16-decker-eltoo-blockstream-blog.md](2026-07-16-decker-eltoo-blockstream-blog.md) | Christian Decker's eltoo explainer: 'toxic information' problem, NOINPUT short-circuiting, blockchain-as-court analogy, channel factories. | eltoo, ln-symmetry, sighash-noinput, toxic-information, decker | 2026-07-16 |
+| [2026-07-16-optech-eltoo-topic.md](2026-07-16-optech-eltoo-topic.md) | Optech eltoo topic: old-state broadcast costs only fees, latest-state-only storage, multi-party/channel-factory benefits, LN-Symmetry rename, pinning mitigation. | optech, eltoo, ln-symmetry, anyprevout, pinning | 2026-07-16 |
+| [2026-07-16-delving-bitcoin-inquisition-29-signet-status.md](2026-07-16-delving-bitcoin-inquisition-29-signet-status.md) | ajtowns: APO active on Inquisition signet since block 106704 (2022-09-06), bundled w/ CTV/CAT/CSFS/INTERNALKEY; still signet-only as of 29.2 (Feb 2026); no mainnet. | bitcoin-inquisition, signet, anyprevout, activation-status, ajtowns | 2026-07-16 |
+| [2026-07-16-delving-bitcoin-ctv-csfs-consensus-first-step.md](2026-07-16-delving-bitcoin-ctv-csfs-consensus-first-step.md) | March 2025 debate: CTV+CSFS (LNHANCE) as covenant 'first step' vs standalone APO; Roose claims CTV+CSFS emulates APO; ajtowns (APO co-author) skeptical. | ctv, csfs, lnhance, activation-debate, ajtowns | 2026-07-16 |
+| [2026-07-16-delving-bitcoin-ln-symmetry-recap.md](2026-07-16-delving-bitcoin-ln-symmetry-recap.md) | Instagibbs/ajtowns/Rusty LN-Symmetry PoC: TRUC + ephemeral anchors, fast-forward forwards; 'pinning super hard to avoid (1/3 of the work)'; Jan 2026 rebase on inquisition 29.x. | ln-symmetry, eltoo, instagibbs, pinning, truc, implementation-status | 2026-07-16 |
+| [2026-07-16-chaincode-podcast-anyprevout-instagibbs.md](2026-07-16-chaincode-podcast-anyprevout-instagibbs.md) | Greg Sanders declines to champion APO activation ('community pretty split'); LN-Symmetry uses APOAS; build tooling (package relay, anchors) before consensus change. | anyprevout, apoas, ln-symmetry, activation-politics, instagibbs | 2026-07-16 |
+| [2026-07-16-delving-bitcoin-braidpool-covenants-apo-ctv.md](2026-07-16-delving-bitcoin-braidpool-covenants-apo-ctv.md) | THE anchor source: APO input-side ('pre-sign next state before it hits chain') + CTV output-side for Braidpool payouts; on-chain demo of one APO sig spending 2 UTXOs (diff txids); 100-block maturity flagged unresolved. | braidpool, mining-payout, anyprevout, ctv, coinbase-presigning, on-chain-demo | 2026-07-16 |
+| [2026-07-16-delving-bitcoin-jamesob-ctv-noncustodial-mining-payouts.md](2026-07-16-delving-bitcoin-jamesob-ctv-noncustodial-mining-payouts.md) | jamesob canonical CTV mining-payout design: coinbase scriptPubKey commits to fanout template, no advance sig needed; maturity ('sit 100 blocks'); CPFP/ANYONECANPAY fee-bump. | ctv, mining-payout, noncustodial, coinbase, coinbase-maturity, jamesob | 2026-07-16 |
+| [2026-07-16-delving-bitcoin-ctv-apo-cat-signet-activity.md](2026-07-16-delving-bitcoin-ctv-apo-cat-signet-activity.md) | On-chain proof: one APOAS signature spends MANY distinct coinbase outputs on signet, 'large amounts lost to fees' — direct symptom of APOAS's dropped amount-commitment. | anyprevout, apoas, signet, coinbase, on-chain-evidence, fee-leakage | 2026-07-16 |
+| [2026-07-16-somsen-blind-merged-mining-anyprevout.md](2026-07-16-somsen-blind-merged-mining-anyprevout.md) | Ruben Somsen BMM: chain of ANYPREVOUT txs each spendable by the next (sig in output script = covenant); s=1+e trick makes sigs publicly computable (key security irrelevant). | blind-merged-mining, anyprevout, covenant, presigned-chain, s-equals-1-trick | 2026-07-16 |
+| [2026-07-16-delving-bitcoin-txhash-csfs-decomposition.md](2026-07-16-delving-bitcoin-txhash-csfs-decomposition.md) | CTV=locking-script commitment vs APO=unlock-script signature; both decompose to TXHASH+CSFS; hash mode must be committed; APO SINGLE modes enable recursion. | ctv, anyprevout, txhash, csfs, locking-vs-unlocking, recursion | 2026-07-16 |
+| [2026-07-16-cointelegraph-covenants-part3-anyprevout.md](2026-07-16-cointelegraph-covenants-part3-anyprevout.md) | Secondary explainer: replay high-risk scenarios, APO commits to amount+script (APOAS drops both), presigning value-mismatch footgun (surplus lost to miners), not recursive. | anyprevout, apoas, signature-replay, presigning, amount-commitment, value-mismatch | 2026-07-16 |
+| [2026-07-16-chaperone-signatures-mailing-list.md](2026-07-16-chaperone-signatures-mailing-list.md) | Chaperone-signature history: extra SIGHASH_ALL sig to block third-party replay, ultimately dropped; BIP-118 relies on 0x01 opt-in + tapscript scoping; key-path exclusion rationale. | chaperone-signatures, anyprevout, noinput, signature-replay, mailing-list | 2026-07-16 |
+| [2026-07-16-spark-covenant-proposals-compared.md](2026-07-16-spark-covenant-proposals-compared.md) | Covenant comparison matrix (CTV/APO/CAT/TXHASH/OP_VAULT); use-case fit (structural, higher confidence); 2026 activation numbers flagged LOW CONFIDENCE unverified. | covenant-comparison, ctv, anyprevout, lnhance, activation-status, unverified-numbers | 2026-07-16 |
+| [2026-07-16-learnmeabitcoin-coinbase-transaction.md](2026-07-16-learnmeabitcoin-coinbase-transaction.md) | Why coinbase txid is unknowable pre-mining (BIP-34 height, extranonce, miner tags) + 100-block maturity rule; grounds the presign-against-unknown-outpoint problem. | coinbase-transaction, coinbase-maturity, txid, bip-34, reference | 2026-07-16 |
+
+## Recent Changes
+
+- 2026-07-16: ingest — 14 articles from the 6-agent research swarm (spec/semantics, status, motivation, coinbase-presigning, alternatives, limitations).

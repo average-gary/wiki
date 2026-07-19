@@ -1,10 +1,15 @@
 ---
 title: Radpool
-type: concept
+category: concept
 created: 2026-05-26
-updated: 2026-05-26
 confidence: medium
 tags: [radpool, jungly, dlc, frost, decentralized-fpps, novel-accounting]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-24-jungly-delvingbitcoin-p2share.md"
+  - "raw/articles/2026-05-26-radpool-delvingbitcoin.md"
 ---
 
 # Radpool

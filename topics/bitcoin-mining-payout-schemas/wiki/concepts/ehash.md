@@ -1,9 +1,21 @@
 ---
 title: eHash / Hashpool — Cashu ecash share tokens
-type: concept
+category: concept
 created: 2026-05-23
 confidence: medium
 tags: [eHash, hashpool, Cashu, blind-signature, accountless, custodial-mint]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-24-cashu-mining-application.md"
+  - "raw/articles/2026-05-24-ethntuttle-profile.md"
+  - "raw/articles/2026-05-24-hashpool-architecture-deep.md"
+  - "raw/articles/2026-05-24-hashpool-critiques-deepened.md"
+  - "raw/articles/2026-05-24-hashpool-news-2024-2026.md"
+  - "raw/articles/2026-05-24-vnprc-profile.md"
+  - "raw/repos/2026-05-23-cashu-nuts.md"
+  - "raw/repos/2026-05-23-hashpool-vnprc.md"
 ---
 
 # eHash / Hashpool

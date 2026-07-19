@@ -1,10 +1,19 @@
 ---
 title: Parasite Pool
-type: concept
+category: concept
 created: 2026-05-26
-updated: 2026-05-26
 confidence: medium
 tags: [parasite-pool, zk-shark, lottery-pplns, lightning-payouts, novel-accounting, custodial]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-26-bitcoin-manual-parasite-pool.md"
+  - "raw/articles/2026-05-26-blockspace-media-parasite-emerges.md"
+  - "raw/articles/2026-05-26-coindesk-parasite-second-block.md"
+  - "raw/articles/2026-05-26-solosatoshi-bitaxe-parasite-setup.md"
+  - "raw/articles/2026-05-26-zkshark-parasite-pool-substack.md"
+  - "raw/repos/2026-05-26-parasitepool-para-github.md"
 ---
 
 # Parasite Pool

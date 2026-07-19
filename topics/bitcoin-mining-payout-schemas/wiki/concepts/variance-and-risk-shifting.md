@@ -1,9 +1,17 @@
 ---
 title: Variance & Risk-Shifting in Pool Payout Schemes
-type: concept
+category: concept
 created: 2026-05-23
 confidence: high
 tags: [variance, risk, FPPS, PPLNS, Chatzigiannis, Rosenfeld]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-23-hashrate-index-pintos-payout-guide.md"
+  - "raw/articles/2026-05-23-heatpunks-tides-vs-fpps-experiment.md"
+  - "raw/papers/2026-05-23-chatzigiannis-2022-diversification.md"
+  - "raw/papers/2026-05-23-rosenfeld-2011-pool-reward-analysis.md"
 ---
 
 # Variance & Risk-Shifting

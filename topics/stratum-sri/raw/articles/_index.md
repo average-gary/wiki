@@ -1,6 +1,6 @@
 # Articles Index
 
-Last updated: 2026-05-28
+Last updated: 2026-07-17
 
 ## Contents
 
@@ -32,7 +32,9 @@ Last updated: 2026-05-28
 | [job_declaration_sv2 (sv2/subprotocols/job-declaration/README.md)](2026-05-28-stratum-sri-sv2-subprotocols-job-declaration-readme.md) | `job_declaration_sv2` is a Rust `#![no-std]` crate that contains the messages defined in the Job Declaration Protocol of Stratum V2. This… | collection, stratum-sri, subprotocols, subprotocol-job-declaration | 2026-05-28 |
 | [mining_sv2 (sv2/subprotocols/mining/README.md)](2026-05-28-stratum-sri-sv2-subprotocols-mining-readme.md) | `mining_sv2` is a Rust `#![no_std]` crate that implements a set of messages defined in the Mining protocol of Stratum V2. The Mining prot… | collection, stratum-sri, subprotocols, subprotocol-mining | 2026-05-28 |
 | [template_distribution_sv2 (sv2/subprotocols/template-distribution/R…](2026-05-28-stratum-sri-sv2-subprotocols-template-distribution-readme.md) | `template_distribution_sv2` is a Rust `#![no_std]` crate that implements a set of messages defined in the Template Distribution Protocol … | collection, stratum-sri, subprotocols, subprotocol-template-distribution | 2026-05-28 |
+| [SV2 Extension 0x0001: Extensions Negotiation (sv2-spec)](2026-07-17-sv2-spec-extensions-negotiation.md) | Normative spec: RequestExtensions / .Success / .Error handshake after SetupConnection; resolves sv2-spec #95 (positive-ACK, not universal NACK). | sv2-spec, extensions, extension-negotiation, RequestExtensions, extension-0x0001, normative-spec | 2026-07-17 |
 
 ## Categories
 
-- **collection: stratum-sri (git, HEAD 65c9688c)**: all entries above. Manifest: [`../repos/2026-05-28-collection-stratum-sri-git.md`](../repos/2026-05-28-collection-stratum-sri-git.md).
+- **collection: stratum-sri (git, HEAD 65c9688c)**: all entries except where noted. Manifest: [`../repos/2026-05-28-collection-stratum-sri-git.md`](../repos/2026-05-28-collection-stratum-sri-git.md).
+- **sv2-spec extensions (standalone ingests, 2026-07-17)**: [`2026-07-17-sv2-spec-extensions-negotiation.md`](2026-07-17-sv2-spec-extensions-negotiation.md) (normative 0x0001 spec) — pairs with the design-debate note [`../notes/2026-07-17-sv2-spec-issue-95-unknown-extensions.md`](../notes/2026-07-17-sv2-spec-issue-95-unknown-extensions.md).

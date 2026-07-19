@@ -1,10 +1,23 @@
 ---
 title: Payout Schema Taxonomy
-type: concept
+category: concept
 created: 2026-05-23
-updated: 2026-05-23
 confidence: high
 tags: [PPS, PPLNS, FPPS, PPS+, taxonomy]
+volatility: warm
+updated: 2026-07-17
+verified: 2026-07-17
+sources:
+  - "raw/articles/2026-05-23-dmnd-demand-pool.md"
+  - "raw/articles/2026-05-23-hashrate-index-pintos-payout-guide.md"
+  - "raw/articles/2026-05-23-ocean-tides-spec.md"
+  - "raw/articles/2026-05-26-radpool-delvingbitcoin.md"
+  - "raw/articles/2026-05-26-zkshark-parasite-pool-substack.md"
+  - "raw/papers/2026-05-23-rosenfeld-2011-pool-reward-analysis.md"
+  - "raw/papers/2026-05-26-kiayias-aft-2025-shapley-oceanic-games.md"
+  - "raw/repos/2026-05-23-hashpool-vnprc.md"
+  - "raw/repos/2026-05-26-parasitepool-para-github.md"
+  - "raw/repos/2026-07-17-coinbase-playground-readme.md"
 ---
 
 # Payout Schema Taxonomy
@@ -25,7 +38,7 @@ Operator-reserve requirement is the structural barrier — only large/well-capit
 - **PPLNS** — Pay Per Last N Shares. Window of last N shares paid on block-find. Per-share expected payout independent of round position → hop-resistant. Variants: sharp 0/1 cutoff, exponential decay (geometric), linear decay. *See [[pplns]].*
 - **Slush score-based** — PPLNS with exponential-decay weight. Now operationally PPLNS.
 - **TIDES** — OCEAN's PPLNS with `N = 8 × current_block_difficulty`, full-resolution share log, non-custodial coinbase payout. *See [[tides]].*
-- **SLICE / PPLNS-JD** — DMND's PPLNS bound to SV2 Job Declaration. *See [[pplns-jd]].*
+- **SLICE / PPLNS-JD** — DMND's PPLNS bound to SV2 Job Declaration; payout is miner-verifiable via the [[sv2-share-accounting-ext|SV2 Share Accounting Extension]]. *See [[pplns-jd]].*
 - **p2pool / p2poolv2 share-chain** — on-chain PPLNS without a custodian. *See [[p2pool-share-chain]].*
 - **Geometric / DGM** (Rosenfeld) — tunable variance via parameters `f`, `c`, `o`. DGM was production at BTCDig 2013.
 - **Parasite Pool** — lottery (1 BTC finder bonus) + continuous-time decay-EMA residual. Lightning-only payouts, custodial. *See [[parasite-pool]].*
@@ -47,7 +60,7 @@ These don't define payouts — they define who picks the transactions that go in
 
 ## 3b. On-chain payout-fanout primitives (prototype stage)
 
-- **CTV coinbase fanout** (vnprc, Jun 2025) — single OP_CTV commitment in coinbase commits to a 319-output fanout tree; 179-byte coinbase. Blocked on BIP-119 activation.
+- **CTV coinbase fanout** (vnprc, Jun 2025) — a single OP_CTV commitment in the coinbase commits to a payout-tree spend that unrolls into the actual outputs, keeping the coinbase tiny (sidestepping the Bitmain firmware coinbase-size cap). The `coinbase-playground` regtest implements a **flat tree** (~319-output **TRUC** ceiling, immediate broadcast at 1 sat/vB, 330-sat CPFP anchor) and a **layered binary tree** (nested unroll, fixed 500-sat fees, "strictly worse" for payouts), with a MuSig-node + P2Pool-reboot endgame. Blocked on BIP-119 activation. *See [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)).*
 - **UHPO via APO+CTV** (McElrath, Jan 2025) — Rolling Coinbase Aggregation; signet PoC by AaronZhang Apr 2026.
 
 ## 3c. Off-chain payout layers (hypothetical for mining)
@@ -90,8 +103,10 @@ These are payout *layers* — orthogonal to the share-accounting scheme. They si
 - [[../../raw/repos/2026-05-26-parasitepool-para-github|`parasitepool/para` repo]]
 - [[../../raw/articles/2026-05-26-radpool-delvingbitcoin|Radpool delvingbitcoin]]
 - [[../../raw/papers/2026-05-26-kiayias-aft-2025-shapley-oceanic-games|Kiayias et al. AFT'25 — Shapley value pool design]]
+- [[../../raw/repos/2026-07-17-coinbase-playground-readme|coinbase-playground README]] — CTV coinbase fanout (flat/layered trees)
 
 ## See also
 
 - [[../topics/payout-design-space|Payout Design Space (synthesis)]]
 - [[../topics/sv2-jd-and-payout-decoupling|SV2 Job Declaration ↔ Payout Decoupling]]
+- [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — the on-chain fanout primitive detailed in §3b

@@ -1,9 +1,16 @@
 ---
 title: PPLNS (Pay Per Last N Shares)
-type: concept
+category: concept
 created: 2026-05-23
 confidence: high
 tags: [PPLNS, Rosenfeld, hop-resistant]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-23-rosenfeld-pplns-bitcointalk-2011.md"
+  - "raw/papers/2026-05-23-rosenfeld-2011-pool-reward-analysis.md"
+  - "raw/papers/2026-05-23-schrijvers-2016-incentive-compatibility.md"
 ---
 
 # PPLNS — Pay Per Last N Shares

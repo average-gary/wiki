@@ -1,10 +1,19 @@
 ---
 title: TIDES Variance — Derivation from Rosenfeld 2011
-type: concept
+category: concept
 created: 2026-05-23
 confidence: high
 derivation_only: true
 tags: [TIDES, FPPS, variance, Rosenfeld, derivation]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-23-heatpunks-tides-vs-fpps-experiment.md"
+  - "raw/articles/2026-05-23-ocean-tides-spec.md"
+  - "raw/articles/2026-05-23-rosenfeld-pplns-bitcointalk-2011.md"
+  - "raw/papers/2026-05-23-chatzigiannis-2022-diversification.md"
+  - "raw/papers/2026-05-23-rosenfeld-2011-pool-reward-analysis.md"
 ---
 
 # TIDES (and SLICE) Variance — Closed-Form Derivation

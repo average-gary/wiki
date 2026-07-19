@@ -2,8 +2,14 @@
 title: People — eHash / hashpool / decentralized-pool ecosystem
 type: reference
 created: 2026-05-24
+updated: 2026-07-15
+verified: 2026-07-15
 confidence: high
 tags: [people, EthnTuttle, vnprc, Calle, Hughes, McElrath, pool2win]
+volatility: warm
+sources:
+  - "raw/articles/2026-05-24-ethntuttle-profile.md"
+  - "raw/articles/2026-05-24-vnprc-profile.md"
 ---
 
 # People

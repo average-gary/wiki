@@ -4,6 +4,15 @@ type: decision
 created: 2026-05-23
 confidence: high
 tags: [custody, FPPS, TIDES, eHash, Fedimint, decision]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-23-dmnd-demand-pool.md"
+  - "raw/articles/2026-05-23-ocean-tides-spec.md"
+  - "raw/repos/2026-05-23-cashu-nuts.md"
+  - "raw/repos/2026-05-23-hashpool-vnprc.md"
+  - "raw/repos/2026-05-23-p2pool-and-p2poolv2.md"
 ---
 
 # Custody Tradeoffs

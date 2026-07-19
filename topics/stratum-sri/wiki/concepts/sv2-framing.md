@@ -5,12 +5,12 @@ sources:
   - raw/articles/2026-05-28-stratum-sri-sv2-framing-sv2-readme.md
   - raw/articles/2026-05-28-stratum-sri-sv2-framing-sv2-benches.md
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-07-17
 tags: [sv2, framing-sv2, framing, header, channel-msg, no-std]
 aliases: ["framing_sv2", "Sv2Frame", "channel_msg bit"]
 confidence: high
 volatility: cold
-verified: 2026-05-28
+verified: 2026-07-17
 summary: "The 6-byte SV2 message header (extension_type, msg_type, msg_length) and how the `channel_msg` bit on `extension_type` toggles whether the first 4 bytes of the payload carry a `channel_id`. Implemented by `framing_sv2`."
 ---
 
@@ -73,6 +73,7 @@ The crate has one feature flag, `with_buffer_pool`, which routes framing allocat
 - [[sv2-noise-handshake|SV2 Noise Handshake]] ([SV2 Noise Handshake](sv2-noise-handshake.md)) — uses the Noise handshake framing
 - [[sv2-buffer-pool|SV2 Buffer Pool]] ([SV2 Buffer Pool](sv2-buffer-pool.md)) — backs the `with_buffer_pool` feature
 - [[sv2-extensions|SV2 Extensions]] ([SV2 Extensions](sv2-extensions.md)) — the `extension_type` field framing routes on
+- [[sv2-extensions-negotiation|SV2 Extensions Negotiation (0x0001)]] ([SV2 Extensions Negotiation](sv2-extensions-negotiation.md)) — its messages carry `extension_type = 0x0001` in this header
 - [[stratum-core-umbrella|stratum-core Umbrella Crate]] ([stratum-core Umbrella Crate](../topics/stratum-core-umbrella.md)) — re-exports `framing_sv2`
 
 ## Sources

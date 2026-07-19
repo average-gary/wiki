@@ -3,13 +3,14 @@ title: "SV2 Extensions"
 category: concept
 sources:
   - raw/articles/2026-05-28-stratum-sri-sv2-extensions-sv2-readme.md
+  - raw/articles/2026-07-17-sv2-spec-extensions-negotiation.md
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-07-17
 tags: [sv2, extensions-sv2, tlv, extensions-negotiation, worker-hashrate]
 aliases: ["extensions_sv2", "Sv2 extensions", "TLV"]
 confidence: high
 volatility: warm
-verified: 2026-05-28
+verified: 2026-07-17
 summary: "`extensions_sv2` is the SV2 extension layer: a generic TLV (Type-Length-Value) encoder/decoder plus two concrete extensions — Extensions Negotiation (0x0001) for capability handshake and Worker-Specific Hashrate Tracking (0x0002) for per-worker hashrate inside `SubmitSharesExtended`."
 ---
 
@@ -22,7 +23,7 @@ summary: "`extensions_sv2` is the SV2 extension layer: a generic TLV (Type-Lengt
 Per the README, `extensions_sv2` provides:
 
 - Message types for two concrete extensions:
-  - **Extensions Negotiation (`0x0001`)** — negotiates which optional extensions are supported during connection setup.
+  - **Extensions Negotiation (`0x0001`)** — negotiates which optional extensions are supported during connection setup. The normative `RequestExtensions` / `.Success` / `.Error` handshake and its design history are covered in [[sv2-extensions-negotiation|SV2 Extensions Negotiation (0x0001)]] ([SV2 Extensions Negotiation](sv2-extensions-negotiation.md)).
   - **Worker-Specific Hashrate Tracking (`0x0002`)** — tracks individual worker hashrates using TLV fields in `SubmitSharesExtended`.
 - Generic **TLV (Type-Length-Value) encoding/decoding utilities** that any extension requiring structured optional data fields can reuse.
 
@@ -30,10 +31,10 @@ The TLV utilities are the load-bearing part of the crate — they're what new ex
 
 ## Specs
 
-The two extensions in this crate are specified in the SV2 spec repo (not here):
+The two extensions in this crate are specified in the SV2 spec repo (not here). The spec files are prefixed with their hex extension type — the un-prefixed paths 404:
 
-- [extensions-negotiation.md](https://github.com/stratum-mining/sv2-spec/blob/main/extensions/extensions-negotiation.md)
-- [worker-specific-hashrate-tracking.md](https://github.com/stratum-mining/sv2-spec/blob/main/extensions/worker-specific-hashrate-tracking.md)
+- [0x0001-extensions-negotiation.md](https://github.com/stratum-mining/sv2-spec/blob/main/extensions/0x0001-extensions-negotiation.md)
+- [0x0002-worker-specific-hashrate-tracking.md](https://github.com/stratum-mining/sv2-spec/blob/main/extensions/0x0002-worker-specific-hashrate-tracking.md)
 
 These specs are the source of truth for wire bytes; this crate implements them.
 
@@ -47,6 +48,7 @@ When the [[sri-pull-request-themes|recent PR series]] ([recent PR series](../ref
 
 ## See Also
 
+- [[sv2-extensions-negotiation|SV2 Extensions Negotiation (0x0001)]] ([SV2 Extensions Negotiation](sv2-extensions-negotiation.md)) — the normative handshake this crate's `0x0001` messages implement
 - [[sv2-framing|SV2 Framing]] ([SV2 Framing](sv2-framing.md)) — the `extension_type` field framing routes on
 - [[sv2-message-handlers|SV2 Message Handlers]] ([SV2 Message Handlers](sv2-message-handlers.md)) — `Extensions` handler dispatches extension messages
 - [[sv2-mining-subprotocol|SV2 Mining Subprotocol]] ([SV2 Mining Subprotocol](../topics/sv2-mining-subprotocol.md)) — `SubmitSharesExtended` is where Worker-Specific Hashrate Tracking TLVs live
@@ -55,3 +57,4 @@ When the [[sri-pull-request-themes|recent PR series]] ([recent PR series](../ref
 ## Sources
 
 - [extensions_sv2 README](../../raw/articles/2026-05-28-stratum-sri-sv2-extensions-sv2-readme.md) — supported extensions and TLV utilities
+- [SV2 Extension 0x0001: Extensions Negotiation (sv2-spec)](../../raw/articles/2026-07-17-sv2-spec-extensions-negotiation.md) — the hex-prefixed spec paths and the negotiation handshake message names

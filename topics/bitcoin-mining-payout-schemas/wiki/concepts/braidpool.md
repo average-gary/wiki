@@ -1,10 +1,15 @@
 ---
 title: Braidpool
-type: concept
+category: concept
 created: 2026-05-26
-updated: 2026-05-26
 confidence: medium
 tags: [braidpool, mcelrath, dag-sharechain, decentralized-pool, full-proportional, covenants]
+volatility: warm
+updated: 2026-07-17
+verified: 2026-07-17
+sources:
+  - "raw/articles/2026-05-26-braidpool-covenants-delving.md"
+  - "raw/repos/2026-05-26-braidpool-github.md"
 ---
 
 # Braidpool
@@ -86,4 +91,5 @@ This last critique is the canonical McElrath ↔ jungly dispute and is the reaso
 - [[p2poolv2-accounting]] — competing modern decentralized pool
 - [[radpool]] — competing decentralized FPPS (the FROST design McElrath critiques)
 - [[parasite-pool]] — non-decentralized novel scheme for contrast
+- [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — CTV-only coinbase fanout; a different covenant target than Braidpool's APO+CTV UHPO, and the target of Braidpool's "CTV-only pools aren't pools" critique
 - [[payout-schema-taxonomy]]

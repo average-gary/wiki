@@ -1,9 +1,18 @@
 ---
 title: p2poolv2 Accounting (deep-dive)
-type: concept
+category: concept
 created: 2026-05-24
 confidence: high
 tags: [p2poolv2, accounting, PPLNS, work-bounded-window, uncle-weight, atomic-swap]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-24-jungly-delvingbitcoin-p2share.md"
+  - "raw/articles/2026-05-24-p2poolv2-pplns-with-decay-wiki.md"
+  - "raw/articles/2026-05-24-p2poolv2-trading-shares-htlc.md"
+  - "raw/articles/2026-05-24-p2poolv2-uncle-blocks-wiki.md"
+  - "raw/repos/2026-05-24-p2poolv2-accounting-modules.md"
 ---
 
 # p2poolv2 Accounting

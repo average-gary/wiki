@@ -1,9 +1,17 @@
 ---
 title: p2poolv2 ↔ 256 Foundation — the actual relationship
-type: topic
+category: topic
 created: 2026-05-24
 confidence: high
 tags: [p2poolv2, 256-foundation, Hydrapool, governance, framing-correction]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-24-256-foundation-overview.md"
+  - "raw/articles/2026-05-24-hydrapool-256-foundation.md"
+  - "raw/articles/2026-05-24-p2poolv2-lineage-and-history.md"
+  - "raw/repos/2026-05-24-p2poolv2-accounting-modules.md"
 ---
 
 # p2poolv2 ↔ 256 Foundation — the Actual Relationship

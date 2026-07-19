@@ -1,10 +1,15 @@
 ---
 title: DATUM (OCEAN template-construction)
-type: concept
+category: concept
 created: 2026-05-26
-updated: 2026-05-26
 confidence: high
 tags: [datum, ocean, template-construction, knots, custom-protocol, hughes]
+volatility: warm
+updated: 2026-07-17
+verified: 2026-07-17
+sources:
+  - "raw/articles/2026-05-23-ocean-tides-spec.md"
+  - "raw/repos/2026-05-26-ocean-datum-gateway-github.md"
 ---
 
 # DATUM — Decentralized Alternative Templates for Universal Mining
@@ -87,4 +92,5 @@ OCEAN total pool hashrate ~31.91 EH/s. **What fraction mines via DATUM**: not pu
 - [[tides|TIDES]] — OCEAN's payout layer (DATUM is orthogonal to this)
 - [[pplns-jd|SLICE / PPLNS-JD]] — the SV2-JD competitor's payout
 - [[braidpool|Braidpool]] — also builds on SV2 + JD
+- [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — CTV addresses the coinbase-space pressure that DATUM's pool-inserted payout outputs create
 - [[payout-schema-taxonomy]]

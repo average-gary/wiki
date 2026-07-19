@@ -1,9 +1,23 @@
 ---
 title: The Payout Design Space (synthesis)
-type: topic
+category: topic
 created: 2026-05-23
 confidence: high
 tags: [synthesis, design-space, FPPS, PPLNS, TIDES, SLICE, eHash, p2pool]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-23-b10c-mining-centralization-2025.md"
+  - "raw/articles/2026-05-23-dmnd-demand-pool.md"
+  - "raw/articles/2026-05-23-heatpunks-tides-vs-fpps-experiment.md"
+  - "raw/articles/2026-05-23-ocean-tides-spec.md"
+  - "raw/papers/2026-05-23-chatzigiannis-2022-diversification.md"
+  - "raw/papers/2026-05-23-rosenfeld-2011-pool-reward-analysis.md"
+  - "raw/papers/2026-05-23-schrijvers-2016-incentive-compatibility.md"
+  - "raw/repos/2026-05-23-hashpool-vnprc.md"
+  - "raw/repos/2026-05-23-p2pool-and-p2poolv2.md"
+  - "raw/repos/2026-05-23-stratum-v2-spec.md"
 ---
 
 # The Payout Design Space

@@ -1,9 +1,16 @@
 ---
 title: Hydrapool — 256 Foundation pool
-type: concept
+category: concept
 created: 2026-05-24
 confidence: high
 tags: [Hydrapool, 256-foundation, PPLNS, public-audit-api, p2poolv2-lib]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-24-256-foundation-overview.md"
+  - "raw/articles/2026-05-24-hydrapool-256-foundation.md"
+  - "raw/articles/2026-05-24-p2poolv2-pplns-with-decay-wiki.md"
 ---
 
 # Hydrapool

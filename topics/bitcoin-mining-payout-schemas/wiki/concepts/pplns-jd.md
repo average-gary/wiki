@@ -1,9 +1,17 @@
 ---
 title: PPLNS-JD / SLICE
-type: concept
+category: concept
 created: 2026-05-23
+updated: 2026-07-15
+verified: 2026-07-15
 confidence: medium
+volatility: warm
 tags: [PPLNS-JD, SLICE, DMND, Demand-Pool, Stratum-V2, JD]
+sources:
+  - "raw/articles/2026-05-23-dmnd-demand-pool.md"
+  - "raw/articles/2026-05-23-dmnd-slice-blog-pplns-jd.md"
+  - "raw/repos/2026-05-23-stratum-v2-spec.md"
+  - "raw/repos/2026-07-14-demand-share-accounting-ext-github.md"
 ---
 
 # PPLNS-JD / SLICE
@@ -75,14 +83,20 @@ Both are PPLNS-derived non-custodial schemes with **identical N = 8 × D**:
 
 These are **complementary, not competing**. TIDES + DATUM is OCEAN's version of the same idea (PPLNS done right + miner templates).
 
+## Miner-verifiable payout (the accounting extension)
+
+PPLNS-JD as described above still asks the miner to *trust* the pool's window arithmetic. The [[sv2-share-accounting-ext|SV2 Share Accounting Extension]] (extension type 32) closes that gap: it is a wire protocol letting a miner **audit** a reward window by spot-sampling slices and shares and proving each one — share PoW validity, merkle inclusion in the slice root, that summed share difficulty does not exceed the slice's, and that share fees stay within the slice's reference-job fees plus a delta. It is the on-the-wire counterpart to the theoretical PPLNS-with-Job-Declaration design (lorbax/pplns-with-job-declaration) that this article's N = 8 × D discussion draws on. Reference implementation: the `demand-share-accounting-ext` Rust crate (v0.0.13, pre-1.0; activation handshake still TODO). It reduces — but does not fully eliminate — trust in the pool, since a single audit samples only part of the window.
+
 ## Sources
 
 - [[../../raw/articles/2026-05-23-dmnd-demand-pool|DMND / Demand Pool article]]
 - [[../../raw/articles/2026-05-23-dmnd-slice-blog-pplns-jd|DMND blog — Understanding SLICE (PPLNS+JD), 2025-03-18]] — primary spec for N = 8 × D
 - [[../../raw/repos/2026-05-23-stratum-v2-spec|Stratum V2 Specification — §6 Job Declaration]]
+- [[../../raw/repos/2026-07-14-demand-share-accounting-ext-github|demand-open-source/share-accounting-ext — SV2 Share Accounting Extension]] — the miner-side payout-verification wire protocol
 
 ## See also
 
 - [[pplns]]
 - [[tides]]
+- [[sv2-share-accounting-ext|SV2 Share Accounting Extension]] — the wire protocol that makes this scheme's payout verifiable
 - [[../topics/sv2-jd-and-payout-decoupling|SV2 Job Declaration ↔ Payout Decoupling]]

@@ -1,9 +1,16 @@
 ---
 title: Decentralization & Pool Concentration
-type: topic
+category: topic
 created: 2026-05-23
 confidence: high
 tags: [centralization, b10c, Foundry, AntPool, proxy-pooling]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-23-b10c-mining-centralization-2025.md"
+  - "raw/articles/2026-05-23-mempool-space-mining-dashboard.md"
+  - "raw/repos/2026-05-23-p2pool-and-p2poolv2.md"
 ---
 
 # Decentralization & Pool Concentration

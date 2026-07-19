@@ -4,12 +4,12 @@ category: concept
 sources:
   - raw/articles/2026-05-28-stratum-sri-sv2-handlers-sv2-readme.md
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-07-17
 tags: [sv2, handlers-sv2, traits, sync, async, message-dispatch]
 aliases: ["handlers_sv2", "Sv2 handler", "Sv2 server handler", "Sv2 client handler"]
 confidence: high
 volatility: warm
-verified: 2026-05-28
+verified: 2026-07-17
 summary: "`handlers_sv2` defines the trait surface for handling decoded SV2 messages. Server vs client variants per role, and per-subprotocol opt-in (Mining, TemplateDistribution, Common, JobDeclaration, Extensions). Both sync and async versions ship, so the same trait set works in tokio and embedded contexts."
 ---
 
@@ -49,6 +49,7 @@ Both synchronous and asynchronous trait flavors exist. Async lets handlers integ
 - [[sv2-binary-encoding|SV2 Binary Encoding]] ([SV2 Binary Encoding](sv2-binary-encoding.md)) — typed message construction by `parsers_sv2`
 - [[sv2-channels|SV2 Channels]] ([SV2 Channels](sv2-channels.md)) — channel state the mining handlers operate on
 - [[sv2-extensions|SV2 Extensions]] ([SV2 Extensions](sv2-extensions.md)) — extension messages dispatched via the `Extensions` handler
+- [[sv2-extensions-negotiation|SV2 Extensions Negotiation (0x0001)]] ([SV2 Extensions Negotiation](sv2-extensions-negotiation.md)) — the `RequestExtensions` handshake dispatched through the `Extensions` handler
 - [[stratum-core-umbrella|stratum-core Umbrella Crate]] ([stratum-core Umbrella Crate](../topics/stratum-core-umbrella.md)) — re-exports `handlers_sv2`
 
 ## Sources

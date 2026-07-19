@@ -1,9 +1,17 @@
 ---
 title: Why FPPS Dominates (and is fragile)
-type: topic
+category: topic
 created: 2026-05-23
 confidence: medium
 tags: [FPPS, dominance, market-structure, fee-era]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-23-b10c-mining-centralization-2025.md"
+  - "raw/articles/2026-05-23-hashrate-index-pintos-payout-guide.md"
+  - "raw/articles/2026-05-23-heatpunks-tides-vs-fpps-experiment.md"
+  - "raw/papers/2026-05-23-chatzigiannis-2022-diversification.md"
 ---
 
 # Why FPPS Dominates (and is fragile)

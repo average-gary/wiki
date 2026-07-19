@@ -1,9 +1,15 @@
 ---
 title: Pool Hopping
-type: concept
+category: concept
 created: 2026-05-23
 confidence: high
 tags: [attack, pool-hopping, proportional, PPLNS, Rosenfeld]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/articles/2026-05-23-rosenfeld-pplns-bitcointalk-2011.md"
+  - "raw/papers/2026-05-23-rosenfeld-2011-pool-reward-analysis.md"
 ---
 
 # Pool Hopping

@@ -2,7 +2,9 @@
 title: Bitcoin Mining Payout & Accounting Schemas
 type: topic-index
 created: 2026-05-23
-updated: 2026-05-26
+updated: 2026-07-17
+compiled: 2026-07-17
+lint: 2026-07-15
 status: active
 summary: Payout and share-accounting schemas for Bitcoin mining pools — PPLNS, FPPS, PPS+, PPLNS-JD, hashpool.dev (Cashu ecash mints), btc++ event payout/accounting tracks, p2pool / p2poolv2 share-chain accounting, Parasite Pool (lottery + decay-EMA hybrid), Radpool (DLC+FROST decentralized FPPS).
 ---
@@ -36,6 +38,11 @@ Survey of how Bitcoin mining pools account for hashrate contributions and pay mi
 
 - [[../sv2-p2pool-integration/_index|sv2-p2pool-integration]] — JDS share-chain integration with SV2 reference apps (narrower scope)
 - [[../coinbase-rotation-bitcoin/_index|coinbase-rotation-bitcoin]] — coinbase rotation / payout-output handling (older, narrower)
+
+## Recent Changes
+
+- 2026-07-17: Compiled vnprc/coinbase-playground collection (6 sources) → new concept [[wiki/concepts/ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]]; integrated flat/layered-tree numbers into payout-schema-taxonomy and ark-for-mining-payouts. Last compiled: 2026-07-17.
+- 2026-07-15: Compiled demand-share-accounting-ext → [[wiki/concepts/sv2-share-accounting-ext|SV2 Share Accounting Extension]].
 
 ## Log
 

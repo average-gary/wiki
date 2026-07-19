@@ -191,3 +191,24 @@ Five orthogonal extraction strategies attempted and failed:
 **Salvaged**: pulled the full official speaker roster + affiliations verbatim from `btcplusplus.dev/atx25`. Updated `raw/videos/2026-05-24-btcplusplus-poolin-stage-catalog.md` with (a) speaker-vs-likely-topic table for the 13 mining/pool-adjacent roster members, (b) explicit failed-attempt log, (c) refined open-follow-up list (manual scrub, yt-dlp+Whisper, ask niftynei/vnprc, wait for cuts).
 
 **Net delta**: catalog file now documents the gap honestly with attempted-extraction provenance instead of just "need manual scrub." Per-speaker timestamps remain unmapped. Path 1 is closed-as-blocked, not closed-as-completed.
+
+## [2026-07-14] ingest | demand-open-source/share-accounting-ext — SV2 Share Accounting Extension (raw/repos/2026-07-14-demand-share-accounting-ext-github.md)
+
+## [2026-07-15] compile | 1 source → 1 new article, 2 updated (sv2-share-accounting-ext; pplns-jd, sv2-jd-and-payout-decoupling). +back-links in tides, payout-schema-taxonomy.
+
+## [2026-07-15] lint | 19 checks, 0 critical, ~29 warnings (legacy schema: type vs category, missing sources/volatility on 24 pre-existing articles), 11 suggestions (orphan sources), 0 candidates, 0 auto-fixed (report-only)
+
+## [2026-07-15] lint | 19 checks, 0 critical, ~5 warnings remaining, 11 suggestions, 0 candidates, 51 auto-fixed (25 type→category, 26 volatility:warm added)
+## [2026-07-15] query | "do we have the research needed to determine if we can mine a coinbase tx that onboards to an Ark?" → answered from 5 articles (standard)
+
+## [2026-07-15] compile --full | 68 sources, 24 articles updated (sources: frontmatter backfilled losslessly from existing ## Sources sections; no bodies rewritten). 16 sources remain uncompiled (no article synthesizes them).
+
+## [2026-07-15] lint | 19 checks, 0 critical, 4 warnings (26 missing summary:, tag casing, 2 non-canonical dirs, 2 legacy type: fields), 12 suggestions (16 uncited sources, tag-casing normalization), 0 candidates, 0 auto-fixed (report-only)
+
+## [2026-07-15] query | "How might we design an Sv2 extension enabling miner interactivity for Ark boarding via the coinbase tx?" -> answered from 6 articles (standard)
+
+## [2026-07-17] ingest-collection | coinbase-playground via git: 5 new, 0 skipped, 5 total candidates (README + 4 Rust scripts; repo+code scope). vnprc/coinbase-playground @ 0ac7ed25, license unknown. Manifest → raw/repos/2026-07-17-collection-coinbase-playground-manifest.md. CTV+CSFS regtest playground for non-custodial coinbase payout trees: flat tree (~319-output TRUC ceiling, 330-sat anchor, 1 sat/vB, immediate broadcast) vs layered binary tree (nested unroll, 500-sat fixed fees); MuSig-tree + P2Pool-reboot endgame. Complements prior 2026-05-26 metadata snapshot (raw/repos/2026-05-26-vnprc-coinbase-playground-github.md), not overwritten.
+
+## [2026-07-17] compile | 6 sources → 1 new article, 3 updated (new: ctv-coinbase-payout-tree; updated: payout-schema-taxonomy, ark-for-mining-payouts, plus backlinks in tides, datum, braidpool, p2pool-share-chain). demand-share-accounting-ext (2026-07-14) already compiled into sv2-share-accounting-ext 2026-07-15 — no change.
+
+## [2026-07-18] ll | "proxy-held VTXO keys + SV2 Ark-claim extension" → raw/notes/2026-07-18-ll-proxy-held-vtxo-ark-sv2-extension.md (4 lessons, 2 articles updated)

@@ -1,9 +1,14 @@
 ---
 title: Selfish Mining
-type: concept
+category: concept
 created: 2026-05-23
 confidence: high
 tags: [selfish-mining, attack, Eyal, Sirer, Sapirshtein, threshold]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/papers/2026-05-23-eyal-sirer-2014-selfish-mining.md"
 ---
 
 # Selfish Mining

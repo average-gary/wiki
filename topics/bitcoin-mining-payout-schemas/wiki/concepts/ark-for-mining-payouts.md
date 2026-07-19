@@ -1,10 +1,23 @@
 ---
 title: Ark for Mining Payouts
-type: concept
+category: concept
 created: 2026-05-26
-updated: 2026-05-26
 confidence: medium
 tags: [ark, vtxo, second-tech, ark-labs, mining-payouts, hypothetical-payout-layer]
+volatility: warm
+updated: 2026-07-17
+verified: 2026-07-17
+sources:
+  - "raw/articles/2026-05-26-ark-burak-original-proposal-2023.md"
+  - "raw/articles/2026-05-26-ark-erik-de-smedt-ctv-csfs-delving.md"
+  - "raw/articles/2026-05-26-ark-labs-tether-funding.md"
+  - "raw/articles/2026-05-26-ark-pickhardt-channel-factory-delving.md"
+  - "raw/articles/2026-05-26-bitcoinmag-second-bark-mining-payouts.md"
+  - "raw/articles/2026-05-26-carvalho-credible-exit-blockspace.md"
+  - "raw/articles/2026-05-26-second-tech-ark-intro.md"
+  - "raw/articles/2026-05-26-vnprc-ctv-coinbase-delving.md"
+  - "raw/papers/2026-05-26-keer-maffei-ark-formal-arxiv.md"
+  - "raw/repos/2026-07-17-coinbase-playground-readme.md"
 ---
 
 # Ark for Mining Payouts
@@ -85,6 +98,14 @@ Per [[../../raw/articles/2026-05-26-carvalho-credible-exit-blockspace|Credible E
 ### 7. Out-of-round payment trust
 Per [[../../raw/articles/2026-05-26-ark-erik-de-smedt-ctv-csfs-delving|roasbeef]]: out-of-round / "arkoor" payments require "trust server and prior owner to not collude." Payment chains between rounds inherit double-spend risk.
 
+## Proxy-held VTXO keys (session analysis, 2026-07-18)
+
+A recurring design instinct is to have an **always-online mining proxy hold the VTXO keys** and issue/refresh VTXOs on miners' behalf. Lessons from analyzing this against the wiki (see [[../../raw/notes/2026-07-18-ll-proxy-held-vtxo-ark-sv2-extension|lessons note]]):
+
+- **It neutralizes both structural blockers at once and unlocks clArk without a soft fork.** An always-online proxy is the "present receiver" at issuance (killing the receiver-presence blocker) and runs the delegated refresh (killing expiry-sweep). Because presence is solved *without* covenants, covenantless **clArk becomes viable for mining today** — removing the CTV/CSFS activation dependency that gates the coinbase→VTXO-tree route.
+- **But it is a custody reshuffle, not trust-minimization.** If the proxy holds keys, the miner trusts the proxy (exit-scam, cosign-refusal, seizure). Per [[../decisions/custody-tradeoffs|custody tradeoffs]] this lands between Lightning-custody (Parasite) and mint-custody (eHash) — *not* the no-custody coinbase tier (TIDES/SLICE). The sharp question becomes "what does proxy-held Ark buy over Lightning-custody or a Cashu mint?" — both more mature, same trust profile.
+- **The custody topology is a forced binary.** Either proxy-sole-holder (fully custodial, no miner unilateral exit) *or* proxy-co-signer with miner co-key (non-custodial, but miner-presence returns for exit/refresh). "Proxy handles everything offline" AND "miner trustlessly in control" are mutually exclusive.
+
 ## Counter to "Ark > CTV" framing
 
 The combined critiques show: **covenant-free Ark can't issue to absent receivers and is DoS-prone**, so the "Ark instead of CTV" framing only holds if you assume covenant-using Ark, which has the same activation dependency as CTV-coinbase. The "Ark > CTV" claim collapses into "Ark + CTV > CTV alone" — which is much weaker and not obviously true for mining payouts where the receiver-presence and round-cadence problems dominate.
@@ -126,7 +147,7 @@ Per [[../../raw/papers/2026-05-26-keer-maffei-ark-formal-arxiv|Keer-Maffei-Avari
 - No mining pool has announced an Ark integration.
 - No conference talk applies Ark to mining payouts.
 - No BIP exists for Ark.
-- ErikDeSmedt's CTV-coinbase → VTXO hybrid is a 1-paragraph forum suggestion; no spec, no code beyond [[../../raw/repos/2026-05-26-vnprc-coinbase-playground-github|vnprc/coinbase-playground]] regtest prototype.
+- ErikDeSmedt's CTV-coinbase → VTXO hybrid is a 1-paragraph forum suggestion; no spec, no code beyond [[../../raw/repos/2026-05-26-vnprc-coinbase-playground-github|vnprc/coinbase-playground]] regtest prototype. As of the 2026-07-17 collection snapshot that prototype implements a flat CTV coinbase tree (~319-output TRUC ceiling, 330-sat anchor, 1 sat/vB) and a layered/nested tree, and its stated endgame — an **n-of-n MuSig locking script at each tree node** with leaf owners trading outputs off-chain to consolidate subtrees — is structurally the same shared-output transaction tree Ark uses for VTXOs. *See [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)).*
 
 ## Sources
 
@@ -145,4 +166,5 @@ Per [[../../raw/papers/2026-05-26-keer-maffei-ark-formal-arxiv|Keer-Maffei-Avari
 - [[parasite-pool|Parasite Pool]] — current LN-custody payout pattern (different layer)
 - [[ehash|eHash]] — Cashu-mint payout layer (different layer)
 - [[braidpool|Braidpool]] — McElrath's covenant-based UHPO alternative
+- [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — the CTV-coinbase fanout the De Smedt hybrid builds on; its MuSig-node endgame mirrors Ark's shared-output tree
 - [[payout-schema-taxonomy|Payout Schema Taxonomy]] — full design space

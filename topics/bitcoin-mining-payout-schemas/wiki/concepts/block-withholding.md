@@ -1,9 +1,18 @@
 ---
 title: Block Withholding (BWH) and FAW
-type: concept
+category: concept
 created: 2026-05-23
 confidence: high
 tags: [BWH, FAW, attack, Eyal, Schrijvers, Nash]
+volatility: warm
+updated: 2026-07-15
+verified: 2026-07-15
+sources:
+  - "raw/papers/2026-05-23-eyal-2015-miners-dilemma.md"
+  - "raw/papers/2026-05-23-eyal-sirer-2014-selfish-mining.md"
+  - "raw/papers/2026-05-23-kwon-2017-faw.md"
+  - "raw/papers/2026-05-23-rosenfeld-2011-pool-reward-analysis.md"
+  - "raw/papers/2026-05-23-schrijvers-2016-incentive-compatibility.md"
 ---
 
 # Block Withholding (BWH) and Fork After Withholding (FAW)

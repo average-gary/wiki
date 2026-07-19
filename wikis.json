@@ -7,6 +7,12 @@
       "status": "active",
       "summary": "Repurposing an MSI GS63VR (Pascal GTX 1060 6GB mobile, i7-7700HQ, 16GB RAM) as a headless Ubuntu 22.04 LTS server for local audio transcription (faster-whisper/WhisperX + pyannote.audio) and farm vision tasks (herd counting)."
     },
+    "mining-scale-test-sim": {
+      "path": "topics/mining-scale-test-sim",
+      "created": "2026-06-24",
+      "status": "active",
+      "summary": "Scale-testing Stratum V2 / mining-pool stacks via simulation. Connection-count vs hashrate scaling (vardiff smooths share-validation rate, so connection layer saturates first). Primary reference: gimballock (Eric Price)'s marafoundation/stratum :: vardiff/simulation-framework branch (in-process deterministic vardiff characterizer; 4-axis Estimator/Statistic/Boundary/UpdateRule decomposition; Composed adapter; 1000-trial Poisson share-arrival harness). Adjacent: connection-scaling bottlenecks for TCP/QUIC pool servers, synthetic-miner methodology (fixture nonces, Poisson share arrival, regtest), share-validation cost model, binary-protocol load harnesses."
+    },
     "rust-multi-platform": {
       "path": "topics/rust-multi-platform",
       "created": "2026-05-21",
@@ -135,6 +141,48 @@
       "created": "2026-06-18",
       "status": "active",
       "summary": "Open-source / free software games in the Civilization-like (4X, grand strategy, empire-building) genre. Long-running implementations (Freeciv, C-evo), modern revivals (Freeciv21, Unciv), genre-adjacent OSS 4X (0 A.D., Unknown Horizons, OpenAge, Freeland), engines (Godot, Bevy, Qt, libSDL, web stacks), modding ecosystems, AI implementations, multiplayer architecture (turn-sync, lockstep, web), and licensing/governance."
+    },
+    "rust-bitcoin-twir": {
+      "path": "topics/rust-bitcoin-twir",
+      "created": "2026-06-22",
+      "status": "active",
+      "summary": "Rust Bitcoin ecosystem (rust-bitcoin/BDK/LDK/Stratum SRI/Fedimint/Cashu/Nostr crates) framed around finding submission-worthy items for This Week in Rust. TWiR submission rules, project release/blog cadences, COTW candidates, CFP-Projects/Events, contribution workflow."
+    },
+    "his-words-app": {
+      "path": "topics/his-words-app",
+      "created": "2026-06-23",
+      "status": "active",
+      "summary": "\"His Words\" — a faith-based digital wellness app concept that *interrupts* social-media use every N minutes with a 60-second Scripture pause (vs. the verse-gate pattern of Psalmo / Amen / Holy Focus / BibleFocus / FaithLock / Sanctum). Topic covers competitive landscape, iOS Screen Time / Family Controls / DeviceActivity APIs, Android Accessibility / UsageStats APIs, behavioral psychology of interruption vs. blocking, Christian app market sizing and monetization (Hallow, YouVersion, Pray.com), family / accountability prior art (Covenant Eyes, Bark, Accountable2You), Bible content licensing (API.Bible, ESV, NET), and differentiation vs. traditional Bible apps."
+    },
+    "llm-writing-indicators": {
+      "path": "topics/llm-writing-indicators",
+      "created": "2026-07-13",
+      "status": "active",
+      "summary": "Indicators of LLM-generated prose for reviewers and editors. Lexical tells (overused words: delve, tapestry, testament, underscore, boasts, realm, leverage; \"not only… but also\"; \"it's important to note\"), structural/rhetorical tells (rule-of-three, formulaic intros/conclusions, \"it's not X, it's Y\" antithesis, over-signposting, false balance), punctuation/typography tells (em-dash overuse, curly quotes, title-case headings, emoji bullets, bold-key-term density), tone/register tells (relentless positivity, sycophancy, vagueness). Empirical corpus evidence (post-ChatGPT word-frequency shifts in scientific abstracts), detector tools and their limits (GPTZero, Turnitin, Pangram, Binoculars, DetectGPT), model/version drift, and false-positive risk for non-native English writers."
+    },
+    "covenantless-ark": {
+      "path": "topics/covenantless-ark",
+      "created": "2026-07-16",
+      "status": "active",
+      "summary": "Covenantless Ark (clArk) — the Ark Bitcoin L2 variant that runs on current Bitcoin (no OP_CTV covenant), substituting n-of-n multisig presigning for the covenant. Round transaction mechanics: the ASP round, n-of-n batch/pool output, presigned VTXO transaction tree, connector/forfeit transactions, VTXO lifecycle and expiry, dropout/offline dynamics during a round, and the timeout-driven unilateral exit/refund path. Implementations: Ark Labs (arkd/arkade), Second (bark/clArk Rust), ark-rs. Comparisons vs covenant-based Ark, Lightning, statechains, timeout-trees."
+    },
+    "sighash-anyprevout-bip118": {
+      "path": "topics/sighash-anyprevout-bip118",
+      "created": "2026-07-16",
+      "status": "active",
+      "summary": "BIP-118 SIGHASH_ANYPREVOUT (APO) and SIGHASH_ANYPREVOUTANYSCRIPT (APOAS) — proposed Taproot-script sighash flags that omit the previous output (prevout) from the signed message, enabling pre-signed transactions to be rebound to a different outpoint. Covers status (draft/unactivated, signet-only, soft-fork bundling debate), semantics vs BIP-341, the Eltoo / LN-Symmetry motivation, and the effect on presigning transactions that must commit to an as-yet-unmined coinbase outpoint (mining-payout / share-accounting relevance), including limits (coinbase maturity, APO-vs-APOAS) and alternatives (CTV/BIP-119, ANYONECANPAY, template-side workarounds)."
+    },
+    "musig2-signing-ceremonies": {
+      "path": "topics/musig2-signing-ceremonies",
+      "created": "2026-07-16",
+      "status": "active",
+      "summary": "MuSig2 (BIP-327 two-round Schnorr multi-signature) run as an interactive signing ceremony over a wire protocol. The two communication rounds (nonce exchange, partial-signature exchange), optional nonce commit/reveal pre-rounds and why canonical MuSig2 drops MuSig1's commitment round, session framing / state machines / coordinator vs peer topologies, and dropout/abort/failure handling (nonce-reuse catastrophe, identifiable aborts, restart semantics, DoS surfaces). Reference implementations (libsecp256k1-zkp, rust secp256k1 musig, LND) and contrast with FROST/ROAST."
+    },
+    "ark-boarding-sv2-mining": {
+      "path": "topics/ark-boarding-sv2-mining",
+      "created": "2026-07-17",
+      "status": "active",
+      "summary": "Thesis wiki: is an online-while-mining covenantless Ark boarding Stratum V2 extension (n-of-n batch output, cosigning ceremony triggered post-block-found) viable on Bitcoin today without CTV/CSFS? The pivotal move is deferring the n-of-n cosigning ceremony to AFTER a block is found, when the coinbase outpoint is known, routing around the unknown-txid presigning wall (sighash-anyprevout-bip118). Reuses clArk n-of-n presigning (covenantless-ark) and interactive MuSig2 ceremonies (musig2-signing-ceremonies); anchored to demand-open-source/demand-share-accounting-ext."
     }
   },
   "local_wikis": [
@@ -167,6 +215,14 @@
       "created": "2026-06-02",
       "status": "active",
       "summary": "Knowledge base for christ-is-lord — v1.0.0 OSS desktop+mobile alternative to Logos.com. Repo-local assessments grounded in hub topics open-source-logos-suite (engineering basis) and rust-multi-platform (mobile/desktop validation). MIT-licensed; public-oss sensitivity."
+    },
+    {
+      "name": "para",
+      "path": "/Users/garykrause/repos/para/.wiki",
+      "created": "2026-06-23",
+      "status": "active",
+      "sensitivity": "public-oss",
+      "summary": "Repo-local wiki for parasitepool/para — Rust crate co-vendored with a ckpool C fork. Repo-specific assessments and plans grounded in hub topics sv2-coinbase-identity, bitcoin-mining-payout-schemas, and datum."
     }
   ]
 }
