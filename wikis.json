@@ -183,6 +183,12 @@
       "created": "2026-07-17",
       "status": "active",
       "summary": "Thesis wiki: is an online-while-mining covenantless Ark boarding Stratum V2 extension (n-of-n batch output, cosigning ceremony triggered post-block-found) viable on Bitcoin today without CTV/CSFS? The pivotal move is deferring the n-of-n cosigning ceremony to AFTER a block is found, when the coinbase outpoint is known, routing around the unknown-txid presigning wall (sighash-anyprevout-bip118). Reuses clArk n-of-n presigning (covenantless-ark) and interactive MuSig2 ceremonies (musig2-signing-ceremonies); anchored to demand-open-source/demand-share-accounting-ext."
+    },
+    "eink-esp32-dashboard": {
+      "path": "topics/eink-esp32-dashboard",
+      "created": "2026-07-20",
+      "status": "active",
+      "summary": "Building a low-power, slowly-updating dashboard on a Waveshare e-Paper ESP32 Driver Board (Rev3) with an ESP32-WROOM-32E MCU. Firmware stacks (GxEPD2, epdiy, Arduino/ESP-IDF, MicroPython, ESPHome), data-source integration (REST/JSON, CalDAV/Google Calendar, mempool.space/Bitcoin network data, weather), power management + deep-sleep refresh cadence for slow dynamic updates, e-paper refresh mechanics (full vs partial, ghosting, waveforms), server-side vs on-device rendering, and turnkey/OSS dashboard projects (TRMNL/BYOS, MagInkCal, ESP32-e-Paper-Weather-Display, LaskaKit, etc.)."
     }
   },
   "local_wikis": [
