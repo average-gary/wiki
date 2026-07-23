@@ -48,6 +48,11 @@ data sources (calendar, Bitcoin network data, weather, etc.) onto an e-paper dis
 - [TRMNL BYOS Walkthrough](reference/trmnl-byos-walkthrough.md) — self-hosted server + Waveshare firmware + Bitcoin screen, concretely.
 - [Turnkey & OSS Projects](reference/turnkey-projects.md) — clone/adapt candidates ranked by fit (TRMNL, esp32-weather-epd, ESPHome, MagInkDash, BTClock).
 
+## Outputs
+
+- **[Plan: On-device, self-contained dashboard (no server)](output/plan-ondevice-waveshare-dashboard-2026-07-20.md)** — **active** — fork esp32-weather-epd (GxEPD2), Bitcoin + weather on-device, WiFiManager for portability, calendar dropped for v1, USB power.
+- [Plan: Self-hosted TRMNL BYOS dashboard](output/plan-byos-waveshare-dashboard-2026-07-20.md) — *superseded* (server dropped per user; kept for reference). See [output/_index.md](output/_index.md).
+
 ## Key findings
 
 - **Feasible and well-trodden.** The board + WROOM-32E is a mainstream e-paper dashboard platform; a Waveshare-targeting TRMNL firmware fork already exists.

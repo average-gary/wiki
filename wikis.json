@@ -189,6 +189,24 @@
       "created": "2026-07-20",
       "status": "active",
       "summary": "Building a low-power, slowly-updating dashboard on a Waveshare e-Paper ESP32 Driver Board (Rev3) with an ESP32-WROOM-32E MCU. Firmware stacks (GxEPD2, epdiy, Arduino/ESP-IDF, MicroPython, ESPHome), data-source integration (REST/JSON, CalDAV/Google Calendar, mempool.space/Bitcoin network data, weather), power management + deep-sleep refresh cadence for slow dynamic updates, e-paper refresh mechanics (full vs partial, ghosting, waveforms), server-side vs on-device rendering, and turnkey/OSS dashboard projects (TRMNL/BYOS, MagInkCal, ESP32-e-Paper-Weather-Display, LaskaKit, etc.)."
+    },
+    "sv2-coinbase-verify-daemon": {
+      "path": "topics/sv2-coinbase-verify-daemon",
+      "created": "2026-07-21",
+      "status": "active",
+      "summary": "Engineering a simple daemon that connects as a miner to a Stratum V2 pool, receives mining jobs, reconstructs the coinbase transaction, and checks it against an expected value (payout scriptPubKey / output amount / tagged scriptSig). Covers the SV2 client role and message flow (SetupConnection → OpenStandard/ExtendedMiningChannel → NewMiningJob/NewExtendedMiningJob + SetNewPrevHash), how much of the coinbase is exposed to a downstream miner across the three SV2 topologies (Pool-only, Job Declaration, Template Distribution), which SRI crates a minimal Rust client uses (roles_logic_sv2 / codec-sv2 / mining-device), coinbase transaction structure + the merkle-root reconstruction a miner already performs, and which 'expected value' checks are feasible vs. impossible for a downstream miner without Job Declaration or a Template Provider."
+    },
+    "automate-bldc-motor-manufacturing": {
+      "path": "topics/automate-bldc-motor-manufacturing",
+      "created": "2026-07-22",
+      "status": "active",
+      "summary": "How to automate the production of brushless DC (BLDC) / permanent-magnet synchronous (PMSM) motors. Covers the manufacturing process chain station by station (stator winding, permanent-magnet handling/insertion/magnetization, lamination stacking, rotor/stator assembly, final assembly, end-of-line testing), the automation systems that build it (industrial robots, dedicated winding machinery — needle/flyer/linear/hairpin, machine-vision inspection, MES), line architecture and throughput/scale economics, and the automation-equipment vendor landscape. Question-mode research producing a build playbook."
+    },
+    "orthopedic-implant-manufacturing-automation": {
+      "path": "topics/orthopedic-implant-manufacturing-automation",
+      "created": "2026-07-22",
+      "status": "active",
+      "summary": "How to manufacture orthopedic implants (hip/knee/spine/trauma/extremities) using maximal automation. Covers the process chain station by station (design/CAD, raw material, forming via multi-axis CNC machining / metal additive L-PBF & EBM / forging / investment casting, surface finishing & coating — robotic polishing, blasting, porous & HA coatings, anodizing, passivation — cleaning, metrology/inspection via machine vision + CMM, packaging, sterilization), the automation systems (CNC + robotic cells, cobots, metal AM, automated inspection, MES/traceability), materials constraints (Ti-6Al-4V, CoCr, stainless, tantalum, PEEK, UHMWPE), line economics/scale, the regulatory envelope that shapes how far automation can go (FDA QSR / 21 CFR 820, ISO 13485, IQ/OQ/PQ process validation, UDI, CAPA), and the equipment/vendor landscape. Deep question-mode research producing a build playbook."
     }
   },
   "local_wikis": [
