@@ -1,6 +1,6 @@
 ---
 title: "p2poolv2 release notes — v0.10.10 to v0.10.16"
-source_url: https://github.com/p2poolv2/p2poolv2/releases
+source: https://github.com/p2poolv2/p2poolv2/releases
 type: release-notes
 ingested: 2026-05-22
 quality: 5

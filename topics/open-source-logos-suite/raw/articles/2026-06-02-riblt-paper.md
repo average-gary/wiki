@@ -1,7 +1,7 @@
 ---
 title: "Rateless Invertible Bloom Lookup Tables (Yang, Gilad, Alizadeh — SIGCOMM 2024)"
-url: https://arxiv.org/abs/2402.02668
-retrieved: 2026-06-02
+source: https://arxiv.org/abs/2402.02668
+ingested: 2026-06-02
 type: spec
 ---
 

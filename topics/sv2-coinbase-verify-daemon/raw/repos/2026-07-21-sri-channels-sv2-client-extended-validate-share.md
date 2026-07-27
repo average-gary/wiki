@@ -1,13 +1,13 @@
 ---
 title: "SRI channels_sv2::client::extended — ExtendedChannel + validate_share (the reusable coinbase-check engine)"
-source_url: https://github.com/stratum-mining/stratum/blob/main/sv2/channels-sv2/src/client/extended.rs
+source: https://github.com/stratum-mining/stratum/blob/main/sv2/channels-sv2/src/client/extended.rs
 source_url_2: https://github.com/stratum-mining/stratum/blob/main/sv2/channels-sv2/src/merkle_root.rs
 source_url_3: https://github.com/stratum-mining/stratum/blob/main/sv2/channels-sv2/src/server/jobs/factory.rs
-type: repo
-retrieved: 2026-07-21
+type: repos
+ingested: 2026-07-21
 credibility: high
 corroboration: "rust-stack agent (primary source, ~1164 lines)"
-tags: [stratum-v2, SRI, channels-sv2, ExtendedChannel, validate_share, merkle_root_from_path, JobFactory, bip141, Target, coinbase-reconstruction]
+tags: [stratum-v2, sri, channels-sv2, extended-channel, validate-share, merkle_root_from_path, jobfactory, bip141, target, coinbase-reconstruction]
 summary: "The single most relevant SRI file for this daemon: ExtendedChannel already reconstructs the coinbase, folds the merkle root, builds the header, hashes, and compares against target. merkle_root_from_path is a standalone free function. JobFactory builds the coinbase server-side (to derive an 'expected' coinbase)."
 ---
 

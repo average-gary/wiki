@@ -1,9 +1,11 @@
 ---
 title: Magnet Handling & Magnetization
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [magnets, ndfeb, magnetization, post-assembly, capacitor-discharge, spm, ipm, adhesive]
+summary: "The rotor is where automation meets physics head-on. Permanent magnets are brittle, hazardous when magnetized, and unforgiving of misplacement — which is exactly why the industry's central trick is to *not magnetize them until the very end*."
 confidence: high
 ---
 
@@ -91,3 +93,5 @@ harder than the magnetize-after path — avoid it if you control the design.
 - [Core & Assembly Automation](core-and-assembly-automation.md) — rotor shaft press-fit + balancing
 - [Quality & EOL Testing](quality-and-eol-testing.md) — back-EMF detects magnetization defects
 - [Vendor Landscape](../reference/vendor-landscape.md) — magnetizer & bonding-machine makers
+- [[../reference/build-playbook.md|Build Playbook — How to Automate Brushless Motor Manufacturing]]
+- [[limitations-and-gotchas.md|Limitations & Gotchas]]

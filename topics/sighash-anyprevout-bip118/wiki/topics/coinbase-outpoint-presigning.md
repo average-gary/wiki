@@ -159,6 +159,7 @@ is available on mainnet today — APO is
 - [[rebindable-signatures|Rebindable signatures]] ([Rebindable signatures](../concepts/rebindable-signatures.md)) — the general capability
 - [[covenant-primitives-comparison|Covenant primitives comparison]] ([Covenant primitives comparison](../references/covenant-primitives-comparison.md)) — CTV / ANYONECANPAY / APO fitness table
 - [[anyprevout-status-and-activation|Status & activation]] ([Status & activation](anyprevout-status-and-activation.md)) — this is gated on a not-yet-activated primitive
+- [[../concepts/signature-replay-and-chaperone-signatures.md|Signature replay & chaperone signatures]]
 
 ## Sources
 

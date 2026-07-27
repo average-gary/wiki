@@ -1,7 +1,7 @@
 ---
 title: "Thaumaturge Class - Archives of Nethys (PF2e)"
 source: "https://2e.aonprd.com/Classes.aspx?ID=69"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: 2022-08-25
 tags: [pf2e, reskin, class, thaumaturge, relics, saints]

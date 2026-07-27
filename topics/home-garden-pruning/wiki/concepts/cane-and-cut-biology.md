@@ -1,6 +1,6 @@
 ---
 title: Cane and Cut Biology
-type: concept
+category: concept
 created: 2026-05-26
 updated: 2026-05-26
 verified: 2026-05-26
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [biology, pruning, primocane, floricane, cane-renewal, apical-dominance]
+summary: "Pruning decisions follow the plant's growth biology. Three patterns cover everything in this wiki."
 sources:
   - "[[raw/articles/2026-05-26-raspberry-umn-growing-home-garden]]"
   - "[[raw/articles/2026-05-26-blackberry-uga-c766]]"
@@ -107,3 +108,7 @@ Most temperate pruning is done **late winter / early spring** when:
 - [[cut-mechanics|Cut mechanics]]
 - [[cane-renewal|Cane renewal pruning]]
 - [[sanitation|Sanitation]]
+- [[../topics/blackberry-pruning.md|Thornless Blackberry Pruning]]
+- [[../topics/cherry-pruning.md|Cherry Pruning — Kristin and BlackGold]]
+- [[../topics/raspberry-pruning.md|Raspberry Pruning]]
+- [[../reference/training-systems-cherry.md|Cherry Training Systems]]

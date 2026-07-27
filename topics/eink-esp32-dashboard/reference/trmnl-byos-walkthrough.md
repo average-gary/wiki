@@ -1,9 +1,11 @@
 ---
 title: TRMNL BYOS Walkthrough — self-hosted server, Waveshare firmware, Bitcoin screen
-type: reference
+category: reference
 created: 2026-07-20
 updated: 2026-07-20
+volatility: warm
 tags: [trmnl, byos, walkthrough, firmware, platformio, bitcoin, mempool, liquid, self-host]
+summary: "Concrete path to stand up a self-hosted BYOS server, flash the Waveshare ESP32 firmware to talk to it, and author a Bitcoin (mempool.space) screen. Everything here is free and self-hostable — no TRMNL account required."
 confidence: high
 ---
 

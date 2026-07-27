@@ -1,11 +1,13 @@
 ---
 title: Model & version drift — why the tells keep moving
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, drift, model-versions, temporal]
+summary: "Every tell in this wiki has a shelf life. The fingerprints shift with each model update, and — separately — the tell-words are being adopted by humans. A reviewer must date their checklist."
 sources:
   - raw/articles/2026-07-13-kreuz-conversation-more-art-than-science.md
   - raw/articles/2026-07-13-em-dash-discourse-rollingstone-techcrunch.md
@@ -42,3 +44,5 @@ Quality sources doing a rigorous GPT-4 vs 4o vs GPT-5 vs Claude vs Gemini tell-b
 - [[why-llms-write-this-way|Why LLMs write this way]] — why RLHF is the moving part.
 - [[lexical-overuse-words|Lexical overuse]] — the tell decaying fastest.
 - [[../topics/false-positives-and-fairness|False positives & fairness]].
+- [[em-dash-and-punctuation.md|Em-dash & punctuation tells]]
+- [[sycophancy-and-positivity-register.md|Sycophancy & the relentless-positivity register]]

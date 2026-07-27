@@ -3,7 +3,7 @@ title: "ForecastBench-Sim: A Simulated-World Forecasting Benchmark"
 source: https://arxiv.org/abs/2606.18686
 authors: [Jaeho Lee, Nick Merrill, Ezra Karger]
 year: 2026
-type: paper
+type: papers
 ingested: 2026-06-18
 quality: 4
 confidence: medium

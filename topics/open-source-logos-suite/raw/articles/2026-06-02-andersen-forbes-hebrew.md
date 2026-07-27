@@ -1,8 +1,8 @@
 ---
 title: "Andersen-Forbes Hebrew syntactic database"
-url: https://andersen-forbes.org/
-retrieved: 2026-06-02
-type: article
+source: https://andersen-forbes.org/
+ingested: 2026-06-02
+type: articles
 ---
 
 # Andersen-Forbes Hebrew database

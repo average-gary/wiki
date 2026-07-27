@@ -3,7 +3,7 @@ title: "GPT detectors are biased against non-native English writers"
 source: https://arxiv.org/abs/2304.02819
 authors: Weixin Liang, Mert Yuksekgonul, Yining Mao, Eric Wu, James Zou
 venue: Patterns (Cell Press), 2023; arXiv:2304.02819
-type: paper
+type: papers
 tags: [llm-writing-indicators, detection-limits, false-positives, non-native-english, perplexity, bias]
 quality: 5
 confidence: high

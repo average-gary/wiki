@@ -1,6 +1,7 @@
 ---
 title: "DATUM Gateway datum_stratum.h — Per-Miner & Per-Job Structs"
-source_url: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_stratum.h
+source: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_stratum.h
+type: articles
 source_type: source-file
 upstream: OCEAN-xyz/datum_gateway
 branch: master

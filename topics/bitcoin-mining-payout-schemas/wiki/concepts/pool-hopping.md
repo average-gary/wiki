@@ -3,9 +3,10 @@ title: Pool Hopping
 category: concept
 created: 2026-05-23
 confidence: high
-tags: [attack, pool-hopping, proportional, PPLNS, Rosenfeld]
+tags: [attack, pool-hopping, proportional, pplns, Rosenfeld]
 volatility: warm
 updated: 2026-07-15
+summary: "The original miner-vs-pool attack. Motivated PPLNS in 2011."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-23-rosenfeld-pplns-bitcointalk-2011.md"

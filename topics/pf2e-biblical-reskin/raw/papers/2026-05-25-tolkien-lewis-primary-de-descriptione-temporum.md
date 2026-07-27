@@ -1,7 +1,7 @@
 ---
 title: "C.S. Lewis, 'De Descriptione Temporum' (Cambridge inaugural lecture, 29 Nov 1954)"
 source: "https://homepages.uc.edu/~schaefdw/temporum.html ; https://archive.org/stream/DeDescriptioneTemporum/DeDescriptioneTemporumByC.S.Lewis_djvu.txt"
-type: paper
+type: papers
 date_fetched: 2026-05-25
 date_published: 1954
 tags: [lewis, magic-theology, primary-text, modernity, machine, great-divide]

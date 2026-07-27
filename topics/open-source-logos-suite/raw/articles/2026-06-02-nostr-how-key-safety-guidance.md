@@ -1,8 +1,8 @@
 ---
 title: "nostr.how — official Nostr getting-started guide on key safety"
-url: https://nostr.how/en/get-started
-retrieved: 2026-06-02
-type: article
+source: https://nostr.how/en/get-started
+ingested: 2026-06-02
+type: articles
 ---
 
 The official end-user guide at nostr.how is the closest thing Nostr has to user-facing documentation. On key safety it states bluntly: "If you lose your private key your Nostr account is lost. If someone else gains access to your private key, they can take control of your account." It recommends storing the key in a password manager (1Password) or a browser extension like Alby.

@@ -1,6 +1,7 @@
 ---
 title: "Mining Pool Template Similarity - OCEAN as Independent Template Builder"
-url: https://b10c.me/observations/12-template-similarity/
+source: https://b10c.me/observations/12-template-similarity/
+type: articles
 source_type: independent-research
 ingested_by: path5
 ingested_on: 2026-06-01

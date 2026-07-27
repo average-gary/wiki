@@ -1,6 +1,6 @@
 ---
 title: "The clArk round lifecycle"
-type: concept
+category: concept
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high
@@ -51,6 +51,9 @@ A round either completes fully or aborts with **no on-chain footprint** — "If 
 - [[dropout-and-round-abort.md|Dropout and round abort]]
 - [[vtxo-lifetime-and-expiry.md|VTXO lifetime and expiry]]
 - [[../topics/clark-round-transaction-mechanics.md|Round transaction mechanics (synthesis)]]
+- [[boarding.md|Boarding — getting on-chain funds into a VTXO]]
+- [[clark-overview.md|clArk overview — covenantless Ark on today's Bitcoin]]
+- [[out-of-round-payments.md|Out-of-round (OOR / arkoor) payments]]
 
 ## Sources
 

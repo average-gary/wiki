@@ -1,6 +1,7 @@
 ---
 title: "SV2 role taxonomy: when does a pool need JDS? — implications for DATUM"
 source: https://github.com/stratum-mining/sv2-spec/blob/main/05-Mining-Protocol.md
+type: articles
 source_secondary: https://github.com/stratum-mining/sv2-apps
 source_type: spec+repo-listing
 ingested_by: path3

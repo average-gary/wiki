@@ -1,15 +1,15 @@
 ---
 title: "p2poolv2 accounting modules — pplns_window.rs, payout.rs, payout_distribution.rs"
 publication: github.com/p2poolv2/p2poolv2
-url: https://github.com/p2poolv2/p2poolv2/blob/main/p2poolv2_lib/src/accounting/payout/sharechain_pplns/pplns_window.rs
+source: https://github.com/p2poolv2/p2poolv2/blob/main/p2poolv2_lib/src/accounting/payout/sharechain_pplns/pplns_window.rs
 url2: https://github.com/p2poolv2/p2poolv2/blob/main/p2poolv2_lib/src/accounting/payout/sharechain_pplns/payout.rs
 url3: https://github.com/p2poolv2/p2poolv2/blob/main/p2poolv2_lib/src/accounting/payout/payout_distribution.rs
-type: repo
+type: repos
 ingested: 2026-05-24
 quality: 5
 credibility: high
 confidence: high
-tags: [p2poolv2, accounting, PPLNS, code-level, source-truth]
+tags: [p2poolv2, accounting, pplns, code-level, source-truth]
 ---
 
 # p2poolv2 Accounting — Code-Level Truth

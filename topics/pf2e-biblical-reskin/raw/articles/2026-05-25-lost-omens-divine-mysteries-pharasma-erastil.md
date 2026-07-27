@@ -1,7 +1,7 @@
 ---
 title: "Divine Mysteries Remaster — Pharasma and Erastil per-deity entries"
 source: "aon-search.sh by-name 'Pharasma' / 'Erastil' (deity-290, deity-282)"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, remaster, lost-omens, deity-template, divine-mysteries, gap-closing]
 quality: 5

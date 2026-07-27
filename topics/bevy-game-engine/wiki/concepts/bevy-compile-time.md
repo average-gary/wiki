@@ -1,10 +1,12 @@
 ---
 title: "Bevy compile time"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, compile-time, mold, lld, cranelift, dynamic-linking]
+summary: "Productivity is one of Bevy's six pillars — the 2020 launch post declared a hard target: 0–1s iterative as the goal, 10+s as \"unusable.\""
 ---
 
 # Bevy compile time

@@ -1,6 +1,7 @@
 ---
 title: "SRI ExtendedChannel<J> server-side state machine (channels-sv2)"
 source: /Users/garykrause/repos/stratum/sv2/channels-sv2/src/server/extended.rs
+type: repos
 source_type: local-code
 ingested_by: path3
 ingested_at: 2026-06-01

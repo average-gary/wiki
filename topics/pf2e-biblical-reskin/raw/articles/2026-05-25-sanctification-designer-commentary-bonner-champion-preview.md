@@ -1,7 +1,7 @@
 ---
 title: "Player Core 2 Preview: The Champion, Remastered (Logan Bonner, Paizo blog)"
 source: "https://paizo.com/community/blog/v5748dyo6uib0?Player-Core-2-Preview-The-Champion-Remastered"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, remaster, sanctification, designer-commentary, paizo, gap-closing]
 quality: 5

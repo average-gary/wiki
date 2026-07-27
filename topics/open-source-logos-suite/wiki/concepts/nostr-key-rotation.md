@@ -1,15 +1,16 @@
 ---
 title: "Nostr key-rotation: 2026 state of the art"
-type: concept
+category: concept
 created: 2026-06-02
 updated: 2026-06-02
 verified: 2026-06-02
 volatility: warm
+summary: "As of 2026-06-02, Nostr has no merged protocol primitive for key rotation, revocation, or compromise recovery. The two NIPs that historically gestured at the problem — NIP-06 (mnemonic seed derivation) and NIP-26 (delegated event signing) — are both explicitly flagged \"unrecommended\" in the canonica…"
 confidence: high
 sources:
   - raw/articles/2026-06-02-nip-26-delegated-event-signing.md
   - raw/articles/2026-06-02-nip-06-mnemonic-key-derivation.md
-  - raw/articles/2026-06-02-nips-readme-unrecommended-list.md
+  - ../../raw/repos/2026-06-02-nips-readme-unrecommended-list.md
   - raw/articles/2026-06-02-nips-pr-2137-key-migration.md
   - raw/articles/2026-06-02-nips-pr-2114-d8-key-rotation.md
   - raw/articles/2026-06-02-nips-pr-1056-key-revocation.md
@@ -78,3 +79,5 @@ ATProto's `did:plc` method specifies 1–5 priority-ordered rotation keys per id
 - [[identity-and-recovery|Identity and recovery]] — the broader recovery story; this article is the Nostr-specific deep-dive that the recovery comparison table summarizes.
 - [[credible-exit|Credible exit]] — why a working rotation primitive is itself a credible-exit feature.
 - [[../topics/open-source-logos-suite/_index|Topic index]] — for surrounding context.
+- [[decentralized-sync.md|Decentralized Sync]]
+- [[keyhive-small-group-sync.md|Keyhive: small-group E2EE CRDT sync (Ink & Switch March 2025)]]

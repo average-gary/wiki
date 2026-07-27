@@ -1,7 +1,7 @@
 ---
 title: "matrix-org/matrix-rust-sdk — non-Mozilla UniFFI validator at scale"
 source: https://github.com/matrix-org/matrix-rust-sdk
-type: repo
+type: repos
 tags: [matrix, uniffi, e2ee, swift, kotlin, element-x]
 date: 2026-05-21
 quality: 4

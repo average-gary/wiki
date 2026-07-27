@@ -1,6 +1,6 @@
 ---
 title: "Iroh app token wrapper — integration with AccessLimit and auth-hook"
-type: concept
+category: concept
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-06-01-fedimint-invite-code.md
   - raw/articles/2026-06-01-tor-onion-v3-client-auth.md
 tags: [iroh, accesslimit, auth-hook, router, integration, app-ticket]
+summary: "How to plug the token format and seed rotation into iroh's existing AccessLimit<P> + auth-hook.rs patterns."
 ---
 
 # Iroh app token wrapper — integration

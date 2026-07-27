@@ -1,10 +1,11 @@
 ---
 title: "Rust UI framework decision (2026) — Tauri vs Dioxus vs Slint vs egui"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: hot
+summary: "Three architectural families. Pick by mobile/web requirements + binary-size budget + accessibility needs."
 confidence: high
 sources:
   - raw/articles/2026-05-21-tauri-2-release.md

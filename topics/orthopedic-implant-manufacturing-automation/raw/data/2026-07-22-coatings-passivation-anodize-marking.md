@@ -8,7 +8,7 @@ type: data
 tags: [coatings, hydroxyapatite, plasma-spray, titanium-plasma-spray, porous-coating, passivation, anodizing, laser-marking, udi, astm-f86, astm-a967]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Spec-dense surface-treatment stack — HA plasma spray (thickness tiers, >62% crystallinity, 6-axis ABB robot), passivation chemistry (ASTM F86/A967 concentrations/temps/times, validated automated bath line), Type II anodizing (AMS 2488), and UDI laser marking (TruMicro USP laser + VisionLine verification).
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Bible Gateway and Olive Tree — the publishing-conglomerate Christian apps
 source: https://en.wikipedia.org/wiki/Bible_Gateway + https://en.wikipedia.org/wiki/Olive_Tree_Bible_Software
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, market, monetization, bible-gateway, olive-tree, zondervan, harpercollins, translation-licensing]
 quality: 4

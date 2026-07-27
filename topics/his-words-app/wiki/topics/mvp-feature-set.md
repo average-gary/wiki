@@ -1,11 +1,13 @@
 ---
 title: MVP feature set — what ships in v1, what defers to v2
-type: topic
+category: topic
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, mvp, scope, product]
+summary: "This is the v1 ship list and the explicit defer list. Every choice is grounded in the research layer above; the goal is a tight, defensible MVP that proves the interruption-rhythm thesis at small scale before any expansion."
 sources:
   - raw/articles/2026-06-23-ios-research-verdict.md
   - raw/articles/2026-06-23-ios-implementation-patterns.md

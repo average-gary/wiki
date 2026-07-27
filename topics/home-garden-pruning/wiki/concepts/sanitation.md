@@ -1,6 +1,6 @@
 ---
 title: Pruning Sanitation
-type: concept
+category: concept
 created: 2026-05-26
 updated: 2026-05-26
 verified: 2026-05-26
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [pruning, sanitation, disease, tools, rose-rosette, bacterial-canker]
+summary: "Pruning shears are vector. Diseases that move with sap or spores travel on tools from one plant to the next. The fix is cheap and fast: a 30-second dip in a disinfectant between bushes."
 sources:
   - "[[raw/articles/2026-05-26-rose-clemson-pruning-roses]]"
   - "[[raw/articles/2026-05-26-rose-clemson-rose-diseases-rrd]]"
@@ -105,3 +106,6 @@ Burning is best where allowed. Composting kills most fungal spores at proper hot
 - [[../topics/cherry-pruning|Cherry pruning]] — bacterial canker
 - [[../topics/rose-pruning|Rose pruning]] — RRD
 - [[../reference/rose-rosette-disease|Rose Rosette Disease]]
+- [[../topics/blackberry-pruning.md|Thornless Blackberry Pruning]]
+- [[../reference/pruning-tools.md|Pruning Tools]]
+- [[../topics/raspberry-pruning.md|Raspberry Pruning]]

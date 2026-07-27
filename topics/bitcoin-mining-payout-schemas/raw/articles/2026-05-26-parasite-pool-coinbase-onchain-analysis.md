@@ -1,6 +1,6 @@
 ---
 title: "Parasite Pool coinbase distribution — on-chain analysis"
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

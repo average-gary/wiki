@@ -1,10 +1,10 @@
 ---
 title: "Crime statistics — methodology + data-quality caveats"
 publication: Pew Research / BJS / Brennan Center / Wikipedia
-url: https://www.pewresearch.org/short-reads/2024/04/24/what-the-data-says-about-crime-in-the-us/
+source: https://www.pewresearch.org/short-reads/2024/04/24/what-the-data-says-about-crime-in-the-us/
 url2: https://bjs.ojp.gov/data-collection/ncvs
 url3: https://www.brennancenter.org/our-work/research-reports/myths-and-realities-understanding-recent-trends-violent-crime
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

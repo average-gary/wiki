@@ -1,8 +1,8 @@
 ---
 title: "Step-by-Step Guide for StratumV2 Solo Mining on DEMAND (NoBSBitcoin)"
 publication: nobsbitcoin.com
-url: https://www.nobsbitcoin.com/step-by-step-guide-for-stratumv2-solo-mining-on-demand/
-type: article
+source: https://www.nobsbitcoin.com/step-by-step-guide-for-stratumv2-solo-mining-on-demand/
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

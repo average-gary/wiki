@@ -1,7 +1,7 @@
 ---
 title: "Aquinas, Summa Theologica I, Q.108 — On the Angelic Hierarchies and Orders"
 source: "https://www.newadvent.org/summa/1108.htm"
-type: paper
+type: papers
 date_fetched: 2026-05-25
 date_published: "1265-1274 (translation: 1947 Benziger)"
 tags: [aquinas, summa, angelology, primary-text, gap-closing]

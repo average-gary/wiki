@@ -1,7 +1,7 @@
 ---
 title: "OpenBible.info Cross-References (TSK-derived)"
-source_url: "https://www.openbible.info/labs/cross-references/"
-type: article
+source: "https://www.openbible.info/labs/cross-references/"
+type: articles
 path: data
 date_ingested: 2026-05-27
 date_published: unknown

@@ -1,9 +1,11 @@
 ---
 title: "Vendor Landscape — Ortho Implant Manufacturing Automation"
-type: reference
+category: reference
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [vendor-landscape, cmo, machine-tools, robotic-finishing, additive-oem, metrology, market]
+summary: "Who to buy from, organized by station. Synthesized from the CMO/vendor source, serial-AM cases, and the lights-out cell."
 confidence: high
 ---
 

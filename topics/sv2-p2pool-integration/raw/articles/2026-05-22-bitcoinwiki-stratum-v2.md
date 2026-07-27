@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin Wiki — Stratum v2"
-source_url: https://en.bitcoin.it/wiki/Stratum_v2
+source: https://en.bitcoin.it/wiki/Stratum_v2
 type: wiki-article
 ingested: 2026-05-22
 quality: 3

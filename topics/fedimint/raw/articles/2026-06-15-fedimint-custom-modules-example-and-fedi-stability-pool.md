@@ -10,7 +10,7 @@ verified: 2026-06-15
 volatility: warm
 quality: 4
 confidence: high
-tags: [fedimint, FMCM, custom-modules, fedi-stability-pool, upgrade-tax, scaffold-rot]
+tags: [fedimint, fmcm, custom-modules, fedi-stability-pool, upgrade-tax, scaffold-rot]
 summary: Survey of the official `fedimint-custom-modules-example` (last push 2024-07-13, pinned to fedimint v0.3.0 — pre-`AmountUnit`) and Fedi's stability-pool module in `fedixyz/fedi` (depending on the `fedibtc/fedimint` fork at `v0.11.0-fedi1`, ~2,500-line server crate). Captures the FMCM upgrade tax and the de facto fork-the-upstream pattern.
 ---
 

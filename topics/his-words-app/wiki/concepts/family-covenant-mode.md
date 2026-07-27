@@ -1,11 +1,13 @@
 ---
 title: Family covenant mode — group-aggregate redeemed time
-type: concept
+category: concept
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: medium
 tags: [his-words-app, accountability, family-mode, social, theology]
+summary: "Family covenant mode is His Words' answer to the accountability question — without entering the Christian-purity-accountability category."
 sources:
   - raw/articles/2026-06-23-accountability-covenant-eyes.md
   - raw/articles/2026-06-23-accountability-budget-tier-a2y-ever-truple.md

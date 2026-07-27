@@ -1,7 +1,7 @@
 ---
 title: "Pathfinder Second Edition Remaster Project announcement (Paizo blog, April 2023)"
 source: "https://paizo.com/community/blog/v5748dyo6siae"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, remaster, sanctification, designer-commentary, paizo, gap-closing, ogl]
 quality: 4

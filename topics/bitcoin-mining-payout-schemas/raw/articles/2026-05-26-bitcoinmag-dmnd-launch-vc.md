@@ -2,9 +2,9 @@
 title: "DMND To Launch First Stratum V2 Bitcoin Mining Pool and Closes Venture Capital Investment (Bitcoin Magazine)"
 publication: Bitcoin Magazine
 author: Nik
-url: https://bitcoinmagazine.com/news/dmnd-to-launch-first-stratum-v2-bitcoin-mining-pool-and-closes-venture-capital-investment
+source: https://bitcoinmagazine.com/news/dmnd-to-launch-first-stratum-v2-bitcoin-mining-pool-and-closes-venture-capital-investment
 date: 2025-03-18
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: high

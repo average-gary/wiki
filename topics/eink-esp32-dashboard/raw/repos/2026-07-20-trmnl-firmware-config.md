@@ -1,7 +1,7 @@
 ---
 title: "TRMNL firmware config & flashing (usetrmnl/firmware, olivrrrr Waveshare fork)"
 source: https://github.com/usetrmnl/firmware
-type: repo
+type: repos
 tags: [trmnl, firmware, platformio, config, api-base-url, wifimanager, gxepd2, waveshare, bmp]
 date: 2026-07-20
 quality: 5

@@ -1,11 +1,13 @@
 ---
 title: Contrarian objections and responses — steelmanned and answered
-type: topic
+category: topic
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, contrarian, theology, validation]
+summary: "A serious product plan must steelman the strongest objections before shipping. The objections below are not strawmen; each is voiced by serious thinkers (Crouch, Newport, Reinke, Haidt) or grounded in real published data (One Sec retention curves). Some have full answers; some have honest limits."
 sources:
   - raw/articles/2026-06-23-contrarian-phone-is-the-problem.md
   - raw/articles/2026-06-23-contrarian-haidt-phone-free-schools.md

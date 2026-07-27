@@ -1,6 +1,6 @@
 ---
 title: "Checkpoint transactions"
-type: concept
+category: concept
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high
@@ -12,7 +12,7 @@ sources:
   - raw/articles/2026-07-17-bark-repo-checkpoints-01-partial-exit-attack.md
   - raw/articles/2026-07-17-bark-repo-checkpoints-02-neighbour-exit.md
   - raw/articles/2026-07-17-bark-repo-checkpoints-03-designing-checkpoints.md
-tags: [ark, arkade, bark, checkpoint, anti-griefing, offchain, csv, exit, two-stage, partial-exit-attack, neighbour-exit]
+tags: [ark, arkade, bark, checkpoint, anti-griefing, off-chain, csv, exit, two-stage, partial-exit-attack, neighbour-exit]
 aliases: [checkpoint transaction, checkpoint tx, partial-exit attack, neighbour exit]
 summary: "Checkpoint transactions insert an extra two-output tx (policy A+S or S+T) into each off-chain spend so the server can defend against a griefing exit with a single on-chain tx and one user's exit cannot drag a neighbour's change VTXO on-chain. Present in both arkd/Arkade and bark; motivated by the partial-exit attack and the neighbour-exit problem."
 ---

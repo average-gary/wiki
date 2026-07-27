@@ -1,10 +1,12 @@
 ---
 title: "Bootstrap chain (Nix bootstrap-tools vs Guix full-source bootstrap)"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bootstrap, trusting-trust, mes, hex0, guix, nix, contrarian]
+summary: "A \"bootstrap chain\" is the sequence of binaries trusted *as a precondition* for building everything else from source. Smaller chain = smaller trusting-trust attack surface (Thompson 1984; Wheeler 2010)."
 sources:
   - "[[../../raw/articles/2026-06-15-guix-full-source-bootstrap-2023.md|Full-Source Bootstrap (Guix blog 2023)]]"
   - "[[../../raw/articles/2026-06-15-nixos-discourse-bootstrap-admission.md|NixOS Discourse maintainer admission]]"

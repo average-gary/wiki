@@ -1,7 +1,7 @@
 ---
 title: "GitHub free Linux arm64 hosted runners — public preview Jan 2025, GA Aug 2025"
-type: article
-source_url: https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/
+type: articles
+source: https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/
 ingested: 2026-06-15
 confidence: high
 relevance: direct

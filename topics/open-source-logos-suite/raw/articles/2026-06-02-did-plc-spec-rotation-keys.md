@@ -1,7 +1,7 @@
 ---
 title: "did:plc method specification — rotation keys & 72h recovery"
-url: https://github.com/did-method-plc/did-method-plc
-retrieved: 2026-06-02
+source: https://github.com/did-method-plc/did-method-plc
+ingested: 2026-06-02
 type: spec
 ---
 

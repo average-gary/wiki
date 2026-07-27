@@ -1,6 +1,6 @@
 ---
 title: Client Architecture
-type: concept
+category: concept
 created: 2026-05-27
 updated: 2026-05-27
 verified: 2026-05-27
@@ -8,12 +8,13 @@ volatility: warm
 status: active
 confidence: high
 tags: [client, tauri, rust, plugins, search, fts5, tantivy, cross-platform]
+summary: "Recommended stack for an open-source Logos suite. Builds on existing rust-multi-platform research; cross-references rather than duplicates that work."
 sources:
   - "[[raw/articles/2026-05-27-client-sqlite-fts5]]"
-  - "[[raw/articles/2026-05-27-client-tantivy]]"
-  - "[[raw/articles/2026-05-27-client-yjs-crdt]]"
+  - "[[../../raw/repos/2026-05-27-client-tantivy]]"
+  - "[[../../raw/repos/2026-05-27-client-yjs-crdt]]"
   - "[[raw/articles/2026-05-27-client-obsidian-plugin-arch]]"
-  - "[[raw/articles/2026-05-27-client-stepbible-data]]"
+  - "[[../../raw/repos/2026-05-27-client-stepbible-data]]"
 ---
 
 # Client Architecture
@@ -156,3 +157,5 @@ See [[decentralized-sync|Decentralized sync]].
 - [[decentralized-sync|Decentralized sync]]
 - [[../decisions/plugin-trust-model|Plugin trust model]]
 - [[../../../rust-multi-platform/wiki/_index|rust-multi-platform topic]]
+- [[macula-syntactic-search.md|MACULA syntactic search: query DSL + indexing]]
+- [[search-and-indexing.md|Search and Indexing]]

@@ -1,8 +1,8 @@
 ---
 title: "cashubtc/npubcash-server — canonical LNURL/Lightning-Address bridge for Cashu"
-type: repo
+type: repos
 source: https://github.com/cashubtc/npubcash-server
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [lnurl, lightning-address, cashu-address, deployment, sidecar]
 summary: TypeScript/Node.js backend powering npub.cash. Receives LNURL-pay / Lightning-Address payments, asks an external Cashu mint for a BOLT11 via NUT-04, claims the resulting tokens, holds them locked to the user's nostr pubkey until claim. The reference implementation of the LNURL-in-front-of-mint pattern.

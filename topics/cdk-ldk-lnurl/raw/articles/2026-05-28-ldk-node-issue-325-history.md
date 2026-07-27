@@ -1,8 +1,8 @@
 ---
 title: "ldk-node Issue #325 — `Bolt11Payment::receive*` should accept Bolt11InvoiceDescription"
-type: article
+type: articles
 source: https://github.com/lightningdevkit/ldk-node/issues/325
-fetched: 2026-05-28
+ingested: 2026-05-28
 published: 2024-07
 confidence: high
 tags: [ldk-node, history, description-hash, fedimint, lnurl-motivation]

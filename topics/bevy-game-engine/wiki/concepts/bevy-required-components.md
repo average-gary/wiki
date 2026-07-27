@@ -1,10 +1,12 @@
 ---
 title: "Bevy Required Components"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, ecs, required-components, bundles, archetype]
+summary: "Introduced in 0.15, refined in 0.16. Components declare their dependencies via #[require(...)] attributes:"
 ---
 
 # Bevy Required Components

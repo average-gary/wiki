@@ -2,9 +2,9 @@
 title: "Second's Bark Boasts New Era of Bitcoin Payments, Drawing in Former Blockstream Developers (Bitcoin Magazine)"
 publication: Bitcoin Magazine
 author: Juan Galt
-url: https://bitcoinmagazine.com/business/secondhqs-bark-boasts-new-era-of-bitcoin-payments-drawing-in-former-blockstream-developers
+source: https://bitcoinmagazine.com/business/secondhqs-bark-boasts-new-era-of-bitcoin-payments-drawing-in-former-blockstream-developers
 date: 2026-04-06
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

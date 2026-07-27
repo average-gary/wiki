@@ -3,7 +3,7 @@ title: "Why LLMs overuse em-dashes, and invisible Unicode artifacts as tells"
 source: https://medium.com/@raj-srivastava/how-llms-turned-the-em-dash-into-a-villain-technical-nuances-b564857adc3b
 authors: Raj Srivastava (Medium); Clemens Jarnach
 venue: Medium (2025) + clemensjarnach.github.io (24 Apr 2025)
-type: article
+type: articles
 tags: [llm-writing-indicators, em-dash, unicode, typography, mechanism, watermark-myth]
 quality: 3
 confidence: medium

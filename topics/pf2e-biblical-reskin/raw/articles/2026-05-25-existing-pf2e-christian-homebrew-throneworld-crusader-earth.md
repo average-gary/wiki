@@ -1,7 +1,7 @@
 ---
 title: "Throneworld 'Crusader Earth' — D20 Holy Land campaign pack (PF1-adjacent, not PF2)"
 source: "http://www.throneworld.com/personal/gaming/crusaderearth/index.html"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, christian-homebrew, d20, adjacent, gap-closing, holy-land]
 quality: 3

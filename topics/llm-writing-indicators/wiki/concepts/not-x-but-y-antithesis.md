@@ -1,11 +1,13 @@
 ---
 title: "Not X but Y" — negative parallelism / antithesis
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: medium
 tags: [llm-writing-indicators, structure, rhetoric]
+summary: "A signature rhetorical construction: the negative-parallelism frame that sets up a dismissed alternative only to pivot to the \"real\" answer."
 sources:
   - raw/articles/2026-07-13-wikipedia-signs-of-ai-writing.md
 ---

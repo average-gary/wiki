@@ -1,9 +1,9 @@
 ---
 title: "EthnTuttle/kirk — trustless gaming protocol library (Cashu + Nostr, Rust)"
 source: https://github.com/EthnTuttle/kirk
-type: repo
+type: repos
 tags: [nostr, cashu, gaming, protocol, library, rust, p2pk, nut-11, dleq, commit-reveal, mint-as-referee, ecash, cdk, kirk]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 summary: |
   Kirk is the protocol/library layer of EthnTuttle's Nostr+ecash gaming trio. Defines five

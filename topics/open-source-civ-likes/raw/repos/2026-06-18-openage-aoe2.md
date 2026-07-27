@@ -1,7 +1,7 @@
 ---
 title: "openage — SFTtech/openage (Age of Empires II reimplementation)"
 source: https://github.com/SFTtech/openage
-type: repo
+type: repos
 ingested: 2026-06-18
 quality: 5
 confidence: high

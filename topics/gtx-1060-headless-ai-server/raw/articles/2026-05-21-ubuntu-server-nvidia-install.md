@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu Server Guide — Install NVIDIA Drivers"
 source: https://ubuntu.com/server/docs/how-to/graphics/install-nvidia-drivers/
-type: article
+type: articles
 tags: [ubuntu-22-04, nvidia, headless, secure-boot, install-guide]
 date: 2026-05-21
 quality: 6

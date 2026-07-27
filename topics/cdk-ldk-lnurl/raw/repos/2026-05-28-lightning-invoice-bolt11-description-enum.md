@@ -1,8 +1,8 @@
 ---
 title: "`lightning_invoice::Bolt11InvoiceDescription` — the enum (rustdoc)"
-type: repo
+type: repos
 source: https://docs.rs/lightning-invoice/latest/lightning_invoice/enum.Bolt11InvoiceDescription.html
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [rust-lightning, lightning-invoice, bolt11, description-hash]
 summary: The enum LDK Node accepts on its receive methods. Has Direct(Description) and Hash(Sha256) variants. Hash variant maps to BOLT11 `h` tag.

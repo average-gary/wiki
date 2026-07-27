@@ -1,11 +1,13 @@
 ---
 title: Android FGS poll architecture — UsageStatsManager + SAW + specialUse FGS
-type: concept
+category: concept
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, android, technical, architecture]
+summary: "His Words on Android cannot use a first-party screen-time framework — there is no Android equivalent to iOS Family Controls. The architecture every shipping app blocker (StayFree, ScreenZen, AppBlock, Forest, Mindful) converged on:"
 sources:
   - raw/articles/2026-06-23-android-usage-stats-manager.md
   - raw/articles/2026-06-23-android-system-alert-window-overlay.md

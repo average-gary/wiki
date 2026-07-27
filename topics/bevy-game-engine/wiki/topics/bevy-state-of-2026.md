@@ -1,10 +1,12 @@
 ---
 title: "State of Bevy in 2026"
-type: topic
+category: topic
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, 2026, current-state, roadmap, 1-0, bsn, editor]
+summary: "A synthesizing snapshot for someone evaluating Bevy in mid-2026."
 ---
 
 # State of Bevy in 2026

@@ -1,7 +1,7 @@
 ---
 title: "nbfc-linux — NoteBook FanControl (C port)"
 source: https://github.com/nbfc-linux/nbfc-linux
-type: repo
+type: repos
 tags: [fan-control, msi, laptop-server, nbfc, ec, headless]
 date: 2026-05-21
 quality: 4

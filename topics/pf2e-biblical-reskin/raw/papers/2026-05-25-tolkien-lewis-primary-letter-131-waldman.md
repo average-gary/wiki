@@ -1,7 +1,7 @@
 ---
 title: "Tolkien Letter 131 (to Milton Waldman, ~1951) — magic, the Machine, sub-creation"
 source: "https://www.theonering.net/torwp/2013/05/24/71864-tolkien-and-magic-the-power-of-individuality/ ; https://www.tolkienestate.com/letters/letter-to-milton-waldman-publisher-1951/ ; https://www.wordonfire.org/articles/tolkien-and-the-machines/"
-type: paper
+type: papers
 date_fetched: 2026-05-25
 date_published: 1951
 tags: [tolkien, magic-theology, primary-text, letters, machine, sub-creation]

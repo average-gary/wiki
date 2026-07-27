@@ -1,8 +1,8 @@
 ---
 title: "ldk-node PR #438 — Extend API to allow invoice creation with a description hash"
-type: article
+type: articles
 source: https://github.com/lightningdevkit/ldk-node/pull/438
-fetched: 2026-05-28
+ingested: 2026-05-28
 published: 2025-01-23
 confidence: high
 tags: [ldk-node, pr-438, description-hash, history, fedimint]

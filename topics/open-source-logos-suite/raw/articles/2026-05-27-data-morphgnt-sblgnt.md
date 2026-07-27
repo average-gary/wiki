@@ -1,7 +1,7 @@
 ---
 title: "MorphGNT / SBL Greek New Testament"
-source_url: "https://github.com/morphgnt/sblgnt"
-type: article
+source: "https://github.com/morphgnt/sblgnt"
+type: articles
 path: data
 date_ingested: 2026-05-27
 date_published: unknown

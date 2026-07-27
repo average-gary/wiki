@@ -1,7 +1,7 @@
 ---
 title: "Iroh 0-RTT API blog post — handshake latency numbers"
 source: https://www.iroh.computer/blog/0rtt-api
-type: article
+type: articles
 tags: [iroh, 0-rtt, handshake, latency, benchmark]
 date: 2026-06-01
 quality: 5

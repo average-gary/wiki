@@ -2,8 +2,8 @@
 title: "Fedi Blog — ChapSmart Mini App: send Bitcoin, receive Tanzanian Shillings via M-Pesa (2026-05-18)"
 type: raw
 source_type: articles
-source_url: https://www.fedi.xyz/blog/chapsmart-send-bitcoin-and-receive-tanzanian-shillings-over-m-pesa-with-this-new-fedi-mini-app
-fetched: 2026-05-28
+source: https://www.fedi.xyz/blog/chapsmart-send-bitcoin-and-receive-tanzanian-shillings-over-m-pesa-with-this-new-fedi-mini-app
+ingested: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 quality: 4

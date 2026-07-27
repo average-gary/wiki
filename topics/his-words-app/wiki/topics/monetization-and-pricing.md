@@ -1,11 +1,13 @@
 ---
 title: Monetization and pricing — subscription with church-partnership distribution
-type: topic
+category: topic
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: medium
 tags: [his-words-app, monetization, pricing, distribution, business]
+summary: "Recommendation: subscription with optional lifetime, $59-69/yr ARPU, distributed via church partnerships and Christian podcast ad-buys, not VC-funded performance marketing."
 sources:
   - raw/articles/2026-06-23-market-hallow-funding-and-growth.md
   - raw/articles/2026-06-23-market-youversion-bible-app.md

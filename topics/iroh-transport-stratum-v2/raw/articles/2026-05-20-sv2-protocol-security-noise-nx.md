@@ -1,6 +1,6 @@
 ---
 title: "Stratum V2 Protocol Security (Noise NX)"
-source_url: https://github.com/stratum-mining/sv2-spec/blob/main/04-Protocol-Security.md
+source: https://github.com/stratum-mining/sv2-spec/blob/main/04-Protocol-Security.md
 type: spec
 date: 2026-05-20
 org: SRI / Stratum V2 Working Group

@@ -1,9 +1,12 @@
 ---
 title: Jurisdictional Map — FrCo + Winchester + Stephens City
-type: concept
+category: concept
 created: 2026-05-26
+updated: 2026-05-26
+volatility: warm
 confidence: high
 tags: [jurisdiction, FCSO, Winchester-PD, Stephens-City-PD, independent-city]
+summary: "Frederick County and Winchester are two separate jurisdictions, even though Winchester is geographically embedded in Frederick County and is its county seat. Crime statistics for the two report separately to FBI UCR/NIBRS and to VSP."
 ---
 
 # Jurisdictional Map
@@ -68,3 +71,5 @@ Each is independently elected. **The sheriff is NOT subordinate to the Board of 
 
 - [[fcso-vs-winchester-pd|FCSO vs Winchester PD comparison]]
 - [[maryland-virginia-confusion|MD-VA confusion]]
+- [[../topics/crime-profile-2024.md|Crime profile — Frederick County + Winchester, 2024 best-available]]
+- [[../reference/data-sources.md|Data Sources — primary vs secondary]]

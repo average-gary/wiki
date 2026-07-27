@@ -1,7 +1,7 @@
 ---
 title: "moq-net 0.1.8 — protocol/session layer for MoQ"
 source: https://github.com/moq-dev/moq/tree/main/rs/moq-net, https://crates.io/crates/moq-net
-type: repo
+type: repos
 tags: [moq, moq-net, moq-lite, moq-transport, web-transport-trait]
 date: 2026-06-01
 publication_date: 2026-06-01

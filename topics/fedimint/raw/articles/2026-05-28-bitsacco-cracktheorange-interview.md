@@ -2,8 +2,8 @@
 title: "Crack The Orange — BitSacco founder interview (Jodom)"
 type: raw
 source_type: articles
-source_url: https://my.cracktheorange.com/adoption-africa/interview-bitsacco/
-fetched: 2026-05-28
+source: https://my.cracktheorange.com/adoption-africa/interview-bitsacco/
+ingested: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 quality: 4

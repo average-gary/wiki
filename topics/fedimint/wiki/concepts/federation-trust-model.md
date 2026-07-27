@@ -1,12 +1,13 @@
 ---
 title: "Federation trust model (KYF, debasement, exit, regulation)"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
 verified: 2026-05-28
 volatility: cold
 confidence: high
 tags: [fedimint, trust-model, kyf, debasement, proof-of-reserves, regulation, threshold-signatures]
+summary: "Fedimint's threshold-custody model has a well-enumerated risk surface, captured most concisely by Spark's research overview. Understanding it is prerequisite to evaluating any multi-currency proposal — most multi-currency risks multiply these baseline risks."
 ---
 
 # Federation trust model
@@ -53,3 +54,4 @@ Each non-BTC unit a federation issues introduces independent versions of the sam
 - [[../../raw/articles/2026-05-28-spark-fedimint-research-overview|Spark research]] — source of the risk enumeration
 - [[stability-pool|Stability Pool]] — first concrete instance of "multi-currency multiplies risks" (oracle dependency added)
 - [[../topics/fedimint-multi-currency-status|Multi-currency status]] — applies these to the three architectural paths
+- [[../reference/cashu-comparison.md|Cashu — multi-unit Chaumian e-cash (comparison reference)]]

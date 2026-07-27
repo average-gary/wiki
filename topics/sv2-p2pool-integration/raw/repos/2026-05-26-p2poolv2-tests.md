@@ -1,7 +1,7 @@
 ---
 title: "p2poolv2_tests — what p2poolv2 itself ships"
-source_url: https://github.com/p2poolv2/p2poolv2/tree/main/p2poolv2_tests
-type: repo
+source: https://github.com/p2poolv2/p2poolv2/tree/main/p2poolv2_tests
+type: repos
 ingested: 2026-05-26
 quality: 3
 confidence: medium

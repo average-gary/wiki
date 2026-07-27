@@ -1,7 +1,7 @@
 ---
 title: "Champion class — Archives of Nethys (Remaster)"
 source: "https://2e.aonprd.com/Classes.aspx?ID=4"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "2023-11-15"
 tags: [pf2e, remaster, sanctification, holy-unholy, alignment, monotheism, champion]

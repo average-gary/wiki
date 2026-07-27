@@ -1,7 +1,7 @@
 ---
 title: Commercial Bible Translations — NIV, NASB, NLT, CSB, MSG Licensing for Apps
 source: https://api.bible/ + Biblica/Lockman/Tyndale/B&H/NavPress publisher policies (synthesized)
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, bible-api, licensing, niv, nasb, nlt, csb, msg, commercial]
 quality: 4

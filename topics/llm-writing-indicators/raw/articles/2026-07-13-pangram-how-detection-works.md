@@ -3,7 +3,7 @@ title: "How AI Detection Works (Pangram Labs)"
 source: https://www.pangram.com/research/how-it-works
 author: Pangram Labs
 venue: Pangram Labs; backing report arXiv:2402.14873 (2024)
-type: article
+type: articles
 tags: [llm-writing-indicators, detection, trained-classifier, hard-negative-mining]
 quality: 4
 confidence: medium

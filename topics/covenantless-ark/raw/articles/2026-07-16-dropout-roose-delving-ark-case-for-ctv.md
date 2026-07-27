@@ -1,7 +1,7 @@
 ---
 title: "The Ark case for CTV (Delving Bitcoin #1528)"
-source_url: https://delvingbitcoin.org/t/the-ark-case-for-ctv/1528
-type: article
+source: https://delvingbitcoin.org/t/the-ark-case-for-ctv/1528
+type: articles
 authors: [Steven Roose]
 publisher: Delving Bitcoin
 date: 2025-03-17

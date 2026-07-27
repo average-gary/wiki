@@ -1,7 +1,7 @@
 ---
 title: "esp32-weather-epd (lmarzen) — ESP32 e-paper weather dashboard"
 source: https://github.com/lmarzen/esp32-weather-epd
-type: repo
+type: repos
 tags: [esp32, e-paper, weather, dashboard, gxepd2, battery, on-device-render, waveshare]
 date: 2026-07-20
 quality: 5

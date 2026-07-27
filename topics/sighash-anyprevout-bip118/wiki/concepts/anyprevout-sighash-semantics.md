@@ -108,6 +108,8 @@ blast radius (a plain key-path spend can never be replayed).
 - [[signature-replay-and-chaperone-signatures|Signature replay & chaperone signatures]] ([Signature replay & chaperone signatures](signature-replay-and-chaperone-signatures.md)) — the risk created by omitting the outpoint
 - [[covenant-primitives-comparison|Covenant primitives comparison]] ([Covenant primitives comparison](../references/covenant-primitives-comparison.md)) — APO vs CTV vs ANYONECANPAY vs CSFS
 - [[coinbase-outpoint-presigning|Presigning against an unmined coinbase outpoint]] ([Presigning against an unmined coinbase outpoint](../topics/coinbase-outpoint-presigning.md)) — where APO-vs-APOAS becomes decisive
+- [[coinbase-maturity-and-unknown-txid.md|Coinbase outpoint: unknown txid & 100-block maturity]]
+- [[eltoo-ln-symmetry.md|eltoo / LN-Symmetry (APO's flagship motivation)]]
 
 ## Sources
 

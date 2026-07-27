@@ -1,14 +1,14 @@
 ---
 title: "p2pool historical hashrate (forrestv 2011-2017)"
 publication: bitcointalk + p2pool.org
-url: https://bitcointalk.org/index.php?topic=18313.0
+source: https://bitcointalk.org/index.php?topic=18313.0
 url2: https://p2pool.org
-type: article
+type: articles
 ingested: 2026-05-23
 quality: 4
 credibility: high
 confidence: medium
-tags: [p2pool, history, hashrate, ASIC, decline]
+tags: [p2pool, history, hashrate, asic, decline]
 ---
 
 # p2pool Historical Hashrate (forrestv 2011-2017)

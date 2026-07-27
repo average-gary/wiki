@@ -1,12 +1,13 @@
 ---
 title: "TransactionItemAmounts and the per-unit balance check"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
 verified: 2026-06-15
 volatility: hot
 confidence: high
 tags: [fedimint, multi-currency, TransactionItemAmounts, FundingVerifier, consensus, balance-check]
+summary: "TransactionItemAmounts is the multi-unit return type modules surface to consensus. FundingVerifier::verify_funding is the consensus rule that uses it. Together they replace pre-#7734 single-Amount accounting."
 ---
 
 # TransactionItemAmounts and the per-unit balance check
@@ -119,3 +120,5 @@ A federation can in principle stand up multiple module instances declaring diffe
 - [[mintv2-amount-unit-config|mintv2 amount_unit config]] — concrete in-tree consumer
 - [[primary-module-support|Primary module support]] — how the client picks a primary module per unit
 - [[../../raw/repos/2026-06-15-fedimint-amount-units-and-amounts-source|Full source walk]]
+- [[client-module-trait.md|ClientModule trait — what a Fedimint module author implements (client side)]]
+- [[server-module-trait.md|ServerModule trait — what a Fedimint module author implements (consensus side)]]

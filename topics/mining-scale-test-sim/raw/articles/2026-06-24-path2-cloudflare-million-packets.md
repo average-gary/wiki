@@ -1,7 +1,7 @@
 ---
 title: "Cloudflare: how to receive a million packets/sec (SO_REUSEPORT, NIC queues)"
-source_url: https://blog.cloudflare.com/how-to-receive-a-million-packets/
-type: article
+source: https://blog.cloudflare.com/how-to-receive-a-million-packets/
+type: articles
 ingested: 2026-06-24
 quality: 5
 confidence: high

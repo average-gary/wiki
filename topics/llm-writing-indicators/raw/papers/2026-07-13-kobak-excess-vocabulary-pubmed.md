@@ -4,7 +4,7 @@ source: https://arxiv.org/abs/2406.07016
 doi: 10.1126/sciadv.adt3813
 authors: Dmitry Kobak, Rita González-Márquez, Emőke-Ágnes Horvát, Jan Lause
 venue: Science Advances (Vol. 11 No. 27, 2 Jul 2025); preprint arXiv:2406.07016 (2024)
-type: paper
+type: papers
 tags: [llm-writing-indicators, corpus-study, excess-vocabulary, lexical-tells, pubmed, delve]
 quality: 5
 confidence: high

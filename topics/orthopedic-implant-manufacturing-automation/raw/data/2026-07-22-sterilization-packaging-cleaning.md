@@ -7,7 +7,7 @@ type: data
 tags: [sterilization, gamma, eto, ebeam, steam, packaging, form-fill-seal, iso-11607, cleanroom, cleaning, back-end]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The cleaning/packaging/sterilization back-end — sterilization method selection (gamma for implants, EtO for heat-sensitive, e-beam fast/less penetrating, steam for reusable metal), automated HFFS sterile-barrier packaging tied to sterilization chemistry, and cleanroom-rated sealing with ISO 11607 validation.
 ---
 

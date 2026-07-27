@@ -3,7 +3,7 @@ title: "BIP-373: MuSig2 PSBT Fields"
 source: "https://github.com/bitcoin/bips/blob/master/bip-0373.mediawiki"
 type: articles
 ingested: 2026-07-16
-tags: [bip-373, psbt, musig2, session-framing, pub-nonce, partial-sig, participant-pubkeys, hardware-wallet, coordinator]
+tags: [bip-373, psbt, musig2, session-framing, pubnonce, partial-sig, participant-pubkeys, hardware-wallet, coordinator]
 summary: "Normative BIP defining per-input PSBT key types that carry MuSig2 ceremony state inside a shared PSBT: PSBT_IN_MUSIG2_PARTICIPANT_PUBKEYS (0x1a), PSBT_IN_MUSIG2_PUB_NONCE (0x1b), PSBT_IN_MUSIG2_PARTIAL_SIG (0x1c), plus PSBT_OUT_MUSIG2_PARTICIPANT_PUBKEYS (0x08). The PSBT itself is the session container passed between coordinator and signing devices; session correlation is the (participant pubkey, aggregate pubkey, tapleaf) tuple."
 ---
 

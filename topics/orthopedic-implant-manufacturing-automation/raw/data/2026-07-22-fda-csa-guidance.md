@@ -6,7 +6,7 @@ type: data
 tags: [regulatory, fda, csa, csv, software-validation, risk-based, automation-economics, qmsr]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: FDA's "Computer Software Assurance for Production and Quality System Software" shifts from documentation-heavy CSV to risk-based CSA — the single most important recent lever making MORE automation economically viable, by letting firms leverage vendor testing and reserve heavy scripted validation for high-risk functions only.
 ---
 

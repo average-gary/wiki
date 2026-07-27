@@ -1,7 +1,7 @@
 ---
 title: "Rose Rosette Disease (University of Maryland Extension)"
-source_url: "https://extension.umd.edu/resource/rose-rosette-disease"
-type: article
+source: "https://extension.umd.edu/resource/rose-rosette-disease"
+type: articles
 path: rose
 date_ingested: 2026-05-26
 date_published: unknown

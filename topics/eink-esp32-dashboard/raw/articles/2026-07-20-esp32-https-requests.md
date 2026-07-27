@@ -1,7 +1,7 @@
 ---
 title: "ESP32 HTTPS requests: TLS strategies & memory cost (Random Nerd Tutorials)"
 source: https://randomnerdtutorials.com/esp32-https-requests/
-type: article
+type: articles
 tags: [esp32, https, tls, wificlientsecure, ca-cert, setinsecure, memory, heap-leak]
 date: 2026-07-20
 quality: 4

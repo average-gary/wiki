@@ -1,9 +1,9 @@
 ---
 title: "bevyengine/bevy GitHub repository"
-source_url: https://github.com/bevyengine/bevy
+source: https://github.com/bevyengine/bevy
 source_date: live
 ingested: 2026-06-15
-type: repo
+type: repos
 author: Bevy Foundation
 quality: 5
 credibility: high

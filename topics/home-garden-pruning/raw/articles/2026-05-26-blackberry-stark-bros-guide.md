@@ -1,7 +1,7 @@
 ---
 title: "Pruning Blackberry Plants — Stark Bro's Growing Guide"
-source_url: "https://www.starkbros.com/growing-guide/how-to-grow/berry-plants/blackberry-plants/pruning"
-type: article
+source: "https://www.starkbros.com/growing-guide/how-to-grow/berry-plants/blackberry-plants/pruning"
+type: articles
 path: blackberry
 date_ingested: 2026-05-26
 date_published: unknown

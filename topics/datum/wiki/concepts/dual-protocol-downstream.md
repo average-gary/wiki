@@ -9,7 +9,9 @@ sources:
   - raw/articles/2026-06-01-dropinq4-switch-day-runbook-and-risk-matrix.md
 created: 2026-06-01
 updated: 2026-06-01
+volatility: warm
 tags: [dual-protocol, sv1, sv2, drop-in, miner-firmware, risk]
+summary: "The drop-in must serve both SV1 and SV2 to ASICs because a literal SV2-only replacement would brick OCEAN miners running SV1-only firmware. From Q4 miner base, Q4 port design, Q4 failover."
 confidence: high
 ---
 
@@ -105,3 +107,4 @@ The Rust drop-in must replicate this for **both** protocols:
 - [[switch-day-runbook]] — what an operator does to flip protocols on
 - [[sv2-downstream-architecture]] — the SV2 server-side design (refactored for in-process drop-in)
 - [[../../sv1-upstream-reverse-translator/_index|sv1-upstream-reverse-translator]] — SRI's `stratum_translation` crate context
+- [[../topics/drop-in-rust-datum-gateway.md|Drop-in Rust DATUM gateway — synthesis]]

@@ -1,7 +1,7 @@
 ---
 title: "Lowfat XML schema (biblicalhumanities Nestle1904 README)"
-url: https://github.com/biblicalhumanities/greek-new-testament/tree/master/syntax-trees/nestle1904-lowfat
-retrieved: 2026-06-02
+source: https://github.com/biblicalhumanities/greek-new-testament/tree/master/syntax-trees/nestle1904-lowfat
+ingested: 2026-06-02
 type: spec
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: "Lightning node reproducibility under Nix"
-type: topic
+category: topic
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [lightning, lnd, cln, eclair, ldk, nix, reproducibility, gap]
+summary: "The state of LN node reproducible builds, and where Nix specifically fits in (and doesn't)."
 sources:
   - "[[../../raw/repos/2026-06-15-lnd-release-md.md|LND release.md + multi-sig manifest]]"
   - "[[../../raw/repos/2026-06-15-nixpkgs-lnd-trimpath-gap.md|Nixpkgs LND trimpath gap]]"
@@ -128,3 +130,6 @@ toolchain-correlated failures.
 - [[nix-flake-patterns-for-bitcoin-projects.md|Nix flake patterns for Bitcoin projects]]
 - [[playbook-nix-attestation-for-bitcoin.md|Playbook: Nix-built attestation for Bitcoin Core]]
 - [[../concepts/multi-builder-attestation.md|Multi-builder attestation]]
+- [[../../theses/fedimint-needs-fedimint-sigs.md|Thesis: Fedimint should establish a fedimint.sigs multi-builder attestation repo]]
+- [[fedimint-reproducible-builds.md|Fedimint reproducible builds]]
+- [[sv2-apps-oci-reproducibility-feasibility.md|sv2-apps OCI reproducibility — feasibility assessment vs Fedimint pattern]]

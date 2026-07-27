@@ -1,7 +1,7 @@
 ---
 title: "Iroh Blobs Protocol — BLAKE3 Verified Streaming and Collections"
-source_url: "https://docs.iroh.computer/protocols/blobs"
-type: article
+source: "https://docs.iroh.computer/protocols/blobs"
+type: articles
 path: infra-text
 date_ingested: 2026-05-27
 date_published: unknown

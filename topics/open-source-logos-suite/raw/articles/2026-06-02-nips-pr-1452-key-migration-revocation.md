@@ -1,7 +1,7 @@
 ---
 title: "PR #1452 — Key Migration and Revocation (open, stalled)"
-url: https://github.com/nostr-protocol/nips/pull/1452
-retrieved: 2026-06-02
+source: https://github.com/nostr-protocol/nips/pull/1452
+ingested: 2026-06-02
 type: pr
 ---
 

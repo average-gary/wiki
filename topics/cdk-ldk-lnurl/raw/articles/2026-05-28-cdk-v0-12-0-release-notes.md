@@ -1,8 +1,8 @@
 ---
 title: "CDK v0.12.0 release notes — LDK Node backend debut"
-type: article
+type: articles
 source: https://github.com/cashubtc/cdk/releases/tag/v0.12.0
-fetched: 2026-05-28
+ingested: 2026-05-28
 published: 2025-08-26
 confidence: high
 tags: [cdk, release-notes, ldk-node, history]

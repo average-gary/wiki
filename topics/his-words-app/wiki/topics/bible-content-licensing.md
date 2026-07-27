@@ -1,11 +1,13 @@
 ---
 title: Bible content licensing — translations strategy from MVP through scale
-type: topic
+category: topic
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, bible, licensing, content, strategy]
+summary: "The translation-licensing question is the single biggest non-tech strategic decision for any Bible-adjacent app. Translation rights are an enforceable monopoly held by 4-5 publishers; the wrong choice can foreclose the most popular US translation (NIV) or land the app in copyright dispute."
 sources:
   - raw/articles/2026-06-23-bible-api-bible-pricing-tiers.md
   - raw/articles/2026-06-23-bible-esv-api-crossway-terms.md

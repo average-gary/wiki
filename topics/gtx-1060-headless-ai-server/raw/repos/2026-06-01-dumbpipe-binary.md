@@ -1,7 +1,7 @@
 ---
 title: "dumbpipe 0.38.0 — netcat-like QUIC pipe over iroh"
 source: https://github.com/n0-computer/dumbpipe
-type: repo
+type: repos
 tags: [dumbpipe, iroh, ssh, proxycommand, alpn, ticket]
 date: 2026-06-01
 publication_date: 2026-05-27

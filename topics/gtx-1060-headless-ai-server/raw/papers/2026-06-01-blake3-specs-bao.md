@@ -1,7 +1,7 @@
 ---
 title: "BLAKE3 Specs + Bao verified streaming"
 source: https://github.com/BLAKE3-team/BLAKE3-specs, https://github.com/oconnor663/bao
-type: paper
+type: papers
 tags: [blake3, bao, verified-streaming, hashing, merkle, iroh-blobs]
 date: 2026-06-01
 publication_date: 2020-01

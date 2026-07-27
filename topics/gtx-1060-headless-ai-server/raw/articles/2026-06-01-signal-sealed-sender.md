@@ -1,7 +1,7 @@
 ---
 title: "Signal Sealed Sender — short-lived certs + profile-key rotation as revocation"
 source: https://signal.org/blog/sealed-sender/
-type: article
+type: articles
 tags: [signal, sealed-sender, short-lived-cert, profile-key, revocation-pattern]
 date: 2026-06-01
 publication_date: 2018

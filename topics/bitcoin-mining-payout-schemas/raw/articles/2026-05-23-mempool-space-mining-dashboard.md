@@ -1,8 +1,8 @@
 ---
 title: "mempool.space mining dashboard"
 publication: mempool.space
-url: https://mempool.space/mining
-type: article
+source: https://mempool.space/mining
+type: articles
 ingested: 2026-05-23
 quality: 4
 credibility: high

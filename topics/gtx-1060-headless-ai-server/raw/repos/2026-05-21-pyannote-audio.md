@@ -1,7 +1,7 @@
 ---
 title: "pyannote/pyannote-audio — README + 4.x roadmap"
 source: https://github.com/pyannote/pyannote-audio
-type: repo
+type: repos
 tags: [pyannote, diarization, version-comparison, community-1, vbx]
 date: 2026-05-21
 quality: 5

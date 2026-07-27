@@ -1,10 +1,10 @@
 ---
 title: "p2pool (forrestv 2011) and p2poolv2 (2024+)"
 publication: bitcoin wiki + github.com/p2poolv2/p2poolv2
-url: https://en.bitcoin.it/wiki/P2Pool
+source: https://en.bitcoin.it/wiki/P2Pool
 url2: https://github.com/p2poolv2/p2poolv2
 url3: https://bitcointalk.org/index.php?topic=18313.0
-type: repo
+type: repos
 ingested: 2026-05-23
 quality: 4
 credibility: high

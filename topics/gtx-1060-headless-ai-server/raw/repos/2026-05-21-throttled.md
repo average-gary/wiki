@@ -1,7 +1,7 @@
 ---
 title: "erpalma/throttled — Intel CPU PL1/PL2 + undervolt for Linux"
 source: https://github.com/erpalma/throttled
-type: repo
+type: repos
 tags: [intel, undervolt, msr, kaby-lake, i7-7700hq, plundervolt, secure-boot]
 date: 2026-05-21
 quality: 5

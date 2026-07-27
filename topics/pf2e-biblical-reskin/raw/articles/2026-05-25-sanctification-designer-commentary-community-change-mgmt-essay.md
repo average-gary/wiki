@@ -1,7 +1,7 @@
 ---
 title: "Community change-management essay on Remaster previews (r/Pathfinder2e, July 2023)"
 source: "https://www.reddit.com/r/Pathfinder2e/comments/15boh52/change_management_is_complicated_but_also/"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, remaster, sanctification, community-reception, paizo, gap-closing]
 quality: 3

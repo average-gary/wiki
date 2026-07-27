@@ -6,9 +6,9 @@ source_extra:
   - "https://github.com/bitcoin/bitcoin/blob/master/src/consensus/tx_verify.cpp"
   - "https://github.com/bitcoin/bitcoin/blob/master/src/consensus/consensus.h"
   - "https://github.com/bitcoin/bitcoin/blob/master/src/validation.cpp"
-type: repo
+type: repos
 subtype: consensus-code
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [bitcoin-core, consensus, coinbase, iscoinbase, coinbase-maturity, premature-spend, reorg]
 credibility: high
 evidence_strength: consensus-rule

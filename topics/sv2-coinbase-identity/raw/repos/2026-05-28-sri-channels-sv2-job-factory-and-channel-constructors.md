@@ -1,11 +1,12 @@
 ---
 title: "SRI sv2-channels — JobFactory and channel constructors (Pool vs JDC)"
-source_url: https://github.com/stratum-mining/stratum/tree/main/sv2/channels-sv2/src/server
+source: https://github.com/stratum-mining/stratum/tree/main/sv2/channels-sv2/src/server
+type: repos
 source_type: code
 ingested: 2026-05-28
 credibility: high
 confidence: high
-tags: [SRI, stratum-v2, JobFactory, miner_tag, pool_tag, scriptSig, coinbase, ExtendedChannel, StandardChannel]
+tags: [sri, stratum-v2, jobfactory, miner-tag, pool-tag, scriptsig, coinbase, extended-channel, standard-channel]
 local_paths:
   - /Users/garykrause/repos/stratum/sv2/channels-sv2/src/server/extended.rs
   - /Users/garykrause/repos/stratum/sv2/channels-sv2/src/server/standard.rs

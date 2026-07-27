@@ -1,7 +1,7 @@
 ---
 title: "Designing agentic loops"
 source: "https://simonwillison.net/2025/Sep/30/designing-agentic-loops/"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "2025-09-30"
 tags: [llm, agents, tool-use, eval, security]

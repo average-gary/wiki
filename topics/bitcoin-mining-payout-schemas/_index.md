@@ -2,11 +2,11 @@
 title: Bitcoin Mining Payout & Accounting Schemas
 type: topic-index
 created: 2026-05-23
-updated: 2026-07-17
-compiled: 2026-07-17
+updated: 2026-07-27
+compiled: 2026-07-27
 lint: 2026-07-15
 status: active
-summary: Payout and share-accounting schemas for Bitcoin mining pools — PPLNS, FPPS, PPS+, PPLNS-JD, hashpool.dev (Cashu ecash mints), btc++ event payout/accounting tracks, p2pool / p2poolv2 share-chain accounting, Parasite Pool (lottery + decay-EMA hybrid), Radpool (DLC+FROST decentralized FPPS).
+summary: Payout and share-accounting schemas for Bitcoin mining pools — PPLNS, FPPS, PPS+, PPLNS-JD, hashpool.dev (Cashu ecash mints), btc++ event payout/accounting tracks, p2pool / p2poolv2 share-chain accounting, lottery-PPLNS finder-bonus hybrids (Parasite Pool, Blitzpool), Radpool (DLC+FROST decentralized FPPS).
 ---
 
 # Bitcoin Mining Payout & Accounting Schemas
@@ -30,6 +30,12 @@ Survey of how Bitcoin mining pools account for hashrate contributions and pay mi
 - [[wiki/decisions/_index|Decisions]] — design tradeoffs and ADRs
 - [[wiki/theses/_index|Theses]] — testable claims about payout schemes
 
+## Outputs
+
+| Date | Title | Format |
+|------|-------|--------|
+| 2026-07-27 | [[output/plan-coinbase-direct-lottery-pplns-2026-07-27\|A fully coinbase-direct lottery-PPLNS on Blitzpool]] | roadmap |
+
 ## Sources
 
 - [[raw/_index|Raw sources]]
@@ -41,6 +47,10 @@ Survey of how Bitcoin mining pools account for hashrate contributions and pay mi
 
 ## Recent Changes
 
+- 2026-07-27: **Planned a fully coinbase-direct lottery-PPLNS** → [[output/plan-coinbase-direct-lottery-pplns-2026-07-27|roadmap]] (9 articles consulted, 5 decisions, 6 phases, ~9 days). Three new spike measurements against the pinned clone **overturned the prior cost model**: exactly **1 payout-list position differs between any two per-finder distributions** (out of 202 / 65 / 30 across four weight budgets), because the bonus is carved out *before* the proportional split — so every non-finder's sats are identical regardless of who the finder is. Since `address_to_script` reads only `(network, address)` and never sats, re-keying the script memo on the address recovers ~500× of the fan-out cost previously called "the dominant unmeasured CPU term" (measured: 0.300 ms/finder at a 1000-output window versus 1.905 ms/finder for the distribution math — ~16%, never dominant). Real risk moves to the job-cache memory profile under `4 × N` resident entries with TTL-only eviction, which the plan gates behind a regtest load test with an explicit don't-ship outcome.
+- 2026-07-27: **Corrected three long-standing Parasite Pool claims** against primary sources ([[raw/data/2026-07-27-parasite-blitzpool-onchain-and-code-verification|verification pass]]): its 1 BTC bounty **is** paid coinbase-direct to the finder (a different address every block across 938713/945601/958527 — only the ~68% remainder is custodial); its share weighting is cumulative unpaid difficulty with **no decay and no window**, so it is not PPLNS in Rosenfeld's sense and is **not hop-resistant**; and it is at **5 mainnet blocks, not 2**, on a sharply accelerating cadence. [[wiki/concepts/parasite-pool|Parasite Pool]] revised throughout; the "decay weighting" novelty claim struck. Also a negative result worth recording: no published critique of large flat finder bounties exists in any venue searched, so this wiki's variance analysis is constructed rather than cited.
+- 2026-07-27: Researched **lottery-PPLNS feasibility** against a local clone of blitzpool-server-rust @ `7815884` → new concept [[wiki/concepts/lottery-pplns|Lottery-PPLNS (Finder-Bonus Hybrid)]] + code-level source [[raw/repos/2026-07-27-blitzpool-finder-bonus-code-read|finder-bonus code read]]. Finding: the finder-bonus mechanic already exists in Blitzpool's shared distribution math and PPLNS declines it in one line; per-finder speculative coinbase construction is already the architecture for the other three modes. EV-neutral for every miner — a pure variance trade. One correctness landmine (missing duplicate-address merge in the PPLNS ledger apply). Resolves the finder-bonus gap the README ingest flagged as unverified.
+- 2026-07-27: Ingested [[raw/repos/2026-07-27-blitzpool-server-rust-github|warioishere/blitzpool-server-rust]] — non-custodial pool paying Solo/PPLNS/Group-Solo/Blockparty directly in the coinbase (multi-output PPLNS, signed pending ledger, coinbase weight-budget autoscaler). Compiled 2026-07-27.
 - 2026-07-17: Compiled vnprc/coinbase-playground collection (6 sources) → new concept [[wiki/concepts/ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]]; integrated flat/layered-tree numbers into payout-schema-taxonomy and ark-for-mining-payouts. Last compiled: 2026-07-17.
 - 2026-07-15: Compiled demand-share-accounting-ext → [[wiki/concepts/sv2-share-accounting-ext|SV2 Share Accounting Extension]].
 

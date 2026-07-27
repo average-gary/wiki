@@ -1,7 +1,7 @@
 ---
 title: "Wasmtime, Spin/SpinKube (Akamai), Wasmer — three server-side WASM camps"
 source: https://docs.wasmtime.dev/stability-tiers.html
-type: article
+type: articles
 tags: [wasmtime, spin, spinkube, wasmer, akamai, fermyon, edge-compute, cncf]
 date: 2026-05-21
 quality: 5

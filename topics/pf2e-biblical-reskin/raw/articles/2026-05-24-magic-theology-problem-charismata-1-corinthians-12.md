@@ -1,7 +1,7 @@
 ---
 title: "Charismata of 1 Corinthians 12 and Spiritual Gifts vs. Magic"
 source: "https://en.wikipedia.org/wiki/Spiritual_gift"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: unknown
 tags: [theology, charisma, charismata, spiritual-gifts, holy-spirit]

@@ -8,7 +8,7 @@ type: repos
 tags: [vendors, winding-machines, turnkey-lines, magnetizers, lamination-presses, eol-test]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Practitioner's vendor map — the actual companies and what they build, by equipment category. Majors confirmed from live primary vendor pages.
 ---
 

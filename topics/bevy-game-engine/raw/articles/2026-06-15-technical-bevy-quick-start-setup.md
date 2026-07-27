@@ -1,9 +1,9 @@
 ---
 title: "Bevy Quick Start — Setup (Bevy Book)"
-source_url: https://bevy.org/learn/quick-start/getting-started/setup/
+source: https://bevy.org/learn/quick-start/getting-started/setup/
 source_date: 2026
 ingested: 2026-06-15
-type: article
+type: articles
 author: Bevy Foundation
 quality: 5
 credibility: high

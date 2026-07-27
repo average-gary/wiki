@@ -1,7 +1,7 @@
 ---
 title: "DuckDB vs SQLite — analytical vs transactional embedded DBs"
 source: "https://duckdb.org/why_duckdb"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [embedded-db, duckdb, sqlite, olap, oltp]

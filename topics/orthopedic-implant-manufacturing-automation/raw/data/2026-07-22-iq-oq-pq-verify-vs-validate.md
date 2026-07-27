@@ -6,7 +6,7 @@ type: data
 tags: [regulatory, process-validation, iq-oq-pq, ghtf, cpk, revalidation, special-processes]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Operationalizes 820.75 into the IQ/OQ/PQ workflow every automated implant process must pass, the verify-vs-validate decision logic (GHTF-aligned), and revalidation triggers. Notably, automation HELPS PQ (repeatable machine control → high Cpk) even as qualification remains non-negotiable per-process overhead.
 ---
 

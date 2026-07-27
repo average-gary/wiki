@@ -1,7 +1,7 @@
 ---
 title: shocknet/wallet2 (ShockWallet) — CLINK reference wallet (client-side)
 source: https://github.com/shocknet/wallet2
-type: repo
+type: repos
 ingested: 2026-06-09
 path: implementations
 quality: 5

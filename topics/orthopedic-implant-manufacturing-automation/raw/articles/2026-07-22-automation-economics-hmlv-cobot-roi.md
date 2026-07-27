@@ -3,11 +3,11 @@ title: "Automation economics — high-mix/low-volume ortho, cobot ROI, labor bot
 source: https://www.mmsonline.com/articles/automated-single-piece-workflow-revolutionizes-implant-manufacturing
 source_2: https://www.lightsoutmfg.com/blog/toolcrafts-success-story-ur5e-cobot-boosts-production-and-reduces-costs-in-medical-device-manufacturing-with-lights-out-mfgs-integration
 source_3: https://cobotworks.org/case-stories/skilled-labor-shortages-and-rising-demand/
-type: article
+type: articles
 tags: [economics, high-mix-low-volume, cobot, roi, labor-shortage, single-piece-flow, flexible-automation, mach-medical]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The economics answer — ortho is high-mix/low-volume, so automation ROI comes from FLEXIBLE robotic cells & cobot machine-tending (batch-of-one flex lot sizing), not hard automation. Hard numbers: Mach Medical 20→3 week lead time, <1% scrap; cobots 23% cost cut, 12-mo payback, +29–45% output. Automation is a "force multiplier" for scarce skilled machinists.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Out-of-round (OOR / arkoor) payments"
-type: concept
+category: concept
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high
@@ -12,7 +12,7 @@ sources:
   - raw/articles/2026-07-17-second-docs-learn-payments.md
   - raw/articles/2026-07-17-second-docs-learn-vtxo.md
   - raw/articles/2026-07-17-bark-repo-docs-addresses.md
-tags: [ark, clark, oor, arkoor, offchain, payment, double-spend, co-signature, preconfirmed, statechain, offline-receiving]
+tags: [ark, clark, oor, arkoor, off-chain, payment, double-spend, co-signature, preconfirmed, statechain, offline-receiving]
 aliases: [OOR, arkoor, out-of-round payment, spend VTXO, Ark out-of-round]
 summary: "Instant P2P off-chain payments that create spend VTXOs via sender+server co-signature — the way to actually pay others, since clArk rounds cannot admit pure receivers. Enables offline receiving; secured like a statechain (trust the sender+server not to collude until you refresh); double-spend is deterred by detectability, reputation, collusion requirement, and fee-drain."
 ---

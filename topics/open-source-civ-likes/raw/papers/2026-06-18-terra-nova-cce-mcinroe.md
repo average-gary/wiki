@@ -3,7 +3,7 @@ title: "Terra Nova: A Comprehensive Challenge Environment for Intelligent Agents
 source: https://arxiv.org/abs/2511.15378
 authors: [Trevor McInroe]
 year: 2025
-type: paper
+type: papers
 ingested: 2026-06-18
 quality: 3
 confidence: medium

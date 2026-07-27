@@ -6,7 +6,7 @@ type: data
 tags: [regulatory, fda, software-validation, csv, 21-cfr-820, mes, plc, robot-controller, machine-vision, qmsr]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: 820.70(i) requires validating computer software used in production/QMS for its intended use, and all software changes before approval. The software layer of every automated cell is independently regulated on top of the physical process validation — a robotic cell needs both process PQ and control-software validation.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "shocknet/CLINK — repo metadata, commit history, contributors, PRs"
 source: https://github.com/shocknet/CLINK
-type: repo
+type: repos
 ingested: 2026-06-09
 path: origin
 quality: 5

@@ -1,7 +1,7 @@
 ---
 title: "Fedimint devimint — regtest test harness reference"
-source_url: https://github.com/fedimint/fedimint/tree/master/devimint
-type: repo
+source: https://github.com/fedimint/fedimint/tree/master/devimint
+type: repos
 ingested: 2026-05-26
 quality: 5
 confidence: high

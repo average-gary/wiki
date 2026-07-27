@@ -1,8 +1,8 @@
 ---
 title: "iroh PR #4205 — feat(iroh, iroh-relay)!: support setting auth tokens for relays"
 source: https://github.com/n0-computer/iroh/pull/4205
-type: repo
-tags: [iroh, iroh-relay, auth-tokens, bearer, multitenant, pr]
+type: repos
+tags: [iroh, iroh-relay, auth-tokens, bearer, multi-tenant, pr]
 date: 2026-06-01
 publication_date: 2026-05-06
 quality: 5

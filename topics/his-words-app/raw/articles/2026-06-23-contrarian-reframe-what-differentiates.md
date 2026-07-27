@@ -1,5 +1,6 @@
 ---
 title: "How His Words Survives the Contrarian Objections: The Reframe"
+type: articles
 tags: [contrarian, strategy, differentiation, synthesis]
 created: 2026-06-23
 quality: high

@@ -1,11 +1,13 @@
 ---
 title: Puffery & significance inflation — "stands as a testament to"
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, tone, puffery, register]
+summary: "LLMs habitually inflate the importance of whatever they describe. Everything \"stands as a testament,\" \"plays a vital role,\" or \"marks a pivotal moment.\" This editorializing register is one of the most recognizable tells and a top category in the Wikipedia AISIGNS catalog."
 sources:
   - raw/articles/2026-07-13-wikipedia-signs-of-ai-writing.md
 ---

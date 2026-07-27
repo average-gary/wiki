@@ -1,6 +1,6 @@
 ---
 title: "clArk overview — covenantless Ark on today's Bitcoin"
-type: concept
+category: concept
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high
@@ -77,6 +77,7 @@ An important 2026 correction: "**hArk**" now names a **shipped** hash-lock enhan
 - [[../topics/clark-round-transaction-mechanics.md|Round transaction mechanics (synthesis)]]
 - [[../topics/clark-vs-covenant-ark.md|clArk vs covenant-based Ark]]
 - [[../topics/clark-limitations-and-trust.md|Limitations and trust model]]
+- [[../reference/clark-glossary-and-timelocks.md|Reference: clArk glossary, terminology map, and timelock table]]
 
 ## Sources
 

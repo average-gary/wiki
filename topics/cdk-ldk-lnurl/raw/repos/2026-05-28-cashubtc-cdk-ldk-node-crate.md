@@ -1,8 +1,8 @@
 ---
 title: "cashubtc/cdk — `cdk-ldk-node` crate"
-type: repo
+type: repos
 source: https://github.com/cashubtc/cdk/tree/main/crates/cdk-ldk-node
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [cdk, ldk-node, lightning-backend, mint-payment-trait]
 summary: The CDK lightning backend that embeds an LDK Node directly into cdk-mintd. First-class crate; ships its own admin web UI on port 8091 (no auth — localhost only). Implements the MintPayment trait.

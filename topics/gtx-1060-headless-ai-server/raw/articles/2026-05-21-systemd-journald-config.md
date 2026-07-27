@@ -1,7 +1,7 @@
 ---
 title: "systemd journald — log retention for a 24/7 server"
 source: https://manpages.debian.org/bookworm/systemd/journald.conf.5.en.html
-type: article
+type: articles
 tags: [systemd, journald, log-rotation, 24-7-server]
 date: 2026-05-21
 quality: 5

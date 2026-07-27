@@ -1,9 +1,9 @@
 ---
 title: "Bitcoin Optech — Pooled Mining (what pool miners can/can't verify) + Braiins SV2 framing"
-source_url: https://bitcoinops.org/en/topics/pooled-mining/
+source: https://bitcoinops.org/en/topics/pooled-mining/
 source_url_2: https://braiins.com/stratum-v2
-type: article
-retrieved: 2026-07-21
+type: articles
+ingested: 2026-07-21
 credibility: high
 corroboration: "trust-model + prior-art agents"
 tags: [bitcoin-optech, pooled-mining, block-withholding, transaction-selection, stratum-v2, job-declaration, trust-model, braiins]

@@ -1,9 +1,12 @@
 ---
 title: "Operational storm post-mortems — real-world vardiff failure modes"
-type: concept
+category: concept
 created: 2026-06-24
+updated: 2026-06-24
+volatility: warm
 confidence: medium
 tags: [postmortem, storm, vardiff, public-pool, spiralpool, simulator-pattern]
+summary: "The only two public production post-mortems of vardiff-related storm conditions found across two rounds of research. Both directly map to simulator workload patterns the harness should exercise."
 ---
 
 # Operational storm post-mortems

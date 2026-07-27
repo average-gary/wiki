@@ -1,10 +1,10 @@
 ---
 title: "VDH locality-resolved overdose data — FrCo + Winchester + adjacent counties (2019-2024)"
 publication: Virginia Department of Health (VDH) Public Health Drug Use Surveillance / Virginia Open Data Portal
-url: https://data.virginia.gov/dataset/vdh-pud-overdose-deaths-by-year-and-geography
+source: https://data.virginia.gov/dataset/vdh-pud-overdose-deaths-by-year-and-geography
 url2: https://data.virginia.gov/dataset/vdh-pud-overdose-ed-visits-by-year-and-geography
 url3: https://data.virginia.gov/dataset/vdh-pud-overdose-ed-visits-by-locality-and-quarter
-type: article
+type: articles
 ingested: 2026-05-26
 extracted_via: CKAN datastore_search_sql API (data.virginia.gov)
 extract_date_deaths: 2026-04-23

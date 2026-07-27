@@ -1,6 +1,7 @@
 ---
 title: "Failure-Mode Catalog and MIGRATING.md Template — Rust DATUM Gateway Drop-In"
-source_url: synthesized
+source: synthesized
+type: articles
 source_type: synthesis
 date_fetched: 2026-06-01
 ingested_by: dropinq7

@@ -2,8 +2,8 @@
 title: "emqx/emqtt-bench — MQTT v5 benchmark, the closest analog harness"
 type: raw-source
 source_kind: repo
-source_url: https://github.com/emqx/emqtt-bench
-fetched: 2026-06-24
+source: https://github.com/emqx/emqtt-bench
+ingested: 2026-06-24
 path: 5
 relevance: high
 ---

@@ -1,6 +1,6 @@
 ---
 title: "p2poolv2_lib/src — module map"
-source_url: https://github.com/p2poolv2/p2poolv2/tree/main/p2poolv2_lib/src
+source: https://github.com/p2poolv2/p2poolv2/tree/main/p2poolv2_lib/src
 type: code-tree
 ingested: 2026-05-22
 quality: 5

@@ -1,7 +1,7 @@
 ---
 title: Glorify — UK-based premium Christian devotional app, $40M Series A
 source: brief + cached secondary references (primary URLs returned 404 / Crunchbase paywalled)
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, market, monetization, glorify, uk]
 quality: 2

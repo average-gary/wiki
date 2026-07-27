@@ -1,8 +1,10 @@
 ---
 title: Freeciv-web
-type: topic
+category: topic
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "freeciv/freeciv-web — browser- playable Freeciv. Hosted at play.freecivweb.org and other community deployments."
 confidence: high
 sources:
   - raw/repos/2026-06-18-freeciv-web.md

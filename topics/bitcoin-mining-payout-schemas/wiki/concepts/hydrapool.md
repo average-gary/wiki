@@ -3,9 +3,10 @@ title: Hydrapool — 256 Foundation pool
 category: concept
 created: 2026-05-24
 confidence: high
-tags: [Hydrapool, 256-foundation, PPLNS, public-audit-api, p2poolv2-lib]
+tags: [hydrapool, 256-foundation, pplns, public-audit-api, p2poolv2-lib]
 volatility: warm
 updated: 2026-07-15
+summary: "256 Foundation's pool-software pillar. One-click open-source Bitcoin mining pool built on the p2poolv2_lib library."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-24-256-foundation-overview.md"
@@ -87,3 +88,4 @@ If miners adopt Hydrapool widely, the result is **many small operator-run pools*
 - [[p2pool-share-chain|p2pool / p2poolv2 share-chain]]
 - [[../topics/p2poolv2-and-256-foundation|p2poolv2 ↔ 256 Foundation]]
 - [[../topics/payout-design-space|Payout Design Space]]
+- [[../reference/people.md|People — eHash / hashpool / decentralized-pool ecosystem]]

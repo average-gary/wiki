@@ -1,10 +1,12 @@
 ---
 title: "SV2 coinbase scriptSig layout"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: high
-tags: [stratum-v2, coinbase, scriptSig, BIP-34, extranonce, pool-tag, miner-tag]
+tags: [stratum-v2, coinbase, scriptsig, bip-34, extranonce, pool-tag, miner-tag]
+summary: "The Pool finalizes the coinbase from the wiki/concepts/sv2-mining-protocol-overview skeleton plus its own scriptSig contribution."
 ---
 
 # SV2 coinbase scriptSig layout (Pool-finalized)
@@ -49,3 +51,4 @@ The empty-but-delimited miner slot is the seam the [[user_identity → coinbase 
 - [[wiki/concepts/coinbase-ownership-pool-vs-jdc]]
 - [[raw/repos/2026-05-28-sri-channels-sv2-job-factory-and-channel-constructors]]
 - [[raw/articles/2026-05-28-sv2-spec-mining-protocol]]
+- [[user_identity-field.md|user_identity (SV2 channel field)]]

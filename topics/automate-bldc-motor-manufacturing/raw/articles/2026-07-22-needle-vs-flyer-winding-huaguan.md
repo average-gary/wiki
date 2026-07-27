@@ -1,11 +1,11 @@
 ---
 title: "Needle Winding vs. Flyer Winding — A Comparative Engineering Study"
 source: https://huaguanie.com/advanced-winding-technologies-needle-winding-vs-flyer-winding-a-comparative-engineering-study-for-high-volume-manufacturing/
-type: article
+type: articles
 tags: [stator-winding, needle-winding, flyer-winding, slot-fill, high-volume]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Head-to-head of the two dominant round-wire winding methods with concrete fill-factor, gauge, and speed numbers.
 ---
 

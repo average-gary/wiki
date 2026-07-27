@@ -2,8 +2,8 @@
 title: "locustio/locust — Python load framework with documented custom-protocol path"
 type: raw-source
 source_kind: repo
-source_url: https://github.com/locustio/locust
-fetched: 2026-06-24
+source: https://github.com/locustio/locust
+ingested: 2026-06-24
 path: 5
 relevance: medium
 ---

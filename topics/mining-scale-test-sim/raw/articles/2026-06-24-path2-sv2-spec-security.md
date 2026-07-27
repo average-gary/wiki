@@ -1,7 +1,7 @@
 ---
 title: "SV2 spec §04: Noise_NX handshake — wire format & primitives"
-source_url: https://github.com/stratum-mining/sv2-spec/blob/main/04-Protocol-Security.md
-type: article
+source: https://github.com/stratum-mining/sv2-spec/blob/main/04-Protocol-Security.md
+type: articles
 ingested: 2026-06-24
 quality: 5
 confidence: high

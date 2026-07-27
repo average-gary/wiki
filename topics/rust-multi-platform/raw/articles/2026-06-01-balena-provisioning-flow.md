@@ -1,6 +1,6 @@
 ---
 title: "Balena Device Provisioning Flow"
-source_url: https://docs.balena.io/learn/introduction/primer.md
+source: https://docs.balena.io/learn/introduction/primer.md
 type: docs
 ingested: 2026-06-01
 quality: 4

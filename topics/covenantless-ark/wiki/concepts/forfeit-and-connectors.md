@@ -1,6 +1,6 @@
 ---
 title: "Forfeit transactions and connectors"
-type: concept
+category: concept
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high
@@ -77,6 +77,7 @@ The forfeit path is also clArk's **fraud penalty**. If a user tries to unilatera
 - [[offboarding-and-onchain-payments.md|Offboarding and on-chain payments]]
 - [[../topics/clark-vs-covenant-ark.md|clArk vs covenant-based Ark]]
 - [[../topics/clark-round-transaction-mechanics.md|Round transaction mechanics (synthesis)]]
+- [[n-of-n-batch-output.md|The n-of-n batch (pool) output]]
 
 ## Sources
 

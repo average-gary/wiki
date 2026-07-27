@@ -1,6 +1,6 @@
 ---
 title: "FiberPool: Leveraging Multiple Blockchains for Decentralized Pooled Mining"
-source_url: https://arxiv.org/html/2501.15459v1
+source: https://arxiv.org/html/2501.15459v1
 type: academic-paper
 ingested: 2026-05-22
 quality: 5

@@ -1,9 +1,9 @@
 ---
 title: "26th Judicial Circuit specialty dockets — Recovery Court + Behavioral Health Docket"
 publication: NSVSUC + Supreme Court of Virginia OES + Winchester Star
-url: https://nsvsuc.org/
+source: https://nsvsuc.org/
 url2: https://www.vacourts.gov/courtadmin/aoc/djs/programs/sds/programs/rc/home
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

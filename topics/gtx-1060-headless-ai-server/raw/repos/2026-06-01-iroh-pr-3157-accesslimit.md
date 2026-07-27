@@ -1,7 +1,7 @@
 ---
 title: "iroh PR #3157 — feat(iroh)!: allow for limiting incoming connections on the router (MERGED)"
 source: https://github.com/n0-computer/iroh/pull/3157
-type: repo
+type: repos
 tags: [iroh, accesslimit, pr, merged, allowlist, protocolhandler]
 date: 2026-06-01
 publication_date: 2025-03-14

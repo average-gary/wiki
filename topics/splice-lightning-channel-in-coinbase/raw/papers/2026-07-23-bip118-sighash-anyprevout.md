@@ -1,10 +1,10 @@
 ---
 title: "BIP-118: SIGHASH_ANYPREVOUT / ANYPREVOUTANYSCRIPT"
 source: "https://github.com/bitcoin/bips/blob/master/bip-0118.mediawiki"
-type: paper
+type: papers
 subtype: bip
-retrieved: 2026-07-23
-tags: [bitcoin, bip118, anyprevout, apo, apoas, sighash, presigning, coinbase-outpoint]
+ingested: 2026-07-23
+tags: [bitcoin, bip-118, anyprevout, apo, apoas, sighash, presigning, coinbase-outpoint]
 credibility: high
 evidence_strength: spec
 direction: "opposes (explains why pre-signing a fresh-coinbase spend is impossible today); nuances (APO would relax it, but is not activated)"

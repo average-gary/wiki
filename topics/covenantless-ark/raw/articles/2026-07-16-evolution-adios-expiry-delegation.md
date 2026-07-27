@@ -1,7 +1,7 @@
 ---
 title: "Adios, Expiry: Rethinking Liveness and Liquidity in Arkade (Ark Labs)"
-source_url: https://blog.arklabs.xyz/adios-expiry-rethinking-liveness-and-liquidity-in-arkade/
-type: article
+source: https://blog.arklabs.xyz/adios-expiry-rethinking-liveness-and-liquidity-in-arkade/
+type: articles
 authors: [Marco Argentieri]
 publisher: Ark Labs
 date: 2025-07-16
@@ -10,7 +10,7 @@ research_path: evolution
 credibility: high
 confidence: high
 quality_score: 5
-tags: [ark, arkade, delegation, intents, bip322, liveness, expiry, vtxo-renewal, arkd-0.7.0, sighash-anyonecanpay]
+tags: [ark, arkade, delegation, intents, bip-322, liveness, expiry, vtxo-renewal, arkd-0.7.0, sighash-anyonecanpay]
 summary: Ark Labs' Delegation + Arkade Intents design to remove the active-liveness burden — a third-party delegate auto-renews VTXOs within BIP322-signed authorized windows. Also a candid designer admission that VTXO expiry + mandatory renewal "feels like a step backwards" from set-and-forget self-custody. Ships with arkd v0.7.0.
 ---
 

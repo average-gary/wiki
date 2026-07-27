@@ -1,6 +1,6 @@
 ---
 title: sv2-apps mining_device — real-CPU SV2 mining client (with throttle)
-source_url: https://github.com/marafoundation/sv2-apps/blob/mara/integration-tests/lib/mining_device/mod.rs
+source: https://github.com/marafoundation/sv2-apps/blob/mara/integration-tests/lib/mining_device/mod.rs
 type: repos
 ingested: 2026-06-24
 quality: B+

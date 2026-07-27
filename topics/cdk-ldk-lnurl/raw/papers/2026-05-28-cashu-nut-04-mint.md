@@ -1,8 +1,8 @@
 ---
 title: "NUT-04: Mint tokens"
-type: paper
+type: papers
 source: https://github.com/cashubtc/nuts/blob/main/04.md
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [cashu, nut-04, mint-quote, bolt11, spec]
 summary: Canonical Cashu deposit flow. Two-step quote → mint with blinded outputs. Method-agnostic; bolt11-specific behavior in NUT-23.

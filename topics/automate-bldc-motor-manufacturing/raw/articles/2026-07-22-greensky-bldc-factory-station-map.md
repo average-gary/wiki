@@ -1,11 +1,11 @@
 ---
 title: "Inside a Modern BLDC Motor Factory (12-Station Map)"
 source: https://greensky-power.com/inside-a-modern-bldc-motor-factory/
-type: article
+type: articles
 tags: [process-chain, station-map, automation-levels, cycle-time, small-bldc]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Complete ordered 12-station chain with per-step automation ratings and an explicit "hardest to automate" ranking. Manufacturer-marketing-leaning but unusually detailed; small-motor focus (10W–3kW+).
 ---
 

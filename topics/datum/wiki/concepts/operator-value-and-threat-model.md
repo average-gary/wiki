@@ -10,7 +10,9 @@ sources:
   - raw/articles/2026-06-01-path5-template-similarity-bitmex.md
 created: 2026-06-01
 updated: 2026-06-01
+volatility: warm
 tags: [operator-value, threat-model, ocean, tides, sv2, custody, censorship-resistance]
+summary: "Why would anyone deploy this? Honest read: operator value is real but narrow — connectivity bridge for SV2-fleet miners who want OCEAN's TIDES payout. Not a meaningful new censorship-resistance or trust-minimization layer."
 confidence: high
 ---
 
@@ -114,3 +116,4 @@ Hashpool ([[../../bitcoin-mining-payout-schemas/wiki/concepts/ehash|ehash]]) is 
 - [[datum-protocol]] — what survives unchanged at the egress
 - [[../../bitcoin-mining-payout-schemas/wiki/concepts/datum]] — DATUM in payout-schema context
 - [[../../sv1-upstream-reverse-translator/wiki/concepts/customer-segments-and-tam|TAM analysis for the generic SV2-downstream pattern]]
+- [[../topics/datum-sv2-proxy-playbook.md|DATUM SV2-downstream proxy — playbook]]

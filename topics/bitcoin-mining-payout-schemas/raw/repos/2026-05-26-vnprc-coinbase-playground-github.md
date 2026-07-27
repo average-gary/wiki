@@ -1,10 +1,10 @@
 ---
 title: "vnprc/coinbase-playground — CTV-coinbase prototype"
-url: https://github.com/vnprc/coinbase-playground
+source: https://github.com/vnprc/coinbase-playground
 created: 2025-05-14
 last_push: 2025-06-28
 stars: 4
-type: repo
+type: repos
 status: prototype (regtest only)
 ingested: 2026-05-26
 quality: 5

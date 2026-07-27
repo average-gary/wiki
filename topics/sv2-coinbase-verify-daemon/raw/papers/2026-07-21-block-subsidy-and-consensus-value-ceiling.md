@@ -1,9 +1,9 @@
 ---
 title: "Block subsidy formula + coinbase value consensus ceiling (GetBlockSubsidy, bad-cb-amount)"
-source_url: https://github.com/bitcoin/bitcoin/blob/master/src/validation.cpp
+source: https://github.com/bitcoin/bitcoin/blob/master/src/validation.cpp
 source_url_2: https://en.bitcoin.it/wiki/Controlled_supply
-type: paper
-retrieved: 2026-07-21
+type: papers
+ingested: 2026-07-21
 credibility: high
 corroboration: "gap-3 agent (verbatim from Bitcoin Core source)"
 tags: [bitcoin, subsidy, halving, GetBlockSubsidy, bad-cb-amount, consensus, coinbase-value, satoshis]

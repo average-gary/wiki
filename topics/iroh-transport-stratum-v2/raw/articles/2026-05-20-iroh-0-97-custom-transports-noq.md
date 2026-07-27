@@ -1,6 +1,6 @@
 ---
 title: "iroh 0.97.0 — Custom Transports & noq"
-source_url: https://www.iroh.computer/blog/iroh-0-97-0-custom-transports-and-noq
+source: https://www.iroh.computer/blog/iroh-0-97-0-custom-transports-and-noq
 type: blog
 date: 2026-03
 org: n0-computer

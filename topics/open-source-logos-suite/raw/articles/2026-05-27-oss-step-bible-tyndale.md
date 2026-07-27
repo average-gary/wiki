@@ -1,7 +1,7 @@
 ---
 title: "STEP Bible (Tyndale House) and STEPBible-Data"
-source_url: "https://github.com/STEPBible/STEPBible-Data"
-type: article
+source: "https://github.com/STEPBible/STEPBible-Data"
+type: articles
 path: oss
 date_ingested: 2026-05-27
 date_published: 2026-05-27

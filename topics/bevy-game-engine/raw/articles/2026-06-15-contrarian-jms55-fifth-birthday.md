@@ -1,9 +1,9 @@
 ---
 title: "Bevy's Fifth Birthday — what's still missing"
-source_url: https://jms55.github.io/posts/2025-09-03-bevy-fifth-birthday/
+source: https://jms55.github.io/posts/2025-09-03-bevy-fifth-birthday/
 source_date: 2025-09-03
 ingested: 2026-06-15
-type: article
+type: articles
 author: jms55 (longtime Bevy renderer/Solari contributor)
 quality: 5
 credibility: high

@@ -1,10 +1,10 @@
 ---
 title: "parasitepool/para — Parasite Pool reference implementation"
-url: https://github.com/parasitepool/para
+source: https://github.com/parasitepool/para
 homepage: https://parasite.space
 endpoint: stratum+tcp://parasite.wtf:42069
 license: CC0-1.0
-type: repo
+type: repos
 language: Rust (+ vendored ckpool C fork)
 created: 2025-04-10
 last_commit: 2026-05-24

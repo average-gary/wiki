@@ -1,11 +1,13 @@
 ---
 title: Vagueness & missing specifics — the absence tell
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, content, vagueness, hallucination]
+summary: "The deepest and most durable tell is not a word or a mark — it is what the text *lacks*. LLM prose tends to be confidently general, low in concrete detail, and devoid of lived experience."
 sources:
   - raw/papers/2026-07-13-shaib-measuring-ai-slop.md
   - raw/papers/2026-07-13-liang-peer-reviews-ai-modified.md
@@ -37,3 +39,5 @@ Plenty of human writing is also vague and generic — junior writers, content-mi
 - [[citation-and-fact-anomalies|Citation & fact anomalies]]
 - [[../topics/ai-slop-and-structural-tells|AI slop & structural tells]]
 - [[../topics/reviewer-checklist|Reviewer checklist]]
+- [[puffery-and-significance-inflation.md|Puffery & significance inflation — "stands as a testament to]]
+- [[sycophancy-and-positivity-register.md|Sycophancy & the relentless-positivity register]]

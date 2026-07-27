@@ -1,7 +1,7 @@
 ---
 title: "TRMNL BYOS server implementations & device↔server API contract"
 source: https://github.com/usetrmnl/byos_hanami
-type: repo
+type: repos
 tags: [trmnl, byos, django, nextjs, hanami, terminus, api, self-host, docker, endpoints]
 date: 2026-07-20
 quality: 5

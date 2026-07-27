@@ -1,10 +1,10 @@
 ---
 title: "Evolving the Ark protocol using CTV and CSFS (Erik De Smedt + Roasbeef, Delving Bitcoin)"
 publication: delvingbitcoin.org
-url: https://delvingbitcoin.org/t/evolving-the-ark-protocol-using-ctv-and-csfs/1602
+source: https://delvingbitcoin.org/t/evolving-the-ark-protocol-using-ctv-and-csfs/1602
 authors: [Erik De Smedt (Second CTO), Steven Roose, roasbeef (Lightning Labs)]
 date: 2025-04-15
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

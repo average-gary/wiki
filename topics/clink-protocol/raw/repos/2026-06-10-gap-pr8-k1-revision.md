@@ -1,7 +1,7 @@
 ---
 title: "CLINK PR #8 'revise debit k1' — diff and impact analysis"
 source: https://github.com/shocknet/CLINK/pull/8
-type: repo
+type: repos
 ingested: 2026-06-10
 path: gap-pr8
 quality: 5

@@ -1,3 +1,22 @@
+---
+title: "path4 — stratum_translation crate: half the helpers already exist"
+source: https://github.com/stratum-mining/stratum/tree/main/stratum-core/stratum-translation
+url: https://github.com/stratum-mining/stratum/tree/main/stratum-core/stratum-translation
+type: repos
+category: repo
+crate_name: stratum_translation
+crate_version: 0.3.0
+language: Rust
+local_path: /Users/garykrause/repos/stratum/stratum-core/stratum-translation/
+date_observed: 2026-05-28
+ingested: 2026-05-28
+volatility: warm
+credibility: high
+confidence: high
+tags: [stratum-translation, sri, sv1-to-sv2, sv2-to-sv1, pure-helpers, missing-inverse-helpers, path4]
+summary: "The single most reusable primitive for a reverse translator: pure, runtime-free, network-free conversion helpers organized into sv1_to_sv2 and sv2_to_sv1 modules. Roughly half the needed helpers exist; the missing inverse set is SV1 mining.notify → SV2 NewExtendedMiningJob, SV1 mining.set_difficulty → SV2 SetTarget, and the reverse-direction submit path."
+---
+
 # path4 - stratum_translation crate (low-level repo)
 
 **Source type**: repos (local source code)

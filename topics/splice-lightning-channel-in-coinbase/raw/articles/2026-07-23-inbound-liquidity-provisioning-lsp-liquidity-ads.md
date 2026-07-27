@@ -6,10 +6,10 @@ extra_sources:
   - "https://github.com/lightning/blips/blob/master/blip-0051.md"
   - "https://github.com/lightning/blips/blob/master/blip-0052.md"
   - "https://river.com/learn/terms/i/inbound-liquidity/"
-type: article
+type: articles
 subtype: aggregator-spec
-retrieved: 2026-07-23
-tags: [lightning, inbound-liquidity, outbound-liquidity, dual-funding, liquidity-ads, lsps1, lsps2, jit-channel, bLIP-51, bLIP-52]
+ingested: 2026-07-23
+tags: [lightning, inbound-liquidity, outbound-liquidity, dual-funding, liquidity-ads, lsps1, lsps2, jit-channel, bLIP-51, blip52]
 credibility: high-med
 evidence_strength: spec
 direction: "reframes follow-up thesis #3 — the actual inbound-liquidity mechanisms are NEITHER thesis option; they require a counterparty to contribute funds toward the miner"

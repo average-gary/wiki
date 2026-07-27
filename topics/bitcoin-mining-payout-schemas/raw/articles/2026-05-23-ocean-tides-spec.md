@@ -3,13 +3,13 @@ title: "TIDES: Transparent Index of Distinct Extended Shares"
 author: Jason Hughes
 publication: ocean.xyz
 date: 2024-02-29
-url: https://ocean.xyz/docs/tides
-type: article
+source: https://ocean.xyz/docs/tides
+type: articles
 ingested: 2026-05-23
 quality: 5
 credibility: high
 confidence: high
-tags: [TIDES, OCEAN, PPLNS, non-custodial, payout-spec]
+tags: [tides, ocean, pplns, non-custodial, payout-spec]
 ---
 
 # TIDES (OCEAN Mining Pool)

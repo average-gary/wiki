@@ -8,7 +8,7 @@ type: repos
 tags: [case-study, additive-manufacturing, ebm, l-pbf, stryker, tritanium, lima, enovis, orchid, addup, serial-production, powder-handling]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The flagship serial-AM ortho production cases with hard numbers — Stryker AMagine/Tritanium (300k+ devices/10 yr), Lima/Enovis Trabecular Titanium (15 Arcam EBM machines, ~100k patients), Orchid deploying Arcam Spectra L (stackable EB-LPB, PRS 30 powder recovery), AddUp FormUp 350 (21,735 hip cups/yr/machine, 78% OEE).
 ---
 

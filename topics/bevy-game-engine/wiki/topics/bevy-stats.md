@@ -1,10 +1,12 @@
 ---
 title: "Bevy stats reference"
-type: topic
+category: topic
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, stats, github, crates-io, ecosystem]
+summary: "Snapshot 2026-06-15. Sources: GitHub API, crates.io API, GitHub releases, ecosystem crates, release-notes contributor counts, itch.io."
 ---
 
 # Bevy stats reference

@@ -1,14 +1,14 @@
 ---
 title: "cdk-ehash plugin — code-state report (May 2026)"
 publication: forge.anarch.diy/vnprc/cdk-ehash + github mirror
-url: https://forge.anarch.diy/vnprc/cdk-ehash
+source: https://forge.anarch.diy/vnprc/cdk-ehash
 url2: https://github.com/vnprc/cdk-ehash
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high
 confidence: high
-tags: [cdk-ehash, hashpool, MintPayment, code-state, stub-vs-shipped]
+tags: [cdk-ehash, hashpool, mint-payment, code-state, stub-vs-shipped]
 ---
 
 # cdk-ehash — Code-State Report

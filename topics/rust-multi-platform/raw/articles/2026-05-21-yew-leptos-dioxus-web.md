@@ -1,7 +1,7 @@
 ---
 title: "Yew vs Leptos vs Dioxus-web — Rust frontend framework comparison"
 source: https://github.com/yewstack/yew
-type: article
+type: articles
 tags: [yew, leptos, dioxus, frontend, rust-web, comparison]
 date: 2026-05-21
 quality: 5

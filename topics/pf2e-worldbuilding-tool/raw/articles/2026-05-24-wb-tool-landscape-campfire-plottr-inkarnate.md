@@ -1,7 +1,7 @@
 ---
 title: "Adjacent Tools: Campfire, Plottr, Inkarnate"
 source: "https://www.campfirewriting.com/ + https://www.plottr.com/ + https://inkarnate.com/"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [worldbuilding, tool-comparison, campfire, plottr, inkarnate, writers-tools, maps]

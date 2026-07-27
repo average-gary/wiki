@@ -1,8 +1,9 @@
 ---
 title: SHA-256 throughput on modern CPUs (SHA-NI extension)
 source_type: articles
-source_url: https://en.wikipedia.org/wiki/Intel_SHA_extensions
-fetched: 2026-06-24
+source: https://en.wikipedia.org/wiki/Intel_SHA_extensions
+type: articles
+ingested: 2026-06-24
 path: 4
 tags: [sha256, performance, sha-ni, share-validation, hashing-cost]
 ---

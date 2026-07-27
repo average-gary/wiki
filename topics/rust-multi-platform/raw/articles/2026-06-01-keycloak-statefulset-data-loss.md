@@ -1,6 +1,6 @@
 ---
 title: "Keycloak #44620 — StatefulSet Rapid Scale-Down Data Loss"
-source_url: https://github.com/keycloak/keycloak/issues/44620
+source: https://github.com/keycloak/keycloak/issues/44620
 type: postmortem
 ingested: 2026-06-01
 quality: 4

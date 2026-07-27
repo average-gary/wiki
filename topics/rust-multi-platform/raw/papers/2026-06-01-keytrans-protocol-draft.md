@@ -1,6 +1,6 @@
 ---
 title: "Key Transparency Protocol (KeyTrans) — draft-ietf-keytrans-protocol-04"
-source_url: https://datatracker.ietf.org/doc/draft-ietf-keytrans-protocol/
+source: https://datatracker.ietf.org/doc/draft-ietf-keytrans-protocol/
 type: rfc-draft
 ingested: 2026-06-01
 quality: 5

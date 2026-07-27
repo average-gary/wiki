@@ -1,9 +1,11 @@
 ---
 title: Limitations & Gotchas
-type: concept
+category: concept
 created: 2026-07-20
 updated: 2026-07-20
+volatility: warm
 tags: [limitations, gotchas, contrarian, psram, oauth, tls, ghosting, hardware-footguns]
+summary: "The steelman of what makes this hard — design around these up front."
 confidence: high
 ---
 
@@ -61,3 +63,4 @@ simple JSON feeds.
 - [Power & Refresh](power-and-refresh.md)
 - [Rendering Architecture](rendering-architecture.md)
 - [Data Sources](data-sources.md)
+- [[../reference/build-playbook.md|Build Playbook — a slow e-ink dashboard on the Waveshare ESP32 board]]

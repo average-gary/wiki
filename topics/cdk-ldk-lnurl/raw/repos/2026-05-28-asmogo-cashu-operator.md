@@ -1,8 +1,8 @@
 ---
 title: "asmogo/cashu-operator — Kubernetes operator for cdk-mintd"
-type: repo
+type: repos
 source: https://github.com/asmogo/cashu-operator
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [kubernetes, cdk-mintd, deployment, operator-pattern, ldk-node]
 summary: CRD-driven K8s operator that deploys cdk-mintd with an LN backend (LND, CLN, LNbits, LDK Node sidecar, Spark/Breez). Storage is SQLite/redb/Postgres with S3 backup; ingress + cert-manager TLS; Prometheus PodMonitor. Explicitly excludes LNURL — that workload is left to the operator.

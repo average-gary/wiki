@@ -1,7 +1,7 @@
 ---
 title: "Theosis — Eastern Orthodox Soteriology and the Uncreated Light"
 source: "https://en.wikipedia.org/wiki/Theosis_(Eastern_Christian_theology)"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [denomination, orthodox, soteriology, hesychasm, theology]

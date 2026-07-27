@@ -1,10 +1,12 @@
 ---
 title: "sv2-apps OCI reproducibility — feasibility assessment vs Fedimint pattern"
-type: topic
+category: topic
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [sv2-apps, stratum-v2, fedimint, oci, dockerTools, crane, feasibility, cross-domain]
+summary: "Whether stratum-mining/sv2-apps could adopt reproducible OCI image builds modeled on the Fedimint pattern, and at what cost."
 sources:
   - "[[../../raw/repos/2026-06-15-fedimint-ci-nix-workflow.md|Fedimint ci-nix.yml]]"
   - "[[../../raw/repos/2026-06-15-fedimint-nix-flakebox-internals.md|Fedimint Flakebox internals]]"

@@ -1,10 +1,12 @@
 ---
 title: "Nix derivation output modes (input-addressed, FOD, content-addressed)"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [nix, derivation, fixed-output, content-addressed, vocabulary]
+summary: "Nix derivations produce store paths in one of three modes. The mode chosen governs both the *purity guarantees* and the *attack surface* of the build."
 sources:
   - "[[../../raw/articles/2026-06-15-nix-manual-derivation-outputs.md|Nix Manual — Derivation Outputs]]"
 ---

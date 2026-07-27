@@ -1,6 +1,6 @@
 ---
 title: "clArk round transaction mechanics — end to end"
-type: topic
+category: topic
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high
@@ -82,6 +82,9 @@ A clArk round is an atomic, synchronous ceremony in which the ASP and a set of u
 - [[../concepts/offboarding-and-onchain-payments.md|Offboarding and on-chain payments]]
 - [[../concepts/vtxo-lifetime-and-expiry.md|VTXO lifetime and expiry]]
 - [[../reference/clark-glossary-and-timelocks.md|Glossary + timelock reference]]
+- [[../concepts/clark-overview.md|clArk overview — covenantless Ark on today's Bitcoin]]
+- [[../concepts/clark-round-lifecycle.md|The clArk round lifecycle]]
+- [[../concepts/forfeit-and-connectors.md|Forfeit transactions and connectors]]
 
 ## Sources
 

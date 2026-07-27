@@ -1,7 +1,7 @@
 ---
 title: "Reddit r/Pathfinder2e — running clerics/champions in a non-polytheistic / monotheistic world"
 source: "https://www.reddit.com/r/Pathfinder2e/comments/vpi8h1/how_do_you_handle_clerics_champions_etc_in_a/"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, christian-homebrew, community, fan-content, gap-closing]
 quality: 4

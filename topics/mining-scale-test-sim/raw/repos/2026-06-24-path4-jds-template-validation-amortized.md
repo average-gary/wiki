@@ -1,8 +1,9 @@
 ---
 title: sv2-apps JDS — template validation is amortized, NOT per-share
 source_type: repos
-source_url: https://github.com/marafoundation/sv2-apps/blob/main/pool-apps/jd-server/src/lib/job_declarator/job_validation/bitcoin_core_ipc.rs
-fetched: 2026-06-24
+source: https://github.com/marafoundation/sv2-apps/blob/main/pool-apps/jd-server/src/lib/job_declarator/job_validation/bitcoin_core_ipc.rs
+type: repos
+ingested: 2026-06-24
 path: 4
 tags: [stratum-v2, job-declaration, jds, template-validation, share-validation]
 ---

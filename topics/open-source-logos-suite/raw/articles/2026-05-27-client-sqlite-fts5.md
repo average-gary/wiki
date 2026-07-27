@@ -1,7 +1,7 @@
 ---
 title: "SQLite FTS5 — Full-Text Search Engine for Cross-Platform Apps"
-source_url: "https://www.sqlite.org/fts5.html"
-type: article
+source: "https://www.sqlite.org/fts5.html"
+type: articles
 path: client
 date_ingested: 2026-05-27
 date_published: 2025-01-01

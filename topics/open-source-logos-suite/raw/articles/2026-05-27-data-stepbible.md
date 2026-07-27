@@ -1,7 +1,7 @@
 ---
 title: "STEPBible-Data (Tyndale House)"
-source_url: "https://github.com/STEPBible/STEPBible-Data"
-type: article
+source: "https://github.com/STEPBible/STEPBible-Data"
+type: articles
 path: data
 date_ingested: 2026-05-27
 date_published: unknown

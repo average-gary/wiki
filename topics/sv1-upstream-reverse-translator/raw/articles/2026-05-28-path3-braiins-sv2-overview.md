@@ -1,7 +1,7 @@
 ---
 title: "Braiins — Past and Future of Bitcoin Mining Protocols: Stratum V2 Overview"
 url: https://braiins.com/blog/past-and-future-of-bitcoin-mining-protocols-stratum-v2-overview
-type: article
+type: articles
 source: braiins.com
 captured: 2026-05-28
 quality: 6

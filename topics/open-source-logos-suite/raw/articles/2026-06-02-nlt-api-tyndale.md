@@ -1,7 +1,7 @@
 ---
 title: "NLT API (Tyndale House Publishers)"
-url: https://api.nlt.to/
-retrieved: 2026-06-02
+source: https://api.nlt.to/
+ingested: 2026-06-02
 type: spec
 ---
 

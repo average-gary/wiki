@@ -1,7 +1,7 @@
 ---
 title: "Growing blueberries in the home garden"
-source_url: "https://extension.umd.edu/resource/growing-blueberries-home-garden"
-type: article
+source: "https://extension.umd.edu/resource/growing-blueberries-home-garden"
+type: articles
 path: blueberry
 date_ingested: 2026-05-26
 date_published: unknown

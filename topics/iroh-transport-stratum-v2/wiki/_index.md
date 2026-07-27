@@ -8,36 +8,36 @@ updated: 2026-05-20
 
 ## Topics (synthesizing reads)
 
-- [[Why Iroh for SV2|topics/why-iroh-for-sv2.md]] — motivation, in 4 reasons
-- [[Integration playbook|topics/sv2-iroh-transport-playbook.md]] — the deliverable
-- [[Risks and tradeoffs|topics/risks-and-tradeoffs.md]] — steelman against
+- [[topics/why-iroh-for-sv2.md|Why Iroh for SV2]] — motivation, in 4 reasons
+- [[topics/sv2-iroh-transport-playbook.md|Integration playbook]] — the deliverable
+- [[topics/risks-and-tradeoffs.md|Risks and tradeoffs]] — steelman against
 
 ## Concepts (atomic reference reads)
 
 ### iroh side
-- [[iroh: Endpoint and ALPN|concepts/iroh-endpoint-and-alpn.md]]
-- [[iroh: Relays|concepts/iroh-relays.md]]
-- [[iroh: Custom transports (Tor, Nym, BLE)|concepts/iroh-custom-transports.md]]
-- [[Integration pattern — iroh-blobs and Delta Chat as templates|concepts/integration-pattern-iroh-blobs.md]]
-- [[Fedimint as the reference implementation|concepts/fedimint-as-reference.md]] ⭐
+- [[concepts/iroh-endpoint-and-alpn.md|iroh: Endpoint and ALPN]]
+- [[concepts/iroh-relays.md|iroh: Relays]]
+- [[concepts/iroh-custom-transports.md|iroh: Custom transports (Tor, Nym, BLE)]]
+- [[concepts/integration-pattern-iroh-blobs.md|Integration pattern — iroh-blobs and Delta Chat as templates]]
+- [[concepts/fedimint-as-reference.md|Fedimint as the reference implementation]] ⭐
 
 ### SV2 side
-- [[SV2 Noise NX handshake|concepts/sv2-noise-nx.md]]
-- [[SV2 framing|concepts/sv2-framing.md]]
-- [[Erosion attack|concepts/erosion-attack.md]]
+- [[concepts/sv2-noise-nx.md|SV2 Noise NX handshake]]
+- [[concepts/sv2-framing.md|SV2 framing]]
+- [[concepts/erosion-attack.md|Erosion attack]]
 
 ### Cross-cutting
-- [[NAT traversal — empirical baseline|concepts/nat-traversal-baseline.md]]
-- [[QUIC performance ceiling vs TCP|concepts/quic-performance-ceiling.md]]
+- [[concepts/nat-traversal-baseline.md|NAT traversal — empirical baseline]]
+- [[concepts/quic-performance-ceiling.md|QUIC performance ceiling vs TCP]]
 
 ## Reference
 
-- [[Specs, crates, repos|reference/specs-and-crates.md]]
+- [[reference/specs-and-crates.md|Specs, crates, repos]]
 
 ## Theses (candidates for follow-up research)
 
-- [[Iroh mitigates Erosion|../theses/iroh-mitigates-erosion.md]]
-- [[Dual transport beats iroh-only|../theses/dual-transport-vs-iroh-only.md]]
+- [[../theses/iroh-mitigates-erosion.md|Iroh mitigates Erosion]]
+- [[../theses/dual-transport-vs-iroh-only.md|Dual transport beats iroh-only]]
 
 ## Stats
 

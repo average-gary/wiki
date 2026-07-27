@@ -1,7 +1,7 @@
 ---
 title: "His Words iOS Research Verdict: Technical Feasibility & Approval Path"
 source: "Synthesis of Screen Time API docs, precedent analysis, implementation patterns"
-type: article
+type: articles
 created: 2026-06-23
 updated: 2026-06-23
 tags: [ios, verdict, feasibility, his-words, screen-time-api, technical-research]

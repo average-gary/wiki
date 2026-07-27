@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin Core test_framework — canonical regtest test patterns"
-source_url: https://github.com/bitcoin/bitcoin/tree/master/test/functional/test_framework
-type: repo
+source: https://github.com/bitcoin/bitcoin/tree/master/test/functional/test_framework
+type: repos
 ingested: 2026-05-26
 quality: 5
 confidence: high

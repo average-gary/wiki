@@ -5,6 +5,7 @@ created: 2026-06-23
 quality: high
 confidence: 0.92
 source: "YouVersion 2024 statistics, Bible app market research, Pew data on Bible engagement"
+type: articles
 summary: "YouVersion has 700M+ installs, free, already the default. His Words assumes users aren't reading Scripture because they can't *find* it—but YouVersion data suggests the real problem is they don't *want* to open it. Interruption won't solve desire, just annoyance."
 ---
 

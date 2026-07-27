@@ -1,6 +1,6 @@
 ---
 title: "Tailscale Auth Keys"
-source_url: https://tailscale.com/kb/1085/auth-keys
+source: https://tailscale.com/kb/1085/auth-keys
 type: docs
 ingested: 2026-06-01
 quality: 5

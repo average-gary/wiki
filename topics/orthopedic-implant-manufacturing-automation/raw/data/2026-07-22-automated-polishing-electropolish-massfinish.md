@@ -8,7 +8,7 @@ type: data
 tags: [finishing, electropolishing, dlyte, drag-finishing, stream-finishing, mass-finishing, robotic-polishing, force-control, cocr, knee, ra]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The core "hand polishing is being automated" evidence — DLyte dry electropolishing (24 CoCr knees/cycle, Ra <0.05 µm in 60 min), Rösler drag finishing (Smith+Nephew CoCr knees, 40× vibratory intensity), OTEC stream finishing (Ra 0.01 µm), and PushCorp active force control (the mechanism that cracked freeform polishing).
 ---
 

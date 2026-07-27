@@ -1,10 +1,12 @@
 ---
 title: "Coinbase reconstruction and merkle fold"
-type: concept
+category: concept
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
-tags: [bitcoin, coinbase, extranonce, merkle-root, double-sha256, txid, wtxid, endianness, bip34, bip141]
+tags: [bitcoin, coinbase, extranonce, merkle-root, double-sha256, txid, wtxid, endianness, bip-34, bip141]
+summary: "The byte-level algorithm a daemon runs on each NewExtendedMiningJob to rebuild the coinbase and derive the block merkle root. This is the mechanical heart of the tool."
 ---
 
 # Coinbase reconstruction and merkle fold
@@ -60,3 +62,5 @@ build + target compare. — [[raw/repos/2026-07-21-sri-channels-sv2-client-exten
 - [[wiki/concepts/coinbase-transaction-anatomy]]
 - [[wiki/concepts/expected-value-checks-taxonomy]]
 - [[wiki/concepts/sri-client-crate-stack]]
+- [[../topics/reference-implementation-skeleton.md|Reference implementation skeleton (Rust / SRI)]]
+- [[standard-vs-extended-channels-coinbase-visibility.md|Standard vs extended channels — coinbase visibility]]

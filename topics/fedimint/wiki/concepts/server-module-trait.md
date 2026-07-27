@@ -1,12 +1,13 @@
 ---
 title: "ServerModule trait — what a Fedimint module author implements (consensus side)"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
 verified: 2026-06-15
 volatility: hot
 confidence: high
 tags: [fedimint, ServerModule, ServerModuleInit, module-authoring, consensus]
+summary: "The ServerModule trait is the consensus-side surface a Fedimint module implements. It lives in fedimint-server-core/src/lib.rs (master @ c39f9c8). Pair it with ClientModule for the client-side surface, and with the trait-surface source walk for full method bodies."
 ---
 
 # ServerModule trait

@@ -1,7 +1,7 @@
 ---
 title: "Lightning.Pub server-side CLINK Manage support — verification"
 source: https://github.com/shocknet/Lightning.Pub
-type: repo
+type: repos
 ingested: 2026-06-10
 path: gap-lnpub-manage
 quality: 5

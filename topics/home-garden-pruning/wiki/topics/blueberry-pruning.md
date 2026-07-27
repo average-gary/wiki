@@ -1,6 +1,6 @@
 ---
 title: Blueberry Pruning
-type: topic
+category: topic
 created: 2026-05-26
 updated: 2026-05-26
 verified: 2026-05-26
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [blueberry, pruning, highbush, rabbiteye, cane-renewal]
+summary: "Blueberries are pruned on a cane-renewal model: the bush is a cluster of canes of varying ages, fruit is borne on 2-4 year old wood, canes peak in productivity around year 5, and old wood (>6 years) gets less productive."
 sources:
   - "[[raw/articles/2026-05-26-blueberry-umn-growing-home-garden]]"
   - "[[raw/articles/2026-05-26-blueberry-clemson-hgic-blueberry]]"

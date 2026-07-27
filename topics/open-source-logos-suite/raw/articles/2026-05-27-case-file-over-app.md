@@ -1,7 +1,7 @@
 ---
 title: "File Over App"
-source_url: "https://stephango.com/file-over-app"
-type: article
+source: "https://stephango.com/file-over-app"
+type: articles
 path: case
 date_ingested: 2026-05-27
 date_published: 2023-04-21

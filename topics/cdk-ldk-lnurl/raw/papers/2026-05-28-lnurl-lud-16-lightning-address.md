@@ -1,8 +1,8 @@
 ---
 title: "LUD-16: Lightning Address"
-type: paper
+type: papers
 source: https://github.com/lnurl/luds/blob/luds/16.md
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [lnurl, lud-16, lightning-address, spec]
 summary: user@domain syntax that resolves to a LUD-06 LNURL-pay endpoint via .well-known/lnurlp/<username>. Authored by akumaigorodski, andreneves (ZBD), fiatjaf.

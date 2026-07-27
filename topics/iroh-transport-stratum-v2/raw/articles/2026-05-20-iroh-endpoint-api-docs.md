@@ -1,6 +1,6 @@
 ---
 title: "iroh::endpoint::Endpoint API (docs.rs)"
-source_url: https://docs.rs/iroh/latest/iroh/endpoint/struct.Endpoint.html
+source: https://docs.rs/iroh/latest/iroh/endpoint/struct.Endpoint.html
 type: docs
 date: 2026-05-20
 org: n0-computer

@@ -1,7 +1,7 @@
 ---
 title: "Brambles - Pruning (NE Small Fruit Management Guide)"
-source_url: "https://www.umass.edu/agriculture-food-environment/fruit/ne-small-fruit-management-guide/raspberries-blackberries/general-information/pruning"
-type: article
+source: "https://www.umass.edu/agriculture-food-environment/fruit/ne-small-fruit-management-guide/raspberries-blackberries/general-information/pruning"
+type: articles
 path: raspberry
 date_ingested: 2026-05-26
 date_published: 2024-01-01

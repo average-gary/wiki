@@ -3,7 +3,7 @@ title: "False-positive harm: Turnitin's real error rate, named student cases, an
 source: https://www.insidehighered.com/news/quick-takes/2023/06/01/turnitins-ai-detector-higher-expected-false-positives
 authors: Inside Higher Ed; Rolling Stone; Simon Willison / Alex Hern (Guardian); WeeklyGeek/RealClearScience; commentary from Margaret Mitchell & Emily Bender
 venue: Inside Higher Ed (Jun 2023); Rolling Stone (2023); simonwillison.net (18 Apr 2024); weeklygeek.net (Jul 2023)
-type: article
+type: articles
 tags: [llm-writing-indicators, false-positives, harm, folklore, non-native, neurodivergent, delve]
 quality: 4
 confidence: high

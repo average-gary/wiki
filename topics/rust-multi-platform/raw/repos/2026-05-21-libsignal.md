@@ -1,7 +1,7 @@
 ---
 title: "signalapp/libsignal — the UniFFI counter-example (hand-rolled FFI)"
 source: https://github.com/signalapp/libsignal
-type: repo
+type: repos
 tags: [signal, ffi, jni, hand-rolled, abi-control, counter-example]
 date: 2026-05-21
 quality: 5

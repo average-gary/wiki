@@ -1,8 +1,8 @@
 ---
 title: "Hashpool — Cashu mint backed by mining proof-of-work (eHash)"
-type: article
+type: articles
 source: https://hashpool.dev/articles/what-is-hashpool/
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: medium
 tags: [hashpool, ehash, cashu-mining, motivating-use-case, vnprc]
 summary: Built by vnprc — a Cashu mint inside a Stratum V2 mining pool that issues eHash tokens (proof-of-work-backed ecash). Lightning interop is the redemption path. Motivating use case for embedding LDK Node directly into a CDK mint.

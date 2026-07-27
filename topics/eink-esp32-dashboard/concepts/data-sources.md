@@ -1,9 +1,11 @@
 ---
 title: Data Sources — Calendar, Bitcoin, Weather & the JSON/HTTPS reality
-type: concept
+category: concept
 created: 2026-07-20
 updated: 2026-07-20
+volatility: warm
 tags: [data-sources, calendar, bitcoin, mempool, weather, json, https, oauth, apps-script]
+summary: "What you can feed a slow dashboard, and how to fetch it on a constrained ESP32."
 confidence: high
 ---
 
@@ -67,3 +69,6 @@ If you fetch and parse on-device, two references govern survival:
 - [Rendering Architecture](rendering-architecture.md) — on-device vs server-side changes where this parsing happens
 - [Power & Refresh](power-and-refresh.md) — poll cadence tuned to data volatility
 - [Build Playbook](../reference/build-playbook.md)
+- [[firmware-stacks.md|Firmware Stacks — GxEPD2, ESPHome, MicroPython, ESP-IDF]]
+- [[limitations-and-gotchas.md|Limitations & Gotchas]]
+- [[../reference/trmnl-byos-walkthrough.md|TRMNL BYOS Walkthrough — self-hosted server, Waveshare firmware, Bitcoin screen]]

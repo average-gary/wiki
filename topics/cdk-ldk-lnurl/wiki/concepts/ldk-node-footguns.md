@@ -1,10 +1,12 @@
 ---
 title: "LDK Node footguns for a CDK mint operator"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: high
 tags: [ldk-node, footgun, persistence, tor, lsps2]
+summary: "The cdk-ldk-node README explicitly positions LDK Node as \"Recommended for Testing\"; production guidance leans on CLN/LND. These are the concrete reasons."
 ---
 
 # LDK Node footguns

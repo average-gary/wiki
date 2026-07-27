@@ -3,7 +3,7 @@ title: "SV2 Extension 0x0001: Extensions Negotiation (sv2-spec)"
 source: "https://github.com/stratum-mining/sv2-spec/blob/main/extensions/0x0001-extensions-negotiation.md"
 type: articles
 ingested: 2026-07-17
-tags: [sv2, sv2-spec, extensions, extension-negotiation, RequestExtensions, extension-0x0001, setup-connection, extensions-sv2, normative-spec]
+tags: [sv2, sv2-spec, extensions, extension-negotiation, request-extensions, extension-0x0001, setup-connection, extensions-sv2, normative-spec]
 summary: "Normative SV2 spec (extension type 0x0001) defining the RequestExtensions / RequestExtensions.Success / RequestExtensions.Error handshake sent immediately after SetupConnection. This is the resolution of the design debate in sv2-spec issue #95: a positive-ACK negotiation with an explicit error message listing unsupported and server-required extensions — not the universal per-extension NACK originally floated."
 canonical_url: "https://github.com/stratum-mining/sv2-spec/blob/main/extensions/0x0001-extensions-negotiation.md"
 upstream_path: "extensions/0x0001-extensions-negotiation.md"

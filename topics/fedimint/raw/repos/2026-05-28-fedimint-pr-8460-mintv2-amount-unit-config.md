@@ -2,8 +2,8 @@
 title: "PR #8460 — feat(mintv2): add amount_unit config field for multi-asset support (joschisan, merged 2026-04-08)"
 type: raw
 source_type: repos
-source_url: https://github.com/fedimint/fedimint/pull/8460
-fetched: 2026-05-28
+source: https://github.com/fedimint/fedimint/pull/8460
+ingested: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 quality: 5

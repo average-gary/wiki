@@ -53,6 +53,8 @@ The catch for MuSig2: ROAST's robustness fundamentally relies on **thresholds** 
 - [[musig2-vs-frost-roast|MuSig2 vs FROST/ROAST]] ([MuSig2 vs FROST/ROAST](musig2-vs-frost-roast.md)) — ROAST's robustness mechanism and why it needs a threshold
 - [[session-framing-and-state|Session Framing and State]] ([Session Framing and State](session-framing-and-state.md)) — timeouts, reconnection, and not persisting in-flight state
 - [[musig2-protocol|The MuSig2 Protocol]] ([The MuSig2 Protocol](musig2-protocol.md)) — the n-of-n property that makes MuSig2 non-robust
+- [[interactive-tx-wire-protocol.md|Interactive Transaction Wire Protocol]]
+- [[../topics/musig2-interactive-signing-ceremonies.md|MuSig2 Interactive Signing Ceremonies]]
 
 ## Sources
 

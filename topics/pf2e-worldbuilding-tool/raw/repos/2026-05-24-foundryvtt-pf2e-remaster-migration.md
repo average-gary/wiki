@@ -2,7 +2,7 @@
 title: "Foundry pf2e — Remaster Changes Journal (Canonical Rename Mapping)"
 source: "https://github.com/foundryvtt/pf2e/blob/master/packs/pf2e/journals/remaster-changes.json"
 source_raw: "https://raw.githubusercontent.com/foundryvtt/pf2e/v14-dev/packs/pf2e/journals/remaster-changes.json"
-type: repo
+type: repos
 date_fetched: 2026-05-24
 date_published: ongoing
 tags: [pf2e, remaster, rename-mapping, foundry, machine-readable, primary-derivative]

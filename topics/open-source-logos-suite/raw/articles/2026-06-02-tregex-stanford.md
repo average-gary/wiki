@@ -1,8 +1,8 @@
 ---
 title: "Tregex / Tsurgeon / Semgrex (Stanford NLP)"
-url: https://nlp.stanford.edu/software/tregex.shtml
-retrieved: 2026-06-02
-type: article
+source: https://nlp.stanford.edu/software/tregex.shtml
+ingested: 2026-06-02
+type: articles
 ---
 
 # Tregex (Stanford NLP)

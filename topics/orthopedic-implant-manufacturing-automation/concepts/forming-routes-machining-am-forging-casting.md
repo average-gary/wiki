@@ -1,9 +1,11 @@
 ---
 title: Forming Routes — Machining, Additive, Forging, Casting
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [cnc, swiss, 5-axis, additive-manufacturing, l-pbf, ebm, forging, investment-casting, post-processing]
+summary: "Four routes turn raw material into an implant blank: subtractive (CNC/Swiss), additive (L-PBF/EBM), forging, and investment casting. The choice is set by geometry, material, and volume — and each route has a *different* automation profile."
 confidence: high
 ---
 
@@ -86,3 +88,4 @@ displacing casting for porous parts.
 - [Finishing & Coating Automation](finishing-and-coating-automation.md)
 - [Limitations & Bottlenecks](limitations-and-bottlenecks.md)
 - [Build Playbook](../reference/build-playbook.md)
+- [[../reference/vendor-landscape.md|Vendor Landscape — Ortho Implant Manufacturing Automation]]

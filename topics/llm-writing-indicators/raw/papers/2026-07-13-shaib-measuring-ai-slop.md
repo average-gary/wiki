@@ -3,7 +3,7 @@ title: "Measuring AI 'Slop' in Text"
 source: https://arxiv.org/html/2509.19163v1
 authors: Chantal Shaib, Tuhin Chakrabarty, Diego Garcia-Olano, Byron C. Wallace
 venue: arXiv:2509.19163 (Sept 2025)
-type: paper
+type: papers
 tags: [llm-writing-indicators, ai-slop, style-quality, structural-tells, detection-limits]
 quality: 5
 confidence: high

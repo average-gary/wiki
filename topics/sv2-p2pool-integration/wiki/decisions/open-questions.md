@@ -5,6 +5,7 @@ created: 2026-05-22
 updated: 2026-05-22
 verified: 2026-05-22
 volatility: hot
+summary: "Captured from gap-closing round 2 (2026-05-22). Several gap-closing agents hit WebFetch denials; their outputs are seed lists rather than verified findings. The Gap 5 mapping spec (the highest-leverage one) succeeded."
 compiled-from: conversation
 status: open
 ---

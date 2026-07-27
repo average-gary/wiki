@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [decision, distribution, iroh, ipfs, content-addressing]
+summary: "The Bible-text + lexicon + commentary library is mostly static, mostly immutable, occasionally updated. Default install is ~1 GB; advanced installs may be 10+ GB with all PD commentaries. Users install once, fetch updates rarely. Most users are passive consumers — they read, they don't host."
 sources:
   - "[[raw/articles/2026-05-27-infra-text-iroh-blobs-protocol]]"
   - "[[raw/articles/2026-05-27-infra-text-ipfs-content-addressing]]"

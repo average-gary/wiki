@@ -3,7 +3,9 @@ title: "Drop-in Rust DATUM gateway — synthesis"
 category: topic
 created: 2026-06-01
 updated: 2026-06-01
-tags: [drop-in, rust, datum_gateway, sv2, sv1, ocean, synthesis]
+volatility: warm
+tags: [drop-in, rust, datum-gateway, sv2, sv1, ocean, synthesis]
+summary: "The synthesized answer to: *\"How can we use SV2 for a DATUM gateway? Miners SV2 downstream, DATUM upstream, drop-in replacement for datum_gateway.\"*"
 confidence: high
 ---
 

@@ -1,9 +1,11 @@
 ---
 title: Metrology & Inspection Automation
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [cmm, industrial-ct, optical-metrology, machine-vision, ai-inspection, sampling, cleanliness, closed-loop]
+summary: "Inspection is where \"maximal automation\" meets the regulatory reality: because you often cannot fully inspect a finished implant (internal AM porosity, fatigue life, sterility), some verification is by *validated process* rather than measurement. What *can* be automated, increasingly is."
 confidence: high
 ---
 

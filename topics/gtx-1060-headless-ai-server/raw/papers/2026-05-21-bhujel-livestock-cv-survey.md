@@ -1,7 +1,7 @@
 ---
 title: "Bhujel et al. 2024 — Public CV Datasets for Precision Livestock Farming: Systematic Survey"
 source: https://arxiv.org/abs/2406.10628
-type: paper
+type: papers
 tags: [livestock, cattle, datasets, survey, peer-reviewed]
 date: 2026-05-21
 quality: 6

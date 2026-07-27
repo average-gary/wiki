@@ -1,6 +1,6 @@
 ---
 title: "Delving Bitcoin — Deterministic tx selection for censorship resistance"
-source_url: https://delvingbitcoin.org/t/deterministic-tx-selection-for-censorship-resistance/842
+source: https://delvingbitcoin.org/t/deterministic-tx-selection-for-censorship-resistance/842
 type: forum-thread
 ingested: 2026-05-22
 quality: 5

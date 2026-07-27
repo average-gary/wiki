@@ -5,7 +5,7 @@ type: data
 tags: [linear-winding, segmented-stator, wire-stripping, joining-station, vendor]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: German machine-builder source covering the linear method plus segmented-stator winding and integrated termination/stripping.
 ---
 

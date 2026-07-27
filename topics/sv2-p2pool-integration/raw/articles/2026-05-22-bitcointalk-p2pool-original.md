@@ -1,6 +1,6 @@
 ---
 title: "bitcointalk — Original P2Pool announcement (forrestv, 2011)"
-source_url: https://bitcointalk.org/index.php?topic=18313.0
+source: https://bitcointalk.org/index.php?topic=18313.0
 type: forum-post
 ingested: 2026-05-22
 quality: 5

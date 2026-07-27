@@ -3,13 +3,13 @@ title: "Incentive Compatibility of Bitcoin Mining Pool Reward Functions"
 authors: [Okke Schrijvers, Joseph Bonneau, Dan Boneh, Tim Roughgarden]
 year: 2016
 venue: Financial Cryptography (FC'16), Springer LNCS
-url: https://fc16.ifca.ai/preproceedings/28_Schrijvers.pdf
-type: paper
+source: https://fc16.ifca.ai/preproceedings/28_Schrijvers.pdf
+type: papers
 ingested: 2026-05-23
 quality: 5
 credibility: high
 confidence: high
-tags: [PPLNS, incentive-compatibility, mechanism-design, block-withholding, Nash]
+tags: [pplns, incentive-compatibility, mechanism-design, block-withholding, Nash]
 ---
 
 # Incentive Compatibility of Bitcoin Mining Pool Reward Functions (Schrijvers et al. FC'16)

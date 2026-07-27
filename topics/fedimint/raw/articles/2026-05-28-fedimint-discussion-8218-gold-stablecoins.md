@@ -2,8 +2,8 @@
 title: "Fedimint Discussion #8218 — Are gold stable coins compatible? (Marc26z, dpc reply, 2026-01)"
 type: raw
 source_type: articles
-source_url: https://github.com/fedimint/fedimint/discussions/8218
-fetched: 2026-05-28
+source: https://github.com/fedimint/fedimint/discussions/8218
+ingested: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 quality: 5

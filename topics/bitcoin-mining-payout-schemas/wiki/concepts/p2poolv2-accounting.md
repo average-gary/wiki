@@ -3,9 +3,10 @@ title: p2poolv2 Accounting (deep-dive)
 category: concept
 created: 2026-05-24
 confidence: high
-tags: [p2poolv2, accounting, PPLNS, work-bounded-window, uncle-weight, atomic-swap]
+tags: [p2poolv2, accounting, pplns, work-bounded-window, uncle-weight, atomic-swap]
 volatility: warm
 updated: 2026-07-15
+summary: "Code-level deep-dive on the actual algorithms in p2poolv2_lib/src/accounting/. Companion to the higher-level p2pool-share-chain concept."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-24-jungly-delvingbitcoin-p2share.md"
@@ -164,3 +165,5 @@ Memory cost: O(active miners), not O(window).
 - [[tides|TIDES (OCEAN)]] — comparison: 8×D window vs p2poolv2's 133,056 work-bounded
 - [[hydrapool|Hydrapool]]
 - [[../topics/p2poolv2-and-256-foundation|p2poolv2 ↔ 256 Foundation]]
+- [[braidpool.md|Braidpool]]
+- [[../reference/people.md|People — eHash / hashpool / decentralized-pool ecosystem]]

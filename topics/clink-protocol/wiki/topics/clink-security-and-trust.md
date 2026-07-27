@@ -1,8 +1,10 @@
 ---
 title: CLINK security and trust model
-type: topic
+category: topic
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
+summary: "CLINK gets the foundational crypto right: NIP-44 mandatory across all primitives, signed Nostr events for authentication, single-use k1 for sessions, 30-second timestamp deltas for replay protection on Debits and Manage."
 confidence: high
 sources:
   - raw/articles/2026-06-09-security-clink-debits-spec.md

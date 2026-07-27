@@ -1,7 +1,7 @@
 ---
 title: "Strong's Concordance — Public Domain"
-source_url: "https://en.wikipedia.org/wiki/Strong%27s_Concordance"
-type: article
+source: "https://en.wikipedia.org/wiki/Strong%27s_Concordance"
+type: articles
 path: data
 date_ingested: 2026-05-27
 date_published: 1890-01-01

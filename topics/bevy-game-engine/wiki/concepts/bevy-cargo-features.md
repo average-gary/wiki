@@ -1,10 +1,12 @@
 ---
 title: "Bevy Cargo features"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, cargo, features, configuration, profiles]
+summary: "Bevy is heavily modular — every subsystem is a feature, and you ship only what you use. The 0.18 system has three tiers (docs.rs landing, cargo_features.md)."
 ---
 
 # Bevy Cargo features

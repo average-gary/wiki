@@ -1,11 +1,13 @@
 ---
 title: The empirical evidence base — are the tells real?
-type: topic
+category: topic
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, evidence, corpus-studies, playbook]
+summary: "Are the tells folklore or fact? For the lexical tells specifically, the evidence is unusually strong — multiple large, independent corpora converge. This article separates what's measured from what's anecdotal."
 sources:
   - raw/papers/2026-07-13-kobak-excess-vocabulary-pubmed.md
   - raw/papers/2026-07-13-liang-peer-reviews-ai-modified.md

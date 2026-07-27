@@ -1,10 +1,11 @@
 ---
 title: "WASM in 2026 — browser frontends + server-side WASI"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: hot
+summary: "Two distinct ecosystems with different toolchains."
 confidence: high
 sources:
   - raw/repos/2026-05-21-wasm-bindgen.md

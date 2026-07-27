@@ -4,11 +4,14 @@ type: thesis
 status: completed
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 verdict: partially-supported
 confidence: high
 core_claim: "A single-LN-node CDK + LDK Node + LNURL deployment can be made strictly LUD-06 compliant by extending NUT-04 (or cdk-mintd's quote endpoint) to accept caller-supplied description_hash."
 key_variables: [description_hash, NUT-04, LUD-06, cdk-mintd, cdk-ldk-node]
 falsification: "If LDK Node BOLT11 invoice creation does not allow setting description_hash to an arbitrary value supplied by the caller, the thesis is false at the LDK level — bridge would have to generate its own invoices."
+tags: [thesis]
+summary: "A single-LN-node CDK + LDK Node + LNURL deployment can be made strictly LUD-06 compliant by extending NUT-04 (or cdk-mintd's quote endpoint) to accept caller-supplied description_hash."
 ---
 
 # Thesis: single-LN-node deployment feasibility

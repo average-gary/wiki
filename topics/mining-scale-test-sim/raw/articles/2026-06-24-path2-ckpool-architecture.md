@@ -1,7 +1,7 @@
 ---
 title: "ckpool architecture: multi-process, epoll, passthrough for million-client scale"
-source_url: https://github.com/ckolivas/ckpool/blob/master/README
-type: article
+source: https://github.com/ckolivas/ckpool/blob/master/README
+type: articles
 ingested: 2026-06-24
 quality: 5
 confidence: high

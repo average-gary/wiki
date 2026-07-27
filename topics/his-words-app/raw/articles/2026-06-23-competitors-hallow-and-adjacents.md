@@ -1,7 +1,7 @@
 ---
 title: "Hallow + adjacent premium faith apps — landscape note"
 source: https://itunes.apple.com/lookup?id=1405323394 + general iTunes search
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, competitor, hallow, creed, dwell, adjacents]
 quality: 3

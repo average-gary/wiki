@@ -1,7 +1,7 @@
 ---
 title: "arkade-os/arkd — Go server + ark-lib source code"
-source_url: https://github.com/arkade-os/arkd
-type: repo
+source: https://github.com/arkade-os/arkd
+type: repos
 publisher: Ark Labs (Arkade OS)
 ingested: 2026-07-16
 research_path: implementations

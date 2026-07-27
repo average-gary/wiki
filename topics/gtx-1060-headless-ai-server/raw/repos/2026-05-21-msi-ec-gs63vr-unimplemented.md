@@ -1,7 +1,7 @@
 ---
 title: "msi-ec — GS63VR 7RF Stealth Pro is UNIMPLEMENTED"
 source: https://github.com/BeardOverflow/msi-ec
-type: repo
+type: repos
 tags: [msi-ec, gs63vr, fan-control, battery-threshold, kernel-module, unimplemented]
 date: 2026-05-21
 quality: 6

@@ -1,13 +1,13 @@
 ---
 title: "stratum.work (live coinbase decoder) + DATUM (miner-built coinbase) prior art"
-source_url: https://stratum.work/
+source: https://stratum.work/
 source_url_2: https://github.com/OCEAN-xyz/datum_gateway
 source_url_3: https://ocean.xyz/docs/datum
-type: article
-retrieved: 2026-07-21
+type: articles
+ingested: 2026-07-21
 credibility: medium
 corroboration: "prior-art agent"
-tags: [stratum.work, DATUM, OCEAN, coinbase-decoder, mining.notify, block-template, miner-built-coinbase, stratum-v1]
+tags: [stratum.work, datum, ocean, coinbase-decoder, mining-notify, block-template, miner-built-coinbase, stratum-v1]
 summary: "Two prior-art points: stratum.work decodes live Stratum V1 coinbase outputs from mining.notify (external observer, does not assert against an expectation); DATUM (OCEAN) lets the miner BUILD its own coinbase locally from getblocktemplate (verification by construction, not audit)."
 ---
 

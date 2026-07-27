@@ -1,6 +1,6 @@
 ---
 title: "Mender Client — Identity Script"
-source_url: https://docs.mender.io/client-installation/identity
+source: https://docs.mender.io/client-installation/identity
 type: docs
 ingested: 2026-06-01
 quality: 4

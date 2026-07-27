@@ -1,7 +1,7 @@
 ---
 title: "SChernykh/p2pool — Monero P2Pool"
-source_url: https://github.com/SChernykh/p2pool
-type: repo
+source: https://github.com/SChernykh/p2pool
+type: repos
 ingested: 2026-05-22
 quality: 5
 confidence: high

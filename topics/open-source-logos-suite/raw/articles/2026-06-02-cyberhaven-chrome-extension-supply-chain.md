@@ -1,8 +1,8 @@
 ---
 title: "Cyberhaven Chrome extension supply-chain attack (December 2024)"
-url: "https://www.bleepingcomputer.com/news/security/hacker-injects-malicious-code-into-cyberhaven-chrome-extension/"
+source: "https://www.bleepingcomputer.com/news/security/hacker-injects-malicious-code-into-cyberhaven-chrome-extension/"
 retrieved: 2026-06-02
-type: article
+type: articles
 sources_seen:
   - https://www.cyberhaven.com/blog/cyberhaven-incident-update
   - https://www.bleepingcomputer.com/news/security/hacker-injects-malicious-code-into-cyberhaven-chrome-extension/

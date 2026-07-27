@@ -5,7 +5,7 @@ type: data
 tags: [regulatory, fda, process-validation, 21-cfr-820, iq-oq-pq, revalidation, qmsr]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The load-bearing regulatory clause — where a process output "cannot be fully verified by subsequent inspection and test," it must be validated with a high degree of assurance. This is the fulcrum that makes nearly all implant special processes legally mandatory to validate, wrapping every automated cell in an IQ/OQ/PQ envelope.
 ---
 

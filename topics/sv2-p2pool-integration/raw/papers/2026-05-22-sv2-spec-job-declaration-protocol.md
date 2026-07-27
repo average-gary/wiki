@@ -1,6 +1,6 @@
 ---
 title: "Stratum V2 Spec — 06 Job Declaration Protocol"
-source_url: https://github.com/stratum-mining/sv2-spec/blob/main/06-Job-Declaration-Protocol.md
+source: https://github.com/stratum-mining/sv2-spec/blob/main/06-Job-Declaration-Protocol.md
 type: protocol-spec
 ingested: 2026-05-22
 quality: 5

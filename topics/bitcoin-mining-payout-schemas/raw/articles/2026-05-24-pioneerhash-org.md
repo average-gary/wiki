@@ -1,13 +1,13 @@
 ---
 title: "PioneerHash GitHub org — eHash integration vehicle"
 publication: github.com/PioneerHash
-url: https://github.com/PioneerHash
-type: article
+source: https://github.com/PioneerHash
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high
 confidence: high
-tags: [PioneerHash, EthnTuttle, eHash, github-org, integration-vehicle]
+tags: [PioneerHash, ethntuttle, ehash, github-org, integration-vehicle]
 ---
 
 # PioneerHash (GitHub org)

@@ -1,11 +1,13 @@
 ---
 title: Markdown & formatting tells — bold-stacked lists and leaked markup
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, formatting, markdown, leakage]
+summary: "How a piece is *formatted* is often a stronger tell than what it says. LLM chat output has a house style, and when it is pasted into a document, the formatting fingerprint comes with it."
 sources:
   - raw/articles/2026-07-13-wikipedia-signs-of-ai-writing.md
 ---
@@ -53,3 +55,5 @@ Formatting tells are cheap to scan and, at the leaked-token end, near-determinis
 - [[invisible-unicode-artifacts|Invisible Unicode artifacts]]
 - [[structural-formulas|Structural formulas]]
 - [[../../raw/articles/2026-07-13-wikipedia-signs-of-ai-writing|Wikipedia AISIGNS catalog]] (source)
+- [[em-dash-and-punctuation.md|Em-dash & punctuation tells]]
+- [[../reference/overused-words-and-phrases.md|Reference: overused words & phrases]]

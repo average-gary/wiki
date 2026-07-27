@@ -1,7 +1,7 @@
 ---
 title: shocknet/CLINK — Common Lightning Interface for Nostr Keys (canonical spec repo)
 source: https://github.com/shocknet/CLINK
-type: repo
+type: repos
 ingested: 2026-06-09
 path: implementations
 quality: 5

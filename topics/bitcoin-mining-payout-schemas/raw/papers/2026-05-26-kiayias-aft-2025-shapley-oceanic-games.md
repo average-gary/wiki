@@ -2,9 +2,9 @@
 title: "Pool Formation in Oceanic Games: Shapley Value and Proportional Sharing (Kiayias, Koutsoupias, Markakis, Tsamopoulos — AFT 2025)"
 authors: [Aggelos Kiayias, Elias Koutsoupias, Evangelos Markakis, Tsamopoulos]
 publication: AFT 2025 (Schloss Dagstuhl LIPIcs)
-url: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.AFT.2025.21
+source: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.AFT.2025.21
 date: 2025-10
-type: paper
+type: papers
 peer_reviewed: yes
 ingested: 2026-05-26
 quality: 5

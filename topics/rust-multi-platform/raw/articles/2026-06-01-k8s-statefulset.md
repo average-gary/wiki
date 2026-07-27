@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes StatefulSet — stable identity per slot"
-source_url: https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/
+source: https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/
 type: docs
 ingested: 2026-06-01
 quality: 5

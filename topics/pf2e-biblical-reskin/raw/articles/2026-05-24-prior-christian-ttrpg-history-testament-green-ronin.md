@@ -1,7 +1,7 @@
 ---
 title: "Testament: Roleplaying in the Biblical Era (Green Ronin, 2003)"
 source: "https://en.wikipedia.org/wiki/Scott_Bennie"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [christian-rpg, history, testament, design-retrospective, d20, historical]

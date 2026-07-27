@@ -1,8 +1,10 @@
 ---
 title: CLINK discovery — NIP-05, HTTPS, NymRank
-type: concept
+category: concept
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
+summary: "CLINK markets itself as \"operating entirely over Nostr,\" but the default human-readable discovery hop still depends on HTTPS + DNS. This page makes that dependency explicit and tracks the in-flight alternatives."
 confidence: high
 sources:
   - raw/articles/2026-06-09-spec-primitives-clink-issue-6-namecoin.md
@@ -84,3 +86,4 @@ The README and clinkme.dev marketing emphasize Nostr-native flow. Neither spec t
 - [[clink-wire-format.md]]
 - [[../topics/clink-security-and-trust.md]]
 - [[../topics/clink-roadmap-signals.md]] — NymRank as roadmap signal
+- [[../topics/clink-vs-alternatives.md|CLINK vs LNURL / BOLT12 / NWC / Zaps / Lightning Address]]

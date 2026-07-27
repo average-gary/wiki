@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin e-ink displays — BTClock, FreedomClock, on-device mempool clients"
 source: https://git.btclock.dev/btclock
-type: repo
+type: repos
 tags: [bitcoin, mempool, btclock, freedomclock, block-clock, bitaxe, mqtt, e-paper, esp32]
 date: 2026-07-20
 quality: 4

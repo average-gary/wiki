@@ -1,7 +1,7 @@
 ---
 title: "SV2 Spec — Design Goals (02) and Motivation (01)"
 url: https://github.com/stratum-mining/sv2-spec/blob/main/02-Design-Goals.md
-type: paper
+type: papers
 source: stratum-mining/sv2-spec
 captured: 2026-05-28
 quality: 8

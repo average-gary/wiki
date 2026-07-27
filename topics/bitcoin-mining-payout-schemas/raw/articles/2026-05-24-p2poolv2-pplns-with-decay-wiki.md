@@ -1,13 +1,13 @@
 ---
 title: "p2poolv2 wiki: Payouts PPLNS With Decay"
 publication: github.com/p2poolv2/p2poolv2/wiki
-url: https://github.com/p2poolv2/p2poolv2/wiki/Payouts-PPLNS-With-Decay
-type: article
+source: https://github.com/p2poolv2/p2poolv2/wiki/Payouts-PPLNS-With-Decay
+type: articles
 ingested: 2026-05-24
 quality: 4
 credibility: high
 confidence: high
-tags: [p2poolv2, PPLNS, decay, alternative-payout, small-state]
+tags: [p2poolv2, pplns, decay, alternative-payout, small-state]
 ---
 
 # p2poolv2 — PPLNS With Decay (alternative payout)

@@ -3,7 +3,7 @@ title: "Wikipedia: Signs of AI writing (WP:AISIGNS)"
 source: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
 author: Wikipedia editors (WikiProject AI Cleanup)
 venue: Wikipedia (living document, CC BY-SA)
-type: article
+type: articles
 tags: [llm-writing-indicators, checklist, structural-tells, formatting, catalog]
 quality: 5
 confidence: high

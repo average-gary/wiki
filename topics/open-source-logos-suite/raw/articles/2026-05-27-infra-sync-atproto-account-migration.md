@@ -1,7 +1,7 @@
 ---
 title: "AT Protocol: Account Migration & Recovery"
-source_url: "https://atproto.com/guides/account-migration"
-type: article
+source: "https://atproto.com/guides/account-migration"
+type: articles
 path: infra-sync
 date_ingested: 2026-05-27
 date_published: 2024-08-01

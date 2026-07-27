@@ -1,6 +1,6 @@
 ---
 title: "Vardiff ramp-up math — burst-connect storm vs steady-state share rate"
-source_url: https://github.com/ckolivas/ckpool/blob/master/src/stratifier.c
+source: https://github.com/ckolivas/ckpool/blob/master/src/stratifier.c
 type: notes
 ingested: 2026-06-24
 quality: 5

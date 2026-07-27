@@ -1,13 +1,13 @@
 ---
 title: "SRI stratum-core crate graph + handlers_sv2 + network_helpers (minimal dependency set)"
-source_url: https://github.com/stratum-mining/stratum/blob/main/stratum-core/Cargo.toml
+source: https://github.com/stratum-mining/stratum/blob/main/stratum-core/Cargo.toml
 source_url_2: https://github.com/stratum-mining/stratum/blob/main/sv2/handlers-sv2/src/mining.rs
 source_url_3: https://docs.rs/mining_sv2/latest/mining_sv2/
-type: repo
-retrieved: 2026-07-21
+type: repos
+ingested: 2026-07-21
 credibility: high
 corroboration: "rust-stack + client-flow agents (mining_sv2 struct signatures cross-confirm the spec)"
-tags: [stratum-v2, SRI, stratum-core, parsers_sv2, handlers_sv2, channels_sv2, codec_sv2, mining_sv2, roles_logic_sv2, network_helpers, Cargo]
+tags: [stratum-v2, sri, stratum-core, parsers-sv2, handlers-sv2, channels-sv2, codec-sv2, mining-sv2, roles_logic_sv2, network_helpers, cargo]
 summary: "The crate manifest that names the minimal SV2-client dependency set + current major versions, resolves the roles_logic_sv2 → parsers/handlers/channels split, gives the HandleMiningMessagesFromServer trait, and pins where network_helpers now lives (sv2-apps stratum-apps)."
 ---
 

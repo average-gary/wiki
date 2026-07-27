@@ -1,6 +1,6 @@
 ---
 title: "Mender Device Authentication"
-source_url: https://docs.mender.io/overview/device-authentication
+source: https://docs.mender.io/overview/device-authentication
 type: docs
 ingested: 2026-06-01
 quality: 5

@@ -1,6 +1,6 @@
 ---
 title: Cut Mechanics
-type: concept
+category: concept
 created: 2026-05-26
 updated: 2026-05-26
 verified: 2026-05-26
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [pruning, cuts, technique, tools]
+summary: "How to make a clean pruning cut that heals fast and doesn't invite disease."
 sources:
   - "[[raw/articles/2026-05-26-rose-clemson-pruning-roses]]"
   - "[[raw/papers/2026-05-26-cherry-nyshs-pruning-bactericides-bacterial-canker]]"
@@ -115,3 +116,9 @@ Knock Out roses and primocane-fruiting raspberries are the exceptions — both t
 - [[cane-and-cut-biology|Cane and cut biology]]
 - [[sanitation|Sanitation]]
 - [[../tools/_index|Tools]]
+- [[../topics/blueberry-pruning.md|Blueberry Pruning]]
+- [[cane-renewal.md|Cane Renewal Pruning]]
+- [[../topics/cherry-pruning.md|Cherry Pruning — Kristin and BlackGold]]
+- [[../reference/pruning-tools.md|Pruning Tools]]
+- [[../topics/rose-pruning.md|Shrub and Knock Out Rose Pruning]]
+- [[../reference/training-systems-cherry.md|Cherry Training Systems]]

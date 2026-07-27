@@ -1,6 +1,6 @@
 ---
 title: "Iroh Issue #2951 — Blob Downloads Freeze Regression"
-source_url: https://github.com/n0-computer/iroh/issues/2951
+source: https://github.com/n0-computer/iroh/issues/2951
 type: issue
 date: 2024-2025 (across iroh 0.27 → 0.31)
 org: n0-computer

@@ -1,8 +1,10 @@
 ---
 title: CLINK wire format reference
-type: concept
+category: concept
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
+summary: "Universal wire-format reference for all three CLINK primitives. Use this when implementing or auditing a CLINK client/server."
 confidence: high
 sources:
   - raw/articles/2026-06-09-spec-primitives-clink-offers-spec.md
@@ -127,3 +129,4 @@ This means human-readable CLINK discovery still depends on **HTTPS + DNS** by de
 - [[clink-manage.md]]
 - [[clink-discovery-and-nip05.md]]
 - [[../reference/specs-and-repos.md]]
+- [[clink-overview.md|CLINK overview]]

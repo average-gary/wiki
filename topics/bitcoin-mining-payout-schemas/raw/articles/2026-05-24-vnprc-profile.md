@@ -1,14 +1,14 @@
 ---
 title: "vnprc (Evan) — hashpool implementer profile"
 publication: github.com/vnprc + hashpool.dev + njump.me
-url: https://github.com/vnprc
+source: https://github.com/vnprc
 url2: https://hashpool.dev
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high
 confidence: high
-tags: [vnprc, Evan, hashpool, eHash, implementer, btc++]
+tags: [vnprc, Evan, hashpool, ehash, implementer, btc++]
 ---
 
 # vnprc

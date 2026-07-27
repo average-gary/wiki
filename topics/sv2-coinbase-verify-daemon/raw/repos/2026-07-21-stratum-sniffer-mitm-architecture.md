@@ -1,12 +1,12 @@
 ---
 title: "stratum-sniffer — MITM Noise-termination architecture (not a passive tap)"
-source_url: https://github.com/stratum-mining/stratum-sniffer
+source: https://github.com/stratum-mining/stratum-sniffer
 source_url_2: https://crates.io/crates/integration_tests_sv2
-type: repo
-retrieved: 2026-07-21
+type: repos
+ingested: 2026-07-21
 credibility: high
 corroboration: "gap-2 agent (cloned + read full repo + crate tarball)"
-tags: [stratum-v2, stratum-sniffer, integration_tests_sv2, noise, MITM, mining-device, wire-inspection]
+tags: [stratum-v2, stratum-sniffer, integration_tests_sv2, noise, mitm, mining-device, wire-inspection]
 summary: "stratum-sniffer is a thin CLI over integration_tests_sv2::Sniffer — an ACTIVE MITM proxy that terminates two Noise sessions with its OWN hardcoded keypair (impersonating the pool), not a passive tap. SV2's Noise_NX encryption means you cannot read a third party's session without keys/MITM. The recommended daemon path: be your own SV2 client."
 ---
 

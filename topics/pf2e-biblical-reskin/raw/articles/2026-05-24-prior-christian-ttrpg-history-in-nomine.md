@@ -1,7 +1,7 @@
 ---
 title: "In Nomine (Steve Jackson Games) — Wikipedia"
 source: "https://en.wikipedia.org/wiki/In_Nomine_(role-playing_game)"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [christian-rpg, history, in-nomine, design-retrospective, theological-rpg]

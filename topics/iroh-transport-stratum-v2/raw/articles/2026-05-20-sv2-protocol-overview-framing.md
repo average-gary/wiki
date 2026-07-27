@@ -1,6 +1,6 @@
 ---
 title: "Stratum V2 Protocol Overview (framing)"
-source_url: https://github.com/stratum-mining/sv2-spec/blob/main/03-Protocol-Overview.md
+source: https://github.com/stratum-mining/sv2-spec/blob/main/03-Protocol-Overview.md
 type: spec
 date: 2026-05-20
 org: SRI / SV2 WG

@@ -1,11 +1,23 @@
 ---
 title: "Reverse-translator architecture and state machine"
-type: concept
+category: concept
 status: active
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-07-27
+verified: 2026-07-27
+volatility: warm
 confidence: high
-tags: [architecture, state-machine, sri, channels-sv2, handlers-sv2, sv1-api]
+sources:
+  - raw/repos/2026-05-28-path4-workspace-layout-and-integration-tests.md
+  - raw/repos/2026-05-28-path4-channels-sv2-reuse.md
+  - raw/repos/2026-05-28-path4-handlers-sv2-bidirectional.md
+  - raw/repos/2026-05-28-path4-sv1-api-isclient-trait.md
+  - raw/repos/2026-05-28-path4-extranonce-allocator-translator-pattern.md
+  - raw/repos/2026-05-28-path4-stratum-translation-crate.md
+  - raw/repos/2026-05-28-path2-sri-translator-role.md
+  - raw/repos/2026-07-27-blitzpool-rental-proxy-sv2-to-sv1-translator.md
+tags: [architecture, state-machine, sri, channels-sv2, handlers-sv2, sv1-api, upstream-switching, failover]
+summary: "Where the new role lives in the SRI workspace, which crates it reuses, what it must write from scratch, and how the runtime task graph is shaped. Built from Path 4's code-level reading of /Users/garykrause/repos/stratum."
 ---
 
 # Reverse-translator architecture and state machine
@@ -75,13 +87,15 @@ The split mirrors how the forward translator-proxy is organized today.
 
 ## What needs to be written from scratch
 
-### In `stratum_translation` (low-level repo, ~150 LOC)
+### In `stratum_translation` (low-level repo, ~150 LOC signatures → budget 500–1000 LOC)
 
 - `build_sv2_new_extended_mining_job_from_sv1_notify(notify, sv2_job_id, version_rolling_allowed) -> Result<NewExtendedMiningJob>`
-- `build_sv2_set_target_from_sv1_set_difficulty(set_difficulty) -> Result<SetTarget>` (uses `Target::from_difficulty(f64)` from the bitcoin crate)
+- `build_sv2_set_target_from_sv1_set_difficulty(set_difficulty) -> Result<SetTarget>` (uses `Target::from_difficulty(f64)` from the bitcoin crate — note this is **bdiff**-based, which conflicts with the pdiff math prescribed in [[sv2-sv1-primitive-mapping]]; see [[prior-art-blitzpool-rental-proxy]] § The difficulty-convention conflict)
 - `build_sv1_submit_from_sv2_submit_shares_extended(share, sv1_job_id_string, user_name, extranonce1_len) -> Result<client_to_server::Submit>`
 
-**See**: [[../../raw/repos/2026-05-28-path4-stratum-translation-crate|stratum_translation crate]], [[../../raw/repos/2026-05-28-path1-sri-stratum-translation-crate|same crate from Path 1]].
+**Revised 2026-07-27**: the ~150 LOC figure is the cost of *these three signatures*, not of the translation layer. Blitzpool's equivalent `src/proto/translate.rs` is **33 855 bytes** (~900–1100 lines) — not a like-for-like comparison, since it also carries difficulty/target math, version-rolling mask handling, and probe logic this article assigns to the role binary, but large enough that 150 should be read as a floor. Budget **500–1000 LOC** for everything on the pure-translation side.
+
+**See**: [[../../raw/repos/2026-05-28-path4-stratum-translation-crate|stratum_translation crate]], [[../../raw/repos/2026-05-28-path1-sri-stratum-translation-crate|same crate from Path 1]], [[../../raw/repos/2026-07-27-blitzpool-rental-proxy-sv2-to-sv1-translator|blitzpool translate.rs]].
 
 ### In the new sv2-apps role binary (~1500-2500 LOC)
 
@@ -101,17 +115,44 @@ The split mirrors how the forward translator-proxy is organized today.
 1. **BIP141 lossiness** — see [[sv2-sv1-primitive-mapping]] § Lossy conversions. Pass-through stripped coinbase; SV2 client must accept.
 2. **Target precision** — float→U256 is fine in this direction.
 3. **Job-ID translation** — SV1 string ↔ SV2 u32 + HashMap, GC'd on `clean_jobs=true`.
-4. **Mid-session `mining.set_extranonce`** — forces `SetExtranoncePrefix` to all SV2 channels and a rebuild of the allocator; in-flight shares may fail upstream.
+4. **Mid-session `mining.set_extranonce`** — forces `SetExtranoncePrefix` to all SV2 channels and a rebuild of the allocator; in-flight shares may fail upstream. **Has a known design answer** — see § Upstream switching below.
 5. **Pool-specific error strings** — Foundry, Antpool, F2Pool wording differs; the error mapping table is per-pool config.
+
+## Upstream switching — choose the strategy by cause, not by mechanism
+
+Any reverse translator that can re-point at a different upstream inherits one hard problem: the new pool hands out a different `extranonce1` and a different difficulty, and every open SV2 channel is now mining against stale parameters. Blitzpool's shipped answer ([[prior-art-blitzpool-rental-proxy]]) is to split by *why* the switch is happening:
+
+| Cause | Strategy | Mechanism | Rationale |
+|---|---|---|---|
+| **Operator-initiated** (config edit, deliberate pool change) | **Force miner reconnect** | Drop the downstream connection; the miner re-handshakes against the new upstream and gets correct extranonce/difficulty in its first job | "A live re-point a miner might silently ignore would waste every share, so the reconnect is the safe default here." A silently-ignored re-point burns 100% of shares until someone notices. |
+| **Automatic failover** (upstream died mid-session) | **Re-point in place** | SV2: `SetExtranoncePrefix` + `SetTarget` to every open channel. SV1 downstream: `mining.set_extranonce` + `mining.set_difficulty` + `mining.notify(clean_jobs=true)`, falling back to `client.reconnect` for miners that can't take a live extranonce | "In-place keeps a flapping pool from storming the miner with reconnects." A pool that flaps every 30s would otherwise produce a reconnect storm. |
+
+**Safety-first for intentional changes, continuity-first for unintentional ones.** The asymmetry is the point: an operator-initiated switch can afford one clean reconnect because it happens once and on a human timescale, while failover may recur on a machine timescale and must not amplify.
+
+Implementation consequence for the task graph: the shared state needs an `ActiveUpstream` indirection (URL + credentials + optional authority pubkey) that the SV1 client task can swap behind the SV2 server tasks, plus a flag distinguishing operator-initiated from failover-initiated transitions so the broadcast path can pick a strategy. Blitzpool models the session's upstream selection as a two-variant enum (`Idle` vs `Rented { order_id }`) — a rental-specific shape, but the general lesson is that "which upstream am I on" belongs in an explicit enum rather than being implied by a mutable connection handle.
+
+## Upstream protocol detection (if the upstream's protocol is not known statically)
+
+Blitzpool folds detection **into the connect** rather than probing first: attempt the natively-configured protocol and **reuse that socket on success**; only on failure or timeout (`UPSTREAM_PROBE_TIMEOUT = 3s`) try the other protocol and engage translation. No standalone prober, no wasted round trip in the common case. Downstream detection on a shared port is cheaper still — **peek, don't consume, the first byte**: `{`, space, `\n`, `\r` → SV1 JSON-RPC; anything else → SV2 Noise handshake, letting the SV2 handshake reject genuine garbage.
+
+A reverse translator with a statically-configured SV1 upstream needs neither, but both are relevant if it also serves as a drop-in for mixed fleets.
 
 ## Why this is "natural extension," not "rewrite"
 
 - `stratum_translation` already exposes both `sv1_to_sv2` and `sv2_to_sv1` modules — bidirectionality was designed into the helper crate from the start.
 - `handlers_sv2` already exposes both `FromClient` and `FromServer` async traits — the dispatch layer is direction-symmetric.
 - The forward translator-proxy's task scaffolding is reusable as-shape; only inner message handlers and helper choices change.
+- **Demonstrated 2026-07-27**: blitzpool-rental-proxy built exactly this shape on top of `stratum-core` + `stratum-apps` — protocol-agnostic core with SV1/SV2/translate as pluggable codec adapters — reusing `channels_sv2::merkle_root` and `stratum-apps::network_helpers` unchanged.
+
+## Build-environment caveat
+
+SRI's **crates.io releases do not compile together** at current majors (`mining_sv2`'s derives reference `super::binary_sv2`); the git workspaces are internally consistent. Pin `stratum-core` and `stratum-apps` to git revs and unify them on the same branch, and enable `stratum-core`'s `translation` feature to get `stratum_translation` + `sv1_api`. Details in [[prior-art-blitzpool-rental-proxy]] § Dependency posture.
 
 ## See also
 
 - [[sv2-sv1-primitive-mapping]] — message-by-message translation
 - [[sv2-features-lost-with-sv1-upstream]] — what value carries through this architecture
+- [[prior-art-blitzpool-rental-proxy]] — a shipped instance of this architecture
 - [[../topics/reverse-translator-playbook|the playbook]]
+- [[sv2-spec-issue-102-the-canonical-reference.md|sv2-spec issue #102 — the canonical reference for V2-to-V1 down-to-up]]
+- [[../reference/sv2-sv1-message-mapping-table.md|Reference — SV2 ↔ SV1 message mapping table]]

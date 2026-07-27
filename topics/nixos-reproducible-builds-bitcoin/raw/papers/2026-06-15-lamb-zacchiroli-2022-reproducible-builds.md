@@ -2,7 +2,7 @@
 title: "Reproducible Builds: Increasing the Integrity of Software Supply Chains"
 source: https://arxiv.org/abs/2104.06020
 doi: 10.1109/MS.2021.3073045
-type: paper
+type: papers
 authors: Chris Lamb, Stefano Zacchiroli
 venue: IEEE Software 39(2), 62–70
 year: 2022

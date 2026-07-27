@@ -1,7 +1,7 @@
 ---
 title: "Augustine, Aquinas, and the Christian Theological Frame for Magic vs. Miracle"
 source: "https://en.wikipedia.org/wiki/Magic_(supernatural)"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: unknown
 tags: [theology, augustine, aquinas, miracle, magic, demonic]

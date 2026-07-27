@@ -1,7 +1,7 @@
 ---
 title: "Sweet Cherry Varieties for Eastern U.S."
-source_url: "https://canr.msu.edu/uploads/files/Research_Center/NW_Mich_Hort/Training_Pruning_Varities/SweetCherryVarietiesEasternUS_2004.pdf"
-type: article
+source: "https://canr.msu.edu/uploads/files/Research_Center/NW_Mich_Hort/Training_Pruning_Varities/SweetCherryVarietiesEasternUS_2004.pdf"
+type: articles
 path: cherry
 date_ingested: 2026-05-26
 date_published: 2004-01-27

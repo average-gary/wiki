@@ -4,12 +4,15 @@ type: thesis
 status: completed
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 verdict: "Partially Supported — mechanism real & deployed (as wallet-LSP); literal 'funds on pool's side = payout' is a category error; a mining pool doing it is unbuilt"
 confidence: High
 core_claim: "A mining pool can provision its miners' INBOUND Lightning liquidity by settling payouts as liquidity-ad / dual-funded / splice transactions TOWARD each miner (funds contributed on the pool's side), unifying payout delivery and inbound provisioning in one on-chain footprint."
 key_variables: [toward-miner-channel-op, funds-on-funders-side-inbound, push-msat-value-delivery, jit-on-the-fly-fusion, fee-incidence, coinbase-maturity, batching-scale, pool-as-lsp-deployment]
 falsification: "Fails if (a) no mechanism lets a funder give a counterparty inbound while delivering value in one footprint, OR (b) the 'funds on the pool's side' framing is a category error — pool-side funds provision inbound but are NOT a payout (the miner is unpaid), and delivering value requires a separate push/HTLC. Deployment sub-claim fails if no mining pool does this."
 parent_thesis: "splice-lightning-channel-in-coinbase (follow-up #3, surfaced by thesis #2)"
+tags: [thesis]
+summary: "A mining pool can provision its miners' INBOUND Lightning liquidity by settling payouts as liquidity-ad / dual-funded / splice transactions TOWARD each miner (funds contributed on the pool's side), unifying payout delivery and inbound provisioning in one on-chain footprint."
 ---
 
 # Thesis: Pool provisions miner inbound via toward-miner channel ops

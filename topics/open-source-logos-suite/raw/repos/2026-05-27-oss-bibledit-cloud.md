@@ -1,7 +1,7 @@
 ---
 title: "Bibledit Cloud (translation workbench)"
-source_url: "https://github.com/bibledit/cloud"
-type: repo
+source: "https://github.com/bibledit/cloud"
+type: repos
 path: oss
 date_ingested: 2026-05-27
 date_published: 2026-03-21

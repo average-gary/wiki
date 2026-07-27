@@ -1,7 +1,7 @@
 ---
 title: "nvidia-smi — power cap, persistence mode, dmon (does NOT persist across reboots)"
 source: https://docs.nvidia.com/deploy/nvidia-smi/index.html
-type: article
+type: articles
 tags: [nvidia-smi, power-cap, persistence-mode, systemd, gtx-1060]
 date: 2026-05-21
 quality: 6

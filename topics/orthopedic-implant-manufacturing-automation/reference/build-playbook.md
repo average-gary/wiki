@@ -1,9 +1,11 @@
 ---
 title: "Build Playbook — How to Manufacture Orthopedic Implants with Maximal Automation"
-type: reference
+category: reference
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [playbook, how-to, automation, orthopedic-implants, decision-framework]
+summary: "The actionable answer to the original question. Opinionated, step-by-step: what to decide first, what to buy vs. build, and the order to automate the chain. Synthesizes all concept articles and the vendor landscape. (A standalone, shareable version lives in output/.)"
 confidence: high
 ---
 

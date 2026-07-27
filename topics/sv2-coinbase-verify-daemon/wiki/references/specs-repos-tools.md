@@ -1,9 +1,11 @@
 ---
 title: "Reference — specs, repos, tools"
-type: reference
+category: reference
 created: 2026-07-21
 updated: 2026-07-21
-tags: [stratum-v2, SRI, bips, reference]
+volatility: warm
+tags: [stratum-v2, sri, bips, reference]
+summary: "datum · sv2-p2pool-integration · bitcoin-mining-payout-schemas · mining-scale-test-sim"
 ---
 
 # Reference — specs, repos, tools

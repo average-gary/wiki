@@ -1,22 +1,23 @@
 ---
 title: "PF2e licensing posture for a derivative tool"
-type: concept
+category: concept
 created: 2026-05-24
 updated: 2026-05-24
 verified: 2026-05-24
 volatility: medium
 confidence: high
 sources:
-  - "[[2026-05-24-pf2e-srd-data-orc-license-paizo]]"
-  - "[[2026-05-24-pf2e-srd-data-paizo-community-use-policy]]"
-  - "[[2026-05-24-pf2e-srd-data-paizo-licenses-overview]]"
-  - "[[2026-05-24-pf2e-srd-data-foundryvtt-pf2e]]"
-  - "[[2026-05-24-pf2e-srd-data-pf2e-remaster-overview]]"
-  - "[[2026-05-24-orc-verbatim-text]]"
-  - "[[2026-05-24-aon-licenses-page-commercial-license]]"
-  - "[[2026-05-24-aon-elasticsearch-endpoint]]"
-  - "[[2026-05-24-aon-official-srd-status]]"
+  - "[[../../raw/articles/2026-05-24-pf2e-srd-data-orc-license-paizo]]"
+  - "[[../../raw/articles/2026-05-24-pf2e-srd-data-paizo-community-use-policy]]"
+  - "[[../../raw/articles/2026-05-24-pf2e-srd-data-paizo-licenses-overview]]"
+  - "[[../../raw/repos/2026-05-24-pf2e-srd-data-foundryvtt-pf2e]]"
+  - "[[../../raw/articles/2026-05-24-pf2e-srd-data-pf2e-remaster-overview]]"
+  - "[[../../raw/articles/2026-05-24-orc-verbatim-text]]"
+  - "[[../../raw/articles/2026-05-24-aon-licenses-page-commercial-license]]"
+  - "[[../../raw/articles/2026-05-24-aon-elasticsearch-endpoint]]"
+  - "[[../../raw/articles/2026-05-24-aon-official-srd-status]]"
 tags: [pf2e, orc-license, ogl, community-use, pathfinder-infinite, licensing, archives-of-nethys]
+summary: "Pathfinder 2e content lives under a five-tier license stack. A worldbuilding/LLM tool builder must pick a posture before touching data, because the choice forks the product (free vs paid, hosted vs storefront-locked, mechanics-only vs full Golarion)."
 ---
 
 # PF2e licensing posture for a derivative tool
@@ -67,6 +68,8 @@ Every record carries (a) the ORC license notice, (b) upstream attribution chain,
 - [[recommended-stack]] — how this licensing posture flows into product architecture
 - [[worldbuilding-tool-landscape-2026]] — pricing decisions tied to the "free vs Infinite vs ORC-only" fork
 - [[world-data-model-recommendation]] — provenance metadata on each record
+- [[llm-integration-architecture.md|LLM integration architecture for a PF2e GM tool]]
+- [[../reference/pf2e-remaster-name-mapping.md|PF2e Remaster name mapping (legacy ↔ Remaster)]]
 
 ## Open questions
 

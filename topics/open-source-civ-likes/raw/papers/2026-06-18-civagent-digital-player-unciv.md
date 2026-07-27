@@ -4,11 +4,11 @@ source: https://arxiv.org/abs/2502.20807
 repo: https://github.com/fuxiAIlab/CivAgent
 authors: [Jiawei Wang, Kai Wang, Shaojie Lin, Runze Wu, Bihan Xu, Lingeng Jiang, Shiwei Zhao, Renyu Zhu, Haoyu Liu, Zhipeng Hu, Zhong Fan, Le Li, Tangjie Lyu, Changjie Fan]
 year: 2025
-type: paper
+type: papers
 ingested: 2026-06-18
 quality: 3
 confidence: medium
-tags: [unciv, LLM, human-like-agent, NetEase-Fuxi, CivAgent]
+tags: [unciv, llm, human-like-agent, NetEase-Fuxi, CivAgent]
 ---
 
 # Digital Player: Evaluating LLM-based Human-like Agents in Games (CivAgent / Unciv)

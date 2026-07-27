@@ -1,7 +1,7 @@
 ---
 title: "MACULA Greek lowfat sample — 3 John 1:1-2"
-url: https://raw.githubusercontent.com/Clear-Bible/macula-greek/main/Nestle1904/lowfat/25-3john.xml
-retrieved: 2026-06-02
+source: https://raw.githubusercontent.com/Clear-Bible/macula-greek/main/Nestle1904/lowfat/25-3john.xml
+ingested: 2026-06-02
 type: spec
 ---
 

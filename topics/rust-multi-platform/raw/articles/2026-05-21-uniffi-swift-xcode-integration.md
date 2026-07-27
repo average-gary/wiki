@@ -1,7 +1,7 @@
 ---
 title: "UniFFI manual — Swift / Xcode integration"
 source: https://github.com/mozilla/uniffi-rs/blob/main/docs/manual/src/swift/xcode.md
-type: article
+type: articles
 tags: [uniffi, swift, xcode, ios, integration, build-rule]
 date: 2026-05-21
 quality: 5

@@ -1,9 +1,12 @@
 ---
 title: Maryland-Virginia "Frederick County" Confusion
-type: concept
+category: concept
 created: 2026-05-26
+updated: 2026-05-26
+volatility: warm
 confidence: high
 tags: [data-trap, Frederick-County-MD, disambiguation]
+summary: "A persistent data trap. Search engines, news aggregators, and even some statistical sources conflate Frederick County, Virginia (~96k pop, county seat Winchester) with Frederick County, Maryland (~290k pop, county seat Frederick)."
 ---
 
 # Maryland-Virginia "Frederick County" Confusion
@@ -44,3 +47,4 @@ Every ingested source about "Frederick County" must be tagged as either `frederi
 
 - [[jurisdictional-map|Jurisdictional map]]
 - [[../../raw/articles/2026-05-26-data-quality-caveats|Data quality caveats]]
+- [[../topics/crime-profile-2024.md|Crime profile — Frederick County + Winchester, 2024 best-available]]

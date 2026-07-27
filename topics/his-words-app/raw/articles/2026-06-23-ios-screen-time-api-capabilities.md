@@ -1,7 +1,7 @@
 ---
 title: "iOS Screen Time API: Technical Capabilities for App Interruption"
 source: "Apple Developer Documentation, WWDC 2021-2023, Stack Overflow, Developer Forums, Indie App Analysis"
-type: article
+type: articles
 created: 2026-06-23
 updated: 2026-06-23
 tags: [ios, screen-time-api, family-controls, device-activity, managed-settings, app-monitoring, interruption, his-words]

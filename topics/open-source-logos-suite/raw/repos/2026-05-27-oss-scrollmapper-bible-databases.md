@@ -1,7 +1,7 @@
 ---
 title: "scrollmapper/bible_databases"
-source_url: "https://github.com/scrollmapper/bible_databases"
-type: repo
+source: "https://github.com/scrollmapper/bible_databases"
+type: repos
 path: oss
 date_ingested: 2026-05-27
 date_published: unknown

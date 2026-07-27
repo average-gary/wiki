@@ -1,7 +1,7 @@
 ---
 title: "Tailscale Auth Keys — bearer-token flag schema"
 source: https://tailscale.com/kb/1085/auth-keys
-type: article
+type: articles
 tags: [tailscale, auth-keys, bearer-token, pairing-ux, flags]
 date: 2026-06-01
 quality: 4

@@ -1,10 +1,12 @@
 ---
 title: "LDK vs LDK Node vs LDK Server"
-type: concept
+category: concept
 created: 2026-05-26
 updated: 2026-05-26
+volatility: warm
 confidence: high
 tags: [architecture, terminology, ldk]
+summary: "The three layers are commonly conflated. They are distinct artifacts with different audiences."
 ---
 
 # LDK vs LDK Node vs LDK Server
@@ -69,3 +71,4 @@ LDK Server is the same idea formalized: stop re-embedding, run the standard daem
 - [[../../raw/repos/2026-05-26-ldk-node-overview.md|LDK Node overview]]
 - [[grpc-api-surface.md|gRPC API surface]]
 - [[../topics/should-i-use-ldk-server.md|Should I use LDK Server?]] — decision guide
+- [[persistence-and-backup.md|Persistence and backup in LDK Server]]

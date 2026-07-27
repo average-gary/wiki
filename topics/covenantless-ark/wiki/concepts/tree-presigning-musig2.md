@@ -1,10 +1,12 @@
 ---
 title: "Tree presigning — the MuSig2 pseudo-covenant"
-type: concept
+category: concept
 created: 2026-07-16
 updated: 2026-07-16
+volatility: warm
 confidence: high
 tags: [ark, clark, presigning, musig2, ephemeral-keys, key-deletion, pseudo-covenant, n-of-n, schnorr]
+summary: "This is the mechanism that makes Ark *covenantless*. Instead of an OP_CTV covenant constraining how the batch output may be spent, clArk has all affected parties pre-sign the intended spend tree with an n-of-n multisignature, then delete their signing keys so no alternative spend can ever be created…"
 ---
 
 # Tree presigning — the MuSig2 pseudo-covenant
@@ -46,3 +48,4 @@ Ark Labs reduced the burden from each participant signing **(2n−1)** transacti
 - [[n-of-n-batch-output.md|The n-of-n batch output]]
 - [[dropout-and-round-abort.md|Dropout and round abort]]
 - [[../topics/clark-vs-covenant-ark.md|clArk vs covenant-based Ark]]
+- [[vtxo-and-vtxo-tree.md|VTXOs and the VTXO tree]]

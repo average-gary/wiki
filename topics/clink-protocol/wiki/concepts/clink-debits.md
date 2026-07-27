@@ -1,8 +1,10 @@
 ---
 title: CLINK Debits (kind 21002 / ndebit)
-type: concept
+category: concept
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
+summary: "Authorization pointers (ndebit1...) that let third-party apps pull payments from a user's wallet/node service over Nostr ephemeral event kind 21002. Supports one-shot, recurring (budgeted), and unrestricted (persistent) authorization shapes."
 confidence: high
 sources:
   - raw/articles/2026-06-09-spec-primitives-clink-debits-spec.md

@@ -1,7 +1,7 @@
 ---
 title: "PR #1056 — Key Revocation (Draft, open since 2024)"
-url: https://github.com/nostr-protocol/nips/pull/1056
-retrieved: 2026-06-02
+source: https://github.com/nostr-protocol/nips/pull/1056
+ingested: 2026-06-02
 type: pr
 ---
 

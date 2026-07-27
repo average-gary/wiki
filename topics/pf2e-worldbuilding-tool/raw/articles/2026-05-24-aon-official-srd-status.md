@@ -1,7 +1,7 @@
 ---
 title: "Archives of Nethys — 'official SRD' status (primary-source assessment)"
 source: "https://2e.aonprd.com/Licenses.aspx + https://paizo.com/pathfinder"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: unknown
 tags: [pf2e, aon, archives-of-nethys, paizo, srd, official-status, primary-source]

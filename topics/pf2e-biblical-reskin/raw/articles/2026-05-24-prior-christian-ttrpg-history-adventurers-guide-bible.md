@@ -1,7 +1,7 @@
 ---
 title: "The Adventurer's Guide to the Bible (D&D 5E supplement)"
 source: "https://html.duckduckgo.com/html/?q=%22Adventurer%27s+Guide+to+the+Bible%22+D%26D+5E+review"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [christian-rpg, biblical-reskin, 5e, design-retrospective, modern]

@@ -1,8 +1,8 @@
 ---
 title: "Iroh Concepts: Relays — '~9 out of 10 networking conditions allow direct'"
 source: https://docs.iroh.computer/concepts/relays
-type: article
-tags: [iroh, relay, fallback, nat-traversal, holepunching]
+type: articles
+tags: [iroh, relay, fallback, nat-traversal, hole-punching]
 date: 2026-06-01
 quality: 4
 confidence: high

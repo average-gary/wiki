@@ -1,10 +1,12 @@
 ---
 title: "Dropout, round abort, and the griefing surface"
-type: concept
+category: concept
 created: 2026-07-16
 updated: 2026-07-16
+volatility: warm
 confidence: high
 tags: [ark, clark, dropout, round-abort, freeze, griefing, dos, receiver-dos, liveness, interactivity, ban]
+summary: "Because a clArk round is a synchronous n-of-n ceremony, the behavior when a participant drops out mid-round is a core property — and the source of clArk's defining limitations."
 ---
 
 # Dropout, round abort, and the griefing surface
@@ -51,3 +53,4 @@ Roose's canonical framing: in clArk "users have to do something synchronously an
 - [[out-of-round-payments.md|Out-of-round payments]]
 - [[checkpoint-transactions.md|Checkpoint transactions]]
 - [[../topics/clark-limitations-and-trust.md|Limitations and trust model]]
+- [[tree-presigning-musig2.md|Tree presigning — the MuSig2 pseudo-covenant]]

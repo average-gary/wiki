@@ -1,7 +1,7 @@
 ---
 title: "Christian Angelic Hierarchy — Pseudo-Dionysian Nine Choirs"
 source: "https://en.wikipedia.org/wiki/Christian_angelology"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [denomination, catholic, orthodox, angelology, cosmology]

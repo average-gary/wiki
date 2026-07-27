@@ -1,12 +1,13 @@
 ---
 title: "AmountUnit and Amounts (multi-unit core types)"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-06-15
 verified: 2026-06-15
 volatility: hot
 confidence: high
 tags: [fedimint-core, amounts, amount-units, multi-currency, consensus]
+summary: "Two types added to fedimint-core in PR #7734 (merged 2025-10-19) that together replace the prior single-Amount (msat) accounting at the protocol layer."
 ---
 
 # AmountUnit and Amounts (multi-unit core types)

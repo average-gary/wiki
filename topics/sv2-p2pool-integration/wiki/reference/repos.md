@@ -1,7 +1,8 @@
 ---
 title: Reference — relevant repos
-type: reference
+category: reference
 created: 2026-05-22
+updated: 2026-05-22
 verified: 2026-05-22
 volatility: cold
 compiled-from: conversation

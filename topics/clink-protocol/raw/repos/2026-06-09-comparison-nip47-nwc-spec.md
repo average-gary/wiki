@@ -1,7 +1,7 @@
 ---
 title: NIP-47 — Nostr Wallet Connect (NWC)
 source: https://github.com/nostr-protocol/nips/blob/master/47.md
-type: repo
+type: repos
 ingested: 2026-06-09
 path: comparison
 quality: 5

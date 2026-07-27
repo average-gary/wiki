@@ -1,11 +1,13 @@
 ---
 title: Bible translation licensing matrix
-type: reference
+category: reference
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, bible, licensing, reference]
+summary: "Reference card for translation licensing. Strategy synthesis: bible content licensing. Decision basis: no-AI decision is independent; this matrix is the translation-tier roadmap."
 sources:
   - raw/articles/2026-06-23-bible-api-bible-pricing-tiers.md
   - raw/articles/2026-06-23-bible-esv-api-crossway-terms.md

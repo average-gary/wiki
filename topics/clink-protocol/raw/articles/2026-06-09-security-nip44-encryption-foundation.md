@@ -1,7 +1,7 @@
 ---
 title: NIP-44 Encrypted Payloads (Versioned)
 source: https://raw.githubusercontent.com/nostr-protocol/nips/master/44.md
-type: article
+type: articles
 ingested: 2026-06-09
 path: security
 quality: 5

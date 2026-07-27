@@ -1,12 +1,13 @@
 ---
 title: "Three-crate module pattern (-common / -client / -server)"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
 verified: 2026-06-15
 volatility: warm
 confidence: high
 tags: [fedimint, module-authoring, three-crate-pattern, dummy-module, empty-module]
+summary: "Every Fedimint module ships as three crates plus a tests crate. The pattern is enforced by convention, not by traits — but the canonical scaffolds (fedimint-empty-*, fedimint-dummy-*) and every in-tree module (fedimint-mint-*, fedimint-mintv2-*, fedimint-ln-*, fedimint-lnv2-*, fedimint-wallet-*, fed…"
 ---
 
 # Three-crate module pattern

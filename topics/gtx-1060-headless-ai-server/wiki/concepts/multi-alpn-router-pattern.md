@@ -1,6 +1,6 @@
 ---
 title: "Multi-ALPN dispatch on one Iroh Router"
-type: concept
+category: concept
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
@@ -13,6 +13,7 @@ sources:
   - raw/articles/2026-06-01-iroh-1-0-0-rc-1.md
   - raw/articles/2026-06-01-iroh-memory-leak-issues.md
 tags: [iroh, router, alpn, protocolhandler, accesslimit, dispatch]
+summary: "Host every service the homelab AI server exposes — moq, blobs, ssh-tunnel, inference RPC, metrics, admin — on one iroh Endpoint, dispatched by ALPN."
 ---
 
 # Multi-ALPN dispatch on one Iroh Router
@@ -134,3 +135,5 @@ If you want different ALPNs to land on different machines, `Router` doesn't help
 - [[iroh-as-ssh-transport]] — another ALPN, with allowlist gating
 - [[rfc-7301-alpn]] — the underlying TLS extension
 - [[iroh-application-patterns-2026-synthesis]]
+- [[iroh-app-token-integration.md|Iroh app token wrapper — integration with AccessLimit and auth-hook]]
+- [[iroh-tickets-and-qr-pairing.md|Iroh tickets and QR pairing — Tailscale-style invite + Noise IK semantics]]

@@ -1,6 +1,7 @@
 ---
 title: "Hashpool Architecture - SV2 + Cashu eHash, Self-Pool Not Proxy"
-url: https://github.com/vnprc/hashpool
+source: https://github.com/vnprc/hashpool
+type: articles
 source_type: code-readme
 ingested_by: path5
 ingested_on: 2026-06-01

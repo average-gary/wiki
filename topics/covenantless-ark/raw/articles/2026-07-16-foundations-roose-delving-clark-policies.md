@@ -1,7 +1,7 @@
 ---
 title: "Evolving the Ark protocol using CTV and CSFS (Delving Bitcoin #1602)"
-source_url: https://delvingbitcoin.org/t/evolving-the-ark-protocol-using-ctv-and-csfs/1602
-type: article
+source: https://delvingbitcoin.org/t/evolving-the-ark-protocol-using-ctv-and-csfs/1602
+type: articles
 authors: [Steven Roose, Erik De Smedt]
 publisher: Delving Bitcoin
 date: 2025-04-15

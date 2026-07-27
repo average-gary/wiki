@@ -1,6 +1,6 @@
 ---
 title: "process-compose — non-containerized multi-process orchestrator"
-source_url: https://github.com/F1bonacc1/process-compose
+source: https://github.com/F1bonacc1/process-compose
 type: tool
 ingested: 2026-05-26
 quality: 4

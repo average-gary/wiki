@@ -1,7 +1,7 @@
 ---
 title: "BLAKE3 vs SHA-256 benchmark numbers (specs repo + iroh hashing-multi-blobs)"
 source: https://github.com/BLAKE3-team/BLAKE3-specs/blob/master/benchmarks/bar_chart.py, https://www.iroh.computer/blog/hashing-multiple-blobs-with-BLAKE3
-type: article
+type: articles
 tags: [blake3, sha256, benchmark, simd, avx-512, neon, hashing-throughput]
 date: 2026-06-01
 quality: 5

@@ -1,7 +1,7 @@
 ---
 title: "The Provable Security of Ed25519: Theory and Practice"
-source_url: https://eprint.iacr.org/2020/823.pdf
-type: paper
+source: https://eprint.iacr.org/2020/823.pdf
+type: papers
 ingested: 2026-06-01
 quality: 5
 confidence: high

@@ -1,7 +1,7 @@
 ---
 title: API.Bible (American Bible Society) — Pricing, Tiers, and Freemium Restrictions
 source: https://api.bible/
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, bible-api, licensing, api-bible, freemium-restriction]
 quality: 5

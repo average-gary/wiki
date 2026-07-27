@@ -1,6 +1,6 @@
 ---
 title: "iroh: Custom transports (Tor, Nym, BLE)"
-type: concept
+category: concept
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-20
@@ -10,6 +10,7 @@ sources:
   - raw/articles/2026-05-20-iroh-0-97-custom-transports-noq.md
   - raw/articles/2026-05-20-iroh-1-0-0-rc-0.md
 tags: [iroh, custom-transport, tor, nym, censorship-resistance]
+summary: "Since iroh 0.97 (March 2026), iroh's transport layer is pluggable for any \"unreliable datagram transport that can support a minimum packet size of 1200 bytes.\""
 ---
 
 # iroh: Custom transports

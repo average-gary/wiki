@@ -1,9 +1,9 @@
 ---
 title: "Bevy 0.18 release blog post"
-source_url: https://bevy.org/news/bevy-0-18/
+source: https://bevy.org/news/bevy-0-18/
 source_date: 2026-01-13
 ingested: 2026-06-15
-type: article
+type: articles
 author: Bevy Foundation
 quality: 5
 credibility: high

@@ -1,6 +1,6 @@
 ---
 title: Raspberry Pruning
-type: topic
+category: topic
 created: 2026-05-26
 updated: 2026-05-26
 verified: 2026-05-26
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [raspberry, pruning, primocane, floricane, summer-bearing, fall-bearing, black-raspberry]
+summary: "Raspberries follow the same primocane → floricane biennial cycle as blackberries (see Cane and cut biology), but the technique varies sharply by species (red/yellow vs black/purple) and bearing habit (summer-bearing vs fall-bearing). Identify your cultivar before you prune."
 sources:
   - "[[raw/articles/2026-05-26-raspberry-umn-growing-home-garden]]"
   - "[[raw/articles/2026-05-26-raspberry-umaine-bulletin-2066]]"

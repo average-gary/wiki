@@ -1,7 +1,7 @@
 ---
 title: "World English Bible (WEB) — eBible.org"
-source_url: "https://ebible.org/web/"
-type: article
+source: "https://ebible.org/web/"
+type: articles
 path: data
 date_ingested: 2026-05-27
 date_published: unknown

@@ -1,6 +1,6 @@
 ---
 title: "Iroh application patterns 2026 — synthesis for a homelab AI server"
-type: topic
+category: topic
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
@@ -13,6 +13,7 @@ sources:
   - wiki/concepts/iroh-as-ssh-transport.md
   - wiki/concepts/iroh-tickets-and-qr-pairing.md
 tags: [iroh, synthesis, homelab, ai-server, application-patterns, 2026]
+summary: "Five Iroh-native patterns the homelab AI server should ship together. As of 2026-06-01, all five are technically feasible today on iroh 1.0-rc.1; some need application-layer wrappers to be production-grade."
 ---
 
 # Iroh application patterns 2026 — for the GTX 1060 AI server
@@ -224,3 +225,5 @@ Filter the `router.accept` span in the tracing-subscriber config — it's the so
 - [[iroh-tickets-and-qr-pairing]]
 - [[gtx-1060-headless-ai-server-synthesis]] — original hardware/AI synthesis
 - Sister wiki: `iroh-transport-stratum-v2` — Iroh primitives applied to SV2 transport
+- [[../concepts/iroh-app-token-design.md|Iroh app token wrapper — design and Rust crate matrix]]
+- [[../concepts/iroh-app-token-integration.md|Iroh app token wrapper — integration with AccessLimit and auth-hook]]

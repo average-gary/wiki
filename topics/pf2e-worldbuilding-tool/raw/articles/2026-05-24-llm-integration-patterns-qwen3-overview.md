@@ -1,7 +1,7 @@
 ---
 title: "Qwen 3 offers a case study in effective model release"
 source: "https://simonwillison.net/2025/Apr/29/qwen-3/"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "2025-04-29"
 tags: [llm, local-llm, qwen3, mlx, ollama, llama-cpp]

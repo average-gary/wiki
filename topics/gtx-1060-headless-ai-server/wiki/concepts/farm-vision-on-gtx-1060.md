@@ -1,10 +1,11 @@
 ---
 title: "Farm vision (herd counting) on GTX 1060 6GB"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: warm
+summary: "From raw/articles/2026-05-21-yolov8-yolo11-specs:"
 confidence: medium
 sources:
   - raw/articles/2026-05-21-yolov8-yolo11-specs.md

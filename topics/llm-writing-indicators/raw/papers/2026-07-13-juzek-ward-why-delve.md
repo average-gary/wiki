@@ -3,7 +3,7 @@ title: "Why Does ChatGPT 'Delve' So Much? Exploring the Sources of Lexical Overr
 source: https://arxiv.org/abs/2412.11385
 authors: Tom S. Juzek, Zina B. Ward
 venue: COLING 2025; aclanthology.org/2025.coling-main.426; arXiv:2412.11385 (Dec 2024)
-type: paper
+type: papers
 tags: [llm-writing-indicators, delve, rlhf, lexical-tells, nigerian-english, frequency-data]
 quality: 5
 confidence: high

@@ -1,10 +1,12 @@
 ---
 title: Rust-Bitcoin TWiR Submission Playbook
+category: topic
 type: topic-synthesis
 created: 2026-06-22
 updated: 2026-06-22
 verified: 2026-06-22
 volatility: hot
+summary: "The actionable, step-by-step guide for landing Rust-Bitcoin content in TWiR. Targets draft/2026-06-24-this-week-in-rust.md (issue 657) but generalizes."
 confidence: high
 sources:
   - "[[../../raw/articles/2026-06-22-twir-readme-submission-rules|TWiR README]]"

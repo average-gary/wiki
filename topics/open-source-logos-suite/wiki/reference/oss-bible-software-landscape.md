@@ -1,6 +1,6 @@
 ---
 title: OSS Bible Software Landscape
-type: reference
+category: reference
 created: 2026-05-27
 updated: 2026-05-27
 verified: 2026-05-27
@@ -8,6 +8,7 @@ volatility: warm
 status: active
 confidence: high
 tags: [oss, bible-software, sword, step-bible, landscape, reference]
+summary: "What exists, what's healthy, where the gaps are."
 sources:
   - "[[raw/articles/2026-05-27-oss-sword-project-crosswire]]"
   - "[[raw/articles/2026-05-27-oss-step-bible-tyndale]]"

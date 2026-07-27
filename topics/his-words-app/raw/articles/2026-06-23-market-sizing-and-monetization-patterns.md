@@ -1,7 +1,7 @@
 ---
 title: Christian app market sizing, monetization patterns, and 8-figure path analysis
 source: synthesis from Pew Research RLS 2023-24, Wikipedia (Christianity in the US), and per-company data in this batch
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, market, monetization, market-sizing, tam, arpu]
 quality: 4

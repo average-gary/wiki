@@ -1,8 +1,8 @@
 ---
 title: "cashubtc/cdk — wallet-side LNURL & lightning-address support"
-type: repo
+type: repos
 source: https://github.com/cashubtc/cdk/tree/main/crates/cdk
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [cdk, lnurl, lightning-address, wallet]
 summary: CDK has LNURL/lightning-address support only on the wallet (sender) side. The mint binary cdk-mintd ships no LNURL endpoints. An operator must layer their own LNURL server on top.

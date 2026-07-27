@@ -1,11 +1,13 @@
 ---
 title: Behavioral psychology citations — what each paper shows for His Words
-type: reference
+category: reference
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, psychology, citations, reference]
+summary: "Each cited source plus a one-line synthesis of what it shows for His Words. Primary sources for the psychological scaffolding of interruption-rhythm, mandatory reflection window, redeemed-time accounting, implementation intentions, and reactance."
 sources:
   - raw/papers/2026-06-23-psych-one-sec-self-nudge-pnas.md
   - raw/papers/2026-06-23-psych-haliburton-design-frictions-chi2024.md

@@ -1,7 +1,7 @@
 ---
 title: "Ultralytics YOLOv8 + YOLO11 — model specs comparison"
 source: https://docs.ultralytics.com/models/yolov8/, https://docs.ultralytics.com/models/yolo11/
-type: article
+type: articles
 tags: [yolo, yolov8, yolo11, model-specs, gtx-1060, vram-budget]
 date: 2026-05-21
 quality: 5

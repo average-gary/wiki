@@ -1,6 +1,6 @@
 ---
 title: "Boarding — getting on-chain funds into a VTXO"
-type: concept
+category: concept
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high

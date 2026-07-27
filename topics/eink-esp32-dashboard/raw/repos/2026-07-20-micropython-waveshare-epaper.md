@@ -1,7 +1,7 @@
 ---
 title: "micropython-waveshare-epaper (mcauser) — MicroPython e-paper drivers"
 source: https://github.com/mcauser/micropython-waveshare-epaper
-type: repo
+type: repos
 tags: [micropython, e-paper, waveshare, framebuf, esp32, drivers]
 date: 2026-07-20
 quality: 4

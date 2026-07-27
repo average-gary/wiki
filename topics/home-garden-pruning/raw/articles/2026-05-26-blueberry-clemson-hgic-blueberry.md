@@ -1,7 +1,7 @@
 ---
 title: "Blueberry (HGIC fact sheet)"
-source_url: "https://hgic.clemson.edu/factsheet/blueberry/"
-type: article
+source: "https://hgic.clemson.edu/factsheet/blueberry/"
+type: articles
 path: blueberry
 date_ingested: 2026-05-26
 date_published: unknown

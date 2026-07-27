@@ -17,3 +17,5 @@ Last updated: 2026-07-16
 ## Recent Changes
 
 - 2026-07-16: Created 7 concept articles in the founding research round (protocol, commit/reveal rounds, nonce-reuse, session framing, dropout/abort, deterministic-vs-random nonces, MuSig2-vs-FROST/ROAST).
+
+- [[interactive-tx-wire-protocol.md|Interactive Transaction Wire Protocol]] — The Lightning BOLT #2 interactive transaction construction protocol is the canonical wire-protocol exemplar…

@@ -1,8 +1,8 @@
 ---
 title: "Stratum V2 Specification (sv2-spec)"
 publication: stratum-mining/sv2-spec (GitHub)
-url: https://github.com/stratum-mining/sv2-spec
-type: repo
+source: https://github.com/stratum-mining/sv2-spec
+type: repos
 ingested: 2026-05-23
 quality: 5
 credibility: high

@@ -260,6 +260,14 @@
       "status": "active",
       "sensitivity": "public-oss",
       "summary": "Repo-local wiki for parasitepool/para — Rust crate co-vendored with a ckpool C fork. Repo-specific assessments and plans grounded in hub topics sv2-coinbase-identity, bitcoin-mining-payout-schemas, and datum."
+    },
+    {
+      "name": "buzz-infra",
+      "path": "/Users/garykrause/repos/buzz-infra/.wiki",
+      "created": "2026-07-23",
+      "status": "active",
+      "sensitivity": "company-proprietary",
+      "summary": "Repo-local wiki for deploying block/buzz on the internal bitcoin-node host (AWS EC2, x86_64, Ubuntu 24.04), reachable only over the corporate VPN (AWS Security Group gated). Host-specific application of the hub topic self-hosting-block-buzz: coexistence with bitcoind/electrs, RAM/swap sizing, one-port (3000) SG exposure, ws:// pilot transport, closed-relay + team onboarding, DIY backups/upgrade hazards. Employer-specific infra details kept out of the public hub per conventions."
     }
   ]
 }

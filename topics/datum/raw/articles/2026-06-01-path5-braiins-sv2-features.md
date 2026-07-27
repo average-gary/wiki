@@ -1,6 +1,7 @@
 ---
 title: "Stratum V2 Feature Set - Encryption, Hashrate-Hijacking, Template Authority"
-url: https://braiins.com/blog/stratum-v2-mining-protocol
+source: https://braiins.com/blog/stratum-v2-mining-protocol
+type: articles
 source_type: vendor-blog
 ingested_by: path5
 ingested_on: 2026-06-01

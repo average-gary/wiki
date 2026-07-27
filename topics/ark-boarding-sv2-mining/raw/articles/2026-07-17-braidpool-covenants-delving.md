@@ -1,7 +1,7 @@
 ---
 title: "Challenge: Covenants for Braidpool (mcelrath/AaronZhang, Delving #1370)"
 source: https://delvingbitcoin.org/t/challenge-covenants-for-braidpool/1370
-type: article
+type: articles
 ingested: 2026-07-17
 credibility: high
 direction: nuances

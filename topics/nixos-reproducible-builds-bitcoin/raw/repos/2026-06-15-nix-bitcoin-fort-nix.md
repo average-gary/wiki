@@ -2,7 +2,7 @@
 title: "nix-bitcoin — NixOS modules for Bitcoin nodes"
 source: https://github.com/fort-nix/nix-bitcoin
 deployment: https://nixbitcoin.org
-type: repo
+type: repos
 maintainer: fort-nix (Jonas Nick et al.)
 year: 2018–2026
 ingested: 2026-06-15

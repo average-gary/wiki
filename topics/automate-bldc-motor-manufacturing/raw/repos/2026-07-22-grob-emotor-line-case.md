@@ -5,7 +5,7 @@ type: repos
 tags: [grob, turnkey-line, ev-traction, winding-technology-selection, case-study]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: What a real EV traction-motor integrator's line contains and how winding tech is matched to volume/application.
 ---
 

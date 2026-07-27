@@ -1,9 +1,12 @@
 ---
 title: "Share validation cost model"
-type: concept
+category: concept
 created: 2026-06-24
+updated: 2026-06-24
+volatility: warm
 confidence: high
 tags: [validation, share, cost, ckpool, sri]
+summary: "For every SubmitSharesStandard (SV2) or mining.submit (SV1), the pool performs an identical-shape workload:"
 ---
 
 # Share validation cost model

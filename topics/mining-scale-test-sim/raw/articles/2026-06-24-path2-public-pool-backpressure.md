@@ -1,7 +1,7 @@
 ---
 title: "public-pool: Node.js stratum server backpressure thresholds & connection limits"
-source_url: https://github.com/benjamin-wilson/public-pool/blob/master/src/services/stratum-v1.service.ts
-type: article
+source: https://github.com/benjamin-wilson/public-pool/blob/master/src/services/stratum-v1.service.ts
+type: articles
 ingested: 2026-06-24
 quality: 5
 confidence: high

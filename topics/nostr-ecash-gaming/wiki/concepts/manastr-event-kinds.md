@@ -1,10 +1,12 @@
 ---
 title: Manastr event-kind range (31000-31006)
-type: concept
+category: concept
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [manastr, nostr, event-kinds]
+summary: "Manastr uses Nostr event kinds 31000-31006 for the full match lifecycle."
 ---
 
 # Manastr event-kind range (31000-31006)

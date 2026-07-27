@@ -1,9 +1,11 @@
 ---
 title: Firmware Stacks — GxEPD2, ESPHome, MicroPython, ESP-IDF
-type: concept
+category: concept
 created: 2026-07-20
 updated: 2026-07-20
+volatility: warm
 tags: [firmware, gxepd2, esphome, micropython, esp-idf, lvgl, arduino]
+summary: "The software choices for driving the panel. Ordered by how commonly they're used for dashboards."
 confidence: high
 ---
 
@@ -75,3 +77,4 @@ full refresh). Use GxEPD2/GFX drawing or server-render instead.
 - [Rendering Architecture](rendering-architecture.md)
 - [Hardware Platform](hardware-platform.md)
 - [Data Sources](data-sources.md)
+- [[../reference/build-playbook.md|Build Playbook — a slow e-ink dashboard on the Waveshare ESP32 board]]

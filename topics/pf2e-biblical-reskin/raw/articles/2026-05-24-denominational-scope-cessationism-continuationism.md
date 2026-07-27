@@ -1,7 +1,7 @@
 ---
 title: "Cessationism vs Continuationism — Charisms in the Modern Church"
 source: "https://en.wikipedia.org/wiki/Cessationism_versus_continuationism"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [denomination, reformed, pentecostal, charismatic, theology]

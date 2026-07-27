@@ -1,21 +1,22 @@
 ---
 title: "Class & ancestry reskin verdicts"
-type: concept
+category: concept
 created: 2026-05-25
 updated: 2026-05-25
 verified: 2026-05-25
 volatility: medium
 confidence: high
 sources:
-  - "[[2026-05-24-class-ancestry-reskin-aon-champion-sanctification]]"
-  - "[[2026-05-24-class-ancestry-reskin-aon-thaumaturge-relics]]"
-  - "[[2026-05-24-class-ancestry-reskin-aon-oracle-prophet]]"
-  - "[[2026-05-24-class-ancestry-reskin-aon-druid-anathema-problem]]"
-  - "[[2026-05-24-class-ancestry-reskin-aon-magic-classes-arcane]]"
-  - "[[2026-05-24-class-ancestry-reskin-aon-monk-bard-ascetic-psalmist]]"
-  - "[[2026-05-24-class-ancestry-reskin-aon-kineticist-summoner-elements-eidolon]]"
-  - "[[2026-05-24-class-ancestry-reskin-ancestry-synthesis-nephilim-dhampir]]"
+  - "[[../../raw/articles/2026-05-24-class-ancestry-reskin-aon-champion-sanctification]]"
+  - "[[../../raw/articles/2026-05-24-class-ancestry-reskin-aon-thaumaturge-relics]]"
+  - "[[../../raw/articles/2026-05-24-class-ancestry-reskin-aon-oracle-prophet]]"
+  - "[[../../raw/articles/2026-05-24-class-ancestry-reskin-aon-druid-anathema-problem]]"
+  - "[[../../raw/articles/2026-05-24-class-ancestry-reskin-aon-magic-classes-arcane]]"
+  - "[[../../raw/articles/2026-05-24-class-ancestry-reskin-aon-monk-bard-ascetic-psalmist]]"
+  - "[[../../raw/articles/2026-05-24-class-ancestry-reskin-aon-kineticist-summoner-elements-eidolon]]"
+  - "[[../../raw/articles/2026-05-24-class-ancestry-reskin-ancestry-synthesis-nephilim-dhampir]]"
 tags: [pf2e, reskin, class, ancestry, cleric, champion, thaumaturge, oracle, nephilim, kineticist]
+summary: "Per-class and per-ancestry verdicts for a PF2e Remaster Biblical reskin. Each verdict is one of: Ship (works as-is or with a major win), Reflavor (text changes only), Rules-tweak (small homebrew rule), Cut. Tied to a specific Remaster mechanic where possible."
 ---
 
 # Class & ancestry reskin verdicts
@@ -137,6 +138,8 @@ Per [[2026-05-24-class-ancestry-reskin-aon-magic-classes-arcane]], the Sorcerer'
 - [[biblical-cosmology-pf2e-mapping]] — Nephilim ancestry, angelic bloodlines, fiend types
 - [[denominational-lens-decision]] — Reformed/cessationist tilts toward more cuts; Catholic/charismatic preserves more
 - [[recommended-reskin-stack]] — synthesis
+- [[../reference/biblical-miracle-to-pf2e-spell-map.md|Biblical miracle ↔ PF2e Remaster spell map]]
+- [[../reference/yhwh-deity-template.md|YHWH deity stat block — template & per-lens fills]]
 
 ## Open questions
 

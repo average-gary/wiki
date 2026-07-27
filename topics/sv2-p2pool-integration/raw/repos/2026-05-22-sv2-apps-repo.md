@@ -1,7 +1,7 @@
 ---
 title: "stratum-mining/sv2-apps"
-source_url: https://github.com/stratum-mining/sv2-apps
-type: repo
+source: https://github.com/stratum-mining/sv2-apps
+type: repos
 ingested: 2026-05-22
 quality: 5
 confidence: high

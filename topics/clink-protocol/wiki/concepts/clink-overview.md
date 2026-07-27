@@ -1,8 +1,10 @@
 ---
 title: CLINK overview
-type: concept
+category: concept
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
+summary: "CLINK = \"Common Lightning Interface for Nostr Keys\" — a set of three Nostr-native specifications for Lightning Network interactions, maintained at github.com/shocknet/CLINK and documented at clinkme.dev. All specifications are public domain."
 confidence: high
 sources:
   - raw/repos/2026-06-09-spec-primitives-clink-repo-overview.md
@@ -96,3 +98,4 @@ ShockNet's adjacent repos (`NymRank`, `SanctumDK`, `BXRD.app`) suggest the *de f
 - [[../topics/clink-roadmap-signals.md]] — where CLINK is heading
 - [[clink-implementations.md]] — adoption surface
 - [[../reference/specs-and-repos.md]] — link index
+- [[clink-discovery-and-nip05.md|CLINK discovery — NIP-05, HTTPS, NymRank]]

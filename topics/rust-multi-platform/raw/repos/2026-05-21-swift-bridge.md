@@ -1,7 +1,7 @@
 ---
 title: "chinedufn/swift-bridge — zero-overhead Rust↔Swift FFI"
 source: https://github.com/chinedufn/swift-bridge
-type: repo
+type: repos
 tags: [swift-bridge, ffi, ios, swift, rust, alternative-to-uniffi]
 date: 2026-05-21
 quality: 4

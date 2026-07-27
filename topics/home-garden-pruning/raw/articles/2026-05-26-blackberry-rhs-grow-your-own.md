@@ -1,7 +1,7 @@
 ---
 title: "Blackberries — RHS Grow Your Own"
-source_url: "https://www.rhs.org.uk/fruit/blackberries/grow-your-own"
-type: article
+source: "https://www.rhs.org.uk/fruit/blackberries/grow-your-own"
+type: articles
 path: blackberry
 date_ingested: 2026-05-26
 date_published: unknown

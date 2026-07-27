@@ -1,10 +1,12 @@
 ---
 title: "Go reproducibility recipe (CGO_ENABLED=0 + -trimpath)"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [go, lnd, trimpath, cgo, sumdb, recipe]
+summary: "Two-flag recipe for byte-identical Go binaries (per Cox 2023):"
 sources:
   - "[[../../raw/articles/2026-06-15-go-reproducible-builds-cox.md|Cox 2023 / Valsorda 2022 / Ayer 2025]]"
 ---
@@ -60,3 +62,4 @@ toolchain limitation. See
 
 - [[reproducibility-tooling.md|Reproducibility tooling]]
 - [[derivation-output-modes.md|Derivation output modes]] — `vendorHash` is a FOD
+- [[rust-nix-build-stack.md|Rust+Nix build stack (buildRustPackage / naersk / crane / Flakebox / fenix)]]

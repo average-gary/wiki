@@ -1,11 +1,11 @@
 ---
 title: "Hairpin Winding: Slot Fill, AC Losses & Manufacturing Defect Control (Patsnap Eureka)"
 source: https://eureka.patsnap.com/blog/research-reports/hairpin-winding-motors-slot-fill-ac-losses-manufacturing-defect-control/
-type: article
+type: articles
 tags: [hairpin, slot-fill, ac-losses, weld-defects, limitations]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Quantitative overview tying automated hairpin manufacturing to both its fill-factor win and its new defect surface.
 ---
 

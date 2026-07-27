@@ -3,7 +3,7 @@ title: "The detector arms race: Vanderbilt disables Turnitin, OpenAI scuttles it
 source: https://www.vanderbilt.edu/brightspace/2023/08/16/guidance-on-ai-detection-and-why-were-disabling-turnitins-ai-detector/
 authors: Vanderbilt University; Rhiannon Williams (MIT Technology Review); Devin Coldewey (TechCrunch)
 venue: Vanderbilt (16 Aug 2023) + MIT Tech Review (7 Jul 2023) + TechCrunch (25 Jul 2023)
-type: article
+type: articles
 tags: [llm-writing-indicators, detection-limits, detectors, false-positives, arms-race]
 quality: 5
 confidence: high

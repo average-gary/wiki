@@ -1,7 +1,7 @@
 ---
 title: "NIP-01: how a Nostr client connects to a relay (framing the VPN problem)"
 source: https://github.com/nostr-protocol/nips/blob/master/01.md
-type: article
+type: articles
 tags: [nostr, nip-01, websocket, relay, client-connection]
 confidence: high
 ingested: 2026-07-23

@@ -4,9 +4,9 @@ source: "https://ocean.xyz/docs/lightning"
 source_extra:
   - "https://www.nicehash.com/support/mining-help/earnings-and-payments/nicehash-mining-lighting-network-payouts"
   - "https://pool2win.github.io/braidpool/"
-type: article
+type: articles
 subtype: project-docs
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [mining, lightning, payouts, ocean, bolt12, nicehash, braidpool, one-way-channels]
 credibility: medium
 evidence_strength: project-docs

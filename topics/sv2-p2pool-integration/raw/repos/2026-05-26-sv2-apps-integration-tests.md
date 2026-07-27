@@ -1,7 +1,7 @@
 ---
 title: "sv2-apps integration-tests — THE existing SV2 reference harness"
-source_url: https://github.com/stratum-mining/sv2-apps/tree/main/integration-tests
-type: repo
+source: https://github.com/stratum-mining/sv2-apps/tree/main/integration-tests
+type: repos
 ingested: 2026-05-26
 quality: 5
 confidence: high

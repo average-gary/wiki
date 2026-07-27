@@ -1,6 +1,6 @@
 ---
 title: "The pure-receiver / liveness problem for miner payees"
-type: concept
+category: concept
 created: 2026-07-17
 updated: 2026-07-17
 confidence: high
@@ -11,7 +11,7 @@ sources:
   - raw/articles/2026-07-17-narula-ark.md
   - raw/articles/2026-07-17-roose-ark-case-for-ctv.md
   - raw/articles/2026-07-17-ark-protocol-clark.md
-  - raw/articles/2026-07-17-braidpool-spec.md
+  - ../../raw/repos/2026-07-17-braidpool-spec.md
   - raw/articles/2026-07-17-optech-ark.md
   - raw/articles/2026-07-17-sv2-job-negotiation-proxy.md
   - raw/articles/2026-07-17-arklabs-adios-expiry.md

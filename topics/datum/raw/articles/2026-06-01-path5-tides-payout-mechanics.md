@@ -1,6 +1,7 @@
 ---
 title: "OCEAN TIDES Payout Mechanics and Trust Boundary"
-url: https://ocean.xyz/docs/tides
+source: https://ocean.xyz/docs/tides
+type: articles
 source_type: official-docs
 ingested_by: path5
 ingested_on: 2026-06-01

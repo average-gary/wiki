@@ -2,9 +2,9 @@
 title: "BOLT #2: Peer Protocol — Splicing & the coinbase-funding rule"
 source: "https://github.com/lightning/bolts/blob/master/02-peer-protocol.md"
 source_raw: "https://raw.githubusercontent.com/lightning/bolts/master/02-peer-protocol.md"
-type: paper
+type: papers
 subtype: spec
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [lightning, bolt, splicing, coinbase, funding, interactive-tx, channel-ready, quiescence]
 credibility: high
 evidence_strength: spec

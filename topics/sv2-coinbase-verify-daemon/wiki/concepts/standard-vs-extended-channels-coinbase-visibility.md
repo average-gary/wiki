@@ -1,10 +1,12 @@
 ---
 title: "Standard vs extended channels — coinbase visibility"
-type: concept
+category: concept
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
-tags: [stratum-v2, standard-channel, extended-channel, header-only-mining, NewMiningJob, NewExtendedMiningJob, merkle_root]
+tags: [stratum-v2, standard-channel, extended-channel, header-only-mining, NewMiningJob, NewExtendedMiningJob, merkle-root]
+summary: "The single most important design fact for this daemon: which SV2 channel type you open determines whether you can see the coinbase at all."
 ---
 
 # Standard vs extended channels — coinbase visibility
@@ -53,3 +55,4 @@ inspect the coinbase.
 - [[wiki/concepts/expected-value-checks-taxonomy]]
 - [[wiki/concepts/coinbase-verification-trust-model-limits]]
 - [[../sv2-coinbase-identity/wiki/concepts/coinbase-ownership-pool-vs-jdc|coinbase ownership: Pool vs JDC (sv2-coinbase-identity)]]
+- [[sv2-mining-client-message-flow.md|SV2 mining-client message flow]]

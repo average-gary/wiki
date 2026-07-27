@@ -1,8 +1,8 @@
 ---
 title: "LUD-21: verify endpoint for LNURL-pay"
-type: paper
+type: papers
 source: https://github.com/lnurl/luds/blob/luds/21.md
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [lnurl, lud-21, verify, preimage, ecash-critical]
 summary: Optional verify URL added to LUD-06 step-2 response. Lets payer poll for cryptographic settlement proof (preimage). Mandatory reading for any Cashu mint integrating outbound LNURL-pay.

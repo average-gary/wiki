@@ -1,8 +1,10 @@
 ---
 title: OSS 4X Development Pace
-type: concept
+category: concept
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "Why open-source civ-likes take 5–20 years to ship features that proprietary studios deliver in 2-year cycles — and what the exceptions look like."
 confidence: high
 sources:
   - raw/articles/2026-06-18-wikipedia-0ad.md
@@ -113,3 +115,4 @@ If you're starting a new OSS civ-like in 2026:
 - [0 A.D.](../topics/0ad.md)
 - [Unciv](../topics/unciv.md)
 - [GitHub-as-mod-registry](github-as-mod-registry.md)
+- [[../topics/freeciv21.md|Freeciv21]]

@@ -1,9 +1,9 @@
 ---
 title: "Drug enforcement + I-81 corridor — NWVRDGTF, regional task force"
 publication: Winchester Star + VDH + VA Specialty Dockets + Royal Examiner
-url: https://www.winchesterstar.com/overdose-deaths/article_aadb0af5-c86c-58a7-b79b-a5a646fdd904.html
+source: https://www.winchesterstar.com/overdose-deaths/article_aadb0af5-c86c-58a7-b79b-a5a646fdd904.html
 url2: https://www.vacourts.gov/courtadmin/aoc/djs/programs/sds/home.html
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: high

@@ -1,7 +1,7 @@
 ---
 title: "DragonRaid (Wikipedia)"
 source: "https://en.wikipedia.org/wiki/DragonRaid"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [christian-rpg, history, dragonraid, design-retrospective]

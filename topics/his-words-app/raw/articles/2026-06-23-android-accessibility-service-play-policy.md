@@ -1,7 +1,7 @@
 ---
 title: AccessibilityService for app detection — Google Play's "primarily for users with disabilities" policy
 source: https://support.google.com/googleplay/android-developer/answer/10964491
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, android, accessibility-service, google-play-policy, app-blocker]
 quality: 5

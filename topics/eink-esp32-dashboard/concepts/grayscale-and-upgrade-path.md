@@ -1,9 +1,11 @@
 ---
 title: Grayscale & the Richer-Visuals Upgrade Path
-type: concept
+category: concept
 created: 2026-07-20
 updated: 2026-07-20
+volatility: warm
 tags: [grayscale, epdiy, esp32-s3, psram, inkplate, lilygo, gxepd2-4g, dithering, upgrade]
+summary: "If you later want more than 1-bit black/white — grayscale, photo-like imagery, bigger panels — here's what actually changes. Short version: true grayscale on large panels needs new hardware, but there are two cheaper middle grounds that reuse (or nearly reuse) what you have."
 confidence: high
 ---
 
@@ -68,3 +70,4 @@ Only worth it if your panel is on the supported list and 4 levels is enough.
 - [Hardware Platform](hardware-platform.md) — the RAM ceiling this all stems from
 - [Rendering Architecture](rendering-architecture.md) — server-side dithering lives here
 - [Build Playbook](../reference/build-playbook.md)
+- [[../reference/turnkey-projects.md|Turnkey & OSS Projects — clone/adapt candidates]]

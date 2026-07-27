@@ -1,7 +1,7 @@
 ---
 title: "moq-dev/moq — canonical MoQ Rust monorepo"
 source: https://github.com/moq-dev/moq
-type: repo
+type: repos
 tags: [moq, moq-lite, moq-rs, kixelated, web-transport-iroh]
 date: 2026-06-01
 quality: 5

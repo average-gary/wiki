@@ -1,9 +1,9 @@
 ---
 title: "When will Bevy be Production Ready? (GitHub Discussion #21911)"
-source_url: https://github.com/bevyengine/bevy/discussions/21911
+source: https://github.com/bevyengine/bevy/discussions/21911
 source_date: 2025-11
 ingested: 2026-06-15
-type: article
+type: articles
 author: Bevy maintainers and users
 quality: 5
 credibility: high

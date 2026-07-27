@@ -1,7 +1,7 @@
 ---
 title: "Raspberries for the Home Garden (Fact Sheet 7.001)"
-source_url: "https://extension.colostate.edu/topic-areas/yard-garden/raspberries-for-the-home-garden-7-001/"
-type: article
+source: "https://extension.colostate.edu/topic-areas/yard-garden/raspberries-for-the-home-garden-7-001/"
+type: articles
 path: raspberry
 date_ingested: 2026-05-26
 date_published: 2020-04-01

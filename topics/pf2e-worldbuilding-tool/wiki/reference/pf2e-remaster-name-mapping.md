@@ -1,16 +1,17 @@
 ---
 title: "PF2e Remaster name mapping (legacy ↔ Remaster)"
-type: reference
+category: reference
 created: 2026-05-24
 updated: 2026-05-24
 verified: 2026-05-24
 volatility: medium
 confidence: high
 sources:
-  - "[[2026-05-24-foundryvtt-pf2e-remaster-migration]]"
-  - "[[2026-05-24-pf2e-remaster-renames-summary]]"
-  - "[[2026-05-24-pf2e-srd-data-pf2e-remaster-overview]]"
+  - "[[../../raw/repos/2026-05-24-foundryvtt-pf2e-remaster-migration]]"
+  - "[[../../raw/articles/2026-05-24-pf2e-remaster-renames-summary]]"
+  - "[[../../raw/articles/2026-05-24-pf2e-srd-data-pf2e-remaster-overview]]"
 tags: [pf2e, remaster, rename-mapping, reference, legacy-compat, ogl-to-orc, foundry]
+summary: "Bidirectional alias index for legacy ↔ Remaster lookups. Used by the worldbuilding tool's lookup layer to (a) resolve user queries written in either edition, (b) auto-rewrite legacy notes on demand, (c) emit both legacy and Remaster names in tooltips/links."
 ---
 
 # PF2e Remaster name mapping

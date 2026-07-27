@@ -1,7 +1,7 @@
 ---
 title: "rustwasm/wasm-bindgen — Rust↔JS interop for browser WASM"
 source: https://github.com/rustwasm/wasm-bindgen
-type: repo
+type: repos
 tags: [wasm, browser, wasm-bindgen, web-sys, js-sys, futures]
 date: 2026-05-21
 quality: 5

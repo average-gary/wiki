@@ -1,7 +1,7 @@
 ---
 title: "How to join a Longturn game"
 source: https://longturn21.blogspot.com/p/how-to-join-longturn-game.html
-type: article
+type: articles
 ingested: 2026-06-18
 quality: 4
 confidence: medium

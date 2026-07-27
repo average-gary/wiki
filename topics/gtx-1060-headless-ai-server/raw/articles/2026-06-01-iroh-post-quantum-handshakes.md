@@ -1,7 +1,7 @@
 ---
 title: "Iroh post-quantum key exchange (iroh blog)"
 source: https://www.iroh.computer/blog/iroh-post-quantum-handshakes
-type: article
+type: articles
 tags: [iroh, post-quantum, ml-kem, x25519mlkem768, tls13, rpk]
 date: 2026-06-01
 publication_date: 2026-05-19

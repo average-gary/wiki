@@ -4,6 +4,7 @@ type: thesis
 status: completed
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 verdict: partially-supported
 confidence: high
 core_claim: "sv2-apps could easily adopt reproducible builds for OCI containers, modeled on Fedimint's Nix flake + dockerTools.buildLayeredImage pattern."
@@ -14,6 +15,8 @@ key_variables:
   - reproducibility = bit-identical OCI image hash across rebuilders
 falsification: "Either (a) Fedimint's OCI images are not actually reproducible (only binaries are), (b) the path requires exotic upstream changes, or (c) effort exceeds a quarter of skilled engineering work."
 research_session: 2026-06-15-sv2-apps-easy-oci-reproducibility-thesis
+tags: [thesis]
+summary: "sv2-apps could easily adopt reproducible builds for OCI containers, modeled on Fedimint's Nix flake + dockerTools.buildLayeredImage pattern."
 ---
 
 # Thesis: sv2-apps could easily adopt reproducible builds for OCI containers like Fedimint

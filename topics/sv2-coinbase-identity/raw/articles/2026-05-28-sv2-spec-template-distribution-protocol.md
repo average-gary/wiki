@@ -1,11 +1,12 @@
 ---
 title: "Stratum V2 Specification — 07-Template-Distribution-Protocol.md"
-source_url: https://github.com/stratum-mining/sv2-spec/blob/main/07-Template-Distribution-Protocol.md
+source: https://github.com/stratum-mining/sv2-spec/blob/main/07-Template-Distribution-Protocol.md
+type: articles
 source_type: specification
 ingested: 2026-05-28
 credibility: high
 confidence: high
-tags: [stratum-v2, template-distribution, NewTemplate, BIP34, coinbase_prefix]
+tags: [stratum-v2, template-distribution, newtemplate, bip-34, coinbase_prefix]
 ---
 
 # 07 — Template Distribution Protocol

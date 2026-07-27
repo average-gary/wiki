@@ -1,7 +1,7 @@
 ---
 title: "Freeciv21 Manual — Rulesets Overview"
 source: https://longturn.readthedocs.io/en/latest/Modding/Rulesets/overview.html
-type: article
+type: articles
 ingested: 2026-06-18
 quality: 5
 confidence: high

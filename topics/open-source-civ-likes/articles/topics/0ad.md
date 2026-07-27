@@ -1,8 +1,10 @@
 ---
 title: 0 A.D.
-type: topic
+category: topic
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "Real-time strategy of ancient warfare (500 BC – 1 BC). Civ-adjacent — 4X-lite (territory, economy, civilizations) but no Civ-style tech-tree depth. Maintained by Wildfire Games, the volunteer team behind the Pyrogenesis engine."
 confidence: high
 sources:
   - raw/repos/2026-06-18-0ad-pyrogenesis.md

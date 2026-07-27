@@ -3,9 +3,10 @@ title: Why FPPS Dominates (and is fragile)
 category: topic
 created: 2026-05-23
 confidence: medium
-tags: [FPPS, dominance, market-structure, fee-era]
+tags: [fpps, dominance, market-structure, fee-era]
 volatility: warm
 updated: 2026-07-15
+summary: "FPPS-class pools mine ~95% of network hashrate. Why? And what changes after 2032?"
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-23-b10c-mining-centralization-2025.md"
@@ -95,3 +96,4 @@ A miner moving from V1-FPPS to V2-SLICE may net a 0.5-1% improvement from stale-
 - [[../concepts/fpps]]
 - [[payout-design-space]]
 - [[../decisions/custody-tradeoffs|Custody Tradeoffs]]
+- [[../concepts/tides-variance-derivation.md|TIDES Variance — Derivation from Rosenfeld 2011]]

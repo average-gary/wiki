@@ -1,7 +1,7 @@
 ---
 title: "MahmoudAshraf97/whisper-diarization — alternative to WhisperX (NeMo backend)"
 source: https://github.com/MahmoudAshraf97/whisper-diarization
-type: repo
+type: repos
 tags: [whisper, diarization, nemo, msdd, alternative, no-hf-gating]
 date: 2026-05-21
 quality: 4

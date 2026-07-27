@@ -3,7 +3,7 @@ title: "DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability 
 source: https://arxiv.org/abs/2301.11305
 authors: Eric Mitchell, Yoonho Lee, Alexander Khazatsky, Christopher D. Manning, Chelsea Finn
 venue: ICML 2023; arXiv:2301.11305
-type: paper
+type: papers
 tags: [llm-writing-indicators, detection, zero-shot, perplexity, probability-curvature]
 quality: 5
 confidence: high

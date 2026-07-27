@@ -1,7 +1,7 @@
 ---
 title: "IanoNjuguna/stratum-v2-tools PerformanceLoadTestSuite — deep-read & fork-vs-rewrite decision"
-source_url: https://github.com/IanoNjuguna/stratum-v2-tools/blob/main/sv2-test/src/performance_load_tests.rs
-type: repo
+source: https://github.com/IanoNjuguna/stratum-v2-tools/blob/main/sv2-test/src/performance_load_tests.rs
+type: repos
 ingested: 2026-06-24
 quality: 4
 confidence: high

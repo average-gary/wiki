@@ -1,7 +1,7 @@
 ---
 title: "WhisperX known-broken issues — pyannote 3.3.x lightning quarantine, 4.x partial migration"
 source: https://github.com/m-bain/whisperX/issues/1412
-type: article
+type: articles
 tags: [whisperx, pyannote, lightning, version-pin, gotchas]
 date: 2026-05-21
 quality: 4

@@ -3,9 +3,9 @@ title: "BOLT #2 push_msat omitted from open_channel2 + bLIP-52 JIT fee-from-paym
 source: "https://github.com/lightning/blips/blob/master/blip-0052.md"
 raw_source: "https://raw.githubusercontent.com/lightning/blips/master/blip-0052.md"
 source_secondary: "https://raw.githubusercontent.com/lightning/bolts/master/02-peer-protocol.md"
-type: paper
+type: papers
 subtype: spec
-retrieved: 2026-07-23
+ingested: 2026-07-23
 verified_verbatim: true
 tags: [lightning, bolt2, blip52, lsps2, jit-channel, push-msat, open-channel2, fee-deduction, inbound, fusion]
 credibility: high

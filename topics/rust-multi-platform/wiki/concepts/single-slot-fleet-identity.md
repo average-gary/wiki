@@ -1,12 +1,13 @@
 ---
 title: "Single-Slot Fleet Identity Patterns"
-type: concept
+category: concept
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
 status: active
 quality: high
 volatility: medium
+summary: "How four mature systems implement \"this device occupies exactly one identity slot in the fleet at a time\" — and where each falls down."
 sources:
   - raw/articles/2026-06-01-tailscale-auth-keys.md
   - raw/articles/2026-06-01-tailscale-acl-tags.md

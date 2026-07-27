@@ -1,7 +1,7 @@
 ---
 title: "CTV + CSFS support letter (jamesob et al.)"
 source: https://groups.google.com/g/bitcoindev/c/KJF6A55DPJ8
-type: article
+type: articles
 ingested: 2026-07-17
 credibility: high
 direction: opposes

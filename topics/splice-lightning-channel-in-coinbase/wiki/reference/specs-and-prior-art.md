@@ -1,9 +1,11 @@
 ---
 title: "Specs, consensus rules & prior art"
-type: reference
+category: reference
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 tags: [reference, bolt, bip, consensus, optech, prior-art]
+summary: "Splice definition, tx_add_input/shared_input_txid, channel_ready coinbase 100-block rule, splice_init ordering, quiescence. *(the load-bearing source)* → raw: ../../raw/papers/2026-07-23-bolt2-splicing-and-coinbase-funding"
 ---
 
 # Specs, consensus rules & prior art

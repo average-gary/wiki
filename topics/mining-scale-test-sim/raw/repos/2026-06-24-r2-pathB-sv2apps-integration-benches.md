@@ -1,7 +1,7 @@
 ---
 title: "sv2-apps integration-tests benches: hasher-only, no per-share Criterion bench"
-source_url: https://github.com/marafoundation/sv2-apps/tree/main/integration-tests/benches
-type: repo
+source: https://github.com/marafoundation/sv2-apps/tree/main/integration-tests/benches
+type: repos
 ingested: 2026-06-24
 quality: 5
 confidence: high

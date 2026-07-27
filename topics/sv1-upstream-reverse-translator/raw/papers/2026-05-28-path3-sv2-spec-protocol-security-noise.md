@@ -1,7 +1,7 @@
 ---
 title: "SV2 Spec — Protocol Security (04, Noise NX_25519_ChaChaPoly_BLAKE2s)"
 url: https://github.com/stratum-mining/sv2-spec/blob/main/04-Protocol-Security.md
-type: paper
+type: papers
 source: stratum-mining/sv2-spec
 captured: 2026-05-28
 quality: 9

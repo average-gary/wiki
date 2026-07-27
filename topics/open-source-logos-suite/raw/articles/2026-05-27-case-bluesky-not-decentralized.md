@@ -1,7 +1,7 @@
 ---
 title: "How Decentralized is Bluesky Really?"
-source_url: "https://dustycloud.org/blog/how-decentralized-is-bluesky/"
-type: article
+source: "https://dustycloud.org/blog/how-decentralized-is-bluesky/"
+type: articles
 path: case
 date_ingested: 2026-05-27
 date_published: 2024-11-22

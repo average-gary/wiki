@@ -1,7 +1,7 @@
 ---
 title: "Unciv Modders Guide — Introduction to Mods"
 source: https://yairm210.github.io/Unciv/Modders/Mods/
-type: article
+type: articles
 ingested: 2026-06-18
 quality: 5
 confidence: high

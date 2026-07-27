@@ -1,8 +1,8 @@
 ---
 title: "Vardiff at the Information Floor — the §10 log-error regret/effort metric whitepaper"
-source_url: https://github.com/marafoundation/stratum/blob/vardiff/simulation-framework/sv2/channels-sv2/sim/docs/METRIC_DERIVATION.md
+source: https://github.com/marafoundation/stratum/blob/vardiff/simulation-framework/sv2/channels-sv2/sim/docs/METRIC_DERIVATION.md
 source_branch: vardiff/simulation-framework
-type: paper
+type: papers
 ingested: 2026-06-24
 quality: 5
 confidence: high

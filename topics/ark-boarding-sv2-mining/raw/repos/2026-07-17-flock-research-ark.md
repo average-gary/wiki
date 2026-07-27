@@ -1,7 +1,7 @@
 ---
 title: "barrydeen/flock — research-ark.md"
 source: https://github.com/barrydeen/flock/blob/master/research/research-ark.md
-type: repo
+type: repos
 ingested: 2026-07-17
 credibility: medium
 direction: supports

@@ -1,29 +1,30 @@
 ---
 title: "Magic-theology approaches for a PF2e Biblical reskin"
-type: concept
+category: concept
 created: 2026-05-25
 updated: 2026-05-25
 verified: 2026-05-25
 volatility: low
 confidence: high
 sources:
-  - "[[2026-05-24-magic-theology-problem-tolkien-magia-vs-elvish-art]]"
-  - "[[2026-05-24-magic-theology-problem-lewis-deep-magic-narnia]]"
-  - "[[2026-05-24-magic-theology-problem-deuteronomy-18-prohibitions]]"
-  - "[[2026-05-24-magic-theology-problem-charismata-1-corinthians-12]]"
-  - "[[2026-05-24-magic-theology-problem-simon-magus-acts-8]]"
-  - "[[2026-05-24-magic-theology-problem-augustine-aquinas-miracle-vs-magic]]"
-  - "[[2026-05-25-aquinas-summa-q92-superstition-general]]"
-  - "[[2026-05-25-aquinas-summa-q95-q96-divination-magic]]"
-  - "[[2026-05-24-magic-theology-problem-that-hideous-strength-merlin]]"
-  - "[[2026-05-25-tolkien-lewis-primary-letter-131-waldman]]"
-  - "[[2026-05-25-tolkien-lewis-primary-letter-155-mitchison]]"
-  - "[[2026-05-25-tolkien-lewis-primary-de-descriptione-temporum]]"
-  - "[[2026-05-25-pharmakeia-word-study-strongs-thayers]]"
-  - "[[2026-05-25-pharmakeia-word-study-semantic-range-greco-roman]]"
-  - "[[2026-05-25-pharmakeia-word-study-pharmakos-revelation]]"
-  - "[[2026-05-25-1-enoch-book-of-watchers-ch6-16]]"
+  - "[[../../raw/articles/2026-05-24-magic-theology-problem-tolkien-magia-vs-elvish-art]]"
+  - "[[../../raw/articles/2026-05-24-magic-theology-problem-lewis-deep-magic-narnia]]"
+  - "[[../../raw/articles/2026-05-24-magic-theology-problem-deuteronomy-18-prohibitions]]"
+  - "[[../../raw/articles/2026-05-24-magic-theology-problem-charismata-1-corinthians-12]]"
+  - "[[../../raw/articles/2026-05-24-magic-theology-problem-simon-magus-acts-8]]"
+  - "[[../../raw/articles/2026-05-24-magic-theology-problem-augustine-aquinas-miracle-vs-magic]]"
+  - "[[../../raw/papers/2026-05-25-aquinas-summa-q92-superstition-general]]"
+  - "[[../../raw/papers/2026-05-25-aquinas-summa-q95-q96-divination-magic]]"
+  - "[[../../raw/articles/2026-05-24-magic-theology-problem-that-hideous-strength-merlin]]"
+  - "[[../../raw/papers/2026-05-25-tolkien-lewis-primary-letter-131-waldman]]"
+  - "[[../../raw/papers/2026-05-25-tolkien-lewis-primary-letter-155-mitchison]]"
+  - "[[../../raw/papers/2026-05-25-tolkien-lewis-primary-de-descriptione-temporum]]"
+  - "[[../../raw/papers/2026-05-25-pharmakeia-word-study-strongs-thayers]]"
+  - "[[../../raw/papers/2026-05-25-pharmakeia-word-study-semantic-range-greco-roman]]"
+  - "[[../../raw/papers/2026-05-25-pharmakeia-word-study-pharmakos-revelation]]"
+  - "[[../../raw/papers/2026-05-25-1-enoch-book-of-watchers-ch6-16]]"
 tags: [magic, theology, sorcery, pharmakeia, tolkien, lewis, charisma, augustine, aquinas, watchers]
+summary: "The single hardest design problem for a PF2e Biblical reskin: how to handle \"magic\" given the Bible's explicit prohibitions on sorcery (Deut 18:10–12; Lev 19:31; Gal 5:20; Rev 21:8 — pharmakeia/mageia), while PF2e's classes are magic-saturated."
 ---
 
 # Magic-theology approaches
@@ -136,6 +137,8 @@ The **Aquinas test** for any magical practice: does the means have natural causa
 - [[denominational-lens-decision]] — Reformed/cessationist vs Pentecostal/continuationist drives which approach is internally consistent
 - [[biblical-cosmology-pf2e-mapping]] — the Watcher tradition (faithful vs fallen) underwrites the Lewisian approach
 - [[recommended-reskin-stack]] — synthesis
+- [[../reference/biblical-miracle-to-pf2e-spell-map.md|Biblical miracle ↔ PF2e Remaster spell map]]
+- [[prior-christian-rpg-lessons.md|Prior Christian TTRPG lessons (40 years of attempts)]]
 
 ## Open questions
 

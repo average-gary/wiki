@@ -1,10 +1,11 @@
 ---
 title: OCEAN DATUM
-type: concept
+category: concept
 created: 2026-05-22
 updated: 2026-05-22
 verified: 2026-05-22
 volatility: warm
+summary: "DATUM (Decentralized Alternative Templates for Universal Mining) is OCEAN's production-deployed protocol for decentralized template construction. It is the existence proof that miners will adopt a non-custodial decentralized-template pool — and the counterexample that you can do it without SV2."
 confidence: high
 sources:
   - "[[raw/articles/2026-05-22-ocean-datum-overview|OCEAN DATUM overview]]"
@@ -81,3 +82,4 @@ DATUM proves decentralized templating is achievable on V1 today. p2poolv2's bet 
 - [[p2poolv2]]
 - [[braidpool]]
 - [[../topics/why-decentralized-pools-struggle|Why decentralized pools struggle]]
+- [[../topics/integration-paths.md|Integration paths — p2poolv2 ↔ sv2-apps]]

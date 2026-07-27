@@ -3,9 +3,11 @@ title: Android libraries — quick reference card
 type: tool
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, android, libraries, tools]
+summary: "One-line descriptions of the Android system services and Jetpack libraries His Words uses. For deeper API surface see Android API surface reference."
 sources:
   - raw/articles/2026-06-23-android-usage-stats-manager.md
   - raw/articles/2026-06-23-android-foreground-service-doze-5min.md

@@ -1,7 +1,7 @@
 ---
 title: "SQLite FTS5 tree-query limitations"
-url: https://www.sqlite.org/fts5.html
-retrieved: 2026-06-02
+source: https://www.sqlite.org/fts5.html
+ingested: 2026-06-02
 type: spec
 ---
 

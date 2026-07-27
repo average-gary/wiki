@@ -1,10 +1,12 @@
 ---
 title: "Bevy rendering"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, rendering, wgpu, pbr, gpu-driven, solari, render-graph]
+summary: "Bevy's renderer is built on wgpu (Rust implementation of WebGPU) — the same backend that ships in Firefox and Servo. wgpu's recent download volume (24.6M all-time) dwarfs Bevy's, indicating its userbase extends well beyond Bevy."
 ---
 
 # Bevy rendering
@@ -65,3 +67,4 @@ Per [[bevy-criticisms.md|JMS55's 5th-birthday critique]] (Sept 2025):
 - [[bevy-overview.md|Bevy overview]]
 - [[bevy-version-timeline.md|Version timeline]]
 - [[bevy-criticisms.md|Criticisms and limitations]]
+- [[bevy-platform-support.md|Bevy platform support]]

@@ -1,7 +1,7 @@
 ---
 title: "Fixing Waveshare partial updates after deep sleep (thoughts.gohu.org)"
 source: https://thoughts.gohu.org/posts/2025/epaper-partial-updates/
-type: article
+type: articles
 tags: [e-paper, partial-refresh, full-refresh, deep-sleep, ghosting, controller-ram, timing]
 date: 2026-07-20
 quality: 4

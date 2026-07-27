@@ -1,7 +1,7 @@
 ---
 title: "rust-cross/cargo-zigbuild — Zig-as-linker for Rust cross-compile"
 source: https://github.com/rust-cross/cargo-zigbuild
-type: repo
+type: repos
 tags: [cross-compile, zig, linker, glibc-versioning, apple-darwin, universal2]
 date: 2026-05-21
 quality: 5

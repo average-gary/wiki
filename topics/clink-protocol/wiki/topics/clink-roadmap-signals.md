@@ -1,8 +1,10 @@
 ---
 title: CLINK roadmap signals
-type: topic
+category: topic
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
+summary: "CLINK has no public ROADMAP.md, no project board, and only one open issue. Direction must be inferred from ShockNet's adjacent repo activity and the README's ecosystem table. This page collects the signals."
 confidence: medium
 sources:
   - raw/repos/2026-06-09-origin-shocknet-clink-repo.md
@@ -100,3 +102,4 @@ A wiki reader expecting CLINK to evolve into a full Lightning-control protocol t
 - [[../concepts/clink-origin-and-stewardship.md]]
 - [[../concepts/clink-discovery-and-nip05.md]]
 - [[../concepts/clink-manage.md]]
+- [[../concepts/clink-implementations.md|CLINK implementations and adoption]]

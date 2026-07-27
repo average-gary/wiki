@@ -1,11 +1,13 @@
 ---
 title: Competitor reference — comparative table
-type: reference
+category: reference
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, competitors, reference]
+summary: "All seven faith-blocker competitor profiles in one comparison view, plus adjacent-but-non-blocker apps for context."
 sources:
   - raw/articles/2026-06-23-competitors-psalmo.md
   - raw/articles/2026-06-23-competitors-prayer-lock.md

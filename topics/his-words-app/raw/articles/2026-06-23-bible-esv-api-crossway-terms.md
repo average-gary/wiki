@@ -1,7 +1,7 @@
 ---
 title: ESV API (Crossway) — Rate Limits, Caching, and App Use Terms
 source: https://api.esv.org/
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, bible-api, licensing, esv, crossway]
 quality: 5

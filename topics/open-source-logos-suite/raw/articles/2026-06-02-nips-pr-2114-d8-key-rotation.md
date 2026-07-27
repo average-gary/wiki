@@ -1,7 +1,7 @@
 ---
 title: "PR #2114 — NIP D8 Key Rotation (closed in favor of #2137)"
-url: https://github.com/nostr-protocol/nips/pull/2114
-retrieved: 2026-06-02
+source: https://github.com/nostr-protocol/nips/pull/2114
+ingested: 2026-06-02
 type: pr
 ---
 

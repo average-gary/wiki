@@ -1,7 +1,7 @@
 ---
 title: "Fedimint InviteCode — bech32 ticket carrying (federation_id, peers, optional bearer)"
 source: https://docs.rs/fedimint-core/latest/fedimint_core/invite_code/struct.InviteCode.html
-type: article
+type: articles
 tags: [fedimint, invite-code, bech32, ticket, p2p, prior-art]
 date: 2026-06-01
 quality: 5

@@ -1,7 +1,7 @@
 ---
 title: "HomePlate (Inkplate) — HA-dashboard-screenshot thin client"
 source: https://github.com/lanrat/homeplate
-type: repo
+type: repos
 tags: [inkplate, homeplate, home-assistant, screenshot, thin-client, wrover, psram, trmnl]
 date: 2026-07-20
 quality: 3

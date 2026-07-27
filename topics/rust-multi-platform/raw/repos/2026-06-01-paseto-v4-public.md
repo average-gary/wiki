@@ -1,6 +1,6 @@
 ---
 title: "PASETO v4.public Specification (Ed25519)"
-source_url: https://github.com/paseto-standard/paseto-spec/blob/master/docs/01-Protocol-Versions/Version4.md
+source: https://github.com/paseto-standard/paseto-spec/blob/master/docs/01-Protocol-Versions/Version4.md
 type: spec
 ingested: 2026-06-01
 quality: 4

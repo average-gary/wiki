@@ -1,7 +1,7 @@
 ---
 title: "bxrd.app and TakeMySats CLINK support — verification"
 source: https://bxrd.app
-type: article
+type: articles
 ingested: 2026-06-10
 path: gap-bxrd-tms
 quality: 4

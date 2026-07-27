@@ -63,6 +63,8 @@ All three descend from the discovery that naive two-round Schnorr multisig is br
 - [[nonce-commit-reveal-rounds|Nonce Commit/Reveal Rounds]] ([Nonce Commit/Reveal Rounds](nonce-commit-reveal-rounds.md)) — the commitment-round question across schemes
 - [[dropout-abort-and-robustness|Dropout, Abort, and Robustness]] ([Dropout, Abort, and Robustness](dropout-abort-and-robustness.md)) — robustness and ROAST's mechanism
 - [[session-framing-and-state|Session Framing and State]] ([Session Framing and State](session-framing-and-state.md)) — coordinator vs peer topologies
+- [[../references/implementations-and-specs.md|MuSig2 Implementations & Specs]]
+- [[../topics/musig2-interactive-signing-ceremonies.md|MuSig2 Interactive Signing Ceremonies]]
 
 ## Sources
 

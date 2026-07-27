@@ -3,14 +3,14 @@ title: "Understanding SLICE (PPLNS+JD)"
 author: esraa (DMND)
 publication: blog.dmnd.work
 date: 2025-03-18
-url: https://blog.dmnd.work/understanding-slice-pplns-jd/
+source: https://blog.dmnd.work/understanding-slice-pplns-jd/
 related_url: https://blog.dmnd.work/slice-making-pplns-work-for-demand-response/
-type: article
+type: articles
 ingested: 2026-05-23
 quality: 5
 credibility: high
 confidence: high
-tags: [DMND, SLICE, PPLNS-JD, N-parameter, primary-source]
+tags: [dmnd, SLICE, pplns-jd, N-parameter, primary-source]
 ---
 
 # DMND SLICE — Primary Spec (March 2025)

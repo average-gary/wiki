@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Code Signing — Azure Trusted Signing replaces EV cert pattern"
 source: https://learn.microsoft.com/en-us/windows/msix/package/signing-package-overview
-type: article
+type: articles
 tags: [windows, code-signing, smartscreen, trusted-signing, distribution]
 date: 2026-05-21
 quality: 6

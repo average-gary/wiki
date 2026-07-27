@@ -1,10 +1,11 @@
 ---
 title: TWiR Sections — What Goes Where
-type: concept
+category: concept
 created: 2026-06-22
 updated: 2026-06-22
 verified: 2026-06-22
 volatility: cold
+summary: "The standard TWiR issue (per issue 656, 2026-06-17) has these content sections. This guide maps Rust-Bitcoin items to the right section."
 confidence: high
 sources:
   - "[[../../raw/data/2026-06-22-twir-issue-cadence-stats|TWiR cadence stats]]"
@@ -101,3 +102,4 @@ Pithy quote — open submissions; editor's pick.
 
 - [[twir-submission-rules|TWiR Submission Rules]]
 - [[../topics/submission-playbook|Submission Playbook]]
+- [[../topics/twir-rust-bitcoin-coverage-gap.md|The TWiR Rust-Bitcoin Coverage Gap]]

@@ -1,7 +1,7 @@
 ---
 title: "iroh-examples / custom-router — multi-ALPN reference impl"
 source: https://github.com/n0-computer/iroh-examples/tree/main/custom-router
-type: repo
+type: repos
 tags: [iroh, router, protocolhandler, alpn, examples]
 date: 2026-06-01
 quality: 5

@@ -1,6 +1,6 @@
 ---
 title: "iroh: Endpoint and ALPN"
-type: concept
+category: concept
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-27
@@ -11,6 +11,7 @@ sources:
   - raw/articles/2026-05-20-iroh-crate-top-level-docs.md
   - raw/repos/2026-05-20-iroh-examples-framed-messages.md
 tags: [iroh, endpoint, alpn]
+summary: "The two primitives an SV2 integrator wires to."
 ---
 
 # Endpoint and ALPN

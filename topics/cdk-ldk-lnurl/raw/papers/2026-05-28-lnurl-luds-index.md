@@ -1,8 +1,8 @@
 ---
 title: "LNURL LUDs index (lnurl/luds)"
-type: paper
+type: papers
 source: https://github.com/lnurl/luds
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [lnurl, spec, lud]
 summary: Canonical LNURL spec home. 21 LUDs, all optional and additive. Lists the LUD IDs and which wallets/services implement which.

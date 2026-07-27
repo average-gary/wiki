@@ -1,7 +1,7 @@
 ---
 title: "Tokio 1.51 LIFO-stealing regression: +8.5% CPU on µs-handler high-QPS service"
-source_url: https://github.com/tokio-rs/tokio/issues/8065
-type: article
+source: https://github.com/tokio-rs/tokio/issues/8065
+type: articles
 ingested: 2026-06-24
 quality: 5
 confidence: high

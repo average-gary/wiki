@@ -1,9 +1,9 @@
 ---
 title: "Bevy 0.5 Release Notes — ECS V2 Rewrite (Hybrid Table + Sparse-Set Storage)"
-source_url: https://bevy.org/news/bevy-0-5/
+source: https://bevy.org/news/bevy-0-5/
 source_date: 2021-04-06
 ingested: 2026-06-15
-type: article
+type: articles
 author: Carter Anderson (Cart) / Bevy
 quality: 5
 credibility: high

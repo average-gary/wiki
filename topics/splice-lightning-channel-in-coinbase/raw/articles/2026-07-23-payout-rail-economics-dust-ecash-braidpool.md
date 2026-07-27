@@ -5,9 +5,9 @@ extra_sources:
   - "https://hashpool.dev/articles/what-is-hashpool/"
   - "https://pool2win.github.io/braidpool/"
   - "https://bitcoinops.org/en/topics/pooled-mining/"
-type: article
+type: articles
 subtype: aggregator-project-docs
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [dust-limit, uneconomical-outputs, ecash, cashu, hashpool, ehash, braidpool, micro-payouts, custody, one-way-channels]
 credibility: med-high
 evidence_strength: docs

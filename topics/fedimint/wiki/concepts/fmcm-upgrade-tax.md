@@ -1,12 +1,13 @@
 ---
 title: "FMCM upgrade tax — the cost of writing a Fedimint module out-of-tree"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
 verified: 2026-06-15
 volatility: warm
 confidence: high
-tags: [fedimint, FMCM, custom-modules, upgrade-tax, scaffold-rot, multi-currency]
+tags: [fedimint, fmcm, custom-modules, upgrade-tax, scaffold-rot, multi-currency]
+summary: "The \"Fedimint Custom Module\" (FMCM) story is technically real — fedimint-core, fedimint-server-core, and fedimint-client-module are public crates and external modules can implement ServerModule / ClientModule without forking."
 ---
 
 # FMCM upgrade tax

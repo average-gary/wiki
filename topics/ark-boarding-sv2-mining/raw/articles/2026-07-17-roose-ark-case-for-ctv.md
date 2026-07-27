@@ -1,7 +1,7 @@
 ---
 title: "The Ark case for CTV (Roose, Delving #1528)"
 source: https://delvingbitcoin.org/t/the-ark-case-for-ctv/1528
-type: article
+type: articles
 ingested: 2026-07-17
 credibility: high
 direction: nuances

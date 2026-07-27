@@ -1,8 +1,8 @@
 ---
 title: "LUD-06: payRequest base spec (LNURL-pay)"
-type: paper
+type: papers
 source: https://github.com/lnurl/luds/blob/luds/06.md
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [lnurl, lud-06, lnurl-pay, spec]
 summary: Two-step LNURL-pay flow. Step 1 returns metadata + callback. Step 2 returns BOLT11 with description_hash binding. Wallets MUST verify sha256(metadata) == invoice.h.

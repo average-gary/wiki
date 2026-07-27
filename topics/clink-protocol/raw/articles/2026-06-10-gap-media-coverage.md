@@ -1,7 +1,7 @@
 ---
 title: "CLINK media coverage sweep — conferences, podcasts, newsletters"
 source: (multiple)
-type: article
+type: articles
 ingested: 2026-06-10
 path: gap-media
 quality: 3

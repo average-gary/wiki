@@ -1,8 +1,8 @@
 ---
 title: "APA FY25 Comparative Report — Public Safety expenditures, FrCo + Winchester"
 publication: VA Auditor of Public Accounts (APA)
-url: https://dlasprodpublic.blob.core.windows.net/apa/093D6F15-1079-4D72-87B5-CBBFEF1FDA47.xlsx
-type: article
+source: https://dlasprodpublic.blob.core.windows.net/apa/093D6F15-1079-4D72-87B5-CBBFEF1FDA47.xlsx
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

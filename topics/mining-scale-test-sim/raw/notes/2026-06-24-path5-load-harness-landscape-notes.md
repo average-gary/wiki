@@ -2,7 +2,7 @@
 title: "Load-harness landscape for SV2 — quick-reference matrix"
 type: raw-source
 source_kind: notes
-fetched: 2026-06-24
+ingested: 2026-06-24
 path: 5
 relevance: high
 ---

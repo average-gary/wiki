@@ -1,7 +1,7 @@
 ---
 title: "DeepWiki (ark-network/ark): Exit Mechanisms + Batch Processing + Tree Structures"
-source_url: https://deepwiki.com/ark-network/ark/3.5-exit-mechanisms
-type: repo
+source: https://deepwiki.com/ark-network/ark/3.5-exit-mechanisms
+type: repos
 publisher: DeepWiki (auto-generated over ark-network/ark reference impl)
 ingested: 2026-07-16
 research_path: dropout

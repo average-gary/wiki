@@ -1,10 +1,12 @@
 ---
 title: Nutchain event-kind range (30800-30814)
-type: concept
+category: concept
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [nutchain, nostr, event-kinds, addressable]
+summary: "Nutchain specifies 14 event kinds in the addressable range 30800-30814, covering setup, gameplay, randomness requests, DKG contributions, and teardown."
 ---
 
 # Nutchain event-kind range (30800-30814)

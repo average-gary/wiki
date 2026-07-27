@@ -1,7 +1,7 @@
 ---
 title: "Bible Mode: Reduce Screen Time — App Store listing (Friday Labs)"
 source: https://itunes.apple.com/lookup?id=6744124873
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, competitor, bible-mode, friday-labs]
 quality: 4

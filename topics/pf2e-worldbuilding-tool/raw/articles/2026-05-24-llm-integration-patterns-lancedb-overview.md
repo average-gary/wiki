@@ -1,7 +1,7 @@
 ---
 title: "LanceDB - embedded multimodal vector database"
 source: "https://lancedb.com/blog"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "2025-11-01"
 tags: [rag, vector-db, embedded, hybrid-search, local-first]

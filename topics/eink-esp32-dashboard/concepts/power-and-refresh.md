@@ -1,9 +1,11 @@
 ---
 title: Power Management & E-Paper Refresh Mechanics
-type: concept
+category: concept
 created: 2026-07-20
 updated: 2026-07-20
+volatility: warm
 tags: [power, deep-sleep, battery, refresh, ghosting, partial-refresh, rtc-memory, temperature]
+summary: "The \"dynamic (slowly)\" requirement lives here: cadence, deep sleep, battery life, and refresh quality."
 confidence: high
 ---
 
@@ -92,3 +94,4 @@ partial refresh anyway (it just accumulates ghosting).
 - [Data Sources](data-sources.md) — poll cadence
 - [Rendering Architecture](rendering-architecture.md) — server ETag/304 can skip refreshes entirely
 - [Build Playbook](../reference/build-playbook.md)
+- [[limitations-and-gotchas.md|Limitations & Gotchas]]

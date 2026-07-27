@@ -5,7 +5,7 @@ doi: 10.1007/s42979-020-0087-8
 journal: SN Computer Science
 authors: [Viktor Voss, Liudmyla Nechepurenko, Rudi Schaefer, Steffen Bauer]
 year: 2019
-type: paper
+type: papers
 ingested: 2026-06-18
 quality: 3
 confidence: medium

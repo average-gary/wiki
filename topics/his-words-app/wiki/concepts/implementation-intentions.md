@@ -1,11 +1,13 @@
 ---
 title: Implementation intentions — Gollwitzer's if-then plans applied to His Words
-type: concept
+category: concept
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, psychology, habit-formation, onboarding]
+summary: "An *implementation intention* is a pre-committed if-then plan: \"If situation X occurs, then I will perform behavior Y.\" Per Gollwitzer 1999 + Gollwitzer & Sheeran 2006 meta-analysis, implementation intentions produce a d = 0.65 (medium-to-large) effect on goal attainment — across 94 studies, ~8,000…"
 sources:
   - raw/papers/2026-06-23-psych-implementation-intentions-gollwitzer.md
   - raw/papers/2026-06-23-psych-haliburton-design-frictions-chi2024.md

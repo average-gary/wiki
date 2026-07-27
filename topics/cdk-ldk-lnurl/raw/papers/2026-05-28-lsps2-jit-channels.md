@@ -1,8 +1,8 @@
 ---
 title: "LSPS2 — Just-In-Time Channels"
-type: paper
+type: papers
 source: https://github.com/BitcoinAndLightningLayerSpecs/lsp/blob/main/LSPS2/README.md
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [lsp, lsps2, jit-channels, inbound-liquidity, blip-25]
 summary: Three-actor protocol (LSP, client, payer) for opening a channel and forwarding the first payment in one round-trip. The way a small Cashu mint with no inbound capacity can receive its first LN deposits.

@@ -1,6 +1,6 @@
 ---
 title: Rose Rosette Disease (RRD)
-type: reference
+category: reference
 created: 2026-05-26
 updated: 2026-05-26
 verified: 2026-05-26
@@ -8,6 +8,7 @@ volatility: warm
 status: active
 confidence: high
 tags: [rose, disease, rose-rosette, virus, sanitation]
+summary: "Rose Rosette Disease is the most serious threat to Knock Out and other landscape shrub roses in the US. It's a virus (Rose rosette emaravirus) vectored by an eriophyid mite. There is no cure — affected plants must be removed."
 sources:
   - "[[raw/articles/2026-05-26-rose-clemson-rose-diseases-rrd]]"
   - "[[raw/articles/2026-05-26-rose-umd-rose-rosette]]"

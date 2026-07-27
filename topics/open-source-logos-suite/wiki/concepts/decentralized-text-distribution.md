@@ -1,6 +1,6 @@
 ---
 title: Decentralized Text Distribution
-type: concept
+category: concept
 created: 2026-05-27
 updated: 2026-05-27
 verified: 2026-05-27
@@ -8,6 +8,7 @@ volatility: warm
 status: active
 confidence: high
 tags: [decentralized, ipfs, libp2p, iroh, bittorrent, atproto, hypercore, cdn]
+summary: "For shipping the digital library (texts, lexicons, commentaries) — mostly static, mostly immutable, occasionally updated — to clients. Honest evaluation of the candidates."
 sources:
   - "[[raw/articles/2026-05-27-infra-text-iroh-blobs-protocol]]"
   - "[[raw/articles/2026-05-27-infra-text-ipfs-content-addressing]]"
@@ -164,3 +165,5 @@ The hybrid model:
 - [[../reference/decentralized-infra-candidates|Decentralized infra candidates]]
 - [[../decisions/library-distribution|Library distribution decision]]
 - [[../../../iroh-transport-stratum-v2/wiki/_index|iroh-transport-stratum-v2]]
+- [[ai-bible-study-tools-2026.md|AI Bible-study tools 2026: RAG, citation-grounding, hallucination guards]]
+- [[credible-exit.md|Credible Exit Principle]]

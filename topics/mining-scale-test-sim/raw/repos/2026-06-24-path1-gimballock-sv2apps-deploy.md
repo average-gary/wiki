@@ -1,8 +1,8 @@
 ---
 title: "gimballock sv2-apps deploy branch — hardware-validation harness for the champion"
-source_url: https://github.com/marafoundation/sv2-apps/tree/test/vardiff-simulation-framework
+source: https://github.com/marafoundation/sv2-apps/tree/test/vardiff-simulation-framework
 source_branch: test/vardiff-simulation-framework
-type: repo
+type: repos
 ingested: 2026-06-24
 quality: 4
 confidence: high

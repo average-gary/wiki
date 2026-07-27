@@ -1,8 +1,8 @@
 ---
 title: "A New Mining Pool Emerges (Blockspace Media)"
 publication: newsletter.blockspacemedia.com
-url: https://newsletter.blockspacemedia.com/p/a-new-mining-pool-emerges-3d10
-type: article
+source: https://newsletter.blockspacemedia.com/p/a-new-mining-pool-emerges-3d10
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: medium

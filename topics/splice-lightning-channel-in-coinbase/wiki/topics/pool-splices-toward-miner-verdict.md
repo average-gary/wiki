@@ -1,8 +1,9 @@
 ---
 title: "Verdict: can a pool provision miner inbound by settling payouts as toward-miner splices?"
-type: topic
+category: topic
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 tags: [lightning, lsp, mining-pool, inbound-liquidity, on-the-fly-funding, jit-channel, splicing, dual-funding, verdict, thesis3]
 summary: "Follow-up thesis #3 verdict. Claim: a pool can provision miners' INBOUND LN liquidity by settling payouts as liquidity-ad/dual-funded/splice txs TOWARD each miner (funds on the pool's side), unifying payout delivery and inbound provisioning in one on-chain footprint. Verdict: PARTIALLY SUPPORTED / High. The mechanism is real, spec'd (bLIP-36/52, liquidity ads, interactive-tx batching) and DEPLOYED as wallet-LSPs (Phoenix/eclair #2861). But the literal 'funds on the pool's side = payout' wording is a category error (push_msat omitted from open_channel2 → no single tx carries both inbound-for-miner and payout-value-to-miner); the genuine unification is JIT/on-the-fly, where an incoming payment triggers the open and the fee is netted from it (on-chain tx = capacity, value = off-chain HTLC). And NO mining pool does this — only wallet-LSPs; it is a novel, unbuilt synthesis, gated by fee incidence, coinbase maturity, custody, and whether the miner will use the inbound."
 ---

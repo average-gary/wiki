@@ -1,7 +1,7 @@
 ---
 title: "The Purely Functional Software Deployment Model (PhD thesis)"
 source: https://edolstra.github.io/pubs/phd-thesis.pdf
-type: paper
+type: papers
 authors: Eelco Dolstra
 venue: Utrecht University (PhD dissertation)
 year: 2006

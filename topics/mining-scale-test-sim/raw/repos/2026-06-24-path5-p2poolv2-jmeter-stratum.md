@@ -2,8 +2,8 @@
 title: "p2poolv2/p2poolv2 :: load-tests/jmeter-testing — JMeter Stratum V1 load harness"
 type: raw-source
 source_kind: repo
-source_url: https://github.com/p2poolv2/p2poolv2/tree/main/load-tests/jmeter-testing
-fetched: 2026-06-24
+source: https://github.com/p2poolv2/p2poolv2/tree/main/load-tests/jmeter-testing
+ingested: 2026-06-24
 path: 5
 relevance: high
 ---

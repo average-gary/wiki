@@ -1,7 +1,7 @@
 ---
 title: "Aerial Toll Houses — Eastern Orthodox Post-Mortem Cosmology"
 source: "https://en.wikipedia.org/wiki/Aerial_toll_house"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [denomination, orthodox, eschatology, cosmology, demonology]

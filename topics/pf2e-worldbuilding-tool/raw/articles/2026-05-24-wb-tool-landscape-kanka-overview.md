@@ -1,7 +1,7 @@
 ---
 title: "Kanka Overview & Pricing"
 source: "https://kanka.io"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [worldbuilding, tool-comparison, kanka, pricing, open-source]

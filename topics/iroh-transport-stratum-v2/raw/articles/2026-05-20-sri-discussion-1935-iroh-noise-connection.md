@@ -1,6 +1,6 @@
 ---
 title: "RFC: Iroh [Noise] Connection (SRI Discussion #1935)"
-source_url: https://github.com/stratum-mining/stratum/discussions/1935
+source: https://github.com/stratum-mining/stratum/discussions/1935
 type: discussion
 date: 2025-10-03
 author: EthnTuttle

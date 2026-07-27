@@ -1,9 +1,11 @@
 ---
 title: Hardware Platform — Waveshare ESP32 Driver Board + WROOM-32E
-type: concept
+category: concept
 created: 2026-07-20
 updated: 2026-07-20
+volatility: warm
 tags: [hardware, waveshare, esp32, wroom-32e, pinout, framebuffer, psram]
+summary: "The physical baseline: a Waveshare e-Paper ESP32 Driver Board (Rev3) carrying an ESP32-WROOM-32E, connected to a Waveshare/GoodDisplay SPI e-paper panel through the board's 8-pin FPC adapter."
 confidence: high
 ---
 
@@ -95,3 +97,5 @@ battery math.
 - [Power & Refresh](power-and-refresh.md)
 - [Grayscale & Richer Visuals](grayscale-and-upgrade-path.md)
 - Sources: [WROOM-32E datasheet](../raw/data/2026-07-20-esp32-wroom-32e-datasheet.md), [board schematic](../raw/data/2026-07-20-waveshare-esp32-board-schematic.md), [board pinout](../raw/data/2026-07-20-waveshare-driver-board-pinout.md), [power measurements](../raw/notes/2026-07-20-board-power-measurements.md), [WROOM vs WROVER](../raw/articles/2026-07-20-wroom-vs-wrover-lvgl.md), [GxEPD2](../raw/repos/2026-07-20-gxepd2.md)
+- [[../reference/build-playbook.md|Build Playbook — a slow e-ink dashboard on the Waveshare ESP32 board]]
+- [[limitations-and-gotchas.md|Limitations & Gotchas]]

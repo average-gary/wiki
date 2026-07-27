@@ -1,9 +1,9 @@
 ---
 title: "Bevy 0.17 Release Announcement"
-source_url: https://bevy.org/news/bevy-0-17/
+source: https://bevy.org/news/bevy-0-17/
 source_date: 2025-09-30
 ingested: 2026-06-15
-type: article
+type: articles
 author: Bevy Foundation
 quality: 5
 credibility: high

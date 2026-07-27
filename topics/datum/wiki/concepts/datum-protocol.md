@@ -147,6 +147,13 @@ When the gateway loses its DATUM Protocol connection and can't reconnect, by def
 - [[deployment-and-node-config|Deployment and node config]] ([Deployment and node config](../concepts/deployment-and-node-config.md)) — operator-side setup for the link this protocol travels
 - [[datum-history-and-motivation|DATUM — history and motivation]] ([DATUM history and motivation](../concepts/datum-history-and-motivation.md)) — why this protocol's negative-space property (no template flows down) is the whole point
 - [[tides-payout|TIDES payout]] ([TIDES payout](../concepts/tides-payout.md)) — the generation-transaction output set that DATUM Protocol carries from the pool
+- [[datum-protocol-rust-implementation.md|DATUM Protocol — Rust implementation outline]]
+- [[../topics/datum-sv2-proxy-playbook.md|DATUM SV2-downstream proxy — playbook]]
+- [[drop-in-surface-inventory.md|Drop-in surface inventory — what a Rust replacement must match]]
+- [[gateway-internals-c-architecture.md|Gateway internals — C architecture, threading, and the queue seam]]
+- [[ocean-sv2-stance-and-prior-art.md|OCEAN's SV2 stance and prior art for a DATUM ↔ SV2 bridge]]
+- [[operator-value-and-threat-model.md|Operator value and threat model for the SV2-DATUM proxy]]
+- [[sv2-downstream-architecture.md|SV2-downstream architecture for a DATUM proxy]]
 
 ## Sources
 

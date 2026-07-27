@@ -1,7 +1,7 @@
 ---
 title: "No, don't enable revocation checking (Adam Langley, ImperialViolet)"
 source: https://www.imperialviolet.org/2014/04/19/revchecking.html
-type: article
+type: articles
 tags: [revocation, crl, ocsp, short-lived-certs, langley, contrarian]
 date: 2026-06-01
 publication_date: 2014-04-19

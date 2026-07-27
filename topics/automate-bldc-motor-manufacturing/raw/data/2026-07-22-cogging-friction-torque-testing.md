@@ -5,7 +5,7 @@ type: data
 tags: [cogging-torque, friction-torque, eol-test, fft, test-bench]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Hard numbers on how cogging/detent and friction torque are automatically measured with FFT and limit-based pass/fail.
 ---
 

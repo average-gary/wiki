@@ -1,7 +1,7 @@
 ---
 title: "IPFS in Practice — Wikipedia Summary, Adoption, and Real Limits"
-source_url: "https://en.wikipedia.org/wiki/InterPlanetary_File_System"
-type: article
+source: "https://en.wikipedia.org/wiki/InterPlanetary_File_System"
+type: articles
 path: infra-text
 date_ingested: 2026-05-27
 date_published: unknown

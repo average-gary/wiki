@@ -1,6 +1,6 @@
 ---
 title: "Mender Hub — Identity problem after cloning SD card"
-source_url: https://hub.mender.io/t/identity-problem-after-cloning-sd-card/4442
+source: https://hub.mender.io/t/identity-problem-after-cloning-sd-card/4442
 type: postmortem
 ingested: 2026-06-01
 quality: 4

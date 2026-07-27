@@ -1,7 +1,7 @@
 ---
 title: "Configure my own multiplayer lobby (0 A.D. forum thread)"
 source: https://wildfiregames.com/forum/topic/89559-configure-my-own-multiplayer-lobby/
-type: article
+type: articles
 ingested: 2026-06-18
 quality: 4
 confidence: high

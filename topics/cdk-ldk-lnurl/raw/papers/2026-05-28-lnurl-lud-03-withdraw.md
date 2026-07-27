@@ -1,8 +1,8 @@
 ---
 title: "LUD-03: withdrawRequest (LNURL-withdraw)"
-type: paper
+type: papers
 source: https://github.com/lnurl/luds/blob/luds/03.md
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [lnurl, lud-03, lnurl-withdraw, pull-payments, spec]
 summary: "Pull" payments — service initiates LN payment after wallet supplies an invoice. k1 is a bearer token with no built-in replay protection. Implementer must enforce single-use.

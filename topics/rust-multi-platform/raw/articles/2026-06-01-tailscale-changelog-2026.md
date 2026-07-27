@@ -1,6 +1,6 @@
 ---
 title: "Tailscale Changelog 2024-2026 — Workload Identity Federation, Device Posture"
-source_url: https://tailscale.com/changelog
+source: https://tailscale.com/changelog
 type: changelog
 ingested: 2026-06-01
 quality: 5

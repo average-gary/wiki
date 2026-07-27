@@ -1,12 +1,13 @@
 ---
 title: "ClientModule trait — what a Fedimint module author implements (client side)"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
 verified: 2026-06-15
 volatility: hot
 confidence: high
 tags: [fedimint, ClientModule, ClientModuleInit, module-authoring, state-machines, primary-module]
+summary: "The ClientModule trait is the client-side surface a Fedimint module implements. It lives in fedimint-client-module/src/module/mod.rs (master @ c39f9c8). Pair with ServerModule for the consensus side."
 ---
 
 # ClientModule trait

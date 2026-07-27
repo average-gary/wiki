@@ -1,6 +1,6 @@
 ---
 title: "Headless GPU benchmark + smoke-test suite for GTX 1060"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
@@ -152,3 +152,5 @@ Lighter alternative: `utkuozbulak/nvidia_gpu_exporter` — `nvidia-smi --query-g
 - [[pascal-driver-cuda-pinning]]
 - [[gpu-thermals-and-ops]]
 - [[ctranslate2-quantization-on-pascal]]
+- [[farm-vision-on-gtx-1060.md|Farm vision (herd counting) on GTX 1060 6GB]]
+- [[headless-ubuntu-laptop-baseline.md|Headless Ubuntu 22.04 baseline for an MSI GS63VR]]

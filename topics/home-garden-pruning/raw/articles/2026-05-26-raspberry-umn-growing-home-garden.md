@@ -1,7 +1,7 @@
 ---
 title: "Growing raspberries in the home garden"
-source_url: "https://extension.umn.edu/fruit/growing-raspberries-home-garden"
-type: article
+source: "https://extension.umn.edu/fruit/growing-raspberries-home-garden"
+type: articles
 path: raspberry
 date_ingested: 2026-05-26
 date_published: 2024-01-01

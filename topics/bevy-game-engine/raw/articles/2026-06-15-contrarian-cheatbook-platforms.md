@@ -1,9 +1,9 @@
 ---
 title: "Bevy on Different Platforms (Unofficial Bevy Cheat Book — platform support)"
-source_url: https://bevy-cheatbook.github.io/platforms.html
+source: https://bevy-cheatbook.github.io/platforms.html
 source_date: 2024
 ingested: 2026-06-15
-type: article
+type: articles
 author: Jasen Borisov / Unofficial Bevy Cheat Book
 quality: 3
 credibility: medium

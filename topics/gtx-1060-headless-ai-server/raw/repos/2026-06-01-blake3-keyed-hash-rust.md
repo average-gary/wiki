@@ -1,7 +1,7 @@
 ---
 title: "blake3 crate — keyed_hash and derive_key for Wesh-style seed rotation"
 source: https://docs.rs/blake3
-type: repo
+type: repos
 tags: [blake3, keyed-hash, derive-key, kdf, mac, seed-rotation]
 date: 2026-06-01
 publication_date: 2026

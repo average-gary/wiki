@@ -2,8 +2,8 @@
 title: "IanoNjuguna/stratum-v2-tools :: sv2-test/PerformanceLoadTestSuite — existing SV2 load suite"
 type: raw-source
 source_kind: repo
-source_url: https://github.com/IanoNjuguna/stratum-v2-tools/blob/main/sv2-test/examples/performance_load_demo.rs
-fetched: 2026-06-24
+source: https://github.com/IanoNjuguna/stratum-v2-tools/blob/main/sv2-test/examples/performance_load_demo.rs
+ingested: 2026-06-24
 path: 5
 relevance: medium
 ---

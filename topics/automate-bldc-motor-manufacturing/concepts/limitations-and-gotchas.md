@@ -1,9 +1,11 @@
 ---
 title: Limitations & Gotchas
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [limitations, contrarian, defect-modes, changeover, fill-factor, weld-porosity, diy]
+summary: "The steelman of what makes brushless-motor automation hard — and when *not* to automate. Read this before committing capital."
 confidence: high
 ---
 
@@ -77,3 +79,5 @@ Also thin: **slotless-stator** process differences, and independent (non-vendor)
 - [Magnet Handling & Magnetization](magnet-handling-magnetization.md)
 - [Quality & EOL Testing](quality-and-eol-testing.md)
 - [Line Economics & Architecture](line-economics-and-architecture.md)
+- [[../reference/build-playbook.md|Build Playbook — How to Automate Brushless Motor Manufacturing]]
+- [[process-chain.md|The BLDC/PMSM Manufacturing Process Chain]]

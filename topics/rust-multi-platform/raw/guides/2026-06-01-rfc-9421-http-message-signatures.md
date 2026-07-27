@@ -1,6 +1,6 @@
 ---
 title: "RFC 9421 — HTTP Message Signatures"
-source_url: https://datatracker.ietf.org/doc/html/rfc9421
+source: https://datatracker.ietf.org/doc/html/rfc9421
 type: rfc
 ingested: 2026-06-01
 quality: 5

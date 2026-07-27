@@ -1,7 +1,7 @@
 ---
 title: "ckpool stratifier.c — quoted code for startdiff, ssdc, vardiff_thread (the ramp-up gates)"
-source_url: https://github.com/ckolivas/ckpool/blob/master/src/stratifier.c
-type: article
+source: https://github.com/ckolivas/ckpool/blob/master/src/stratifier.c
+type: articles
 ingested: 2026-06-24
 quality: 5
 confidence: high

@@ -1,7 +1,7 @@
 ---
 title: "YHWH deity entry — synthesis from Divine Mysteries Remaster patterns"
 source: "Synthesis across deity-285 (Iomedae), deity-292 (Sarenrae), deity-290 (Pharasma), deity-282 (Erastil), deity-277 (Abadar), deity-281 (Torag), deity-275 (Asmodeus)"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, remaster, lost-omens, deity-template, divine-mysteries, yhwh, synthesis, gap-closing]
 quality: 5

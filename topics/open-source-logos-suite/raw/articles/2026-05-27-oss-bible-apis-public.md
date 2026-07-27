@@ -1,7 +1,7 @@
 ---
 title: "Public Free Bible APIs: bible-api.com and wldeh/bible-api"
-source_url: "https://bible-api.com/"
-type: article
+source: "https://bible-api.com/"
+type: articles
 path: oss
 date_ingested: 2026-05-27
 date_published: 2026-05-27

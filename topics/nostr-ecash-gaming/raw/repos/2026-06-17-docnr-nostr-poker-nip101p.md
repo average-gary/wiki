@@ -1,9 +1,9 @@
 ---
 title: "DocNR/nostr-poker — non-custodial online poker on Nostr + Lightning (NIP-101p draft)"
 source: https://github.com/DocNR/nostr-poker
-type: repo
+type: repos
 tags: [nostr, lightning, poker, nip-101p, commit-reveal, gaming, replaceable-dealer, marketplace, microstandard]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: high
 quality_score: 5

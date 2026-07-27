@@ -1,9 +1,12 @@
 ---
 title: "Connection-scale bottlenecks — what saturates first"
-type: concept
+category: concept
 created: 2026-06-24
+updated: 2026-06-24
+volatility: warm
 confidence: high
 tags: [scale, bottleneck, tcp, noise, tokio]
+summary: "For a Rust/C SV2 pool on a modern 8-16 core box with a 10G NIC, saturation order from 1k → 1M concurrent stratum connections:"
 ---
 
 # Connection-scale bottlenecks

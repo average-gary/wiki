@@ -1,9 +1,9 @@
 ---
 title: "Community Reflection on Bevy's Fifth Year"
-source_url: https://bevy.org/news/community-reflection-on-bevys-fifth-year/
+source: https://bevy.org/news/community-reflection-on-bevys-fifth-year/
 source_date: 2025-09-15
 ingested: 2026-06-15
-type: article
+type: articles
 author: Bevy Foundation (compiling contributor essays)
 quality: 3
 credibility: medium

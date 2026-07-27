@@ -1,6 +1,6 @@
 ---
 title: "SpecterOps — Leveraging Tailscale Keys"
-source_url: https://specterops.io/blog/2026/03/12/leveraging-tailscale-keys/
+source: https://specterops.io/blog/2026/03/12/leveraging-tailscale-keys/
 type: security-advisory
 ingested: 2026-06-01
 date_published: 2026-03-12

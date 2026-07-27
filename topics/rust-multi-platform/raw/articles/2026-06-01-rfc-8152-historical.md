@@ -1,6 +1,6 @@
 ---
 title: "RFC 8152 — COSE (2017, obsoleted by RFC 9052/9053)"
-source_url: https://datatracker.ietf.org/doc/html/rfc8152
+source: https://datatracker.ietf.org/doc/html/rfc8152
 type: rfc
 ingested: 2026-06-01
 date_published: 2017-07

@@ -1,14 +1,15 @@
 ---
 title: "MACULA syntactic search: query DSL + indexing"
-type: concept
+category: concept
 created: 2026-06-02
 updated: 2026-06-02
 verified: 2026-06-02
 volatility: warm
+summary: "Clear-Bible's MACULA Greek and MACULA Hebrew now ship full syntax trees in a \"lowfat\" XML format (lowfat schema, 3 John sample) under CC BY 4.0 with no ShareAlike clause (MACULA Greek license)."
 confidence: high
 sources:
-  - raw/articles/2026-06-02-macula-greek-readme.md
-  - raw/articles/2026-06-02-macula-hebrew-readme.md
+  - ../../raw/repos/2026-06-02-macula-greek-readme.md
+  - ../../raw/repos/2026-06-02-macula-hebrew-readme.md
   - raw/articles/2026-06-02-macula-greek-license.md
   - raw/articles/2026-06-02-lowfat-xml-schema.md
   - raw/articles/2026-06-02-lowfat-3john-sample.md

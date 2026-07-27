@@ -1,7 +1,7 @@
 ---
 title: "Ark Labs — Adios, Expiry (delegation / liveness)"
 source: https://blog.arklabs.xyz/adios-expiry-rethinking-liveness-and-liquidity-in-arkade/
-type: article
+type: articles
 ingested: 2026-07-17
 credibility: medium
 direction: nuances

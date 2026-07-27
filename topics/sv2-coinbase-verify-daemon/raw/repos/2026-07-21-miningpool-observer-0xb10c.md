@@ -1,10 +1,10 @@
 ---
 title: "miningpool.observer + 0xB10C observations (template↔block observer; coinbase EXCLUDED)"
-source_url: https://github.com/0xB10C/miningpool-observer
+source: https://github.com/0xB10C/miningpool-observer
 source_url_2: https://miningpool.observer/
 source_url_3: https://b10c.me/observations/12-template-similarity/
-type: repo
-retrieved: 2026-07-21
+type: repos
+ingested: 2026-07-21
 credibility: high
 corroboration: "prior-art agent"
 tags: [miningpool-observer, 0xB10C, template-comparison, censorship, coinbase-tag, merkle-branch, transparency, rust]

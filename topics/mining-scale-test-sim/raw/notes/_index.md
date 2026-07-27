@@ -21,3 +21,5 @@ title: raw/notes
 
 - [2026-06-24-r2-pathD-vardiff-rampup-math.md](2026-06-24-r2-pathD-vardiff-rampup-math.md) — quantified burst-connect storm: ckpool startdiff=42 → 554 sps/conn for S19 → 55M sps aggregate at N=100k, ~1800× steady-state for ~65 ms before first retarget. SRI vs ckpool asymmetry. public-pool #120 inverse-storm case.
 - [2026-06-24-r2-pathD-gimballock-coldstart-metrics.md](2026-06-24-r2-pathD-gimballock-coldstart-metrics.md) — gimballock's `convergence_p50/p90_secs` + `overshoot_p99` metric definitions from bin/convergence-time + FINDINGS.md; Champion commit 1c645bcf cold-start ramp 34→15 min; EwmaEstimator cold-start code path; SPM=6 cascade explanation.
+
+- [[2026-06-24-r2-pathC-tokio-modern-benchmarks.md|Tokio benchmarks 2024-2026: what's actually changed since the 2019 scheduler post]]

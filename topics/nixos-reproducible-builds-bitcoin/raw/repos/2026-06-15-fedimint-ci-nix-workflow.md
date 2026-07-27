@@ -1,7 +1,7 @@
 ---
 title: "Fedimint .github/workflows/ci-nix.yml — flake-driven OCI release pipeline"
-type: repo
-source_url: https://github.com/fedimint/fedimint/blob/master/.github/workflows/ci-nix.yml
+type: repos
+source: https://github.com/fedimint/fedimint/blob/master/.github/workflows/ci-nix.yml
 ingested: 2026-06-15
 confidence: high
 relevance: direct

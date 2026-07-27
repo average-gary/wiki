@@ -1,7 +1,7 @@
 ---
 title: "Caleb's Pathfinder Campaign Wiki — 'The One True God' homebrew deity (PF1)"
 source: "https://pdd.fandom.com/wiki/The_One_True_God"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, christian-homebrew, pf1, fan-content, gap-closing, single-deity]
 quality: 3

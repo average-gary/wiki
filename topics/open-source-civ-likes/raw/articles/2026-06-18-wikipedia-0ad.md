@@ -1,7 +1,7 @@
 ---
 title: "Wikipedia — 0 A.D. (video game)"
 source: https://en.wikipedia.org/wiki/0_A.D._(video_game)
-type: article
+type: articles
 ingested: 2026-06-18
 quality: 4
 confidence: high

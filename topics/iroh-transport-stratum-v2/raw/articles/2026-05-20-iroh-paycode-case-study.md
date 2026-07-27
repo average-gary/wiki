@@ -1,6 +1,6 @@
 ---
 title: "Iroh in Production: Paycode (payment terminals)"
-source_url: https://www.iroh.computer/blog/paycode
+source: https://www.iroh.computer/blog/paycode
 type: case-study
 date: 2026-03-26
 org: n0-computer / Paycode (Carlos Diez)

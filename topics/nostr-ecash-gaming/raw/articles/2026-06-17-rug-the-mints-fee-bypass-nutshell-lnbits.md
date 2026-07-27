@@ -1,9 +1,9 @@
 ---
 title: "Rug the Mints — Nutshell LNbitsWallet silently bypasses fee_limit_msat"
 source: https://uncensoredtech.substack.com/p/rug-the-mints
-type: article
+type: articles
 tags: [cashu, security, vulnerability, mint-insolvency, lightning, nutshell, melt-fee, gaming-implications]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: high
 quality_score: 5

@@ -7,7 +7,7 @@ type: data
 tags: [magnet-bonding, magnetizer, adhesive-dosing, polarity-control, robotic-cell, vendor]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Vendor-side confirmation of the pre-vs-post-magnetization decision, SPM+IPM handling, adhesive dosing, polarity control, and CD-magnetizer specs.
 ---
 

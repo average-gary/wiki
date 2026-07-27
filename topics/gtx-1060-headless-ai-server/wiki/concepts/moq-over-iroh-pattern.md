@@ -1,6 +1,6 @@
 ---
 title: "Media-over-QUIC over Iroh — moq-lite + moq-relay on iroh transport"
-type: concept
+category: concept
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-06-01-iroh-secure-video-everywhere-blog.md
   - raw/articles/2026-06-01-masque-connect-udp-warning.md
 tags: [moq, moq-lite, moq-relay, iroh, web-transport, real-time-media]
+summary: "The \"publish a live stream from my homelab AI server to family/friends without a public IP\" pattern."
 ---
 
 # Media-over-QUIC over Iroh

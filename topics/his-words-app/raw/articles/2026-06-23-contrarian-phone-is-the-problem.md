@@ -5,6 +5,7 @@ created: 2026-06-23
 quality: high
 confidence: 0.95
 source: Andy Crouch (Tech-Wise Family), Cal Newport (Digital Minimalism), Tony Reinke (12 Ways Your Phone Is Changing You)
+type: articles
 summary: "The strongest theological critique of His Words is not that it's ineffective, but that it misdiagnoses the problem. The answer to 'too much phone' is not 'more verses on phone'—it's *less phone*. Crouch, Newport, and Reinke argue that discipline requires *friction*, not optimization."
 ---
 

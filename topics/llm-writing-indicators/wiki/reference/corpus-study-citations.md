@@ -1,11 +1,13 @@
 ---
 title: "Reference: corpus-study & key-paper citations"
-type: reference
+category: reference
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, reference, citations, papers]
+summary: "Citable primary sources for the claims in this wiki, grouped by what they establish."
 sources:
   - raw/papers/2026-07-13-kobak-excess-vocabulary-pubmed.md
   - raw/papers/2026-07-13-liang-peer-reviews-ai-modified.md

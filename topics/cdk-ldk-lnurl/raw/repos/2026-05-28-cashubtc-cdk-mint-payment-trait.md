@@ -1,8 +1,8 @@
 ---
 title: "cashubtc/cdk — `MintPayment` trait (cdk-common)"
-type: repo
+type: repos
 source: https://github.com/cashubtc/cdk/blob/main/crates/cdk-common/src/payment.rs
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [cdk, mint-payment-trait, lightning-backend, abstraction]
 summary: The canonical Rust trait every CDK lightning backend implements (cdk-cln, cdk-lnd, cdk-lnbits, cdk-fake-wallet, cdk-ldk-node, cdk-payment-processor). Defines the contract a mint-side LNURL bridge must wrap.

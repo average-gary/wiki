@@ -1,7 +1,7 @@
 ---
 title: "World Anvil 2026 Updates (Official Blog)"
 source: "https://blog.worldanvil.com/"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: 2026-03-01
 tags: [worldbuilding, tool-comparison, world-anvil]

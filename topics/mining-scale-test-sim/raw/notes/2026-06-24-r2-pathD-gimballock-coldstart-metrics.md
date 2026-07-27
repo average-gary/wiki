@@ -1,6 +1,6 @@
 ---
 title: "gimballock — convergence_time + ramp_target_overshoot cold-start metrics; Champion's ramp fix"
-source_url: https://github.com/marafoundation/stratum/blob/vardiff/simulation-framework/sv2/channels-sv2/sim/src/bin/convergence-time.rs
+source: https://github.com/marafoundation/stratum/blob/vardiff/simulation-framework/sv2/channels-sv2/sim/src/bin/convergence-time.rs
 source_branch: vardiff/simulation-framework
 type: notes
 ingested: 2026-06-24

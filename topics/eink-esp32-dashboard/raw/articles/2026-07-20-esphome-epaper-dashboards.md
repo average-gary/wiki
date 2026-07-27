@@ -1,7 +1,7 @@
 ---
 title: "ESPHome e-paper dashboards — waveshare_epaper + online_image (docs + SmartHomeScene)"
 source: https://esphome.io/components/display/waveshare_epaper/
-type: article
+type: articles
 tags: [esphome, waveshare, e-paper, yaml, home-assistant, online-image, no-code, refresh]
 date: 2026-07-20
 quality: 5

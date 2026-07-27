@@ -1,7 +1,7 @@
 ---
 title: "CTranslate2 quantization on compute capability 6.1 (Pascal)"
 source: https://opennmt.net/CTranslate2/quantization.html
-type: article
+type: articles
 tags: [ctranslate2, faster-whisper, pascal, sm_61, compute-type, fp16-fallback]
 date: 2026-05-21
 quality: 6

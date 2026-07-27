@@ -1,7 +1,7 @@
 ---
 title: "GxEPD2_4G — 4 grey levels on SPI panels (ZinggJM)"
 source: https://github.com/ZinggJM/GxEPD2_4G
-type: repo
+type: repos
 tags: [gxepd2-4g, grayscale, 4-gray, spi, waveshare, good-display, ghosting, wroom]
 date: 2026-07-20
 quality: 5

@@ -27,4 +27,4 @@ Compiled knowledge layer for the topic. Per-plant playbooks live under `topics/`
 - [[reference/rose-rosette-disease|Rose Rosette Disease]]
 
 ## Tools
-- [[tools/pruning-tools|Pruning tools]]
+- [[reference/pruning-tools|Pruning tools]]

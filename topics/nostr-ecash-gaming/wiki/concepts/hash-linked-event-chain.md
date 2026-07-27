@@ -1,10 +1,12 @@
 ---
 title: Hash-linked Nostr event chain
-type: concept
+category: concept
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [nostr, ordering, application-layer-fix, nutchain, kirk]
+summary: "A pattern that compensates for Nostr's lack of native event ordering by chaining each game-state event to its predecessor via an e tag carrying the predecessor's event id + a sequence number."
 ---
 
 # Hash-linked Nostr event chain
@@ -47,3 +49,4 @@ subsequent event.
 ## See also
 
 - [[wiki/concepts/post-hoc-validator-pattern]]
+- [[nutchain-event-kinds.md|Nutchain event-kind range (30800-30814)]]

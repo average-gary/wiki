@@ -1,7 +1,7 @@
 ---
 title: "Christian Angelology: Hierarchy, Named Archangels, and Tradition"
 source: "https://en.wikipedia.org/wiki/Christian_angelology"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [theology, angelology]

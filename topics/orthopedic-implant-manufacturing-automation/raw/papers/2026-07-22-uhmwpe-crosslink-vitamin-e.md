@@ -1,11 +1,11 @@
 ---
 title: "Highly Crosslinked / Vitamin-E-Stabilized UHMWPE Bearings — process chain"
 source: https://pmc.ncbi.nlm.nih.gov/articles/PMC2716092/
-type: paper
+type: papers
 tags: [uhmwpe, polyethylene, bearing, crosslinking, vitamin-e, gamma, materials, machining]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Peer-reviewed account of the UHMWPE bearing chain — consolidate → machine → gamma-crosslink → stabilize (remelt vs anneal vs vitamin-E) → inert-gas sterilize. The one implant material that is still fundamentally machined, gated by long thermal-diffusion batch steps.
 ---
 

@@ -3,7 +3,7 @@ title: "Monitoring AI-Modified Content at Scale: A Case Study on the Impact of C
 source: https://arxiv.org/abs/2403.07183
 authors: Weixin Liang, Zachary Izzo, Yaohui Zhang, Haley Lepp, Hancheng Cao, Xuandong Zhao, Lingjiao Chen, Haotian Ye, Sheng Liu, Zhi Huang, Daniel A. McFarland, James Y. Zou
 venue: ICML 2024; arXiv:2403.07183 (2024)
-type: paper
+type: papers
 tags: [llm-writing-indicators, corpus-study, peer-review, adjectives, distributional-estimation]
 quality: 5
 confidence: high

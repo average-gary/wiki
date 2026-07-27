@@ -1,6 +1,6 @@
 ---
 title: "Reference: specs, crates, repos"
-type: reference
+category: reference
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-20

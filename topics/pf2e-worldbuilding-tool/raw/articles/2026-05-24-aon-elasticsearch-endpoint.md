@@ -1,7 +1,7 @@
 ---
 title: "Archives of Nethys — public Elasticsearch endpoint (de-facto API)"
 source: "https://elasticsearch.aonprd.com/aon/_search"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: unknown
 tags: [pf2e, aon, archives-of-nethys, api, elasticsearch, scraping, data-export, primary-source]

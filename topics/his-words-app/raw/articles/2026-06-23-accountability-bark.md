@@ -1,7 +1,7 @@
 ---
 title: Bark — Child/Teen Monitoring, School District Distribution, and the Mental-Health Alerts Pivot
 source: https://www.bark.us/pricing/ + https://www.bark.us/how-bark-works/ + https://www.bark.us/schools/ + https://www.bark.us/blog/bark-for-schools/
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, accountability, family-mode, bark, school-distribution, mental-health-alerts, parental-controls]
 quality: 5

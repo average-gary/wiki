@@ -1,10 +1,12 @@
 ---
 title: "Sourcing the expected value"
-type: concept
+category: concept
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
 tags: [bitcoin, subsidy, fees, coinbase_tx_value_remaining, payout-address, pplns, fpps, solo, datum, expected-value]
+summary: "The daemon checks the observed coinbase against an *expected* value — but \"expected value\" decomposes into three independent questions, each with a different source and trust profile."
 ---
 
 # Sourcing the expected value

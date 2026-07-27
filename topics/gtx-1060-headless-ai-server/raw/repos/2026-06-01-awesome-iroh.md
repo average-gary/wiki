@@ -1,7 +1,7 @@
 ---
 title: "awesome-iroh — curated list of shipping iroh apps"
 source: https://github.com/n0-computer/awesome-iroh
-type: repo
+type: repos
 tags: [iroh, ecosystem, apps, ssh, qr-pairing, file-transfer]
 date: 2026-06-01
 quality: 4

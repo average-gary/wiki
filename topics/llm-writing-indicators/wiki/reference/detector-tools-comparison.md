@@ -1,11 +1,13 @@
 ---
 title: "Reference: detector tools comparison"
-type: reference
+category: reference
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, reference, detectors, tools]
+summary: "Quick-reference table. Full analysis in detection tools & limits. No tool listed here is reliable enough to be a verdict."
 sources:
   - raw/papers/2026-07-13-mitchell-detectgpt.md
   - raw/papers/2026-07-13-hans-binoculars.md

@@ -3,7 +3,9 @@ title: "DATUM SV2-downstream proxy — playbook"
 category: topic
 created: 2026-06-01
 updated: 2026-06-01
+volatility: warm
 tags: [playbook, sv2-proxy, datum, ocean, tides, sri, channels-sv2]
+summary: "A practical synthesis. Read this article and you should know what the proxy is, why it exists, what it preserves and what it costs, where in the SRI codebase it goes, who would deploy it, and the build path of least resistance."
 confidence: high
 ---
 
@@ -159,3 +161,4 @@ Reuse ratio ≈ **6:1**.
 - [[../../sv1-upstream-reverse-translator/wiki/topics/reverse-translator-playbook]] — generic version of this pattern
 - [[../../bitcoin-mining-payout-schemas/wiki/concepts/datum]] — DATUM in payout-schema context
 - [[../../stratum-sri/_index]] — the SRI codebase the proxy reuses
+- [[drop-in-rust-datum-gateway.md|Drop-in Rust DATUM gateway — synthesis]]

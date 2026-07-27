@@ -1,7 +1,7 @@
 ---
 title: "Wikipedia — Open-source video game (challenges section)"
 source: https://en.wikipedia.org/wiki/Open-source_video_game
-type: article
+type: articles
 ingested: 2026-06-18
 quality: 3
 confidence: medium

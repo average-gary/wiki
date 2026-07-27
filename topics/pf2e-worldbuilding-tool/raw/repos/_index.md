@@ -14,3 +14,6 @@ updated: 2026-05-25
 - [2026-05-24-llm-integration-patterns-llamacpp-grammars](2026-05-24-llm-integration-patterns-llamacpp-grammars.md) — llama.cpp GBNF grammars for structured output
 - [2026-05-24-wb-tool-landscape-fantasy-statblocks](2026-05-24-wb-tool-landscape-fantasy-statblocks.md) — Obsidian Fantasy Statblocks plugin (PF2e + 5e + 13th Age + Daggerheart)
 - [2026-05-24-wb-tool-landscape-initiative-tracker](2026-05-24-wb-tool-landscape-initiative-tracker.md) — Obsidian Initiative Tracker plugin
+
+- [[2026-05-24-world-data-modeling-automerge-crdt.md|Automerge — JSON-like CRDT for Local-First Apps]] — Automerge is a JSON-CRDT library with Rust core + JS/WASM/C/Swift bindings, automatic merge of concurrent…
+- [[2026-05-24-world-data-modeling-kuzudb-embedded-graph.md|KuzuDB — Embedded Property Graph Database]] — KuzuDB is an embeddable property-graph DB with Cypher, Python/JS/C++ bindings, columnar disk storage, ACID…

@@ -1,9 +1,9 @@
 ---
 title: "Cashu Casino + other shipped Cashu games — survey of awesome-cashu gaming entries"
 source: https://github.com/cashubtc/awesome-cashu
-type: repo
+type: repos
 tags: [cashu, gaming, casino, monopoly, chess, awesome-cashu, payment-rail-only]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: medium
 quality_score: 3

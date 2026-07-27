@@ -6,7 +6,7 @@ type: data
 tags: [shrink-fit, induction-heating, press-fit, rotor-line, cycle-time, error-proofing]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Physics + control of the stator-into-housing shrink-fit station, plus a full automated rotor line sequence with real cycle-time/yield numbers.
 ---
 

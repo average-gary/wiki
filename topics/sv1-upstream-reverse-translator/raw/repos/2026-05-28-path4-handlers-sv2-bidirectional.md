@@ -1,3 +1,21 @@
+---
+title: "path4 — handlers_sv2 is already bidirectional (FromClient / FromServer)"
+source: https://github.com/stratum-mining/stratum/tree/main/sv2/handlers-sv2
+url: https://github.com/stratum-mining/stratum/tree/main/sv2/handlers-sv2
+type: repos
+category: repo
+crate_name: handlers_sv2
+language: Rust
+local_path: /Users/garykrause/repos/stratum/sv2/handlers-sv2/
+date_observed: 2026-05-28
+ingested: 2026-05-28
+volatility: warm
+credibility: high
+confidence: high
+tags: [handlers-sv2, sri, message-dispatch, direction-symmetry, from-client, from-server, no-fork, path4]
+summary: "handlers_sv2 is the canonical SV2 message-dispatch layer and is already direction-aware: every subprotocol exposes both *FromClient* and *FromServer* trait variants. A reverse translator picks the FromClient variants for its SV2 side (it is the SV2 server) with no fork and no patch."
+---
+
 # path4 - handlers_sv2 (bidirectional handler traits)
 
 **Source type**: repos

@@ -1,10 +1,12 @@
 ---
 title: NUT-11 P2PK reward-locking
-type: concept
+category: concept
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [cashu, nut-11, p2pk, schnorr, reward, kirk]
+summary: "NUT-11 adds a Pay-to-Public-Key spending condition to a Cashu Proof: the proof is spendable only when accompanied by a valid Schnorr signature over the proof's secret using the locking pubkey."
 ---
 
 # NUT-11 P2PK reward-locking

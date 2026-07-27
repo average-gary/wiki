@@ -2,9 +2,9 @@
 title: "BOLT #2 — splice balance direction (funding_contribution_satoshis)"
 source: "https://github.com/lightning/bolts/blob/master/02-peer-protocol.md"
 raw_source: "https://raw.githubusercontent.com/lightning/bolts/master/02-peer-protocol.md"
-type: paper
+type: papers
 subtype: spec
-retrieved: 2026-07-23
+ingested: 2026-07-23
 verified_verbatim: true
 tags: [lightning, bolt2, splicing, splice-in, splice-out, channel-balance, inbound, outbound, liquidity-direction]
 credibility: high

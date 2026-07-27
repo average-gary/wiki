@@ -1,7 +1,7 @@
 ---
 title: "iroh-docs — NamespaceSecret, DocTicket, and the missing capability-rotation layer"
 source: https://docs.rs/iroh-docs/latest/iroh_docs/
-type: article
+type: articles
 tags: [iroh-docs, namespace, doc-ticket, capability, no-revocation, gap]
 date: 2026-06-01
 quality: 4

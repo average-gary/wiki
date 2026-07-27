@@ -1,6 +1,7 @@
 ---
 title: "DATUM Gateway Config Surface — Operator Knobs the SV2 Variant Inherits"
-source_url: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_conf.c
+source: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_conf.c
+type: articles
 source_type: source-file
 upstream: OCEAN-xyz/datum_gateway
 branch: master

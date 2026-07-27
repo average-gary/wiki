@@ -1,10 +1,12 @@
 ---
 title: Threshold-OPRF DASoR
-type: concept
+category: concept
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [nutchain, threshold-cryptography, oprf, frost, chilldkg, randomness, dasor]
+summary: "DASoR — Deterministic Authoritative Source of Randomness — is nutchain's design for unbiasable distributed randomness in P2P games where there is no central referee."
 ---
 
 # Threshold-OPRF DASoR

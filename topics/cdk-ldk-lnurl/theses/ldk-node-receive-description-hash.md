@@ -4,11 +4,14 @@ type: thesis
 status: completed
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 verdict: supported
 confidence: high
 core_claim: "LDK Node's `Bolt11Payment::receive` (or sibling on the bolt11_payment() handle) accepts a caller-supplied 32-byte description_hash for the BOLT11 `h` tag, not just a plaintext description string."
 key_variables: [Bolt11Payment, description_hash, BOLT11-h-tag, Bolt11InvoiceDescription, ldk-node]
 falsification: "All LDK Node BOLT11 invoice paths take only a description string and internally compute the hash; no public API accepts a raw Sha256 for the description_hash field."
+tags: [thesis]
+summary: "LDK Node's `Bolt11Payment::receive` (or sibling on the bolt11_payment() handle) accepts a caller-supplied 32-byte description_hash for the BOLT11 `h` tag, not just a plaintext description string."
 ---
 
 # Thesis: LDK Node `bolt11_payment().receive` accepts caller-supplied description_hash

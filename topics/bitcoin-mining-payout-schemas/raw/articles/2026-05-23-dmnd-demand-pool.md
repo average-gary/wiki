@@ -1,13 +1,13 @@
 ---
 title: "DMND / Demand Pool — first production Stratum V2 pool, SLICE payout"
 publication: dmnd.work
-url: https://dmnd.work
-type: article
+source: https://dmnd.work
+type: articles
 ingested: 2026-05-23
 quality: 4
 credibility: medium
 confidence: medium
-tags: [DMND, Demand-Pool, SLICE, PPLNS-JD, Stratum-V2]
+tags: [dmnd, demand-pool, SLICE, pplns-jd, stratum-v2]
 ---
 
 # Demand Pool (DMND) — SLICE / PPLNS-JD

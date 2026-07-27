@@ -1,7 +1,7 @@
 ---
 title: "Streaks gamification: Duolingo, Snapchat, and the count-streak vs. duration-streak literature."
 source: https://research.duolingo.com/
-type: paper
+type: papers
 created: 2026-06-23
 tags: [his-words-app, behavioral-psychology, streaks, gamification, retention, habit]
 quality: 4

@@ -1,7 +1,7 @@
 ---
 title: "p2poolv2 accounting critiques (delvingbitcoin 2024-2025)"
 publication: delvingbitcoin.org
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high

@@ -1,8 +1,8 @@
 ---
 title: "LDK Node v0.7.0 release notes"
-type: article
+type: articles
 source: https://github.com/lightningdevkit/ldk-node/releases/tag/v0.7.0
-fetched: 2026-05-28
+ingested: 2026-05-28
 published: 2025-12-03
 confidence: high
 tags: [ldk-node, release-notes, splicing, async-payments, vss, lsps2]

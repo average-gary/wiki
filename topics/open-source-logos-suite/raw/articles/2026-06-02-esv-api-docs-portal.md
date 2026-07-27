@@ -1,7 +1,7 @@
 ---
 title: "ESV API developer documentation (api.esv.org/docs)"
-url: https://api.esv.org/docs/
-retrieved: 2026-06-02
+source: https://api.esv.org/docs/
+ingested: 2026-06-02
 type: spec
 ---
 

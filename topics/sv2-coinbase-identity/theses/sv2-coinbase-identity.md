@@ -4,11 +4,14 @@ type: thesis
 status: completed
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 verdict: partially-supported
 confidence: high
 core_claim: "On Stratum V2, a downstream can supply a unique value in the user_identity field of OpenStandardMiningChannel / OpenExtendedMiningChannel, and the upstream Pool can use that value to construct a coinbase transaction that includes a per-miner marker (a string, NOT a cryptographic signature) alongside the pool's own identifier — without invoking the Job Declaration Protocol."
 key_variables: [user_identity, OpenMiningChannel, NewExtendedMiningJob, coinbase_prefix, coinbase_suffix, SetCustomMiningJob, JobDeclarationProtocol]
 falsification: "If the SV2 spec or reference implementation explicitly forbids the Pool from writing per-miner data into the coinbase under non-JD operation, defines coinbase_prefix/coinbase_suffix as broadcast-only with no per-channel variation other than extranonce, and provides no architectural seam for per-channel coinbase derivation, then the thesis is contradicted."
+tags: [thesis]
+summary: "On Stratum V2, a downstream can supply a unique value in the user_identity field of OpenStandardMiningChannel / OpenExtendedMiningChannel, and the upstream Pool can use that value to construct a coinbase transaction that includes a per-miner marker (a string, NOT a cryptographic signature) alongside the pool's own identifier — without invoking the Job Declaration Protocol."
 ---
 
 # Thesis: SV2 user_identity can carry a per-miner unique tag into the Pool-built coinbase

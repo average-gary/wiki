@@ -1,7 +1,7 @@
 ---
 title: "mozilla/application-services — the canonical UniFFI shipper (Firefox shared core)"
 source: https://github.com/mozilla/application-services
-type: repo
+type: repos
 tags: [uniffi, mozilla, firefox, megazord, reference-architecture]
 date: 2026-05-21
 quality: 5

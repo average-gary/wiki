@@ -4,11 +4,14 @@ type: thesis
 status: candidate
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 verdict: pending
 confidence: pending
 core_claim: "Fedimint's reproducibility infrastructure is build-time-strong but verification-time-weak; establishing a `fedimint.sigs` repo modeled on `bitcoin-core/guix.sigs`, with ≥3 independent rebuilders per release, would close the gap at minimal cost given the existing `just sign-release` script."
 key_variables: [fedimint-sigs-repo, signer-roster, just-sign-release, cachix-tofu, guardian-coordination, federation-trust-model]
 falsification: "Fedimint maintainers explicitly reject the multi-builder model citing federation-already-trusts-the-threshold; OR the `just sign-release` script's per-system SHA256SUMS prove non-deterministic across rebuilders such that no cohort could ever agree on hashes."
+tags: [thesis]
+summary: "Fedimint's reproducibility infrastructure is build-time-strong but verification-time-weak; establishing a `fedimint.sigs` repo modeled on `bitcoin-core/guix.sigs`, with ≥3 independent rebuilders per release, would close the gap at minimal cost given the existing `just sign-release` script."
 ---
 
 # Thesis: Fedimint needs `fedimint.sigs`
@@ -61,3 +64,4 @@ to render a verdict.
 - [[../wiki/topics/lightning-node-reproducibility-under-nix.md]]
 - [[nix-can-match-guix-attestation.md]]
 - [[../wiki/concepts/multi-builder-attestation.md]]
+- [[sv2-apps-can-easily-adopt-fedimint-style-oci.md|Thesis: sv2-apps could easily adopt reproducible builds for OCI containers like Fedimint]]

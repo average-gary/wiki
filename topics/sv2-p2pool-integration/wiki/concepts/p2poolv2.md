@@ -1,10 +1,11 @@
 ---
 title: p2poolv2
-type: concept
+category: concept
 created: 2026-05-22
 updated: 2026-05-22
 verified: 2026-05-22
 volatility: hot
+summary: "p2poolv2 is a Rust rewrite of the original P2Pool (Forrest Voight, 2011) that implements a fully decentralized Bitcoin mining pool: shares accounted on a peer-to-peer share chain, no custodial pool wallet, direct-to-coinbase payouts."
 confidence: high
 sources:
   - "[[raw/repos/2026-05-22-p2poolv2-repo|p2poolv2 repo]]"
@@ -69,3 +70,5 @@ p2poolv2 goes further by making **share accounting itself a peer-to-peer consens
 - [[ocean-datum|OCEAN DATUM]] — V1-based decentralized-template alternative
 - [[sv2-integration-surface|SV2 integration surface]]
 - [[../topics/integration-paths|Integration paths]]
+- [[../topics/share-accounting-mapping.md|SV2 ↔ p2poolv2 share-accounting mapping spec]]
+- [[stratum-v2-overview.md|Stratum V2 overview]]

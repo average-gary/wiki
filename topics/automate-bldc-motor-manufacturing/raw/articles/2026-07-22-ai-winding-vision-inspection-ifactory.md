@@ -1,11 +1,11 @@
 ---
 title: "AI EV Motor Winding Inspection (iFactory)"
 source: https://ifactoryapp.com/industries/automotive-manufacturing/ai-ev-motor-winding-inspection-automotive
-type: article
+type: articles
 tags: [machine-vision, in-line-inspection, mes, traceability, defect-detection]
 credibility: low
 confidence: medium
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Ties machine vision (windings, solder, magnet polarity, dimensional) to MES/SPC traceability, automatic hold/reject, and in-process vs EOL strategy. Vendor marketing — treat performance claims as illustrative.
 ---
 

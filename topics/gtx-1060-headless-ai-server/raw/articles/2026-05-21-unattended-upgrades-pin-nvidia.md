@@ -1,7 +1,7 @@
 ---
 title: "unattended-upgrades — pin NVIDIA driver to prevent stack breakage"
 source: https://wiki.debian.org/UnattendedUpgrades
-type: article
+type: articles
 tags: [unattended-upgrades, apt-pinning, nvidia, cuda, ubuntu]
 date: 2026-05-21
 quality: 4

@@ -1,6 +1,6 @@
 ---
 title: "Edge Fleet Operational Patterns 2026 — synthesis"
-type: topic
+category: topic
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01

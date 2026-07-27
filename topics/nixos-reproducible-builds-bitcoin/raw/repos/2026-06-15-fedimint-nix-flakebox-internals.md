@@ -7,7 +7,7 @@ sources:
   - https://github.com/fedimint/fedimint/blob/master/scripts/release/sign.sh
   - https://github.com/fedimint/fedimint/blob/master/justfile.fedimint.just
   - https://github.com/fedimint/fedimint/blob/master/docs/nix-ci.md
-type: repo
+type: repos
 maintainer: Fedimint maintainers (Eric Sirion / @elsirion, Dawid Ciężarkiewicz / @dpc, +)
 year: 2024-2026
 ingested: 2026-06-15

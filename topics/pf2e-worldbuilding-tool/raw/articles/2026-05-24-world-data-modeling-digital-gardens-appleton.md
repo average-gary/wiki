@@ -1,7 +1,7 @@
 ---
 title: "A Brief History & Ethos of the Digital Garden — Maggie Appleton"
 source: "https://maggieappleton.com/garden-history"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: 2020-12-04
 tags: [knowledge-graph, philosophy, notes, digital-garden]

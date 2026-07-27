@@ -1,9 +1,9 @@
 ---
 title: "This Week in Bevy — Tiny Glade ships demo, VJ performances, 2D lighting"
-source_url: https://thisweekinbevy.com/issue/2024-06-03-tiny-glade-vj-performances-and-2d-lighting
+source: https://thisweekinbevy.com/issue/2024-06-03-tiny-glade-vj-performances-and-2d-lighting
 source_date: 2024-06-03
 ingested: 2026-06-15
-type: article
+type: articles
 author: This Week in Bevy
 quality: 4
 credibility: high

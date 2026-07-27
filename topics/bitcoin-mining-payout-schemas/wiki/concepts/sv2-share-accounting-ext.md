@@ -6,7 +6,7 @@ updated: 2026-07-15
 verified: 2026-07-15
 confidence: medium
 volatility: warm
-tags: [share-accounting, PPLNS-JD, SLICE, DMND, Stratum-V2, sv2-extension, job-declaration, payout-verification, transaction-fees, merkle-proof]
+tags: [share-accounting, pplns-jd, SLICE, dmnd, stratum-v2, sv2-extension, job-declaration, payout-verification, transaction-fees, merkle-proof]
 aliases: [share-accounting-ext, demand-share-accounting-ext, SV2 extension 32, PPLNS-JD verification protocol]
 sources:
   - "raw/repos/2026-07-14-demand-share-accounting-ext-github.md"

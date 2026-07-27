@@ -1,8 +1,10 @@
 ---
 title: CLINK origin and stewardship
-type: concept
+category: concept
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
+summary: "2025-05-05 18:17 UTC — first commit to github.com/shocknet/CLINK, message \"CLINK Initial Spec Commit\", author shocknet-justin."
 confidence: high
 sources:
   - raw/repos/2026-06-09-origin-shocknet-clink-repo.md

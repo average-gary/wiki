@@ -1,7 +1,7 @@
 ---
 title: Hallow (Catholic prayer app) — funding, pricing, growth, endorsements
 source: https://en.wikipedia.org/wiki/Hallow_(app)
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, market, monetization, hallow, catholic]
 quality: 4

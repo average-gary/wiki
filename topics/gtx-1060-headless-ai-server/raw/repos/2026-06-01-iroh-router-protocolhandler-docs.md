@@ -1,7 +1,7 @@
 ---
 title: "iroh::protocol::Router and ProtocolHandler — docs.rs API surface"
 source: https://docs.rs/iroh/latest/iroh/protocol/struct.Router.html
-type: repo
+type: repos
 tags: [iroh, router, protocolhandler, alpn, accesslimit, dispatch]
 date: 2026-06-01
 quality: 5

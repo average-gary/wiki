@@ -1,7 +1,7 @@
 ---
 title: "sqlite-vec — vector search SQLite extension"
 source: "https://github.com/asg017/sqlite-vec"
-type: repo
+type: repos
 date_fetched: 2026-05-24
 date_published: "2026-03-31"
 tags: [embedded-db, sqlite, vector-search, rag, sqlite-vec]

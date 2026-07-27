@@ -3,13 +3,13 @@ title: "Diversification Across Mining Pools: Optimal Mining Strategies under PoW
 authors: [Panagiotis Chatzigiannis, Foteini Baldimtsi, Igor Griva, Jiasun Li]
 year: 2022
 venue: Journal of Cybersecurity (Oxford UP)
-url: https://academic.oup.com/cybersecurity/article/8/1/tyab027/6550812
-type: paper
+source: https://academic.oup.com/cybersecurity/article/8/1/tyab027/6550812
+type: papers
 ingested: 2026-05-23
 quality: 4
 credibility: high
 confidence: high
-tags: [variance, portfolio-theory, PPS, PPLNS, FPPS, miner-strategy]
+tags: [variance, portfolio-theory, PPS, pplns, fpps, miner-strategy]
 ---
 
 # Diversification Across Mining Pools (Chatzigiannis et al. 2022)

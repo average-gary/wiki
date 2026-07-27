@@ -1,21 +1,22 @@
 ---
 title: "Keyhive: small-group E2EE CRDT sync (Ink & Switch March 2025)"
-type: concept
+category: concept
 created: 2026-06-02
 updated: 2026-06-02
 verified: 2026-06-02
 volatility: hot
+summary: "Keyhive is Ink & Switch's pre-alpha Rust workspace bundling three distinct primitives that together address the gap Yjs has always punted on: convergent capabilities for delegation, BeeKEM for continuous group key agreement (forward secrecy + post-compromise security without a central server), and B…"
 confidence: medium
 sources:
-  - raw/articles/2026-06-02-keyhive-github-repo.md
-  - raw/articles/2026-06-02-keyhive-releases-cadence.md
+  - ../../raw/repos/2026-06-02-keyhive-github-repo.md
+  - ../../raw/repos/2026-06-02-keyhive-releases-cadence.md
   - raw/articles/2026-06-02-keyhive-notebook-intro.md
   - raw/articles/2026-06-02-keyhive-notebook-overview.md
   - raw/articles/2026-06-02-keyhive-notebook-riblt.md
   - raw/articles/2026-06-02-riblt-paper.md
-  - raw/articles/2026-06-02-secsync-yjs-e2ee.md
-  - raw/articles/2026-06-02-anyproto-any-sync.md
-  - raw/articles/2026-06-02-yjs-no-builtin-e2ee.md
+  - ../../raw/repos/2026-06-02-secsync-yjs-e2ee.md
+  - ../../raw/repos/2026-06-02-anyproto-any-sync.md
+  - ../../raw/repos/2026-06-02-yjs-no-builtin-e2ee.md
 ---
 
 # Keyhive: small-group E2EE CRDT sync (Ink & Switch March 2025)

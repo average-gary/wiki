@@ -1,10 +1,10 @@
 ---
 title: "BIP-34: Block v2, Height in Coinbase"
 source: "https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki"
-type: paper
+type: papers
 subtype: bip
-retrieved: 2026-07-23
-tags: [bitcoin, bip34, coinbase, scriptsig, block-height, consensus]
+ingested: 2026-07-23
+tags: [bitcoin, bip-34, coinbase, scriptsig, block-height, consensus]
 credibility: high
 evidence_strength: spec
 direction: "opposes Reading A (reinforcing)"

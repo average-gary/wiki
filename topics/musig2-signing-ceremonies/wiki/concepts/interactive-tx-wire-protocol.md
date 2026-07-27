@@ -4,7 +4,7 @@ category: concept
 sources: [raw/articles/2026-07-16-bolt2-interactive-tx-construction.md, raw/articles/2026-07-16-bolt-simple-taproot-channels-musig2.md]
 created: 2026-07-16
 updated: 2026-07-16
-tags: [lightning, bolt-2, interactive-tx, dual-funding, serial-id, tx-complete, turn-taking, session-framing, wire-protocol]
+tags: [lightning, bolt2, interactive-tx, dual-funding, serial-id, tx-complete, turn-taking, session-framing, wire-protocol]
 aliases: [interactive tx, interactive transaction construction, dual funding protocol]
 confidence: high
 volatility: warm

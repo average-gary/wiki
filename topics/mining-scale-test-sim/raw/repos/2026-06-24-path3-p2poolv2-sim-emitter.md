@@ -1,6 +1,6 @@
 ---
 title: p2poolv2 sim emitter — closed-loop Poisson share generation
-source_url: https://github.com/p2poolv2/p2poolv2/blob/main/p2poolv2_lib/src/sim/emitter.rs
+source: https://github.com/p2poolv2/p2poolv2/blob/main/p2poolv2_lib/src/sim/emitter.rs
 type: repos
 ingested: 2026-06-24
 quality: A

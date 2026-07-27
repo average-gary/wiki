@@ -1,6 +1,6 @@
 ---
 title: Open Data Corpus
-type: reference
+category: reference
 created: 2026-05-27
 updated: 2026-05-27
 verified: 2026-05-27
@@ -8,6 +8,7 @@ volatility: warm
 status: active
 confidence: high
 tags: [data, biblical-data, public-domain, corpus, reference]
+summary: "The actual datasets to ship in an OSS Logos suite. Quick-reference for engineering teams."
 sources:
   - "[[raw/articles/2026-05-27-data-stepbible]]"
   - "[[raw/articles/2026-05-27-data-oshb-wlc]]"
@@ -173,3 +174,4 @@ Mobile-friendly. Ship via Iroh-blobs HashSeq + HTTPS mirrors per [[../concepts/d
 - [[../concepts/biblical-data-licensing|Biblical data licensing]]
 - [[oss-bible-software-landscape|OSS Bible software landscape]]
 - [[../topics/engineering-playbook|Engineering playbook]]
+- [[../concepts/walled-translation-api-revocation-history.md|Walled translation API revocation history (2024-2026)]]

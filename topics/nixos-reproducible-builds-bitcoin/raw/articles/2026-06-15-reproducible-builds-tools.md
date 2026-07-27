@@ -1,7 +1,7 @@
 ---
 title: "Reproducible Builds — Tools (diffoscope, reprotest, strip-nondeterminism, disorderfs)"
 source: https://reproducible-builds.org/tools/
-type: article
+type: articles
 maintainer: Reproducible Builds project
 year: 2013–2026
 ingested: 2026-06-15

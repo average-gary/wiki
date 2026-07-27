@@ -6,7 +6,7 @@ sources:
   - https://github.com/ElementsProject/lightning/pull/8638
   - https://github.com/ElementsProject/lightning/pull/8846
   - https://github.com/ElementsProject/lightning/issues/8547
-type: article
+type: articles
 maintainer: ElementsProject / Core Lightning
 year: 2025-2026
 ingested: 2026-06-15

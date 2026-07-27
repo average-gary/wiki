@@ -1,7 +1,7 @@
 ---
 title: "draft-ietf-moq-transport-18 — Media over QUIC Transport"
 source: https://datatracker.ietf.org/doc/draft-ietf-moq-transport/
-type: paper
+type: papers
 tags: [moq, ietf, draft, pubsub, quic]
 date: 2026-06-01
 publication_date: 2026-05-12

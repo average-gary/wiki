@@ -1,8 +1,8 @@
 ---
 title: "NIP-47: Nostr Wallet Connect"
-type: paper
+type: papers
 source: https://github.com/nostr-protocol/nips/blob/master/47.md
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [nostr, nip-47, nwc, wallet-protocol, alternative-to-lnurl]
 summary: Nostr-native wallet RPC over encrypted events. The closest competitor to LNURL for "send sats to my wallet" UX. Supports balance reads, transaction lists, hold invoices — none of which LNURL covers.

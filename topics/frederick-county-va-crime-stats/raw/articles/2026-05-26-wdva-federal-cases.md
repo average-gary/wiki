@@ -1,8 +1,8 @@
 ---
 title: "WDVA federal cases originating in FrCo / Winchester / I-81 corridor (2022-2026)"
 publication: USAO Western District of Virginia + local press
-url: https://www.justice.gov/usao-wdva/pr
-type: article
+source: https://www.justice.gov/usao-wdva/pr
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: high

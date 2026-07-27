@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin Magazine — Braidpool: A Second Competitor In Decentralizing Mining"
-source_url: https://bitcoinmagazine.com/technical/braidpool-a-second-competitor-in-decentralizing-mining
-type: article
+source: https://bitcoinmagazine.com/technical/braidpool-a-second-competitor-in-decentralizing-mining
+type: articles
 ingested: 2026-05-22
 quality: 4
 confidence: medium

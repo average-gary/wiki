@@ -12,7 +12,9 @@ sources:
   - raw/articles/2026-06-01-path4-prior-art-enumeration-and-notable-absences.md
 created: 2026-06-01
 updated: 2026-06-01
+volatility: warm
 tags: [ocean, sv2, prior-art, datum, luke-dashjr, electricalgrade, sri-engagement-gap]
+summary: "Negative-finding territory. The headline: OCEAN has explicitly rejected SV2 in print, no working third-party bridge exists, and SRI has zero documented engagement with DATUM. The market signal for an SV2-DATUM bridge is weak."
 confidence: high
 ---
 
@@ -93,3 +95,4 @@ luke-jr's response prefers a **pkg-config shared library** approach over an in-t
 - [[sv2-downstream-architecture]] — the recommended bridge architecture
 - [[operator-value-and-threat-model]] — who would deploy this anyway
 - [[../../sv1-upstream-reverse-translator/_index|sv1-upstream-reverse-translator]] — the generic version of this problem (any SV1 pool, not just OCEAN)
+- [[../topics/datum-sv2-proxy-playbook.md|DATUM SV2-downstream proxy — playbook]]

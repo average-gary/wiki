@@ -1,10 +1,11 @@
 ---
 title: "Pascal driver + CUDA pinning for Ubuntu 22.04"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: warm
+summary: "NVIDIA's open-gpu-kernel-modules explicitly require Turing or newer. Pascal (GTX 10-series) and Maxwell are not supported. So nvidia-driver-XXX-open is unusable on a GTX 1060 — you must install the proprietary nvidia-driver-XXX package. This decision is forced, not optional. (confidence: high)"
 confidence: high
 sources:
   - raw/repos/2026-05-21-nvidia-open-gpu-kernel-modules.md
@@ -77,3 +78,5 @@ See [[unattended-upgrades-pin-nvidia]]. Without pinning, an apt security upgrade
 - [[ctranslate2-quantization-on-pascal]] — fp16 silently falls back to fp32 on sm_61
 - [[gpu-bench-and-smoke-tests]] — `gpu-burn` must be built with `make COMPUTE=6.1`
 - [[gpu-thermals-and-ops]] — `nvidia-smi -pm` and `-pl` do NOT persist across reboots
+- [[farm-vision-on-gtx-1060.md|Farm vision (herd counting) on GTX 1060 6GB]]
+- [[headless-ubuntu-laptop-baseline.md|Headless Ubuntu 22.04 baseline for an MSI GS63VR]]

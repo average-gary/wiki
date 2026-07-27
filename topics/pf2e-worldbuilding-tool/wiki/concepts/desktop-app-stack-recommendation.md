@@ -1,21 +1,22 @@
 ---
 title: "Desktop app stack recommendation"
-type: concept
+category: concept
 created: 2026-05-24
 updated: 2026-05-24
 verified: 2026-05-24
 volatility: high
 confidence: high
 sources:
-  - "[[2026-05-24-desktop-app-stack-tauri-2-state-2026]]"
-  - "[[2026-05-24-desktop-app-stack-electron-42-state]]"
-  - "[[2026-05-24-desktop-app-stack-obsidian-plugin-model]]"
-  - "[[2026-05-24-desktop-app-stack-sqlite-vec]]"
-  - "[[2026-05-24-desktop-app-stack-kuzu-archived]]"
-  - "[[2026-05-24-desktop-app-stack-duckdb-vs-sqlite]]"
-  - "[[2026-05-24-desktop-app-stack-surrealdb-embedded]]"
-  - "[[2026-05-24-desktop-app-stack-packaging-signing-2026]]"
+  - "[[../../raw/articles/2026-05-24-desktop-app-stack-tauri-2-state-2026]]"
+  - "[[../../raw/articles/2026-05-24-desktop-app-stack-electron-42-state]]"
+  - "[[../../raw/articles/2026-05-24-desktop-app-stack-obsidian-plugin-model]]"
+  - "[[../../raw/repos/2026-05-24-desktop-app-stack-sqlite-vec]]"
+  - "[[../../raw/repos/2026-05-24-desktop-app-stack-kuzu-archived]]"
+  - "[[../../raw/articles/2026-05-24-desktop-app-stack-duckdb-vs-sqlite]]"
+  - "[[../../raw/articles/2026-05-24-desktop-app-stack-surrealdb-embedded]]"
+  - "[[../../raw/guides/2026-05-24-desktop-app-stack-packaging-signing-2026]]"
 tags: [desktop-app, tauri, electron, sqlite, sqlite-vec, embedded-db, plugins, packaging]
+summary: "Local-first, offline-capable, file-system-friendly, plugin-extensible. Optimized for a knowledge app that also needs to run an embedded vector index for RAG (llm-integration-architecture)."
 ---
 
 # Desktop app stack recommendation

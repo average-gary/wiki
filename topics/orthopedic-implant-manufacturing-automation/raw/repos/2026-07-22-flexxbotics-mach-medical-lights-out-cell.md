@@ -6,7 +6,7 @@ type: repos
 tags: [case-study, lights-out, flexxbotics, mach-medical, closed-loop, cmm, robotic-cell, single-piece-flow, traceability]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The flagship real-world example of maximal-automation orthopedic manufacturing — a fully autonomous multi-machine workcell (5-axis mill + in-line CMM + wash, single robot) running 24/7 lights-out with closed-loop CMM→CNC feedback and per-implant DHF traceability. Independently corroborated by 3 of the 8 research agents.
 ---
 

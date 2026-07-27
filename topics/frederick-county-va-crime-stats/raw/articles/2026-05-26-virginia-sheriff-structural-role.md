@@ -1,10 +1,10 @@
 ---
 title: "Virginia sheriff — structural role and FCSO jurisdictional context"
 publication: VA Constitution + Code of Virginia + Wikipedia
-url: https://law.lis.virginia.gov/constitution/article7/section4/
+source: https://law.lis.virginia.gov/constitution/article7/section4/
 url2: https://law.lis.virginia.gov/vacode/title15.2/chapter17/
 url3: https://en.wikipedia.org/wiki/Frederick_County,_Virginia
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

@@ -1,7 +1,7 @@
 ---
 title: "Logos pricing tiers — subscription shift (logos.com/compare)"
-source_url: "https://www.logos.com/compare"
-type: article
+source: "https://www.logos.com/compare"
+type: articles
 path: logos
 date_ingested: 2026-05-27
 date_published: 2026-05-27

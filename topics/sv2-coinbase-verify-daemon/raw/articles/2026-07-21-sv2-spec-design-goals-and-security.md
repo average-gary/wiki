@@ -1,12 +1,12 @@
 ---
 title: "Stratum V2 spec — 02 Design Goals + 04 Protocol Security (HOM intent, Noise_NX transport)"
-source_url: https://github.com/stratum-mining/sv2-spec/blob/main/02-Design-Goals.md
+source: https://github.com/stratum-mining/sv2-spec/blob/main/02-Design-Goals.md
 source_url_2: https://github.com/stratum-mining/sv2-spec/blob/main/04-Protocol-Security.md
-type: article
-retrieved: 2026-07-21
+type: articles
+ingested: 2026-07-21
 credibility: high
 corroboration: "02 from trust-model agent; 04 from client-flow + trust-model agents"
-tags: [stratum-v2, design-goals, header-only-mining, noise, Noise_NX, secp256k1, chacha20poly1305, transaction-selection]
+tags: [stratum-v2, design-goals, header-only-mining, noise, noise-nx, secp256k1, chacha20-poly1305, transaction-selection]
 summary: "SV2 design goals (header-only mining is an explicit goal; transaction selection is quarantined to a separate channel) and the Noise_NX encrypted transport that wraps every session. Authentication proves pool identity, not honesty."
 ---
 

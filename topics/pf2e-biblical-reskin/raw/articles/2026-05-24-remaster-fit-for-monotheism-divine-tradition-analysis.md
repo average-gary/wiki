@@ -1,7 +1,7 @@
 ---
 title: "Divine tradition vs primal/occult/arcane — taxonomy analysis"
 source: "https://2e.aonprd.com/Spells.aspx?Tradition=2"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [pf2e, remaster, divine-tradition, primal, occult, arcane, monotheism]

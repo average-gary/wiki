@@ -51,6 +51,7 @@ Lightning's simple taproot channels show a pragmatic third option. Nonces are de
 - [[nonce-reuse-catastrophe|Nonce-Reuse Catastrophe]] ([Nonce-Reuse Catastrophe](nonce-reuse-catastrophe.md)) — the attack that makes multiparty determinism fatal
 - [[session-framing-and-state|Session Framing and State]] ([Session Framing and State](session-framing-and-state.md)) — the live-secret-nonce state MuSig2's randomness requirement creates
 - [[musig2-protocol|The MuSig2 Protocol]] ([The MuSig2 Protocol](musig2-protocol.md)) — NonceGen and its binding inputs
+- [[../topics/musig2-interactive-signing-ceremonies.md|MuSig2 Interactive Signing Ceremonies]]
 
 ## Sources
 

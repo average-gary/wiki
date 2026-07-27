@@ -1,8 +1,10 @@
 ---
 title: CLINK Manage (kind 21003 / nmanage)
-type: concept
+category: concept
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
+summary: "Delegated CRUD over wallet-server resources via Nostr ephemeral event kind 21003. The newest CLINK primitive (PR #4 merged 2025-07-31, by boufni95). Currently defines exactly one resource type: offer."
 confidence: high
 sources:
   - raw/articles/2026-06-09-spec-primitives-clink-manage-spec.md
@@ -153,3 +155,4 @@ Manage is the **least-shipped of the three primitives** despite being client-sid
 - [[clink-debits.md]]
 - [[../topics/clink-security-and-trust.md]]
 - [[../topics/clink-roadmap-signals.md]] — Sanctum + Manage convergence
+- [[clink-wire-format.md|CLINK wire format reference]]

@@ -3,7 +3,7 @@ title: "Nixpkgs LND derivation — the trimpath / ldflags gap"
 sources:
   - https://github.com/NixOS/nixpkgs/blob/master/pkgs/by-name/ln/lnd/package.nix
   - https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/go.section.md
-type: repo
+type: repos
 maintainer: Nixpkgs maintainers (bleetube, cypherpunk2140, prusnak)
 year: 2026 (LND v0.20.1-beta pin)
 ingested: 2026-06-15

@@ -2,7 +2,7 @@
 title: "256foundation/hydrapool issue #41 — SV2 as additional listener"
 source: https://github.com/256foundation/hydrapool/issues/41
 type: articles
-tags: [hydrapool, 256foundation, dual-port, additive-sv2]
+tags: [hydrapool, 256-foundation, dual-port, additive-sv2]
 summary: "Issue proposes adding SV2 as an additional listener alongside SV1 (forward, additive, dual-port). Share-normalization architecture precedent — pools that want to support both protocols simultaneously add a second listener rather than translating between them."
 confidence: medium
 ingested: 2026-05-28

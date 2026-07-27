@@ -1,9 +1,11 @@
 ---
 title: Quality & End-of-Line Testing
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [eol-test, back-emf, surge-test, hipot, cogging, machine-vision, mes, traceability]
+summary: "Automated testing is what makes automated *building* worth it: a line that produces 200,000 motors a year must catch defects in-process, not in the field. Testing is distributed across the chain, and the finished motor gets a 100% end-of-line (EOL) test."
 confidence: high
 ---
 
@@ -97,3 +99,4 @@ audit-ready records. This is what turns per-station pass/fail into a traceable, 
 - [Magnet Handling & Magnetization](magnet-handling-magnetization.md) — what BEMF verifies
 - [Limitations & Gotchas](limitations-and-gotchas.md)
 - [Vendor Landscape](../reference/vendor-landscape.md) — Schleich, Marposs
+- [[../reference/build-playbook.md|Build Playbook — How to Automate Brushless Motor Manufacturing]]

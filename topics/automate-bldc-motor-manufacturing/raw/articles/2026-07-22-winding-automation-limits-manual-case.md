@@ -3,11 +3,11 @@ title: "Why Manual Winding Persists + Stator Winding Defect Modes (CN Honest + P
 source: https://en.cnhonest.com/news/397.html
 source_2: https://parkmagazineny.com/common-challenges-in-the-stator-winding-process/
 source_3: https://www.windings.com/post/maximizing-slot-fill-for-high-performance-electric-motors/
-type: article
+type: articles
 tags: [contrarian, manual-winding, changeover-cost, defect-modes, slot-fill-ceiling, limitations]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The changeover-cost / product-mix economics of staying manual, plus the specific defect modes and fill-factor ceiling that resist reliable winding automation.
 ---
 

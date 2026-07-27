@@ -1,6 +1,7 @@
 ---
 title: "Drop-In Q3: datum_api.c Endpoint Inventory — full surface for axum port"
-source_url: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_api.c
+source: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_api.c
+type: articles
 source_type: source-file
 upstream: OCEAN-xyz/datum_gateway
 branch: master

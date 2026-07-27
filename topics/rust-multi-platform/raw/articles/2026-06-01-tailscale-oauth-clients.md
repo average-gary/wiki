@@ -1,6 +1,6 @@
 ---
 title: "Tailscale OAuth Clients"
-source_url: https://tailscale.com/kb/1215/oauth-clients
+source: https://tailscale.com/kb/1215/oauth-clients
 type: docs
 ingested: 2026-06-01
 quality: 4

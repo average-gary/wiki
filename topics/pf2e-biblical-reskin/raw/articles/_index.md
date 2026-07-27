@@ -88,3 +88,6 @@ updated: 2026-05-25
 
 ## Gap round — magic-theology-gap / spell-to-miracle (1)
 - [2026-05-25-spell-to-miracle-mapping-synthesis](2026-05-25-spell-to-miracle-mapping-synthesis.md)
+
+- [[2026-05-24-theology-frameworks-biblical-cosmology.md|Biblical Cosmology: Three-Tier Universe, Heavens, and Underworld]] — Overview of the ancient Israelite three-tier cosmos (heavens, earth, underworld), the firmament, the…
+- [[2026-05-24-theology-frameworks-christian-eschatology-overview.md|Christian Eschatology: Overview of Resurrection, Millennium, Final Judgment, and New Creation]] — Survey of Christian eschatology distinguishing premillennialism, postmillennialism, and amillennialism;…

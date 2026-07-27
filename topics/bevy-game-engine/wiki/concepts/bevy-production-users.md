@@ -1,8 +1,9 @@
 ---
 title: "Bevy in production — shipped games and commercial users"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: medium
 tags: [bevy, production, tiny-glade, longstory-2, foresight, nominal]
 ---
@@ -47,3 +48,5 @@ The data does *not* support: Bevy as a mature mass-market platform. Commercial t
 - [[bevy-overview.md|Bevy overview]]
 - [[bevy-ecosystem.md|Ecosystem]]
 - [[bevy-criticisms.md|Criticisms]]
+- [[../topics/bevy-state-of-2026.md|State of Bevy in 2026]]
+- [[../topics/bevy-vs-other-engines.md|Bevy vs other game engines]]

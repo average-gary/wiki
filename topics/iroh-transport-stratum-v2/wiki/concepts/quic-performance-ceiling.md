@@ -1,6 +1,6 @@
 ---
 title: "QUIC performance ceiling vs TCP"
-type: concept
+category: concept
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-20
@@ -10,6 +10,7 @@ sources:
   - raw/papers/2026-spath-quic-kernel-bypass-noms.md
   - raw/articles/2026-05-20-loke-http3-udp-throttling.md
 tags: [quic, performance, contrarian, ceiling]
+summary: "Peer-reviewed evidence (Späth et al., NOMS 2026) that QUIC's userspace design imposes a structural performance ceiling vs kernel TCP that only DPDK / SR-IOV / GSO+GRO can close — none realistic for typical mining infra."
 ---
 
 # QUIC performance — the ceiling

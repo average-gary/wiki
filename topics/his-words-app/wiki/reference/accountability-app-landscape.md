@@ -1,11 +1,13 @@
 ---
 title: Accountability app landscape — pricing and distribution
-type: reference
+category: reference
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, accountability, market, reference]
+summary: "Reference card for the accountability category His Words is *not* entering. See accountability strategy for why and the family-covenant mode for the limited adjacent feature His Words ships in v2."
 sources:
   - raw/articles/2026-06-23-accountability-covenant-eyes.md
   - raw/articles/2026-06-23-accountability-bark.md

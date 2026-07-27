@@ -1,10 +1,12 @@
 ---
 title: Post-hoc validator pattern
-type: concept
+category: concept
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [manastr, validator, nostr, stateless, anti-coordination]
+summary: "In manastr, the Game Engine Bot never coordinates a match. It runs after the match is over, re-executes the game from all recorded Nostr events, and verifies the winner. This is a deliberate inversion of the typical client-server game architecture."
 ---
 
 # Post-hoc validator pattern
@@ -54,3 +56,4 @@ engine.
 
 - [[wiki/concepts/manastr-stateless-client]]
 - [[wiki/concepts/mint-as-referee]]
+- [[hash-linked-event-chain.md|Hash-linked Nostr event chain]]

@@ -1,11 +1,11 @@
 ---
 title: "Concentrated Winding and Distributed Winding"
 source: https://grwinding.com/concentrated-winding-and-distributed-winding/
-type: article
+type: articles
 tags: [concentrated-winding, distributed-winding, back-emf, automation-difficulty]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Clean tradeoff table establishing why winding topology drives the machine choice.
 ---
 

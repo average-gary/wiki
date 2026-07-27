@@ -1,7 +1,7 @@
 ---
 title: "LUD-04: LNURL-auth — deterministic per-domain HD derivation"
 source: https://github.com/lnurl/luds/blob/luds/04.md
-type: article
+type: articles
 tags: [lnurl, lud-04, hd-derivation, per-domain, secp256k1, signing]
 date: 2026-06-01
 quality: 5

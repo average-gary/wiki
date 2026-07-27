@@ -1,7 +1,7 @@
 ---
 title: "Raspberry Anthracnose: Pruning and Sanitation Guidance"
-source_url: "https://hort.extension.wisc.edu/articles/raspberry/"
-type: article
+source: "https://hort.extension.wisc.edu/articles/raspberry/"
+type: articles
 path: raspberry
 date_ingested: 2026-05-26
 date_published: unknown

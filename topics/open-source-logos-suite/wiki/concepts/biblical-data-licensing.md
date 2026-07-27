@@ -1,13 +1,14 @@
 ---
 title: Biblical Data Licensing
-type: concept
+category: concept
 created: 2026-05-27
 updated: 2026-05-27
 verified: 2026-05-27
 volatility: warm
 status: active
 confidence: high
-tags: [licensing, biblical-data, public-domain, copyright, esv, niv, stepbible, oshb]
+tags: [licensing, biblical-data, public-domain, copyright, esv, niv, step-bible, oshb]
+summary: "The licensing landscape for biblical texts and study data in 2026 is more open than it has ever been — but the major commercial English translations remain walled. Engineering implication: build text-agnostic; ship the open stack by default; let users BYO API key for commercial translations."
 sources:
   - "[[raw/articles/2026-05-27-data-stepbible]]"
   - "[[raw/articles/2026-05-27-data-oshb-wlc]]"
@@ -141,3 +142,7 @@ STEPBible's versification mapping (CC BY 4.0) handles the Hebrew/Greek/English n
 - [[../reference/open-data-corpus|Open data corpus]]
 - [[../topics/engineering-playbook|Engineering playbook]]
 - [[study-tool-ux-gap|Study-tool UX gap]]
+- [[../reference/logos-feature-surface.md|Logos Feature Surface]]
+- [[macula-syntactic-search.md|MACULA syntactic search: query DSL + indexing]]
+- [[search-and-indexing.md|Search and Indexing]]
+- [[walled-translation-api-revocation-history.md|Walled translation API revocation history (2024-2026)]]

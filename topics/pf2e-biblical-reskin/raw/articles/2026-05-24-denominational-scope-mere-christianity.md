@@ -1,7 +1,7 @@
 ---
 title: "Mere Christianity — C.S. Lewis's Cross-Denominational Consensus"
 source: "https://en.wikipedia.org/wiki/Mere_Christianity"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [denomination, lewisian, ecumenical, theology]

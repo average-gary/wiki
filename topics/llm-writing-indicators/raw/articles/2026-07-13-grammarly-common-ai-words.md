@@ -3,7 +3,7 @@ title: "Decoding AI Language: Common Words and Phrases in AI-Generated Content"
 source: https://www.grammarly.com/blog/ai/common-ai-words/
 author: Grammarly
 venue: Grammarly Blog (updated 11 Feb 2026)
-type: article
+type: articles
 tags: [llm-writing-indicators, word-list, phrases, practitioner, editor-advice]
 quality: 3
 confidence: medium

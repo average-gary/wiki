@@ -1,11 +1,11 @@
 ---
 title: "Laser Hairpin Welding & Insulation Stripping (Coherent)"
 source: https://www.coherent.com/news/blog/improving-hairpin-welding
-type: article
+type: articles
 tags: [hairpin, laser-welding, insulation-stripping, porosity, weld-defects]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Vendor-grounded look at why the hairpin termination/weld step is the reliability bottleneck automation must solve.
 ---
 

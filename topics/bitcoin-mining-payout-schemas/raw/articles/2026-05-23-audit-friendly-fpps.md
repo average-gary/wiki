@@ -1,13 +1,13 @@
 ---
 title: "Audit-Friendly vs Audit-Hostile FPPS — production landscape May 2026"
 publication: medinaseri.substack.com + Antpool Zendesk + ocean.xyz
-url: https://medinaseri.substack.com/p/bitcoin-mining-pool-payout-methods
-type: article
+source: https://medinaseri.substack.com/p/bitcoin-mining-pool-payout-methods
+type: articles
 ingested: 2026-05-23
 quality: 4
 credibility: medium
 confidence: medium
-tags: [FPPS, audit, auditable-FPPS, rolling-average, transparency]
+tags: [fpps, audit, auditable-FPPS, rolling-average, transparency]
 ---
 
 # Audit-Friendly vs Audit-Hostile FPPS

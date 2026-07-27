@@ -1,10 +1,12 @@
 ---
 title: "Lightning splice mechanics"
-type: concept
+category: concept
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 confidence: high
 tags: [lightning, splicing, bolt2, interactive-tx, splice-in, splice-out, quiescence, channel-ready]
+summary: "Per BOLT #2 (merged from lightning/bolts PR #1160): \"Splicing is the term given for replacing the funding transaction with a new one.\" Verified verbatim against master 2026-07-23."
 ---
 
 # Lightning splice mechanics
@@ -63,3 +65,4 @@ Phoenix) splice arbitrary confirmed wallet UTXOs today.
 - [[coinbase-transaction-structure]] — the consensus object a splice can never be.
 - [[three-readings]] — the reading map.
 - [[presigning-unknown-coinbase-outpoint]] — why even *funding* from a fresh coinbase can't be pre-signed today.
+- [[../topics/thesis-analysis-verdict.md|Thesis analysis: splicing a Lightning channel in a coinbase]]

@@ -1,7 +1,7 @@
 ---
 title: "Wildfire Games Forum — Is 0 A.D. still in development?"
 source: https://wildfiregames.com/forum/topic/27596-is-0-ad-still-in-development/
-type: article
+type: articles
 ingested: 2026-06-18
 quality: 4
 confidence: high

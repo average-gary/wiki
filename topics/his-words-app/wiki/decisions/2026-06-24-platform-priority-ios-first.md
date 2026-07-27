@@ -3,9 +3,11 @@ title: "Decision: iOS-first platform priority"
 type: decision
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, decision, platform]
+summary: "Decision: Ship His Words v1 on iOS only. Defer Android to v2+, conditional on iOS validating the interruption-rhythm thesis."
 sources:
   - raw/articles/2026-06-23-ios-research-verdict.md
   - raw/articles/2026-06-23-ios-app-store-approval-precedent.md

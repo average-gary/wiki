@@ -1,7 +1,7 @@
 ---
 title: "Cloudflared and AWS SSM — SSH ProxyCommand patterns"
 source: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/use-cases/ssh/ssh-cloudflared-authentication/, https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-getting-started-enable-ssh-connections.html
-type: article
+type: articles
 tags: [ssh, proxycommand, cloudflared, aws-ssm, pattern, allowlist]
 date: 2026-06-01
 quality: 4

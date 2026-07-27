@@ -1,7 +1,7 @@
 ---
 title: "IPFS Content Addressing — Concepts and Limits"
-source_url: "https://docs.ipfs.tech/concepts/content-addressing/"
-type: article
+source: "https://docs.ipfs.tech/concepts/content-addressing/"
+type: articles
 path: infra-text
 date_ingested: 2026-05-27
 date_published: unknown

@@ -1,7 +1,7 @@
 ---
 title: "BitTorrent v2 — Merkle Hash Trees and Per-File Hashes"
-source_url: "https://blog.libtorrent.org/2020/09/bittorrent-v2/"
-type: article
+source: "https://blog.libtorrent.org/2020/09/bittorrent-v2/"
+type: articles
 path: infra-text
 date_ingested: 2026-05-27
 date_published: 2020-09-07

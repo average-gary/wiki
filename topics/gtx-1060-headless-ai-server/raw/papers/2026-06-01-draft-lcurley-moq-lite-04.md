@@ -1,7 +1,7 @@
 ---
 title: "draft-lcurley-moq-lite-04 — Media over QUIC Lite"
 source: https://datatracker.ietf.org/doc/draft-lcurley-moq-lite/
-type: paper
+type: papers
 tags: [moq, moq-lite, ietf, individual-submission, quic, kixelated]
 date: 2026-06-01
 publication_date: 2026-04-09

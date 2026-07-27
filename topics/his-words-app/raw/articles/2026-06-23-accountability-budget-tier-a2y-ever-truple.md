@@ -1,7 +1,7 @@
 ---
 title: Accountable2You, Ever Accountable, Truple — The Budget Tier of Christian Accountability
 source: https://accountable2you.com/pricing/ + https://everaccountable.com/pricing/ + https://www.truple.io/
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, accountability, family-mode, accountable2you, ever-accountable, truple, pricing-comparison]
 quality: 4

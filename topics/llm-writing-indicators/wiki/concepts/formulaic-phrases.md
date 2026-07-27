@@ -1,11 +1,13 @@
 ---
 title: Formulaic phrases — "it's important to note" and canned transitions
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, phrases, hedging, transitions]
+summary: "Beyond single words, LLMs reach reflexively for a small set of multi-word connectives and hedges. These are stickier tells than individual words because the exact string recurs."
 sources:
   - raw/articles/2026-07-13-wikipedia-signs-of-ai-writing.md
   - raw/articles/2026-07-13-grammarly-common-ai-words.md
@@ -52,3 +54,4 @@ The exact-string recurrence makes these greppable. A document with three or more
 - [[not-x-but-y-antithesis|"Not X but Y" antithesis]] — a specific formulaic construction.
 - [[structural-formulas|Structural formulas]] — the paragraph/section-level equivalent.
 - [[../reference/overused-words-and-phrases|Reference: overused words & phrases]].
+- [[lexical-overuse-words.md|Lexical overuse — the "delve/underscore/tapestry" vocabulary]]

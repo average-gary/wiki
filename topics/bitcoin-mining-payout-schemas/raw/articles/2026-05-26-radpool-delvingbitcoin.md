@@ -2,11 +2,11 @@
 title: "Radpool: Decentralised Mining Pool With Futures Contracts For Payouts (Delving Bitcoin)"
 author: Kulpreet Singh (jungly)
 publication: delvingbitcoin.org
-url: https://delvingbitcoin.org/t/radpool-decentralised-mining-pool-with-futures-contracts-for-payouts/1262
+source: https://delvingbitcoin.org/t/radpool-decentralised-mining-pool-with-futures-contracts-for-payouts/1262
 project_site: https://radpool.xyz
 code: https://github.com/pool2win/frost-federation
 date: 2024-12-07
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: high

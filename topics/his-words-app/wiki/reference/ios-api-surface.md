@@ -1,11 +1,13 @@
 ---
 title: iOS API surface — FamilyControls, DeviceActivity, ManagedSettings, Shield
-type: reference
+category: reference
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, ios, technical, api-reference]
+summary: "Reference card for the Apple frameworks His Words uses on iOS. Pulled from Screen Time API capabilities, implementation patterns, and verdict."
 sources:
   - raw/articles/2026-06-23-ios-screen-time-api-capabilities.md
   - raw/articles/2026-06-23-ios-implementation-patterns.md

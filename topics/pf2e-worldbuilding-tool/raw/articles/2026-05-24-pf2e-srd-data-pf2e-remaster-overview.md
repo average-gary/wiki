@@ -1,7 +1,7 @@
 ---
 title: "Pathfinder 2e Remaster Project — Overview & Licensing Shift"
 source: "https://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: unknown
 tags: [pf2e, remaster, player-core, gm-core, monster-core, ogl-to-orc, secondary-source]

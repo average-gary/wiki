@@ -1,7 +1,7 @@
 ---
 title: "Fedimint flake.nix — 4-year evolution timeline (2022→2026)"
-type: article
-source_url: https://github.com/fedimint/fedimint/commits/master/flake.nix
+type: articles
+source: https://github.com/fedimint/fedimint/commits/master/flake.nix
 ingested: 2026-06-15
 confidence: high
 relevance: direct

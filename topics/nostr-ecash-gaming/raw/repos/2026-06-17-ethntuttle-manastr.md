@@ -1,9 +1,9 @@
 ---
 title: "EthnTuttle/manastr — decentralized turn-based strategy game on Nostr + Cashu"
 source: https://github.com/EthnTuttle/manastr
-type: repo
+type: repos
 tags: [nostr, cashu, gaming, mana, decentralized-gaming, rust, wasm, ecash, manastr, react, strfry, cdk-mint, stateless-client]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 summary: |
   Manastr is a turn-based two-player strategy game where two armies (deterministically generated

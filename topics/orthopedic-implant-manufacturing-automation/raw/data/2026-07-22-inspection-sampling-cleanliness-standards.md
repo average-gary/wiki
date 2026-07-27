@@ -6,7 +6,7 @@ type: data
 tags: [inspection, aql, ansi-z1.4, iso-2859, zero-acceptance, 21-cfr-820-250, iso-19227, cleanliness, particulate, spc]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The statistical-inspection backbone — 21 CFR 820.250 requires valid statistical rationale; ~99% of US firms use ANSI/ASQ Z1.4; Squeglia c=0 (Ac=0/Re=1) plans standard for medical; why safety-critical implant characteristics push toward 100%/c=0. Plus ISO 19227 cleanliness particulate index.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Bevy release cadence (GitHub Releases API)"
-source_url: https://api.github.com/repos/bevyengine/bevy/releases
+source: https://api.github.com/repos/bevyengine/bevy/releases
 source_date: 2026-06-15
 ingested: 2026-06-15
 type: data

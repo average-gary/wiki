@@ -1,7 +1,7 @@
 ---
 title: "Druid Class - Archives of Nethys (PF2e Remaster)"
 source: "https://2e.aonprd.com/Classes.aspx?ID=34"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: 2024-11-12
 tags: [pf2e, reskin, class, druid, primal, anathema]

@@ -5,7 +5,7 @@ type: data
 tags: [cocrmo, femoral-head, investment-casting, 5-axis, robotic-polishing, abrasive-flow, electropolishing, cmm, hand-polish-bottleneck]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Device-manufacturer engineering account of the CoCrMo femoral-head chain — investment casting >50 HRC → 5-axis mill-turn → robotic polishing/AFM/electropolish → CMM. The clearest real-world statement of the CoCr hand-polishing bottleneck and how automation attacks it.
 ---
 

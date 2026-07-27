@@ -1,8 +1,8 @@
 ---
 title: "HIDTA designation — Frederick County is Washington/Baltimore HIDTA"
 publication: National HIDTA Assistance Center
-url: https://www.nhac.org/hidta-counties-by-state/
-type: article
+source: https://www.nhac.org/hidta-counties-by-state/
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: high

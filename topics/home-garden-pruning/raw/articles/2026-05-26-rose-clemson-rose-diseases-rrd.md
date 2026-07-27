@@ -1,7 +1,7 @@
 ---
 title: "Rose Diseases — Rose Rosette Disease section (Clemson HGIC)"
-source_url: "https://hgic.clemson.edu/factsheet/rose-diseases/"
-type: article
+source: "https://hgic.clemson.edu/factsheet/rose-diseases/"
+type: articles
 path: rose
 date_ingested: 2026-05-26
 date_published: unknown

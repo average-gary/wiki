@@ -1,10 +1,10 @@
 ---
 title: "Scaling Noncustodial Mining Payouts with CTV (Delving Bitcoin, vnprc, Jun 2025)"
 publication: delvingbitcoin.org
-url: https://delvingbitcoin.org/t/scaling-noncustodial-mining-payouts-with-ctv/1753
+source: https://delvingbitcoin.org/t/scaling-noncustodial-mining-payouts-with-ctv/1753
 author: vnprc (Evan)
 date: 2025-06-04
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

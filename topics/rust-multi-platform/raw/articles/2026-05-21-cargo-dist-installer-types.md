@@ -1,13 +1,12 @@
 ---
 title: "cargo-dist installer types — fetching vs bundling"
 source: https://axodotdev.github.io/cargo-dist/book/installers/index.html
-type: article
+type: articles
 tags: [cargo-dist, installers, packaging, distribution]
 date: 2026-05-21
 quality: 5
 confidence: high
 agent: 4
-summary: "5 installer types in 2 categories. Fetching (cross-platform): shell (curl|sh), powershell (irm|iex), npm, homebrew. Bundling (single-platform): msi via WiX. Linux Docker, Flatpak, macOS DMG, PyPI, Winget all are open feature requests."
 ---
 
 # cargo-dist installer types

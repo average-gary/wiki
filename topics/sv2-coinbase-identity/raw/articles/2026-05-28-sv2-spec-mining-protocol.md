@@ -1,6 +1,7 @@
 ---
 title: "Stratum V2 Specification — 05-Mining-Protocol.md"
-source_url: https://github.com/stratum-mining/sv2-spec/blob/main/05-Mining-Protocol.md
+source: https://github.com/stratum-mining/sv2-spec/blob/main/05-Mining-Protocol.md
+type: articles
 source_type: specification
 ingested: 2026-05-28
 credibility: high

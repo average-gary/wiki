@@ -3,9 +3,9 @@ title: "Fedimint gaming-adjacent modules — ROASTr + EthnTuttle/fedimint-predic
 sources:
   - https://github.com/m1sterc001guy/roastr
   - https://github.com/EthnTuttle/fedimint-prediction-market
-type: repo
+type: repos
 tags: [fedimint, fmcm, roast, frost, threshold-signing, prediction-market, gaming-adjacent, nip-87]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: medium
 quality_score: 4

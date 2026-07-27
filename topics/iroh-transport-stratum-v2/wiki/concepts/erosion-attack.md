@@ -1,6 +1,6 @@
 ---
 title: "Erosion: single-packet tampering attack on SV2"
-type: concept
+category: concept
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-20
@@ -9,6 +9,7 @@ confidence: high
 sources:
   - raw/papers/2024-erosion-routing-attacks-mining-pools.md
 tags: [sv2, attack, security, transport]
+summary: "Routing-attack class: a network adversary on the path between miner and pool disrupts mining sessions to reduce effective hashrate."
 ---
 
 # Erosion (Tran et al. S&P 2024)

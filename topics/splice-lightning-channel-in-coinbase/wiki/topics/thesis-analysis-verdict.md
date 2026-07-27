@@ -1,10 +1,12 @@
 ---
 title: "Thesis analysis: splicing a Lightning channel in a coinbase"
-type: topic
+category: topic
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 confidence: high
 tags: [thesis, verdict, coinbase, splicing, lightning, consensus]
+summary: "Full reasoning behind the verdict in the thesis file. The claim resolves into three readings, each with its own answer. The one-line result: taken literally, no; taken charitably, only in a narrow sense that isn't really \"in a coinbase.\""
 ---
 
 # Thesis analysis: "I can splice a lightning channel in a coinbase transaction"

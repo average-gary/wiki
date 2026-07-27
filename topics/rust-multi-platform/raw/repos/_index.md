@@ -31,3 +31,14 @@ updated: 2026-06-01
 - [2026-06-01-paseto-v4-public](2026-06-01-paseto-v4-public.md) — version-as-prefix, footer-as-kid
 - [2026-06-01-in-toto-attestation-statement](2026-06-01-in-toto-attestation-statement.md) — three-layer URI versioning
 - [2026-06-01-uptane-standard](2026-06-01-uptane-standard.md) — automotive OTA, threshold + offline root + role separation
+
+- [[2026-06-02-crdt-benchmarks-dmonad.md|dmonad/crdt-benchmarks — Yjs vs ywasm vs Loro vs Automerge]]
+- [[2026-06-02-loro-cargo-toml.md|loro crate Cargo.toml — v1.12.0 dependencies]]
+- [[2026-06-02-loro-ffi.md|loro-ffi — UniFFI bindings for Loro]]
+- [[2026-06-02-loro-readme.md|Loro README — features, bindings, algorithms]]
+- [[2026-06-02-loro-releases-1-12.md|Loro releases — v1.12.x line (April 2026)]]
+- [[2026-06-02-loro-swift-releases.md|loro-swift releases — v1.10.3 (Dec 2025)]]
+- [[2026-06-02-y-crdt-readme.md|y-crdt monorepo README — yrs ecosystem]]
+- [[2026-06-02-yjs-v14-rc-status.md|Yjs v14 — still RC after 24+ months]]
+- [[2026-06-02-yrs-0-18-release.md|y-crdt (yrs) v0.18 release — March 2025]]
+- [[2026-06-02-yswift-uniffi.md|YSwift — Yjs-compatible Swift bindings via UniFFI]]

@@ -1,6 +1,6 @@
 ---
 title: Engineering an Open-Source Logos Suite
-type: topic
+category: topic
 created: 2026-05-27
 updated: 2026-05-27
 verified: 2026-05-27
@@ -8,6 +8,7 @@ volatility: warm
 status: active
 confidence: high
 tags: [logos, bible-software, architecture, decentralized, oss, playbook]
+summary: "Synthesized answer to the user's question: *\"How could you engineer an open source Logos application suite? Is there decentralized infrastructure that could support something like this?\"*"
 sources:
   - "[[raw/articles/2026-05-27-logos-feature-surface-synthesis]]"
   - "[[raw/articles/2026-05-27-logos-cascadia-macula-data-availability]]"
@@ -15,7 +16,7 @@ sources:
   - "[[raw/articles/2026-05-27-oss-step-bible-tyndale]]"
   - "[[raw/articles/2026-05-27-data-stepbible]]"
   - "[[raw/articles/2026-05-27-data-oshb-wlc]]"
-  - "[[raw/articles/2026-05-27-client-stepbible-data]]"
+  - "[[../../raw/repos/2026-05-27-client-stepbible-data]]"
   - "[[raw/articles/2026-05-27-infra-text-iroh-blobs-protocol]]"
   - "[[raw/articles/2026-05-27-infra-sync-atproto-pds]]"
   - "[[raw/articles/2026-05-27-case-file-over-app]]"
@@ -199,3 +200,8 @@ See [[../concepts/decentralized-text-distribution|Decentralized text distributio
 - [[../decisions/plugin-trust-model|Plugin trust model]]
 - [[../decisions/library-distribution|Library distribution]]
 - [[../../output/_index|Outputs]]
+- [[../concepts/ai-bible-study-tools-2026.md|AI Bible-study tools 2026: RAG, citation-grounding, hallucination guards]]
+- [[../concepts/identity-and-recovery.md|Identity and Recovery]]
+- [[../concepts/keyhive-small-group-sync.md|Keyhive: small-group E2EE CRDT sync (Ink & Switch March 2025)]]
+- [[../concepts/search-and-indexing.md|Search and Indexing]]
+- [[../concepts/walled-translation-api-revocation-history.md|Walled translation API revocation history (2024-2026)]]

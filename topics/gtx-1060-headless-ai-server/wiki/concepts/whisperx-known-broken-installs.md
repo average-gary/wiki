@@ -1,10 +1,11 @@
 ---
 title: "WhisperX install gotchas — lightning quarantine + use_auth_token mismatch"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: hot
+summary: "Two open issues will bite you on a fresh install. Source: raw/articles/2026-05-21-whisperx-known-broken."
 confidence: high
 sources:
   - raw/articles/2026-05-21-whisperx-known-broken.md
@@ -72,3 +73,4 @@ pip install pytorch-lightning>=2.0.1 asteroid-filterbanks>0.4 einops omegaconf
 
 - [[whisperx-vs-manual-pyannote-integration]] — pipeline overview
 - [[pyannote-audio-3.x-on-pascal]] — gated-model workflow
+- [[pyannote-audio-3.x-on-pascal.md|pyannote.audio 3.x / 4.x on Pascal — VRAM, gating, DER]]

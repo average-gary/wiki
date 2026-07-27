@@ -1,7 +1,7 @@
 ---
 title: "iroh tickets — security caveats (iroh docs + Discussion #3168)"
 source: https://docs.iroh.computer/concepts/tickets, https://github.com/n0-computer/iroh/discussions/3168
-type: article
+type: articles
 tags: [iroh, tickets, qr-pairing, security, no-revocation, contrarian]
 date: 2026-06-01
 quality: 5

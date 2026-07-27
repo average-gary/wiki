@@ -1,7 +1,7 @@
 ---
 title: "What Ark Could Potentially Learn From Lightning (Shinobi / Bitcoin Magazine)"
-source_url: https://digkrypton.com/index.php/2024/10/28/what-ark-could-potentially-learn-from-lightning/
-type: article
+source: https://digkrypton.com/index.php/2024/10/28/what-ark-could-potentially-learn-from-lightning/
+type: articles
 authors: [Shinobi]
 publisher: Bitcoin Magazine (republished at digkrypton.com)
 date: 2024-10-28

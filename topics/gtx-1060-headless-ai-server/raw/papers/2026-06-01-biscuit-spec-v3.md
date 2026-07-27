@@ -1,7 +1,7 @@
 ---
 title: "Biscuit Authentication and Authorization Token — SPECIFICATIONS.md (v3)"
 source: https://github.com/biscuit-auth/biscuit/blob/main/SPECIFICATIONS.md
-type: paper
+type: papers
 tags: [biscuit, datalog, ed25519, capability, attenuation, rust, spec]
 date: 2026-06-01
 quality: 5

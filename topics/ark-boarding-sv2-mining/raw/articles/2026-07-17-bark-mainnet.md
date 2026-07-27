@@ -1,7 +1,7 @@
 ---
 title: "Second launches bark on mainnet (2026-06-09)"
 source: https://atlas21.com/second-launches-bark-on-bitcoin-mainnet-self-custody-without-complexity/
-type: article
+type: articles
 ingested: 2026-07-17
 credibility: medium
 direction: supports

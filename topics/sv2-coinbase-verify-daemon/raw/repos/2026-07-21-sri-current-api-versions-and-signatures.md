@@ -1,13 +1,13 @@
 ---
 title: "SRI current API — crate versions + exact struct/fn signatures (July 2026)"
-source_url: https://github.com/stratum-mining/stratum/blob/main/stratum-core/Cargo.toml
+source: https://github.com/stratum-mining/stratum/blob/main/stratum-core/Cargo.toml
 source_url_2: https://github.com/stratum-mining/sv2-apps/blob/main/integration-tests/Cargo.toml
 source_url_3: https://docs.rs/mining_sv2/latest/mining_sv2/
-type: repo
-retrieved: 2026-07-21
+type: repos
+ingested: 2026-07-21
 credibility: high
 corroboration: "gap-1 agent (source-verified against main + docs.rs)"
-tags: [stratum-v2, SRI, rust, cargo, mining_sv2, channels_sv2, codec_sv2, api-signatures, ExtendedChannel, merkle_root_from_path]
+tags: [stratum-v2, sri, rust, cargo, mining-sv2, channels-sv2, codec-sv2, api-signatures, extended-channel, merkle_root_from_path]
 summary: "Source-verified current SRI crate versions (all on crates.io) and the exact struct field types + function signatures a real daemon needs: SetupConnection, OpenExtendedMiningChannel(.Success), NewExtendedMiningJob, SubmitSharesExtended, ExtendedChannel::new / validate_share, merkle_root_from_path. Plus the frame build/parse idioms and an honest UNVERIFIED list."
 ---
 

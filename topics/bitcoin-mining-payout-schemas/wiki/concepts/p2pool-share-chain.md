@@ -6,6 +6,7 @@ confidence: high
 tags: [p2pool, p2poolv2, share-chain, decentralized, on-chain-PPLNS, work-bounded-window]
 volatility: warm
 updated: 2026-07-17
+summary: "Decentralized mining pool. Coinbase outputs of the share-chain pay miners directly — on-chain PPLNS without a custodian."
 verified: 2026-07-17
 sources:
   - "raw/articles/2026-05-23-p2pool-historical-hashrate.md"
@@ -142,3 +143,5 @@ Each project removes a different point of trust:
 - [[../topics/p2poolv2-and-256-foundation|p2poolv2 ↔ 256 Foundation relationship]]
 - [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — the CTV coinbase fanout whose MuSig-node endgame targets a P2Pool reboot; both attack the coinbase output-count cap
 - Sister wiki: [[../../../sv2-p2pool-integration/_index|sv2-p2pool-integration]]
+- [[braidpool.md|Braidpool]]
+- [[radpool.md|Radpool]]

@@ -1,6 +1,6 @@
 ---
 title: "Ark addresses and VTXO delivery (bech32m, BOAT-001, mailbox)"
-type: concept
+category: concept
 created: 2026-07-17
 updated: 2026-07-17
 confidence: medium

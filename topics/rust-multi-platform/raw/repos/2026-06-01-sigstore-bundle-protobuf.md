@@ -1,6 +1,6 @@
 ---
 title: "Sigstore Bundle protobuf schema"
-source_url: https://github.com/sigstore/protobuf-specs/blob/main/protos/sigstore_bundle.proto
+source: https://github.com/sigstore/protobuf-specs/blob/main/protos/sigstore_bundle.proto
 type: spec
 ingested: 2026-06-01
 quality: 4

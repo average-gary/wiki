@@ -1,7 +1,7 @@
 ---
 title: "Haliburton, Grüning, Riedel & Schmidt (2024). A longitudinal in-the-wild investigation of design frictions to prevent smartphone overuse. CHI '24."
 source: https://dl.acm.org/doi/10.1145/3613904.3642370
-type: paper
+type: papers
 created: 2026-06-23
 tags: [his-words-app, behavioral-psychology, friction, longitudinal, habituation, CHI]
 quality: 5

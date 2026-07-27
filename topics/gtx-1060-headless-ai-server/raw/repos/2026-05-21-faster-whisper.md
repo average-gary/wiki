@@ -1,7 +1,7 @@
 ---
 title: "SYSTRAN/faster-whisper — README + benchmarks"
 source: https://github.com/SYSTRAN/faster-whisper
-type: repo
+type: repos
 tags: [faster-whisper, ctranslate2, whisper, install, benchmark, vram]
 date: 2026-05-21
 quality: 6

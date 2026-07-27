@@ -1,7 +1,7 @@
 ---
 title: "tus.io Resumable Upload Protocol v1.0.0"
 source: https://tus.io/protocols/resumable-upload
-type: article
+type: articles
 tags: [tus, resumable-upload, http, contrast-pattern]
 date: 2026-06-01
 quality: 5

@@ -3,9 +3,10 @@ title: Payout Schema Taxonomy
 category: concept
 created: 2026-05-23
 confidence: high
-tags: [PPS, PPLNS, FPPS, PPS+, taxonomy]
+tags: [PPS, pplns, fpps, PPS+, taxonomy]
 volatility: warm
 updated: 2026-07-17
+summary: "Bitcoin pool payout schemes form three categories defined by who absorbs variance:"
 verified: 2026-07-17
 sources:
   - "raw/articles/2026-05-23-dmnd-demand-pool.md"
@@ -41,7 +42,9 @@ Operator-reserve requirement is the structural barrier — only large/well-capit
 - **SLICE / PPLNS-JD** — DMND's PPLNS bound to SV2 Job Declaration; payout is miner-verifiable via the [[sv2-share-accounting-ext|SV2 Share Accounting Extension]]. *See [[pplns-jd]].*
 - **p2pool / p2poolv2 share-chain** — on-chain PPLNS without a custodian. *See [[p2pool-share-chain]].*
 - **Geometric / DGM** (Rosenfeld) — tunable variance via parameters `f`, `c`, `o`. DGM was production at BTCDig 2013.
+- **Lottery-PPLNS** — flat finder bounty carved out of the miner cut, PPLNS on the remainder. Expectation-neutral for every miner (probability of finding = share of payout), so it is purely a variance trade; forces per-finder speculative coinbase construction. *See [[lottery-pplns]].*
 - **Parasite Pool** — lottery (1 BTC finder bonus) + continuous-time decay-EMA residual. Lightning-only payouts, custodial. *See [[parasite-pool]].*
+- **Blitzpool** — four modes (Solo / PPLNS / Group-Solo / Blockparty), all paid as direct coinbase outputs with no pool wallet. Ships a finder bonus for Group-Solo; PPLNS opts out. *See [[../../raw/repos/2026-07-27-blitzpool-finder-bonus-code-read|code-level read]].*
 
 ## 2b. Decentralized FPPS (proposal stage)
 
@@ -104,9 +107,21 @@ These are payout *layers* — orthogonal to the share-accounting scheme. They si
 - [[../../raw/articles/2026-05-26-radpool-delvingbitcoin|Radpool delvingbitcoin]]
 - [[../../raw/papers/2026-05-26-kiayias-aft-2025-shapley-oceanic-games|Kiayias et al. AFT'25 — Shapley value pool design]]
 - [[../../raw/repos/2026-07-17-coinbase-playground-readme|coinbase-playground README]] — CTV coinbase fanout (flat/layered trees)
+- [[../../raw/repos/2026-07-27-blitzpool-finder-bonus-code-read|Blitzpool finder-bonus code read]] — verified finder-bonus carve-out math and per-finder coinbase architecture
 
 ## See also
 
+- [[lottery-pplns|Lottery-PPLNS (Finder-Bonus Hybrid)]] — the finder-bonus family as its own axis
 - [[../topics/payout-design-space|Payout Design Space (synthesis)]]
 - [[../topics/sv2-jd-and-payout-decoupling|SV2 Job Declaration ↔ Payout Decoupling]]
 - [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — the on-chain fanout primitive detailed in §3b
+- [[ark-for-mining-payouts.md|Ark for Mining Payouts]]
+- [[braidpool.md|Braidpool]]
+- [[../decisions/custody-tradeoffs.md|Custody Tradeoffs across Payout Schemes]]
+- [[datum.md|DATUM (OCEAN template-construction)]]
+- [[ehash.md|eHash / Hashpool — Cashu ecash share tokens]]
+- [[fpps.md|FPPS (Full Pay Per Share)]]
+- [[parasite-pool.md|Parasite Pool]]
+- [[pplns.md|PPLNS (Pay Per Last N Shares)]]
+- [[radpool.md|Radpool]]
+- [[sv2-share-accounting-ext.md|SV2 Share Accounting Extension]]

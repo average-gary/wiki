@@ -1,7 +1,7 @@
 ---
 title: "Aquinas, Summa Theologica II-II, Q.92 — On Superstition in General"
 source: "https://www.newadvent.org/summa/3092.htm"
-type: paper
+type: papers
 date_fetched: 2026-05-25
 date_published: "1265-1274 (translation: 1947 Benziger)"
 tags: [aquinas, summa, magic-theology, primary-text, gap-closing]

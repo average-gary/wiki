@@ -1,7 +1,7 @@
 ---
 title: "1 Enoch — Book of the Watchers (chapters 6-16)"
 source: "https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)/"
-type: paper
+type: papers
 date_fetched: 2026-05-25
 date_published: "~3rd c. BCE - 1st c. CE; translation: R.H. Charles 1917"
 tags: [enoch, watchers, nephilim, deuterocanon-non-canonical, primary-text, gap-closing]

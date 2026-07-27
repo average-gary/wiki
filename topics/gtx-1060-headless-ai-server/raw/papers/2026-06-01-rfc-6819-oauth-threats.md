@@ -1,7 +1,7 @@
 ---
 title: "RFC 6819 — OAuth 2.0 Threat Model and Security Considerations"
 source: https://datatracker.ietf.org/doc/html/rfc6819
-type: paper
+type: papers
 tags: [oauth, refresh-token, rotation, family-revocation, replay, rfc]
 date: 2026-06-01
 publication_date: 2013-01

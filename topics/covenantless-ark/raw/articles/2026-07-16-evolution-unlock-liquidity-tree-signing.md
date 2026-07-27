@@ -1,7 +1,7 @@
 ---
 title: "Unlocking Liquidity Before Shared Output Expiration (Ark Labs)"
-source_url: https://blog.arklabs.xyz/unlock-liquidity-before-shared-output-expiration/
-type: article
+source: https://blog.arklabs.xyz/unlock-liquidity-before-shared-output-expiration/
+type: articles
 publisher: Ark Labs
 date: 2024-11-05
 ingested: 2026-07-16

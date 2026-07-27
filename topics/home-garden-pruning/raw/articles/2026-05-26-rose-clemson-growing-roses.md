@@ -1,7 +1,7 @@
 ---
 title: "Growing Roses (Clemson HGIC 1172) — Shrub Rose & Knock Out section"
-source_url: "https://hgic.clemson.edu/factsheet/growing-roses/"
-type: article
+source: "https://hgic.clemson.edu/factsheet/growing-roses/"
+type: articles
 path: rose
 date_ingested: 2026-05-26
 date_published: unknown

@@ -1,10 +1,12 @@
 ---
 title: "Reference implementation skeleton (Rust / SRI)"
-type: topic
+category: topic
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
-tags: [stratum-v2, rust, SRI, reference-implementation, cargo, main.rs, ExtendedChannel, coinbase-check]
+tags: [stratum-v2, rust, sri, reference-implementation, cargo, main.rs, extended-channel, coinbase-check]
+summary: "A concrete, source-verified starting point (July 2026 SRI). Signatures confirmed against stratum-mining/stratum @ main + docs.rs; items that couldn't be confirmed are marked UNVERIFIED — do not treat those as final. Source: raw/repos/2026-07-21-sri-current-api-versions-and-signatures."
 ---
 
 # Reference implementation skeleton (Rust / SRI)

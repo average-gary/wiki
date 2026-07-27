@@ -1,7 +1,7 @@
 ---
 title: "KuzuDB — archived October 2025 (avoid for new projects)"
 source: "https://github.com/kuzudb/kuzu"
-type: repo
+type: repos
 date_fetched: 2026-05-24
 date_published: "2025-10-10"
 tags: [embedded-db, graph-database, kuzu, archived, avoid]

@@ -1,7 +1,7 @@
 ---
 title: "Arcane Classes (Wizard, Sorcerer, Witch, Magus, Psychic) - Archives of Nethys"
 source: "https://2e.aonprd.com/Classes.aspx"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: 2024-11-12
 tags: [pf2e, reskin, class, wizard, sorcerer, witch, magus, psychic]

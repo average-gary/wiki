@@ -1,7 +1,7 @@
 ---
 title: "Foundry pf2e remaster-changes journal"
 source: "https://github.com/foundryvtt/pf2e/blob/master/packs/journals/remaster-changes.json"
-type: repo
+type: repos
 date_fetched: 2026-05-24
 date_published: "2024-09-01"
 tags: [pf2e, remaster, foundry, alignment, schools, sanctification, primary-source]

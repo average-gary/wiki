@@ -1,7 +1,7 @@
 ---
 title: "Open Scriptures Hebrew Bible (OSHB) / Westminster Leningrad Codex"
-source_url: "https://hb.openscriptures.org/"
-type: article
+source: "https://hb.openscriptures.org/"
+type: articles
 path: data
 date_ingested: 2026-05-27
 date_published: unknown

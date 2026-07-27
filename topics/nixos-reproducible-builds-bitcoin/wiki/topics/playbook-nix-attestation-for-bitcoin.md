@@ -1,11 +1,13 @@
 ---
 title: "Playbook: Nix-built attestation for Bitcoin Core"
-type: topic
+category: topic
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: medium
 status: synthesis
 tags: [playbook, attestation, nix, bitcoin-core, distributed-verification]
+summary: "A practical sketch of what it would take to participate in Bitcoin Core's release-attestation regime as a *Nix builder*, not a *Guix builder*."
 sources:
   - "[[../../raw/articles/2026-06-15-b10c-matching-hashes-bitcoind-nix-guix-v31.md|b10c matching hashes]]"
   - "[[../../raw/data/2026-06-15-bitcoin-core-guix-sigs.md|guix.sigs data]]"
@@ -110,3 +112,5 @@ toolchain-diversity catches, not as a replacement for Guix.
 - [[../concepts/multi-builder-attestation.md|Multi-builder attestation]]
 - [[../concepts/bootstrap-chain.md|Bootstrap chain]]
 - [[../../theses/nix-can-match-guix-attestation.md|Thesis: Nix can produce a hash-matched Bitcoin Core attestation]]
+- [[lightning-node-reproducibility-under-nix.md|Lightning node reproducibility under Nix]]
+- [[sv2-apps-oci-reproducibility-feasibility.md|sv2-apps OCI reproducibility — feasibility assessment vs Fedimint pattern]]

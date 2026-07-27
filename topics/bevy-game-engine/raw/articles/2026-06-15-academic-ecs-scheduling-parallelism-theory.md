@@ -1,9 +1,9 @@
 ---
 title: "Scheduling and parallelism in Bevy ECS"
-source_url: https://ratysz.github.io/article/scheduling-1/
+source: https://ratysz.github.io/article/scheduling-1/
 source_date: 2020-09
 ingested: 2026-06-15
-type: article
+type: articles
 author: Ratysz (yaks scheduler author; longtime Bevy contributor)
 quality: 5
 credibility: high

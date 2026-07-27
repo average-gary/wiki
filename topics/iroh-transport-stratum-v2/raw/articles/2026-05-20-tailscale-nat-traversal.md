@@ -1,6 +1,6 @@
 ---
 title: "How NAT Traversal Works (Tailscale)"
-source_url: https://tailscale.com/blog/how-nat-traversal-works
+source: https://tailscale.com/blog/how-nat-traversal-works
 type: post
 date: 2020 (rolling updates)
 org: Tailscale

@@ -1,9 +1,11 @@
 ---
 title: "Reference: specs, repos, docs"
-type: reference
+category: reference
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 tags: [bevy, reference, links, repos, docs]
+summary: "Plus the 560 games tagged bevy on itch.io."
 ---
 
 # Reference: specs, repos, docs

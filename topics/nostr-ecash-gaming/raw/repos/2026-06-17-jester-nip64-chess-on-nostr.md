@@ -3,9 +3,9 @@ title: "Jester / jesterui + NIP-64 — chess over Nostr; canonical board-game-vi
 source: https://github.com/jesterui/jesterui
 spec: https://github.com/nostr-protocol/nips/blob/master/64.md
 demo: https://jesterui.github.io
-type: repo
+type: repos
 tags: [nostr, chess, nip-64, board-game, pgn, jester, satsangatech]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: medium
 quality_score: 4

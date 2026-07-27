@@ -8,7 +8,9 @@ sources:
   - raw/articles/2026-06-01-dropinq7-prior-art-survey-bitcoin-core-lnd-startos.md
 created: 2026-06-01
 updated: 2026-06-01
+volatility: warm
 tags: [migration, runbook, operator, failure-modes, migrating-md]
+summary: "What an OCEAN operator running datum_gateway actually does to swap binaries. The C gateway ships zero migration docs (no MIGRATING.md, no UPGRADING.md, no CHANGELOG.md); the Rust drop-in shipping a real runbook is purely additive credibility."
 confidence: high
 ---
 
@@ -127,3 +129,4 @@ Surveyed: Bitcoin Core release notes (right shape), LND release notes (wrong sha
 - [[drop-in-surface-inventory]] — what the runbook actually has to verify
 - [[dual-protocol-downstream]] — the SV1+SV2 design that makes Phase 0 decisions safe
 - [[drop-in-distribution]] — the channels the swap actually flows through
+- [[../topics/drop-in-rust-datum-gateway.md|Drop-in Rust DATUM gateway — synthesis]]

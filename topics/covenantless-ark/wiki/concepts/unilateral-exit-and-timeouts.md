@@ -1,6 +1,6 @@
 ---
 title: "Unilateral exit, timeouts, and the refund path"
-type: concept
+category: concept
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high
@@ -92,6 +92,8 @@ The unilateral exit is the **fallback**, not the default. When the server is res
 - [[offboarding-and-onchain-payments.md|Offboarding and on-chain payments]]
 - [[vtxo-lifetime-and-expiry.md|VTXO lifetime and expiry]]
 - [[../topics/clark-limitations-and-trust.md|Limitations and trust model]]
+- [[boarding.md|Boarding — getting on-chain funds into a VTXO]]
+- [[vtxo-and-vtxo-tree.md|VTXOs and the VTXO tree]]
 
 ## Sources
 

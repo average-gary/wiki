@@ -1,10 +1,12 @@
 ---
 title: "Nix supply-chain roadmap (2024–2026 community state)"
-type: topic
+category: topic
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [nix, supply-chain, roadmap, nixcon, lix, ca-derivations]
+summary: "Where the Nix supply-chain story stands in mid-2026, with implications for Bitcoin reproducibility."
 sources:
   - "[[../../raw/articles/2026-06-15-nixcon-2025-supply-chain-panel.md|NixCon 2025 — Supply Chain Panel]]"
   - "[[../../raw/articles/2026-06-15-rb-summit-2025-vienna.md|RB Summit 2025 Vienna]]"

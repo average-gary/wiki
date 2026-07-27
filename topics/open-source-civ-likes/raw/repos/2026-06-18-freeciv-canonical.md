@@ -1,7 +1,7 @@
 ---
 title: "Freeciv (canonical upstream) — freeciv/freeciv"
 source: https://github.com/freeciv/freeciv
-type: repo
+type: repos
 ingested: 2026-06-18
 quality: 5
 confidence: high

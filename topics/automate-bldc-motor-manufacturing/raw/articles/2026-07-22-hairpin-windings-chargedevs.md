@@ -1,11 +1,11 @@
 ---
 title: "A Closer Look at Hairpin Motor Windings"
 source: https://chargedevs.com/features/a-closer-look-at-hairpin-motor-windings/
-type: article
+type: articles
 tags: [hairpin-winding, ev-traction, slot-fill, skin-effect, welding]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Independent engineering explainer connecting fill factor, skin-effect limits, and welding tradeoffs — the "why" behind hairpin adoption in EV traction motors.
 ---
 

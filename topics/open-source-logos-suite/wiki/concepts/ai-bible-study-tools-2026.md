@@ -1,25 +1,26 @@
 ---
 title: "AI Bible-study tools 2026: RAG, citation-grounding, hallucination guards"
-type: concept
+category: concept
 created: 2026-06-02
 updated: 2026-06-02
 verified: 2026-06-02
 volatility: hot
 confidence: medium
 tags: [ai, llm, rag, plugins, competitive-landscape, hallucination, citation, ollama]
+summary: "The 2026 AI Bible-study market is bifurcated: paid SaaS incumbents (Logos AI at $8.33–$16.67/mo, Pulpit AI at $39–$129/mo, Magisterium AI for Catholic users) with closed, undocumented architectures; and a long tail of small OSS RAG repos (BRACE, bible-ai-assistant, Self-Reflective-RAG, BibleRAG) tha…"
 sources:
   - raw/articles/2026-06-02-logos-ai-product-page.md
   - raw/articles/2026-06-02-pulpit-ai-homepage.md
   - raw/articles/2026-06-02-pulpit-ai-pricing.md
   - raw/articles/2026-06-02-magisterium-ai-blocked.md
   - raw/articles/2026-06-02-youversion-no-ai-disclosure.md
-  - raw/articles/2026-06-02-github-bible-rag-search.md
-  - raw/articles/2026-06-02-brace-bible-retrieval-augmented.md
-  - raw/articles/2026-06-02-bible-ai-assistant-ttimms.md
-  - raw/articles/2026-06-02-self-reflective-rag-bible.md
-  - raw/articles/2026-06-02-bible-rag-evaluation-jurjani.md
-  - raw/articles/2026-06-02-nkjv-embedding-anada10.md
-  - raw/articles/2026-06-02-bible-chats-isherous.md
+  - ../../raw/repos/2026-06-02-github-bible-rag-search.md
+  - ../../raw/repos/2026-06-02-brace-bible-retrieval-augmented.md
+  - ../../raw/repos/2026-06-02-bible-ai-assistant-ttimms.md
+  - ../../raw/repos/2026-06-02-self-reflective-rag-bible.md
+  - ../../raw/repos/2026-06-02-bible-rag-evaluation-jurjani.md
+  - ../../raw/repos/2026-06-02-nkjv-embedding-anada10.md
+  - ../../raw/repos/2026-06-02-bible-chats-isherous.md
 ---
 
 # AI Bible-study tools 2026: RAG, citation-grounding, hallucination guards

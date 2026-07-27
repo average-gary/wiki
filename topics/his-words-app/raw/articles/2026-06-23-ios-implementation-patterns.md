@@ -1,7 +1,7 @@
 ---
 title: "iOS Implementation Patterns: DeviceActivity + ShieldActionExtension"
 source: "Apple Developer Framework documentation, open-source implementations, One Sec/Opal technical analysis"
-type: article
+type: articles
 created: 2026-06-23
 updated: 2026-06-23
 tags: [ios, implementation, device-activity, shield-action-extension, swiftui, his-words, technical]

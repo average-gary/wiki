@@ -4,11 +4,14 @@ type: thesis
 status: candidate
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 verdict: pending
 confidence: pending
 core_claim: "A Nix-built `bitcoind` binary can be made bit-for-bit identical to the Guix release output for at least one mainline architecture, and a corresponding GPG-signed attestation should be accepted into `bitcoin-core/guix.sigs` as a toolchain-diversity check."
 key_variables: [nix-toolchain-alignment, post-build-patching, cross-compile-feasibility, guix-sigs-policy-acceptance, bootstrap-tools-trust]
 falsification: "Bitcoin Core maintainers explicitly reject Nix attestations because the bootstrap-tools dependency duplicates risk rather than diversifying it; OR the post-build patching required to match remains structural and cannot be upstreamed to nixpkgs."
+tags: [thesis]
+summary: "A Nix-built `bitcoind` binary can be made bit-for-bit identical to the Guix release output for at least one mainline architecture, and a corresponding GPG-signed attestation should be accepted into `bitcoin-core/guix.sigs` as a toolchain-diversity check."
 ---
 
 # Thesis: A Nix-built attestation can join `guix.sigs`
@@ -60,3 +63,4 @@ follow-up wants to render a verdict.
 - [[../wiki/topics/playbook-nix-attestation-for-bitcoin.md]]
 - [[../wiki/topics/why-bitcoin-core-uses-guix-not-nix.md]]
 - [[../wiki/concepts/multi-builder-attestation.md]]
+- [[fedimint-needs-fedimint-sigs.md|Thesis: Fedimint should establish a fedimint.sigs multi-builder attestation repo]]

@@ -1,10 +1,11 @@
 ---
 title: "WhisperX vs faster-whisper + manual pyannote — pick WhisperX, pin carefully"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: hot
+summary: "Pick WhisperX for transcription + speaker diarization on a 6GB Pascal GPU. You get wav2vec2 forced-alignment for free (which fixes Whisper's sloppy word timestamps) and assign_word_speakers() joins speakers per word."
 confidence: high
 sources:
   - raw/repos/2026-05-21-whisperx.md
@@ -72,3 +73,4 @@ From [[pyannote 4.x DER table|raw/repos/2026-05-21-pyannote-audio]]:
 - [[whisperx-known-broken-installs]] — the lightning quarantine + use_auth_token mismatch
 - [[pyannote-audio-3.x-on-pascal]] — what pyannote does and how it sizes on 6GB
 - [[faster-whisper-on-gtx-1060]] — the underlying transcription engine
+- [[pyannote-audio-3.x-on-pascal.md|pyannote.audio 3.x / 4.x on Pascal — VRAM, gating, DER]]

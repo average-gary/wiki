@@ -1,11 +1,13 @@
 ---
 title: Why LLMs write this way — two mechanisms behind every tell
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, mechanism, rlhf, next-token]
+summary: "Nearly every tell in this wiki traces to one of two mechanisms. Knowing which explains why some tells are durable and others drift."
 sources:
   - raw/articles/2026-07-13-anthropic-sycophancy.md
   - raw/articles/2026-07-13-openai-sycophancy-gpt4o.md
@@ -45,3 +47,4 @@ After pretraining, models are tuned on human preference data. Raters reward answ
 - [[perplexity-and-burstiness|Perplexity & burstiness]]
 - [[model-and-version-drift|Model & version drift]]
 - [[../topics/false-positives-and-fairness|False positives & fairness]]
+- [[sycophancy-and-positivity-register.md|Sycophancy & the relentless-positivity register]]

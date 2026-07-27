@@ -1,6 +1,6 @@
 ---
 title: "opdup blog — Rebooting P2Pool For Bitcoin"
-source_url: https://blog.opdup.com/2025/02/04/rebooting-p2pool-for-bitcoin.html
+source: https://blog.opdup.com/2025/02/04/rebooting-p2pool-for-bitcoin.html
 type: blog-post
 ingested: 2026-05-22
 quality: 4

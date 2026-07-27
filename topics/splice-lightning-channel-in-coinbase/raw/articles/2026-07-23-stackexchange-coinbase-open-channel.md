@@ -1,9 +1,9 @@
 ---
 title: "Can a miner open a Lightning channel with a coinbase output? (Bitcoin StackExchange #115588)"
 source: "https://bitcoin.stackexchange.com/questions/115588/can-a-miner-open-a-lightning-channel-with-a-coinbase-output"
-type: article
+type: articles
 subtype: community-qa
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [lightning, coinbase, funding, channel-open, stackexchange, coinbase-maturity]
 credibility: low
 evidence_strength: community-qa

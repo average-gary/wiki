@@ -2,7 +2,7 @@
 title: "block/buzz — production Docker Compose deploy bundle (deploy/compose/)"
 source: https://github.com/block/buzz/tree/main/deploy/compose
 raw_source: "compose README, compose.yml, .env.example, run.sh, Dockerfile"
-type: repo
+type: repos
 tags: [buzz, deployment, docker-compose, self-host, ports, config, ops]
 confidence: high
 ingested: 2026-07-23

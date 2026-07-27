@@ -1,6 +1,6 @@
 ---
 title: "Is a covenantless post-block-found Ark boarding SV2 extension viable today? — analysis"
-type: topic
+category: topic
 created: 2026-07-17
 updated: 2026-07-17
 confidence: high
@@ -16,7 +16,7 @@ sources:
   - raw/articles/2026-07-17-roose-ark-case-for-ctv.md
   - raw/articles/2026-07-17-roose-evolving-ark-ctv-csfs.md
   - raw/articles/2026-07-17-braidpool-covenants-delving.md
-  - raw/articles/2026-07-17-braidpool-spec.md
+  - ../../raw/repos/2026-07-17-braidpool-spec.md
   - raw/articles/2026-07-17-narula-ark.md
   - raw/articles/2026-07-17-optech-ark.md
   - raw/articles/2026-07-17-ocean-datum.md

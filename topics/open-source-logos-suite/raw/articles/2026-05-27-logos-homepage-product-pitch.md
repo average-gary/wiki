@@ -1,7 +1,7 @@
 ---
 title: "Logos.com homepage — current product framing"
-source_url: "https://www.logos.com/"
-type: article
+source: "https://www.logos.com/"
+type: articles
 path: logos
 date_ingested: 2026-05-27
 date_published: 2026-05-27

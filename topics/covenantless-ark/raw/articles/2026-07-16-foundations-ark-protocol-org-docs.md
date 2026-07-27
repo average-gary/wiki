@@ -1,7 +1,7 @@
 ---
 title: "Ark Protocol docs (ark-protocol.org): clArk, VTXOs, Connectors"
-source_url: https://ark-protocol.org/intro/clark/
-type: article
+source: https://ark-protocol.org/intro/clark/
+type: articles
 publisher: ark-protocol.org (canonical protocol docs, public-domain)
 ingested: 2026-07-16
 research_path: foundations

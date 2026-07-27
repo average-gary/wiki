@@ -1,9 +1,9 @@
 ---
 title: "Bevy 0.16 Release Notes — Relationships, GPU-Driven Rendering, Required Components"
-source_url: https://bevy.org/news/bevy-0-16/
+source: https://bevy.org/news/bevy-0-16/
 source_date: 2025-04-24
 ingested: 2026-06-15
-type: article
+type: articles
 author: Carter Anderson (Cart) / Bevy
 quality: 5
 credibility: high

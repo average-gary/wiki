@@ -1,6 +1,6 @@
 ---
 title: p2poolv2 run-swarm.sh — heterogeneous synthetic-miner swarm orchestrator
-source_url: https://github.com/p2poolv2/p2poolv2/blob/main/load-tests/sim/run-swarm.sh
+source: https://github.com/p2poolv2/p2poolv2/blob/main/load-tests/sim/run-swarm.sh
 type: repos
 ingested: 2026-06-24
 quality: A

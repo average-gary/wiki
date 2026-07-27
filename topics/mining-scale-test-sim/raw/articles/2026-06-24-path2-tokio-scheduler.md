@@ -1,7 +1,7 @@
 ---
 title: "Tokio scheduler benchmarks (work-stealing rewrite)"
-source_url: https://tokio.rs/blog/2019-10-scheduler
-type: article
+source: https://tokio.rs/blog/2019-10-scheduler
+type: articles
 ingested: 2026-06-24
 quality: 5
 confidence: high

@@ -1,7 +1,7 @@
 ---
 title: "NIP-51: Lists (Nostr Personal Data Sync)"
-source_url: "https://github.com/nostr-protocol/nips/blob/master/51.md"
-type: article
+source: "https://github.com/nostr-protocol/nips/blob/master/51.md"
+type: articles
 path: infra-sync
 date_ingested: 2026-05-27
 date_published: 2024-06-01

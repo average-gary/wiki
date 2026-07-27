@@ -3,9 +3,10 @@ title: p2poolv2 ↔ 256 Foundation — the actual relationship
 category: topic
 created: 2026-05-24
 confidence: high
-tags: [p2poolv2, 256-foundation, Hydrapool, governance, framing-correction]
+tags: [p2poolv2, 256-foundation, hydrapool, governance, framing-correction]
 volatility: warm
 updated: 2026-07-15
+summary: "Synthesis article. The user's working framing — \"p2poolv2 under the 256 Foundation\" — is incorrect as commonly stated. This article documents the real structure."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-24-256-foundation-overview.md"

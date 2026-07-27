@@ -1,7 +1,7 @@
 ---
 title: "clinkme.dev — CLINK protocol portal (specs.html / index / apps.html)"
 source: https://clinkme.dev
-type: article
+type: articles
 ingested: 2026-06-09
 path: spec-primitives
 quality: 4

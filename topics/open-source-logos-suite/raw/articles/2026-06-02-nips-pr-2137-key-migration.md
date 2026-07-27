@@ -1,7 +1,7 @@
 ---
 title: "PR #2137 — Key migration (open, in flight)"
-url: https://github.com/nostr-protocol/nips/pull/2137
-retrieved: 2026-06-02
+source: https://github.com/nostr-protocol/nips/pull/2137
+ingested: 2026-06-02
 type: pr
 ---
 

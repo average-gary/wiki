@@ -1,21 +1,22 @@
 ---
 title: "World data model recommendation"
-type: concept
+category: concept
 created: 2026-05-24
 updated: 2026-05-24
 verified: 2026-05-24
 volatility: medium
 confidence: high
 sources:
-  - "[[2026-05-24-world-data-modeling-kanka-entity-types]]"
-  - "[[2026-05-24-world-data-modeling-foundry-vtt-data-model]]"
-  - "[[2026-05-24-world-data-modeling-kuzudb-embedded-graph]]"
-  - "[[2026-05-24-world-data-modeling-surrealdb-embedded]]"
-  - "[[2026-05-24-world-data-modeling-automerge-crdt]]"
-  - "[[2026-05-24-world-data-modeling-local-first-software]]"
-  - "[[2026-05-24-world-data-modeling-obsidian-properties]]"
-  - "[[2026-05-24-world-data-modeling-digital-gardens-appleton]]"
+  - "[[../../raw/articles/2026-05-24-world-data-modeling-kanka-entity-types]]"
+  - "[[../../raw/articles/2026-05-24-world-data-modeling-foundry-vtt-data-model]]"
+  - "[[../../raw/repos/2026-05-24-world-data-modeling-kuzudb-embedded-graph]]"
+  - "[[../../raw/articles/2026-05-24-world-data-modeling-surrealdb-embedded]]"
+  - "[[../../raw/repos/2026-05-24-world-data-modeling-automerge-crdt]]"
+  - "[[../../raw/papers/2026-05-24-world-data-modeling-local-first-software]]"
+  - "[[../../raw/articles/2026-05-24-world-data-modeling-obsidian-properties]]"
+  - "[[../../raw/articles/2026-05-24-world-data-modeling-digital-gardens-appleton]]"
 tags: [data-model, schema, markdown, sqlite, graph-db, surrealdb, automerge, local-first, obsidian, kanka, foundry]
+summary: "Markdown + YAML frontmatter as canonical source-of-truth, SQLite mirror for query, derived graph view for relations, Automerge later for live multi-device. Two-tier schema: schemaful for mechanics, schemaless for lore."
 ---
 
 # World data model recommendation
@@ -142,6 +143,7 @@ Round-trip discipline: agent reads markdown → edits → validator checks schem
 - [[llm-integration-architecture]] — the tool API the agent calls
 - [[worldbuilding-tool-landscape-2026]] — Kanka and Foundry as the schema references
 - [[recommended-stack]] — full integrated stack
+- [[../reference/pf2e-remaster-name-mapping.md|PF2e Remaster name mapping (legacy ↔ Remaster)]]
 
 ## Open questions
 

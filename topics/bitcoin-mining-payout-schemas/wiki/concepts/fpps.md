@@ -3,9 +3,10 @@ title: FPPS (Full Pay Per Share)
 category: concept
 created: 2026-05-23
 confidence: high
-tags: [FPPS, PPS, pool-eats-variance, custodial]
+tags: [fpps, PPS, pool-eats-variance, custodial]
 volatility: warm
 updated: 2026-07-15
+summary: "PPS plus a share of transaction fees averaged over a window. Dominant scheme at large pools (Foundry, AntPool, F2Pool, ViaBTC) since ~2016-2017."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-23-hashrate-index-pintos-payout-guide.md"
@@ -78,3 +79,6 @@ These are the hooks for OCEAN/TIDES, DMND/SLICE, and hashpool.
 - [[pplns]]
 - [[variance-and-risk-shifting]]
 - [[../topics/why-fpps-dominates-but-is-fragile|Why FPPS dominates (and is fragile)]]
+- [[radpool.md|Radpool]]
+- [[tides-variance-derivation.md|TIDES Variance — Derivation from Rosenfeld 2011]]
+- [[tides.md|TIDES (Transparent Index of Distinct Extended Shares)]]

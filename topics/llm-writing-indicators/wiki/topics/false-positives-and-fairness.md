@@ -1,11 +1,13 @@
 ---
 title: False positives & fairness — the limits of tell-based judgment
-type: topic
+category: topic
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, false-positives, fairness, bias, ethics]
+summary: "The single most important thing a reviewer must internalize: the tells detect statistical typicality, not authorship. The humans most likely to be falsely flagged are the ones least able to afford it."
 sources:
   - raw/papers/2026-07-13-liang-detectors-biased-nonnative.md
   - raw/articles/2026-07-13-false-positive-harm-turnitin-constitution.md
@@ -53,3 +55,6 @@ The single most important thing a reviewer must internalize: **the tells detect 
 - [[detection-tools-and-limits|Detection tools & limits]]
 - [[reviewer-checklist|Reviewer checklist]] — Step 4 guardrails.
 - [[../concepts/perplexity-and-burstiness|Perplexity & burstiness]] — why the bias is structural.
+- [[empirical-evidence-base.md|The empirical evidence base — are the tells real?]]
+- [[../concepts/model-and-version-drift.md|Model & version drift — why the tells keep moving]]
+- [[../concepts/why-llms-write-this-way.md|Why LLMs write this way — two mechanisms behind every tell]]

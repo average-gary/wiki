@@ -2,8 +2,8 @@
 title: "Fedimint H1 2025 Ecosystem Review (official, 2025-06-30)"
 type: raw
 source_type: articles
-source_url: https://fedimint.org/blog/2025/06/30/fedimint-review-first-half
-fetched: 2026-05-28
+source: https://fedimint.org/blog/2025/06/30/fedimint-review-first-half
+ingested: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 quality: 5

@@ -1,22 +1,23 @@
 ---
 title: "Prior Christian TTRPG lessons (40 years of attempts)"
-type: concept
+category: concept
 created: 2026-05-25
 updated: 2026-05-25
 verified: 2026-05-25
 volatility: low
 confidence: high
 sources:
-  - "[[2026-05-24-prior-christian-ttrpg-history-dragonraid-wikipedia]]"
-  - "[[2026-05-24-prior-christian-ttrpg-history-dragonraid-design-retrospective]]"
-  - "[[2026-05-24-prior-christian-ttrpg-history-testament-green-ronin]]"
-  - "[[2026-05-24-prior-christian-ttrpg-history-adventurers-guide-bible]]"
-  - "[[2026-05-24-prior-christian-ttrpg-history-in-nomine]]"
-  - "[[2026-05-24-prior-christian-ttrpg-history-christian-rpg-landscape]]"
-  - "[[2026-05-25-older-christian-rpgs-rapture-second-coming]]"
-  - "[[2026-05-25-older-christian-rpgs-soulforge-and-bones-not-found]]"
-  - "[[2026-05-25-older-christian-rpgs-palladium-no-christian-splat]]"
+  - "[[../../raw/articles/2026-05-24-prior-christian-ttrpg-history-dragonraid-wikipedia]]"
+  - "[[../../raw/articles/2026-05-24-prior-christian-ttrpg-history-dragonraid-design-retrospective]]"
+  - "[[../../raw/articles/2026-05-24-prior-christian-ttrpg-history-testament-green-ronin]]"
+  - "[[../../raw/articles/2026-05-24-prior-christian-ttrpg-history-adventurers-guide-bible]]"
+  - "[[../../raw/articles/2026-05-24-prior-christian-ttrpg-history-in-nomine]]"
+  - "[[../../raw/articles/2026-05-24-prior-christian-ttrpg-history-christian-rpg-landscape]]"
+  - "[[../../raw/articles/2026-05-25-older-christian-rpgs-rapture-second-coming]]"
+  - "[[../../raw/articles/2026-05-25-older-christian-rpgs-soulforge-and-bones-not-found]]"
+  - "[[../../raw/articles/2026-05-25-older-christian-rpgs-palladium-no-christian-splat]]"
 tags: [christian-rpg, history, dragonraid, testament, in-nomine, design-lessons]
+summary: "40 years of Christian-themed TTRPGs have produced two clear design failure modes and one clear design solve. A PF2e Biblical reskin should follow the solve, not repeat the failures."
 ---
 
 # Prior Christian TTRPG lessons

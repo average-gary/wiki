@@ -1,10 +1,11 @@
 ---
 title: Stratum V2 overview
-type: concept
+category: concept
 created: 2026-05-22
 updated: 2026-05-22
 verified: 2026-05-22
 volatility: warm
+summary: "Stratum V2 is the successor to Stratum V1 designed by Braiins (Pavel Moravec, Jan Čapek) starting 2018. The reference implementation lives at github.com/stratum-mining/stratum (protocol crates) and github.com/stratum-mining/sv2-apps (application stack). Specs at github.com/stratum-mining/sv2-spec."
 confidence: high
 sources:
   - "[[raw/papers/2026-05-22-sv2-spec-job-declaration-protocol|SV2 spec: JDP]]"

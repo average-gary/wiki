@@ -1,7 +1,7 @@
 ---
 title: "CUDA Toolkit Release Notes — Pascal removed in CUDA 13.0"
 source: https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
-type: article
+type: articles
 tags: [cuda, pascal, sm_61, gtx-1060, version-pinning]
 date: 2026-05-21
 quality: 6

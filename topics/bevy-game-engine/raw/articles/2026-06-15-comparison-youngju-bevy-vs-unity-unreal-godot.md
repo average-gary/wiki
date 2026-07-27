@@ -1,9 +1,9 @@
 ---
 title: "Bevy Game Engine — Hands-On Rust ECS Tour (2026 Deep Dive)"
-source_url: https://www.youngju.dev/blog/culture/2026-05-14-bevy-game-engine-rust-hands-on-ecs-paradigm-modern-gamedev-deep-dive-2026.en
+source: https://www.youngju.dev/blog/culture/2026-05-14-bevy-game-engine-rust-hands-on-ecs-paradigm-modern-gamedev-deep-dive-2026.en
 source_date: 2026-05-14
 ingested: 2026-06-15
-type: article
+type: articles
 author: Youngju Kim
 quality: 4
 credibility: medium

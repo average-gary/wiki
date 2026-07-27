@@ -1,11 +1,11 @@
 ---
 title: "Coinbase tx structure, extranonce, merkle root + block header (Mastering Bitcoin ch12 + Bitcoin wiki)"
-source_url: https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/ch12_mining.adoc
+source: https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/ch12_mining.adoc
 source_url_2: https://en.bitcoin.it/wiki/Protocol_documentation
 source_url_3: https://en.bitcoin.it/wiki/Block_hashing_algorithm
 source_url_4: https://en.bitcoin.it/wiki/Merged_mining_specification
-type: article
-retrieved: 2026-07-21
+type: articles
+ingested: 2026-07-21
 credibility: high
 corroboration: "coinbase-structure agent; merkle/header rules also confirmed by SV2 spec"
 tags: [bitcoin, coinbase, extranonce, merkle-root, block-header, endianness, merged-mining, fabe6d6d]

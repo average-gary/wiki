@@ -1,10 +1,12 @@
 ---
 title: Operations, Security & Maturity (The Skeptic's View)
-type: concept
+category: concept
 tags: [buzz, security, operations, maturity, backups, migrations, agents, auth, risk]
 confidence: high
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
+summary: "The clear-eyed view. buzz is genuinely interesting and worth piloting — but it is early, and several sharp edges matter *before* you put a team on it."
 ---
 
 # Operations, Security & Maturity
@@ -85,3 +87,4 @@ keys are all that stand between an attacker and read/write access.
 - [What buzz Is](what-is-buzz.md)
 - [VPN-Gating Patterns](vpn-gating-patterns.md)
 - [Deployment & Topology](../reference/deployment-guide.md)
+- [[data-model-and-agents.md|Data Model & Agents (Custom NIPs, Git, Runtime)]]

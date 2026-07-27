@@ -1,9 +1,12 @@
 ---
 title: "The bottleneck thesis — connections vs hashrate vs share validation"
-type: topic
+category: topic
 created: 2026-06-24
+updated: 2026-06-24
+volatility: warm
 confidence: high
 tags: [thesis, scale, vardiff, connections, validation]
+summary: "When scale-testing a Stratum V2 mining pool by simulation, connection count saturates before share-validation does, because vardiff clamps each connection's share-submission rate to a target band regardless of underlying hashrate."
 ---
 
 # The bottleneck thesis

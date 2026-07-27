@@ -1,10 +1,12 @@
 ---
 title: Deployment & Topology Reference
-type: reference
+category: reference
 tags: [buzz, deployment, docker-compose, ports, config, topology, vpn]
 confidence: high
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
+summary: "The concrete self-host facts for block/buzz, and the network topology that places its single exposed surface behind a VPN. For the opinionated step-by-step, see the Team-over-VPN Playbook."
 ---
 
 # Deployment & Topology Reference

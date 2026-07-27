@@ -1,7 +1,7 @@
 ---
 title: "block/buzz — custom NIPs & agent/git/data model"
 source: https://github.com/block/buzz/tree/main/docs/nips
-type: repo
+type: repos
 tags: [buzz, nostr, nips, data-model, agents, git, event-kinds]
 confidence: high
 ingested: 2026-07-23

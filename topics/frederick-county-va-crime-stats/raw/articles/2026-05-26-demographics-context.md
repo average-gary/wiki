@@ -1,10 +1,10 @@
 ---
 title: "FrCo + Winchester — demographic and public-health context"
 publication: Data USA + US Census + VDH + Wikipedia
-url: https://datausa.io/profile/geo/frederick-county-va
+source: https://datausa.io/profile/geo/frederick-county-va
 url2: https://datausa.io/profile/geo/winchester-va
 url3: https://www.vdh.virginia.gov/drug-overdose-data/
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

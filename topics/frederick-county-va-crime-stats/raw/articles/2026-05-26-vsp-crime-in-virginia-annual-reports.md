@@ -1,11 +1,11 @@
 ---
 title: "Virginia State Police — Crime in Virginia annual reports (2022, 2023, 2024)"
 publication: Virginia State Police
-url: https://vsp.virginia.gov/sections-units-bureaus/bass/criminal-justice-information-services/uniform-crime-reporting/
+source: https://vsp.virginia.gov/sections-units-bureaus/bass/criminal-justice-information-services/uniform-crime-reporting/
 url2: https://vsp.virginia.gov/wp-content/uploads/2025/12/Crime-In-Virginia-2024.pdf
 url3: https://vsp.virginia.gov/wp-content/uploads/2024/08/CRIME-IN-VIRGINIA-2023.pdf
 url4: https://vsp.virginia.gov/wp-content/uploads/2023/06/Crime-In-Virginia-2022.pdf
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

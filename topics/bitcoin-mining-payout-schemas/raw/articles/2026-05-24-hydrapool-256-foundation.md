@@ -1,14 +1,14 @@
 ---
 title: "Hydrapool — 256 Foundation's PPLNS pool product"
 publication: github.com/256foundation/hydrapool + 256foundation.org
-url: https://github.com/256foundation/hydrapool
+source: https://github.com/256foundation/hydrapool
 url2: https://256foundation.org/projects/hydrapool
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high
 confidence: high
-tags: [Hydrapool, 256-foundation, PPLNS, public-audit-api, one-click-pool]
+tags: [hydrapool, 256-foundation, pplns, public-audit-api, one-click-pool]
 ---
 
 # Hydrapool

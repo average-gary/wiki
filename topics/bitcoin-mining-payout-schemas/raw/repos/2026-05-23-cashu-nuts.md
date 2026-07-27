@@ -1,13 +1,13 @@
 ---
 title: "Cashu NUTs — Notation, Usage, Terminology specs"
 publication: cashubtc/nuts (GitHub)
-url: https://github.com/cashubtc/nuts
-type: repo
+source: https://github.com/cashubtc/nuts
+type: repos
 ingested: 2026-05-23
 quality: 5
 credibility: high
 confidence: high
-tags: [Cashu, NUT, BDHKE, ecash, blind-signature, hashpool-substrate]
+tags: [cashu, NUT, bdhke, ecash, blind-signature, hashpool-substrate]
 ---
 
 # Cashu NUTs Specification

@@ -1,6 +1,6 @@
 ---
 title: "iroh: Relays (DERP-style)"
-type: concept
+category: concept
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-27

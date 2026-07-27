@@ -1,6 +1,7 @@
 ---
 title: "Drop-In Q3: Rust Workspace Layout for datum-rs Drop-In Replacement"
-source_url: https://github.com/OCEAN-xyz/datum_gateway/tree/master/src
+source: https://github.com/OCEAN-xyz/datum_gateway/tree/master/src
+type: articles
 source_type: derived-design
 upstream: OCEAN-xyz/datum_gateway
 branch: master

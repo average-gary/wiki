@@ -6,7 +6,7 @@ type: data
 tags: [lamination-stacking, interlock, welding, bonding-backlack, riveting, process-control]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Side-by-side of the five stacking/joining methods with automation implications and loss trade-offs, plus the sensing/QC layer that automates it.
 ---
 

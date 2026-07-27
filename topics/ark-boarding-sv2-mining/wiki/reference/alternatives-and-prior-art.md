@@ -1,6 +1,6 @@
 ---
 title: "Alternatives & prior art for covenantless non-custodial mining payout"
-type: reference
+category: reference
 created: 2026-07-17
 updated: 2026-07-17
 confidence: medium
@@ -10,7 +10,7 @@ tags: [prior-art, ocean-datum, hashpool, braidpool, mercury-statechains, timeout
 sources:
   - raw/articles/2026-07-17-ocean-datum.md
   - raw/articles/2026-07-17-hashpool.md
-  - raw/articles/2026-07-17-braidpool-spec.md
+  - ../../raw/repos/2026-07-17-braidpool-spec.md
   - raw/articles/2026-07-17-braidpool-covenants-delving.md
   - raw/articles/2026-07-17-mercury-statechains.md
   - raw/articles/2026-07-17-ctv-csfs-letter.md

@@ -1,9 +1,9 @@
 ---
 title: "Ark Labs Raises $5.2M Backed by Tether to Build Programmable Finance on Bitcoin"
 publication: Ark Labs Blog
-url: https://blog.arklabs.xyz/ark-labs-raises-5-2m-backed-by-tether-to-build-programmable-finance-on-bitcoin/
+source: https://blog.arklabs.xyz/ark-labs-raises-5-2m-backed-by-tether-to-build-programmable-finance-on-bitcoin/
 date: 2026-03-12
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

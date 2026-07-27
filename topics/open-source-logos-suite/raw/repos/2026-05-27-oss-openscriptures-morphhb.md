@@ -1,7 +1,7 @@
 ---
 title: "Open Scriptures Hebrew Bible (morphhb)"
-source_url: "https://github.com/openscriptures/morphhb"
-type: repo
+source: "https://github.com/openscriptures/morphhb"
+type: repos
 path: oss
 date_ingested: 2026-05-27
 date_published: 2021-12-13

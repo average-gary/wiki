@@ -1,7 +1,7 @@
 ---
 title: "The first Media over QUIC CDN: Cloudflare (moq.dev/blog)"
 source: https://moq.dev/blog/first-cdn/
-type: article
+type: articles
 tags: [moq, cloudflare, cdn, moq-rs, deployment, latency]
 date: 2026-06-01
 publication_date: 2025-08-22

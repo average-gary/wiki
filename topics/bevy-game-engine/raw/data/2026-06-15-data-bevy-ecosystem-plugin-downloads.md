@@ -1,6 +1,6 @@
 ---
 title: "Bevy ecosystem crates — direct API stats (key plugins)"
-source_url: https://crates.io/
+source: https://crates.io/
 source_date: 2026-06-15
 ingested: 2026-06-15
 type: data

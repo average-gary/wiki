@@ -1,9 +1,11 @@
 ---
 title: Core & Assembly Automation
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [lamination-stacking, interlock, press-fit, shrink-fit, impregnation, robotics, servo-press]
+summary: "Everything around winding and magnets — building the laminated cores, joining them, pressing the rotor onto its shaft, dropping the stator into a housing, impregnating, adding bearings and end-caps — is the most mature and most automated part of the line."
 confidence: high
 ---
 
@@ -87,3 +89,4 @@ see [Limitations](limitations-and-gotchas.md) and the open [gaps](#see-also).
 - [Magnet Handling & Magnetization](magnet-handling-magnetization.md)
 - [Line Economics & Architecture](line-economics-and-architecture.md)
 - [Vendor Landscape](../reference/vendor-landscape.md) — lamination presses, integrators
+- [[../reference/build-playbook.md|Build Playbook — How to Automate Brushless Motor Manufacturing]]

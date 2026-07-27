@@ -1,7 +1,7 @@
 ---
 title: "block/buzz — multi-tenant relay spec (DRAFT) + tenant boundary reality"
 source: https://github.com/block/buzz/blob/main/docs/multi-tenant-relay.md
-type: repo
+type: repos
 tags: [buzz, multi-tenant, community, postgres-rls, security-boundary, tla-plus]
 confidence: high
 ingested: 2026-07-23

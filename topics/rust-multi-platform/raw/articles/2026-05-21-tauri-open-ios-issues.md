@@ -1,7 +1,7 @@
 ---
 title: "Tauri open iOS issues — the production-reality view"
 source: https://github.com/tauri-apps/tauri/issues?q=is%3Aissue+is%3Aopen+label%3A%22platform%3A+ios%22
-type: article
+type: articles
 tags: [tauri, ios, production-reality, issues]
 date: 2026-05-21
 quality: 5

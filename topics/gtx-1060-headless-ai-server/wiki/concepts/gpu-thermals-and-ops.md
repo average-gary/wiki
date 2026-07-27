@@ -1,10 +1,11 @@
 ---
 title: "GS63VR 24/7 ops — thermals, power capping, fan control, services"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: warm
+summary: "GS63VR 7RF Stealth Pro is UNIMPLEMENTED in msi-ec (raw/repos/2026-05-21-msi-ec-gs63vr-unimplemented). EC versions 16K2ED61 / 16K2EMS1, tracked in issues #88 and #247. This means:"
 confidence: high
 sources:
   - raw/repos/2026-05-21-msi-ec-gs63vr-unimplemented.md
@@ -200,3 +201,4 @@ tmpfs /tmp tmpfs defaults,noatime,nosuid,size=4G 0 0
 - [[headless-ubuntu-laptop-baseline]] — initial install + SSH
 - [[gpu-bench-and-smoke-tests]] — verify after applying caps
 - [[pascal-driver-cuda-pinning]] — install driver before this
+- [[farm-vision-on-gtx-1060.md|Farm vision (herd counting) on GTX 1060 6GB]]

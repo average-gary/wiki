@@ -1,7 +1,7 @@
 ---
 title: "automerge-repo: Pluggable CRDT Sync for Local-First Apps"
-source_url: "https://github.com/automerge/automerge-repo"
-type: article
+source: "https://github.com/automerge/automerge-repo"
+type: articles
 path: infra-sync
 date_ingested: 2026-05-27
 date_published: 2024-09-01

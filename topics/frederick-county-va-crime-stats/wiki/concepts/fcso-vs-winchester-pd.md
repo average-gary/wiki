@@ -1,9 +1,12 @@
 ---
 title: FCSO vs Winchester PD — comparison
-type: concept
+category: concept
 created: 2026-05-26
+updated: 2026-05-26
+volatility: warm
 confidence: medium
 tags: [FCSO, Winchester-PD, comparison, rates]
+summary: "The two primary law-enforcement jurisdictions in the FrCo geographic area, reported separately to FBI UCR/NIBRS."
 ---
 
 # FCSO vs Winchester PD — Side-by-Side
@@ -64,3 +67,4 @@ The two primary law-enforcement jurisdictions in the FrCo geographic area, repor
 - [[jurisdictional-map|Jurisdictional map]]
 - [[nibrs-vs-srs|NIBRS vs SRS]]
 - [[../../raw/articles/2026-05-26-data-quality-caveats|Methodology caveats]]
+- [[../topics/crime-profile-2024.md|Crime profile — Frederick County + Winchester, 2024 best-available]]

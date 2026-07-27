@@ -8,7 +8,7 @@ type: data
 tags: [regulatory, udi, laser-marking, 21-cfr-part-11, audit-trail, dhr, qmsr, eu-mdr, traceability]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The traceability/data-integrity leg — UDI direct-marking (permanent, on-device, plain-text + Data Matrix), laser marking as the de-facto method with implant-specific safety limits, Part 11 audit trails on all automated data capture, and the QMSR (Feb 2026) / EU MDR framework context.
 ---
 

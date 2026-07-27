@@ -1,7 +1,7 @@
 ---
 title: "Gollwitzer (1999) + Gollwitzer & Sheeran (2006) meta-analysis on implementation intentions; Pinder et al. (2018) digital application."
 source: https://psycnet.apa.org/record/1999-03629-001
-type: paper
+type: papers
 created: 2026-06-23
 tags: [his-words-app, behavioral-psychology, implementation-intentions, habit-formation, if-then-plans]
 quality: 5

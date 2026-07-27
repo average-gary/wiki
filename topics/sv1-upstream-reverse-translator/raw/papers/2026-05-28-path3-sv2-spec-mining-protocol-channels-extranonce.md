@@ -1,7 +1,7 @@
 ---
 title: "SV2 Spec — Mining Protocol (05): Channel types, extranonce, async share submit"
 url: https://github.com/stratum-mining/sv2-spec/blob/main/05-Mining-Protocol.md
-type: paper
+type: papers
 source: stratum-mining/sv2-spec
 captured: 2026-05-28
 quality: 10

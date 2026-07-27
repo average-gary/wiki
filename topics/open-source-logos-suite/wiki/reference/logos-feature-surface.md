@@ -1,6 +1,6 @@
 ---
 title: Logos Feature Surface
-type: reference
+category: reference
 created: 2026-05-27
 updated: 2026-05-27
 verified: 2026-05-27
@@ -8,6 +8,7 @@ volatility: warm
 status: active
 confidence: high
 tags: [logos, faithlife, features, reference]
+summary: "What Logos Bible Software (logos.com) actually is, in concrete terms. Reference catalog for an OSS suite trying to compete or differentiate."
 sources:
   - "[[raw/articles/2026-05-27-logos-wikipedia-overview]]"
   - "[[raw/articles/2026-05-27-logos-homepage-product-pitch]]"

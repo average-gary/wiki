@@ -1,6 +1,6 @@
 ---
 title: p2poolv2 JMeter + mock-bitcoind — fixture-nonce stratum load test
-source_url: https://github.com/p2poolv2/p2poolv2/tree/main/load-tests/jmeter-testing
+source: https://github.com/p2poolv2/p2poolv2/tree/main/load-tests/jmeter-testing
 type: repos
 ingested: 2026-06-24
 quality: A

@@ -1,7 +1,7 @@
 ---
 title: "Initiative Tracker (Obsidian Plugin) — javalent/initiative-tracker"
 source: "https://plugins.javalent.com/it"
-type: repo
+type: repos
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [worldbuilding, tool-comparison, obsidian, initiative, encounters]

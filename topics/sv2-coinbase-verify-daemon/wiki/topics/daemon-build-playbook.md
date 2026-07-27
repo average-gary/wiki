@@ -1,10 +1,12 @@
 ---
 title: "Build playbook — SV2 coinbase-verify daemon"
-type: topic
+category: topic
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
-tags: [stratum-v2, daemon, build-guide, rust, SRI, extended-channel, coinbase-check, playbook]
+tags: [stratum-v2, daemon, build-guide, rust, sri, extended-channel, coinbase-check, playbook]
+summary: "End-to-end guide to building the simple daemon: connect to an SV2 pool as a miner, receive jobs, reconstruct the coinbase, and check it against an expected value. Synthesizes the concept articles into a build order."
 ---
 
 # Build playbook — SV2 coinbase-verify daemon
@@ -115,3 +117,6 @@ This is a **watchdog**, not a trustless guarantee — read
 - [[wiki/concepts/prior-art-coinbase-verification]]
 - [[../stratum-sri/_index|stratum-sri]]
 - [[../datum/_index|datum]]
+- [[reference-implementation-skeleton.md|Reference implementation skeleton (Rust / SRI)]]
+- [[../concepts/sri-client-crate-stack.md|SRI client crate stack]]
+- [[../concepts/sv2-mining-client-message-flow.md|SV2 mining-client message flow]]

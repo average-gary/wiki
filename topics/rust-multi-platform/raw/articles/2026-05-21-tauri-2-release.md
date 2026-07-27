@@ -1,7 +1,7 @@
 ---
 title: "Tauri 2.0 release — mobile support GA, but DX gaps acknowledged"
 source: https://tauri.app/blog/tauri-20/
-type: article
+type: articles
 tags: [tauri, ui-framework, mobile, ios, android, webview]
 date: 2026-05-21
 quality: 5

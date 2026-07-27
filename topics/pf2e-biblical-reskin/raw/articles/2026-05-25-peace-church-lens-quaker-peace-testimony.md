@@ -1,7 +1,7 @@
 ---
 title: "Quaker Peace Testimony and the Inner Light"
 source: "https://en.wikipedia.org/wiki/Testimony_of_peace"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [denomination, quaker, friends, pacifism, peace-church, inner-light, gap-closing]
 quality: 4

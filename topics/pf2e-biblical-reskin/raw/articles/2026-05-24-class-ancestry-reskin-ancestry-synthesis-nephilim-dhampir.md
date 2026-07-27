@@ -1,7 +1,7 @@
 ---
 title: "Ancestry Reskin Synthesis: Nephilim, Dhampir, and the Versatile Heritages"
 source: "https://2e.aonprd.com/Ancestries.aspx (and Sorcerer Angelic bloodline at ID=62)"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: 2024-11-12
 tags: [pf2e, reskin, ancestry, nephilim, dhampir, leshy, orc, geniekin]

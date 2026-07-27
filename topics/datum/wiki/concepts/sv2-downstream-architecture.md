@@ -11,7 +11,9 @@ sources:
   - raw/notes/2026-06-01-path3-process-boundary-and-config.md
 created: 2026-06-01
 updated: 2026-06-01
+volatility: warm
 tags: [sv2-proxy, sri, channels-sv2, handlers-sv2, datum-proxy, architecture]
+summary: "How the SRI codebase maps onto the engineering question: expose Stratum V2 to ASICs, talk DATUM upstream to OCEAN. Built from Path 3's read of /Users/garykrause/repos/stratum."
 confidence: high
 ---
 
@@ -137,3 +139,5 @@ Bridge: set `ExtranonceAllocator`'s `total_extranonce_len = 12`, partition as `[
 - [[operator-value-and-threat-model]] — why build this at all
 - [[ocean-sv2-stance-and-prior-art]] — what already exists (almost nothing)
 - [[../topics/datum-sv2-proxy-playbook]] — the build path
+- [[drop-in-rust-port-architecture.md|Rust port architecture — workspace, modules, and LOC budget]]
+- [[dual-protocol-downstream.md|Dual-protocol downstream — SV1 + SV2 in one binary]]

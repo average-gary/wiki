@@ -7,7 +7,7 @@ type: data
 tags: [peek, cfr-peek, injection-molding, machining, stainless-steel, 316l, astm-f138, astm-f2026, materials, radiolucent]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: PEEK molding-vs-machining economics (±0.005" mold vs ±0.0002" machined; CFR-PEEK needs PCD tooling), PEEK's low-conductivity heat problem (polymer analog of titanium), and 316L/316LVM as the most machinable metal confined to trauma/temporary hardware.
 ---
 

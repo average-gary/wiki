@@ -1,10 +1,12 @@
 ---
 title: "Bevy ecosystem"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, ecosystem, plugins, rapier, avian, egui, lightyear, replicon]
+summary: "3,191 crates use the bevy_ namespace; 1,865 crates depend on bevy directly (crates.io snapshot 2026-06-15). The ones that actually carry adoption load:"
 ---
 
 # Bevy ecosystem
@@ -67,3 +69,6 @@ Per the contrarian sweep:
 - [[bevy-overview.md|Bevy overview]]
 - [[bevy-criticisms.md|Criticisms]]
 - [[bevy-vs-other-engines.md|Comparison to other engines]]
+- [[bevy-production-users.md|Bevy in production — shipped games and commercial users]]
+- [[../topics/bevy-stats.md|Bevy stats reference]]
+- [[../reference/specs-and-repos.md|Reference: specs, repos, docs]]

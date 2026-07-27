@@ -1,7 +1,7 @@
 ---
 title: "John Howard Yoder — The Politics of Jesus (1972)"
 source: "https://en.wikipedia.org/wiki/The_Politics_of_Jesus"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [denomination, anabaptist, mennonite, pacifism, peace-church, yoder, gap-closing]
 quality: 4

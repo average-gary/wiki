@@ -1,15 +1,15 @@
 ---
 title: "p2poolv2 wiki: Trading Shares For Bitcoin (HTLC scripts)"
 publication: github.com/p2poolv2/p2poolv2/wiki + docs/atomic-swap/
-url: https://github.com/p2poolv2/p2poolv2/wiki/Trading-Shares-For-Bitcoin
+source: https://github.com/p2poolv2/p2poolv2/wiki/Trading-Shares-For-Bitcoin
 url2: https://github.com/p2poolv2/p2poolv2/blob/main/docs/atomic-swap/htlc_scripts.md
 url3: https://github.com/p2poolv2/p2poolv2/blob/main/docs/atomic-swap/p2pool-2-lightinig-example.md
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 4
 credibility: high
 confidence: medium
-tags: [p2poolv2, atomic-swap, HTLC, P2WSH, P2TR, market-maker, Lightning]
+tags: [p2poolv2, atomic-swap, htlc, P2WSH, P2TR, market-maker, lightning]
 ---
 
 # p2poolv2 — Trading Shares For Bitcoin

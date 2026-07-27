@@ -1,10 +1,12 @@
 ---
 title: "Why Bitcoin Core uses Guix, not Nix"
-type: topic
+category: topic
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bitcoin-core, guix, nix, history, contrarian, decision-rationale]
+summary: "A reader who lands on this wiki expecting \"Nix is the reproducible-build solution for Bitcoin\" needs to grok this first: Bitcoin Core itself does not use Nix. It uses Guix."
 sources:
   - "[[../../raw/articles/2026-06-15-bitcoin-pr-15277-dong-guix-migration.md|Bitcoin PR #15277 + 2019 Dong announcement]]"
   - "[[../../raw/articles/2026-06-15-guix-full-source-bootstrap-2023.md|Guix Full-Source Bootstrap]]"

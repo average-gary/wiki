@@ -1,11 +1,13 @@
 ---
 title: Rule of three — reflexive triads
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: medium
 tags: [llm-writing-indicators, structure, rhetoric]
+summary: "LLMs default to three-item parallel structures — three adjectives, three examples, three clauses — to make superficial analysis *feel* comprehensive. Humans use triads too (it is a genuine rhetorical device), so this is a medium-confidence tell that matters in aggregate."
 sources:
   - raw/articles/2026-07-13-wikipedia-signs-of-ai-writing.md
 ---

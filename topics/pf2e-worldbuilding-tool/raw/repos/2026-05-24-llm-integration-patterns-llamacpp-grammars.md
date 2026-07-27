@@ -1,7 +1,7 @@
 ---
 title: "llama.cpp grammars (GBNF) - structured output via constrained sampling"
 source: "https://github.com/ggerganov/llama.cpp/blob/master/grammars/README.md"
-type: repo
+type: repos
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [llm, local-llm, structured-output, llama-cpp, json-schema]

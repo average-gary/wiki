@@ -1,11 +1,13 @@
 ---
 title: AI slop & the durable structural tells
-type: topic
+category: topic
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, slop, structure, playbook]
+summary: "As lexical and punctuation tells decay (drift), the tells that survive are structural and content-level — what practitioners call \"AI slop.\" This playbook consolidates the durable signals for the long term."
 sources:
   - raw/papers/2026-07-13-shaib-measuring-ai-slop.md
   - raw/articles/2026-07-13-language-flattening-sciam-zme.md

@@ -1,14 +1,15 @@
 ---
 title: "Biblical miracle ↔ PF2e Remaster spell map"
-type: reference
+category: reference
 created: 2026-05-25
 updated: 2026-05-25
 verified: 2026-05-25
 volatility: medium
 confidence: medium
 sources:
-  - "[[2026-05-25-spell-to-miracle-mapping-synthesis]]"
+  - "[[../../raw/articles/2026-05-25-spell-to-miracle-mapping-synthesis]]"
 tags: [pf2e, remaster, spell-mapping, miracle, reference, hard-canon-translation]
+summary: "A lookup table for magic-theology-approaches approach #6 (hard-canon translation tables) — and useful as a flavor reference for any approach."
 license_note: "Spell names are identifiers under fair-use commentary; mapping is original synthesis. A published reskin should paraphrase mechanical text per ORC + see [[pf2e-licensing-posture]] in sister topic."
 ---
 

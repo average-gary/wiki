@@ -1,9 +1,12 @@
 ---
 title: "Load-harness landscape — what tool drives N synthetic SV2 connections"
-type: concept
+category: concept
 created: 2026-06-24
+updated: 2026-06-24
+volatility: warm
 confidence: high
 tags: [load-test, harness, goose, locust, jmeter, emqtt-bench]
+summary: "p2poolv2 used for Stratum V1. Blocking Java thread per miner caps ~5,000 miners per host. No Noise, no binary framing helpers."
 ---
 
 # Load-harness landscape

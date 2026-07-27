@@ -4,7 +4,7 @@ source: https://go.dev/blog/rebuild
 related:
   - https://go.dev/blog/supply-chain
   - https://www.agwa.name/blog/post/verifying_go_reproducible_builds
-type: article
+type: articles
 authors: Russ Cox (Go team); Filippo Valsorda (Go supply chain)
 venue: go.dev official blog
 year: 2023 (rebuild) + 2022 (supply-chain)

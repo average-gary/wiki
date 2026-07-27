@@ -1,7 +1,7 @@
 ---
 title: "SRI noise-sv2 cargo bench: Noise_NX handshake & transport costs"
-source_url: https://github.com/stratum-mining/stratum/blob/main/sv2/noise-sv2/BENCHES.md
-type: article
+source: https://github.com/stratum-mining/stratum/blob/main/sv2/noise-sv2/BENCHES.md
+type: articles
 ingested: 2026-06-24
 quality: 5
 confidence: high

@@ -1,6 +1,6 @@
 ---
 title: "gimballock notes — porting ckpool's dsps EMA + adaptive window switching"
-source_url: https://github.com/marafoundation/stratum/blob/vardiff/simulation-framework/sv2/channels-sv2/sim/docs/CKPOOL_INVESTIGATION.md
+source: https://github.com/marafoundation/stratum/blob/vardiff/simulation-framework/sv2/channels-sv2/sim/docs/CKPOOL_INVESTIGATION.md
 source_branch: vardiff/simulation-framework
 type: notes
 ingested: 2026-06-24

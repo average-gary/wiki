@@ -3,11 +3,11 @@ title: "AI/deep-learning cosmetic visual inspection — where it helps and its v
 source: https://dwfritz.com/precision-automation/solutions/precision-inspection/smart-cosmetic-defect-detection-increases-productivity/
 source_2: https://www.industrialvision.co.uk/news/deep-learning-ai-enhancing-automated-inspection-of-medical-devices
 source_3: https://metrology.news/kitov-ai-redefines-robotic-inspection-with-ai-driven-360-vision-metrology/
-type: article
+type: articles
 tags: [inspection, machine-vision, deep-learning, ai, cosmetic-defect, validation, gamp, robotic-inspection]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The hardest station to automate — cosmetic/visual inspection. AI/DL detects scratches/pits/micro-cracks conventional rule-based vision can't (~90% better than humans), but often outputs only pass/fail with no quantitative metric (a "black box"), creating FDA/GAMP validation challenges. Full autonomy is not yet trusted — borderline cases escalate to humans.
 ---
 

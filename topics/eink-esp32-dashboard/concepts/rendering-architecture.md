@@ -1,9 +1,11 @@
 ---
 title: Rendering Architecture — On-Device vs Server-Side
-type: concept
+category: concept
 created: 2026-07-20
 updated: 2026-07-20
+volatility: warm
 tags: [architecture, rendering, server-side, on-device, thin-client, bitmap, trmnl]
+summary: "Every ESP32 e-paper dashboard resolves one fork first, and everything else follows from it: where does the pixel layout get computed?"
 confidence: high
 ---
 
@@ -72,3 +74,7 @@ This minimizes both on-device OAuth and firmware maintenance while keeping simpl
 - [Data Sources](data-sources.md)
 - [Turnkey Projects](../reference/turnkey-projects.md)
 - [Build Playbook](../reference/build-playbook.md)
+- [[grayscale-and-upgrade-path.md|Grayscale & the Richer-Visuals Upgrade Path]]
+- [[limitations-and-gotchas.md|Limitations & Gotchas]]
+- [[power-and-refresh.md|Power Management & E-Paper Refresh Mechanics]]
+- [[../reference/trmnl-byos-walkthrough.md|TRMNL BYOS Walkthrough — self-hosted server, Waveshare firmware, Bitcoin screen]]

@@ -1,7 +1,7 @@
 ---
 title: "Cloudflare: TCP port states, SO_REUSEADDR, ephemeral port pool"
-source_url: https://blog.cloudflare.com/the-quantum-state-of-a-tcp-port/
-type: article
+source: https://blog.cloudflare.com/the-quantum-state-of-a-tcp-port/
+type: articles
 ingested: 2026-06-24
 quality: 4
 confidence: high

@@ -1,7 +1,7 @@
 ---
 title: "any-sync Protocol Overview"
-source_url: "https://github.com/anyproto/any-sync"
-type: article
+source: "https://github.com/anyproto/any-sync"
+type: articles
 path: case
 date_ingested: 2026-05-27
 date_published: unknown

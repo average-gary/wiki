@@ -1,7 +1,7 @@
 ---
 title: Covenant Eyes — Screen Accountability, Pricing, Five Stones, and the 2022 Surveillance Controversy
 source: https://www.covenanteyes.com/pricing/ + https://www.covenanteyes.com/church + https://en.wikipedia.org/wiki/Covenant_Eyes
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, accountability, family-mode, covenant-eyes, screenshot-monitoring, church-distribution, privacy-controversy]
 quality: 5

@@ -1,7 +1,7 @@
 ---
 title: "BibleScroll: Christian Focus — App Store listing (Screen Detox Inc)"
 source: https://itunes.apple.com/lookup?id=6755406222
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, competitor, biblescroll, youversion-integration]
 quality: 4

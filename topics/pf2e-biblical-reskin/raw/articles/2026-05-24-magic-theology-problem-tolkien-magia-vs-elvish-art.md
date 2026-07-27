@@ -1,7 +1,7 @@
 ---
 title: "Tolkien's Distinction Between Magia and Elvish Art (Letter 155 / Magic in Middle-earth)"
 source: "https://en.wikipedia.org/wiki/Magic_in_Middle-earth"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: unknown
 tags: [magic, theology, tolkien, sub-creation, magia, goeteia]

@@ -1,7 +1,7 @@
 ---
 title: "Growing Blueberries in the Home Garden"
-source_url: "https://content.ces.ncsu.edu/growing-blueberries-in-the-home-garden"
-type: article
+source: "https://content.ces.ncsu.edu/growing-blueberries-in-the-home-garden"
+type: articles
 path: blueberry
 date_ingested: 2026-05-26
 date_published: unknown

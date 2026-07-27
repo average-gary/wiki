@@ -1,7 +1,7 @@
 ---
 title: "Noise Protocol Framework — Revision 34"
 source: https://noiseprotocol.org/noise.html
-type: paper
+type: papers
 tags: [noise, ik, xk, handshake, cryptography, perrin]
 date: 2026-06-01
 publication_date: 2018-07-11

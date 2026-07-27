@@ -1,7 +1,7 @@
 ---
 title: "block/buzz — SECURITY.md (auth, key storage, audit, TLS posture)"
 source: https://github.com/block/buzz/blob/main/SECURITY.md
-type: repo
+type: repos
 tags: [buzz, security, auth, nip-42, key-management, audit-log, agents]
 confidence: high
 ingested: 2026-07-23

@@ -1,10 +1,12 @@
 ---
 title: "Cashu NUT primitives for gaming (cheat-sheet)"
-type: reference
+category: reference
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [reference, cashu, nuts, p2pk, htlc, dleq, gaming-primitives]
+summary: "Quick reference: which NUT gives you which game-asset semantic."
 ---
 
 # Cashu NUT primitives for gaming

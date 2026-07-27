@@ -1,7 +1,7 @@
 ---
 title: "FBI UCR time-series — FCSO + Winchester PD (2014, 2019 confirmed; partial 2017-2018)"
 publication: FBI UCR — Crime in the United States annual reports (Tables 8, 10)
-url: https://ucr.fbi.gov/crime-in-the-u.s/2014/crime-in-the-u.s.-2014/tables/table-8/table-8-state-cuts/virginia.xls/output.xls
+source: https://ucr.fbi.gov/crime-in-the-u.s/2014/crime-in-the-u.s.-2014/tables/table-8/table-8-state-cuts/virginia.xls/output.xls
 url2: https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/tables/table-8/table-8-state-cuts/virginia.xls/output.xls
 url3: https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/tables/table-10/table-10-state-cuts/virginia.xls/output.xls
 type: data

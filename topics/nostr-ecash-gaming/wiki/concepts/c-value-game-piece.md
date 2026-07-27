@@ -1,10 +1,12 @@
 ---
 title: C-value game piece
-type: concept
+category: concept
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [cashu, kirk, randomness, bdhke, game-piece]
+summary: "In Cashu's BDHKE blind-sign flow, the mint's signed value C = kY (where Y = hash_to_curve(secret) and k is the mint's keyset secret) is deterministic (same secret → same C) but unpredictable to the player until they unblind."
 ---
 
 # C-value game piece

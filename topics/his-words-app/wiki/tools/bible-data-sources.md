@@ -3,9 +3,11 @@ title: Bible data sources — repos, APIs, topical datasets
 type: tool
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, bible, data-sources, tools]
+summary: "Practical tool catalog for sourcing Bible text and topical-tag data. See content licensing strategy for the legal layer; this is the *where to actually get the data* layer."
 sources:
   - raw/articles/2026-06-23-bible-api-bible-pricing-tiers.md
   - raw/articles/2026-06-23-bible-esv-api-crossway-terms.md

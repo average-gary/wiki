@@ -3,9 +3,10 @@ title: eHash / Hashpool — Cashu ecash share tokens
 category: concept
 created: 2026-05-23
 confidence: medium
-tags: [eHash, hashpool, Cashu, blind-signature, accountless, custodial-mint]
+tags: [ehash, hashpool, cashu, blind-signature, accountless, custodial-mint]
 volatility: warm
 updated: 2026-07-15
+summary: "Bitcoin mining pool that issues a Cashu ecash bearer token (eHash) for each accepted share instead of maintaining a per-miner share ledger. Most experimental payout-accounting model in the post-2024 wave."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-24-cashu-mining-application.md"
@@ -160,3 +161,6 @@ Single-mint custody is the project's biggest risk. **Fedimint** generalizes Cash
 - [[variance-and-risk-shifting]]
 - [[../topics/payout-design-space|Payout Design Space]]
 - [[../decisions/custody-tradeoffs|Custody Tradeoffs]]
+- [[ark-for-mining-payouts.md|Ark for Mining Payouts]]
+- [[parasite-pool.md|Parasite Pool]]
+- [[../reference/people.md|People — eHash / hashpool / decentralized-pool ecosystem]]

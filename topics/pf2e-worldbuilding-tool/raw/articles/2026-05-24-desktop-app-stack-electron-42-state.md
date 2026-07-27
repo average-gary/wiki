@@ -1,7 +1,7 @@
 ---
 title: "Electron 42 — bundled stack, ASAR integrity, Wayland default (May 2026)"
 source: "https://www.electronjs.org/blog"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "2026-05"
 tags: [desktop-app, electron, packaging, security, chromium]

@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA open-gpu-kernel-modules"
 source: https://github.com/NVIDIA/open-gpu-kernel-modules
-type: repo
+type: repos
 tags: [nvidia, drivers, kernel-modules, pascal, turing]
 date: 2026-05-21
 quality: 6

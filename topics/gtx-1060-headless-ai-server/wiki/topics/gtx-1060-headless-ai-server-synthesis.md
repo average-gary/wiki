@@ -1,10 +1,11 @@
 ---
 title: "GTX 1060 Headless AI Server — synthesis"
-type: topic
+category: topic
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: warm
+summary: "The actionable single-page summary tying every concept article together."
 confidence: high
 compiled-from: conversation
 ---
@@ -76,3 +77,4 @@ Bench targets (1 hr audio):
 - [[ctranslate2-quantization-on-pascal]]
 - [[faster-whisper-on-gtx-1060]]
 - All concept articles linked above
+- [[iroh-application-patterns-2026-synthesis.md|Iroh application patterns 2026 — synthesis for a homelab AI server]]

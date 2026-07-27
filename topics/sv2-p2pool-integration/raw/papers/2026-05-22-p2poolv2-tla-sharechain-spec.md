@@ -1,6 +1,6 @@
 ---
 title: "p2poolv2 TLA+ ShareChain Specification"
-source_url: https://github.com/p2poolv2/p2poolv2/tree/main/spec
+source: https://github.com/p2poolv2/p2poolv2/tree/main/spec
 type: formal-spec
 ingested: 2026-05-22
 quality: 4

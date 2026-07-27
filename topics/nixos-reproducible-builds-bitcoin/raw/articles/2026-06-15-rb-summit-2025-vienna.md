@@ -4,7 +4,7 @@ source: https://reproducible-builds.org/events/vienna2025/agenda
 sessions:
   - https://reproducible-builds.org/events/vienna2025/agenda/d2-tampering
   - https://reproducible-builds.org/events/vienna2025/agenda/d1-distributedverification
-type: article
+type: articles
 attendees: [Debian, Guix, Nix/NixOS, F-Droid, in-toto, Apache, Google, Arch, Fedora, Eclipse]
 year: 2025-10
 ingested: 2026-06-15

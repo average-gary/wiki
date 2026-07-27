@@ -1,10 +1,10 @@
 ---
 title: "Bitcoin's 'Plebs Eat First' Mining Pool Parasite Finds Its Second BTC Block (CoinDesk)"
 publication: CoinDesk
-url: https://www.coindesk.com/tech/2026/04/18/bitcoin-plebs-eat-first-mining-pool-parasite-finds-its-second-btc-block
+source: https://www.coindesk.com/tech/2026/04/18/bitcoin-plebs-eat-first-mining-pool-parasite-finds-its-second-btc-block
 mirror: https://github.com/aparasion/stoxfeed/blob/master/_posts/2026/04/2026-04-18-bitcoin-plebs-eat-first-mining-pool-parasite-finds-its-second-block.md
 date: 2026-04-18
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 3
 credibility: medium

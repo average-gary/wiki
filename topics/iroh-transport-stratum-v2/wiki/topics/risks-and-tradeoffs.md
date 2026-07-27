@@ -1,6 +1,6 @@
 ---
 title: "Risks and tradeoffs"
-type: topic
+category: topic
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-20
@@ -13,6 +13,7 @@ sources:
   - raw/articles/2026-05-20-iroh-relays-concept.md
   - raw/articles/2026-05-20-probelab-dcutr-success-rate.md
 tags: [iroh, sv2, risks, contrarian]
+summary: "The steelman against. Each risk has a mitigation; if you can't accept the mitigations, don't ship."
 ---
 
 # Risks and tradeoffs

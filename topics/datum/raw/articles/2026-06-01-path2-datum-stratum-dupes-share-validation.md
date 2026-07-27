@@ -1,6 +1,7 @@
 ---
 title: "DATUM Gateway datum_stratum_dupes.c — Composite-Key Dupe Filter"
-source_url: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_stratum_dupes.c
+source: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_stratum_dupes.c
+type: articles
 source_type: source-file
 upstream: OCEAN-xyz/datum_gateway
 branch: master

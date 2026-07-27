@@ -1,7 +1,7 @@
 ---
 title: "Soulforge / Devotional Roleplaying and 'dem Bones' Christian parody — not retrievable"
 source: "https://html.duckduckgo.com/html/?q=%22Soulforge%22+%22devotional%22+RPG+Christian+OR+%22dem+Bones%22+Christian"
-type: article
+type: articles
 date_fetched: 2026-05-25
 date_published: unknown
 tags: [christian-rpg, history, 1990s, soulforge, gap-closing]

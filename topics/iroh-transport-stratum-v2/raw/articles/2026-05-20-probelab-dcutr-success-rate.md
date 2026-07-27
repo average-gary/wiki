@@ -1,6 +1,6 @@
 ---
 title: "libp2p NAT Hole-Punching Success Rate (ProbeLab)"
-source_url: https://probelab.io/talks/libp2p-nat-hole-punching-success-rate/
+source: https://probelab.io/talks/libp2p-nat-hole-punching-success-rate/
 type: measurement
 date: 2022-2024
 org: ProbeLab (Protocol Labs)

@@ -1,7 +1,7 @@
 ---
 title: shocknet/Lightning.Pub — CLINK reference server (node-side)
 source: https://github.com/shocknet/Lightning.Pub
-type: repo
+type: repos
 ingested: 2026-06-09
 path: implementations
 quality: 5

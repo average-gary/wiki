@@ -1,7 +1,7 @@
 ---
 title: "image2cpp — PNG/JPG/BMP to 1-bit byte arrays for e-paper"
 source: https://javl.github.io/image2cpp/
-type: article
+type: articles
 tags: [image2cpp, img2lcd, dithering, 1-bit, bitmap, arduino, gxepd2, tooling]
 date: 2026-07-20
 quality: 3

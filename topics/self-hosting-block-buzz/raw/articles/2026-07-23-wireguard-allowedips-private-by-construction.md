@@ -3,7 +3,7 @@ title: "WireGuard: Cryptokey Routing, AllowedIPs, split-tunnel (private by const
 source: https://www.wireguard.com/
 extra_sources:
   - https://defguard.net/blog/allowedips-explained/
-type: article
+type: articles
 tags: [wireguard, vpn, allowedips, split-tunnel, cryptokey-routing, access-control]
 confidence: high
 ingested: 2026-07-23

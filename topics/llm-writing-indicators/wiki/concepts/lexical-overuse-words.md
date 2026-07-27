@@ -1,11 +1,13 @@
 ---
 title: Lexical overuse — the "delve/underscore/tapestry" vocabulary
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, lexical, vocabulary, delve]
+summary: "The best-evidenced single indicator. A cluster of words is measurably over-represented in post-ChatGPT text, and their frequencies jumped abruptly and simultaneously in late 2022 — a signature no gradual human trend produces."
 sources:
   - raw/papers/2026-07-13-kobak-excess-vocabulary-pubmed.md
   - raw/papers/2026-07-13-liang-peer-reviews-ai-modified.md
@@ -54,3 +56,5 @@ Traced to RLHF preference-tuning, not architecture or training data — preferen
 - [[formulaic-phrases|Formulaic phrases]] — the multi-word cousin of this tell.
 - [[puffery-and-significance-inflation|Puffery & significance inflation]] — where these words cluster.
 - [[../reference/overused-words-and-phrases|Reference: overused words & phrases]].
+- [[../topics/empirical-evidence-base.md|The empirical evidence base — are the tells real?]]
+- [[model-and-version-drift.md|Model & version drift — why the tells keep moving]]

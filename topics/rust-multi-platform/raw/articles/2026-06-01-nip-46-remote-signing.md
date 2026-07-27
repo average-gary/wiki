@@ -1,6 +1,6 @@
 ---
 title: "NIP-46 — Nostr Remote Signing"
-source_url: https://github.com/nostr-protocol/nips/blob/master/46.md
+source: https://github.com/nostr-protocol/nips/blob/master/46.md
 type: spec
 ingested: 2026-06-01
 quality: 5

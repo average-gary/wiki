@@ -12,7 +12,7 @@ revision: c39f9c83255fb88adb2381848ed3423c1e6d5c64
 volatility: hot
 quality: 5
 confidence: high
-tags: [fedimint-core, AmountUnit, Amounts, TransactionItemAmounts, FundingVerifier, multi-currency, source-walkthrough]
+tags: [fedimint-core, amount-unit, amounts, TransactionItemAmounts, FundingVerifier, multi-currency, source-walkthrough]
 summary: Source-level walk of the multi-currency primitives in `fedimint-core` — `AmountUnit(u64)`, `Amounts(BTreeMap<AmountUnit, Amount>)`, `TransactionItemAmounts { amounts, fees }` — plus the per-unit consensus balance check (`FundingVerifier::verify_funding` in `fedimint-server`). Resolves "what changed for module authors in PR #7734" against the actual code in master @ c39f9c8.
 ---
 

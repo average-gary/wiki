@@ -1,8 +1,9 @@
 ---
 title: "Event-kind allocations across Nostr gaming projects"
-type: reference
+category: reference
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [reference, nostr, event-kinds, allocation]
 ---

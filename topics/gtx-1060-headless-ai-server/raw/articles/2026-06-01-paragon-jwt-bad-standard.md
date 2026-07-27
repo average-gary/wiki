@@ -1,7 +1,7 @@
 ---
 title: "JSON Web Tokens (JWT) is a Bad Standard That Everyone Should Avoid (Paragon Initiative)"
 source: https://paragonie.com/blog/2017/03/jwt-json-web-tokens-is-bad-standard-that-everyone-should-avoid
-type: article
+type: articles
 tags: [jwt, paseto, paragon, contrarian, alg-none, key-confusion]
 date: 2026-06-01
 publication_date: 2017-03

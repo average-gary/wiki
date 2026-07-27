@@ -6,7 +6,8 @@ updated: 2026-07-15
 verified: 2026-07-15
 confidence: high
 volatility: warm
-tags: [SV2, JD, Stratum-V2, decoupling, payout, template]
+tags: [sv2, JD, stratum-v2, decoupling, payout, template]
+summary: "Why Job Declaration is the protocol-level prerequisite for the 2024-2026 payout-scheme reform."
 sources:
   - "raw/repos/2026-05-23-stratum-v2-spec.md"
   - "raw/articles/2026-05-23-dmnd-demand-pool.md"
@@ -91,3 +92,5 @@ Job Declaration removes the pool's control over *template content*, but the pool
 - [[../concepts/sv2-share-accounting-ext|SV2 Share Accounting Extension]] — the payout-audit half of the JD/accounting arc
 - Sister wiki: [[../../../sv2-p2pool-integration/_index|sv2-p2pool-integration]] — JDS share-chain integration
 - Sister wiki: [[../../../iroh-transport-stratum-v2/_index|iroh-transport-stratum-v2]] — alternative SV2 transport
+- [[decentralization-and-pool-concentration.md|Decentralization & Pool Concentration]]
+- [[../concepts/payout-schema-taxonomy.md|Payout Schema Taxonomy]]

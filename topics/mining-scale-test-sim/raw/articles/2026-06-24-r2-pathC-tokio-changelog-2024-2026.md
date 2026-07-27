@@ -1,7 +1,7 @@
 ---
 title: "Tokio CHANGELOG.md 2024-2026: perf-relevant entries"
-source_url: https://raw.githubusercontent.com/tokio-rs/tokio/master/tokio/CHANGELOG.md
-type: article
+source: https://raw.githubusercontent.com/tokio-rs/tokio/master/tokio/CHANGELOG.md
+type: articles
 ingested: 2026-06-24
 quality: 5
 confidence: high

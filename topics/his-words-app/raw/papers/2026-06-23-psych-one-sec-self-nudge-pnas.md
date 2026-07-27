@@ -1,7 +1,7 @@
 ---
 title: "Grüning, Riedel & Lorenz-Spreen (2023). Directing smartphone use through the self-nudge app one sec. PNAS, 120(8), e2213114120."
 source: https://www.pnas.org/doi/10.1073/pnas.2213114120
-type: paper
+type: papers
 created: 2026-06-23
 tags: [his-words-app, behavioral-psychology, micro-intervention, self-nudge, friction, app-design]
 quality: 5

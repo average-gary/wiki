@@ -65,6 +65,8 @@ The paper gives two proofs: one under a weaker variant of the **one-more discret
 - [[dropout-abort-and-robustness|Dropout, Abort, and Robustness]] ([Dropout, Abort, and Robustness](dropout-abort-and-robustness.md)) — what happens when a signer disappears mid-ceremony
 - [[musig2-vs-frost-roast|MuSig2 vs FROST/ROAST]] ([MuSig2 vs FROST/ROAST](musig2-vs-frost-roast.md)) — comparison with threshold Schnorr ceremonies
 - [[musig2-interactive-signing-ceremonies|MuSig2 Interactive Signing Ceremonies]] ([MuSig2 Interactive Signing Ceremonies](../topics/musig2-interactive-signing-ceremonies.md)) — the umbrella topic
+- [[deterministic-vs-random-nonces.md|Deterministic vs Random Nonces in Multi-Party Signing]]
+- [[../references/implementations-and-specs.md|MuSig2 Implementations & Specs]]
 
 ## Sources
 

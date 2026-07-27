@@ -1,6 +1,6 @@
 ---
 title: "Post-block-found signing dissolves the coinbase-txid wall"
-type: concept
+category: concept
 created: 2026-07-17
 updated: 2026-07-17
 confidence: high
@@ -75,3 +75,4 @@ are under the protocol's control.
 - [[coinbase-maturity-and-reorg.md|Coinbase maturity & reorg]]
 - [[../topics/thesis-analysis-viability.md|Viability analysis (verdict)]]
 - [[../../../sighash-anyprevout-bip118/wiki/topics/coinbase-outpoint-presigning|coinbase-outpoint-presigning]]
+- [[sv2-extension-surface.md|The SV2 extension surface for a cosigning ceremony]]

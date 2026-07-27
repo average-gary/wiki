@@ -1,7 +1,7 @@
 ---
 title: "Kim et al. (2019) LocknType (CHI) + Lukoff et al. (2022) Designing for Autonomy (CHI). Combined source: hard blocking vs. autonomy-supporting interventions."
 source: https://dl.acm.org/doi/10.1145/3290605.3300927
-type: paper
+type: papers
 created: 2026-06-23
 tags: [his-words-app, behavioral-psychology, reactance, blocking, autonomy, CHI]
 quality: 5

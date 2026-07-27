@@ -1,7 +1,7 @@
 ---
 title: "SEEMless: Secure End-to-End Encrypted Messaging with less Trust"
-source_url: https://eprint.iacr.org/2018/607.pdf
-type: paper
+source: https://eprint.iacr.org/2018/607.pdf
+type: papers
 ingested: 2026-06-01
 quality: 5
 confidence: high

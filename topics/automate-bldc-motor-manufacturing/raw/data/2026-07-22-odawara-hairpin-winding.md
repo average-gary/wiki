@@ -5,7 +5,7 @@ type: data
 tags: [hairpin-winding, ev-traction, process-sequence, machine-specs, vendor]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Authoritative vendor breakdown of the insert-bend-twist-weld hairpin sequence with real dimensional specs. Found by two agents.
 ---
 

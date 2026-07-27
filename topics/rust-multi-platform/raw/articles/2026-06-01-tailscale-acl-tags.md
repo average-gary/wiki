@@ -1,6 +1,6 @@
 ---
 title: "Tailscale ACL Tags"
-source_url: https://tailscale.com/kb/1068/acl-tags
+source: https://tailscale.com/kb/1068/acl-tags
 type: docs
 ingested: 2026-06-01
 quality: 5

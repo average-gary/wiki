@@ -1,7 +1,7 @@
 ---
 title: "WASI Preview 2 stable, Preview 3 in rollout — server-side WASM state"
 source: https://wasi.dev/roadmap
-type: article
+type: articles
 tags: [wasi, preview-2, preview-3, component-model, wasmtime, server-side-wasm]
 date: 2026-05-21
 quality: 5

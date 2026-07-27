@@ -1,7 +1,7 @@
 ---
 title: "rustshop/loglog flake.nix — minimal Rust binary → OCI image recipe"
-type: repo
-source_url: https://github.com/rustshop/loglog/blob/master/flake.nix
+type: repos
+source: https://github.com/rustshop/loglog/blob/master/flake.nix
 ingested: 2026-06-15
 confidence: high
 relevance: direct

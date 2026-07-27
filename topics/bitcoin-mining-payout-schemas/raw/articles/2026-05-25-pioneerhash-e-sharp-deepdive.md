@@ -1,13 +1,13 @@
 ---
 title: "PioneerHash/e-sharp — the canonical eHash workspace (deep-dive)"
 publication: github.com/PioneerHash/e-sharp
-url: https://github.com/PioneerHash/e-sharp
-type: article
+source: https://github.com/PioneerHash/e-sharp
+type: articles
 ingested: 2026-05-25
 quality: 5
 credibility: high
 confidence: high
-tags: [e-sharp, PioneerHash, EthnTuttle, eHash, JDC, Cashu, sub-pool, canonical]
+tags: [e-sharp, PioneerHash, ethntuttle, ehash, jdc, cashu, sub-pool, canonical]
 ---
 
 # e-sharp — The Canonical eHash Workspace

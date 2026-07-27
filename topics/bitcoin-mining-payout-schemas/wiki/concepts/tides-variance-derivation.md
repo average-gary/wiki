@@ -4,9 +4,10 @@ category: concept
 created: 2026-05-23
 confidence: high
 derivation_only: true
-tags: [TIDES, FPPS, variance, Rosenfeld, derivation]
+tags: [tides, fpps, variance, Rosenfeld, derivation]
 volatility: warm
 updated: 2026-07-15
+summary: "Quantitative variance comparison between TIDES/SLICE and FPPS at multiple time horizons. Derived from Rosenfeld 2011's σ² formulas with N = 8·D (the deployed value at both OCEAN TIDES and DMND SLICE), sanity-checked against the heatpunks 2025 empirical run."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-23-heatpunks-tides-vs-fpps-experiment.md"

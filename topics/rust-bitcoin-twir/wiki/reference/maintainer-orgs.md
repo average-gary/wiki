@@ -1,10 +1,11 @@
 ---
 title: Rust-Bitcoin Maintainers and Funding Orgs
-type: reference
+category: reference
 created: 2026-06-22
 updated: 2026-06-22
 verified: 2026-06-22
 volatility: warm
+summary: "Useful for Jobs section submissions and contextualizing Project/Tooling Updates."
 confidence: high
 sources:
   - "[[../../raw/articles/2022-02-08-kraken-funds-bitcoin-rust-maintainer|Kraken funding]]"

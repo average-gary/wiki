@@ -1,6 +1,6 @@
 ---
 title: Decentralized Infra Candidates
-type: reference
+category: reference
 created: 2026-05-27
 updated: 2026-05-27
 verified: 2026-05-27
@@ -8,6 +8,7 @@ volatility: warm
 status: active
 confidence: high
 tags: [decentralized, ipfs, libp2p, iroh, atproto, nostr, hypercore, reference]
+summary: "Reference matrix of decentralized infrastructure for an OSS Logos suite. Honest evaluation: where each candidate fits, where it fails, what to use it for."
 sources:
   - "[[raw/articles/2026-05-27-infra-text-iroh-blobs-protocol]]"
   - "[[raw/articles/2026-05-27-infra-text-ipfs-content-addressing]]"

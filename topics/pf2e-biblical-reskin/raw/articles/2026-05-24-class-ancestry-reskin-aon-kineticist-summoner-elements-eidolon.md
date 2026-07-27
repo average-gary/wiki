@@ -1,7 +1,7 @@
 ---
 title: "Kineticist and Summoner - Archives of Nethys (PF2e)"
 source: "https://2e.aonprd.com/Classes.aspx?ID=23"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: 2023-08-30
 tags: [pf2e, reskin, class, kineticist, summoner, elements, eidolon, angel]

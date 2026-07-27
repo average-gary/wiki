@@ -1,6 +1,7 @@
 ---
 title: "DATUM Gateway datum_api.c — Operator Dashboard the SV2 Variant Must Match"
-source_url: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_api.c
+source: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_api.c
+type: articles
 source_type: source-file
 upstream: OCEAN-xyz/datum_gateway
 branch: master

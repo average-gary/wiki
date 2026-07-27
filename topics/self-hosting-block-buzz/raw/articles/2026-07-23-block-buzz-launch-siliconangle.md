@@ -1,7 +1,7 @@
 ---
 title: "Block launches Buzz — open-source workspace for humans + AI agents (SiliconAngle)"
 source: https://siliconangle.com/2026/07/21/block-launches-buzz-open-source-workspace-humans-ai-agents/
-type: article
+type: articles
 tags: [buzz, block, launch, news, maturity]
 confidence: medium
 ingested: 2026-07-23

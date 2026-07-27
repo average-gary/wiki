@@ -1,10 +1,12 @@
 ---
 title: What buzz Is & How It's Architected
-type: concept
+category: concept
 tags: [buzz, block, nostr, architecture, rust, relay, agents]
 confidence: high
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
+summary: "block/buzz is Block, Inc.'s open-source (Apache-2.0), self-hostable \"hive mind\" workspace where humans and AI agents are peers in the same rooms."
 ---
 
 # What buzz Is & How It's Architected

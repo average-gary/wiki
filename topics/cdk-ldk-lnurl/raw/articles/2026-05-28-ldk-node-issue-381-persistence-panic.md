@@ -1,8 +1,8 @@
 ---
 title: "LDK Node #381 — panic-on-persistence-failure (open tracking issue)"
-type: article
+type: articles
 source: https://github.com/lightningdevkit/ldk-node/issues/381
-fetched: 2026-05-28
+ingested: 2026-05-28
 published: 2024-09
 confidence: high
 tags: [ldk-node, footgun, persistence, panic, open-issue]

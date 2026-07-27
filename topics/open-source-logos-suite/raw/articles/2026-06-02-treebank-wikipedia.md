@@ -1,8 +1,8 @@
 ---
 title: "Treebank (Wikipedia) — query language landscape"
-url: https://en.wikipedia.org/wiki/Treebank
-retrieved: 2026-06-02
-type: article
+source: https://en.wikipedia.org/wiki/Treebank
+ingested: 2026-06-02
+type: articles
 ---
 
 # Treebank query landscape

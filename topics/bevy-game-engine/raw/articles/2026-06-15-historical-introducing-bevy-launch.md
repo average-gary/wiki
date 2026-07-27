@@ -1,9 +1,9 @@
 ---
 title: "Introducing Bevy (0.1 launch announcement)"
-source_url: https://bevy.org/news/introducing-bevy/
+source: https://bevy.org/news/introducing-bevy/
 source_date: 2020-08-10
 ingested: 2026-06-15
-type: article
+type: articles
 author: Carter Anderson (Cart) / Bevy
 quality: 5
 credibility: high

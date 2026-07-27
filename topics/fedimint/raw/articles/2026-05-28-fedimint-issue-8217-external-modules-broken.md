@@ -2,8 +2,8 @@
 title: "Issue #8217 — External Custom Modules incompatibility with 0.10 (closed)"
 type: raw
 source_type: articles
-source_url: https://github.com/fedimint/fedimint/issues/8217
-fetched: 2026-05-28
+source: https://github.com/fedimint/fedimint/issues/8217
+ingested: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 quality: 4

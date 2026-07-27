@@ -1,10 +1,11 @@
 ---
 title: "Mobile FFI decision tree — UniFFI vs swift-bridge vs hand-rolled"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: warm
+summary: "Three viable approaches to ship a Rust core to iOS (Swift) and Android (Kotlin). Pick by surface size + maintenance budget."
 confidence: high
 sources:
   - raw/repos/2026-05-21-uniffi-rs.md

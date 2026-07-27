@@ -1,11 +1,13 @@
 ---
 title: iOS shield mechanism — DeviceActivity, ShieldActionExtension, BGTaskScheduler
-type: concept
+category: concept
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, ios, technical, architecture]
+summary: "His Words on iOS uses Apple's Family Controls / Screen Time API to monitor target apps and present a custom Scripture screen as a *shield* over them. This is the only first-party API path for inserting a non-Apple modal between the user and a third-party app."
 sources:
   - raw/articles/2026-06-23-ios-screen-time-api-capabilities.md
   - raw/articles/2026-06-23-ios-implementation-patterns.md

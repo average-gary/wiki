@@ -4,9 +4,9 @@ source: "https://ocean.xyz/docs/lightning"
 source_secondary: "https://ocean.xyz/docs/tides"
 source_tertiary: "https://github.com/vnprc/hashpool"
 source_quaternary: "https://pool2win.github.io/braidpool/"
-type: article
+type: articles
 subtype: project-docs
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [mining-pool, lsp, ocean, tides, braidpool, hashpool, ecash, custody, fee-incidence, negative-result, coinbase-maturity]
 credibility: med-high
 evidence_strength: docs+negative-result

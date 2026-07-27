@@ -6,6 +6,7 @@ confidence: medium
 tags: [braidpool, mcelrath, dag-sharechain, decentralized-pool, full-proportional, covenants]
 volatility: warm
 updated: 2026-07-17
+summary: "Bob McElrath's decentralized mining pool research project. Replaces p2pool's linear sharechain with a DAG of beads grouped into cohorts separated by graph cuts. Active development through 2025–2026; AGPL-3.0; currently a prototype (v0.01 CPUnet) — mainnet launch is the v0.5 milestone with no dates."
 verified: 2026-07-17
 sources:
   - "raw/articles/2026-05-26-braidpool-covenants-delving.md"
@@ -93,3 +94,5 @@ This last critique is the canonical McElrath ↔ jungly dispute and is the reaso
 - [[parasite-pool]] — non-decentralized novel scheme for contrast
 - [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — CTV-only coinbase fanout; a different covenant target than Braidpool's APO+CTV UHPO, and the target of Braidpool's "CTV-only pools aren't pools" critique
 - [[payout-schema-taxonomy]]
+- [[ark-for-mining-payouts.md|Ark for Mining Payouts]]
+- [[datum.md|DATUM (OCEAN template-construction)]]

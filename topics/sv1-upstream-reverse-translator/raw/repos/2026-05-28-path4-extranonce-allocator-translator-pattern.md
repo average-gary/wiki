@@ -1,3 +1,21 @@
+---
+title: "path4 — ExtranonceAllocator: the translator pattern is documented in-source"
+source: https://github.com/stratum-mining/stratum/tree/main/sv2/channels-sv2/src/extranonce_manager
+url: https://github.com/stratum-mining/stratum/tree/main/sv2/channels-sv2/src/extranonce_manager
+type: repos
+category: repo
+crate_name: channels_sv2
+language: Rust
+local_path: /Users/garykrause/repos/stratum/sv2/channels-sv2/src/extranonce_manager/
+date_observed: 2026-05-28
+ingested: 2026-05-28
+volatility: warm
+credibility: high
+confidence: high
+tags: [channels-sv2, extranonce, extranonce-allocator, from-upstream-prefix, translator-pattern, sri, path4]
+summary: "The reverse translator's hardest stateful problem — sub-allocating a single upstream SV1 extranonce1 into per-SV2-channel extranonce prefixes so several SV2 downstreams share one upstream connection — already has a purpose-built abstraction in channels_sv2, whose ExtranonceAllocator::from_upstream_prefix docstring names the Translator use case explicitly."
+---
+
 # path4 - ExtranonceAllocator (Translator pattern is documented in-source)
 
 **Source type**: repos

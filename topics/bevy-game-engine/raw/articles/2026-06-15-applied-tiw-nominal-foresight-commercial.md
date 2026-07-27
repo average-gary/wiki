@@ -1,9 +1,9 @@
 ---
 title: "TWIB — Avian parallel solver, Light Textures, commercial Bevy at Nominal/Foresight"
-source_url: https://thisweekinbevy.com/issue/2025-07-07-the-next-big-step-for-avian-performance-light-textures-and-playtests
+source: https://thisweekinbevy.com/issue/2025-07-07-the-next-big-step-for-avian-performance-light-textures-and-playtests
 source_date: 2025-07-07
 ingested: 2026-06-15
-type: article
+type: articles
 author: This Week in Bevy
 quality: 4
 credibility: high

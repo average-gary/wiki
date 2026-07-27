@@ -5,6 +5,7 @@ created: 2026-06-23
 quality: high
 confidence: 0.90
 source: "Jonathan Haidt (The Anxious Generation, 2024), testimony from phone-free schools, Pew research on Gen Z mental health"
+type: articles
 summary: "Haidt's research shows Gen Z anxiety, depression, and sleep disorders correlate with phone use itself, not app choice. His prescription is phone-free spaces (schools, meals, bedrooms) and delayed phone ownership—not better phone apps. His Words doubles down on the wrong variable."
 ---
 

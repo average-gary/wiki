@@ -1,10 +1,12 @@
 ---
 title: "SRI client crate stack"
-type: concept
+category: concept
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
-tags: [stratum-v2, SRI, rust, stratum-core, parsers_sv2, handlers_sv2, channels_sv2, codec_sv2, mining_sv2, network_helpers, cargo]
+tags: [stratum-v2, sri, rust, stratum-core, parsers-sv2, handlers-sv2, channels-sv2, codec-sv2, mining-sv2, network_helpers, cargo]
+summary: "The minimal Rust dependency set for a daemon that connects, receives jobs, and reconstructs/checks the coinbase — plus the naming traps to avoid."
 ---
 
 # SRI client crate stack
@@ -85,3 +87,4 @@ the reference.
 - [[wiki/concepts/coinbase-reconstruction-and-merkle-fold]]
 - [[wiki/topics/daemon-build-playbook]]
 - [[../stratum-sri/_index|stratum-sri]]
+- [[../topics/reference-implementation-skeleton.md|Reference implementation skeleton (Rust / SRI)]]

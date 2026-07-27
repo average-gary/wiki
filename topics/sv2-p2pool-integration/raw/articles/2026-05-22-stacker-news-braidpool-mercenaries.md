@@ -1,6 +1,6 @@
 ---
 title: "Stacker News — Braidpool community discussion (mercenary miners)"
-source_url: https://stacker.news/items/550109
+source: https://stacker.news/items/550109
 type: forum-thread
 ingested: 2026-05-22
 quality: 3

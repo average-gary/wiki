@@ -3,9 +3,10 @@ title: Variance & Risk-Shifting in Pool Payout Schemes
 category: concept
 created: 2026-05-23
 confidence: high
-tags: [variance, risk, FPPS, PPLNS, Chatzigiannis, Rosenfeld]
+tags: [variance, risk, fpps, pplns, Chatzigiannis, Rosenfeld]
 volatility: warm
 updated: 2026-07-15
+summary: "The single design dimension that distinguishes payout schemes: who absorbs the gap between expected and actual block-find?"
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-23-hashrate-index-pintos-payout-guide.md"
@@ -65,6 +66,9 @@ This is a **third category** beyond pool-eats and miner-eats. Market clears vari
 | eHash (held) | Mint solvency | Per maturity event | Same as PPLNS |
 | eHash (sold early) | Mint solvency | Stable (locked in at sale) | Lower than PPLNS (haircut to buyer) |
 | p2poolv2 | None | Per block-find + atomic-swap | ≈ PPLNS, possibly higher (no operator fee) |
+| [[lottery-pplns\|Lottery-PPLNS]] | Low | Per block-find, **lumpier** | **Identical to PPLNS in expectation** — variance-only trade |
+
+**Lottery-PPLNS is the one scheme in this table that moves variance without moving expected value.** Because a miner's probability of finding the block equals their share of the proportional payout, the finder bonus they expect to collect exactly equals the carve-out they expect to fund. It is the clearest case in the design space of a pure risk-preference instrument: the same EV, reshaped into a lumpier distribution with a fat right tail. The distribution of that variance is uneven though — a large miner collects the bonus often enough to feel it as income, while a small miner experiences it almost entirely as a per-block haircut against a bounty they will likely never collect.
 
 ## Sources
 
@@ -77,6 +81,9 @@ This is a **third category** beyond pool-eats and miner-eats. Market clears vari
 
 - [[fpps]]
 - [[pplns]]
+- [[lottery-pplns]] — variance deliberately amplified, EV held constant
 - [[tides]]
 - [[ehash]]
 - [[block-withholding]]
+- [[pool-hopping.md|Pool Hopping]]
+- [[tides-variance-derivation.md|TIDES Variance — Derivation from Rosenfeld 2011]]

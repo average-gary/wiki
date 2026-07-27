@@ -1,6 +1,7 @@
 ---
 title: "Process boundary, language boundary, and config surface for DATUM SV2 proxy"
 source: synthesis from path3 sub-agent investigations
+type: notes
 source_type: synthesis-notes
 ingested_by: path3
 ingested_at: 2026-06-01

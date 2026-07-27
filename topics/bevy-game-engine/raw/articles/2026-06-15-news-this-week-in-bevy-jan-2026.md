@@ -1,9 +1,9 @@
 ---
 title: "This Week in Bevy — January 2026 issues"
-source_url: https://thisweekinbevy.com/
+source: https://thisweekinbevy.com/
 source_date: 2026-01-12
 ingested: 2026-06-15
-type: article
+type: articles
 author: Chris Biscardi / rust-adventure
 quality: 4
 credibility: medium

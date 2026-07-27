@@ -1,7 +1,7 @@
 ---
 title: "hArk & Erk: Evolving the Ark Protocol using CTV and CSFS (roose.io)"
-source_url: https://roose.io/blog/hark-erk-evolving-the-ark-protocol-using-ctv-and-csfs/
-type: article
+source: https://roose.io/blog/hark-erk-evolving-the-ark-protocol-using-ctv-and-csfs/
+type: articles
 authors: [Steven Roose, Erik De Smedt]
 publisher: roose.io
 date: 2025-04-15

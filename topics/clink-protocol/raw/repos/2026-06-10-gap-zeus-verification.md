@@ -1,7 +1,7 @@
 ---
 title: "Zeus Wallet CLINK support — verification"
 source: https://github.com/ZeusLN/zeus
-type: repo
+type: repos
 ingested: 2026-06-10
 path: gap-zeus
 quality: 4

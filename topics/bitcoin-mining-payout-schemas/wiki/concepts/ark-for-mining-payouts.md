@@ -6,6 +6,7 @@ confidence: medium
 tags: [ark, vtxo, second-tech, ark-labs, mining-payouts, hypothetical-payout-layer]
 volatility: warm
 updated: 2026-07-17
+summary: "TL;DR: Ark is a Bitcoin off-chain transaction-batching protocol with two competing implementations and a fresh formal academic spine (Keer-Maffei-Avarikioti arXiv 2026)."
 verified: 2026-07-17
 sources:
   - "raw/articles/2026-05-26-ark-burak-original-proposal-2023.md"
@@ -168,3 +169,4 @@ Per [[../../raw/papers/2026-05-26-keer-maffei-ark-formal-arxiv|Keer-Maffei-Avari
 - [[braidpool|Braidpool]] — McElrath's covenant-based UHPO alternative
 - [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — the CTV-coinbase fanout the De Smedt hybrid builds on; its MuSig-node endgame mirrors Ark's shared-output tree
 - [[payout-schema-taxonomy|Payout Schema Taxonomy]] — full design space
+- [[sv2-share-accounting-ext.md|SV2 Share Accounting Extension]]

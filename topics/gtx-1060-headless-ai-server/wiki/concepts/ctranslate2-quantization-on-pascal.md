@@ -1,6 +1,6 @@
 ---
 title: "CTranslate2 compute_type on Pascal sm_61 — pick int8, never float16"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
@@ -55,3 +55,5 @@ From [[CTranslate2 quantization docs|raw/articles/2026-05-21-ctranslate2-quantiz
 - [[faster-whisper-on-gtx-1060]] — VRAM tables per compute_type
 - [[gtx-1060-rtfx-baseline]] — actual benchmark numbers
 - [[pascal-driver-cuda-pinning]] — driver/CUDA stack
+- [[gpu-bench-and-smoke-tests.md|Headless GPU benchmark + smoke-test suite for GTX 1060]]
+- [[../topics/gtx-1060-headless-ai-server-synthesis.md|GTX 1060 Headless AI Server — synthesis]]

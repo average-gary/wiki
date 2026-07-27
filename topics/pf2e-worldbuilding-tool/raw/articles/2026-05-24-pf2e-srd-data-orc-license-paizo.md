@@ -1,7 +1,7 @@
 ---
 title: "Open RPG Creative License (ORC) — Paizo Hosted Text"
 source: "https://paizo.com/orclicense"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: 2023-07-01
 tags: [pf2e, orc-license, licensing, paizo, azora-law, primary-source]

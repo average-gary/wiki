@@ -1,7 +1,7 @@
 ---
 title: "API.Bible (American Bible Society)"
-url: https://scripture.api.bible/
-retrieved: 2026-06-02
+source: https://scripture.api.bible/
+ingested: 2026-06-02
 type: spec
 ---
 

@@ -1,10 +1,11 @@
 ---
 title: "pyannote.audio 3.x / 4.x on Pascal — VRAM, gating, DER"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: warm
+summary: "Pipeline composition (raw/articles/2026-05-21-pyannote-speaker-diarization-3.1):"
 confidence: high
 sources:
   - raw/articles/2026-05-21-pyannote-speaker-diarization-3.1.md

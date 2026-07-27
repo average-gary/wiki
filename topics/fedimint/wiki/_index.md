@@ -8,25 +8,25 @@ updated: 2026-05-28
 
 ## Topics (synthesizing reads)
 
-- [[Multi-currency status|topics/fedimint-multi-currency-status.md]] ⭐ — three-path framing (native mintv2 / Stability Pool / off-mint bridge), what shipped, what's missing
+- [[topics/fedimint-multi-currency-status.md|Multi-currency status]] ⭐ — three-path framing (native mintv2 / Stability Pool / off-mint bridge), what shipped, what's missing
 
 ## Concepts (atomic reference reads)
 
 ### Multi-currency machinery
-- [[AmountUnits and Amounts|concepts/amount-units-and-amounts.md]] — core-layer multi-unit types (PR #7734)
-- [[mintv2 amount_unit config|concepts/mintv2-amount-unit-config.md]] — per-module unit declaration (PR #8460)
-- [[Fedimint modules and instances|concepts/fedimint-modules-and-instances.md]] — `ModuleKind` / `ModuleInstanceId` decoupling, in-tree vs FMCM
+- [[concepts/amount-units-and-amounts.md|AmountUnits and Amounts]] — core-layer multi-unit types (PR #7734)
+- [[concepts/mintv2-amount-unit-config.md|mintv2 amount_unit config]] — per-module unit declaration (PR #8460)
+- [[concepts/fedimint-modules-and-instances.md|Fedimint modules and instances]] — `ModuleKind` / `ModuleInstanceId` decoupling, in-tree vs FMCM
 
 ### Existing non-BTC patterns
-- [[Stability Pool|concepts/stability-pool.md]] — Fedi's synthetic-USD external custom module
-- [[Off-mint payments-bridge pattern|concepts/off-mint-payments-bridge-pattern.md]] — BitSacco / ChapSmart shape
+- [[concepts/stability-pool.md|Stability Pool]] — Fedi's synthetic-USD external custom module
+- [[concepts/off-mint-payments-bridge-pattern.md|Off-mint payments-bridge pattern]] — BitSacco / ChapSmart shape
 
 ### Cross-cutting
-- [[Federation trust model|concepts/federation-trust-model.md]] — KYF, debasement, exit, regulation, and how multi-currency multiplies these
+- [[concepts/federation-trust-model.md|Federation trust model]] — KYF, debasement, exit, regulation, and how multi-currency multiplies these
 
 ## Reference
 
-- [[Cashu comparison|reference/cashu-comparison.md]] — Cashu's NUT-02 multi-unit support as the closest precedent
+- [[reference/cashu-comparison.md|Cashu comparison]] — Cashu's NUT-02 multi-unit support as the closest precedent
 
 ## Theses (candidates for follow-up research)
 

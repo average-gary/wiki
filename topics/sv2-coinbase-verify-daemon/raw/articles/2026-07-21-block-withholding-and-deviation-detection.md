@@ -1,10 +1,10 @@
 ---
 title: "Block withholding + coinbase deviation detection (Optech, APoW arXiv, mempool API)"
-source_url: https://bitcoinops.org/en/topics/block-withholding/
+source: https://bitcoinops.org/en/topics/block-withholding/
 source_url_2: https://arxiv.org/html/2601.02496
 source_url_3: https://mempool.space/docs/api/rest
-type: article
-retrieved: 2026-07-21
+type: articles
+ingested: 2026-07-21
 credibility: high
 corroboration: "gap-4 agent"
 tags: [block-withholding, deviation-detection, job-diff, on-chain-correlation, mempool-api, esplora, APoW, sybil, undetectable]

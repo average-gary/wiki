@@ -1,7 +1,7 @@
 ---
 title: "Remaster damage types — holy, unholy, spirit, vitality, void"
 source: "https://github.com/foundryvtt/pf2e/blob/master/packs/journals/remaster-changes.json"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "2023-11-15"
 tags: [pf2e, remaster, damage-types, holy, unholy, spirit, vitality, void, monotheism]

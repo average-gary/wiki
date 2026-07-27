@@ -1,10 +1,12 @@
 ---
 title: "SV2 extension 0x0002 — Worker-Specific Hashrate Tracking TLV"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: high
-tags: [stratum-v2, extension-0x0002, TLV, SubmitSharesExtended, user_identity, worker-tracking]
+tags: [stratum-v2, extension-0x0002, tlv, SubmitSharesExtended, user_identity, worker-tracking]
+summary: "Merged into the SV2 spec via PR #113, Jun 2025."
 ---
 
 # Extension 0x0002 — Worker-Specific Hashrate Tracking

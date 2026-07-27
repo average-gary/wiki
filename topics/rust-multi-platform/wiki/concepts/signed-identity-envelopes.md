@@ -1,12 +1,13 @@
 ---
 title: "Versioned Signed Identity Envelopes — Encoding & Rotation"
-type: concept
+category: concept
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
 status: active
 quality: high
 volatility: medium
+summary: "How to design a long-lived ed25519-signed identity envelope that survives multiple schema revisions and key rotations without breaking deployed clients."
 sources:
   - raw/guides/2026-06-01-rfc-9052-cose-structures.md
   - raw/repos/2026-06-01-dsse-envelope-spec.md

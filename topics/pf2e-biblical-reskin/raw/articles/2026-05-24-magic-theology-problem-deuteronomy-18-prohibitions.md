@@ -1,7 +1,7 @@
 ---
 title: "Witchcraft and Divination in the Hebrew Bible: The Specific Prohibitions"
 source: "https://en.wikipedia.org/wiki/Witchcraft_and_divination_in_the_Hebrew_Bible"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: unknown
 tags: [theology, sorcery, deuteronomy, leviticus, exodus, hebrew, prohibitions]

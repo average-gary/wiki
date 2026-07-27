@@ -1,9 +1,11 @@
 ---
 title: Stator Winding Automation
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [stator-winding, needle-winding, flyer-winding, linear-winding, hairpin, slot-fill, segmented-stator]
+summary: "Winding is the hardest and most value-dense step to automate (process chain). It is where copper meets geometry: the method you pick sets your slot fill factor (how much copper you cram into the slot → torque density and efficiency), your cycle time, and how automatable everything downstream is."
 confidence: high
 ---
 
@@ -90,3 +92,4 @@ Achilles' heel — it drifts with spool friction, feed angle, and speed, and fin
 - [Quality & EOL Testing](quality-and-eol-testing.md) — surge test catches winding faults
 - [Limitations & Gotchas](limitations-and-gotchas.md)
 - [Vendor Landscape](../reference/vendor-landscape.md) — who makes winding machines
+- [[../reference/build-playbook.md|Build Playbook — How to Automate Brushless Motor Manufacturing]]

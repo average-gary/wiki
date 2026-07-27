@@ -1,7 +1,7 @@
 ---
 title: "Tokio 2025-2026 performance PRs: sharded spawn_blocking, alt timer, eager driver handoff"
-source_url: https://github.com/tokio-rs/tokio/pulls?q=is%3Apr+performance+merged%3A%3E2024-01-01
-type: article
+source: https://github.com/tokio-rs/tokio/pulls?q=is%3Apr+performance+merged%3A%3E2024-01-01
+type: articles
 ingested: 2026-06-24
 quality: 4
 confidence: high

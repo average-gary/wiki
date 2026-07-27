@@ -1,8 +1,8 @@
 ---
 title: "BitTorrent v2 — BEP 52 (Per-File Merkle Trees)"
 source: https://www.bittorrent.org/beps/bep_0052.html
-type: paper
-tags: [bittorrent, bep-52, merkle, sha-256, resumable, content-addressed]
+type: papers
+tags: [bittorrent, bep-52, merkle, sha256, resumable, content-addressed]
 date: 2026-06-01
 quality: 5
 confidence: high

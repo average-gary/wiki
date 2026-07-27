@@ -1,6 +1,6 @@
 ---
 title: Thornless Blackberry Pruning
-type: topic
+category: topic
 created: 2026-05-26
 updated: 2026-05-26
 verified: 2026-05-26
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [blackberry, thornless, pruning, primocane, floricane, semi-erect, erect, trellis]
+summary: "Blackberries are biennial-caned: a primocane grows vegetatively in year 1, becomes a floricane in year 2, fruits, then dies. Pruning is built around that two-year cycle plus the plant's growth habit (erect / semi-erect / trailing)."
 sources:
   - "[[raw/articles/2026-05-26-blackberry-uga-c766]]"
   - "[[raw/articles/2026-05-26-blackberry-clemson-hgic]]"

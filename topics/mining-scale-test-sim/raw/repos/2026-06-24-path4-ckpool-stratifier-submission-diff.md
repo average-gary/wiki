@@ -1,8 +1,9 @@
 ---
 title: ckpool stratifier — submission_diff and new_share (SV1 share validation)
 source_type: repos
-source_url: https://github.com/ckolivas/ckpool/blob/master/src/stratifier.c
-fetched: 2026-06-24
+source: https://github.com/ckolivas/ckpool/blob/master/src/stratifier.c
+type: repos
+ingested: 2026-06-24
 path: 4
 tags: [ckpool, sv1, share-validation, vardiff, dup-detection]
 ---

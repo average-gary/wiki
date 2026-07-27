@@ -1,7 +1,7 @@
 ---
 title: "play0ad.com — Release announcements (2025–2026)"
 source: https://play0ad.com/
-type: article
+type: articles
 ingested: 2026-06-18
 quality: 5
 confidence: high

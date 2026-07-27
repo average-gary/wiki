@@ -5,7 +5,7 @@ type: data
 tags: [titanium, machinability, tool-wear, coolant, cryogenic, cnc, materials]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The quantitative machinability physics for Ti-6Al-4V — ~6.7 W/m·K conductivity traps ~80% of cutting heat at the edge, driving rapid tool wear; explains why automated Ti machining needs tool-wear monitoring, sister tooling, and high-pressure/cryogenic coolant to run unattended.
 ---
 

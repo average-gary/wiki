@@ -1,10 +1,12 @@
 ---
 title: "NWC vs LNURL as the wallet interface"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: medium
 tags: [nwc, lnurl, nip-47, alternative-protocols]
+summary: "When designing the front door to a CDK mint, LNURL isn't the only option. Nostr Wallet Connect (NIP-47, NWC) is a competing protocol with different trade-offs."
 ---
 
 # NWC vs LNURL — choosing the wallet-facing protocol
@@ -73,3 +75,4 @@ If LNURL is the only goal: stop here. If you want power-user UX, plan for NWC al
 
 - [[lnurl-bridge-pattern.md|LNURL bridge pattern]]
 - [[lnurl-spec-cheatsheet.md|LNURL spec cheatsheet]]
+- [[lnurl-cdk-design-tensions.md|Design tensions: CDK + LDK + LNURL on one host]]

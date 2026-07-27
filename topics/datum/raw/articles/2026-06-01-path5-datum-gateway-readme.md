@@ -1,6 +1,7 @@
 ---
 title: "DATUM Gateway README - Protocol, Node, and Hardware Requirements"
-url: https://github.com/OCEAN-xyz/datum_gateway/blob/master/README.md
+source: https://github.com/OCEAN-xyz/datum_gateway/blob/master/README.md
+type: articles
 source_type: code-readme
 ingested_by: path5
 ingested_on: 2026-06-01

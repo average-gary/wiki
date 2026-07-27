@@ -1,10 +1,12 @@
 ---
 title: Rust Bitcoin Ecosystem State — 2026-06
+category: topic
 type: topic-synthesis
 created: 2026-06-22
 updated: 2026-06-22
 verified: 2026-06-22
 volatility: hot
+summary: "A snapshot of where the major Rust-Bitcoin projects stand on 2026-06-22."
 confidence: high
 sources:
   - "[[../../raw/data/2026-06-22-crates-io-bitcoin-stack|crates.io]]"

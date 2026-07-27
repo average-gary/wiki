@@ -3,9 +3,11 @@ title: "Decision: duration streaks, not consecutive-day streaks"
 type: decision
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, decision, metrics, gamification, theology]
+summary: "Decision: The headline metric is lifetime minutes redeemed (cumulative, monotonic, never resets). Secondary metric is rolling-7-day attended-interrupt count. Optional consecutive-day streak is off by default and includes silent auto-grace freezes (Sundays + first miss elsewhere)."
 sources:
   - raw/papers/2026-06-23-psych-streaks-gamification-duolingo-snapchat.md
   - raw/articles/2026-06-23-competitors-prayer-lock.md

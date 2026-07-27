@@ -1,7 +1,7 @@
 ---
 title: YouVersion / Bible.com — install milestones, donor model, why no head-on competitor
 source: https://en.wikipedia.org/wiki/YouVersion
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, market, monetization, youversion, life-church, donor-model]
 quality: 5

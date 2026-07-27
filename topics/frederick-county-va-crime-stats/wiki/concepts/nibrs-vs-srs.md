@@ -1,9 +1,12 @@
 ---
 title: NIBRS vs SRS — the 2021 reporting transition
-type: concept
+category: concept
 created: 2026-05-26
+updated: 2026-05-26
+volatility: warm
 confidence: high
 tags: [NIBRS, SRS, FBI, hierarchy-rule, methodology]
+summary: "In 2021, FBI mandated all U.S. agencies report via the National Incident-Based Reporting System (NIBRS) instead of the legacy Summary Reporting System (SRS)."
 ---
 
 # NIBRS vs SRS — Why Pre/Post-2021 Crime Stats Don't Compare
@@ -61,3 +64,4 @@ Virginia transitioned cleanly. Crime in Virginia 2022/2023/2024 (VSP) all use NI
 
 - [[fcso-vs-winchester-pd|FCSO vs Winchester PD]]
 - [[../../raw/articles/2026-05-26-fbi-ucr-fbi-cde|FBI UCR / CDE]]
+- [[../topics/crime-profile-2024.md|Crime profile — Frederick County + Winchester, 2024 best-available]]

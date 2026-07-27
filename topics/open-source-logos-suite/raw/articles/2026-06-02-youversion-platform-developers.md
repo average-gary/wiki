@@ -1,7 +1,7 @@
 ---
 title: "YouVersion developer platform"
-url: https://platform.youversion.com/
-retrieved: 2026-06-02
+source: https://platform.youversion.com/
+ingested: 2026-06-02
 type: spec
 ---
 

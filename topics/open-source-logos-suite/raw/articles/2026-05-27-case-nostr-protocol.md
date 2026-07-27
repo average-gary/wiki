@@ -1,7 +1,7 @@
 ---
 title: "Nostr Protocol Overview"
-source_url: "https://github.com/nostr-protocol/nostr"
-type: article
+source: "https://github.com/nostr-protocol/nostr"
+type: articles
 path: case
 date_ingested: 2026-05-27
 date_published: unknown

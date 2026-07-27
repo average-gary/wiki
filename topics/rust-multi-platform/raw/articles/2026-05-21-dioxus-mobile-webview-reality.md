@@ -1,7 +1,7 @@
 ---
 title: "dioxus-mobile crate — definitively webview-based, not native"
 source: https://lib.rs/crates/dioxus-mobile
-type: article
+type: articles
 tags: [dioxus, mobile, webview, wry, architecture]
 date: 2026-05-21
 quality: 5

@@ -1,10 +1,12 @@
 ---
 title: "user_identity (SV2 channel field)"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: high
 tags: [stratum-v2, OpenMiningChannel, user_identity, Str0_255]
+summary: "user_identity is a Str0_255 field on both OpenStandardMiningChannel and OpenExtendedMiningChannel in the SV2 wiki/concepts/sv2-mining-protocol-overview."
 ---
 
 # user_identity

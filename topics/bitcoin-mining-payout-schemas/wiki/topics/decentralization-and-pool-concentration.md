@@ -3,9 +3,10 @@ title: Decentralization & Pool Concentration
 category: topic
 created: 2026-05-23
 confidence: high
-tags: [centralization, b10c, Foundry, AntPool, proxy-pooling]
+tags: [centralization, b10c, foundry, antpool, proxy-pooling]
 volatility: warm
 updated: 2026-07-15
+summary: "The empirical context for why payout-scheme reform matters in the 2024-2026 window."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-23-b10c-mining-centralization-2025.md"
@@ -93,3 +94,4 @@ Modeled outcome: FPPS pools must either (a) raise fees to compensate operator-si
 - [[payout-design-space]]
 - [[sv2-jd-and-payout-decoupling]]
 - [[../concepts/p2pool-share-chain]]
+- [[../concepts/selfish-mining.md|Selfish Mining]]

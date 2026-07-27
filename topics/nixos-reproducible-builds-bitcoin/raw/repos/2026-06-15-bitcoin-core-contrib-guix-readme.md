@@ -2,7 +2,7 @@
 title: "Bitcoin Core contrib/guix — Bootstrappable Bitcoin Core Builds"
 source: https://github.com/bitcoin/bitcoin/blob/master/contrib/guix/README.md
 attestation_repo: https://github.com/bitcoin-core/guix.sigs
-type: repo
+type: repos
 maintainer: Bitcoin Core project (bitcoin/bitcoin)
 year: 2021–2026
 ingested: 2026-06-15

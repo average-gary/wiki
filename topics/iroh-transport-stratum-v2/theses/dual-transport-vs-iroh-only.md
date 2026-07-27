@@ -8,6 +8,9 @@ confidence: medium
 core_claim: "Across a representative population of residential miner ISPs, a Stratum V2 deployment offering both TCP and iroh transports has lower stale-share rates than an iroh-only deployment, because some non-trivial fraction of ISPs throttle UDP silently."
 key_variables: [UDP throttling, ISP middlebox behavior, iroh QUIC throughput, stale share rate, share submission RTT]
 falsification: "An iroh-only deployment with measured stale-share rates equal to or better than dual-transport across a representative geographic and ISP distribution of miners over a 30-day period."
+volatility: warm
+tags: [thesis]
+summary: "Across a representative population of residential miner ISPs, a Stratum V2 deployment offering both TCP and iroh transports has lower stale-share rates than an iroh-only deployment, because some non-trivial fraction of ISPs throttle UDP silently."
 ---
 
 # Thesis: dual transport beats iroh-only at the long tail

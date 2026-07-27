@@ -1,6 +1,7 @@
 ---
 title: "SRI JobStore trait + JobFactory: where DATUM-GBT plugs in"
 source: /Users/garykrause/repos/stratum/sv2/channels-sv2/src/server/jobs/{job_store.rs,factory.rs}
+type: repos
 source_type: local-code
 ingested_by: path3
 ingested_at: 2026-06-01

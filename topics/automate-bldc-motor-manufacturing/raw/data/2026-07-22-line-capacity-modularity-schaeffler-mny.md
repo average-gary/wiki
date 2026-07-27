@@ -6,7 +6,7 @@ type: data
 tags: [line-capacity, modular-line, cobot, changeover, mes, hairpin]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Real capacity anchors (175k and 200k+ units/yr), modular/scalable line paradigm, cobot HRC, changeover time, MES integration.
 ---
 

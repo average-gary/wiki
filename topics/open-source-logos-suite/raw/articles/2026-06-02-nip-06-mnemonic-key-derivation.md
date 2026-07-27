@@ -1,7 +1,7 @@
 ---
 title: "NIP-06: Basic Key Derivation from Mnemonic Seed Phrase (unrecommended)"
-url: https://github.com/nostr-protocol/nips/blob/master/06.md
-retrieved: 2026-06-02
+source: https://github.com/nostr-protocol/nips/blob/master/06.md
+ingested: 2026-06-02
 type: spec
 ---
 

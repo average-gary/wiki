@@ -1,9 +1,9 @@
 ---
 title: "Bevy 0.10 Release Notes — Schedule V3 / Stageless ECS"
-source_url: https://bevy.org/news/bevy-0-10/
+source: https://bevy.org/news/bevy-0-10/
 source_date: 2023-03-06
 ingested: 2026-06-15
-type: article
+type: articles
 author: Carter Anderson (Cart) / Bevy
 quality: 5
 credibility: high

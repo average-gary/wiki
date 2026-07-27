@@ -1,9 +1,11 @@
 ---
 title: Limitations & Bottlenecks — What Still Isn't Automated
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [limitations, bottlenecks, gotchas, am-post-processing, validation, ai-vision, failure-modes]
+summary: "\"Maximal automation\" is not \"full automation.\" These are the steps that resist automation, the gotchas that scrap parts, and the honest ceiling on how lights-out an implant line can get."
 confidence: high
 ---
 
@@ -74,3 +76,5 @@ metrology, semi-automate AM post-processing, and keep a validated human at the r
 - [The Regulatory Envelope](the-regulatory-envelope.md)
 - [Economics & Line Architecture](economics-and-line-architecture.md)
 - [Build Playbook](../reference/build-playbook.md)
+- [[finishing-and-coating-automation.md|Finishing & Coating Automation — Killing the Hand-Polish Bottleneck]]
+- [[metrology-and-inspection-automation.md|Metrology & Inspection Automation]]

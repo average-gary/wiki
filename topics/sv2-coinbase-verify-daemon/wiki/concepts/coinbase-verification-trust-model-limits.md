@@ -1,10 +1,12 @@
 ---
 title: "Coinbase-verification trust-model limits"
-type: concept
+category: concept
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
 tags: [stratum-v2, trust-model, job-declaration, block-withholding, job-swapping, sybil, security]
+summary: "A passive \"coinbase matches expected\" daemon is trust-but-verify at best, not trustless. Verification power scales with how much of the block the miner *authors*, not with how carefully it inspects what it's handed. Steelmanned below."
 ---
 
 # Coinbase-verification trust-model limits
@@ -67,3 +69,5 @@ coinbase). It does **not** provide a trustless guarantee — only Job Declaratio
 - [[wiki/concepts/prior-art-coinbase-verification]]
 - [[wiki/topics/what-the-daemon-can-and-cannot-prove]]
 - [[../ark-boarding-sv2-mining/_index|ark-boarding-sv2-mining]]
+- [[deviation-detection.md|Deviation detection — job-diff + on-chain correlation]]
+- [[standard-vs-extended-channels-coinbase-visibility.md|Standard vs extended channels — coinbase visibility]]

@@ -1,7 +1,7 @@
 ---
 title: "LDK Server — Operations guide (backups, TLS, footguns)"
-source_url: https://github.com/lightningdevkit/ldk-server/blob/main/docs/operations.md
-type: article
+source: https://github.com/lightningdevkit/ldk-server/blob/main/docs/operations.md
+type: articles
 ingested: 2026-05-26
 tags: [ldk-server, operations, backup, persistence, tls, contrarian]
 quality: 5

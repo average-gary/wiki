@@ -1,9 +1,11 @@
 ---
 title: The Orthopedic Implant Process Chain & Station Map
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [process-chain, station-map, automation-levels, machining, additive, finishing, sterilization]
+summary: "You can't automate what you can't sequence. Every orthopedic implant — hip cup, femoral stem, femoral head, knee femoral/tibial component, spinal cage, bone screw, trauma plate — is built as an ordered chain of stations, and the automation decision is made *per station* because they differ wildly in…"
 confidence: high
 ---
 

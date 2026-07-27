@@ -3,7 +3,7 @@ title: "What is perplexity & burstiness for AI detection?"
 source: https://gptzero.me/news/perplexity-and-burstiness-what-is-it/
 author: GPTZero (Edward Tian et al.)
 venue: GPTZero (2023–2024)
-type: article
+type: articles
 tags: [llm-writing-indicators, detection, perplexity, burstiness, mechanism]
 quality: 4
 confidence: high

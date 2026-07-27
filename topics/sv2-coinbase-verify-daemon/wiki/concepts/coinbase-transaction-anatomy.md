@@ -1,10 +1,12 @@
 ---
 title: "Coinbase transaction anatomy"
-type: concept
+category: concept
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
-tags: [bitcoin, coinbase, scriptSig, bip34, bip141, witness-commitment, op_return, extranonce, merged-mining, fabe6d6d]
+tags: [bitcoin, coinbase, scriptsig, bip-34, bip141, witness-commitment, op-return, extranonce, merged-mining, fabe6d6d]
+summary: "What's actually inside a coinbase, field by field — so a daemon knows what it's parsing and what each \"expected value\" check targets."
 ---
 
 # Coinbase transaction anatomy
@@ -55,3 +57,4 @@ witness-serialized coinbase (its own template).
 - [[wiki/concepts/coinbase-reconstruction-and-merkle-fold]]
 - [[wiki/concepts/expected-value-checks-taxonomy]]
 - [[../sv2-coinbase-identity/wiki/concepts/sv2-coinbase-scriptsig-layout|SV2 coinbase scriptSig layout (sv2-coinbase-identity)]]
+- [[sourcing-the-expected-value.md|Sourcing the expected value]]

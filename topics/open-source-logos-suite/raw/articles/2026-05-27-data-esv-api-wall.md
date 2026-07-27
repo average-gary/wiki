@@ -1,7 +1,7 @@
 ---
 title: "ESV API (Crossway) — Copyright Wall"
-source_url: "https://www.esv.org/api/"
-type: article
+source: "https://www.esv.org/api/"
+type: articles
 path: data
 date_ingested: 2026-05-27
 date_published: unknown

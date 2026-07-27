@@ -1,9 +1,9 @@
 ---
 title: "Cashu vulnerability disclosure: keyset-ID collision + poisonous-airdrop attack"
 source: https://conduition.io/code/cashu-disclosure/
-type: article
+type: articles
 tags: [cashu, security, vulnerability, nut-09, nut-13, keyset-collision, gaming-implications]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: high
 quality_score: 5

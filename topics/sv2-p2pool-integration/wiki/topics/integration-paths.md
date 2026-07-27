@@ -1,10 +1,11 @@
 ---
 title: Integration paths — p2poolv2 ↔ sv2-apps
-type: topic
+category: topic
 created: 2026-05-22
 updated: 2026-05-22
 verified: 2026-05-22
 volatility: hot
+summary: "The synthesized answer to \"how would we integrate p2pool into sv2-apps?\""
 confidence: high
 sources:
   - "[[raw/repos/2026-05-22-p2poolv2-module-map|p2poolv2 module map]]"
@@ -166,3 +167,5 @@ Define a new SV2 role (e.g., "Decentralized Share Accountant") and propose it as
 - [[../concepts/braidpool]]
 - [[../concepts/ocean-datum]]
 - [[why-decentralized-pools-struggle|Why decentralized pools struggle]]
+- [[share-accounting-mapping.md|SV2 ↔ p2poolv2 share-accounting mapping spec]]
+- [[../concepts/stratum-v2-overview.md|Stratum V2 overview]]

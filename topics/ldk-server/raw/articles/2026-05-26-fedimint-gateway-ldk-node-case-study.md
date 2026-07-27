@@ -1,9 +1,9 @@
 ---
 title: "Fedimint Lightning Gateway uses LDK Node (case study)"
-source_url: https://lightningdevkit.org/blog/fedimint-lightning-gateway-uses-ldk-node-to-simplify-deployment-and-liquidity-management/
+source: https://lightningdevkit.org/blog/fedimint-lightning-gateway-uses-ldk-node-to-simplify-deployment-and-liquidity-management/
 author: Justin Moeller
 published: 2025-01-31
-type: article
+type: articles
 ingested: 2026-05-26
 tags: [ldk-node, fedimint, case-study, deployment, hold-invoice]
 quality: 4

@@ -1,7 +1,7 @@
 ---
 title: "SV2 Spec — Discussion (10): Deployment scenarios and the missing v2→v1 proxy"
 url: https://github.com/stratum-mining/sv2-spec/blob/main/10-Discussion.md
-type: paper
+type: papers
 source: stratum-mining/sv2-spec
 captured: 2026-05-28
 quality: 10

@@ -1,7 +1,7 @@
 ---
 title: "Fully Countering Trusting Trust through Diverse Double-Compiling"
 source: https://arxiv.org/abs/1004.5534
-type: paper
+type: papers
 authors: David A. Wheeler
 venue: George Mason University (PhD dissertation, 2009; arXiv 2010)
 year: 2010

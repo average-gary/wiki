@@ -8,7 +8,9 @@ sources:
   - raw/articles/2026-06-01-dropinq2-known-unknowns-and-risks.md
 created: 2026-06-01
 updated: 2026-06-01
+volatility: warm
 tags: [datum-protocol, rust, libsodium, dryoc, drop-in]
+summary: "How the encrypted DATUM upstream gets reimplemented in Rust for a drop-in replacement. From Q2 crate survey, Q2 handshake, Q2 outline."
 confidence: high
 ---
 
@@ -108,3 +110,5 @@ Master HEAD is `v0.4.1-beta`; OCEAN production runs older versions (Path 1 findi
 - [[drop-in-rust-port-architecture]] — where this module fits in the workspace
 - [[../../raw/articles/2026-06-01-path1-datum-protocol-h|datum_protocol.h source]]
 - [[../../raw/articles/2026-06-01-path1-datum-protocol-c|datum_protocol.c source]]
+- [[drop-in-distribution.md|Drop-in distribution mechanics — packaging and binary swap]]
+- [[../topics/drop-in-rust-datum-gateway.md|Drop-in Rust DATUM gateway — synthesis]]

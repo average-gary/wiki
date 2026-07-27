@@ -1,8 +1,10 @@
 ---
 title: GitHub-as-Mod-Registry (Unciv pattern)
-type: concept
+category: concept
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "Unciv ships an in-game Mod Manager. Most game mod managers query a centrally-maintained portal (Steam Workshop, Nexus Mods, ModDB). Unciv does not. Instead:"
 confidence: high
 sources:
   - raw/articles/2026-06-18-unciv-modders-guide.md
@@ -95,3 +97,5 @@ mods to declarative content. Examples where it could work:
 
 - [Unciv](../topics/unciv.md)
 - [Modding DSLs vs data formats](modding-dsl-vs-data-format.md)
+- [[oss-4x-development-pace.md|OSS 4X Development Pace]]
+- [[unciv-copyright-posture.md|Unciv Copyright Posture]]

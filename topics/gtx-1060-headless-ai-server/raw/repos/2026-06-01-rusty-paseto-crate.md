@@ -1,7 +1,7 @@
 ---
 title: "rusty_paseto crate — Rust implementation of PASETO"
 source: https://docs.rs/rusty-paseto, https://github.com/rrrodzilla/rusty_paseto
-type: repo
+type: repos
 tags: [paseto, rusty-paseto, rust, crate, v4, footer, implicit-assertion]
 date: 2026-06-01
 quality: 4

@@ -1,7 +1,10 @@
 ---
 title: Data Sources — primary vs secondary
-type: reference
+category: reference
 created: 2026-05-26
+updated: 2026-05-26
+volatility: warm
+summary: "Tiered by authority. Use primary sources when extractable; secondary aggregators as cross-checks only."
 ---
 
 # Data Sources

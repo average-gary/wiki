@@ -1,7 +1,7 @@
 ---
 title: "shocknet/CLINK GitHub repository — protocol spec home"
 source: https://github.com/shocknet/CLINK
-type: repo
+type: repos
 ingested: 2026-06-09
 path: spec-primitives
 quality: 5

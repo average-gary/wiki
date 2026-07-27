@@ -1,6 +1,6 @@
 ---
 title: "Integration playbook — Iroh transport for SV2"
-type: topic
+category: topic
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-20
@@ -17,6 +17,7 @@ sources:
   - raw/repos/2026-05-20-iroh-blobs-alpn-template.md
   - raw/repos/2026-05-20-iroh-examples-framed-messages.md
 tags: [iroh, sv2, integration, playbook]
+summary: "The synthesis. The deliverable. Read wiki/topics/why-iroh-for-sv2.md first if you need the motivation; this document is _how_."
 ---
 
 # Integration playbook — Iroh transport for SV2

@@ -3,9 +3,10 @@ title: PPLNS (Pay Per Last N Shares)
 category: concept
 created: 2026-05-23
 confidence: high
-tags: [PPLNS, Rosenfeld, hop-resistant]
+tags: [pplns, Rosenfeld, hop-resistant]
 volatility: warm
 updated: 2026-07-15
+summary: "Proposed by Meni Rosenfeld on bitcointalk, 2011-08-28. Designed to fix the pool-hopping vulnerability of proportional payout."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-23-rosenfeld-pplns-bitcointalk-2011.md"
@@ -47,6 +48,7 @@ PPLNS is incentive compatible *only under specific parameter regimes*. Compatibi
 - **SLICE / PPLNS-JD** (DMND): PPLNS where shares are bound to SV2 JD jobs. *See [[pplns-jd]].*
 - **p2pool / p2poolv2**: on-chain PPLNS, no operator. *See [[p2pool-share-chain]].*
 - **eHash** (hashpool): not strictly PPLNS, but inherits the "pay per share, with variance to miner" property. *See [[ehash]].*
+- **Lottery-PPLNS**: a flat bounty is carved out for the block finder, PPLNS splits the remainder. Expectation-neutral for every miner; a pure variance trade. *See [[lottery-pplns]].*
 
 ## Sources
 
@@ -60,3 +62,8 @@ PPLNS is incentive compatible *only under specific parameter regimes*. Compatibi
 - [[fpps]]
 - [[pool-hopping]]
 - [[variance-and-risk-shifting]]
+- [[lottery-pplns]] — finder-bonus hybrid variant
+- [[p2poolv2-accounting.md|p2poolv2 Accounting (deep-dive)]]
+- [[parasite-pool.md|Parasite Pool]]
+- [[pplns-jd.md|PPLNS-JD / SLICE]]
+- [[tides.md|TIDES (Transparent Index of Distinct Extended Shares)]]

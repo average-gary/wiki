@@ -5,7 +5,7 @@ type: repos
 tags: [diy, hobbyist, small-scale, winding-machine, limitations]
 credibility: low
 confidence: medium
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Honest data point on where hobbyist winding automation tops out vs. what needs a full integrator.
 ---
 

@@ -1,14 +1,14 @@
 ---
 title: "256 Foundation — overview, governance, and relationship to p2poolv2"
 publication: 256foundation.org + github.com/256foundation
-url: https://256foundation.org
+source: https://256foundation.org
 url2: https://github.com/256foundation
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high
 confidence: high
-tags: [256-foundation, governance, Hydrapool, mining-decentralization, 501c3]
+tags: [256-foundation, governance, hydrapool, mining-decentralization, 501c3]
 ---
 
 # 256 Foundation

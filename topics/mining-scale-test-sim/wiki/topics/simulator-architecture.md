@@ -1,9 +1,12 @@
 ---
 title: "Simulator architecture — recommended design"
-type: topic
+category: topic
 created: 2026-06-24
+updated: 2026-06-24
+volatility: warm
 confidence: high
 tags: [architecture, simulator, design, rust]
+summary: "Design synthesis across gimballock, Path 2's connection ladder, Path 3's miner patterns, Path 4's cost ledger, and Path 5's harness survey. Goal: characterize the connection-scale ceiling of a Stratum V2 pool by simulation."
 ---
 
 # Simulator architecture

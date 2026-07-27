@@ -1,11 +1,11 @@
 ---
 title: "Next-Generation Orthopaedic Implants by Additive Manufacturing (EBM) — process parameters & stress-shielding lattices"
 source: https://pmc.ncbi.nlm.nih.gov/articles/PMC3432366/
-type: paper
+type: papers
 tags: [additive-manufacturing, ebm, titanium, cocrmo, lattice, stress-shielding, astm-f136, astm-f75, hip, post-processing]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Peer-reviewed (open-access) EBM process parameters for Ti-6Al-4V ELI and Co-29Cr-6Mo (F75), and the quantitative rationale for porous lattices matching bone modulus — the core reason AM beats machining/casting for titanium implants.
 ---
 

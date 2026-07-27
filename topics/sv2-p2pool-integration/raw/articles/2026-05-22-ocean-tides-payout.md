@@ -1,6 +1,6 @@
 ---
 title: "OCEAN TIDES Payout Algorithm"
-source_url: https://ocean.xyz/docs/tides
+source: https://ocean.xyz/docs/tides
 type: algorithm-spec
 ingested: 2026-05-22
 quality: 4

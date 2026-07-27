@@ -1,7 +1,7 @@
 ---
 title: "Netplan — static IP configuration for Ubuntu 22.04"
 source: https://netplan.readthedocs.io/en/latest/using-static-ip-addresses/
-type: article
+type: articles
 tags: [netplan, networking, static-ip, ubuntu-22-04]
 date: 2026-05-21
 quality: 5

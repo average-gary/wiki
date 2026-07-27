@@ -5,7 +5,7 @@ type: data
 tags: [magnetization, post-assembly, capacitor-discharge, magnetizing-fixture, eddy-currents]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Best vendor-neutral explanation of why post-assembly magnetization dominates automated lines and how CD magnetizers + fixtures work.
 ---
 

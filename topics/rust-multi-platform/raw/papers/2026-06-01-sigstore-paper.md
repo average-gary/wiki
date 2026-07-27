@@ -1,7 +1,7 @@
 ---
 title: "Sigstore: Software Signing for Everybody (CCS '22)"
-source_url: https://research.google/pubs/pub51999/
-type: paper
+source: https://research.google/pubs/pub51999/
+type: papers
 ingested: 2026-06-01
 quality: 5
 confidence: high

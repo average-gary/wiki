@@ -1,7 +1,7 @@
 ---
 title: "Neha Narula — Ark (explainer)"
 source: https://nehanarula.org/2025/05/20/ark.html
-type: article
+type: articles
 ingested: 2026-07-17
 credibility: high
 direction: opposes

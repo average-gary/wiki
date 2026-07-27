@@ -1,10 +1,10 @@
 ---
 title: "Challenge: Covenants for Braidpool (Delving Bitcoin, McElrath, Jan 2025)"
 publication: delvingbitcoin.org
-url: https://delvingbitcoin.org/t/challenge-covenants-for-braidpool/1370
+source: https://delvingbitcoin.org/t/challenge-covenants-for-braidpool/1370
 author: Bob McElrath
 date: 2025-01
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

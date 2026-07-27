@@ -3,7 +3,7 @@ title: "Empirical evidence of Large Language Model's influence on human spoken c
 source: https://arxiv.org/abs/2409.01754
 authors: Hiromu Yakura, Ezequiel Lopez-Lopez, Levin Brinkmann, et al. (Max Planck Institute for Human Development)
 venue: arXiv:2409.01754 (Sept 2024, rev. Jul 2025)
-type: paper
+type: papers
 tags: [llm-writing-indicators, language-flattening, spoken-language, delve, homogenization]
 quality: 5
 confidence: high

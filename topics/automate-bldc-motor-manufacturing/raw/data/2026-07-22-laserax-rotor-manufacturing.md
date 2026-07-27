@@ -5,7 +5,7 @@ type: data
 tags: [rotor, lamination-stacking, ipm, press-fit, balancing, traceability]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Granular rotor sub-chain with automation levels, IPM vs conductor-bar routing, press-fit, and balancing physics.
 ---
 

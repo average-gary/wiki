@@ -1,7 +1,7 @@
 ---
 title: "The SWORD Project (CrossWire Bible Society)"
-source_url: "https://crosswire.org/sword/index.jsp"
-type: article
+source: "https://crosswire.org/sword/index.jsp"
+type: articles
 path: oss
 date_ingested: 2026-05-27
 date_published: 2026-05-27

@@ -1,6 +1,7 @@
 ---
 title: "DATUM Gateway src/datum_stratum.c — SV1 Server Internals"
-source_url: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_stratum.c
+source: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_stratum.c
+type: articles
 source_type: source-file
 upstream: OCEAN-xyz/datum_gateway
 branch: master

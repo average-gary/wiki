@@ -1,10 +1,12 @@
 ---
 title: "Bevy scheduler design"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, scheduler, stageless, system-set, run-condition, parallel]
+summary: "Pre-0.10 Bevy organized systems into discrete stages with hard barriers between them. The pain was real and well-documented: \"specify that system_a runs before system_b, only to be met with confusing warnings that system_b isn't found because it's in a different stage\" (0.10 release notes)."
 ---
 
 # Bevy scheduler design

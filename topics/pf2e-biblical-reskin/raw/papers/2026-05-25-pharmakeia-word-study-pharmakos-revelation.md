@@ -1,7 +1,7 @@
 ---
 title: "Pharmakos (G5333) and the Revelation Vice-Lists"
 source: "https://biblehub.com/greek/5333.htm"
-type: paper
+type: papers
 date_fetched: 2026-05-25
 tags: [pharmakeia, greek-lexicon, magic-theology, biblical-studies, gap-closing, revelation]
 quality: 4

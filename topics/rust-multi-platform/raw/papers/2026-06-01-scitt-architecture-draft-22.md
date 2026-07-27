@@ -1,6 +1,6 @@
 ---
 title: "An Architecture for Trustworthy and Transparent Digital Supply Chains (SCITT)"
-source_url: https://datatracker.ietf.org/doc/draft-ietf-scitt-architecture/
+source: https://datatracker.ietf.org/doc/draft-ietf-scitt-architecture/
 type: rfc-draft
 ingested: 2026-06-01
 quality: 5

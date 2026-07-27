@@ -2,7 +2,7 @@
 title: "NixCon 2025 — Supply Chain Security Panel Discussion"
 source: https://talks.nixcon.org/nixcon-2025/talk/XWQC8U/
 video: https://www.youtube.com/watch?v=ncqy7S92UMw
-type: article
+type: articles
 panelists: [John Ericson, Julien Malka (Luj), Arian van Putten, Martin Schwaighofer]
 moderator: Shahar "Dawn" Or
 venue: NixCon 2025

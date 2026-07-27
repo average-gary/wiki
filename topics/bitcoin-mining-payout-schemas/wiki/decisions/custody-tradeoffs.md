@@ -3,9 +3,10 @@ title: Custody Tradeoffs across Payout Schemes
 type: decision
 created: 2026-05-23
 confidence: high
-tags: [custody, FPPS, TIDES, eHash, Fedimint, decision]
+tags: [custody, fpps, tides, ehash, fedimint, decision]
 volatility: warm
 updated: 2026-07-15
+summary: "Five distinct custody models map onto the modern payout schemes. Each shifts risk to a different actor."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-23-dmnd-demand-pool.md"
@@ -91,3 +92,4 @@ The "custodial pool" abstracts these problems away at the cost of trust. The 202
 - [[../concepts/payout-schema-taxonomy]]
 - [[../topics/payout-design-space]]
 - [[../topics/why-fpps-dominates-but-is-fragile]]
+- [[../concepts/ehash.md|eHash / Hashpool — Cashu ecash share tokens]]

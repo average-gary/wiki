@@ -1,7 +1,7 @@
 ---
 title: "0 A.D. user reviews (SourceForge)"
 source: https://sourceforge.net/projects/zero-ad/reviews/
-type: article
+type: articles
 ingested: 2026-06-18
 quality: 3
 confidence: medium

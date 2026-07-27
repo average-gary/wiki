@@ -1,6 +1,6 @@
 ---
 title: "Fedimint — production Iroh transport (reference implementation)"
-source_url: https://github.com/fedimint/fedimint
+source: https://github.com/fedimint/fedimint
 secondary_urls:
   - https://github.com/fedimint/fedimint/blob/master/fedimint-server/src/net/p2p_connector/iroh.rs
   - https://github.com/fedimint/fedimint/blob/master/fedimint-connectors/src/iroh.rs
@@ -9,7 +9,7 @@ secondary_urls:
   - https://github.com/fedimint/fedimint/pull/8571
   - https://github.com/fedimint/fedimint/pull/8422
   - https://github.com/fedimint/fedimint/issues/8383
-type: repo
+type: repos
 date: 2026-05-20
 org: Fedimint
 credibility: high

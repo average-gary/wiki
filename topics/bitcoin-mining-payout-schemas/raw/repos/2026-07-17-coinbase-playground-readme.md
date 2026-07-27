@@ -1,7 +1,7 @@
 ---
 title: "coinbase-playground README — CTV+CSFS non-custodial coinbase payouts"
 source: "https://github.com/vnprc/coinbase-playground/blob/0ac7ed25a21806a0c9ba96fe50c34b9ce2c2cce6/readme.md"
-type: repo
+type: repos
 ingested: 2026-07-17
 quality: 4
 credibility: medium

@@ -1,10 +1,12 @@
 ---
 title: "LNURL spec cheatsheet (relevant LUDs for a Cashu mint)"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: high
 tags: [lnurl, lud, spec, reference]
+summary: "Subset of LUDs that matter for a CDK + LDK + LNURL deployment. See the LUDs index raw for the full list."
 ---
 
 # LNURL spec cheatsheet

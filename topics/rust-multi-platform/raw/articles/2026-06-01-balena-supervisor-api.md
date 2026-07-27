@@ -1,6 +1,6 @@
 ---
 title: "Balena Supervisor API — Device Identity"
-source_url: https://docs.balena.io/reference/supervisor/supervisor-api/
+source: https://docs.balena.io/reference/supervisor/supervisor-api/
 type: docs
 ingested: 2026-06-01
 quality: 4

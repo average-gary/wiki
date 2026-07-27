@@ -8,6 +8,9 @@ confidence: medium
 core_claim: "Routing the SV2 wire protocol over iroh QUIC eliminates the single-packet-tampering primitive that Erosion (Tran et al., S&P 2024) demonstrated against SV2 over TCP, because QUIC packets are AEAD-authenticated as a unit and connection IDs decouple session identity from 5-tuple."
 key_variables: [QUIC AEAD packet protection, connection ID, on-path adversary, Erosion attack primitive, SV2 framing]
 falsification: "A demonstrated single-packet attack against the iroh QUIC transport that disrupts an SV2 session in the same persistent way Erosion does over TCP."
+volatility: warm
+tags: [thesis]
+summary: "Routing the SV2 wire protocol over iroh QUIC eliminates the single-packet-tampering primitive that Erosion (Tran et al., S&P 2024) demonstrated against SV2 over TCP, because QUIC packets are AEAD-authenticated as a unit and connection IDs decouple session identity from 5-tuple."
 ---
 
 # Thesis: Iroh transport mitigates Erosion

@@ -1,9 +1,9 @@
 ---
 title: "Bevy's Growing Pains: Community Weighs Engine's Future Amid Rapid Evolution"
-source_url: https://biggo.com/news/202510190724_Bevy_Game_Engine_Community_Discussion
+source: https://biggo.com/news/202510190724_Bevy_Game_Engine_Community_Discussion
 source_date: 2025-10-19
 ingested: 2026-06-15
-type: article
+type: articles
 author: BigGo News (aggregating community discussion)
 quality: 3
 credibility: medium

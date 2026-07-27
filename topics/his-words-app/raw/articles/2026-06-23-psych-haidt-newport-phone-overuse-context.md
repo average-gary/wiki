@@ -1,7 +1,7 @@
 ---
 title: "Haidt's Anxious Generation + Newport's Digital Minimalism: macro-context for phone-overuse interventions."
 source: https://www.anxiousgeneration.com/book
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, behavioral-psychology, anxious-generation, digital-minimalism, context]
 quality: 4

@@ -1,6 +1,6 @@
 ---
 title: "Uptane Standard 2.0.0 — Automotive OTA Update Security"
-source_url: https://uptane.org/papers/uptane-standard.2.0.0.html
+source: https://uptane.org/papers/uptane-standard.2.0.0.html
 type: spec
 ingested: 2026-06-01
 quality: 5

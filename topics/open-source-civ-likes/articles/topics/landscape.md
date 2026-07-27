@@ -1,8 +1,10 @@
 ---
 title: Open Source Civ-Like Games — Landscape
-type: topic
+category: topic
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "Survey of the active open-source / free-software civ-like ecosystem as of mid-2026. Three families dominate: the Freeciv lineage (canonical Freeciv, Freeciv21, Freeciv-web, plus 3D experiments), the Civ-V remake lineage (Unciv), and the civ-adjacent RTS / city-builder cluster (0 A.D., openage, Unkno…"
 confidence: high
 sources:
   - raw/repos/2026-06-18-freeciv-canonical.md
@@ -208,3 +210,5 @@ or 4X loop.
 - [OSS 4X development pace](../concepts/oss-4x-development-pace.md)
 - [Modding DSLs vs data formats](../concepts/modding-dsl-vs-data-format.md)
 - [Unciv copyright posture](../concepts/unciv-copyright-posture.md)
+- [[triplea.md|TripleA (boundary marker)]]
+- [[../concepts/websocket-bridge-pattern.md|WebSocket Bridge Pattern (Freeciv-web)]]

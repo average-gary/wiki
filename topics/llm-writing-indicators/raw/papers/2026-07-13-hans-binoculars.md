@@ -3,7 +3,7 @@ title: "Spotting LLMs With Binoculars: Zero-Shot Detection of Machine-Generated 
 source: https://arxiv.org/abs/2401.12070
 authors: Abhimanyu Hans, Avi Schwarzschild, Valeriia Cherepanova, Hamid Kazemi, Aniruddha Saha, Micah Goldblum, Jonas Geiping, Tom Goldstein
 venue: ICML 2024; arXiv:2401.12070
-type: paper
+type: papers
 tags: [llm-writing-indicators, detection, zero-shot, perplexity-ratio, cross-perplexity]
 quality: 5
 confidence: high

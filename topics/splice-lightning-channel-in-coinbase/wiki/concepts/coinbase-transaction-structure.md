@@ -1,10 +1,12 @@
 ---
 title: "Coinbase transaction structure"
-type: concept
+category: concept
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 confidence: high
-tags: [coinbase, consensus, null-prevout, coinbase-maturity, reorg, bip34, bip141]
+tags: [coinbase, consensus, null-prevout, coinbase-maturity, reorg, bip-34, bip141]
+summary: "The block's generation transaction — position 0 in every block. Its defining consensus properties are what the thesis collides with."
 ---
 
 # Coinbase transaction structure
@@ -70,3 +72,5 @@ broadcast funding/splice transaction of an interactive Lightning session.
 - [[lightning-splice-mechanics]] — the other half of the collision.
 - [[three-readings]] — how these properties map onto each reading.
 - [[../reference/specs-and-prior-art]] — source pointers.
+- [[coinbase-maturity-vs-ln-enforceability.md|Coinbase maturity vs LN enforceability]]
+- [[../topics/thesis-analysis-verdict.md|Thesis analysis: splicing a Lightning channel in a coinbase]]

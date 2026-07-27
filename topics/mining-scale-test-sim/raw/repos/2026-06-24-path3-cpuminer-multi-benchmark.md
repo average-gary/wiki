@@ -1,6 +1,6 @@
 ---
 title: cpuminer-multi --benchmark — offline CPU-bound mining loop (no stratum)
-source_url: https://github.com/tpruvot/cpuminer-multi/blob/linux/cpu-miner.c
+source: https://github.com/tpruvot/cpuminer-multi/blob/linux/cpu-miner.c
 type: repos
 ingested: 2026-06-24
 quality: B-

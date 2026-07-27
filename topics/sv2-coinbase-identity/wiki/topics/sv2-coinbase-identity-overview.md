@@ -1,10 +1,12 @@
 ---
 title: "SV2 coinbase identity — overview"
-type: topic
+category: topic
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: high
-tags: [stratum-v2, user_identity, coinbase, miner-tag, pool-tag, SRI, JD]
+tags: [stratum-v2, user_identity, coinbase, miner-tag, pool-tag, sri, JD]
+summary: "Synthesizes the question: can the Stratum V2 user_identity field on OpenMiningChannel be used by the Pool to embed a per-miner unique tag into the coinbase the Pool constructs, *without* invoking Job Declaration?"
 ---
 
 # SV2 coinbase identity — overview

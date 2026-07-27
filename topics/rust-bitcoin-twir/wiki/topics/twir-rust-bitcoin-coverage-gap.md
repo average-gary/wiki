@@ -1,10 +1,12 @@
 ---
 title: The TWiR Rust-Bitcoin Coverage Gap
+category: topic
 type: topic-synthesis
 created: 2026-06-22
 updated: 2026-06-22
 verified: 2026-06-22
 volatility: warm
+summary: "In 656 issues over ~13 years (2013-06-07 → 2026-06-17), TWiR has named none of the flagship Rust-Bitcoin development libraries — rust-bitcoin, BDK, LDK, Fedimint, Cashu, rust-nostr, Stratum V2 SRI, miniscript, PSBT — in any content body."
 confidence: high
 sources:
   - "[[../../raw/articles/2026-06-22-twir-archive-grep-bitcoin-coverage|TWiR archive grep]]"
@@ -89,3 +91,4 @@ Constraint: **one submission per contributor per week.** If pushing 3+ items in 
 - [[../concepts/twir-sections|TWiR Sections]]
 - [[submission-playbook|Submission Playbook]]
 - [[ecosystem-state-2026|Rust Bitcoin Ecosystem State 2026]]
+- [[../concepts/rust-bitcoin-crate-stack.md|Rust Bitcoin Crate Stack]]

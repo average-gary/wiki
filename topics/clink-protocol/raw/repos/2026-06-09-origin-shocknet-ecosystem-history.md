@@ -1,7 +1,7 @@
 ---
 title: "ShockNet ecosystem repo history — bridgelet, clink-demo, ClinkSDK origin trail"
 source: https://github.com/shocknet
-type: repo
+type: repos
 ingested: 2026-06-09
 path: origin
 quality: 5

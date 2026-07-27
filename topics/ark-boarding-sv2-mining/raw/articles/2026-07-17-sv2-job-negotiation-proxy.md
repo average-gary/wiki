@@ -1,7 +1,7 @@
 ---
 title: "SV2 job negotiation — proxy is the online party"
 source: https://thanos.github.io/articles/009-job-negotiation-mechanics/
-type: article
+type: articles
 ingested: 2026-07-17
 credibility: medium
 direction: nuances

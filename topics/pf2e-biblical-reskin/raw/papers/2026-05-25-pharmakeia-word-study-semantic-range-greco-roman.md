@@ -1,7 +1,7 @@
 ---
 title: "Pharmakeia: Semantic Range and Greco-Roman Cultural Context"
 source: "https://www.gotquestions.org/pharmakeia-in-the-Bible.html (synthesized with lexical sources above)"
-type: paper
+type: papers
 date_fetched: 2026-05-25
 tags: [pharmakeia, greek-lexicon, magic-theology, biblical-studies, gap-closing]
 quality: 3

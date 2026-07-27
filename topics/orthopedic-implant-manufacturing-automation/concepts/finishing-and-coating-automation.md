@@ -1,9 +1,11 @@
 ---
 title: Finishing & Coating Automation — Killing the Hand-Polish Bottleneck
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [polishing, electropolishing, mass-finishing, force-control, plasma-spray, ha-coating, passivation, anodize, marking]
+summary: "The most counterintuitive finding of the whole topic: manual polishing — for decades *the* irreducible hand-labor step in orthopedic manufacturing — is now being automated to mirror finish. This is where the biggest recent automation gains live."
 confidence: high
 ---
 
@@ -75,3 +77,5 @@ remove the IQ/OQ/PQ burden.
 - [The Regulatory Envelope](the-regulatory-envelope.md)
 - [Limitations & Bottlenecks](limitations-and-bottlenecks.md)
 - [Build Playbook](../reference/build-playbook.md)
+- [[forming-routes-machining-am-forging-casting.md|Forming Routes — Machining, Additive, Forging, Casting]]
+- [[../reference/vendor-landscape.md|Vendor Landscape — Ortho Implant Manufacturing Automation]]

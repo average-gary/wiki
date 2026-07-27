@@ -1,7 +1,7 @@
 ---
 title: "Simon Magus and the Magic-vs-Miracle Boundary in Early Christianity"
 source: "https://en.wikipedia.org/wiki/Simon_Magus"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: unknown
 tags: [theology, sorcery, simon-magus, miracle, acts, pharmakeia]

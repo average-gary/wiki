@@ -1,6 +1,6 @@
 ---
 title: "SV2 Noise NX handshake"
-type: concept
+category: concept
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-20
@@ -11,6 +11,7 @@ sources:
   - raw/articles/2026-05-20-sv2-protocol-overview-framing.md
   - raw/papers/2024-erosion-routing-attacks-mining-pools.md
 tags: [sv2, noise, handshake, security]
+summary: "The current authenticated-encryption layer for Stratum v2 connections."
 ---
 
 # SV2 Noise NX

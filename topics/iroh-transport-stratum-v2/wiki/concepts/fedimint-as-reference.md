@@ -1,6 +1,6 @@
 ---
 title: "Fedimint as the reference implementation"
-type: concept
+category: concept
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-20
@@ -9,6 +9,7 @@ confidence: high
 sources:
   - raw/repos/2026-05-20-fedimint-iroh-integration.md
 tags: [fedimint, iroh, reference-impl, production-lessons]
+summary: "SRI Discussion #1935 cites Fedimint as prior art. The Fedimint codebase is directly portable to SV2 — the integration shape, identity model, ALPN strategy, and operational primitives all map cleanly. This article extracts the patterns worth copying."
 ---
 
 # Fedimint as the reference implementation

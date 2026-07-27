@@ -1,6 +1,6 @@
 ---
 title: "Mender Preauthorizing Devices"
-source_url: https://docs.mender.io/server-integration/preauthorizing-devices
+source: https://docs.mender.io/server-integration/preauthorizing-devices
 type: docs
 ingested: 2026-06-01
 quality: 4

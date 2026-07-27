@@ -1,10 +1,12 @@
 ---
 title: "Should I use LDK Server? — decision guide (May 2026)"
-type: topic
+category: topic
 created: 2026-05-26
 updated: 2026-05-26
+volatility: warm
 confidence: high
 tags: [decision, comparison, lnd, cln, eclair, status]
+summary: "A synthesis across the May 2026 state of the project, the operational pitfalls, and the alternatives."
 ---
 
 # Should I use LDK Server? — decision guide (May 2026)

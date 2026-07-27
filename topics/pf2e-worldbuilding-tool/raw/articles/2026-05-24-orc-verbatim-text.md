@@ -1,6 +1,7 @@
 ---
 path: pf2e-srd-data-gap
 title: "ORC License - Structural Outline and Verbatim Text Retrieval Notes"
+type: articles
 date_fetched: 2026-05-24
 sources:
   - https://paizo.com/orclicense

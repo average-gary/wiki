@@ -1,12 +1,12 @@
 ---
 title: "hashpool/eHash critiques (deepened) — variance hedging, DLEQ limits, mint-as-counterparty"
 publication: hashpool.dev + Cashu docs + Stacker News + NUTs
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 4
 credibility: medium
 confidence: high
-tags: [hashpool, eHash, critiques, custodial, DLEQ, variance, mint-as-counterparty]
+tags: [hashpool, ehash, critiques, custodial, dleq, variance, mint-as-counterparty]
 ---
 
 # hashpool / eHash Critiques (Deepened)

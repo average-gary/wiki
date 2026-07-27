@@ -1,7 +1,7 @@
 ---
 title: "MagInkDash / MagInkCal (speedyg0nz) — server-rendered e-paper dashboards"
 source: https://github.com/speedyg0nz/MagInkDash
-type: repo
+type: repos
 tags: [maginkdash, maginkcal, server-render, raspberry-pi, inkplate, calendar, weather, thin-client]
 date: 2026-07-20
 quality: 4

@@ -1,7 +1,7 @@
 ---
 title: "xmtp/libxmtp nix/musl-docker.nix — multi-arch reproducible OCI for Rust workspace"
-type: repo
-source_url: https://github.com/xmtp/libxmtp/blob/main/nix/musl-docker.nix
+type: repos
+source: https://github.com/xmtp/libxmtp/blob/main/nix/musl-docker.nix
 ingested: 2026-06-15
 confidence: high
 relevance: direct

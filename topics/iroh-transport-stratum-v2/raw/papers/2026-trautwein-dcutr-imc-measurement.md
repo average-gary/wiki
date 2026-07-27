@@ -1,8 +1,8 @@
 ---
 title: "Large-Scale Measurement of NAT Traversal for the Decentralized Web (DCUtR in IPFS)"
-source_url: https://arxiv.org/abs/2604.12484
+source: https://arxiv.org/abs/2604.12484
 secondary_url: https://arxiv.org/abs/2510.27500
-type: paper
+type: papers
 date: 2026-04-14
 authors: ["Dennis Trautwein", "Cornelius Ihle", "Moritz Schubotz", "Corinna Breitinger", "Bela Gipp"]
 venue: ACM Internet Measurement Conference (IMC '26), Karlsruhe

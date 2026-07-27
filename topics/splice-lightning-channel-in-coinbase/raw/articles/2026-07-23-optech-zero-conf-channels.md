@@ -1,9 +1,9 @@
 ---
 title: "Bitcoin Optech — Zero-conf channels"
 source: "https://bitcoinops.org/en/topics/zero-conf-channels/"
-type: article
+type: articles
 subtype: authoritative-aggregator
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [lightning, zero-conf, option_zeroconf, confirmations, coinbase-maturity]
 credibility: medium
 evidence_strength: authoritative-secondary

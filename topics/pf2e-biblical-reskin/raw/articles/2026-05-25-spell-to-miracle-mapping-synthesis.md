@@ -1,7 +1,7 @@
 ---
 title: "Bible miracle to PF2e Remaster spell — draft mapping table (synthesis)"
 source: "synthesized"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [spell-mapping, miracle, pf2e-remaster, synthesis, gap-closing]
 quality: 4

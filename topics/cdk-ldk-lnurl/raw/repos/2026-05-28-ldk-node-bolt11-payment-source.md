@@ -1,8 +1,8 @@
 ---
 title: "lightningdevkit/ldk-node — `src/payment/bolt11.rs` (current main)"
-type: repo
+type: repos
 source: https://github.com/lightningdevkit/ldk-node/blob/main/src/payment/bolt11.rs
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [ldk-node, bolt11-payment, description-hash, source-code]
 summary: All eight Bolt11Payment receive variants take `description: &Bolt11InvoiceDescription` (an enum with Direct and Hash variants). The hash variant sets the BOLT11 `h` tag. Definitive primary source for the thesis.

@@ -1,10 +1,12 @@
 ---
 title: Kirk event-kind range (9259-9263)
-type: concept
+category: concept
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [kirk, nostr, event-kinds, commit-reveal]
+summary: "Kirk defines five custom Nostr event kinds for the trustless gaming protocol."
 ---
 
 # Kirk event-kind range (9259-9263)

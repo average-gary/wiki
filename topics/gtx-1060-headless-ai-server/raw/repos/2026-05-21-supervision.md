@@ -1,7 +1,7 @@
 ---
 title: "Roboflow supervision — model-agnostic counting glue"
 source: https://supervision.roboflow.com/latest/
-type: repo
+type: repos
 tags: [supervision, roboflow, counting, polygon-zone, line-zone, mit]
 date: 2026-05-21
 quality: 4

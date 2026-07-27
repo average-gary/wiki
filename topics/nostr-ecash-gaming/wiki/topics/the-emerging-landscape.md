@@ -1,10 +1,12 @@
 ---
 title: "The emerging Nostr+ecash gaming landscape (mid-2026)"
-type: topic
+category: topic
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [synthesis, landscape, market-survey, ngengine, nostr-poker, cashu-casino]
+summary: "As of 2026-06-17, the space is pre-consolidation. Five concrete factions exist with no shared protocol."
 ---
 
 # The emerging Nostr+ecash gaming landscape (mid-2026)

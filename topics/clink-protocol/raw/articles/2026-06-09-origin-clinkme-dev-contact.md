@@ -1,7 +1,7 @@
 ---
 title: "clinkme.dev/contact.html — official CLINK contact, Nostr npub, governance posture"
 source: https://clinkme.dev/contact.html
-type: article
+type: articles
 ingested: 2026-06-09
 path: origin
 quality: 5

@@ -1,7 +1,7 @@
 ---
 title: "NixOS Discourse: Guix reduces bootstrap seed by 50% (maintainer admission thread)"
 source: https://discourse.nixos.org/t/guix-reduces-bootstrap-seed-by-50/4304
-type: article
+type: articles
 maintainer: NixOS community / discourse.nixos.org maintainers
 year: 2019 (long-running)
 ingested: 2026-06-15

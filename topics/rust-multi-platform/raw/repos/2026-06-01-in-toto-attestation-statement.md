@@ -1,6 +1,6 @@
 ---
 title: "in-toto Attestation Statement v1"
-source_url: https://github.com/in-toto/attestation/blob/main/spec/v1/statement.md
+source: https://github.com/in-toto/attestation/blob/main/spec/v1/statement.md
 type: spec
 ingested: 2026-06-01
 quality: 4

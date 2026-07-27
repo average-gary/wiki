@@ -1,7 +1,7 @@
 ---
 title: "draft-ietf-masque-connect-udp — UDP Proxying over HTTP (the QUIC-over-QUIC warning)"
 source: https://datatracker.ietf.org/doc/html/draft-ietf-masque-connect-udp
-type: article
+type: articles
 tags: [masque, quic, tunneling, congestion, hol, contrarian]
 date: 2026-06-01
 quality: 5

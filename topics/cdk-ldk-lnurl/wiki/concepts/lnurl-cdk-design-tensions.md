@@ -1,10 +1,12 @@
 ---
 title: "Design tensions: CDK + LDK + LNURL on one host"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: medium
 tags: [design, lnurl, description-hash, custody]
+summary: "Three tensions surface when the goal is \"single-host deployment of CDK + LDK Node with LNURL endpoints.\""
 ---
 
 # Design tensions
@@ -57,3 +59,6 @@ For LNURL-withdraw, atomic k1 enforcement is the corresponding footgun — see [
 - [[lnurl-bridge-pattern.md|Bridge pattern]]
 - [[ldk-node-footguns.md|LDK Node footguns]]
 - [[nwc-vs-lnurl.md|NWC as alternative]]
+- [[../topics/deployment-playbook.md|Deployment playbook: CDK + LDK Node + LNURL on one host]]
+- [[../../theses/ldk-node-receive-description-hash.md|Thesis: LDK Node bolt11_payment().receive accepts caller-supplied description_hash]]
+- [[lnurl-spec-cheatsheet.md|LNURL spec cheatsheet (relevant LUDs for a Cashu mint)]]

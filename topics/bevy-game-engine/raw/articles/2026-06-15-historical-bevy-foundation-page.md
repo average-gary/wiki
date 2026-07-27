@@ -1,9 +1,9 @@
 ---
 title: "Bevy Foundation"
-source_url: https://bevy.org/foundation/
+source: https://bevy.org/foundation/
 source_date: 2024-03-11
 ingested: 2026-06-15
-type: article
+type: articles
 author: The Bevy Foundation
 quality: 4
 credibility: high

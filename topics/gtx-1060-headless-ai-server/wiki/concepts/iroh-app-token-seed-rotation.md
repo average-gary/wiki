@@ -1,6 +1,6 @@
 ---
 title: "Wesh-style seed rotation for the iroh app token wrapper"
-type: concept
+category: concept
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-06-01-w3c-bitstring-status-list.md
   - raw/articles/2026-06-01-signal-sealed-sender.md
 tags: [seed-rotation, revocation, blake3, totp, family-revocation, short-ttl]
+summary: "The pattern: rotate the underlying secret = invalidate all derived tokens. No CRL, no OCSP, no revocation list. Per langley-no-revcheck: short-lived + cheap reissue beats revocation oracles every time."
 ---
 
 # Seed rotation — revocation by rotating the derivation key
@@ -209,3 +210,4 @@ The seed rotation invalidates **outstanding QR codes** (unscanned, in-the-world)
 - [[iroh-app-token-integration]] — how to plug into iroh
 - [[wesh-berty-rendezvous]] — the originating pattern
 - [[langley-no-revcheck]] — the design justification
+- [[iroh-tickets-and-qr-pairing.md|Iroh tickets and QR pairing — Tailscale-style invite + Noise IK semantics]]

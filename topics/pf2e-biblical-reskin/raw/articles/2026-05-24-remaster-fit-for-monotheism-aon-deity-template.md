@@ -1,7 +1,7 @@
 ---
 title: "Deity stat block fields — Archives of Nethys"
 source: "https://2e.aonprd.com/Deities.aspx"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "2024-07-01"
 tags: [pf2e, remaster, deity, edicts, anathema, sanctification, monotheism]

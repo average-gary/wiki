@@ -1,7 +1,7 @@
 ---
 title: "iroh-blobs #233 — fs store: 'poisoned storage should not be used' panic"
 source: https://github.com/n0-computer/iroh-blobs/issues/233
-type: article
+type: articles
 tags: [iroh-blobs, bug, panic, fs-store, contrarian, partial-upload]
 date: 2026-06-01
 quality: 5

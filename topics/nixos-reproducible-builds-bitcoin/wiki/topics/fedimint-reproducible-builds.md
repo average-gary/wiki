@@ -1,10 +1,12 @@
 ---
 title: "Fedimint reproducible builds"
-type: topic
+category: topic
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [fedimint, federation, reproducibility, nix, flakebox, cachix, supply-chain]
+summary: "Round-1 ingest treated Fedimint's flake.nix as a positive case study: \"best in-the-wild Bitcoin-adjacent Rust flake.\" This article is the more honest version. Fedimint has the strongest build-time tooling in the Bitcoin-adjacent Rust ecosystem and the weakest verification cohort."
 sources:
   - "[[../../raw/repos/2026-06-15-fedimint-flake-nix.md|Fedimint flake.nix (round 1)]]"
   - "[[../../raw/repos/2026-06-15-fedimint-nix-flakebox-internals.md|Fedimint Nix internals]]"
@@ -152,3 +154,4 @@ In rough effort order:
 - [[../concepts/derivation-output-modes.md|Derivation output modes]] — how `vendorHash`-style FOD works
 - [[../../theses/fedimint-needs-fedimint-sigs.md|Thesis: Fedimint needs a `fedimint.sigs` repo]]
 - [[../../theses/sv2-apps-can-easily-adopt-fedimint-style-oci.md|Thesis: sv2-apps can easily adopt Fedimint-style OCI]]
+- [[../concepts/rust-nix-build-stack.md|Rust+Nix build stack (buildRustPackage / naersk / crane / Flakebox / fenix)]]

@@ -1,10 +1,11 @@
 ---
 title: SV2 integration surface (sv2-apps)
-type: concept
+category: concept
 created: 2026-05-22
 updated: 2026-05-22
 verified: 2026-05-22
 volatility: warm
+summary: "The sv2-apps stack at github.com/stratum-mining/sv2-apps exposes three pluggable interfaces relevant for p2poolv2 integration. Direct evidence from sv2-apps source code at /Users/garykrause/repos/sv2-apps."
 confidence: high
 sources:
   - "[[raw/repos/2026-05-22-sv2-apps-repo|sv2-apps repo]]"
@@ -97,3 +98,5 @@ Suggests share-accounting semantics are being firmed up — relevant when mappin
 - [[../topics/integration-paths|Integration paths]] — concrete options
 - [[p2poolv2|p2poolv2]] — what's plugging in
 - [[../decisions/_index|Decisions]] (TBD)
+- [[../topics/share-accounting-mapping.md|SV2 ↔ p2poolv2 share-accounting mapping spec]]
+- [[stratum-v2-overview.md|Stratum V2 overview]]

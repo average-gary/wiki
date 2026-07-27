@@ -1,12 +1,12 @@
 ---
 title: "OCEAN Miner Sentiment — community reception 2024-2026"
 publication: bitcointalk + Stacker News
-type: article
+type: articles
 ingested: 2026-05-23
 quality: 4
 credibility: medium
 confidence: medium
-tags: [OCEAN, TIDES, sentiment, miner-feedback, Dashjr, BOLT12]
+tags: [ocean, tides, sentiment, miner-feedback, Dashjr, bolt12]
 ---
 
 # OCEAN Miner Sentiment (2024-2026)

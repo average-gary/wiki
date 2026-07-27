@@ -1,6 +1,7 @@
 ---
 title: "SRI ExtranonceAllocator vs DATUM 12-byte extranonce: the bridge"
 source: /Users/garykrause/repos/stratum/sv2/channels-sv2/src/extranonce_manager/{mod.rs,allocator.rs,prefix.rs}
+type: repos
 source_secondary: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_protocol.h
 source_type: local-code+remote-header
 ingested_by: path3

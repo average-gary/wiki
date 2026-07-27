@@ -2,9 +2,9 @@
 title: "Parasite Pool (The Bitcoin Manual)"
 author: Che Kohler
 publication: thebitcoinmanual.com
-url: https://thebitcoinmanual.com/articles/parasite-pool/
+source: https://thebitcoinmanual.com/articles/parasite-pool/
 date: 2025-10-24
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: medium

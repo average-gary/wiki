@@ -1,7 +1,7 @@
 ---
 title: "WebAssembly 3.0 — GC, memory64, exception handling shipped September 2025"
 source: https://en.wikipedia.org/wiki/WebAssembly
-type: article
+type: articles
 tags: [webassembly, wasm-3, garbage-collection, memory64, exception-handling, threads]
 date: 2026-05-21
 quality: 4

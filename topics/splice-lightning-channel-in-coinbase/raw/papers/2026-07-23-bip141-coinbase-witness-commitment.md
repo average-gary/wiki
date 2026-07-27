@@ -1,9 +1,9 @@
 ---
 title: "BIP-141: Segregated Witness — coinbase witness commitment"
 source: "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
-type: paper
+type: papers
 subtype: bip
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [bitcoin, bip141, segwit, coinbase, witness-commitment, block-structure]
 credibility: high
 evidence_strength: spec

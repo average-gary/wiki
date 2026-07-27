@@ -1,6 +1,6 @@
 ---
 title: "clArk vs covenant-based Ark (CTV / CSFS)"
-type: topic
+category: topic
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high
@@ -75,6 +75,7 @@ A common misconception is that unilateral-exit liveness is a clArk-specific defe
 - [[../concepts/tree-presigning-musig2.md|Tree presigning (MuSig2)]]
 - [[../concepts/forfeit-and-connectors.md|Forfeit transactions and connectors]] — hArk changes forfeits from connector-bound to hash-lock-bound
 - [[../concepts/offboarding-and-onchain-payments.md|Offboarding and on-chain payments]] — the live-hArk immediate-broadcast and connector-swap changes
+- [[../concepts/clark-overview.md|clArk overview — covenantless Ark on today's Bitcoin]]
 
 ## Sources
 

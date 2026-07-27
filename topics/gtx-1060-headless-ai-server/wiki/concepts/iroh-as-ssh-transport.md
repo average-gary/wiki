@@ -1,6 +1,6 @@
 ---
 title: "Iroh as SSH transport — ProxyCommand + allowlist gating"
-type: concept
+category: concept
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
@@ -14,6 +14,7 @@ sources:
   - raw/articles/2026-06-01-cloudflared-aws-ssm-proxycommand.md
   - raw/articles/2026-06-01-iroh-tickets-security-model.md
 tags: [iroh, ssh, proxycommand, dumbpipe, allowlist, accesslimit]
+summary: "Replace Tailscale-SSH / public-IP port-22 / cloudflared-access with an iroh QUIC tunnel. SSH itself stays unchanged."
 ---
 
 # Iroh as SSH transport

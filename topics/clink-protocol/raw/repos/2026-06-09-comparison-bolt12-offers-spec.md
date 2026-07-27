@@ -1,7 +1,7 @@
 ---
 title: BOLT 12 — Offer Encoding for Lightning Payments
 source: https://github.com/lightning/bolts/blob/master/12-offer-encoding.md
-type: repo
+type: repos
 ingested: 2026-06-09
 path: comparison
 quality: 5

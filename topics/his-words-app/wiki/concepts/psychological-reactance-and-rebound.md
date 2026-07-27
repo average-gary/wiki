@@ -1,11 +1,13 @@
 ---
 title: Psychological reactance and rebound
-type: concept
+category: concept
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, psychology, ux, autonomy]
+summary: "Reactance (Brehm 1966) is the motivational state that arises when a perceived freedom is threatened. The user's response is to reassert the threatened freedom — by circumventing, dismissing, uninstalling, or doubling down on the prohibited behavior."
 sources:
   - raw/papers/2026-06-23-psych-locknType-vs-lukoff-blocking-vs-nudge.md
   - raw/papers/2026-06-23-psych-haliburton-design-frictions-chi2024.md

@@ -1,11 +1,22 @@
 ---
 title: "SV2 features lost when the upstream pool is SV1"
-type: concept
+category: concept
 status: active
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-07-27
+verified: 2026-07-27
+volatility: warm
 confidence: high
-tags: [sv2, feature-loss, jdp, censorship-resistance, noise-transport]
+sources:
+  - raw/papers/2026-05-28-path3-sv2-spec-job-declaration-protocol.md
+  - raw/papers/2026-05-28-path3-sv2-spec-protocol-security-noise.md
+  - raw/papers/2026-05-28-path3-sv2-spec-discussion-deployment-scenarios.md
+  - raw/papers/2026-05-28-path3-sv2-spec-mining-protocol-channels-extranonce.md
+  - raw/repos/2026-05-28-path3-sri-stratum-mining-stratum.md
+  - raw/data/2026-05-28-path5-mempool-space-pools-snapshot.md
+  - raw/repos/2026-07-27-blitzpool-rental-proxy-sv2-to-sv1-translator.md
+tags: [sv2, feature-loss, jdp, censorship-resistance, noise-transport, authority-pubkey]
+summary: "A reverse translator gives an operator the SV2 stack experience internally, but the upstream SV1 pool dictates everything that survives across the egress boundary. This article enumerates exactly which SV2 features survive, partially survive, are replaceable, or are fully lost. Built from Path 3."
 ---
 
 # SV2 features lost when the upstream pool is SV1
@@ -44,6 +55,25 @@ Tally: 9 lost, 9 partially-lost, 1 lost-but-replaceable, 4 survive.
 
 **See**: [[../../raw/papers/2026-05-28-path3-sv2-spec-job-declaration-protocol|JDP spec]], [[../../raw/papers/2026-05-28-path3-sv2-spec-protocol-security-noise|Noise threat model]], [[../../raw/papers/2026-05-28-path3-sv2-spec-discussion-deployment-scenarios|spec section 10.4.5]].
 
+## The authority key has no SV1 counterpart to lose (confirmed in code, 2026-07-27)
+
+The table above rates authority-bound server identity at egress **lost-but-replaceable** — the reasoning being that TLS with certificate pinning could substitute. A shipped implementation shows the loss is sharper than "replaceable" suggests.
+
+Blitzpool's upstream descriptor ([[prior-art-blitzpool-rental-proxy]]) is:
+
+```rust
+UpstreamTarget { url, user, password, authority_pubkey: Option<String> }
+```
+
+`authority_pubkey` is the pool's Noise authority public key in base58, verified during the SV2 upstream handshake. It is **SV2-only and ignored entirely by the SV1 adapter**, and the degraded case is documented in-source: "when `None`, the link is encrypted but unauthenticated."
+
+Two things follow:
+
+1. **The loss is structural in the type, not just operational.** With an SV1 upstream there is no field to populate and no handshake step to verify against — the translator cannot know it is talking to the pool it thinks it is, at the protocol level. TLS+pinning remains a real substitute, but it is a *different* trust anchor bolted on outside the mining protocol, configured and rotated separately, and no SV1 pool obliges you to use it.
+2. **Even SV2 upstreams degrade silently when the key is omitted.** Encrypted-but-unauthenticated is the default when an operator leaves the pubkey unset, which is a MITM surface that looks fine in logs. Any reverse translator config should make the authority key mandatory-by-default for SV2 upstreams, and should say plainly in its docs that no equivalent exists for SV1.
+
+The honest restatement: at egress against SV1, authority-bound identity is **lost, with an out-of-band replacement available but not protocol-enforced**.
+
 ## The strongest argument FOR
 
 A reverse translator is a **migration on-ramp**: it lets an operator deploy the SV2 stack internally — gain Noise-encrypted intra-network transport, hierarchical extranonce for downstream proxies, async batched share submit between miner and proxy, and SRI codebase reuse — *while the upstream pool ecosystem drags its feet*. Pool-side SV2 adoption is slow (top-5 pools = 77.7% of network hashrate, none SV2-native — see [[../../raw/data/2026-05-28-path5-mempool-space-pools-snapshot|hashrate snapshot]]). An operator who has already invested in SV2-capable miners and middleware can keep using them without being held hostage to whichever pool they happen to want today. Version rolling, internal binary framing, and the operational discipline of running an SV2 stack all carry forward when the upstream eventually upgrades.
@@ -61,3 +91,6 @@ The SV2 marketing claim is that SV2 lets miners pick their own templates and res
 - [[sv2-sv1-primitive-mapping]] — what survives in the messages
 - [[customer-segments-and-tam]] — who actually wants this anyway
 - [[sv2-spec-issue-102-the-canonical-reference]] — spec authors named the concept but left it underdocumented
+- [[prior-art-blitzpool-rental-proxy]] — an implementation that pays these costs in production
+- [[architecture-and-state-machine.md|Reverse-translator architecture and state machine]]
+- [[../topics/reverse-translator-playbook.md|Reverse-translator playbook (SV2 downstream / SV1 upstream)]]

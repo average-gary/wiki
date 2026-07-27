@@ -2,8 +2,8 @@
 title: "tag1consulting/goose — Rust async load testing framework (Locust-inspired)"
 type: raw-source
 source_kind: repo
-source_url: https://github.com/tag1consulting/goose
-fetched: 2026-06-24
+source: https://github.com/tag1consulting/goose
+ingested: 2026-06-24
 path: 5
 relevance: high
 ---

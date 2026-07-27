@@ -1,9 +1,12 @@
 ---
 title: "Thesis: TWiR has under-covered the Rust Bitcoin ecosystem"
 type: thesis
+tags: [thesis]
 status: completed
 created: 2026-06-22
 updated: 2026-06-22
+volatility: warm
+summary: "TWiR has 5 substantive Bitcoin-related hits across 656 issues (13 years), all peripheral (newsletter cross-refs, exchange sponsorship, funding announcement, an old blockparser)."
 verdict: supported
 confidence: high
 core_claim: "Across 656 issues over 13 years, TWiR has named zero of the flagship Rust Bitcoin crates (rust-bitcoin, BDK, LDK, Fedimint, rust-nostr, Stratum V2, miniscript, PSBT) in any content body, despite the ecosystem's substantial Rust footprint and uniform recent activity."

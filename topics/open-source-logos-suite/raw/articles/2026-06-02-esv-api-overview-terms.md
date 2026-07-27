@@ -1,7 +1,7 @@
 ---
 title: "ESV API overview & terms (Crossway)"
-url: https://www.esv.org/api/
-retrieved: 2026-06-02
+source: https://www.esv.org/api/
+ingested: 2026-06-02
 type: spec
 ---
 

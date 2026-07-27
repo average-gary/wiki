@@ -1,9 +1,11 @@
 ---
 title: Line Economics & Architecture
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [economics, roi, volume-threshold, line-architecture, flexible-vs-dedicated, takt-time, mes, industry-4.0]
+summary: "Automation is a capital-for-labor trade, and whether it pays depends almost entirely on volume and product mix. This article is the decision framework: *when* to automate, and *how* to architect the line once you do."
 confidence: medium
 ---
 

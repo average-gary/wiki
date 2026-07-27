@@ -1,9 +1,11 @@
 ---
 title: Equipment & Turnkey-Line Vendor Landscape
-type: reference
+category: reference
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [vendors, winding-machines, integrators, magnetizers, presses, eol-test]
+summary: "Who to call. The practical answer to \"how do I automate this\" is usually buy the hard stations from specialists and integrate, not build from scratch. This is the vendor map by category, drawn from live vendor pages (full source note)."
 confidence: medium
 ---
 
@@ -83,3 +85,6 @@ live vendor pages ([full source note](../raw/repos/2026-07-22-equipment-vendor-l
 - [Stator Winding Automation](../concepts/stator-winding-automation.md)
 - [Line Economics & Architecture](../concepts/line-economics-and-architecture.md)
 - [Build Playbook](build-playbook.md)
+- [[../concepts/core-and-assembly-automation.md|Core & Assembly Automation]]
+- [[../concepts/magnet-handling-magnetization.md|Magnet Handling & Magnetization]]
+- [[../concepts/quality-and-eol-testing.md|Quality & End-of-Line Testing]]

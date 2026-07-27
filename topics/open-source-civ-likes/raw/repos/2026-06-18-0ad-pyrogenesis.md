@@ -3,13 +3,13 @@ title: "0 A.D. — Wildfire Games / Pyrogenesis engine"
 source: https://github.com/0ad/0ad
 mirror_status: archived 2024-09 — primary now at https://gitea.wildfiregames.com
 official: https://play0ad.com/
-type: repo
+type: repos
 ingested: 2026-06-18
 quality: 4
 confidence: high
 license: GPL-2.0 / MIT / LGPL-2.1 (mixed; dependencies)
 language: C++ / JavaScript / Lua
-tags: [0ad, pyrogenesis, RTS, GPL, gitea-migration, civ-adjacent, post-alpha]
+tags: [0ad, pyrogenesis, RTS, gpl, gitea-migration, civ-adjacent, post-alpha]
 ---
 
 # 0 A.D. — Pyrogenesis engine

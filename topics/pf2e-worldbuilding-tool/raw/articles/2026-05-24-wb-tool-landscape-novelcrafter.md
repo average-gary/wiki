@@ -1,7 +1,7 @@
 ---
 title: "NovelCrafter — AI-Native Writing + Worldbuilding"
 source: "https://www.novelcrafter.com/"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [worldbuilding, tool-comparison, novelcrafter, ai, llm]

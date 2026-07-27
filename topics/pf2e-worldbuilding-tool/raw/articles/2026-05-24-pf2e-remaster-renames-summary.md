@@ -1,7 +1,7 @@
 ---
 title: "PF2e Remaster Renames — Cross-Source Summary & Validation Notes"
 source: "synthesis"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: 2026-05-24
 tags: [pf2e, remaster, rename-mapping, synthesis, secondary-source]

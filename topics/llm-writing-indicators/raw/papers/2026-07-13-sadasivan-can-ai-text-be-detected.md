@@ -3,7 +3,7 @@ title: "Can AI-Generated Text be Reliably Detected?"
 source: https://arxiv.org/abs/2303.11156
 authors: Vinu Sankar Sadasivan, Aounon Kumar, Sriram Balasubramanian, Wenxiao Wang, Soheil Feizi
 venue: arXiv:2303.11156 (Mar 2023, rev. through 2025); TMLR
-type: paper
+type: papers
 tags: [llm-writing-indicators, detection-limits, impossibility, spoofing, theory]
 quality: 5
 confidence: high

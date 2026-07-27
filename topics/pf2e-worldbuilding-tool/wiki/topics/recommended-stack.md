@@ -1,6 +1,6 @@
 ---
 title: "PF2e Worldbuilding Tool — recommended stack (synthesis)"
-type: topic
+category: topic
 created: 2026-05-24
 updated: 2026-05-24
 verified: 2026-05-24
@@ -10,6 +10,7 @@ compiled-from: research-round-2026-05-24
 sources:
   - all 38 raw sources from round 2026-05-24
 tags: [pf2e, worldbuilding, desktop-app, llm, tauri, sqlite-vec, ollama, anthropic, markdown, automerge, synthesis]
+summary: "Single-page synthesis across 5 research paths. Each section links to the deep concept article."
 ---
 
 # PF2e Worldbuilding Tool — recommended stack

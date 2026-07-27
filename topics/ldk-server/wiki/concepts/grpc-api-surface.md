@@ -1,10 +1,12 @@
 ---
 title: "LDK Server gRPC API surface"
-type: concept
+category: concept
 created: 2026-05-26
 updated: 2026-05-26
+volatility: warm
 confidence: high
 tags: [grpc, api, hmac, authentication, hold-invoice, bolt12]
+summary: "LDK Server exposes a single gRPC service api.LightningNode over HTTP/2 + TLS. There is no REST API other than GET /metrics (Prometheus). Compare with LND, which ships gRPC + a REST gateway out of the box."
 ---
 
 # LDK Server gRPC API surface
@@ -81,3 +83,4 @@ Standard gRPC status: `INVALID_ARGUMENT`, `FAILED_PRECONDITION`, `INTERNAL`, `UN
 - [[../../raw/articles/2026-05-26-ldk-server-api-guide.md|API guide source]]
 - [[../../raw/articles/2026-05-26-ldk-server-operations.md|Operations: TLS/auth concerns]]
 - [[ldk-vs-ldk-node-vs-ldk-server.md]]
+- [[../topics/should-i-use-ldk-server.md|Should I use LDK Server? — decision guide (May 2026)]]

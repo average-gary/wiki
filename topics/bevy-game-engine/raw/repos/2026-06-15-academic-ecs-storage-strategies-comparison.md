@@ -1,9 +1,9 @@
 ---
 title: "ECS FAQ — Comparative Taxonomy of Storage Strategies"
-source_url: https://github.com/SanderMertens/ecs-faq
+source: https://github.com/SanderMertens/ecs-faq
 source_date: 2024
 ingested: 2026-06-15
-type: repo
+type: repos
 author: Sander Mertens (creator of Flecs)
 quality: 4
 credibility: high

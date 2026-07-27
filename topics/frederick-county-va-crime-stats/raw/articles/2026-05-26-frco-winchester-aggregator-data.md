@@ -1,12 +1,12 @@
 ---
 title: "Aggregator data — FrCo + Winchester crime rates 2023-2024"
 publication: City-Data + CrimeGrade + AreaVibes + NeighborhoodScout
-url: https://www.city-data.com/county/Frederick_County-VA.html
+source: https://www.city-data.com/county/Frederick_County-VA.html
 url2: https://www.city-data.com/crime/crime-Winchester-Virginia.html
 url3: https://crimegrade.org/violent-crime-frederick-county-va/
 url4: https://crimegrade.org/violent-crime-winchester-va/
 url5: https://www.areavibes.com/winchester-va/crime/
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: medium

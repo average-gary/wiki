@@ -1,7 +1,7 @@
 ---
 title: "lightningdevkit/ldk-server — README & repo state"
-source_url: https://github.com/lightningdevkit/ldk-server
-type: repo
+source: https://github.com/lightningdevkit/ldk-server
+type: repos
 ingested: 2026-05-26
 tags: [ldk-server, lightning, primary-upstream, status]
 quality: 5

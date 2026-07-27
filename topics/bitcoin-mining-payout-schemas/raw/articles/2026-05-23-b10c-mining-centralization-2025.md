@@ -3,8 +3,8 @@ title: "Bitcoin Mining Centralization in 2025"
 author: 0xB10C
 publication: b10c.me
 date: 2025-04-15
-url: https://b10c.me/blog/015-bitcoin-mining-centralization/
-type: article
+source: https://b10c.me/blog/015-bitcoin-mining-centralization/
+type: articles
 ingested: 2026-05-23
 quality: 5
 credibility: high

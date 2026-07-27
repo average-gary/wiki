@@ -1,7 +1,7 @@
 ---
 title: "How to Play Freeciv21 (Official Manual)"
 source: https://longturn.readthedocs.io/en/latest/Playing/how-to-play.html
-type: article
+type: articles
 ingested: 2026-06-18
 quality: 5
 confidence: high

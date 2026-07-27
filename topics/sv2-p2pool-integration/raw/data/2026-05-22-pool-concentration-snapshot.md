@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin pool concentration snapshot 2026-05-22"
-source_url: https://hashrateindex.com/hashrate/pools, https://mempool.space/mining
+source: https://hashrateindex.com/hashrate/pools, https://mempool.space/mining
 type: data-snapshot
 ingested: 2026-05-22
 quality: 5

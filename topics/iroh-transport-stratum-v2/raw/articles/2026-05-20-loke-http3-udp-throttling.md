@@ -1,6 +1,6 @@
 ---
 title: "What Nobody Tells You About HTTP/3: UDP Throttling"
-source_url: https://loke.dev/blog/what-nobody-tells-you-about-http3-udp-throttling
+source: https://loke.dev/blog/what-nobody-tells-you-about-http3-udp-throttling
 type: blog
 date: 2024-2025
 org: independent

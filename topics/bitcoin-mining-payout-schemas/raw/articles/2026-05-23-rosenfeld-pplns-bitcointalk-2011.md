@@ -3,13 +3,13 @@ title: "[PPLNS] Pay Per Last N Shares — full method description (original prop
 author: Meni Rosenfeld
 publication: bitcointalk.org
 date: 2011-08-28
-url: https://bitcointalk.org/index.php?topic=39832.0
-type: article
+source: https://bitcointalk.org/index.php?topic=39832.0
+type: articles
 ingested: 2026-05-23
 quality: 5
 credibility: high
 confidence: high
-tags: [PPLNS, history, Rosenfeld, primary-source, bitcointalk]
+tags: [pplns, history, Rosenfeld, primary-source, bitcointalk]
 ---
 
 # Original PPLNS Proposal (Rosenfeld 2011-08-28)

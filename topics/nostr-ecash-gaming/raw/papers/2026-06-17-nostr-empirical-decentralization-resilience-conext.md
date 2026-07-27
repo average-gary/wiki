@@ -2,9 +2,9 @@
 title: "An Empirical Analysis of the Nostr Social Network — Decentralization and Resilience"
 source: https://arxiv.org/html/2402.05709v2
 secondary_source: https://dl.acm.org/doi/epdf/10.1145/3768994
-type: paper
+type: papers
 tags: [nostr, peer-reviewed, empirical, relays, availability, ordering, gaming-implications]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: high
 quality_score: 5

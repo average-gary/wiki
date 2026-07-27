@@ -1,9 +1,11 @@
 ---
 title: Economics & Line Architecture — High-Mix/Low-Volume Reality
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [economics, high-mix-low-volume, cobot, robotic-cell, single-piece-flow, roi, market, cmo, consolidation]
+summary: "Whether — and *how* — to automate orthopedic implant manufacturing is an economics question, and the answer is shaped by one structural fact: ortho is high-mix / low-volume (HMLV)."
 confidence: high
 ---
 

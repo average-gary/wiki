@@ -1,10 +1,12 @@
 ---
 title: "Bevy criticisms and limitations"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, criticism, editor, mobile, console, breaking-changes, lts]
+summary: "The strongest critiques as of mid-2026 — most from people inside or close to the project, not drive-by hot takes."
 ---
 
 # Bevy criticisms and limitations
@@ -99,3 +101,8 @@ Bevy is a poor fit for:
 - [[bevy-platform-support.md|Platform support]]
 - [[bevy-vs-other-engines.md|Comparison to other engines]]
 - [[bevy-version-timeline.md|Version timeline]]
+- [[bevy-compile-time.md|Bevy compile time]]
+- [[bevy-ecosystem.md|Bevy ecosystem]]
+- [[bevy-production-users.md|Bevy in production — shipped games and commercial users]]
+- [[bevy-rendering.md|Bevy rendering]]
+- [[../topics/bevy-state-of-2026.md|State of Bevy in 2026]]

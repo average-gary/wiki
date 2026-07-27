@@ -1,6 +1,6 @@
 ---
 title: "iroh crate top-level docs"
-source_url: https://docs.rs/iroh/latest/iroh/index.html
+source: https://docs.rs/iroh/latest/iroh/index.html
 type: docs
 date: 2026-05-20
 org: n0-computer

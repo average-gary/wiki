@@ -1,7 +1,7 @@
 ---
 title: "iroh-blobs 0.95 — New features (iroh blog)"
 source: https://www.iroh.computer/blog/iroh-blobs-0-95-new-features
-type: article
+type: articles
 tags: [iroh-blobs, connection-pool, 0.95, stream-traits, irpc]
 date: 2026-06-01
 publication_date: 2025-10-13

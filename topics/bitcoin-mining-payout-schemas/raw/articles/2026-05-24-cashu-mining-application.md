@@ -1,14 +1,14 @@
 ---
 title: "Cashu mining application — delvingbitcoin/t/870 (EthnTuttle May 2024)"
 publication: delvingbitcoin.org
-url: https://delvingbitcoin.org/t/ecash-tides-using-cashu-and-stratum-v2/870
+source: https://delvingbitcoin.org/t/ecash-tides-using-cashu-and-stratum-v2/870
 date: 2024-05
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high
 confidence: high
-tags: [Cashu, eHash, EthnTuttle, NUT-02, keyset, Calle, primary]
+tags: [cashu, ehash, ethntuttle, nut-02, keyset, Calle, primary]
 ---
 
 # Ecash TIDES using Cashu and Stratum v2 (delvingbitcoin/t/870)

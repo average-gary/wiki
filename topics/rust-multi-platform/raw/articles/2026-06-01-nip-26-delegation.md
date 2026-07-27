@@ -1,6 +1,6 @@
 ---
 title: "NIP-26 — Nostr Delegated Event Signing"
-source_url: https://github.com/nostr-protocol/nips/blob/master/26.md
+source: https://github.com/nostr-protocol/nips/blob/master/26.md
 type: spec
 ingested: 2026-06-01
 quality: 4

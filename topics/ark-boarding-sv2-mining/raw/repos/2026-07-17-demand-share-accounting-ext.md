@@ -1,7 +1,7 @@
 ---
 title: "demand-open-source/demand-share-accounting-ext (this repo)"
 source: https://github.com/demand-open-source/demand-share-accounting-ext
-type: repo
+type: repos
 ingested: 2026-07-17
 credibility: high
 direction: nuances

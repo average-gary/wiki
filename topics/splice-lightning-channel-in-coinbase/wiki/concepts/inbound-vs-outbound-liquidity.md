@@ -1,8 +1,9 @@
 ---
 title: "Inbound vs outbound liquidity — why self-splice can't provision receive-side"
-type: concept
+category: concept
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 tags: [lightning, inbound-liquidity, outbound-liquidity, splicing, bolt12, liquidity-direction, category-error]
 summary: "The load-bearing distinction for follow-up thesis #3. Outbound = your local balance = capacity to SEND; inbound = the counterparty's balance = capacity to RECEIVE. BOLT #2 credits a splice-in to the SENDER'S OWN balance, so splicing your own coinbase yields outbound only. Receiving a payment CONSUMES inbound. Therefore neither 'splice-in own funds' nor 'receive a BOLT12 payout' creates inbound — only a counterparty contributing funds on the far side (LSP / liquidity ad / dual fund / JIT) does."
 ---

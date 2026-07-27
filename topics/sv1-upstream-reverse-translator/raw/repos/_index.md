@@ -1,10 +1,14 @@
 ---
 title: Repos
 type: index
-updated: 2026-05-28
+updated: 2026-07-27
 ---
 
 # Repos
+
+## Existence proof — the reverse translator, built (2026-07-27)
+
+- [[2026-07-27-blitzpool-rental-proxy-sv2-to-sv1-translator|warioishere/blitzpool-rental-proxy — working bidirectional SV1↔SV2 translator]] — **contradicts the 2026-05-28 "greenfield from a code perspective" conclusion.** Compiled into [[../../wiki/concepts/prior-art-blitzpool-rental-proxy|prior-art-blitzpool-rental-proxy]]. Deployed Rust proxy (v0.3.1, beta) that hand-authors the SV2-miner→SV1-pool direction in `src/proto/translate.rs` because `stratum_translation` ships only the SV1→SV2 leg. All four protocol combinations work. Also realizes the hypothesized hashrate-broker segment and solves upstream-switching (forced reconnect for operator changes, in-place `SetExtranoncePrefix`/`SetTarget` for failover).
 
 ## Path 1 — primitive mapping
 

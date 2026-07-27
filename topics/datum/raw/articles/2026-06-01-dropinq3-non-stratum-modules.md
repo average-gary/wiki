@@ -1,6 +1,7 @@
 ---
 title: "Drop-In Q3: Non-Stratum Modules — Per-Module Port Plan for Rust DATUM Gateway"
-source_url: https://github.com/OCEAN-xyz/datum_gateway/tree/master/src
+source: https://github.com/OCEAN-xyz/datum_gateway/tree/master/src
+type: articles
 source_type: source-survey
 upstream: OCEAN-xyz/datum_gateway
 branch: master

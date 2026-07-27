@@ -1,10 +1,12 @@
 ---
 title: "Expected-value checks — taxonomy"
-type: concept
+category: concept
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
-tags: [coinbase, verification, scriptPubKey, payout, op_return, bip34, merkle-root, feasibility]
+tags: [coinbase, verification, scriptPubKey, payout, op-return, bip-34, merkle-root, feasibility]
+summary: "\"Does the coinbase match an expected value?\" is not one check — it's a family. Each check targets a different coinbase field and has a different feasibility depending on channel type. This table is the core decision aid for the daemon."
 ---
 
 # Expected-value checks — taxonomy
@@ -49,3 +51,6 @@ rule. — [[raw/articles/2026-07-21-sv2-spec-template-distribution-protocol]],
 - [[wiki/concepts/coinbase-transaction-anatomy]]
 - [[wiki/concepts/coinbase-reconstruction-and-merkle-fold]]
 - [[wiki/concepts/coinbase-verification-trust-model-limits]]
+- [[sourcing-the-expected-value.md|Sourcing the expected value]]
+- [[standard-vs-extended-channels-coinbase-visibility.md|Standard vs extended channels — coinbase visibility]]
+- [[../topics/what-the-daemon-can-and-cannot-prove.md|What the daemon can and cannot prove]]

@@ -1,8 +1,10 @@
 ---
 title: Freeciv21
-type: topic
+category: topic
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "longturn/freeciv21 — modern Qt6 fork of Freeciv, maintained by the Longturn.net competitive multiplayer community."
 confidence: high
 sources:
   - raw/repos/2026-06-18-freeciv21.md
@@ -126,3 +128,4 @@ surfaced in the onboarding docs.
 - [Civ-likes as AI research testbeds](research-testbeds.md) — Freeciv21
   has *no* published AI-testbed work despite being arguably the highest-
   quality Freeciv variant for desktop research
+- [[../concepts/modding-dsl-vs-data-format.md|Modding DSLs vs Data Formats]]

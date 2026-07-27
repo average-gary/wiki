@@ -1,15 +1,15 @@
 ---
 title: "hashpool architecture deep-dive — settlement design, mint binary, plugin proposal"
 publication: github.com/vnprc/hashpool
-url: https://github.com/vnprc/hashpool/blob/master/docs/SETTLEMENT_DESIGN.md
+source: https://github.com/vnprc/hashpool/blob/master/docs/SETTLEMENT_DESIGN.md
 url2: https://github.com/vnprc/hashpool/blob/master/docs/PLUGIN_ARCHITECTURE_PROPOSAL.md
 url3: https://github.com/vnprc/hashpool/blob/master/roles/mint/Cargo.toml
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high
 confidence: high
-tags: [hashpool, architecture, CDK, mint, settlement, epoch, BlockFound]
+tags: [hashpool, architecture, cdk, mint, settlement, epoch, block-found]
 ---
 
 # hashpool Architecture Deep-Dive

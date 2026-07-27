@@ -1,7 +1,7 @@
 ---
 title: "Nix OCI tooling — open issues in nix2container and nixpkgs dockerTools (2025-2026)"
-type: article
-source_url: https://github.com/nlewo/nix2container/issues
+type: articles
+source: https://github.com/nlewo/nix2container/issues
 ingested: 2026-06-15
 confidence: medium
 relevance: direct

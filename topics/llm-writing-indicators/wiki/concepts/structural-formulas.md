@@ -1,11 +1,13 @@
 ---
 title: Structural formulas — formulaic intros, conclusions, and section headings
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, structure, formatting]
+summary: "At the paragraph and document level, LLM prose follows recognizable templates. These \"templatedness\" tells are more durable than lexical ones (Shaib et al. name templatedness a core dimension of AI \"slop\"), because RLHF rewards the appearance of thoroughness and structure."
 sources:
   - raw/articles/2026-07-13-wikipedia-signs-of-ai-writing.md
   - raw/papers/2026-07-13-shaib-measuring-ai-slop.md
@@ -43,3 +45,4 @@ These survive vocabulary drift. Even after a model stops saying "delve," it stil
 - [[rule-of-three|Rule of three]]
 - [[perplexity-and-burstiness|Perplexity & burstiness]] — the statistical shadow of uniform structure.
 - [[../topics/ai-slop-and-structural-tells|AI slop & structural tells]] (topic playbook).
+- [[formulaic-phrases.md|Formulaic phrases — "it's important to note" and canned transitions]]

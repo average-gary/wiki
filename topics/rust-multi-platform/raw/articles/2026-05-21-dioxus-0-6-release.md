@@ -1,7 +1,7 @@
 ---
 title: "Dioxus 0.6 — first-class mobile, but ecosystem is nascent"
 source: https://dioxuslabs.com/blog/release-060/
-type: article
+type: articles
 tags: [dioxus, ui-framework, mobile, hot-reload]
 date: 2026-05-21
 quality: 5

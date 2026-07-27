@@ -1,8 +1,9 @@
 ---
 title: sv2-apps Pool — share_batch_size and shares_per_minute defaults
 source_type: repos
-source_url: https://github.com/marafoundation/sv2-apps/blob/mara/pool-apps/pool/config-examples/mainnet/pool-config-bitcoin-core-ipc-example.toml
-fetched: 2026-06-24
+source: https://github.com/marafoundation/sv2-apps/blob/mara/pool-apps/pool/config-examples/mainnet/pool-config-bitcoin-core-ipc-example.toml
+type: repos
+ingested: 2026-06-24
 path: 4
 tags: [sv2-apps, pool, configuration, shares-per-minute, batch-size]
 ---

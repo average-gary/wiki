@@ -1,7 +1,7 @@
 ---
 title: Foreground Service + Doze + AlarmManager — can His Words wake every 5 minutes on Android?
 source: https://developer.android.com/about/versions/14/changes/fgs-types-required
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, android, foreground-service, doze, alarm-manager, work-manager, android-14]
 quality: 5

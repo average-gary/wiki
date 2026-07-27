@@ -5,6 +5,7 @@ created: 2026-06-23
 quality: high
 confidence: 0.88
 source: "Apple Screen Time studies, One Sec app testimonials, Opal research, Focus Mode user feedback, Pew digital wellness research"
+type: articles
 summary: "His Words positions 'interrupt every N minutes with Scripture' as novel. But pause-prompt apps (One Sec, Opal, Apple Screen Time) have tested this mechanic for years. The evidence suggests pause prompts train *avoidance*, not behavior change. His Words isn't novel—it's untested theology applied to a failed mechanic."
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "LegendKeeper Pricing & Features (Official)"
 source: "https://www.legendkeeper.com/pricing"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [worldbuilding, tool-comparison, legendkeeper, pricing]

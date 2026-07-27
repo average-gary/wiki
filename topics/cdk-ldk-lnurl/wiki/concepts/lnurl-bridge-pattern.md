@@ -1,10 +1,12 @@
 ---
 title: "LNURL bridge pattern (LNURL in front of a Cashu mint)"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: high
 tags: [lnurl, lightning-address, bridge, npubcash, deployment-pattern]
+summary: "cdk-mintd ships no LNURL endpoints. Every production \"user@my-mint.com\" UX in the wild is delivered by a separate bridge process that translates LNURL flows into NUT-04 / NUT-05 calls on the mint."
 ---
 
 # LNURL bridge pattern
@@ -86,3 +88,6 @@ See [[lnurl-cdk-design-tensions.md|design tensions]] for the full discussion.
 - [[lnurl-cdk-design-tensions.md|Design tensions]]
 - [[nwc-vs-lnurl.md|NWC as alternative]]
 - [[../topics/deployment-playbook.md|Deployment playbook]]
+- [[ldk-node-embedding.md|LDK Node embedding inside cdk-mintd]]
+- [[../../theses/ldk-node-receive-description-hash.md|Thesis: LDK Node bolt11_payment().receive accepts caller-supplied description_hash]]
+- [[lnurl-spec-cheatsheet.md|LNURL spec cheatsheet (relevant LUDs for a Cashu mint)]]

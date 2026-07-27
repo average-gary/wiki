@@ -1,9 +1,11 @@
 ---
 title: The BLDC/PMSM Manufacturing Process Chain
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [process-chain, station-map, automation-levels, rotor, stator, bottleneck]
+summary: "You can't automate what you can't sequence. A brushless (BLDC / PMSM) motor is built as an ordered chain of stations, and the automation strategy is decided per station — because the stations differ wildly in how hard they are to automate."
 confidence: high
 ---
 
@@ -84,3 +86,4 @@ magnet stations. See [Quality & EOL Testing](quality-and-eol-testing.md).
 - [Line Economics & Architecture](line-economics-and-architecture.md)
 - [Limitations & Gotchas](limitations-and-gotchas.md)
 - [Build Playbook](../reference/build-playbook.md)
+- [[../reference/vendor-landscape.md|Equipment & Turnkey-Line Vendor Landscape]]

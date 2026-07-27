@@ -1,6 +1,7 @@
 ---
 title: "Prior-Art Survey for MIGRATING.md Shape — Bitcoin Core, LND, StartOS"
-source_url: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-27.0.md
+source: https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-27.0.md
+type: articles
 source_type: web-survey
 date_fetched: 2026-06-01
 ingested_by: dropinq7

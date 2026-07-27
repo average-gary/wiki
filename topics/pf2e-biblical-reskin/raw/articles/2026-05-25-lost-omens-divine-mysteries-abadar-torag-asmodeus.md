@@ -1,7 +1,7 @@
 ---
 title: "Divine Mysteries Remaster — Abadar, Torag, Asmodeus (sanctification edge cases)"
 source: "aon-search.sh by-name 'Abadar' / 'Torag' / 'Asmodeus' (deity-277, deity-281, deity-275)"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, remaster, lost-omens, deity-template, divine-mysteries, sanctification, gap-closing]
 quality: 5

@@ -1,12 +1,12 @@
 ---
 title: "braidpool/braidpool — DAG-sharechain decentralized pool"
-url: https://github.com/braidpool/braidpool
+source: https://github.com/braidpool/braidpool
 docs_spec: https://github.com/braidpool/braidpool/blob/main/docs/braidpool_spec.md
 docs_consensus: https://github.com/braidpool/braidpool/blob/main/docs/braid_consensus.md
 docs_general: https://github.com/braidpool/braidpool/blob/main/docs/general_considerations.md
 roadmap: https://github.com/braidpool/braidpool/blob/main/docs/roadmap.md
 license: AGPL-3.0
-type: repo
+type: repos
 status: prototype (v0.01 CPUnet)
 ingested: 2026-05-26
 quality: 5

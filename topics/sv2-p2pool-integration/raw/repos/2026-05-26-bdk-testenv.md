@@ -1,7 +1,7 @@
 ---
 title: "bdk_testenv — workspace-internal shared test-harness crate"
-source_url: https://github.com/bitcoindevkit/bdk/tree/master/crates/testenv
-type: repo
+source: https://github.com/bitcoindevkit/bdk/tree/master/crates/testenv
+type: repos
 ingested: 2026-05-26
 quality: 4
 confidence: high

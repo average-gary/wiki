@@ -1,10 +1,12 @@
 ---
 title: "Presigning an unknown coinbase outpoint"
-type: concept
+category: concept
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 confidence: high
-tags: [presigning, coinbase-outpoint, bip118, anyprevout, post-block-found, musig2, sighash]
+tags: [presigning, coinbase-outpoint, bip-118, anyprevout, post-block-found, musig2, sighash]
+summary: "The *removable* wall on Reading B (contrast the *non-removable* maturity wall)."
 ---
 
 # Presigning an unknown coinbase outpoint
@@ -55,3 +57,4 @@ defeats *Lightning*. See [[coinbase-maturity-vs-ln-enforceability]].
 
 - [[coinbase-maturity-vs-ln-enforceability]] — the wall this one is often confused with.
 - [[three-readings]], [[lightning-splice-mechanics]].
+- [[../topics/thesis-analysis-verdict.md|Thesis analysis: splicing a Lightning channel in a coinbase]]

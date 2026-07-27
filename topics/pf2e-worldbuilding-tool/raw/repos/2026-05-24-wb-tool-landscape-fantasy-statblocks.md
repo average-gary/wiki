@@ -1,7 +1,7 @@
 ---
 title: "Fantasy Statblocks (Obsidian Plugin) — javalent/fantasy-statblocks"
 source: "https://github.com/javalent/fantasy-statblocks"
-type: repo
+type: repos
 date_fetched: 2026-05-24
 date_published: 2026-01-21
 tags: [worldbuilding, tool-comparison, obsidian, pf2e, statblocks]

@@ -1,7 +1,7 @@
 ---
 title: "API Tokens: A Tedious Survey (fly.io / tptacek)"
 source: https://fly.io/blog/api-tokens-a-tedious-survey/
-type: article
+type: articles
 tags: [tptacek, fly-io, jwt, paseto, biscuit, macaroons, contrarian, survey]
 date: 2026-06-01
 quality: 5

@@ -1,6 +1,6 @@
 ---
 title: "Lightning integration — the Ark server as gateway"
-type: concept
+category: concept
 created: 2026-07-17
 updated: 2026-07-17
 confidence: high

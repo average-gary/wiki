@@ -1,11 +1,13 @@
 ---
 title: "Reference: overused words & phrases"
-type: reference
+category: reference
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, reference, word-list, phrases]
+summary: "Lookup lists for a word-frequency scan. Reminder: every entry is a legitimate English word/phrase; the signal is *density and clustering*, never a single hit. See false positives & fairness."
 sources:
   - raw/articles/2026-07-13-berenslab-excess-words-dataset.md
   - raw/papers/2026-07-13-kobak-excess-vocabulary-pubmed.md

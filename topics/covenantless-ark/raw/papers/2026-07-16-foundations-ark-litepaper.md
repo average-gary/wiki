@@ -1,7 +1,7 @@
 ---
 title: "Ark: A UTXO-based Transaction Batching Protocol (Litepaper)"
-source_url: https://assets.arklabs.xyz/ark-protocol.pdf
-type: paper
+source: https://assets.arklabs.xyz/ark-protocol.pdf
+type: papers
 authors: [Marco Argentieri, Zeta Avarikioti, Andrew Camilleri, Pim Keer, Matteo Maffei]
 publisher: Ark Labs + TU Wien
 ingested: 2026-07-16

@@ -1,10 +1,12 @@
 ---
 title: "Coinbase maturity vs LN enforceability"
-type: concept
+category: concept
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 confidence: high
 tags: [coinbase-maturity, force-close, enforceability, reorg, zero-conf, lightning-safety]
+summary: "The decisive constraint on Reading B. It is orthogonal to — and survives — the post-block-found signing trick that saves the sibling Ark thesis."
 ---
 
 # Coinbase maturity vs LN enforceability
@@ -68,3 +70,4 @@ fresh coinbase.
 - [[coinbase-transaction-structure]] — where the rule comes from.
 - [[presigning-unknown-coinbase-outpoint]] — the *other*, removable wall.
 - [[three-readings]] — Reading B's verdict.
+- [[../topics/thesis-analysis-verdict.md|Thesis analysis: splicing a Lightning channel in a coinbase]]

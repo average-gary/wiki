@@ -1,11 +1,13 @@
 ---
 title: Reviewer checklist — how to review suspected LLM prose
-type: topic
+category: topic
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, checklist, playbook, review]
+summary: "A practical procedure for reviewing prose you suspect is LLM-generated. The governing principle: no single tell is proof — score the cluster, then verify substance. Both the Wikipedia catalog and Grammarly lead with this caveat, and Jakesch et al. proved humans guess at ~50% when they rely on feel."
 sources:
   - raw/articles/2026-07-13-wikipedia-signs-of-ai-writing.md
   - raw/papers/2026-07-13-jakesch-human-heuristics-flawed.md
@@ -68,3 +70,6 @@ Phrase findings probabilistically: "shows multiple indicators consistent with LL
 - [[false-positives-and-fairness|False positives & fairness]]
 - [[detection-tools-and-limits|Detection tools & limits]]
 - [[../reference/overused-words-and-phrases|Reference: overused words & phrases]]
+- [[ai-slop-and-structural-tells.md|AI slop & the durable structural tells]]
+- [[../concepts/citation-and-fact-anomalies.md|Citation & fact anomalies — fabricated sources and broken references]]
+- [[../concepts/vagueness-and-missing-specifics.md|Vagueness & missing specifics — the absence tell]]

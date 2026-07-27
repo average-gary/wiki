@@ -1,7 +1,7 @@
 ---
 title: "moq-relay + moq-native Cargo.toml — iroh feature is default-on"
 source: https://github.com/moq-dev/moq/blob/main/rs/moq-relay/Cargo.toml, https://github.com/moq-dev/moq/blob/main/rs/moq-native/Cargo.toml
-type: repo
+type: repos
 tags: [moq, moq-relay, moq-native, iroh, cargo-features, web-transport-iroh]
 date: 2026-06-01
 quality: 5

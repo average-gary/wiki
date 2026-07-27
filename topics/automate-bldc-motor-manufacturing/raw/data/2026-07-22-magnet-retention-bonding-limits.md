@@ -5,7 +5,7 @@ type: data
 tags: [magnet-bonding, ndfeb, retention, sleeve, adhesive, brittleness]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Grounds the adhesive/retention automation story in real material limits — explains chipping-risk and bond-vs-sleeve tradeoffs numerically.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "houseabsolute/actions-rust-cross — canonical GitHub Actions matrix"
 source: https://github.com/houseabsolute/actions-rust-cross
-type: repo
+type: repos
 tags: [github-actions, cross-compile, ci, release-pipeline]
 date: 2026-05-21
 quality: 4

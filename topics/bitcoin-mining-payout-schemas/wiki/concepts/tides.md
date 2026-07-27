@@ -3,9 +3,10 @@ title: TIDES (Transparent Index of Distinct Extended Shares)
 category: concept
 created: 2026-05-23
 confidence: high
-tags: [TIDES, OCEAN, PPLNS, non-custodial, Hughes-2024]
+tags: [tides, ocean, pplns, non-custodial, Hughes-2024]
 volatility: warm
 updated: 2026-07-17
+summary: "OCEAN's payout scheme. Authored by Jason Hughes for OCEAN's launch (March 2024). Self-described as *\"what PPLNS was originally supposed to be.\"*"
 verified: 2026-07-17
 sources:
   - "raw/articles/2026-05-23-heatpunks-tides-vs-fpps-experiment.md"
@@ -78,3 +79,9 @@ TIDES is the *accounting* scheme; **DATUM** is the *template construction* schem
 - [[sv2-share-accounting-ext|SV2 Share Accounting Extension]] — the miner-side payout-audit protocol in the DMND/SLICE line
 - [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — proposes lifting OCEAN's coinbase output-count limit via a CTV covenant commitment
 - [[../topics/payout-design-space|Payout Design Space]]
+- [[datum.md|DATUM (OCEAN template-construction)]]
+- [[lottery-pplns.md|Lottery-PPLNS (Finder-Bonus Hybrid)]]
+- [[p2poolv2-accounting.md|p2poolv2 Accounting (deep-dive)]]
+- [[parasite-pool.md|Parasite Pool]]
+- [[../reference/people.md|People — eHash / hashpool / decentralized-pool ecosystem]]
+- [[tides-variance-derivation.md|TIDES Variance — Derivation from Rosenfeld 2011]]

@@ -1,9 +1,12 @@
 ---
 title: "Vardiff decoupling — why connection count is the right axis"
-type: concept
+category: concept
 created: 2026-06-24
+updated: 2026-06-24
+volatility: warm
 confidence: high
 tags: [vardiff, decoupling, controller, gimballock]
+summary: "Vardiff is a per-channel controller that targets a configured shares-per-minute rate r* (typical: 6 SPM at sv2-apps, 18 SPM at ckpool). For a miner with hashrate H and current target D:"
 ---
 
 # Vardiff decoupling

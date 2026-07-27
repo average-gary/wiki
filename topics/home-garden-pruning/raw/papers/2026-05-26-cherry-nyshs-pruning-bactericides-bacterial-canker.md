@@ -1,7 +1,7 @@
 ---
 title: "Evaluation of Pruning Techniques and Bactericides to Manage Bacterial Canker of Sweet Cherry"
-source_url: "https://nyshs.org/wp-content/uploads/2016/10/evaluation-of-pruning-techniques-and-bactericides-to-manage-bacterial-canker-of-sweet-cherry.pdf"
-type: paper
+source: "https://nyshs.org/wp-content/uploads/2016/10/evaluation-of-pruning-techniques-and-bactericides-to-manage-bacterial-canker-of-sweet-cherry.pdf"
+type: papers
 path: cherry
 date_ingested: 2026-05-26
 date_published: 2010-03-01

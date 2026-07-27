@@ -1,7 +1,7 @@
 ---
 title: "ESP32 calendar-integration approaches (server-render, on-device OAuth, Apps Script proxy)"
 source: https://github.com/ugomeda/esp32-epaper-display
-type: repo
+type: repos
 tags: [calendar, google-calendar, oauth, ics, caldav, apps-script, server-render, esp32, e-paper]
 date: 2026-07-20
 quality: 4

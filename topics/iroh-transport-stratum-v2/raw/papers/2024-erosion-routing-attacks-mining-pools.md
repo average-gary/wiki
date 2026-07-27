@@ -1,7 +1,7 @@
 ---
 title: "Erosion: Routing Attacks on Cryptocurrency Mining Pools"
-source_url: https://ieeexplore.ieee.org/abstract/document/10646806/
-type: paper
+source: https://ieeexplore.ieee.org/abstract/document/10646806/
+type: papers
 date: 2024
 authors: ["Muoi Tran", "Theo von Arx", "Laurent Vanbever"]
 venue: IEEE Symposium on Security and Privacy (Oakland S&P) 2024

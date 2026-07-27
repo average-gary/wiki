@@ -4,7 +4,7 @@ sources:
   - https://github.com/ACINQ/eclair/blob/master/BUILD.md
   - https://github.com/ACINQ/eclair/pull/1295
   - https://github.com/ACINQ/eclair/releases
-type: article
+type: articles
 maintainer: ACINQ
 year: 2020-2026
 ingested: 2026-06-15

@@ -1,8 +1,9 @@
 ---
 title: Accountability strategy — build vs. partner vs. skip
-type: topic
+category: topic
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: medium
 tags: [his-words-app, accountability, strategy, family-mode]

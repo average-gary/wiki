@@ -1,6 +1,6 @@
 ---
 title: "OCEAN DATUM Protocol Overview"
-source_url: https://ocean.xyz/docs/datum
+source: https://ocean.xyz/docs/datum
 type: protocol-overview
 ingested: 2026-05-22
 quality: 4

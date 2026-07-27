@@ -1,11 +1,11 @@
 ---
 title: "stratum-mining/stratum SV2 crate benches: full inventory; no channels-sv2 bench"
-source_url: https://github.com/marafoundation/stratum/tree/main/sv2
-type: repo
+source: https://github.com/marafoundation/stratum/tree/main/sv2
+type: repos
 ingested: 2026-06-24
 quality: 4
 confidence: high
-tags: [stratum, marafoundation, SRI, criterion, bench, channels-sv2, codec-sv2, noise-sv2, framing-sv2, buffer-sv2, validate_share, gap-analysis]
+tags: [stratum, marafoundation, sri, criterion, bench, channels-sv2, codec-sv2, noise-sv2, framing-sv2, buffer-sv2, validate-share, gap-analysis]
 ---
 
 # stratum (SRI) SV2 sub-crate bench inventory (round-2, path B)

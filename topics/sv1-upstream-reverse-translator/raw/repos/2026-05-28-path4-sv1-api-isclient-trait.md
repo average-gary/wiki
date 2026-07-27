@@ -1,3 +1,22 @@
+---
+title: "path4 — sv1_api IsClient trait plus a fully-worked TCP example"
+source: https://github.com/stratum-mining/stratum/tree/main/sv1
+url: https://github.com/stratum-mining/stratum/tree/main/sv1
+type: repos
+category: repo
+crate_name: sv1_api
+crate_version: 4.0.0
+language: Rust
+local_path: /Users/garykrause/repos/stratum/sv1/
+date_observed: 2026-05-28
+ingested: 2026-05-28
+volatility: warm
+credibility: high
+confidence: high
+tags: [sv1-api, is-client, is-server, client-status, state-machine, test-harness, sri, path4]
+summary: "A reverse translator must act as an SV1 client toward the upstream pool, and sv1_api::IsClient is exactly that interface — with a fully-worked TCP example (sv1/examples/client_and_server.rs) showing how to drive the state machine from a real socket. The companion IsServer trait gives a fake-pool test harness for free."
+---
+
 # path4 - sv1_api crate (IsClient trait + example)
 
 **Source type**: repos

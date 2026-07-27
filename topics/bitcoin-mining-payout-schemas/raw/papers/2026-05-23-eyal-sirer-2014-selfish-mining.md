@@ -3,8 +3,8 @@ title: "Majority is Not Enough: Bitcoin Mining is Vulnerable"
 authors: [Ittay Eyal, Emin Gün Sirer]
 year: 2014
 venue: Financial Cryptography 2014 (also CACM 2018)
-url: https://arxiv.org/abs/1311.0243
-type: paper
+source: https://arxiv.org/abs/1311.0243
+type: papers
 ingested: 2026-05-23
 quality: 5
 credibility: high

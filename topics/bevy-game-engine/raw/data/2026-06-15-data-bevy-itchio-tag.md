@@ -1,6 +1,6 @@
 ---
 title: "itch.io — games tagged 'bevy'"
-source_url: https://itch.io/games/tag-bevy
+source: https://itch.io/games/tag-bevy
 source_date: 2026-06-15
 ingested: 2026-06-15
 type: data

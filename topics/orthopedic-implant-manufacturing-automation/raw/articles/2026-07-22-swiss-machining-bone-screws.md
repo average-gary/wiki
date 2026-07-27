@@ -1,11 +1,11 @@
 ---
 title: "Swiss-type CNC machining of bone screws — why it dominates + thread whirling"
 source: https://www.chansincnc.com/95-of-bone-screws-are-made-on-swiss-lathes-the-medical-machining/
-type: article
+type: articles
 tags: [swiss-machining, bone-screws, thread-whirling, guide-bushing, cnc, titanium, cocrmo, stainless, tolerances]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: ~95% of bone screws are made on Swiss-type sliding-headstock lathes — the guide bushing eliminates deflection on high L/D parts (δ ∝ L³). Covers thread whirling, Torx profiling, single-digit-micron tolerances, and the three implant alloys mapped to machining challenges.
 ---
 

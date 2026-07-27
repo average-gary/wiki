@@ -1,10 +1,12 @@
 ---
 title: "SLSA levels and how Nix builds map onto them"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [slsa, attestation, levels, framework]
+summary: "SLSA (Supply-chain Levels for Software Artifacts) v1.0 is the lingua franca regulators and corporate buyers use. Important to avoid the common \"we use Nix so we're SLSA L3\" overclaim."
 sources:
   - "[[../../raw/articles/2026-06-15-slsa-v1-levels.md|SLSA v1.0 levels]]"
 ---

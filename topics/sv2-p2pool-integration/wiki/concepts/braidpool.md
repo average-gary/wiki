@@ -1,10 +1,11 @@
 ---
 title: Braidpool
-type: concept
+category: concept
 created: 2026-05-22
 updated: 2026-05-22
 verified: 2026-05-22
 volatility: warm
+summary: "Braidpool is the closest design-space alternative to p2poolv2. Same problem (decentralized SV2-aligned pool), different consensus shape."
 confidence: high
 sources:
   - "[[raw/papers/2026-05-22-braidpool-spec|Braidpool spec]]"
@@ -69,3 +70,6 @@ The strategic implication: if p2poolv2 wants to be the SV2-aligned successor to 
 - [[p2poolv2]] — the comparator
 - [[ocean-datum|OCEAN DATUM]] — V1-based competitor
 - [[../topics/integration-paths|Integration paths]]
+- [[p2pool-history.md|P2Pool lineage]]
+- [[stratum-v2-overview.md|Stratum V2 overview]]
+- [[../topics/why-decentralized-pools-struggle.md|Why decentralized pools struggle]]

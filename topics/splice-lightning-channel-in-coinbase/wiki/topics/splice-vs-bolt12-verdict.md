@@ -1,8 +1,9 @@
 ---
 title: "Verdict: splice-in of matured coinbase vs OCEAN-style BOLT12 payouts"
-type: topic
+category: topic
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 tags: [thesis-verdict, splicing, bolt12, mining-payouts, inbound-liquidity, ocean, custody, follow-up-thesis]
 summary: "Verdict synthesis for follow-up thesis #3 (Reading C of the parent). The 'beats… for miners wanting inbound LN liquidity' framing is a CATEGORY ERROR — splice-in yields outbound, receiving BOLT12 consumes inbound, neither creates inbound. Stripped of that error, the two are largely COMPLEMENTARY, not rivals: splice-in wins for large infrequent matured rewards → self-custodied outbound; BOLT12 wins for small frequent payouts (no dust floor, no per-payout on-chain fee, instant, pool absorbs maturity). Verdict: Contradicted as literally stated (inbound); Mixed/conditional once reframed to outbound. Confidence: High."
 ---

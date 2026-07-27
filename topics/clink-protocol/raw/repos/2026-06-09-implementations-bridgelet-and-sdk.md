@@ -1,7 +1,7 @@
 ---
 title: ClinkSDK and Bridgelet — JS SDK + LNURL-bridge reference implementations
 source: https://github.com/shocknet/ClinkSDK
-type: repo
+type: repos
 ingested: 2026-06-09
 path: implementations
 quality: 4

@@ -2,9 +2,9 @@
 title: "Spacenut + gandlafbtc Cashu toolkit — only confirmed-shipped Cashu-paying game"
 source: https://github.com/gandlafbtc/spacenut
 demo: https://spacenut.nutstash.app
-type: repo
+type: repos
 tags: [cashu, gaming, spacenut, nutstash, faucet, headless-cashu, gandlafbtc, sveltekit]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: medium
 quality_score: 3

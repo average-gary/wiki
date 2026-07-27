@@ -3,9 +3,11 @@ title: "Decision: no AI-generated content — scripture only"
 type: decision
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, decision, content, theology, positioning]
+summary: "Decision: His Words ships canonical scripture text only. No AI-generated prayers. No AI Bible chat companion. No LLM-summarized devotionals. No AI mood-matched reflection generators. The verse the user sees at minute 5 is exactly what the human translators committed to print, no model interpolation."
 sources:
   - raw/articles/2026-06-23-competitors-prayer-lock.md
   - raw/articles/2026-06-23-competitors-bible-mode.md

@@ -1,7 +1,7 @@
 ---
 title: "Luis Loza interview spoilers (BadLuckGamer, May 2024) — sanctification as 'egregious' backward-compat break"
 source: "https://www.reddit.com/r/Pathfinder2e/comments/1ctx947/spoilers_from_badluckgamers_interview_with_luis/"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, remaster, sanctification, designer-commentary, paizo, luis-loza, divine-mysteries, gap-closing]
 quality: 4

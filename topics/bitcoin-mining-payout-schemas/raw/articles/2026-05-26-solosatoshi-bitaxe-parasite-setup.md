@@ -1,8 +1,8 @@
 ---
 title: "How to Connect Your Bitaxe to Parasite Pool (SoloSatoshi)"
 publication: solosatoshi.com
-url: https://www.solosatoshi.com/how-to-connect-your-bitaxe-to-parasite-pool/
-type: article
+source: https://www.solosatoshi.com/how-to-connect-your-bitaxe-to-parasite-pool/
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: medium

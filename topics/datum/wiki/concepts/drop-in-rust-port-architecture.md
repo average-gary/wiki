@@ -12,7 +12,9 @@ sources:
   - raw/articles/2026-06-01-dropinq6-longpoll-async-pattern.md
 created: 2026-06-01
 updated: 2026-06-01
+volatility: warm
 tags: [rust, workspace, architecture, modules, loc-budget]
+summary: "The Cargo workspace, module-to-crate mapping, and LOC budget for replacing every C module of datum_gateway with Rust. From Q3 module port plan, Q3 workspace layout, Q6 RPC crate, Q6 long-poll pattern."
 confidence: high
 ---
 
@@ -129,3 +131,4 @@ C `datum_stratum_dupes.c` formula: `max_clients × target_shares × stale_min ×
 - [[drop-in-surface-inventory]] — what compatibility the binary must hit
 - [[gateway-internals-c-architecture]] — the C source being replaced
 - [[sv2-downstream-architecture]] — the SV2 server-side design (Phase 1 pattern, refactored for in-process)
+- [[../topics/drop-in-rust-datum-gateway.md|Drop-in Rust DATUM gateway — synthesis]]

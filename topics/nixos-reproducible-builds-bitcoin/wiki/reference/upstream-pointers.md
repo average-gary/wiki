@@ -1,8 +1,10 @@
 ---
 title: "Upstream pointers"
-type: reference
+category: reference
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
+summary: "Canonical entry points outside this wiki."
 ---
 
 # Upstream pointers

@@ -1,6 +1,6 @@
 ---
 title: "Offboarding, on-chain payments, and offboard swaps"
-type: concept
+category: concept
 created: 2026-07-17
 updated: 2026-07-17
 confidence: high

@@ -1,7 +1,7 @@
 ---
 title: "The Full-Source Bootstrap: Building from Source All the Way Down"
 source: https://guix.gnu.org/en/blog/2023/the-full-source-bootstrap-building-from-source-all-the-way-down/
-type: article
+type: articles
 authors: Janneke Nieuwenhuizen, Ludovic Courtès
 venue: GNU Guix official blog
 year: 2023

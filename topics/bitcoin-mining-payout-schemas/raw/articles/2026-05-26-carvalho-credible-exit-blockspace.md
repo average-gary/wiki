@@ -1,11 +1,11 @@
 ---
 title: "Credible Exit and the Law of Conservation of Blockspace (Carvalho / BitcoinErrorLog, Delving Bitcoin)"
 publication: delvingbitcoin.org
-url: https://delvingbitcoin.org/t/credible-exit-and-the-law-of-conservation-of-blockspace/2503
+source: https://delvingbitcoin.org/t/credible-exit-and-the-law-of-conservation-of-blockspace/2503
 mirror: https://blockspace.science
 author: John Carvalho (BitcoinErrorLog)
 date: 2026-05-13
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 3
 credibility: medium

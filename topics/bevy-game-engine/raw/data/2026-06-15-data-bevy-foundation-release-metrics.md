@@ -1,6 +1,6 @@
 ---
 title: "Bevy Foundation and per-release metrics"
-source_url: https://bevy.org/news/
+source: https://bevy.org/news/
 source_date: 2026-06-15
 ingested: 2026-06-15
 type: data

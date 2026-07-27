@@ -1,7 +1,7 @@
 ---
 title: "Ark Protocol: Shared UTXOs and Virtual Channels for Bitcoin (Spark research)"
-source_url: https://www.spark.money/research/ark-protocol-explained
-type: article
+source: https://www.spark.money/research/ark-protocol-explained
+type: articles
 authors: [bcNeutron]
 publisher: Spark (spark.money research)
 date: 2026-02-20

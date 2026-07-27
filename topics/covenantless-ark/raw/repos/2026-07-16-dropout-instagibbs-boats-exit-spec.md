@@ -1,7 +1,7 @@
 ---
 title: "Ark Emergency/Unilateral Exit spec notes (instagibbs/boats 06-exit.md)"
-source_url: https://github.com/instagibbs/boats/blob/master/06-exit.md
-type: repo
+source: https://github.com/instagibbs/boats/blob/master/06-exit.md
+type: repos
 authors: [Greg Sanders (instagibbs)]
 publisher: GitHub (Bitcoin Core dev working notes)
 ingested: 2026-07-16

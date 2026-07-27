@@ -1,7 +1,7 @@
 ---
 title: "ArduinoJson + HTTPClient: streaming JSON on ESP32"
 source: https://arduinojson.org/v6/how-to/use-arduinojson-with-httpclient/
-type: article
+type: articles
 tags: [arduinojson, esp32, json, streaming, memory, https, filter]
 date: 2026-07-20
 quality: 5

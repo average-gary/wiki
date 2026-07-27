@@ -1,11 +1,13 @@
 ---
 title: Redeemed-time accounting — duration streaks over count streaks
-type: concept
+category: concept
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, metrics, gamification, theology]
+summary: "His Words' headline metric is minutes redeemed — cumulative time interrupted-and-reflected, accumulated across the user's lifetime in the app. It is monotonic; it cannot decrease. Every interrupt the user attends to adds to the total."
 sources:
   - raw/papers/2026-06-23-psych-streaks-gamification-duolingo-snapchat.md
   - raw/articles/2026-06-23-competitors-prayer-lock.md

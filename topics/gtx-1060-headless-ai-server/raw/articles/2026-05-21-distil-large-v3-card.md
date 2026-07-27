@@ -1,7 +1,7 @@
 ---
 title: "Distil-Whisper distil-large-v3 model card"
 source: https://huggingface.co/distil-whisper/distil-large-v3
-type: article
+type: articles
 tags: [distil-whisper, model-card, wer, compression]
 date: 2026-05-21
 quality: 5

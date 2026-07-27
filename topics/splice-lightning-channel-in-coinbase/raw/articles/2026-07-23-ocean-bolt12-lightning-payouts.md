@@ -5,9 +5,9 @@ extra_sources:
   - "https://ocean.xyz/docs/tides"
   - "https://ocean.xyz/"
   - "https://nobsbitcoin.com (OCEAN BOLT12 launch, 2024-04-30)"
-type: article
+type: articles
 subtype: project-docs
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [ocean, bolt12, lightning-payouts, tides, non-custodial, coinbase-payout, mining-pool, payout-threshold]
 credibility: med-high
 evidence_strength: docs

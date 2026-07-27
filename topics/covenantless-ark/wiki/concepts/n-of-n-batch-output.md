@@ -1,10 +1,12 @@
 ---
 title: "The n-of-n batch (pool) output"
-type: concept
+category: concept
 created: 2026-07-16
 updated: 2026-07-16
+volatility: warm
 confidence: high
 tags: [ark, clark, batch-output, pool-output, taproot, sweep-path, unroll-path, expiry]
+summary: "The batch output (litepaper term; also pool output in older Ark writeups, batch output in Arkade) is the single on-chain output the round transaction creates to hold the pooled funds of all participants. It is the root of the pre-signed VTXO tree."
 ---
 
 # The n-of-n batch (pool) output
@@ -43,3 +45,4 @@ The batch output carries an **absolute** expiry timelock `T_exp` (the sweep path
 - [[tree-presigning-musig2.md|Tree presigning (MuSig2)]]
 - [[unilateral-exit-and-timeouts.md|Unilateral exit and timeouts]]
 - [[forfeit-and-connectors.md|Forfeits and connectors]]
+- [[clark-round-lifecycle.md|The clArk round lifecycle]]

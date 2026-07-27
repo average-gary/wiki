@@ -1,6 +1,7 @@
 ---
 title: "DATUM Gateway datum_protocol.c — Share Handoff to Upstream"
-source_url: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_protocol.c
+source: https://raw.githubusercontent.com/OCEAN-xyz/datum_gateway/master/src/datum_protocol.c
+type: articles
 source_type: source-file
 upstream: OCEAN-xyz/datum_gateway
 branch: master

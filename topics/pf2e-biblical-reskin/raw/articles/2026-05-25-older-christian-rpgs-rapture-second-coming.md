@@ -1,7 +1,7 @@
 ---
 title: "Rapture: The Second Coming (Holistic Design / Quintessential Mercy Studio)"
 source: "https://en.wikipedia.org/wiki/Rapture:_The_Second_Coming"
-type: article
+type: articles
 date_fetched: 2026-05-25
 date_published: 2024
 tags: [christian-rpg, history, 1990s, holistic-design, gap-closing]

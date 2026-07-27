@@ -1,10 +1,12 @@
 ---
 title: Commit-reveal token pattern
-type: concept
+category: concept
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [commit-reveal, anti-cheat, kirk, manastr, nip-101p]
+summary: "The shared anti-cheat primitive in every project surveyed:"
 ---
 
 # Commit-reveal token pattern

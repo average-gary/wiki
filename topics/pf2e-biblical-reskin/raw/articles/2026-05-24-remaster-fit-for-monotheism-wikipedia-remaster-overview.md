@@ -1,7 +1,7 @@
 ---
 title: "Pathfinder Roleplaying Game — Wikipedia Remaster section"
 source: "https://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "2024-12-01"
 tags: [pf2e, remaster, orc-license, ogl, alignment, schools, history]

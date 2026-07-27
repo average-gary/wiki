@@ -1,7 +1,7 @@
 ---
 title: "Tolkien Letter 155 (to Naomi Mitchison, draft Sept 1954) — magia, goeteia, and the moral grammar of magic in Middle-earth"
 source: "https://phuulishfellow.wordpress.com/2021/02/02/magia-and-goeteia-shippey-lewis-and-tolkien ; https://imagicination.wordpress.com/2019/05/19/tolkien-magic-and-ensoulment/ ; https://en.wikipedia.org/wiki/Magic_(Middle-earth) ; https://www.scritub.com/limba/engleza/books/THE-LETTERS-OF-J-R-R-TOLKIEN-P184214315.php"
-type: paper
+type: papers
 date_fetched: 2026-05-25
 date_published: 1954
 tags: [tolkien, magic-theology, primary-text, letters, magia, goeteia]

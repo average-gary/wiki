@@ -1,8 +1,10 @@
 ---
 title: C-evo
-type: topic
+category: topic
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "Civ II clone by Steffen Gerlach (German programmer). Originally Delphi (Object Pascal), later ported to Lazarus for cross-platform builds. Sits apart from the rest of the OSS civ-like landscape on three axes: licensing, language, and AI architecture."
 confidence: medium
 sources:
   - raw/repos/2026-06-18-c-evo.md

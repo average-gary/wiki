@@ -3,7 +3,7 @@ title: "Too many em dashes? Weird words like 'delves'? Spotting text written by 
 source: https://theconversation.com/too-many-em-dashes-weird-words-like-delves-spotting-text-written-by-chatgpt-is-still-more-art-than-science-259629
 author: Roger J. Kreuz (University of Memphis)
 venue: The Conversation (30 Jul 2025)
-type: article
+type: articles
 tags: [llm-writing-indicators, model-drift, detection-limits, sycophancy, stylometry]
 quality: 4
 confidence: high

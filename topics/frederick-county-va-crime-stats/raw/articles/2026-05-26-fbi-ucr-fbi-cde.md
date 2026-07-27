@@ -1,9 +1,9 @@
 ---
 title: "FBI UCR / Crime Data Explorer — agency profiles for FrCo + Winchester"
 publication: FBI CJIS / Crime Data Explorer
-url: https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/le/agency/VA0340000/explore
+source: https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/le/agency/VA0340000/explore
 url2: https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/le/agency/VA1095000/explore
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: high

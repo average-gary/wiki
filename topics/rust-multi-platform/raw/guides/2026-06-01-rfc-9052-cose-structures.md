@@ -1,6 +1,6 @@
 ---
 title: "RFC 9052 — CBOR Object Signing and Encryption (COSE): Structures and Process"
-source_url: https://datatracker.ietf.org/doc/html/rfc9052
+source: https://datatracker.ietf.org/doc/html/rfc9052
 type: rfc
 ingested: 2026-06-01
 quality: 5

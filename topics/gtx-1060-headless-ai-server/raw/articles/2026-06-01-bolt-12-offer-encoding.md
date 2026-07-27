@@ -1,7 +1,7 @@
 ---
 title: "BOLT 12 — Offer Encoding with transient payer keys and blinded paths"
 source: https://github.com/lightning/bolts/blob/master/12-offer-encoding.md
-type: article
+type: articles
 tags: [bolt12, lightning, offer, transient-key, blinded-path, prior-art]
 date: 2026-06-01
 quality: 5

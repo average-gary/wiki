@@ -3,7 +3,7 @@ title: "A Watermark for Large Language Models"
 source: https://arxiv.org/abs/2301.10226
 authors: John Kirchenbauer, Jonas Geiping, Yuxin Wen, Jonathan Katz, Ian Miers, Tom Goldstein
 venue: ICML 2023 (Outstanding Paper); arXiv:2301.10226
-type: paper
+type: papers
 tags: [llm-writing-indicators, watermarking, provenance, detection]
 quality: 5
 confidence: high

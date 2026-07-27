@@ -1,10 +1,12 @@
 ---
 title: "Bevy history and timeline"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, history, cart, timeline, governance]
+summary: "Carter Anderson (Cart) created Bevy. First public release: 2020-08-10 (0.1 launch announcement)."
 ---
 
 # Bevy history and timeline

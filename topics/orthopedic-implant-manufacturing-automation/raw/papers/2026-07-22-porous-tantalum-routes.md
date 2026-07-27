@@ -1,11 +1,11 @@
 ---
 title: "Porous Tantalum for Orthopaedics — CVD vs Powder Metallurgy vs Additive (preparation/modification/clinical review)"
 source: https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2023.1127939/full
-type: paper
+type: papers
 tags: [tantalum, trabecular-metal, cvd, powder-metallurgy, additive-manufacturing, porosity, materials]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Peer-reviewed review comparing the three tantalum-implant routes with porosity/modulus/strength numbers; explains why CVD-on-carbon (Zimmer Trabecular Metal) dominates — tantalum's ~2980 °C melting point and C/O reactivity rule out conventional melt/machine routes.
 ---
 

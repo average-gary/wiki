@@ -4,12 +4,15 @@ type: thesis
 status: investigating
 created: 2026-07-17
 updated: 2026-07-17
+volatility: warm
 status_note: "verdict rendered 2026-07-17 after 5-agent thesis-mode research round (21 sources)"
 verdict: "Partially Supported"
 confidence: Medium
 core_claim: "A Stratum V2 extension can let mining-pool participants board an Ark — receive VTXOs in an n-of-n batch output — using only primitives live on Bitcoin today (Taproot, MuSig2, relative/absolute timelocks), by triggering the n-of-n cosigning ceremony AFTER a block is found (coinbase outpoint known), with no OP_CTV / OP_CSFS / SIGHASH_ANYPREVOUT soft fork."
 key_variables: [post-block-found-ceremony-timing, n-of-n-batch-output, presigned-vtxo-tree, ephemeral-key-deletion, online-while-mining-liveness, no-ctv-csfs-covenantlessness, sv2-extension-surface, coinbase-maturity-reorg]
 falsification: "Fails if (a) any spending path REQUIRES CTV/CSFS/APO; or (b) post-block-found signing cannot actually avoid the unknown-txid problem; or (c) n-of-n liveness/griefing at pool scale is operationally unusable (not merely awkward); or (d) coinbase maturity/reorg timing breaks the unilateral-exit guarantee."
+tags: [thesis]
+summary: "A Stratum V2 extension can let mining-pool participants board an Ark — receive VTXOs in an n-of-n batch output — using only primitives live on Bitcoin today (Taproot, MuSig2, relative/absolute timelocks), by triggering the n-of-n cosigning ceremony AFTER a block is found (coinbase outpoint known), with no OP_CTV / OP_CSFS / SIGHASH_ANYPREVOUT soft fork."
 ---
 
 # Thesis: An online-while-mining covenantless Ark boarding SV2 extension is viable on Bitcoin today without CTV/CSFS

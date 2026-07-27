@@ -1,7 +1,7 @@
 ---
 title: "And Bible (Android, GPL)"
-source_url: "https://github.com/AndBible/and-bible"
-type: repo
+source: "https://github.com/AndBible/and-bible"
+type: repos
 path: oss
 date_ingested: 2026-05-27
 date_published: 2026-03-11

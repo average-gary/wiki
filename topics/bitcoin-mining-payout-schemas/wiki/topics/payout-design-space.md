@@ -3,9 +3,10 @@ title: The Payout Design Space (synthesis)
 category: topic
 created: 2026-05-23
 confidence: high
-tags: [synthesis, design-space, FPPS, PPLNS, TIDES, SLICE, eHash, p2pool]
+tags: [synthesis, design-space, fpps, pplns, tides, SLICE, ehash, p2pool]
 volatility: warm
 updated: 2026-07-15
+summary: "Synthesis of the payout-schema landscape. The 2024-2026 wave (TIDES, SLICE/PPLNS-JD, eHash, p2poolv2) is best understood not as five competing schemes but as a multi-dimensional decentralization stack where each project removes a different trust assumption from FPPS."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-23-b10c-mining-centralization-2025.md"
@@ -125,3 +126,9 @@ This article synthesizes [[../../raw/_index|all 14 ingested sources]]; primary c
 - [[sv2-jd-and-payout-decoupling|SV2 JD ↔ Payout Decoupling]]
 - [[decentralization-and-pool-concentration|Decentralization & Pool Concentration]]
 - [[../decisions/custody-tradeoffs|Custody Tradeoffs]]
+- [[../concepts/ehash.md|eHash / Hashpool — Cashu ecash share tokens]]
+- [[../concepts/hydrapool.md|Hydrapool — 256 Foundation pool]]
+- [[../concepts/p2pool-share-chain.md|p2pool / p2poolv2 — share-chain accounting]]
+- [[p2poolv2-and-256-foundation.md|p2poolv2 ↔ 256 Foundation — the actual relationship]]
+- [[../concepts/tides.md|TIDES (Transparent Index of Distinct Extended Shares)]]
+- [[why-fpps-dominates-but-is-fragile.md|Why FPPS Dominates (and is fragile)]]

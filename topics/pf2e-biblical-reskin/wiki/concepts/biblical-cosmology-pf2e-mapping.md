@@ -1,23 +1,24 @@
 ---
 title: "Biblical cosmology mapped to PF2e planes and creatures"
-type: concept
+category: concept
 created: 2026-05-25
 updated: 2026-05-25
 verified: 2026-05-25
 volatility: low
 confidence: high
 sources:
-  - "[[2026-05-24-theology-frameworks-newadvent-angels]]"
-  - "[[2026-05-24-theology-frameworks-sep-pseudo-dionysius]]"
-  - "[[2026-05-25-aquinas-summa-q108-angelic-hierarchy]]"
-  - "[[2026-05-24-theology-frameworks-britannica-sheol]]"
-  - "[[2026-05-24-theology-frameworks-britannica-nephilim]]"
-  - "[[2026-05-24-theology-frameworks-newadvent-demons]]"
-  - "[[2026-05-24-theology-frameworks-christian-eschatology-overview]]"
-  - "[[2026-05-24-theology-frameworks-biblical-cosmology]]"
-  - "[[2026-05-24-theology-frameworks-christian-angelology]]"
-  - "[[2026-05-25-1-enoch-book-of-watchers-ch6-16]]"
+  - "[[../../raw/articles/2026-05-24-theology-frameworks-newadvent-angels]]"
+  - "[[../../raw/papers/2026-05-24-theology-frameworks-sep-pseudo-dionysius]]"
+  - "[[../../raw/papers/2026-05-25-aquinas-summa-q108-angelic-hierarchy]]"
+  - "[[../../raw/papers/2026-05-24-theology-frameworks-britannica-sheol]]"
+  - "[[../../raw/papers/2026-05-24-theology-frameworks-britannica-nephilim]]"
+  - "[[../../raw/articles/2026-05-24-theology-frameworks-newadvent-demons]]"
+  - "[[../../raw/articles/2026-05-24-theology-frameworks-christian-eschatology-overview]]"
+  - "[[../../raw/articles/2026-05-24-theology-frameworks-biblical-cosmology]]"
+  - "[[../../raw/articles/2026-05-24-theology-frameworks-christian-angelology]]"
+  - "[[../../raw/papers/2026-05-25-1-enoch-book-of-watchers-ch6-16]]"
 tags: [theology, cosmology, angelology, demonology, eschatology, nephilim, planes, pf2e-mapping]
+summary: "A reference for which Biblical concepts go where in the PF2e Remaster planar/creature taxonomy. Picks denominational specifics deliberately — see denominational-lens-decision for which lens to commit to."
 ---
 
 # Biblical cosmology mapped to PF2e planes and creatures
@@ -137,6 +138,7 @@ A worldbuilder must pick on each axis. They constrain campaign mechanics and end
 - [[magic-theology-approaches]] — how angelology and demonology constrain magic
 - [[class-ancestry-reskin-verdicts]] — Nephilim ancestry, Champion sanctifications, etc.
 - [[recommended-reskin-stack]] — synthesis
+- [[../reference/yhwh-deity-template.md|YHWH deity stat block — template & per-lens fills]]
 
 ## Open questions (2026-05-25 update)
 

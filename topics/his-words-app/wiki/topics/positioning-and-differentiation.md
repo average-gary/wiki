@@ -1,11 +1,13 @@
 ---
 title: Positioning and differentiation — the three uncombined differentiators
-type: topic
+category: topic
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, strategy, positioning, differentiation]
+summary: "His Words can win against a saturated faith-blocker market only if it is honest about three claims:"
 sources:
   - raw/articles/2026-06-23-competitors-psalmo.md
   - raw/articles/2026-06-23-competitors-prayer-lock.md

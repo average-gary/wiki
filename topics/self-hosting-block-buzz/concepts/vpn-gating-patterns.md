@@ -1,10 +1,12 @@
 ---
 title: VPN-Gating Patterns — Making a Service Reachable Only Over a VPN
-type: concept
+category: concept
 tags: [vpn, tailscale, wireguard, reverse-proxy, private-dns, hardening, generic-patterns]
 confidence: high
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
+summary: "Generic, employer-agnostic patterns for making a self-hosted service (and its data) reachable *only* over a VPN — never on the public internet. buzz-specific application is in the Deployment Guide; this article is the reusable substrate."
 ---
 
 # VPN-Gating Patterns
@@ -88,3 +90,4 @@ This is the checklist that turns "I put it behind a VPN" into an enforced guaran
 - [Connecting Clients & Agents Over a VPN](connecting-over-vpn.md)
 - [Deployment & Topology](../reference/deployment-guide.md)
 - [Operations, Security & Maturity](operations-security-maturity.md)
+- [[what-is-buzz.md|What buzz Is & How It's Architected]]

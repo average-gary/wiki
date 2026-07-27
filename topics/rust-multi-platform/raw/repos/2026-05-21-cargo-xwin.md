@@ -1,7 +1,7 @@
 ---
 title: "rust-cross/cargo-xwin — Linux/macOS → Windows MSVC cross-compile"
 source: https://github.com/rust-cross/cargo-xwin
-type: repo
+type: repos
 tags: [cross-compile, windows, msvc, xwin, microsoft-sdk]
 date: 2026-05-21
 quality: 4

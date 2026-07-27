@@ -1,8 +1,10 @@
 ---
 title: WebSocket Bridge Pattern (Freeciv-web)
-type: concept
+category: concept
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "Freeciv-web is the canonical example of how to bring a legacy native game server to the browser without rewriting the simulation."
 confidence: high
 sources:
   - raw/repos/2026-06-18-freeciv-web.md

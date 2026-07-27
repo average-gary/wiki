@@ -1,12 +1,13 @@
 ---
 title: People — eHash / hashpool / decentralized-pool ecosystem
-type: reference
+category: reference
 created: 2026-05-24
 updated: 2026-07-15
 verified: 2026-07-15
 confidence: high
-tags: [people, EthnTuttle, vnprc, Calle, Hughes, McElrath, pool2win]
+tags: [people, ethntuttle, vnprc, Calle, hughes, mcelrath, pool2win]
 volatility: warm
+summary: "Key contributors to the eHash / hashpool / decentralized-pool ecosystem. Cross-referenced from concept articles."
 sources:
   - "raw/articles/2026-05-24-ethntuttle-profile.md"
   - "raw/articles/2026-05-24-vnprc-profile.md"

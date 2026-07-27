@@ -2,7 +2,7 @@
 title: "Matching Hashes: Reproducing the Guix-built Bitcoin Core release binary with Nix"
 source: https://b10c.me/projects/027-bitcoind-gunix-match/
 companion_repo: https://github.com/0xB10C/bitcoind-gunix
-type: article
+type: articles
 author: 0xB10C (independent Bitcoin developer; OpenSats LTS grantee)
 year: 2026
 ingested: 2026-06-15

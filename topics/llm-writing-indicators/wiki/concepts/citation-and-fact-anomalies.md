@@ -1,11 +1,13 @@
 ---
 title: Citation & fact anomalies — fabricated sources and broken references
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, citations, hallucination, fact-checking]
+summary: "When an LLM supplies references, they are a rich source of tells — because the model generates *plausible-looking* citations without checking they exist or say what it claims."
 sources:
   - raw/articles/2026-07-13-wikipedia-signs-of-ai-writing.md
   - raw/papers/2026-07-13-liang-peer-reviews-ai-modified.md

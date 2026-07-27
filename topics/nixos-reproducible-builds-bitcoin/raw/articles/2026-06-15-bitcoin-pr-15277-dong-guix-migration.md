@@ -4,7 +4,7 @@ sources:
   - https://github.com/bitcoin/bitcoin/pull/15277
   - https://lists.gnu.org/archive/html/help-guix/2019-04/msg00085.html
   - https://bitcoinops.org/en/topics/reproducible-builds/
-type: article
+type: articles
 authors: Carl Dong (dongcarl)
 merger: Wladimir van der Laan (laanwj)
 year: 2019

@@ -1,9 +1,12 @@
 ---
 title: "gimballock's vardiff/simulation-framework — primary reference"
-type: reference
+category: reference
 created: 2026-06-24
+updated: 2026-06-24
+volatility: warm
 confidence: high
 tags: [gimballock, primary-source, vardiff, simulation, sri]
+summary: "Author: Eric Price (gimballock on GitHub, github.com/gimballock). 26 public repos. Recent activity dominantly in marafoundation/stratum and marafoundation/sv2-apps."
 ---
 
 # gimballock vardiff sim — primary reference

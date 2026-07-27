@@ -1,7 +1,7 @@
 ---
 title: "Logos feature surface — synthesis from product pages and docs"
-source_url: "https://www.logos.com/ + community.logos.com/Logos_Features"
-type: article
+source: "https://www.logos.com/ + community.logos.com/Logos_Features"
+type: articles
 path: logos
 date_ingested: 2026-05-27
 date_published: unknown

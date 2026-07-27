@@ -1,12 +1,13 @@
 ---
 title: "Fedimint modules and instances (ModuleKind vs ModuleInstanceId)"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 confidence: high
 tags: [fedimint, modules, fmcm, custom-modules, architecture]
+summary: "Fedimint's protocol is a thin consensus + transaction layer on top of which modules provide functionality. Three modules are core: wallet (on-chain BTC), mint (Chaumian eCash), lightning (LN gateway interface). Custom modules can extend the federation."
 ---
 
 # Fedimint modules and instances
@@ -42,3 +43,7 @@ There are now **two architectural paths** to non-BTC value inside a Fedimint fed
 - [[stability-pool|Stability Pool]] — external-module path
 - [[amount-units-and-amounts|AmountUnits and Amounts]] — core-layer enabler for the in-tree path
 - [[../../raw/articles/2026-05-28-fedimint-issue-8217-external-modules-broken|Issue #8217]] — external-module brittleness
+- [[../topics/fedimint-multi-currency-status.md|Fedimint multi-currency support — status as of 2026-05-28]]
+- [[fmcm-upgrade-tax.md|FMCM upgrade tax — the cost of writing a Fedimint module out-of-tree]]
+- [[server-module-trait.md|ServerModule trait — what a Fedimint module author implements (consensus side)]]
+- [[three-crate-pattern.md|Three-crate module pattern (-common / -client / -server)]]

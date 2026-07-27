@@ -1,9 +1,12 @@
 ---
 title: "Synthetic miner patterns"
-type: concept
+category: concept
 created: 2026-06-24
+updated: 2026-06-24
+volatility: warm
 confidence: high
 tags: [synthetic-miner, simulator, poisson, fixture]
+summary: "How do you drive 10k–1M fake miners at a chosen aggregate share rate without burning megawatts on real PoW? Five patterns observed across existing harnesses, ordered by what they exercise on the pool side."
 ---
 
 # Synthetic miner patterns

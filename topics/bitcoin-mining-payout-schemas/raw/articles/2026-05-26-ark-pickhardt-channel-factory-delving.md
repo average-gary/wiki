@@ -1,10 +1,10 @@
 ---
 title: "Ark as a Channel Factory — Compressed Liquidity Management for Improved Payment Feasibility (Pickhardt + instagibbs, Delving Bitcoin)"
 publication: delvingbitcoin.org
-url: https://delvingbitcoin.org/t/ark-as-a-channel-factory-compressed-liquidity-management-for-improved-payment-feasibility/2179
+source: https://delvingbitcoin.org/t/ark-as-a-channel-factory-compressed-liquidity-management-for-improved-payment-feasibility/2179
 authors: [Rene Pickhardt, instagibbs (Greg Sanders)]
 date: 2025-12-31
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

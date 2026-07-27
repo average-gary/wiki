@@ -1,7 +1,7 @@
 ---
 title: "Twitter 'Read it first?' nudge + 'Take a Break' CHI work + variable-reinforcement positive prompts."
 source: https://blog.x.com/en_us/topics/product/2020/sharing-an-article-can-spark-conversation-so-you-may-want-to-read-it-before-you-tweet-it
-type: paper
+type: papers
 created: 2026-06-23
 tags: [his-words-app, behavioral-psychology, nudge, micro-intervention, reinforcement-schedule]
 quality: 4

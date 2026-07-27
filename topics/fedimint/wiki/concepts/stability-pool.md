@@ -1,12 +1,13 @@
 ---
 title: "Stability Pool (synthetic-USD via BTC collateral)"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 confidence: medium
 tags: [fedimint, stability-pool, fedi, synthetic-stablecoin, custom-module, oracle]
+summary: "Fedi's external custom module that provides \"synthetic-USD\" balances inside a Fedimint federation by matching BTC-collateralized derivative positions. Synthetic, not pegged."
 ---
 
 # Stability Pool
@@ -49,3 +50,6 @@ This is the architectural choice Fedimint has made *until native multi-currency 
 - [[../../raw/articles/2026-05-28-fedimint-issue-8217-external-modules-broken|Issue #8217]] — porting Fedi's stability pool across upstream versions
 - [[mintv2-amount-unit-config|mintv2 amount_unit config]] — the alternative (in-tree) path Fedimint is now building
 - [[off-mint-payments-bridge-pattern|Off-mint payments-bridge pattern]] — the third path (BitSacco, ChapSmart)
+- [[federation-trust-model.md|Federation trust model (KYF, debasement, exit, regulation)]]
+- [[fedimint-modules-and-instances.md|Fedimint modules and instances (ModuleKind vs ModuleInstanceId)]]
+- [[../topics/fedimint-multi-currency-status.md|Fedimint multi-currency support — status as of 2026-05-28]]

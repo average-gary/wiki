@@ -1,11 +1,13 @@
 ---
 title: Detection tools & their limits — why reliable detection is hard
-type: topic
+category: topic
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, detection, tools, limits, playbook]
+summary: "What automated detectors do, how they work, and why none of them is trustworthy enough to be a verdict."
 sources:
   - raw/papers/2026-07-13-mitchell-detectgpt.md
   - raw/papers/2026-07-13-hans-binoculars.md

@@ -3,7 +3,7 @@ title: "Sycophancy in GPT-4o / Expanding on what we missed with sycophancy"
 source: https://openai.com/index/sycophancy-in-gpt-4o/
 author: OpenAI
 venue: OpenAI (April–May 2025)
-type: article
+type: articles
 tags: [llm-writing-indicators, rlhf, sycophancy, gpt-4o, model-drift]
 quality: 4
 confidence: medium

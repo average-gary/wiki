@@ -1,8 +1,9 @@
 ---
 title: "Reference: CLINK specs, repos, related projects"
-type: reference
+category: reference
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
 ---
 
 # Reference: CLINK specs, repos, related projects

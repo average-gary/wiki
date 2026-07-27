@@ -1,6 +1,6 @@
 ---
 title: gimballock vardiff sim — Composed adapter + per-tick Poisson trial driver
-source_url: https://github.com/marafoundation/stratum/tree/vardiff/simulation-framework/sv2/channels-sv2/sim
+source: https://github.com/marafoundation/stratum/tree/vardiff/simulation-framework/sv2/channels-sv2/sim
 type: repos
 ingested: 2026-06-24
 quality: A

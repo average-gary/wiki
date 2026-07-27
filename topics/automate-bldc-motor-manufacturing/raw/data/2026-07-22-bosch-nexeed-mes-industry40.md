@@ -5,7 +5,7 @@ type: data
 tags: [mes, industry-4.0, traceability, digital-thread, part-genealogy]
 credibility: medium
 confidence: medium
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Anchors the Industry 4.0 / MES / digital-thread section with a real production-line platform.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "bevy crate API documentation (docs.rs)"
-source_url: https://docs.rs/bevy/latest/bevy/
+source: https://docs.rs/bevy/latest/bevy/
 source_date: 2026-03-02
 ingested: 2026-06-15
 type: data

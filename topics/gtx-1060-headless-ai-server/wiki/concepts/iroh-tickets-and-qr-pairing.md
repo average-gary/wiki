@@ -1,6 +1,6 @@
 ---
 title: "Iroh tickets and QR pairing — Tailscale-style invite + Noise IK semantics"
-type: concept
+category: concept
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-06-01-iroh-paycode-case-study.md
   - raw/articles/2026-06-01-iroh-post-quantum-handshakes.md
 tags: [iroh, ticket, qr-pairing, noise-ik, allowlist, revocation]
+summary: "How a phone learns to find the GTX 1060 AI server (and vice versa). What the iroh primitives give you, and what you must build on top."
 ---
 
 # Iroh tickets and QR pairing
@@ -164,3 +165,6 @@ Client side:
 - [[briar-bhp-protocol]] — OOB-as-trust-anchor philosophy
 - [[multi-alpn-router-pattern]] — where AccessLimit plugs in
 - [[iroh-application-patterns-2026-synthesis]]
+- [[iroh-as-ssh-transport.md|Iroh as SSH transport — ProxyCommand + allowlist gating]]
+- [[iroh-blobs-resumable-uploads.md|iroh-blobs — resumable, BLAKE3-verified uploads]]
+- [[moq-over-iroh-pattern.md|Media-over-QUIC over Iroh — moq-lite + moq-relay on iroh transport]]

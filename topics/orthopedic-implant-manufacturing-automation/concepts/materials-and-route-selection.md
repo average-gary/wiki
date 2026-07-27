@@ -1,9 +1,11 @@
 ---
 title: Materials & Route Selection — the Unifying Logic
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [materials, titanium, cocrmo, stainless, tantalum, peek, uhmwpe, ceramic, astm, machinability]
+summary: "This is the unifying concept of the whole topic. Everything downstream — which forming route, how bad the tool wear, whether polishing is a bottleneck — is set by the material's thermal conductivity + hardness/reactivity. Pick the material and you have largely picked the automation problem."
 confidence: high
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "iOS App Store Approval Precedent: Family Controls Entitlement"
 source: "App Store reviews, indie developer interviews, Apple Developer Program documentation"
-type: article
+type: articles
 created: 2026-06-23
 updated: 2026-06-23
 tags: [ios, app-store, family-controls, entitlement, approval, his-words, precedent]

@@ -1,10 +1,12 @@
 ---
 title: "Deployment playbook: CDK + LDK Node + LNURL on one host"
-type: topic
+category: topic
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: medium
 tags: [deployment, playbook, cdk-mintd, cdk-ldk-node, lnurl]
+summary: "End-to-end recipe for a small mint that wants to expose Lightning Address as the deposit UX. Targets dev/staging on Mutinynet first; production on mainnet later."
 ---
 
 # Deployment playbook — CDK + LDK Node + LNURL

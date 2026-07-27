@@ -1,7 +1,7 @@
 ---
 title: Jahns — "Are CRDTs suitable for shared editing?"
-url: https://blog.kevinjahns.de/are-crdts-suitable-for-shared-editing/
-retrieved: 2026-06-02
+source: https://blog.kevinjahns.de/are-crdts-suitable-for-shared-editing/
+ingested: 2026-06-02
 type: blog
 ---
 

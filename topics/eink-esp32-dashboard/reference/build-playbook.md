@@ -1,9 +1,11 @@
 ---
 title: Build Playbook — a slow e-ink dashboard on the Waveshare ESP32 board
-type: reference
+category: reference
 created: 2026-07-20
 updated: 2026-07-20
+volatility: warm
 tags: [playbook, build, dashboard, workflow, recommendation]
+summary: "Question: How can we leverage a Waveshare e-Paper ESP32 Driver Board (Rev3) + ESP32-WROOM-32E to do slow dynamic updates from various data sources — a dashboard with calendar, Bitcoin network data, and other feeds?"
 confidence: high
 ---
 

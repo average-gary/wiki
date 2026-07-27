@@ -1,8 +1,10 @@
 ---
 title: Modding DSLs vs Data Formats
-type: concept
+category: concept
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "OSS civ-likes (and civ-adjacent engines) take three distinct approaches to defining moddable game content. Each has tradeoffs that ripple through modding UX, type safety, and tooling."
 confidence: high
 sources:
   - raw/repos/2026-06-18-openage-aoe2.md
@@ -125,3 +127,4 @@ saturates.
 - [GitHub-as-mod-registry](github-as-mod-registry.md)
 - [AI plugin architecture](ai-plugin-architecture.md) — orthogonal: DSL
   is for data, plugin AI is for behavior
+- [[../topics/landscape.md|Open Source Civ-Like Games — Landscape]]

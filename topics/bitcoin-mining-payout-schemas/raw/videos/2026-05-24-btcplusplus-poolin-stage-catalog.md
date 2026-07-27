@@ -1,7 +1,7 @@
 ---
 title: "btc++ Poolin' Stage catalog (Austin May 2025) + adjacent payout talks"
 publication: youtube.com/@btcplusplus
-url: https://www.youtube.com/@btcplusplus
+source: https://www.youtube.com/@btcplusplus
 type: video
 ingested: 2026-05-24
 updated: 2026-05-24

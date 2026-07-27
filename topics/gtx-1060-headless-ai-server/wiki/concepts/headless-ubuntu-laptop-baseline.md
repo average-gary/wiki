@@ -1,10 +1,11 @@
 ---
 title: "Headless Ubuntu 22.04 baseline for an MSI GS63VR"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: cold
+summary: "Install Ubuntu Server 22.04 LTS (NOT desktop minimal). BIOS: disable Secure Boot, set Primary Display = IGFX, AHCI mode (default on this chassis). Network: ethernet only (Killer Wi-Fi ath10k_pci has known firmware issues on Linux). SSH: key-only auth + ufw + fail2ban."
 confidence: high
 sources:
   - raw/repos/2026-05-21-msi-gs63vr-config.md

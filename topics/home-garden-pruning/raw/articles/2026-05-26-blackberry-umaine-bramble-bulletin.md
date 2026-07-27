@@ -1,7 +1,7 @@
 ---
 title: "Growing Blackberries and Raspberries — UMaine Extension Bulletin 2066e"
-source_url: "https://extension.umaine.edu/publications/2066e/"
-type: article
+source: "https://extension.umaine.edu/publications/2066e/"
+type: articles
 path: blackberry
 date_ingested: 2026-05-26
 date_published: unknown

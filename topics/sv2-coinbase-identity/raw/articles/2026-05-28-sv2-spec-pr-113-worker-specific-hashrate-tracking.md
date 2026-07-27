@@ -1,11 +1,12 @@
 ---
 title: "SV2 Spec PR #113 — Worker-Specific Hashrate Tracking Extension (merged Jun 2025)"
-source_url: https://github.com/stratum-mining/sv2-spec/pull/113
+source: https://github.com/stratum-mining/sv2-spec/pull/113
+type: articles
 source_type: spec-pr
 ingested: 2026-05-28
 credibility: high
 confidence: high
-tags: [stratum-v2, extension-0x0002, SubmitSharesExtended, user_identity, TLV, worker-tracking]
+tags: [stratum-v2, extension-0x0002, SubmitSharesExtended, user_identity, tlv, worker-tracking]
 ---
 
 # Worker-Specific Hashrate Tracking Extension (Type 0x0002)

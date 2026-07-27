@@ -1,7 +1,7 @@
 ---
 title: "NIP-26: Delegated Event Signing (unrecommended)"
-url: https://github.com/nostr-protocol/nips/blob/master/26.md
-retrieved: 2026-06-02
+source: https://github.com/nostr-protocol/nips/blob/master/26.md
+ingested: 2026-06-02
 type: spec
 ---
 

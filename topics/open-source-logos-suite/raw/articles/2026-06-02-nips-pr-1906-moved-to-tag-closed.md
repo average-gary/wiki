@@ -1,7 +1,7 @@
 ---
 title: "PR #1906 — NIP-24 'moved_to' tag (closed, half-measure rejected)"
-url: https://github.com/nostr-protocol/nips/pull/1906
-retrieved: 2026-06-02
+source: https://github.com/nostr-protocol/nips/pull/1906
+ingested: 2026-06-02
 type: pr
 ---
 

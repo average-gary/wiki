@@ -66,6 +66,9 @@ The recurring lesson across all three patterns: the cryptographic core (BIP-327)
 - [[dropout-abort-and-robustness|Dropout, Abort, and Robustness]] ([Dropout, Abort, and Robustness](dropout-abort-and-robustness.md)) — reconnection, restart, and round-timeout handling
 - [[musig2-protocol|The MuSig2 Protocol]] ([The MuSig2 Protocol](musig2-protocol.md)) — the SecNonce and SessionContext structures being framed
 - [[musig2-interactive-signing-ceremonies|MuSig2 Interactive Signing Ceremonies]] ([MuSig2 Interactive Signing Ceremonies](../topics/musig2-interactive-signing-ceremonies.md)) — the umbrella topic
+- [[deterministic-vs-random-nonces.md|Deterministic vs Random Nonces in Multi-Party Signing]]
+- [[../references/implementations-and-specs.md|MuSig2 Implementations & Specs]]
+- [[musig2-vs-frost-roast.md|MuSig2 vs FROST/ROAST]]
 
 ## Sources
 

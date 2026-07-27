@@ -4,9 +4,9 @@ source: "https://raw.githubusercontent.com/lightning/bolts/master/02-peer-protoc
 source_secondary: "https://github.com/lightning/blips/blob/master/blip-0051.md"
 source_tertiary: "https://lightning.engineering/api-docs/api/lnd/lightning/batch-open-channel/"
 source_quaternary: "https://github.com/ElementsProject/lightning/pull/8450"
-type: article
+type: articles
 subtype: impl-docs
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [lightning, interactive-tx, batching, batch-open-channel, multi-channel-splice, lsps1, scale, lnd, cln]
 credibility: high-med
 evidence_strength: spec+impl

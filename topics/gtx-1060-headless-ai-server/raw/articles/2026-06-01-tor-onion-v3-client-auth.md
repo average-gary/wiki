@@ -1,7 +1,7 @@
 ---
 title: "Tor Onion v3 Client Authorization — pubkey-as-cookie pattern"
 source: https://community.torproject.org/onion-services/advanced/client-auth/
-type: article
+type: articles
 tags: [tor, onion-v3, client-auth, x25519, allowlist, simple-pattern]
 date: 2026-06-01
 quality: 4

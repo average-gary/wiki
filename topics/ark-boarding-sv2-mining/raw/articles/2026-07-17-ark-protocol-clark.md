@@ -1,7 +1,7 @@
 ---
 title: "Covenant-less Ark (clArk) — Ark Protocol docs"
 source: https://ark-protocol.org/intro/clark/
-type: article
+type: articles
 ingested: 2026-07-17
 credibility: high
 direction: supports

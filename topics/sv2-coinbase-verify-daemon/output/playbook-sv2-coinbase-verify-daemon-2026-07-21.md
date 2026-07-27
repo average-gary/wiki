@@ -3,7 +3,7 @@ title: "Playbook — Build an SV2 coinbase-verification mining daemon"
 type: output
 created: 2026-07-21
 updated: 2026-07-21
-tags: [stratum-v2, coinbase, daemon, rust, SRI, playbook, deliverable]
+tags: [stratum-v2, coinbase, daemon, rust, sri, playbook, deliverable]
 summary: "Actionable end-to-end playbook: build a simple daemon that connects as a miner to a Stratum V2 pool, receives extended jobs, reconstructs the coinbase, and checks it against an expected value — with the SRI crate stack, a source-verified code skeleton, the expected-value sourcing rules, deviation-detection design, and an honest trust-model boundary."
 ---
 

@@ -1,10 +1,11 @@
 ---
 title: "Desktop cross-compile + package — the 2025-2026 toolchain"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: hot
+summary: "The 2025-2026 canonical pattern: 3 GitHub Actions runners (ubuntu-24.04, macos-latest, windows-latest), each native-compiles its own family, with cross for the Linux x86_64 → Linux aarch64 hop. Wrap with actions-rust-cross for the matrix and cargo-dist for installer generation."
 confidence: high
 sources:
   - raw/repos/2026-05-21-actions-rust-cross.md

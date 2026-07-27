@@ -3,7 +3,7 @@ title: "berenslab/chatgpt-excess-words (companion dataset to Kobak et al.)"
 source: https://github.com/berenslab/chatgpt-excess-words
 author: Berens Lab (Kobak, González-Márquez, Horvát, Lause)
 venue: GitHub (data: results/excess_words.csv)
-type: article
+type: articles
 tags: [llm-writing-indicators, dataset, word-list, lexical-tells, excess-vocabulary]
 quality: 5
 confidence: high

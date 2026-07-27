@@ -1,12 +1,13 @@
 ---
 title: "Fedimint multi-currency support — status as of 2026-05-28"
-type: topic
+category: topic
 created: 2026-05-28
 updated: 2026-05-28
 verified: 2026-05-28
 volatility: hot
 confidence: high
 tags: [fedimint, multi-currency, multi-asset, stablecoin, status, synthesis]
+summary: "One-line answer: Fedimint's protocol layer can now carry multi-unit transactions and the v2 mint module can declare a unit per instance, but no production federation currently issues non-BTC eCash backed by real non-BTC assets."
 ---
 
 # Fedimint multi-currency support — status as of 2026-05-28
@@ -96,3 +97,4 @@ If you care about Fedimint multi-currency support today:
 
 - Concepts: [[../concepts/amount-units-and-amounts|AmountUnits & Amounts]] · [[../concepts/mintv2-amount-unit-config|mintv2 amount_unit]] · [[../concepts/fedimint-modules-and-instances|Modules & instances]] · [[../concepts/stability-pool|Stability Pool]] · [[../concepts/off-mint-payments-bridge-pattern|Off-mint bridge pattern]] · [[../concepts/federation-trust-model|Federation trust model]]
 - Primary sources: [[../../raw/repos/2026-05-28-fedimint-pr-7734-multi-currency-support|PR #7734]] · [[../../raw/repos/2026-05-28-fedimint-pr-8460-mintv2-amount-unit-config|PR #8460]] · [[../../raw/articles/2026-05-28-fedimint-discussion-8218-gold-stablecoins|Discussion #8218]] · [[../../raw/articles/2026-05-28-fedimint-issue-8217-external-modules-broken|Issue #8217]]
+- [[../reference/cashu-comparison.md|Cashu — multi-unit Chaumian e-cash (comparison reference)]]

@@ -1,7 +1,7 @@
 ---
 title: "bitcoind / corepc-node — Rust harness primitive for bitcoind regtest"
-source_url: https://github.com/rust-bitcoin/corepc, https://docs.rs/bitcoind/, https://docs.rs/corepc-node/
-type: repo
+source: https://github.com/rust-bitcoin/corepc, https://docs.rs/bitcoind/, https://docs.rs/corepc-node/
+type: repos
 ingested: 2026-05-26
 quality: 5
 confidence: high

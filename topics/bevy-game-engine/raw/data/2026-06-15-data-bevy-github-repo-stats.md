@@ -1,6 +1,6 @@
 ---
 title: "bevyengine/bevy GitHub repository stats (live API)"
-source_url: https://github.com/bevyengine/bevy
+source: https://github.com/bevyengine/bevy
 source_date: 2026-06-15
 ingested: 2026-06-15
 type: data

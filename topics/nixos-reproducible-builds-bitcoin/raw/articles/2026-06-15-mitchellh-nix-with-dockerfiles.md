@@ -1,7 +1,7 @@
 ---
 title: "Mitchell Hashimoto — Nix with Dockerfiles (mitchellh.com)"
-type: article
-source_url: https://mitchellh.com/writing/nix-with-dockerfiles
+type: articles
+source: https://mitchellh.com/writing/nix-with-dockerfiles
 ingested: 2026-06-15
 confidence: medium
 relevance: direct

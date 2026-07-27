@@ -2,9 +2,9 @@
 title: "Ark: An Alternative Privacy-preserving Second Layer Solution (Burak Keceli, bitcoin-dev, May 2023)"
 author: Burak Keceli (brqgoo)
 publication: bitcoin-dev mailing list (post #021694)
-url: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2023-May/021694.html
+source: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2023-May/021694.html
 date: 2023-05-31
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: high

@@ -1,10 +1,11 @@
 ---
 title: TWiR Submission Rules (Editorial)
-type: concept
+category: concept
 created: 2026-06-22
 updated: 2026-06-22
 verified: 2026-06-22
 volatility: cold
+summary: "Canonical rules from rust-lang/this-week-in-rust README, supplemented by observed editor behavior in closed PRs."
 confidence: high
 sources:
   - "[[../../raw/articles/2026-06-22-twir-readme-submission-rules|README]]"
@@ -52,3 +53,4 @@ Canonical rules from `rust-lang/this-week-in-rust` README, supplemented by obser
 
 - [[../topics/twir-rust-bitcoin-coverage-gap|TWiR Rust-Bitcoin Coverage Gap]]
 - [[../topics/submission-playbook|Submission Playbook]]
+- [[twir-sections.md|TWiR Sections — What Goes Where]]

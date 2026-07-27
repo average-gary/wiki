@@ -1,14 +1,14 @@
 ---
 title: "Jungly's p2poolv2 design summary on delvingbitcoin (P2share thread)"
 publication: delvingbitcoin.org
-url: https://delvingbitcoin.org/t/p2share-how-to-turn-any-network-or-testnet-into-a-bitcoin-miner/2093
+source: https://delvingbitcoin.org/t/p2share-how-to-turn-any-network-or-testnet-into-a-bitcoin-miner/2093
 date: 2025-11-07
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high
 confidence: high
-tags: [p2poolv2, jungly, design-summary, delvingbitcoin, primary]
+tags: [p2poolv2, jungly, design-summary, delving-bitcoin, primary]
 ---
 
 # Jungly's p2poolv2 Design Summary (delvingbitcoin, Nov 2025)

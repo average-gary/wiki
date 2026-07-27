@@ -1,10 +1,12 @@
 ---
 title: "The three readings of the claim"
-type: concept
+category: concept
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 confidence: high
 tags: [thesis, readings, coinbase, splicing, disambiguation]
+summary: "\"I can splice a lightning channel in a coinbase transaction\" is ambiguous. The research resolves it into three distinct readings with three distinct verdicts."
 ---
 
 # The three readings of the claim

@@ -1,8 +1,8 @@
 ---
 title: "Cashu-Address: Cashu Mints as Better Lightning-Address Custodians"
-type: article
+type: articles
 source: https://www.nobsbitcoin.com/introducing-cashu-address/
-fetched: 2026-05-28
+ingested: 2026-05-28
 published: 2024-02
 confidence: medium
 tags: [cashu-address, lightning-address, npubcash, deployment-pattern]

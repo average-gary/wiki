@@ -1,10 +1,10 @@
 ---
 title: "Ark Protocol Introduction (Second.tech docs)"
 publication: second.tech
-url: https://second.tech/docs/learn/intro
+source: https://second.tech/docs/learn/intro
 mirror: https://docs.second.tech/protocol/intro/
 authors: [Steven Roose, Erik De Smedt]
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: high

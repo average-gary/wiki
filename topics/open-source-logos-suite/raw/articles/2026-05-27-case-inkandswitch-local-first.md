@@ -1,7 +1,7 @@
 ---
 title: "Local-First Software: You Own Your Data, in spite of the Cloud"
-source_url: "https://www.inkandswitch.com/essay/local-first/"
-type: article
+source: "https://www.inkandswitch.com/essay/local-first/"
+type: articles
 path: case
 date_ingested: 2026-05-27
 date_published: 2019-04-01

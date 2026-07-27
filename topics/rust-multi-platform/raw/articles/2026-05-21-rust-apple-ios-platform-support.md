@@ -1,7 +1,7 @@
 ---
 title: "Rust Platform Support — Apple iOS / iPadOS"
 source: https://doc.rust-lang.org/nightly/rustc/platform-support/apple-ios.html
-type: article
+type: articles
 tags: [rust, ios, apple, platform-support, tier-2]
 date: 2026-05-21
 quality: 6

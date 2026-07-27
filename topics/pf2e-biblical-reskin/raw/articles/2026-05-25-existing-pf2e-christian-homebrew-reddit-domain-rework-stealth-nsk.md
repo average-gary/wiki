@@ -1,7 +1,7 @@
 ---
 title: "Reddit r/Pathfinder2e — proposal to decouple cleric domain/font/anathema from specific gods (monotheism enabler)"
 source: "https://www.reddit.com/r/Pathfinder2e/comments/qq2xmq/one_of_the_few_things_dd_5e_does_better_than_pf2/"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, christian-homebrew, community, fan-content, gap-closing, cleric-rework]
 quality: 4

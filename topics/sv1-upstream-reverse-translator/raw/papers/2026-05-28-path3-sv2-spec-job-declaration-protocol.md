@@ -1,7 +1,7 @@
 ---
 title: "SV2 Spec — Job Declaration Protocol (06)"
 url: https://github.com/stratum-mining/sv2-spec/blob/main/06-Job-Declaration-Protocol.md
-type: paper
+type: papers
 source: stratum-mining/sv2-spec
 captured: 2026-05-28
 quality: 9

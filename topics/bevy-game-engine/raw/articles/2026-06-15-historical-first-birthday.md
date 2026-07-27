@@ -1,9 +1,9 @@
 ---
 title: "Bevy's First Birthday"
-source_url: https://bevy.org/news/bevys-first-birthday/
+source: https://bevy.org/news/bevys-first-birthday/
 source_date: 2021-08-10
 ingested: 2026-06-15
-type: article
+type: articles
 author: Carter Anderson / Bevy
 quality: 5
 credibility: high

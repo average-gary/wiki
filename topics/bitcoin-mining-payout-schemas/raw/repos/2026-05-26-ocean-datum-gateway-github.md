@@ -1,9 +1,9 @@
 ---
 title: "OCEAN-xyz/datum_gateway — DATUM Gateway reference implementation"
-url: https://github.com/OCEAN-xyz/datum_gateway
+source: https://github.com/OCEAN-xyz/datum_gateway
 license: MIT
 language: C
-type: repo
+type: repos
 status: BETA (v0.4.1beta as of Jan 2026)
 ingested: 2026-05-26
 quality: 5

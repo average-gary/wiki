@@ -1,7 +1,7 @@
 ---
 title: "LegendKeeper Product Page (Features)"
 source: "https://www.legendkeeper.com/"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [worldbuilding, tool-comparison, legendkeeper, features]

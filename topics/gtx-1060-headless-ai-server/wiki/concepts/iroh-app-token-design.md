@@ -1,6 +1,6 @@
 ---
 title: "Iroh app token wrapper — design and Rust crate matrix"
-type: concept
+category: concept
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-06-01-fly-api-tokens-survey.md
   - raw/articles/2026-06-01-paragon-jwt-bad-standard.md
 tags: [iroh, app-token, capability, design, rust-crate-matrix, token-format]
+summary: "This concept article picks the token format for the iroh app token wrapper. The seed-rotation algorithm is in iroh-app-token-seed-rotation; the AccessLimit/auth-hook integration is in iroh-app-token-integration."
 ---
 
 # Iroh app token wrapper — design and crate matrix

@@ -1,11 +1,13 @@
 ---
 title: "CLINK vs LNURL / BOLT12 / NWC / Zaps / Lightning Address"
-type: topic
+category: topic
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
+summary: "CLINK's pitch is best understood as a triple critique: LNURL is too HTTPS-coupled, BOLT12 is too node-online-coupled, NWC is too pre-shared-secret-coupled."
 confidence: high
 sources:
-  - raw/articles/2026-06-09-comparison-clink-offers-spec.md
+  - ../../raw/repos/2026-06-09-comparison-clink-offers-spec.md
   - raw/repos/2026-06-09-comparison-nip47-nwc-spec.md
   - raw/repos/2026-06-09-comparison-nip57-zaps-spec.md
   - raw/repos/2026-06-09-comparison-bolt12-offers-spec.md
@@ -175,3 +177,4 @@ Caveat: the discovery hop still uses HTTPS (NIP-05). NymRank / Namecoin alternat
 - [[../concepts/clink-discovery-and-nip05.md]]
 - [[clink-security-and-trust.md]]
 - [[../reference/specs-and-repos.md]]
+- [[../concepts/clink-implementations.md|CLINK implementations and adoption]]

@@ -1,11 +1,13 @@
 ---
 title: Perplexity & burstiness — the statistical signature
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, statistics, perplexity, burstiness, detection]
+summary: "Beneath the visible tells sits the statistical signature that automated detectors actually measure. Understanding it explains both why detection works at all and why it fails."
 sources:
   - raw/articles/2026-07-13-gptzero-perplexity-burstiness.md
   - raw/papers/2026-07-13-mitchell-detectgpt.md
@@ -40,3 +42,4 @@ You cannot compute perplexity by eye, but you can recognize its symptoms: even r
 - [[../topics/detection-tools-and-limits|Detection tools & limits]]
 - [[../topics/false-positives-and-fairness|False positives & fairness]]
 - [[why-llms-write-this-way|Why LLMs write this way]]
+- [[structural-formulas.md|Structural formulas — formulaic intros, conclusions, and section headings]]

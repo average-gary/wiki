@@ -1,7 +1,7 @@
 ---
 title: "Ollama 2024-2026 feature roundup: structured outputs, tools, embeddings, desktop app"
 source: "https://ollama.com/blog"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "2025-10-15"
 tags: [llm, local-llm, ollama, structured-output, tool-calling, embeddings]

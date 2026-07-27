@@ -2,8 +2,8 @@
 title: "The Bitcoin Manual — What Is Fedimint Stability Pool?"
 type: raw
 source_type: articles
-source_url: https://thebitcoinmanual.com/articles/what-fedimint-stability-pool/
-fetched: 2026-05-28
+source: https://thebitcoinmanual.com/articles/what-fedimint-stability-pool/
+ingested: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 quality: 4

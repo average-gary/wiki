@@ -1,7 +1,7 @@
 ---
 title: "PASETO Specification — Version 4 (v4.local + v4.public)"
 source: https://github.com/paseto-standard/paseto-spec/blob/master/docs/01-Protocol-Versions/Version4.md
-type: paper
+type: papers
 tags: [paseto, v4, xchacha20, blake2b, ed25519, footer, implicit-assertion, spec]
 date: 2026-06-01
 quality: 4

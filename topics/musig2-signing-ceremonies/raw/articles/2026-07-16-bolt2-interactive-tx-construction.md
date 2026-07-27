@@ -3,7 +3,7 @@ title: "BOLT #2: Interactive Transaction Construction Protocol"
 source: "https://github.com/lightning/bolts/blob/master/02-peer-protocol.md"
 type: articles
 ingested: 2026-07-16
-tags: [lightning, bolt-2, interactive-tx, dual-funding, session-framing, serial-id, tx-add-input, tx-complete, turn-taking, wire-protocol]
+tags: [lightning, bolt2, interactive-tx, dual-funding, session-framing, serial-id, tx-add-input, tx-complete, turn-taking, wire-protocol]
 summary: "The Lightning BOLT #2 interactive transaction construction protocol (dual funding). Two peers build a shared transaction by exchanging tx_add_input/tx_add_output/tx_remove_*/tx_complete messages. The session is keyed by channel_id; turn-taking uses even/odd serial_ids; the negotiation terminates when both peers send consecutive tx_complete. The canonical wire-protocol exemplar of an interactive multi-party ceremony (no central coordinator)."
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "TWIB — LongStory 2 ships, BevyFeathers, type-erased materials"
-source_url: https://thisweekinbevy.com/issue/2025-06-30-longstory-2-bevyfeathers-and-type-erased-materials
+source: https://thisweekinbevy.com/issue/2025-06-30-longstory-2-bevyfeathers-and-type-erased-materials
 source_date: 2025-06-30
 ingested: 2026-06-15
-type: article
+type: articles
 author: This Week in Bevy
 quality: 3
 credibility: medium

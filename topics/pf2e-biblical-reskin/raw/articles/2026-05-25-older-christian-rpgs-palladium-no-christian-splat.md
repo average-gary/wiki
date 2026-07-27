@@ -1,7 +1,7 @@
 ---
 title: "Palladium / Heroes Unlimited / The Rifter — no Christian splat surfaced"
 source: "https://en.wikipedia.org/wiki/Heroes_Unlimited"
-type: article
+type: articles
 date_fetched: 2026-05-25
 date_published: 2024
 tags: [christian-rpg, history, palladium, gap-closing]

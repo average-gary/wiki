@@ -1,7 +1,7 @@
 ---
 title: "Logos Bible Software (Wikipedia)"
-source_url: "https://en.wikipedia.org/wiki/Logos_Bible_Software"
-type: article
+source: "https://en.wikipedia.org/wiki/Logos_Bible_Software"
+type: articles
 path: logos
 date_ingested: 2026-05-27
 date_published: unknown

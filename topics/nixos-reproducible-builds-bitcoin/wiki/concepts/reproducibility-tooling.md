@@ -1,10 +1,12 @@
 ---
 title: "Reproducibility tooling (diffoscope, reprotest, strip-nondeterminism)"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [tools, diffoscope, reprotest, vocabulary]
+summary: "Canonical vocabulary for \"is this build reproducible?\" investigations. Required for any Nix-on-Bitcoin work; you cannot debug a hash mismatch without these."
 sources:
   - "[[../../raw/articles/2026-06-15-reproducible-builds-tools.md|Reproducible Builds — Tools]]"
 ---

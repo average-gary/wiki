@@ -4,12 +4,15 @@ type: thesis
 status: completed
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 verdict: "Contradicted (as stated — inbound category error) / Mixed (reframed to outbound); complementary not rival"
 confidence: High
 core_claim: "For a miner who wants Lightning liquidity, splicing matured coinbase rewards into their own channel (Reading C) is a superior payout primitive to receiving off-chain BOLT12 Lightning payments (OCEAN-style)."
 key_variables: [splice-in-matured-coinbase-utxo, bolt12-offchain-payout, liquidity-direction-inbound-vs-outbound, custody-model, payout-fee-latency-economics]
 falsification: "Fails if BOLT12 off-chain payouts dominate on every axis that matters (cost, latency, small-payout support, custody flexibility), OR if the 'inbound liquidity' framing is a category error — splicing your own funds in yields OUTBOUND, not inbound, liquidity, so it cannot serve a goal of receiving payments."
 parent_thesis: "splice-lightning-channel-in-coinbase (Reading C follow-up #3)"
+tags: [thesis]
+summary: "For a miner who wants Lightning liquidity, splicing matured coinbase rewards into their own channel (Reading C) is a superior payout primitive to receiving off-chain BOLT12 Lightning payments (OCEAN-style)."
 ---
 
 # Thesis: Splice-in of matured coinbase rewards vs OCEAN-style BOLT12 payouts

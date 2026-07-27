@@ -1,6 +1,7 @@
 ---
 title: "Switch-Day Runbook (Draft) — OCEAN Operator Migrating to the Rust DATUM Gateway"
-source_url: synthesized
+source: synthesized
+type: articles
 source_type: synthesis
 date_fetched: 2026-06-01
 ingested_by: dropinq7

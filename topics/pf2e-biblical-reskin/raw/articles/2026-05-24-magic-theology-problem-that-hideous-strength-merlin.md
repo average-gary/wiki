@@ -1,7 +1,7 @@
 ---
 title: "Merlin, the Oyéresu, and Lewis's Theology of Magic in That Hideous Strength"
 source: "https://en.wikipedia.org/wiki/That_Hideous_Strength"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: unknown
 tags: [magic, theology, lewis, merlin, demonic, scientism]

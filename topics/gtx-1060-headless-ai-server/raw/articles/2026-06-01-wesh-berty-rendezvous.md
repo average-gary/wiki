@@ -1,7 +1,7 @@
 ---
 title: "Wesh / Berty Protocol — Contact Add and Time-Rotated Rendezvous"
 source: https://berty.tech/docs/protocol/
-type: article
+type: articles
 tags: [wesh, berty, qr, rendezvous, time-rotation, revocation]
 date: 2026-06-01
 quality: 4

@@ -1,7 +1,7 @@
 ---
 title: "prayer lock: christian focus — App Store listing (Covenant Studios)"
 source: https://itunes.apple.com/lookup?id=6744703926
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, competitor, prayer-lock, covenant-studios]
 quality: 5

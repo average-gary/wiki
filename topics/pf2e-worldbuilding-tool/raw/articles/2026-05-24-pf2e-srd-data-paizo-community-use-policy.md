@@ -1,7 +1,7 @@
 ---
 title: "Paizo Community Use Policy"
 source: "https://paizo.com/community/communityuse"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: 2024-08-22
 tags: [pf2e, community-use, paizo, fan-content, licensing, primary-source]

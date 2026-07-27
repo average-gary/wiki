@@ -1,11 +1,13 @@
 ---
 title: Em-dash & punctuation tells
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: medium
 tags: [llm-writing-indicators, punctuation, em-dash, typography]
+summary: "The em dash (—) became *the* popular \"ChatGPT tell\" in 2025. It is real but weak, contested, and time-sensitive — the textbook example of a signal that produces false positives."
 sources:
   - raw/articles/2026-07-13-em-dash-discourse-rollingstone-techcrunch.md
   - raw/articles/2026-07-13-em-dash-mechanism-unicode-artifacts.md

@@ -6,6 +6,7 @@ confidence: high
 tags: [datum, ocean, template-construction, knots, custom-protocol, hughes]
 volatility: warm
 updated: 2026-07-17
+summary: "OCEAN's protocol for miner-side block-template construction. Orthogonal to TIDES (which is the payout layer). Where TIDES tells you how OCEAN splits the block reward, DATUM tells you who picks which transactions go into the block."
 verified: 2026-07-17
 sources:
   - "raw/articles/2026-05-23-ocean-tides-spec.md"

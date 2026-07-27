@@ -3,7 +3,7 @@ title: "Scaling Noncustodial Mining Payouts with CTV (jamesob, Delving Bitcoin)"
 source: "https://delvingbitcoin.org/t/scaling-noncustodial-mining-payouts-with-ctv/1753"
 type: articles
 ingested: 2026-07-16
-tags: [ctv, mining-payout, noncustodial, coinbase, coinbase-maturity, fanout, cpfp, anyonecanpay, jamesob, delving-bitcoin]
+tags: [ctv, mining-payout, non-custodial, coinbase, coinbase-maturity, fanout, cpfp, anyonecanpay, jamesob, delving-bitcoin]
 summary: "The canonical CTV-based noncustodial mining-payout design (jamesob). The coinbase's own scriptPubKey carries a single tiny consensus-enforced CTV commitment to a fanout transaction of arbitrary size — so NO advance signature over the coinbase is needed at all, sidestepping the unknown-txid and amount-commitment problems. Maturity handled explicitly ('it will sit for 100 blocks until it becomes valid to mine'); post-maturity fee-bumping via anchor-output CPFP or SIGHASH_ANYONECANPAY crowdsourcing."
 ---
 

@@ -1,11 +1,12 @@
 ---
 title: "OCEAN DATUM Gateway — pool tag + per-miner coinbase tag (precedent)"
-source_url: https://github.com/OCEAN-xyz/datum_gateway
+source: https://github.com/OCEAN-xyz/datum_gateway
+type: articles
 source_type: code-readme
 ingested: 2026-05-28
 credibility: medium
 confidence: medium
-tags: [OCEAN, DATUM, BIP-22, coinbase-tag, primary-tag, secondary-tag, decentralized-mining]
+tags: [ocean, datum, BIP-22, coinbase-tag, primary-tag, secondary-tag, decentralized-mining]
 ---
 
 # OCEAN DATUM — the closest production precedent for per-miner coinbase tagging

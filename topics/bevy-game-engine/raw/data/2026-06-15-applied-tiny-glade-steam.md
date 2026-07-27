@@ -1,6 +1,6 @@
 ---
 title: "Tiny Glade on Steam — store page (Pounce Light)"
-source_url: https://store.steampowered.com/app/2198150/Tiny_Glade/
+source: https://store.steampowered.com/app/2198150/Tiny_Glade/
 source_date: 2024-09-23
 ingested: 2026-06-15
 type: data

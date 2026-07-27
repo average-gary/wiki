@@ -1,10 +1,12 @@
 ---
 title: "Prior art — coinbase & pool-transparency tooling"
-type: concept
+category: concept
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
 tags: [miningpool-observer, stratum.work, datum, job-declaration, 0xB10C, transparency, prior-art]
+summary: "What already exists, what each verifies, and the gap this daemon fills."
 ---
 
 # Prior art — coinbase & pool-transparency tooling
@@ -56,3 +58,5 @@ unoccupied.
 - [[wiki/topics/what-the-daemon-can-and-cannot-prove]]
 - [[../datum/_index|datum]]
 - [[../bitcoin-mining-payout-schemas/_index|bitcoin-mining-payout-schemas]]
+- [[../topics/daemon-build-playbook.md|Build playbook — SV2 coinbase-verify daemon]]
+- [[deviation-detection.md|Deviation detection — job-diff + on-chain correlation]]

@@ -1,7 +1,7 @@
 ---
 title: "Aslan, Deep Magic, and Deeper Magic: C.S. Lewis's Two-Tier Theology of Magic"
 source: "https://en.wikipedia.org/wiki/Aslan"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: unknown
 tags: [magic, theology, lewis, narnia, deep-magic, logos]

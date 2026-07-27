@@ -1,11 +1,13 @@
 ---
 title: Interruption Rhythm — the core His Words mechanic
-type: concept
+category: concept
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, mechanic, core-concept, differentiation]
+summary: "The core His Words mechanic is time-based interruption during ongoing use, not a one-time gate at app open. Every N minutes that the user is inside Instagram / TikTok / X / YouTube, a Scripture screen interrupts the session. The cue is *duration of use*, not *moment of launch*."
 sources:
   - raw/articles/2026-06-23-competitors-psalmo.md
   - raw/articles/2026-06-23-competitors-prayer-lock.md

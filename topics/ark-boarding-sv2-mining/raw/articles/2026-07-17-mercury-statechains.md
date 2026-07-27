@@ -1,7 +1,7 @@
 ---
 title: "Mercury Layer / statechains — adjacent covenantless mechanism"
 source: https://docs.mercurylayer.com/docs/intro/
-type: article
+type: articles
 ingested: 2026-07-17
 credibility: medium
 direction: nuances

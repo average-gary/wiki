@@ -1,12 +1,12 @@
 ---
 title: "Stratum V2 spec — 07 Template Distribution Protocol + sv2-tp Template Provider"
-source_url: https://github.com/stratum-mining/sv2-spec/blob/main/07-Template-Distribution-Protocol.md
+source: https://github.com/stratum-mining/sv2-spec/blob/main/07-Template-Distribution-Protocol.md
 source_url_2: https://github.com/stratum-mining/sv2-tp
-type: article
-retrieved: 2026-07-21
+type: articles
+ingested: 2026-07-21
 credibility: high
 corroboration: "prior-art agent"
-tags: [stratum-v2, template-distribution, NewTemplate, coinbase_tx_value_remaining, CoinbaseOutputConstraints, sv2-tp, template-provider]
+tags: [stratum-v2, template-distribution, newtemplate, coinbase_tx_value_remaining, CoinbaseOutputConstraints, sv2-tp, template-provider]
 summary: "SV2 Template Distribution Protocol — push-based getblocktemplate replacement. NewTemplate carries coinbase_prefix, coinbase_tx_outputs, coinbase_tx_value_remaining (subsidy+fees), so a miner can compute the EXPECTED coinbase value. Template Provider ships as Bitcoin Core or the standalone C++ sv2-tp binary."
 ---
 

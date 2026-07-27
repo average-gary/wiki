@@ -1,6 +1,6 @@
 ---
 title: Cherry Training Systems
-type: reference
+category: reference
 created: 2026-05-26
 updated: 2026-05-26
 verified: 2026-05-26
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [cherry, training-systems, central-leader, kgb, spanish-bush, ufo]
+summary: "Sweet cherry's natural vigor and apical dominance demand active training — without it, the tree forms one tall whip with sparse, narrow-angled scaffolds. PNW 667 (Long, Lang, Musacchi, Whiting 2015) catalogs eight systems; this article summarizes the four most relevant to home orchards."
 sources:
   - "[[raw/articles/2026-05-26-cherry-osu-pnw667-training-systems]]"
   - "[[raw/articles/2026-05-26-cherry-raintree-home-orchard-pruning]]"

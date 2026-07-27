@@ -1,6 +1,6 @@
 ---
 title: "Covenantless n-of-n batch output mechanics (the CTV substitute)"
-type: concept
+category: concept
 created: 2026-07-17
 updated: 2026-07-17
 confidence: high
@@ -74,3 +74,5 @@ this exit cannot execute until the coinbase matures — see
 - [[post-block-found-signing.md|Post-block-found signing]] — why signing over the coinbase works at all
 - [[pure-receiver-and-liveness.md|Pure-receiver / liveness problem]] — the cost of the "all pre-sign" requirement
 - [[../../../covenantless-ark/wiki/concepts/tree-presigning-musig2|tree presigning (covenantless-ark)]]
+- [[sv2-extension-surface.md|The SV2 extension surface for a cosigning ceremony]]
+- [[../topics/thesis-analysis-viability.md|Is a covenantless post-block-found Ark boarding SV2 extension viable today? — analysis]]

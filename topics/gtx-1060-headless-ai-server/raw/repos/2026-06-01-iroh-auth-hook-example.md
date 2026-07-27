@@ -1,7 +1,7 @@
 ---
 title: "iroh examples/auth-hook.rs and irpc-iroh/examples/auth.rs — token-handshake patterns"
 source: https://github.com/n0-computer/iroh/blob/main/iroh/examples/auth-hook.rs, https://github.com/n0-computer/irpc/blob/main/irpc-iroh/examples/auth.rs
-type: repo
+type: repos
 tags: [iroh, auth-hook, irpc, example, token, handshake, alpn]
 date: 2026-06-01
 quality: 5

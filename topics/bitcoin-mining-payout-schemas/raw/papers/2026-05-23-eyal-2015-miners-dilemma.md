@@ -3,8 +3,8 @@ title: "The Miner's Dilemma"
 authors: [Ittay Eyal]
 year: 2015
 venue: IEEE Symposium on Security and Privacy
-url: https://arxiv.org/abs/1411.7099
-type: paper
+source: https://arxiv.org/abs/1411.7099
+type: papers
 ingested: 2026-05-23
 quality: 5
 credibility: high

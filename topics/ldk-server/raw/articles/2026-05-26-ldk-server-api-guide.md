@@ -1,7 +1,7 @@
 ---
 title: "LDK Server — API Guide (gRPC surface, auth, methods)"
-source_url: https://github.com/lightningdevkit/ldk-server/blob/main/docs/api-guide.md
-type: article
+source: https://github.com/lightningdevkit/ldk-server/blob/main/docs/api-guide.md
+type: articles
 ingested: 2026-05-26
 tags: [ldk-server, grpc, api, authentication, hmac]
 quality: 5

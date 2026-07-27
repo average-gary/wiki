@@ -1,8 +1,10 @@
 ---
 title: Unciv Copyright Posture
-type: concept
+category: concept
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "Unciv is open about being a \"remake of Civ V\" — not \"inspired by,\" not generic 4X. This is unusual; many civ-clones genericize their language to avoid drawing IP attention. Unciv does the opposite, *and* publishes its own legal reasoning."
 confidence: high
 sources:
   - raw/repos/2026-06-18-unciv.md

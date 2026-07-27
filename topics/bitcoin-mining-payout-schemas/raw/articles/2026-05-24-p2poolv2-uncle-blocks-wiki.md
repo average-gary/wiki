@@ -1,8 +1,8 @@
 ---
 title: "p2poolv2 wiki: Uncle Blocks"
 publication: github.com/p2poolv2/p2poolv2/wiki
-url: https://github.com/p2poolv2/p2poolv2/wiki/Uncle-Blocks
-type: article
+source: https://github.com/p2poolv2/p2poolv2/wiki/Uncle-Blocks
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high

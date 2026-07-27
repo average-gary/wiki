@@ -1,10 +1,11 @@
 ---
 title: "iOS xcframework + Android AAR shipping pipeline"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: warm
+summary: "UniFFI generates the binding code; packaging is your job. Two parallel pipelines you'll maintain in CI:"
 confidence: high
 sources:
   - raw/repos/2026-05-21-application-services.md

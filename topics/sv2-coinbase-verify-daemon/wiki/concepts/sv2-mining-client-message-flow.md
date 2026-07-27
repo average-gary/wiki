@@ -1,10 +1,12 @@
 ---
 title: "SV2 mining-client message flow"
-type: concept
+category: concept
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
-tags: [stratum-v2, mining-client, SetupConnection, OpenExtendedMiningChannel, NewExtendedMiningJob, SetNewPrevHash, noise]
+tags: [stratum-v2, mining-client, setup-connection, OpenExtendedMiningChannel, NewExtendedMiningJob, SetNewPrevHash, noise]
+summary: "The ordered sequence a downstream daemon follows to connect to a Stratum V2 pool and start receiving jobs. Confirmed against the spec and the SRI reference client."
 ---
 
 # SV2 mining-client message flow

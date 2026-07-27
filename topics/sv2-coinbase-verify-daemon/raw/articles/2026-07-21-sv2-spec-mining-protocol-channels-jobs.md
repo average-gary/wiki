@@ -1,8 +1,8 @@
 ---
 title: "Stratum V2 spec — 05 Mining Protocol (channels, jobs, coinbase split)"
-source_url: https://github.com/stratum-mining/sv2-spec/blob/main/05-Mining-Protocol.md
-type: article
-retrieved: 2026-07-21
+source: https://github.com/stratum-mining/sv2-spec/blob/main/05-Mining-Protocol.md
+type: articles
+ingested: 2026-07-21
 credibility: high
 corroboration: "Cited independently by 3 research agents (client-flow, coinbase-structure, trust-model)"
 tags: [stratum-v2, mining-protocol, NewMiningJob, NewExtendedMiningJob, standard-channel, extended-channel, coinbase_tx_prefix, coinbase_tx_suffix, merkle_path]

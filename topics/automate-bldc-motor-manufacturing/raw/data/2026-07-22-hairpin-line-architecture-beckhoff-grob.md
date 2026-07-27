@@ -6,7 +6,7 @@ type: data
 tags: [line-architecture, takt-time, flexible-transport, xts, hairpin, ev-traction]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Best concrete real-numbers example of modern EV traction-motor line architecture and the shift to software-defined flexible transport.
 ---
 

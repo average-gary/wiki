@@ -3,9 +3,11 @@ title: Competitive precedents — secular pause-prompt and faith-blocker referen
 type: tool
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, competitive, precedent, tools]
+summary: "Apps to study, cite, and reference when designing His Words. Some are direct competitors; others are technical/behavioral precedents with no audience overlap. The list below is operational — these are the apps that should be installed on a test device and dissected during product design."
 sources:
   - raw/articles/2026-06-23-ios-app-store-approval-precedent.md
   - raw/articles/2026-06-23-ios-implementation-patterns.md

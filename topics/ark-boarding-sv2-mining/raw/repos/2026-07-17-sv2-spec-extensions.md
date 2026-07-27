@@ -1,7 +1,7 @@
 ---
 title: "Stratum V2 spec — 09-Extensions + 0x0001 negotiation"
 source: https://github.com/stratum-mining/sv2-spec/blob/main/09-Extensions.md
-type: repo
+type: repos
 ingested: 2026-07-17
 credibility: high
 direction: supports

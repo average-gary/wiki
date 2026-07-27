@@ -1,7 +1,7 @@
 ---
 title: "Briar BHP — Bramble Handshake Protocol"
 source: https://code.briarproject.org/briar/briar-spec/-/raw/master/protocols/BHP.md
-type: paper
+type: papers
 tags: [briar, bhp, handshake, qr, ecdh, oob, pairing]
 date: 2026-06-01
 quality: 4

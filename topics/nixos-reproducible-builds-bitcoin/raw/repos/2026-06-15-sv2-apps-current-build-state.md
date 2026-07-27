@@ -1,7 +1,7 @@
 ---
 title: "sv2-apps current OCI build state (2026-06-15 snapshot)"
-type: repo
-source_url: https://github.com/stratum-mining/sv2-apps
+type: repos
+source: https://github.com/stratum-mining/sv2-apps
 ingested: 2026-06-15
 confidence: high
 relevance: direct

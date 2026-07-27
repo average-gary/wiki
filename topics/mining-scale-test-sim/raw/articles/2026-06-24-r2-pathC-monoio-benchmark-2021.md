@@ -1,7 +1,7 @@
 ---
 title: "Monoio official benchmark (Dec 2021): the canonical 2-3x-tokio claim"
-source_url: https://github.com/bytedance/monoio/blob/master/docs/en/benchmark.md
-type: article
+source: https://github.com/bytedance/monoio/blob/master/docs/en/benchmark.md
+type: articles
 ingested: 2026-06-24
 quality: 4
 confidence: medium

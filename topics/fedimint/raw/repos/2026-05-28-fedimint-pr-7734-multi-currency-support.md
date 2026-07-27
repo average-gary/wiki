@@ -2,8 +2,8 @@
 title: "PR #7734 — chore: multi-currency support (dpc, merged 2025-10-19)"
 type: raw
 source_type: repos
-source_url: https://github.com/fedimint/fedimint/pull/7734
-fetched: 2026-05-28
+source: https://github.com/fedimint/fedimint/pull/7734
+ingested: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 quality: 5

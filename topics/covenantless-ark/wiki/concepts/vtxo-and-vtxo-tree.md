@@ -1,6 +1,6 @@
 ---
 title: "VTXOs and the VTXO tree"
-type: concept
+category: concept
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high
@@ -81,6 +81,7 @@ Every VTXO carries a bounded **lifetime** (~28-30 days standard, ~3 days for Lig
 - [[vtxo-lifetime-and-expiry.md|VTXO lifetime and expiry]]
 - [[lightning-integration.md|Lightning integration]]
 - [[../reference/clark-glossary-and-timelocks.md|Glossary + timelock reference]]
+- [[boarding.md|Boarding — getting on-chain funds into a VTXO]]
 
 ## Sources
 

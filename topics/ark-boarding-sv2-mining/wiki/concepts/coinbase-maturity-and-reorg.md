@@ -1,6 +1,6 @@
 ---
 title: "Coinbase maturity & reorg constraints on a post-block-found batch"
-type: concept
+category: concept
 created: 2026-07-17
 updated: 2026-07-17
 confidence: high

@@ -1,7 +1,7 @@
 ---
 title: Apple Family Sharing & Google Family Link — The Free Defaults Most Families Already Have
 source: https://support.apple.com/en-us/HT201304 + https://families.google/familylink/
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, accountability, family-mode, apple-family-sharing, google-family-link, screen-time, baseline-controls]
 quality: 4

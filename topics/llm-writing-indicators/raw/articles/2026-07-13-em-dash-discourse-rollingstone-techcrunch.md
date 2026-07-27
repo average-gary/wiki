@@ -3,7 +3,7 @@ title: "The 2025 em-dash discourse: 'ChatGPT hyphen' and OpenAI's fix"
 source: https://www.rollingstone.com/culture/culture-features/chatgpt-hypen-em-dash-ai-writing-1235314945/
 authors: Miles Klee (Rolling Stone); Sarah Perez (TechCrunch)
 venue: Rolling Stone (11 Apr 2025) + TechCrunch (14 Nov 2025)
-type: article
+type: articles
 tags: [llm-writing-indicators, em-dash, typography, model-drift, false-positives, altman]
 quality: 5
 confidence: high

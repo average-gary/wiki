@@ -1,8 +1,8 @@
 ---
 title: "NUT-05: Melting tokens"
-type: paper
+type: papers
 source: https://github.com/cashubtc/nuts/blob/main/05.md
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [cashu, nut-05, melt-quote, bolt11, spec]
 summary: Canonical Cashu withdrawal flow. Two-step melt quote → melt with proofs. Sync default; async via prefer_async. UNPAID → PENDING → PAID state machine.

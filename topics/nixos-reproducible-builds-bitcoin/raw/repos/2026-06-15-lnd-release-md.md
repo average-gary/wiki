@@ -4,7 +4,7 @@ sources:
   - https://github.com/lightningnetwork/lnd/blob/master/docs/release.md
   - https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/release.sh
   - https://raw.githubusercontent.com/lightningnetwork/lnd/master/scripts/keys/roasbeef.asc
-type: repo
+type: repos
 maintainer: Lightning Labs (Olaoluwa Osuntokun / roasbeef + co-maintainers)
 year: ongoing (Go 1.13+ era; current as of 2026-06)
 ingested: 2026-06-15

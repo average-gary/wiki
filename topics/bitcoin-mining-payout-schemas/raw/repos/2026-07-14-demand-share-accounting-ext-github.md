@@ -2,7 +2,7 @@
 title: "demand-open-source/share-accounting-ext — SV2 Share Accounting Extension"
 url: https://github.com/demand-open-source/share-accounting-ext
 source: "https://github.com/demand-open-source/share-accounting-ext"
-type: repo
+type: repos
 language: Rust (no_std-capable)
 license: MIT OR Apache-2.0
 crate_version: 0.0.13

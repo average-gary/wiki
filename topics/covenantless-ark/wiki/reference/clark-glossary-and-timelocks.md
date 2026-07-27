@@ -1,6 +1,6 @@
 ---
 title: "Reference: clArk glossary, terminology map, and timelock table"
-type: reference
+category: reference
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high
@@ -137,6 +137,7 @@ Worked example: 100,000 sat VTXO, 5 days remaining, 5% opportunity rate → **68
 - [[../concepts/vtxo-lifetime-and-expiry.md|VTXO lifetime and expiry]]
 - [[../concepts/ark-addresses-and-delivery.md|Ark addresses and VTXO delivery]]
 - [[../../raw/_index.md|Raw sources]]
+- [[../concepts/vtxo-and-vtxo-tree.md|VTXOs and the VTXO tree]]
 
 ## Sources
 

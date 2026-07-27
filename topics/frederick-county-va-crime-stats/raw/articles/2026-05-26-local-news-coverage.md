@@ -1,7 +1,7 @@
 ---
 title: "Local news coverage of FrCo / Winchester crime (2023-2026)"
 publication: Winchester Star + Royal Examiner + WHSV + WTOP
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 3
 credibility: medium

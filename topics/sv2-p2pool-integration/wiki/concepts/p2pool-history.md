@@ -1,10 +1,11 @@
 ---
 title: P2Pool lineage
-type: concept
+category: concept
 created: 2026-05-22
 updated: 2026-05-22
 verified: 2026-05-22
 volatility: cold
+summary: "Timeline of the decentralized-pool design lineage and its convergence with Stratum V2."
 confidence: high
 sources:
   - "[[raw/articles/2026-05-22-bitcointalk-p2pool-original|bitcointalk: original P2Pool announcement]]"

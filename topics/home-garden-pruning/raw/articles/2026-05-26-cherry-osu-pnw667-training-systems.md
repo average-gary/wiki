@@ -1,7 +1,7 @@
 ---
 title: "Cherry Training Systems (PNW 667)"
-source_url: "https://extension.oregonstate.edu/catalog/pub/pnw-667-cherry-training-systems"
-type: article
+source: "https://extension.oregonstate.edu/catalog/pub/pnw-667-cherry-training-systems"
+type: articles
 path: cherry
 date_ingested: 2026-05-26
 date_published: 2015-06-01

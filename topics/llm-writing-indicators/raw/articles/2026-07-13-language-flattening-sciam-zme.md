@@ -3,7 +3,7 @@ title: "ChatGPT is changing the words we use in conversation / people are talkin
 source: https://www.scientificamerican.com/article/chatgpt-is-changing-the-words-we-use-in-conversation/
 authors: Vanessa Bates Ramirez (Scientific American); Tibi Puiu (ZME Science)
 venue: Scientific American (11 Jul 2025) + ZME Science (15 Jul 2025)
-type: article
+type: articles
 tags: [llm-writing-indicators, language-flattening, homogenization, spoken-language, delve]
 quality: 4
 confidence: high

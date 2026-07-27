@@ -1,7 +1,7 @@
 ---
 title: "TRMNL Private Plugins / Recipes — building a Bitcoin screen"
 source: https://docs.trmnl.com/go/private-plugins/templates
-type: article
+type: articles
 tags: [trmnl, private-plugin, recipe, liquid, webhook, polling-url, bitcoin, mempool, template]
 date: 2026-07-20
 quality: 4

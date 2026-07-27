@@ -1,10 +1,12 @@
 ---
 title: "Bevy Foundation"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, foundation, governance, 501c3, funding]
+summary: "Washington-state nonprofit, 501(c)(3) public charity. Incorporated 2024-03-11, charity status granted 2024-09-25 (foundation page). Donations from US taxpayers are tax-deductible."
 ---
 
 # Bevy Foundation

@@ -1,7 +1,8 @@
 ---
 title: Connection vs validation bottleneck — concrete crossover math
+type: notes
 source_type: notes
-fetched: 2026-06-24
+ingested: 2026-06-24
 path: 4
 tags: [scale-test, vardiff, share-validation, crossover, math]
 ---

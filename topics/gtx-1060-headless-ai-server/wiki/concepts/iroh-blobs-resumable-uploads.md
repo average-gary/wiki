@@ -1,6 +1,6 @@
 ---
 title: "iroh-blobs — resumable, BLAKE3-verified uploads"
-type: concept
+category: concept
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-06-01-blake3-bench-data.md
   - raw/articles/2026-06-01-tus-resumable-upload-protocol.md
 tags: [iroh-blobs, blake3, bao, verified-streaming, fs-store, resumable]
+summary: "The \"send a 5 GB video to my AI server, survive Wi-Fi drops\" pattern. Also: model weight distribution, dataset replication, multi-receiver fan-out."
 ---
 
 # iroh-blobs — resumable uploads with BLAKE3 verification
@@ -145,3 +146,4 @@ The repo still says "version 0.35 is recommended for production use" — that's 
 - [[multi-alpn-router-pattern]] — how to expose this on the same Endpoint as moq + ssh
 - [[iroh-tickets-and-qr-pairing]] — how clients find the server
 - [[iroh-application-patterns-2026-synthesis]]
+- [[moq-over-iroh-pattern.md|Media-over-QUIC over Iroh — moq-lite + moq-relay on iroh transport]]

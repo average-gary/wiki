@@ -1,7 +1,7 @@
 ---
 title: "Boring Cactus 2025 Survey of Rust GUI Libraries — accessibility-focused comparison"
 source: https://www.boringcactus.com/2025/04/13/2025-survey-of-rust-gui-libraries.html
-type: article
+type: articles
 tags: [rust-gui, comparison, accessibility, ime, survey, boring-cactus]
 date: 2026-05-21
 quality: 5

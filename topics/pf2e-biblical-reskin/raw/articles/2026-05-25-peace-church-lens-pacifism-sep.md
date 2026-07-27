@@ -1,7 +1,7 @@
 ---
 title: "Pacifism — Stanford Encyclopedia of Philosophy"
 source: "https://plato.stanford.edu/entries/pacifism/"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [denomination, pacifism, peace-church, hauerwas, yoder, ethics, gap-closing]
 quality: 5

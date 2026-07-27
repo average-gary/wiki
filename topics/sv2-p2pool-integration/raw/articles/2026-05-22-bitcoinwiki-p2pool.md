@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin Wiki — P2Pool"
-source_url: https://en.bitcoin.it/wiki/P2Pool
+source: https://en.bitcoin.it/wiki/P2Pool
 type: wiki-article
 ingested: 2026-05-22
 quality: 4

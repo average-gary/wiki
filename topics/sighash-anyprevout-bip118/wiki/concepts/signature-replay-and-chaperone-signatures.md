@@ -82,6 +82,7 @@ look "not powerful enough" versus CTV/CAT to justify a soft fork (see
 - [[rebindable-signatures|Rebindable signatures]] ([Rebindable signatures](rebindable-signatures.md)) — replay is the flip side of rebinding
 - [[anyprevout-sighash-semantics|ANYPREVOUT sighash semantics]] ([ANYPREVOUT sighash semantics](anyprevout-sighash-semantics.md)) — the 0x01 opt-in and tapscript scoping
 - [[coinbase-outpoint-presigning|Presigning against an unmined coinbase outpoint]] ([Presigning against an unmined coinbase outpoint](../topics/coinbase-outpoint-presigning.md)) — replay discipline in a pool-payout setting
+- [[../topics/anyprevout-status-and-activation.md|BIP-118 status & activation]]
 
 ## Sources
 

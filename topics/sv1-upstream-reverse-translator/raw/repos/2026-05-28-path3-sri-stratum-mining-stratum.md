@@ -1,7 +1,7 @@
 ---
 title: "SRI — stratum-mining/stratum repository"
 url: https://github.com/stratum-mining/stratum
-type: repo
+type: repos
 source: github.com
 captured: 2026-05-28
 quality: 8

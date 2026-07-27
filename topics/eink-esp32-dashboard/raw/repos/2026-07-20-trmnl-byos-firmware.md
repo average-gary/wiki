@@ -1,7 +1,7 @@
 ---
 title: "TRMNL BYOS + firmware (usetrmnl, olivrrrr Waveshare fork)"
 source: https://docs.trmnl.com/go/diy/byos
-type: repo
+type: repos
 tags: [trmnl, byos, thin-client, server-render, esp32, waveshare, firmware, self-hosted]
 date: 2026-07-20
 quality: 5

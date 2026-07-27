@@ -1,7 +1,7 @@
 ---
 title: "Kernel Bypass Surgery: A Viable Procedure for Maximizing QUIC Bandwidth?"
-source_url: https://zirngibl.github.io/files/spaeth2026quicbypass.pdf
-type: paper
+source: https://zirngibl.github.io/files/spaeth2026quicbypass.pdf
+type: papers
 date: 2026
 authors: ["Späth et al."]
 venue: IEEE NOMS 2026 (TUM / MPI)

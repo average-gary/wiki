@@ -1,26 +1,27 @@
 ---
 title: "Worldbuilding tool landscape 2026"
-type: concept
+category: concept
 created: 2026-05-24
 updated: 2026-05-24
 verified: 2026-05-24
 volatility: high
 confidence: medium
 sources:
-  - "[[2026-05-24-wb-tool-landscape-legendkeeper-pricing]]"
-  - "[[2026-05-24-wb-tool-landscape-legendkeeper-product]]"
-  - "[[2026-05-24-wb-tool-landscape-kanka-overview]]"
-  - "[[2026-05-24-wb-tool-landscape-world-anvil-blog]]"
-  - "[[2026-05-24-wb-tool-landscape-foundry-vtt]]"
-  - "[[2026-05-24-wb-tool-landscape-novelcrafter]]"
-  - "[[2026-05-24-wb-tool-landscape-fantasy-statblocks]]"
-  - "[[2026-05-24-wb-tool-landscape-initiative-tracker]]"
-  - "[[2026-05-24-wb-tool-landscape-campfire-plottr-inkarnate]]"
-  - "[[2026-05-24-reddit-world-anvil-ux-complaints]]"
-  - "[[2026-05-24-reddit-kanka-vs-world-anvil]]"
-  - "[[2026-05-24-reddit-pf2e-obsidian-and-tools]]"
-  - "[[2026-05-24-reddit-pf2e-ai-gm-sentiment]]"
+  - "[[../../raw/articles/2026-05-24-wb-tool-landscape-legendkeeper-pricing]]"
+  - "[[../../raw/articles/2026-05-24-wb-tool-landscape-legendkeeper-product]]"
+  - "[[../../raw/articles/2026-05-24-wb-tool-landscape-kanka-overview]]"
+  - "[[../../raw/articles/2026-05-24-wb-tool-landscape-world-anvil-blog]]"
+  - "[[../../raw/articles/2026-05-24-wb-tool-landscape-foundry-vtt]]"
+  - "[[../../raw/articles/2026-05-24-wb-tool-landscape-novelcrafter]]"
+  - "[[../../raw/repos/2026-05-24-wb-tool-landscape-fantasy-statblocks]]"
+  - "[[../../raw/repos/2026-05-24-wb-tool-landscape-initiative-tracker]]"
+  - "[[../../raw/articles/2026-05-24-wb-tool-landscape-campfire-plottr-inkarnate]]"
+  - "[[../../raw/articles/2026-05-24-reddit-world-anvil-ux-complaints]]"
+  - "[[../../raw/articles/2026-05-24-reddit-kanka-vs-world-anvil]]"
+  - "[[../../raw/articles/2026-05-24-reddit-pf2e-obsidian-and-tools]]"
+  - "[[../../raw/articles/2026-05-24-reddit-pf2e-ai-gm-sentiment]]"
 tags: [worldbuilding, tool-comparison, kanka, world-anvil, legendkeeper, foundry, obsidian, novelcrafter, market-gap, user-sentiment]
+summary: "Map of where worldbuilding tools sit in 2026, what each does well, and the specific gap a PF2e-native + LLM-native desktop tool fills."
 ---
 
 # Worldbuilding tool landscape 2026

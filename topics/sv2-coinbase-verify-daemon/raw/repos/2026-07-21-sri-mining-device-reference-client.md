@@ -1,12 +1,12 @@
 ---
 title: "SRI mining-device — the reference downstream SV2 client (sv2-apps)"
-source_url: https://github.com/stratum-mining/sv2-apps/blob/main/integration-tests/lib/mining_device/mod.rs
+source: https://github.com/stratum-mining/sv2-apps/blob/main/integration-tests/lib/mining_device/mod.rs
 source_url_2: https://github.com/stratum-mining/sv2-apps/blob/main/integration-tests/bin/mining_device.rs
-type: repo
-retrieved: 2026-07-21
+type: repos
+ingested: 2026-07-21
 credibility: high
 corroboration: "rust-stack agent (primary source, ~1085 lines)"
-tags: [stratum-v2, SRI, sv2-apps, mining-device, reference-client, noise, SetupConnection, OpenStandardMiningChannel, tokio]
+tags: [stratum-v2, sri, sv2-apps, mining-device, reference-client, noise, setup-connection, OpenStandardMiningChannel, tokio]
 summary: "The SRI reference CPU-mining client: the minimal working connect → Noise handshake → SetupConnection → open-channel → receive-job → hash → submit loop. Uses a STANDARD channel (so it never sees the coinbase) — the skeleton to adapt for an extended-channel coinbase-check daemon."
 ---
 

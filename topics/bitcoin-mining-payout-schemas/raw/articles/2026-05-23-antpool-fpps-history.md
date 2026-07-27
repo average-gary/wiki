@@ -1,14 +1,14 @@
 ---
 title: "AntPool FPPS adoption history (corrected timeline)"
 publication: bitcointalk + AntPool Zendesk + Tovanich 2022
-url: https://bitcointalk.org/index.php?topic=1808582.0
+source: https://bitcointalk.org/index.php?topic=1808582.0
 url2: https://antpoolsupport-hc.zendesk.com/hc/en-us/articles/5983010227993
-type: article
+type: articles
 ingested: 2026-05-23
 quality: 5
 credibility: high
 confidence: high
-tags: [AntPool, FPPS, PPS+, history, Bitmain, BTC.com]
+tags: [antpool, fpps, PPS+, history, bitmain, BTC.com]
 ---
 
 # AntPool FPPS Adoption — Corrected Timeline

@@ -1,10 +1,10 @@
 ---
 title: "FCSO + Winchester Sheriff + NRADC — staffing & state-funded budget"
 publication: VA Compensation Board
-url: https://www.scb.virginia.gov/docs/fy19staffstd307.pdf
+source: https://www.scb.virginia.gov/docs/fy19staffstd307.pdf
 url2: https://www.scb.virginia.gov/docs/Final%20Budget%20Actions%209-28-2023%20Summary%20All%20Offices.pdf
 url3: https://www.scb.virginia.gov/salary_scales/FY26sheriffscale.pdf
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 5
 credibility: high

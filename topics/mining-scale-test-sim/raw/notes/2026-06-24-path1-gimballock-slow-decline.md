@@ -1,6 +1,6 @@
 ---
 title: "gimballock notes — slow-decline safety test (the death-spiral gate)"
-source_url: https://github.com/marafoundation/stratum/blob/vardiff/simulation-framework/sv2/channels-sv2/sim/docs/SLOW_DECLINE_TEST.md
+source: https://github.com/marafoundation/stratum/blob/vardiff/simulation-framework/sv2/channels-sv2/sim/docs/SLOW_DECLINE_TEST.md
 source_branch: vardiff/simulation-framework
 type: notes
 ingested: 2026-06-24

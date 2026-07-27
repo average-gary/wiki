@@ -3,11 +3,11 @@ title: "Vox Deorum: A Hybrid LLM Architecture for 4X / Grand Strategy Game AI â€
 source: https://arxiv.org/abs/2512.18564
 authors: [John Chen, Sihan Cheng, Can Gurkan, Ryan Lay, Moez Salahuddin]
 year: 2025
-type: paper
+type: papers
 ingested: 2026-06-18
 quality: 4
 confidence: medium
-tags: [civ5, civilization-v, LLM, vox-populi, hybrid-AI, 4X-AI]
+tags: [civ5, civilization-v, llm, vox-populi, hybrid-AI, 4X-AI]
 ---
 
 # Vox Deorum: A Hybrid LLM Architecture for 4X / Grand Strategy Game AI

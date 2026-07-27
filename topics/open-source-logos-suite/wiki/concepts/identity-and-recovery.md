@@ -1,6 +1,6 @@
 ---
 title: Identity and Recovery
-type: concept
+category: concept
 created: 2026-05-27
 updated: 2026-06-02
 verified: 2026-06-02
@@ -210,3 +210,5 @@ On total identity loss (no nsec backup, no bunker):
 - [[credible-exit|Credible exit principle]]
 - [[file-over-app|File over app]]
 - [[../topics/engineering-playbook|Engineering playbook]]
+- [[../reference/decentralized-infra-candidates.md|Decentralized Infra Candidates]]
+- [[keyhive-small-group-sync.md|Keyhive: small-group E2EE CRDT sync (Ink & Switch March 2025)]]

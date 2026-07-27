@@ -1,7 +1,7 @@
 ---
 title: "wasm-pack vs Trunk — libraries vs applications"
 source: https://github.com/rustwasm/wasm-pack
-type: article
+type: articles
 tags: [wasm-pack, trunk, build-tool, wasm, web]
 date: 2026-05-21
 quality: 4

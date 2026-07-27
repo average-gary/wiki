@@ -1,7 +1,7 @@
 ---
 title: "Macaroons: Cookies with Contextual Caveats for Decentralized Authorization in the Cloud"
 source: https://research.google/pubs/macaroons-cookies-with-contextual-caveats-for-decentralized-authorization-in-the-cloud/
-type: paper
+type: papers
 tags: [macaroons, capability, hmac, caveats, bearer, attenuation, paper, nsdi]
 date: 2026-06-01
 publication_date: 2014

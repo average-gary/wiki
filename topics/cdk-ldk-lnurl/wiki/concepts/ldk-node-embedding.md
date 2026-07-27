@@ -1,10 +1,12 @@
 ---
 title: "LDK Node embedding inside cdk-mintd"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: high
 tags: [cdk-ldk-node, ldk-node, embedding, config]
+summary: "The cdk-ldk-node crate wraps Arc<ldk_node::Node> and implements MintPayment. When cdk-mintd is built with --features ldk-node and configured with ln_backend = \"ldknode\", the resulting binary runs both the Cashu mint HTTP server and an LDK Node lightning node in one process."
 ---
 
 # LDK Node embedding inside cdk-mintd
@@ -67,3 +69,4 @@ LDK Node side: pinned to v0.7 since CDK v0.16 (PR #1399, 2025-12-14). v0.7 broug
 - [[cdk-architecture-and-backends.md|CDK architecture]]
 - [[ldk-node-footguns.md|LDK Node footguns]]
 - [[lnurl-bridge-pattern.md|LNURL bridge pattern]]
+- [[../topics/deployment-playbook.md|Deployment playbook: CDK + LDK Node + LNURL on one host]]

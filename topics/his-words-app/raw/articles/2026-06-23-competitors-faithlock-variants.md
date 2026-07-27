@@ -1,7 +1,7 @@
 ---
 title: "FaithLock category — five distinct apps competing for the same name"
 source: https://itunes.apple.com/search?term=faithlock&entity=software&limit=10
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, competitor, faithlock, name-collision, market-saturation]
 quality: 5

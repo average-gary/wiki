@@ -1,7 +1,7 @@
 ---
 title: "arkade-os/arkd — batch event handler (tree signing wire schema)"
 source: https://deepwiki.com/arkade-os/arkd/3.4-batch-event-handler-protocol
-type: repo
+type: repos
 ingested: 2026-07-17
 credibility: medium
 direction: supports

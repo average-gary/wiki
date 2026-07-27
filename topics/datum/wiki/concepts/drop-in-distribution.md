@@ -8,7 +8,9 @@ sources:
   - raw/articles/2026-06-01-dropinq5-static-musl-and-coordination.md
 created: 2026-06-01
 updated: 2026-06-01
+volatility: warm
 tags: [packaging, distribution, debian, ppa, docker, startos, musl]
+summary: "How a Rust binary becomes a literal apt install-shaped, cargo install-shaped, Docker-image-shaped drop-in for datum_gateway. From Q5 .deb, Q5 build, Q5 StartOS, Q5 static musl."
 confidence: high
 ---
 
@@ -119,3 +121,4 @@ Or some variation thereof. See [[drop-in-surface-inventory]].
 - [[drop-in-surface-inventory]] — operator-facing surface inventory
 - [[datum-protocol-rust-implementation]] — `dryoc` choice that enables musl-static
 - [[switch-day-runbook]] — operator-facing migration procedure
+- [[../topics/drop-in-rust-datum-gateway.md|Drop-in Rust DATUM gateway — synthesis]]

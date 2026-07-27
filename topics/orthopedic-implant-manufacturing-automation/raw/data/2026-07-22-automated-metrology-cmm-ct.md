@@ -8,7 +8,7 @@ type: data
 tags: [metrology, cmm, automation, industrial-ct, additive-manufacturing, porosity, gd-t, optical-comparator, inspection]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Automated dimensional metrology stack — Zeiss ShuttleLoad/MultiLoad pallet loaders for unmanned CMM shifts, in-line integration logic, industrial CT as the only NDT for AM internal lattice/porosity (detects trapped powder), and VisionGauge optical GD&T (±0.0001").
 ---
 

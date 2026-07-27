@@ -1,10 +1,11 @@
 ---
 title: "Rust Multi-Platform — synthesis"
-type: topic
+category: topic
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: warm
+summary: "Single-page summary tying the four scopes together."
 confidence: high
 compiled-from: conversation
 ---

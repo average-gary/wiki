@@ -1,7 +1,7 @@
 ---
 title: "iroh memory growth — issues #3565 (idle endpoint) and #3963 (Router span leak)"
 source: https://github.com/n0-computer/iroh/issues/3565, https://github.com/n0-computer/iroh/issues/3963
-type: article
+type: articles
 tags: [iroh, bug, memory-leak, router, accept, instrumentation, contrarian]
 date: 2026-06-01
 quality: 4

@@ -1,7 +1,7 @@
 ---
 title: "Reddit r/Pathfinder_RPG — repeated 'Pathfinder god similar to Jesus' threads (2013, 2018, 2025)"
 source: "https://www.reddit.com/r/Pathfinder_RPG/comments/1jple1y/pathfinder_god_similar_to_jesus/"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, christian-homebrew, pf1, community, fan-content, gap-closing, jesus-cleric]
 quality: 4

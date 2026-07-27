@@ -1,7 +1,7 @@
 ---
 title: "CLINK Issue #6 — CLINK over Namecoin: NIP-05 discovery without HTTPS"
 source: https://github.com/shocknet/CLINK/issues/6
-type: article
+type: articles
 ingested: 2026-06-09
 path: spec-primitives
 quality: 3

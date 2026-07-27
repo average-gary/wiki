@@ -1,7 +1,7 @@
 ---
 title: "Home Garden Blackberries — UGA Extension Circular C766"
-source_url: "https://fieldreport.caes.uga.edu/publications/C766/"
-type: article
+source: "https://fieldreport.caes.uga.edu/publications/C766/"
+type: articles
 path: blackberry
 date_ingested: 2026-05-26
 date_published: unknown

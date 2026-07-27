@@ -1,7 +1,7 @@
 ---
 title: SYSTEM_ALERT_WINDOW — overlay permission, Android 10/12/14/15 restrictions, foreground-service requirement
 source: https://developer.android.com/reference/android/Manifest.permission#SYSTEM_ALERT_WINDOW
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, android, system-alert-window, overlay, foreground-service]
 quality: 4

@@ -1,8 +1,8 @@
 ---
 title: "ldk-server — Bolt11InvoiceDescription Hash plumbing (production proof)"
-type: repo
+type: repos
 source: https://github.com/lightningdevkit/ldk-server/blob/main/ldk-server/src/util/proto_adapter.rs
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [ldk-server, description-hash, grpc, production-evidence]
 summary: ldk-server (the canonical LDK daemon) accepts a hash variant on its gRPC Bolt11InvoiceDescription, decodes hex to 32 bytes, constructs Bolt11InvoiceDescription::Hash, and passes it to ldk-node's bolt11_payment().receive(). Production proof the API works end-to-end.

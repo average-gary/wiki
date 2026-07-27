@@ -1,10 +1,12 @@
 ---
 title: "CDK architecture and lightning backends"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: high
 tags: [cdk, architecture, mint-payment, ldk-node]
+summary: "Cashu Dev Kit (cashubtc/cdk) is a Rust workspace. The pieces relevant to LNURL deployment:"
 ---
 
 # CDK architecture and lightning backends
@@ -62,3 +64,4 @@ Implication: deploying LNURL on a CDK mint requires an external bridge — see [
 - [[ldk-node-embedding.md|LDK Node embedding inside cdk-mintd]]
 - [[lnurl-bridge-pattern.md|LNURL bridge pattern]]
 - [[../../ldk-server/wiki/concepts/ldk-vs-ldk-node-vs-ldk-server.md|LDK vs LDK Node vs LDK Server]] (adjacent wiki)
+- [[../topics/deployment-playbook.md|Deployment playbook: CDK + LDK Node + LNURL on one host]]

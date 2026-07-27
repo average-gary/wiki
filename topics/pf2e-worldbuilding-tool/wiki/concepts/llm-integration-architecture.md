@@ -1,21 +1,22 @@
 ---
 title: "LLM integration architecture for a PF2e GM tool"
-type: concept
+category: concept
 created: 2026-05-24
 updated: 2026-05-24
 verified: 2026-05-24
 volatility: high
 confidence: high
 sources:
-  - "[[2026-05-24-llm-integration-patterns-anthropic-prompt-caching]]"
-  - "[[2026-05-24-llm-integration-patterns-sqlite-vec]]"
-  - "[[2026-05-24-llm-integration-patterns-llamacpp-grammars]]"
-  - "[[2026-05-24-llm-integration-patterns-qwen3-overview]]"
-  - "[[2026-05-24-llm-integration-patterns-ollama-blog-roundup]]"
-  - "[[2026-05-24-llm-integration-patterns-designing-agentic-loops]]"
-  - "[[2026-05-24-llm-integration-patterns-llm-schemas-structured-output]]"
-  - "[[2026-05-24-llm-integration-patterns-lancedb-overview]]"
+  - "[[../../raw/articles/2026-05-24-llm-integration-patterns-anthropic-prompt-caching]]"
+  - "[[../../raw/repos/2026-05-24-llm-integration-patterns-sqlite-vec]]"
+  - "[[../../raw/repos/2026-05-24-llm-integration-patterns-llamacpp-grammars]]"
+  - "[[../../raw/articles/2026-05-24-llm-integration-patterns-qwen3-overview]]"
+  - "[[../../raw/articles/2026-05-24-llm-integration-patterns-ollama-blog-roundup]]"
+  - "[[../../raw/articles/2026-05-24-llm-integration-patterns-designing-agentic-loops]]"
+  - "[[../../raw/articles/2026-05-24-llm-integration-patterns-llm-schemas-structured-output]]"
+  - "[[../../raw/articles/2026-05-24-llm-integration-patterns-lancedb-overview]]"
 tags: [llm, rag, ollama, anthropic, prompt-caching, structured-output, agent-loops, local-llm, qwen3, sqlite-vec]
+summary: "Provider-agnostic, local-default, cloud-optional. The wiki is the canon; the LLM is the orchestrator."
 ---
 
 # LLM integration architecture for a PF2e GM tool

@@ -2,9 +2,9 @@
 title: "Parasite Pool: Igniting the Mining Insurrection (zkshark Substack)"
 author: zk-shark (pseudonym; x.com handle @kram_btc)
 publication: zkshark.substack.com
-url: https://zkshark.substack.com/p/parasite-pool-igniting-the-mining
+source: https://zkshark.substack.com/p/parasite-pool-igniting-the-mining
 date: 2025-05-09
-type: article
+type: articles
 ingested: 2026-05-26
 quality: 4
 credibility: medium

@@ -4,13 +4,13 @@ type: plan
 format: spec
 generated: 2026-05-25
 sources:
-  - "[[recommended-stack]]"
+  - "[[../wiki/topics/recommended-stack]]"
   - "[[recommended-reskin-stack]]"
-  - "[[desktop-app-stack-recommendation]]"
-  - "[[world-data-model-recommendation]]"
-  - "[[llm-integration-architecture]]"
-  - "[[pf2e-licensing-posture]]"
-  - "[[pf2e-remaster-name-mapping]]"
+  - "[[../wiki/concepts/desktop-app-stack-recommendation]]"
+  - "[[../wiki/concepts/world-data-model-recommendation]]"
+  - "[[../wiki/concepts/llm-integration-architecture]]"
+  - "[[../wiki/concepts/pf2e-licensing-posture]]"
+  - "[[../wiki/reference/pf2e-remaster-name-mapping]]"
   - "[[remaster-monotheism-fit]]"
   - "[[denominational-lens-decision]]"
   - "[[magic-theology-approaches]]"
@@ -18,7 +18,7 @@ sources:
   - "[[class-ancestry-reskin-verdicts]]"
   - "[[yhwh-deity-template]]"
   - "[[biblical-miracle-to-pf2e-spell-map]]"
-  - "[[worldbuilding-tool-landscape-2026]]"
+  - "[[../wiki/concepts/worldbuilding-tool-landscape-2026]]"
   - "[[prior-christian-rpg-lessons]]"
   - "[[rust-multi-platform]]"
 tags: [pf2e, biblical-reskin, cross-platform, tauri, sqlite-vec, ollama, anthropic, spec, mvp]

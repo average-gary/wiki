@@ -7,7 +7,7 @@ type: data
 tags: [eol-test, back-emf, hipot, surge, nvh, test-placement, vendor]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Authoritative EOL test-equipment vendor — full test menu, back-EMF method detail, and where tests sit in the chain (pre/post-impregnation vs full assembly).
 ---
 

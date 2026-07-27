@@ -1,7 +1,7 @@
 ---
 title: "MACULA Greek LICENSE.md"
-url: https://github.com/Clear-Bible/macula-greek/blob/main/LICENSE.md
-retrieved: 2026-06-02
+source: https://github.com/Clear-Bible/macula-greek/blob/main/LICENSE.md
+ingested: 2026-06-02
 type: spec
 ---
 

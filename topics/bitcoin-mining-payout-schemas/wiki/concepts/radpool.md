@@ -6,6 +6,7 @@ confidence: medium
 tags: [radpool, jungly, dlc, frost, decentralized-fpps, novel-accounting]
 volatility: warm
 updated: 2026-07-15
+summary: "A 2024 proposal by Kulpreet Singh (jungly) — also p2poolv2 lead — to decentralize FPPS without inventing a sharechain. Project at radpool.xyz; reference code in pool2win/frost-federation. Originally posted to Delving Bitcoin in November 2024."
 verified: 2026-07-15
 sources:
   - "raw/articles/2026-05-24-jungly-delvingbitcoin-p2share.md"
@@ -64,3 +65,4 @@ McElrath disputes the "no consensus required" framing, arguing that **accurate r
 - [[p2pool-share-chain]] — same author's parallel project
 - [[parasite-pool]] — alternative novel scheme with very different design philosophy (custodial LN vs DLC federation)
 - [[payout-schema-taxonomy]]
+- [[braidpool.md|Braidpool]]

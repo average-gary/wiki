@@ -1,6 +1,6 @@
 ---
 title: Shrub and Knock Out Rose Pruning
-type: topic
+category: topic
 created: 2026-05-26
 updated: 2026-05-26
 verified: 2026-05-26
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [rose, knock-out, shrub-rose, pruning, rose-rosette, sanitation]
+summary: "Knock Out roses (and similar shrub roses — Drift, Oso Easy, Easy Elegance) are bred for low-maintenance landscape use. They tolerate, but do not require, the aggressive every-spring pruning that hybrid teas need. The two essential moves: a hard reset every 2-3 years plus annual one-third renewal."
 sources:
   - "[[raw/articles/2026-05-26-rose-clemson-pruning-roses]]"
   - "[[raw/articles/2026-05-26-rose-clemson-pruning-shrubs-renewal]]"
@@ -103,3 +104,4 @@ See [[../concepts/cut-mechanics|Cut mechanics]] for general principles.
 - [[../concepts/cut-mechanics|Cut mechanics]]
 - [[../reference/rose-rosette-disease|Rose Rosette Disease]]
 - [[../../output/_index|Outputs]]
+- [[../concepts/cane-renewal.md|Cane Renewal Pruning]]

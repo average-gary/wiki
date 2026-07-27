@@ -1,8 +1,10 @@
 ---
 title: Unciv
-type: topic
+category: topic
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "yairm210/Unciv — open-source, moddability-focused Android and Desktop remake of Civ V. By a wide margin the highest-velocity OSS civ-like."
 confidence: high
 sources:
   - raw/repos/2026-06-18-unciv.md
@@ -115,3 +117,4 @@ prompt-engineering experiments with LLM agents.
 - [GitHub-as-mod-registry](../concepts/github-as-mod-registry.md)
 - [Modding DSLs vs data formats](../concepts/modding-dsl-vs-data-format.md)
 - [Civ-likes as AI research testbeds](research-testbeds.md)
+- [[../concepts/oss-4x-development-pace.md|OSS 4X Development Pace]]

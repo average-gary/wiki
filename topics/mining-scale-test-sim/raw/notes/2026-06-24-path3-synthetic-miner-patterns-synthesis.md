@@ -1,6 +1,6 @@
 ---
 title: Synthetic-miner methodology — pattern synthesis for scale-testing pools
-source_url: synthesis from p2poolv2, sv2-apps, gimballock vardiff sim, ckpool
+source: synthesis from p2poolv2, sv2-apps, gimballock vardiff sim, ckpool
 type: notes
 ingested: 2026-06-24
 quality: A

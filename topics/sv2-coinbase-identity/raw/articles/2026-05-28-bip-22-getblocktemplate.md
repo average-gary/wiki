@@ -1,11 +1,12 @@
 ---
 title: "BIP-22 (getblocktemplate) — coinbaseaux and append-only conventions"
-source_url: https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki
+source: https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki
+type: articles
 source_type: bip
 ingested: 2026-05-28
 credibility: high
 confidence: high
-tags: [BIP-22, getblocktemplate, coinbaseaux, scriptSig, append-only, historical]
+tags: [BIP-22, getblocktemplate, coinbaseaux, scriptsig, append-only, historical]
 ---
 
 # BIP-22 — historical precedent for who controls coinbase content

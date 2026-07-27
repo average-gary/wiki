@@ -1,7 +1,7 @@
 ---
 title: "Branca Token Specification"
 source: https://github.com/tuupola/branca-spec
-type: paper
+type: papers
 tags: [branca, xchacha20-poly1305, token, minimal, qr-friendly, spec]
 date: 2026-06-01
 quality: 4

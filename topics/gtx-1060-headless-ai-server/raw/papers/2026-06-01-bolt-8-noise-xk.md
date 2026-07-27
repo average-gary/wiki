@@ -1,7 +1,7 @@
 ---
 title: "BOLT 8 — Lightning Network Encrypted and Authenticated Transport"
 source: https://github.com/lightning/bolts/blob/master/08-transport.md
-type: paper
+type: papers
 tags: [noise, xk, bolt, lightning, identity-hiding, key-rotation]
 date: 2026-06-01
 quality: 5

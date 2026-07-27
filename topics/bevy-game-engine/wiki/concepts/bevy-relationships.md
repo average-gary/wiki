@@ -1,10 +1,12 @@
 ---
 title: "Bevy Relationships"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, ecs, relationships, hierarchy, child-of, hooks]
+summary: "Generalized entity-to-entity links shipped in Bevy 0.16 (April 2025). Built on component lifecycle hooks introduced in 0.14."
 ---
 
 # Bevy Relationships

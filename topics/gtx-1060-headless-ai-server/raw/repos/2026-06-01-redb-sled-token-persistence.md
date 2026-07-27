@@ -1,7 +1,7 @@
 ---
 title: "redb 4.1 and sled 0.34 — embedded key-value stores for consumed-token marks"
 source: https://docs.rs/redb, https://docs.rs/sled
-type: repo
+type: repos
 tags: [redb, sled, embedded-kv, persistence, single-use, consumed-set]
 date: 2026-06-01
 quality: 4

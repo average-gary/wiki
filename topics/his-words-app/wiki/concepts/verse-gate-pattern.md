@@ -1,11 +1,13 @@
 ---
 title: Verse-gate pattern — the dominant Christian-blocker mechanism
-type: concept
+category: concept
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, competitors, mechanism, anti-pattern]
+summary: "A verse-gate is friction injected at the moment a target app is launched: the user must read a verse, pray, or complete a small ritual before the app opens. After the gate clears, the app is free for the remainder of the day (or the session)."
 sources:
   - raw/articles/2026-06-23-competitors-psalmo.md
   - raw/articles/2026-06-23-competitors-prayer-lock.md

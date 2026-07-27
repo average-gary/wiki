@@ -97,6 +97,7 @@ Approximately 1 GB RAM for the gateway baseline, plus 1 GB per 1000 Stratum clie
 - [[deployment-and-node-config|Deployment and node config]] ([Deployment and node config](deployment-and-node-config.md)) — `blocknotify` setup, port numbers, Docker NOTIFY caveats
 - [[stratum-usernames-and-modifiers|Stratum usernames and modifiers]] ([Stratum usernames and modifiers](stratum-usernames-and-modifiers.md)) — what gets attached to share submissions
 - [[tides-payout|TIDES payout]] ([TIDES payout](tides-payout.md)) — coinbase generation transaction is what miners are credited via
+- [[gateway-internals-c-architecture.md|Gateway internals — C architecture, threading, and the queue seam]]
 
 ## Sources
 

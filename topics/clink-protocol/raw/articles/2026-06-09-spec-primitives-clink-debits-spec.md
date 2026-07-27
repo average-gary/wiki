@@ -1,7 +1,7 @@
 ---
 title: "CLINK Debits Specification (clink-debits.md)"
 source: https://github.com/shocknet/CLINK/blob/master/specs/clink-debits.md
-type: article
+type: articles
 ingested: 2026-06-09
 path: spec-primitives
 quality: 5

@@ -1,6 +1,6 @@
 ---
 title: "Candidate academic literature: PPLNS variance, share-chain orphans, DAG consensus"
-source_url: candidates-from-training-knowledge
+source: candidates-from-training-knowledge
 type: candidate-list
 ingested: 2026-05-22
 quality: 2

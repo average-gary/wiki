@@ -1,9 +1,12 @@
 ---
 title: "Crime profile — Frederick County + Winchester, 2024 best-available"
-type: topic
+category: topic
 created: 2026-05-26
+updated: 2026-05-26
+volatility: warm
 confidence: medium
 tags: [synthesis, 2024, profile, summary]
+summary: "Synthesis article. Caveats: numbers are from secondary aggregators (CrimeGrade, NeighborhoodScout, City-Data, AreaVibes, Data USA) because primary VSP *Crime in Virginia 2024* PDF (>10MB) and FBI CDE (JS SPA) were not directly extracted in this round."
 ---
 
 # Crime Profile — FrCo + Winchester, 2024 (best-available)

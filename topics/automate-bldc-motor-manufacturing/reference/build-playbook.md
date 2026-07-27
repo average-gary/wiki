@@ -1,9 +1,11 @@
 ---
 title: "Build Playbook — How to Automate Brushless Motor Manufacturing"
-type: reference
+category: reference
 created: 2026-07-22
 updated: 2026-07-22
+volatility: warm
 tags: [playbook, how-to, automation, bldc, pmsm, decision-framework]
+summary: "The actionable answer to the original question. This is the opinionated, step-by-step path — what to decide first, what to buy vs. build, and the order to automate the stations in. It synthesizes all concept articles and the vendor landscape."
 confidence: high
 ---
 

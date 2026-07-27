@@ -3,7 +3,7 @@ title: "Paraphrasing Evades Detectors of AI-Generated Text, but Retrieval is an 
 source: https://arxiv.org/abs/2303.13408
 authors: Kalpesh Krishna, Yixiao Song, Marzena Karpinska, John Wieting, Mohit Iyyer
 venue: NeurIPS 2023; arXiv:2303.13408
-type: paper
+type: papers
 tags: [llm-writing-indicators, detection-limits, paraphrase-evasion, adversarial]
 quality: 5
 confidence: high

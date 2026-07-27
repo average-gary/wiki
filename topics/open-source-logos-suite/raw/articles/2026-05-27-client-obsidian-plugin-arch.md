@@ -1,7 +1,7 @@
 ---
 title: "Obsidian Plugin Architecture & Security Model"
-source_url: "https://obsidian.md/help/Extending+Obsidian/Plugin+security"
-type: article
+source: "https://obsidian.md/help/Extending+Obsidian/Plugin+security"
+type: articles
 path: client
 date_ingested: 2026-05-27
 date_published: 2025-01-01

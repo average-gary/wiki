@@ -1,7 +1,7 @@
 ---
 title: "axodotdev/cargo-dist (now `dist`) — release pipeline orchestrator"
 source: https://github.com/axodotdev/cargo-dist
-type: repo
+type: repos
 tags: [release, packaging, ci, github-actions, installers]
 date: 2026-05-21
 quality: 5

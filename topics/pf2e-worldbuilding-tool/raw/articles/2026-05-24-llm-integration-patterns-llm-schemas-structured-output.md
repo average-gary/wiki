@@ -1,7 +1,7 @@
 ---
 title: "Structured data extraction using LLM schemas"
 source: "https://simonwillison.net/2025/Feb/28/llm-schemas/"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "2025-02-28"
 tags: [llm, structured-output, json-schema, pydantic, extraction]

@@ -3,13 +3,13 @@ title: "Payouts Experiment: TIDES vs FPPS"
 author: tronsington (et al.)
 publication: heatpunks.org forum
 date: 2025-06-10 → 2025-08-28
-url: https://forum.heatpunks.org/t/payouts-experiment-tides-vs-fpps/140
-type: article
+source: https://forum.heatpunks.org/t/payouts-experiment-tides-vs-fpps/140
+type: articles
 ingested: 2026-05-23
 quality: 4
 credibility: medium
 confidence: medium
-tags: [TIDES, FPPS, empirical, OCEAN, Braiins, variance]
+tags: [tides, fpps, empirical, ocean, braiins, variance]
 ---
 
 # TIDES vs FPPS Empirical Experiment (heatpunks 2025)

@@ -2,7 +2,7 @@
 title: "crates.io snapshot — Bitcoin/Lightning Rust crates"
 source: https://crates.io/api/v1/crates/{bitcoin,bdk_wallet,lightning,secp256k1,miniscript,nostr,fedimint-core,cdk}
 type: data-snapshot
-tags: [crates.io, downloads, ecosystem-health, secp256k1, bdk, lightning]
+tags: [crates-io, downloads, ecosystem-health, secp256k1, bdk, lightning]
 ingested: 2026-06-22
 date: 2026-06-22
 verified: 2026-06-22

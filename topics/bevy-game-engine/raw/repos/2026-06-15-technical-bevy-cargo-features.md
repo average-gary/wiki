@@ -1,9 +1,9 @@
 ---
 title: "Bevy Cargo features reference (docs/cargo_features.md)"
-source_url: https://github.com/bevyengine/bevy/blob/main/docs/cargo_features.md
+source: https://github.com/bevyengine/bevy/blob/main/docs/cargo_features.md
 source_date: 2026-06-15
 ingested: 2026-06-15
-type: repo
+type: repos
 author: Bevy maintainers
 quality: 5
 credibility: high

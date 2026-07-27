@@ -1,10 +1,11 @@
 ---
 title: SV2 ↔ p2poolv2 share-accounting mapping spec
-type: topic
+category: topic
 created: 2026-05-22
 updated: 2026-05-22
 verified: 2026-05-22
 volatility: hot
+summary: "Detailed mapping between SV2's share-accounting messages and p2poolv2's chain-with-uncles share-chain. Suitable for an implementer writing a JobValidationEngine for p2poolv2."
 confidence: high
 status: draft
 sources:

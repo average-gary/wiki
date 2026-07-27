@@ -4,7 +4,7 @@ sources:
   - https://github.com/fedimint/fedimint/issues/4305
   - https://github.com/fedimint/fedimint/pull/4339
   - https://github.com/fedimint/fedimint/issues/2149
-type: article
+type: articles
 authors: dpc, justinmoon (Fedimint maintainers)
 year: 2024
 ingested: 2026-06-15

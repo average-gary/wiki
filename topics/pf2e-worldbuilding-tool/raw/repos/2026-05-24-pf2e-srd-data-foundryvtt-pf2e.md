@@ -1,7 +1,7 @@
 ---
 title: "foundryvtt/pf2e — Pathfinder 2e System for Foundry VTT"
 source: "https://github.com/foundryvtt/pf2e"
-type: repo
+type: repos
 date_fetched: 2026-05-24
 date_published: 2019-01-01
 tags: [pf2e, foundry-vtt, json-data, apache-2, paizo-partnership, primary-source]

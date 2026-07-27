@@ -2,7 +2,7 @@
 title: "block/buzz — README & architecture overview"
 source: https://github.com/block/buzz
 raw_source: https://raw.githubusercontent.com/block/buzz/main/README.md
-type: repo
+type: repos
 tags: [buzz, block, nostr, architecture, rust, relay, agents]
 confidence: high
 ingested: 2026-07-23

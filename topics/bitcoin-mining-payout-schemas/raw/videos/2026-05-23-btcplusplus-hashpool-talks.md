@@ -1,7 +1,7 @@
 ---
 title: "btc++ conference talks on hashpool / mining-payout decentralization"
 publication: bitcoin++ conference (btcplusplus.dev)
-url: https://hashpool.dev/media/
+source: https://hashpool.dev/media/
 type: video
 ingested: 2026-05-23
 quality: 5

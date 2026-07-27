@@ -1,7 +1,7 @@
 ---
 title: "Prompt caching - Claude API documentation"
 source: "https://platform.claude.com/docs/en/docs/build-with-claude/prompt-caching"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "2026-02-05"
 tags: [llm, caching, anthropic, long-context, cost-optimization]

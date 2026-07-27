@@ -1,9 +1,9 @@
 ---
 title: "bLIP-36 — On-the-fly channel funding (dual-funding OR splicing toward a recipient, fee from the relayed payment)"
 source: "https://github.com/lightning/blips/pull/36"
-type: paper
+type: papers
 subtype: spec
-retrieved: 2026-07-23
+ingested: 2026-07-23
 verified_verbatim: false
 verification_note: "Quotes captured by the Supporting agent from the in-flight bLIP-36 PR text (t-bast/blips@on-the-fly-funding). Treat as spec-draft; the funding_fee TLV type number and payment_type constants may shift before merge. The mechanism is corroborated verbatim by the merged eclair impl (#2861) and by bLIP-52."
 tags: [lightning, blip36, on-the-fly-funding, dual-funding, splicing, liquidity-ads, funding-fee-tlv, inbound, fusion]

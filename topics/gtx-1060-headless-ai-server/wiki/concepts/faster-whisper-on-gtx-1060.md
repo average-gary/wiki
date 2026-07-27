@@ -1,10 +1,11 @@
 ---
 title: "faster-whisper on GTX 1060 6GB — model picks, VRAM, version pins"
-type: concept
+category: concept
 created: 2026-05-21
 updated: 2026-05-21
 verified: 2026-05-21
 volatility: hot
+summary: "(VRAM numbers from raw/repos/2026-05-21-faster-whisper V100 benchmark; representative for sm_61 since memory is identical, only compute path differs.)"
 confidence: high
 sources:
   - raw/repos/2026-05-21-faster-whisper.md
@@ -88,3 +89,5 @@ See [[ctranslate2-quantization-on-pascal]] — `compute_type="float16"` is silen
 - [[whisperx-vs-manual-pyannote-integration]] — alignment + diarization wrapper
 - [[pyannote-audio-3.x-on-pascal]] — diarization VRAM coexistence
 - [[ctranslate2-quantization-on-pascal]] — compute_type table
+- [[../topics/gtx-1060-headless-ai-server-synthesis.md|GTX 1060 Headless AI Server — synthesis]]
+- [[pyannote-audio-3.x-on-pascal.md|pyannote.audio 3.x / 4.x on Pascal — VRAM, gating, DER]]

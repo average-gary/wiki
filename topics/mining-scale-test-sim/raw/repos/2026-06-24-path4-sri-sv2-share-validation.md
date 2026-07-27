@@ -1,8 +1,9 @@
 ---
 title: SRI stratum/channels-sv2 — server validate_share (SV2 share validation)
 source_type: repos
-source_url: https://github.com/stratum-mining/stratum/blob/main/sv2/channels-sv2/src/server/extended.rs
-fetched: 2026-06-24
+source: https://github.com/stratum-mining/stratum/blob/main/sv2/channels-sv2/src/server/extended.rs
+type: repos
+ingested: 2026-06-24
 path: 4
 tags: [stratum-v2, sri, share-validation, share-accounting, dup-detection, vardiff]
 ---

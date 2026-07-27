@@ -1,10 +1,12 @@
 ---
 title: "Bevy ECS architecture"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, ecs, archetype, sparse-set, world, query, observer]
+summary: "Bevy ECS is the core of the engine — components, systems, and resources are the load-bearing primitives, and rendering, UI, audio, input, and assets are themselves implemented as ECS systems and components."
 ---
 
 # Bevy ECS architecture

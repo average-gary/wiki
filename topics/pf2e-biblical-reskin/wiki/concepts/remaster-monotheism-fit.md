@@ -1,24 +1,25 @@
 ---
 title: "PF2e Remaster mechanical fit for monotheism"
-type: concept
+category: concept
 created: 2026-05-25
 updated: 2026-05-25
 verified: 2026-05-25
 volatility: medium
 confidence: high
 sources:
-  - "[[2026-05-24-remaster-fit-for-monotheism-aon-champion-class]]"
-  - "[[2026-05-24-remaster-fit-for-monotheism-aon-cleric-class]]"
-  - "[[2026-05-24-remaster-fit-for-monotheism-aon-deity-template]]"
-  - "[[2026-05-24-remaster-fit-for-monotheism-foundry-pf2e-remaster-changes]]"
-  - "[[2026-05-24-remaster-fit-for-monotheism-wikipedia-remaster-overview]]"
-  - "[[2026-05-24-remaster-fit-for-monotheism-divine-tradition-analysis]]"
-  - "[[2026-05-24-remaster-fit-for-monotheism-damage-types-energy]]"
-  - "[[2026-05-25-lost-omens-divine-mysteries-iomedae-sarenrae]]"
-  - "[[2026-05-25-lost-omens-divine-mysteries-pharasma-erastil]]"
-  - "[[2026-05-25-lost-omens-divine-mysteries-abadar-torag-asmodeus]]"
-  - "[[2026-05-25-lost-omens-divine-mysteries-yhwh-template-synthesis]]"
+  - "[[../../raw/articles/2026-05-24-remaster-fit-for-monotheism-aon-champion-class]]"
+  - "[[../../raw/articles/2026-05-24-remaster-fit-for-monotheism-aon-cleric-class]]"
+  - "[[../../raw/articles/2026-05-24-remaster-fit-for-monotheism-aon-deity-template]]"
+  - "[[../../raw/repos/2026-05-24-remaster-fit-for-monotheism-foundry-pf2e-remaster-changes]]"
+  - "[[../../raw/articles/2026-05-24-remaster-fit-for-monotheism-wikipedia-remaster-overview]]"
+  - "[[../../raw/articles/2026-05-24-remaster-fit-for-monotheism-divine-tradition-analysis]]"
+  - "[[../../raw/articles/2026-05-24-remaster-fit-for-monotheism-damage-types-energy]]"
+  - "[[../../raw/articles/2026-05-25-lost-omens-divine-mysteries-iomedae-sarenrae]]"
+  - "[[../../raw/articles/2026-05-25-lost-omens-divine-mysteries-pharasma-erastil]]"
+  - "[[../../raw/articles/2026-05-25-lost-omens-divine-mysteries-abadar-torag-asmodeus]]"
+  - "[[../../raw/articles/2026-05-25-lost-omens-divine-mysteries-yhwh-template-synthesis]]"
 tags: [pf2e, remaster, sanctification, holy-unholy, alignment, monotheism, mechanical-fit, deity-template]
+summary: "The PF2e Remaster (2023–2024) accidentally did most of the structural work for a Christian-Biblical reskin. Pre-Remaster PF2e (and D&D 5e) had built-in pluralism — alignment damage on a Lawful/Chaotic/Good/Evil grid, polytheistic deity slots tied to alignment, schools of magic mirroring D&D's polyth…"
 ---
 
 # PF2e Remaster mechanical fit for monotheism
@@ -105,6 +106,10 @@ Pre-Remaster, the same reskin would have needed: alignment damage replacement, a
 - [[denominational-lens-decision]] — which sanctification flavor and edicts list to pick
 - [[pf2e-remaster-name-mapping]] (sister `pf2e-worldbuilding-tool` topic) — the canonical ~330 rename pairs; the theology-loaded ones (Sense Evil → Sense Unholiness, Holy Avenger → Chalice of Justice, pantheon renames) are documented there
 - [[pf2e-licensing-posture]] (sister topic) — ORC-only + Golarion-replaced is the monetization-clean posture for shipping a reskin
+- [[../reference/biblical-miracle-to-pf2e-spell-map.md|Biblical miracle ↔ PF2e Remaster spell map]]
+- [[prior-christian-rpg-lessons.md|Prior Christian TTRPG lessons (40 years of attempts)]]
+- [[../topics/recommended-reskin-stack.md|PF2e Biblical Reskin — recommended stack (synthesis)]]
+- [[../reference/yhwh-deity-template.md|YHWH deity stat block — template & per-lens fills]]
 
 ## Open questions
 

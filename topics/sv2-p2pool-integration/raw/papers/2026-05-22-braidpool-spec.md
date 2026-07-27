@@ -1,6 +1,6 @@
 ---
 title: "Braidpool Protocol Specification"
-source_url: https://github.com/braidpool/braidpool/blob/master/docs/braidpool_spec.md
+source: https://github.com/braidpool/braidpool/blob/master/docs/braidpool_spec.md
 type: protocol-spec
 ingested: 2026-05-22
 quality: 5

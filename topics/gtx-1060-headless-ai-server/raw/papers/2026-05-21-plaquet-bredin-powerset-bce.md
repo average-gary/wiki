@@ -1,7 +1,7 @@
 ---
 title: "Plaquet & Bredin 2023 — Powerset multi-class cross entropy loss for neural speaker diarization"
 source: https://arxiv.org/abs/2310.13025
-type: paper
+type: papers
 tags: [pyannote, diarization, powerset, bce, peer-reviewed, interspeech-2023]
 date: 2026-05-21
 quality: 6

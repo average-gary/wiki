@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA 535.247.01 supportedchips — GTX 1060 confirmed"
 source: https://us.download.nvidia.com/XFree86/Linux-x86_64/535.247.01/README/supportedchips.html
-type: article
+type: articles
 tags: [nvidia, drivers, gtx-1060, pascal, supported-gpus]
 date: 2026-05-21
 quality: 6

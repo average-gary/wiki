@@ -13,3 +13,5 @@ Generated artifacts (plans, specs, ADRs) grounded in this wiki.
 |------|------|-------|------|
 | 2026-07-20 | plan (roadmap) | **On-device, self-contained** Waveshare ESP32 dashboard (Bitcoin + weather, no server) — **active** | [plan-ondevice-waveshare-dashboard-2026-07-20.md](plan-ondevice-waveshare-dashboard-2026-07-20.md) |
 | 2026-07-20 | plan (roadmap) | Self-hosted TRMNL BYOS + Waveshare ESP32 dashboard (calendar + Bitcoin + weather) — *superseded (server dropped)* | [plan-byos-waveshare-dashboard-2026-07-20.md](plan-byos-waveshare-dashboard-2026-07-20.md) |
+
+- [[buildlog-phase0-2026-07-20.md|Build Log — Phase 0 hardware ID + repo recon (on-device plan)]]

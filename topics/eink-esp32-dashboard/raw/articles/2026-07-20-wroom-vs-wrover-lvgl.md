@@ -1,7 +1,7 @@
 ---
 title: "WROOM vs WROVER (PSRAM) & why LVGL is a poor fit for e-paper"
 source: https://nexcir.com/esp32-wroom-vs-wrover-modules-when-do-you-need-extra-psram/
-type: article
+type: articles
 tags: [wroom, wrover, psram, sram, framebuffer, lvgl, e-paper, memory]
 date: 2026-07-20
 quality: 4

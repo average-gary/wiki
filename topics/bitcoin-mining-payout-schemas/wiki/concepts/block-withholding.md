@@ -6,6 +6,7 @@ confidence: high
 tags: [BWH, FAW, attack, Eyal, Schrijvers, Nash]
 volatility: warm
 updated: 2026-07-15
+summary: "Inter-pool attack. Pools infiltrate each other; infiltrators submit shares but withhold full block solutions to sabotage the victim's payout."
 verified: 2026-07-15
 sources:
   - "raw/papers/2026-05-23-eyal-2015-miners-dilemma.md"
@@ -96,3 +97,5 @@ So FAW *profit to attacker* is scheme-invariant. FAW *who-gets-hurt at the victi
 
 - [[pool-hopping]]
 - [[variance-and-risk-shifting]]
+- [[lottery-pplns.md|Lottery-PPLNS (Finder-Bonus Hybrid)]]
+- [[selfish-mining.md|Selfish Mining]]

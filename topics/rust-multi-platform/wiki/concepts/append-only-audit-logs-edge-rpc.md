@@ -1,12 +1,13 @@
 ---
 title: "Append-Only Audit Logs over Edge RPC"
-type: concept
+category: concept
 created: 2026-06-01
 updated: 2026-06-01
 verified: 2026-06-01
 status: active
 quality: high
 volatility: medium
+summary: "How to record fleet-operational events (enrollments, key rotations, deauths, attestation evidence) so the record is tamper-evident at the edge and at the server, and so violations are detectable."
 sources:
   - raw/papers/2026-06-01-scitt-architecture-draft-22.md
   - raw/papers/2026-06-01-scrapi-draft.md
@@ -18,8 +19,8 @@ sources:
   - raw/articles/2026-06-01-rekor-v2-ga.md
   - raw/articles/2026-06-01-cosign-v3.md
   - raw/articles/2026-06-01-cosign-keyless-overview.md
-  - raw/articles/2026-06-01-haber-stornetta-1991.md
-  - raw/articles/2026-06-01-schneier-kelsey-1998.md
+  - ../../raw/papers/2026-06-01-haber-stornetta-1991.md
+  - ../../raw/papers/2026-06-01-schneier-kelsey-1998.md
   - raw/articles/2026-06-01-ct-split-view-attack.md
   - raw/data/2026-06-01-fleet-ops-numerical-baseline.md
 ---

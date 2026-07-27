@@ -1,7 +1,7 @@
 ---
 title: "pyannote/speaker-diarization-3.1 — model card"
 source: https://huggingface.co/pyannote/speaker-diarization-3.1
-type: article
+type: articles
 tags: [pyannote, diarization, der, gated-model, hf-token]
 date: 2026-05-21
 quality: 6

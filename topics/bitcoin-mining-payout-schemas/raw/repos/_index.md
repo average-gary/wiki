@@ -15,6 +15,8 @@ type: raw-index
 - [[2026-05-26-braidpool-github|braidpool/braidpool — DAG sharechain prototype]]
 - [[2026-05-26-vnprc-coinbase-playground-github|vnprc/coinbase-playground — CTV-coinbase prototype]] — metadata snapshot (see 2026-07-17 collection for full capture)
 - [[2026-07-14-demand-share-accounting-ext-github|demand-open-source/share-accounting-ext — SV2 extension for miner-verifiable PPLNS-JD payouts]]
+- [[2026-07-27-blitzpool-server-rust-github|warioishere/blitzpool-server-rust — non-custodial in-coinbase payout pool]] — Solo/PPLNS/Group-Solo/Blockparty, 37-crate Rust, AGPL; multi-output PPLNS coinbase, signed pending ledger, coinbase weight-budget autoscaler
+- [[2026-07-27-blitzpool-finder-bonus-code-read|Blitzpool finder-bonus mechanics — code-level read @ 7815884]] — verified from a local clone, not the README: the bonus carve-out math, why per-finder coinbase construction is already the architecture, measured per-connection cost, and the missing duplicate-address merge in the PPLNS ledger apply
 
 ## coinbase-playground collection (git, ingested 2026-07-17)
 

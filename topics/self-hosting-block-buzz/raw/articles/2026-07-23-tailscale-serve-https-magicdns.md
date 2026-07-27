@@ -6,7 +6,7 @@ extra_sources:
   - https://tailscale.com/kb/1081/magicdns
   - https://tailscale.com/kb/1019/subnets
   - https://tailscale.com/blog/docker-tailscale-guide
-type: article
+type: articles
 tags: [tailscale, vpn, tls, magicdns, reverse-proxy, subnet-router, docker]
 confidence: high
 ingested: 2026-07-23

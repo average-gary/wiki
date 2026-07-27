@@ -1,10 +1,12 @@
 ---
 title: "JobFactory and coinbase construction (SRI)"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: high
-tags: [SRI, JobFactory, coinbase, NewMiningJob, NewExtendedMiningJob, merkle-root]
+tags: [sri, jobfactory, coinbase, NewMiningJob, NewExtendedMiningJob, merkle-root]
+summary: "JobFactory is owned per-channel and is the unit that turns a NewTemplate into a NewMiningJob (Standard) or NewExtendedMiningJob (Extended)."
 ---
 
 # JobFactory — where SV2 coinbase bytes are assembled

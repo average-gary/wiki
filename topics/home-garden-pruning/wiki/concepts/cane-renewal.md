@@ -1,6 +1,6 @@
 ---
 title: Cane Renewal Pruning
-type: concept
+category: concept
 created: 2026-05-26
 updated: 2026-05-26
 verified: 2026-05-26
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [cane-renewal, blueberry, rose, pruning, age-management]
+summary: "Multi-stem shrubs (blueberries, shrub roses) maintain productivity through cane age management: each cane has a productive life cycle, and you replace the oldest fraction every year so the bush always has a mix of vigorous young canes plus mature productive canes."
 sources:
   - "[[raw/articles/2026-05-26-blueberry-uga-c715-home-garden]]"
   - "[[raw/articles/2026-05-26-blueberry-clemson-hgic-blueberry]]"

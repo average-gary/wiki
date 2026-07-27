@@ -1,17 +1,18 @@
 ---
 title: "YHWH deity stat block — template & per-lens fills"
-type: reference
+category: reference
 created: 2026-05-25
 updated: 2026-05-25
 verified: 2026-05-25
 volatility: medium
 confidence: high
 sources:
-  - "[[2026-05-25-lost-omens-divine-mysteries-iomedae-sarenrae]]"
-  - "[[2026-05-25-lost-omens-divine-mysteries-pharasma-erastil]]"
-  - "[[2026-05-25-lost-omens-divine-mysteries-abadar-torag-asmodeus]]"
-  - "[[2026-05-25-lost-omens-divine-mysteries-yhwh-template-synthesis]]"
+  - "[[../../raw/articles/2026-05-25-lost-omens-divine-mysteries-iomedae-sarenrae]]"
+  - "[[../../raw/articles/2026-05-25-lost-omens-divine-mysteries-pharasma-erastil]]"
+  - "[[../../raw/articles/2026-05-25-lost-omens-divine-mysteries-abadar-torag-asmodeus]]"
+  - "[[../../raw/articles/2026-05-25-lost-omens-divine-mysteries-yhwh-template-synthesis]]"
 tags: [pf2e, remaster, deity-template, yhwh, reference, stat-block]
+summary: "A drop-in stat block for the God of Christian Scripture, derived from Remaster *Lost Omens: Divine Mysteries* (Aug 2024) deity-entry patterns."
 license_note: "Template uses Paizo terminology under fair-use commentary. A published reskin should paraphrase or use SRD/ORC-derived language only — see [[pf2e-licensing-posture]] in sister topic."
 ---
 
@@ -200,3 +201,4 @@ This is **the most theologically rigorous option but the most mechanically restr
 - [[biblical-cosmology-pf2e-mapping]] — what the deity's Areas of Concern actually populate (planes, archangels, demons, eschaton)
 - [[class-ancestry-reskin-verdicts]] § Champion — the class that consumes this stat block most heavily
 - [[pf2e-licensing-posture]] (sister `pf2e-worldbuilding-tool` topic) — published-reskin language must be ORC + paraphrase, not Paizo-text-verbatim
+- [[biblical-miracle-to-pf2e-spell-map.md|Biblical miracle ↔ PF2e Remaster spell map]]

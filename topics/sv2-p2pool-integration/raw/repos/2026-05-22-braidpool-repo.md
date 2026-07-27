@@ -1,7 +1,7 @@
 ---
 title: "braidpool/braidpool"
-source_url: https://github.com/braidpool/braidpool
-type: repo
+source: https://github.com/braidpool/braidpool
+type: repos
 ingested: 2026-05-22
 quality: 4
 confidence: high

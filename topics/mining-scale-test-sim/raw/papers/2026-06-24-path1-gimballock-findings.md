@@ -1,8 +1,8 @@
 ---
 title: "gimballock vardiff simulation framework — FINDINGS.md (Iteration 0→N derivation)"
-source_url: https://github.com/marafoundation/stratum/blob/vardiff/simulation-framework/sv2/channels-sv2/sim/docs/FINDINGS.md
+source: https://github.com/marafoundation/stratum/blob/vardiff/simulation-framework/sv2/channels-sv2/sim/docs/FINDINGS.md
 source_branch: vardiff/simulation-framework
-type: paper
+type: papers
 ingested: 2026-06-24
 quality: 5
 confidence: high

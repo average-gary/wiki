@@ -1,10 +1,12 @@
 ---
 title: "What the daemon can and cannot prove"
-type: topic
+category: topic
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
 tags: [stratum-v2, trust-model, verification, job-declaration, threat-model, synthesis]
+summary: "The honest scoping of the tool. Read alongside wiki/concepts/coinbase-verification-trust-model-limits. The governing principle: verification power scales with how much of the block the miner authors, not with how carefully it inspects what it's handed."
 ---
 
 # What the daemon can and cannot prove
@@ -62,3 +64,5 @@ inverts the trust model). See [[wiki/concepts/prior-art-coinbase-verification]].
 - [[wiki/concepts/coinbase-verification-trust-model-limits]]
 - [[wiki/concepts/expected-value-checks-taxonomy]]
 - [[wiki/topics/daemon-build-playbook]]
+- [[../concepts/deviation-detection.md|Deviation detection — job-diff + on-chain correlation]]
+- [[../concepts/prior-art-coinbase-verification.md|Prior art — coinbase & pool-transparency tooling]]

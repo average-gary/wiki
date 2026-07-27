@@ -1,7 +1,7 @@
 ---
 title: "Psalmo: Daily Bible Verse Lock — App Store listing + product site"
 source: https://psalmo.app/ + https://itunes.apple.com/lookup?id=6766825149
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, competitor, psalmo]
 quality: 5

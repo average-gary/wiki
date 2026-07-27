@@ -1,7 +1,7 @@
 ---
 title: "Cascadia Syntax Graphs / MACULA — public availability of Logos's syntax data"
-source_url: "https://github.com/Clear-Bible/macula-greek"
-type: article
+source: "https://github.com/Clear-Bible/macula-greek"
+type: articles
 path: logos
 date_ingested: 2026-05-27
 date_published: unknown

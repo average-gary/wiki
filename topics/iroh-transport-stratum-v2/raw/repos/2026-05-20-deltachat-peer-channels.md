@@ -1,7 +1,7 @@
 ---
 title: "Delta Chat — peer_channels.rs (production iroh deployment)"
-source_url: https://github.com/deltachat/deltachat-core-rust/blob/main/src/peer_channels.rs
-type: repo
+source: https://github.com/deltachat/deltachat-core-rust/blob/main/src/peer_channels.rs
+type: repos
 date: 2026-05-20
 org: Delta Chat / Merlinux
 credibility: high

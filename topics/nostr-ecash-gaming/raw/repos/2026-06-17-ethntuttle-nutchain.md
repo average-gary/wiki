@@ -1,9 +1,9 @@
 ---
 title: "EthnTuttle/nutchain — Nostr-based game engine spec with FROST threshold randomness"
 source: https://github.com/EthnTuttle/nutchain
-type: repo
+type: repos
 tags: [nostr, cashu, gaming, cryptography, threshold-randomness, decentralized, ecash, frost, threshold-oprf, game-engine, spec]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 summary: |
   NutChain is a draft design specification for a turn-based game engine built on Nostr events

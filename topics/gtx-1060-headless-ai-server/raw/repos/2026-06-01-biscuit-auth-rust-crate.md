@@ -1,7 +1,7 @@
 ---
 title: "biscuit-auth crate — Rust implementation of Biscuit v3"
 source: https://docs.rs/biscuit-auth, https://github.com/eclipse-biscuit/biscuit-rust
-type: repo
+type: repos
 tags: [biscuit, biscuit-auth, rust, crate, ed25519, datalog]
 date: 2026-06-01
 publication_date: 2025-07-16

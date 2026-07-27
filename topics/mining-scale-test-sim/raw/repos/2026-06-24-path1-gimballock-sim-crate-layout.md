@@ -1,8 +1,8 @@
 ---
 title: "gimballock vardiff sim crate — Cargo.toml, lib.rs, composed.rs, grid.rs, trial.rs, schedule.rs, metrics.rs, rng.rs"
-source_url: https://github.com/marafoundation/stratum/tree/vardiff/simulation-framework/sv2/channels-sv2/sim/src
+source: https://github.com/marafoundation/stratum/tree/vardiff/simulation-framework/sv2/channels-sv2/sim/src
 source_branch: vardiff/simulation-framework
-type: repo
+type: repos
 ingested: 2026-06-24
 quality: 5
 confidence: high

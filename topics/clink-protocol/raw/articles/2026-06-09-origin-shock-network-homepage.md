@@ -1,7 +1,7 @@
 ---
 title: "shock.network — ShockNet org homepage, products, founding, investors"
 source: https://shock.network
-type: article
+type: articles
 ingested: 2026-06-09
 path: origin
 quality: 5

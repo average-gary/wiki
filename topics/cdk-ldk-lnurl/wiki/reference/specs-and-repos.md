@@ -1,8 +1,9 @@
 ---
 title: "Specs and repos — quick reference"
-type: reference
+category: reference
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 tags: [reference, specs, repos]
 ---
 

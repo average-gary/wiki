@@ -1,7 +1,7 @@
 ---
 title: "Bulletin #2066, Growing Raspberries and Blackberries"
-source_url: "https://extension.umaine.edu/publications/2066e/"
-type: article
+source: "https://extension.umaine.edu/publications/2066e/"
+type: articles
 path: raspberry
 date_ingested: 2026-05-26
 date_published: 2023-01-01

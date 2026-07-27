@@ -1,11 +1,13 @@
 ---
 title: Invisible Unicode artifacts — the near-deterministic tell
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, unicode, typography, deterministic]
+summary: "Unlike em dashes, invisible Unicode characters are a *near-deterministic* tell: humans essentially never type them by hand, so their presence in a document is high-confidence evidence of machine generation (or at least machine processing)."
 sources:
   - raw/articles/2026-07-13-em-dash-mechanism-unicode-artifacts.md
 ---

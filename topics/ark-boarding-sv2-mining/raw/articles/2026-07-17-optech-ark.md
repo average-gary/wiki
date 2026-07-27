@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin Optech — Ark topic"
 source: https://bitcoinops.org/en/topics/ark/
-type: article
+type: articles
 ingested: 2026-07-17
 credibility: high
 direction: nuances

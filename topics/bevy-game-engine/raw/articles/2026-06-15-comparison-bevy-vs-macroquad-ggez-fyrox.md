@@ -1,9 +1,9 @@
 ---
 title: "Rust Game Engines in 2026: Bevy vs Macroquad vs ggez vs Fyrox"
-source_url: https://aarambhdevhub.medium.com/rust-game-engines-in-2026-bevy-vs-macroquad-vs-ggez-vs-fyrox-which-one-should-you-actually-use-9bf93669e83f
+source: https://aarambhdevhub.medium.com/rust-game-engines-in-2026-bevy-vs-macroquad-vs-ggez-vs-fyrox-which-one-should-you-actually-use-9bf93669e83f
 source_date: 2026-02-28
 ingested: 2026-06-15
-type: article
+type: articles
 author: Darshan / Aarambh Dev Hub
 quality: 4
 credibility: medium

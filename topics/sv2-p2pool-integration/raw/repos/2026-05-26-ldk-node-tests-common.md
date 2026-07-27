@@ -1,7 +1,7 @@
 ---
 title: "ldk-node tests/common — hybrid Rust + docker-compose harness"
-source_url: https://github.com/lightningdevkit/ldk-node/tree/main/tests
-type: repo
+source: https://github.com/lightningdevkit/ldk-node/tree/main/tests
+type: repos
 ingested: 2026-05-26
 quality: 5
 confidence: high

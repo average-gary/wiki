@@ -1,7 +1,7 @@
 ---
 title: "Pruning Cherry Trees: A Comprehensive Guide"
-source_url: "https://raintreenursery.com/blogs/pnw-edible-plant-blog/pruning-cherry-trees"
-type: article
+source: "https://raintreenursery.com/blogs/pnw-edible-plant-blog/pruning-cherry-trees"
+type: articles
 path: cherry
 date_ingested: 2026-05-26
 date_published: 2025-03-20

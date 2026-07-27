@@ -1,7 +1,7 @@
 ---
 title: "CONIKS: Bringing Key Transparency to End Users"
-source_url: https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/melara
-type: paper
+source: https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/melara
+type: papers
 ingested: 2026-06-01
 quality: 5
 confidence: high

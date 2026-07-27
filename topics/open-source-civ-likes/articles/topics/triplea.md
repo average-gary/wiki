@@ -1,8 +1,10 @@
 ---
 title: TripleA (boundary marker)
-type: topic
+category: topic
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "triplea-game/triplea is a Java / GPL-3.0 turn-based strategy / board-game engine. *\"Similar to Axis & Allies or Risk.\"*"
 confidence: high
 sources:
   - raw/repos/2026-06-18-triplea.md

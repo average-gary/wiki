@@ -1,10 +1,12 @@
 ---
 title: Manastr stateless client (query-on-render)
-type: concept
+category: concept
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [manastr, nostr, stateless, ui-pattern]
+summary: "Manastr's React \"Quantum web client\" holds no persistent game state in memory. On every render cycle (~5 s polling), the client:"
 ---
 
 # Manastr stateless client (query-on-render)

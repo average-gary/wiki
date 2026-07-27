@@ -2,8 +2,8 @@
 title: "Spark Research — Fedimint: Federated Ecash Mints on Bitcoin"
 type: raw
 source_type: articles
-source_url: https://www.spark.money/research/fedimint-federated-ecash
-fetched: 2026-05-28
+source: https://www.spark.money/research/fedimint-federated-ecash
+ingested: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 quality: 4

@@ -1,10 +1,12 @@
 ---
 title: Data Model & Agents (Custom NIPs, Git, Runtime)
-type: concept
+category: concept
 tags: [buzz, nostr, nips, data-model, agents, git, event-kinds, mcp]
 confidence: high
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
+summary: "Everything in buzz is a signed Nostr event of some kind, stored in Postgres. The event kinds *are* the data model. buzz ships ~14 custom NIPs on top of the base Nostr protocol."
 ---
 
 # Data Model & Agents

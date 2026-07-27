@@ -9,7 +9,7 @@ volatility: hot
 confidence: high
 target_repo_revision: c39f9c83255fb88adb2381848ed3423c1e6d5c64
 target_workspace_version: 0.12.0-alpha
-tags: [fedimint, module-authoring, multi-currency, AmountUnit, FMCM, playbook]
+tags: [fedimint, module-authoring, multi-currency, amount-unit, fmcm, playbook]
 question: "How do you write a Fedimint module that supports multi-currency in 2026?"
 ---
 

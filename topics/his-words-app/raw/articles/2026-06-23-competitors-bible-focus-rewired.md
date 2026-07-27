@@ -1,7 +1,7 @@
 ---
 title: "Bible Focus: Earn Screen Time — App Store listing (Rewired LLC)"
 source: https://itunes.apple.com/lookup?id=6747103808
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, competitor, bible-focus, rewired, gamification]
 quality: 4

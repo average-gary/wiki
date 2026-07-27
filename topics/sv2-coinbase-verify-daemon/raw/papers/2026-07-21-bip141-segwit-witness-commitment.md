@@ -1,11 +1,11 @@
 ---
 title: "BIP141 — Segregated Witness (witness commitment in coinbase)"
-source_url: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
-type: paper
-retrieved: 2026-07-21
+source: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
+type: papers
+ingested: 2026-07-21
 credibility: high
 corroboration: "coinbase-structure agent"
-tags: [bitcoin, bip141, segwit, witness-commitment, coinbase, OP_RETURN, txid-vs-wtxid]
+tags: [bitcoin, bip141, segwit, witness-commitment, coinbase, op-return, txid-vs-wtxid]
 summary: "The coinbase witness-commitment output layout (OP_RETURN 6a24 aa21a9ed + 32-byte commitment) and why the witness reserved value is NOT part of the txid serialization (and thus not in the SV2 coinbase prefix/suffix)."
 ---
 

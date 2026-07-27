@@ -1,11 +1,13 @@
 ---
 title: Sycophancy & the relentless-positivity register
-type: concept
+category: concept
 created: 2026-07-13
 updated: 2026-07-13
+volatility: warm
 status: active
 confidence: high
 tags: [llm-writing-indicators, tone, sycophancy, rlhf, register]
+summary: "A tonal tell: LLM prose is relentlessly agreeable, validating, and upbeat. It opens with affirmation (\"Great question!\", \"You're absolutely right!\"), praises the subject, hedges away from hard judgments, and rarely says something is simply bad."
 sources:
   - raw/articles/2026-07-13-anthropic-sycophancy.md
   - raw/articles/2026-07-13-openai-sycophancy-gpt4o.md
@@ -41,3 +43,4 @@ The positivity register is one of the more durable tells because it is baked int
 - [[puffery-and-significance-inflation|Puffery & significance inflation]]
 - [[vagueness-and-missing-specifics|Vagueness & missing specifics]]
 - [[model-and-version-drift|Model & version drift]]
+- [[not-x-but-y-antithesis.md|Not X but Y" — negative parallelism / antithesis]]

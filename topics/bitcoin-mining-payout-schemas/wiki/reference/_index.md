@@ -44,3 +44,7 @@ See [[../../raw/papers/_index|raw/papers]] for full notes.
 - [[../../../sv2-p2pool-integration/_index|sv2-p2pool-integration]]
 - [[../../../iroh-transport-stratum-v2/_index|iroh-transport-stratum-v2]] — relevant for EthnTuttle's SRI Iroh RFC
 - [[../../../coinbase-rotation-bitcoin/_index|coinbase-rotation-bitcoin]]
+
+## Coverage
+
+- [[uncompiled-source-coverage.md|Uncompiled source coverage — bitcoin-mining-payout-schemas]] — Compilation backlog: raw sources in this topic that no wiki article yet cites in its sources.

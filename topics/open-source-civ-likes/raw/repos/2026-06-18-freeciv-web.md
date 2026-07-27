@@ -1,7 +1,7 @@
 ---
 title: "Freeciv-web — freeciv/freeciv-web"
 source: https://github.com/freeciv/freeciv-web
-type: repo
+type: repos
 ingested: 2026-06-18
 quality: 5
 confidence: high

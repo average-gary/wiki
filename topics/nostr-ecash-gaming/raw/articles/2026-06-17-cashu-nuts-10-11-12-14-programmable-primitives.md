@@ -5,9 +5,9 @@ sources:
   - https://github.com/cashubtc/nuts/blob/main/11.md
   - https://github.com/cashubtc/nuts/blob/main/12.md
   - https://github.com/cashubtc/nuts/blob/main/14.md
-type: article
+type: articles
 tags: [cashu, nut-10, nut-11, nut-12, nut-14, p2pk, htlc, dleq, spending-conditions, gaming-primitives]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: high
 quality_score: 5

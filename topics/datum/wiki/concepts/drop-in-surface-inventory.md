@@ -8,7 +8,9 @@ sources:
   - raw/articles/2026-06-01-dropinq1-ocean-keypair-tides-attribution.md
 created: 2026-06-01
 updated: 2026-06-01
-tags: [drop-in, compatibility, datum_gateway, operator-surface]
+volatility: warm
+tags: [drop-in, compatibility, datum-gateway, operator-surface]
+summary: "The list of every operator-facing surface a Rust datum_gateway replacement must preserve to be binary-swappable. From Q1 CLI/signals, Q1 logging, Q1 ports/Docker, Q1 keypair/TIDES."
 confidence: high
 ---
 
@@ -87,3 +89,6 @@ Switch-day rollback to the C binary works automatically with no statefile compat
 - [[gateway-internals-c-architecture]] — the C source the inventory was extracted from
 - [[drop-in-rust-port-architecture]] — how the modules map to Rust crates
 - [[switch-day-runbook]] — the operator-facing migration procedure
+- [[drop-in-distribution.md|Drop-in distribution mechanics — packaging and binary swap]]
+- [[../topics/drop-in-rust-datum-gateway.md|Drop-in Rust DATUM gateway — synthesis]]
+- [[dual-protocol-downstream.md|Dual-protocol downstream — SV1 + SV2 in one binary]]

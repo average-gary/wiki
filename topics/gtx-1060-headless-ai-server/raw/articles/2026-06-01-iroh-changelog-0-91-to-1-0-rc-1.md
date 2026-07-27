@@ -1,7 +1,7 @@
 ---
 title: "iroh CHANGELOG — 0.91 (Jul 2025) through 1.0.0-rc.1 (May 2026)"
 source: https://raw.githubusercontent.com/n0-computer/iroh/main/CHANGELOG.md
-type: article
+type: articles
 tags: [iroh, changelog, 1.0, history, breaking-changes]
 date: 2026-06-01
 quality: 5

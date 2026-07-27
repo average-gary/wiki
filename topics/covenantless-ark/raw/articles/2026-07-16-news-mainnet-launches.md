@@ -1,7 +1,7 @@
 ---
 title: "Ark mainnet launches: Second's bark (Jun 2026) + Ark Labs' Arkade (Oct 2025)"
-source_url: https://bitcoinmagazine.com/news/second-launches-bark-on-bitcoin-mainnet
-type: article
+source: https://bitcoinmagazine.com/news/second-launches-bark-on-bitcoin-mainnet
+type: articles
 authors: [Micah Zimmerman]
 publisher: Bitcoin Magazine
 date: 2026-06-09

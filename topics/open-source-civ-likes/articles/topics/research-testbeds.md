@@ -1,8 +1,10 @@
 ---
 title: Civ-Likes as AI Research Testbeds
-type: topic
+category: topic
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "Civilization-like games sit in an unusual research sweet spot: imperfect-information, general-sum, variable-player-count, with diplomacy / negotiation / long-horizon planning all first-class. Atari benchmarks, Go, and even StarCraft don't cover the same ground."
 confidence: high
 sources:
   - raw/papers/2026-06-18-civrealm-iclr-2024.md
@@ -189,3 +191,4 @@ reasoning evaluation.
   Rust/ECS game engine (useful framing for new civ-like engine projects)
 - [hub: nostr-ecash-gaming](../../../nostr-ecash-gaming/_index.md) —
   decentralized game-state primitives (potential P2P civ-like backbone)
+- [[../concepts/ai-plugin-architecture.md|AI Plugin Architecture (C-evo pattern)]]

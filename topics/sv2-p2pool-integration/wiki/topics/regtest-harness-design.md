@@ -1,8 +1,10 @@
 ---
 title: "Regtest test harness design for sv2-p2pool"
-type: topic
+category: topic
 created: 2026-05-26
 updated: 2026-05-26
+volatility: warm
+summary: "Synthesis of 5 parallel research paths (Fedimint devimint, LN/Bitcoin app harnesses, Bitcoin Core test_framework, Rust multi-service patterns, existing SV2/mining harnesses). Direct input to Phase 1.8 of the Phase 1 wiring plan."
 confidence: high
 status: draft
 sources:

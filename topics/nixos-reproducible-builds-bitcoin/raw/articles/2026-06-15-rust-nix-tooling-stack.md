@@ -7,7 +7,7 @@ sources:
   - https://github.com/nix-community/fenix
   - https://github.com/nix-community/naersk
   - https://dpc.pw/posts/embedding-git-version-hash-in-a-binary-in-a-nix-friendly-way/
-type: article
+type: articles
 year: 2019-2026
 ingested: 2026-06-15
 tags: [rust, nix, flakebox, crane, fenix, naersk, buildgomodule-equivalent]

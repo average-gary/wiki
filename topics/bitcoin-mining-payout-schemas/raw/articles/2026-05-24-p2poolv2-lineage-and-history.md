@@ -1,7 +1,7 @@
 ---
 title: "p2poolv2 lineage: forrestv → SChernykh → Braidpool → p2poolv2"
 publication: multiple primary repos
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high

@@ -1,7 +1,7 @@
 ---
 title: "Tokio vs Tokio-uring TCP+Kafka benchmark (Dec 2024, shbhmrzd)"
-source_url: https://shbhmrzd.github.io/systems/rust/performance/2024/12/19/async_rt_benchmark.html
-type: article
+source: https://shbhmrzd.github.io/systems/rust/performance/2024/12/19/async_rt_benchmark.html
+type: articles
 ingested: 2026-06-24
 quality: 3
 confidence: medium

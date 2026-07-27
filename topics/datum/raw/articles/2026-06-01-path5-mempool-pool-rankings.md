@@ -1,6 +1,7 @@
 ---
 title: "Mempool.space Mining Pool Rankings - 2026"
-url: https://mempool.space/mining/pools
+source: https://mempool.space/mining/pools
+type: articles
 source_type: live-stats
 ingested_by: path5
 ingested_on: 2026-06-01

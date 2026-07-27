@@ -1,8 +1,8 @@
 ---
 title: "TIGERSearch (Stuttgart) — defunct"
-url: https://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/tigersearch/
-retrieved: 2026-06-02
-type: article
+source: https://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/tigersearch/
+ingested: 2026-06-02
+type: articles
 ---
 
 # TIGERSearch

@@ -1,7 +1,7 @@
 ---
 title: UsageStatsManager — granularity, latency, permission UX, and detecting foreground app changes
 source: https://developer.android.com/reference/android/app/usage/UsageStatsManager
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, android, usage-stats, package-usage-stats, foreground-detection]
 quality: 4

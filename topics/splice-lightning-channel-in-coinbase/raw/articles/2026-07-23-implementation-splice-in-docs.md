@@ -3,10 +3,10 @@ title: "Splice-in in shipping wallets: ACINQ/Phoenix + Core Lightning splicein"
 source: "https://acinq.co/blog/phoenix-splicing-update"
 source_extra:
   - "https://docs.corelightning.org/reference/splicein"
-type: article
+type: articles
 subtype: implementation-docs
-retrieved: 2026-07-23
-tags: [lightning, splice-in, phoenix, acinq, core-lightning, splicein, matured-coinbase]
+ingested: 2026-07-23
+tags: [lightning, splice-in, phoenix, acinq, core-lightning, matured-coinbase]
 credibility: high
 evidence_strength: implementation-docs
 direction: "supports Reading C"

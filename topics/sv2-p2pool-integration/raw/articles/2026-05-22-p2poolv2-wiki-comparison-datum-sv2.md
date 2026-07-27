@@ -1,6 +1,6 @@
 ---
 title: "p2poolv2 wiki — Comparison with DATUM and SV2"
-source_url: https://github.com/p2poolv2/p2poolv2/wiki/Comparison-with-DATUM-and-SV2
+source: https://github.com/p2poolv2/p2poolv2/wiki/Comparison-with-DATUM-and-SV2
 type: project-wiki
 ingested: 2026-05-22
 quality: 5

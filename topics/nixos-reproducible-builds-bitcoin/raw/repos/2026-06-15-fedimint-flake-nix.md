@@ -2,7 +2,7 @@
 title: "Fedimint flake.nix and Nix developer setup"
 source: https://github.com/fedimint/fedimint/blob/master/flake.nix
 docs: https://sdk.fedimint.org/core/dev/nix_setup.html
-type: repo
+type: repos
 maintainer: Fedimint (Eric Sirion et al.)
 year: 2022–2026
 ingested: 2026-06-15

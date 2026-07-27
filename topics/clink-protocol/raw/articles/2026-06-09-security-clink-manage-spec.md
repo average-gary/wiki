@@ -1,7 +1,7 @@
 ---
 title: CLINK Manage Specification (clink-manage.md)
 source: https://raw.githubusercontent.com/shocknet/clink/main/specs/clink-manage.md
-type: article
+type: articles
 ingested: 2026-06-09
 path: security
 quality: 5

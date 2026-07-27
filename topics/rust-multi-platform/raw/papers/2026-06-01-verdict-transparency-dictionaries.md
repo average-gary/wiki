@@ -1,7 +1,7 @@
 ---
 title: "Transparency Dictionaries with Succinct Proofs of Correct Operation (Verdict)"
-source_url: https://www.ndss-symposium.org/ndss-paper/auto-draft-252/
-type: paper
+source: https://www.ndss-symposium.org/ndss-paper/auto-draft-252/
+type: papers
 ingested: 2026-06-01
 quality: 4
 confidence: medium

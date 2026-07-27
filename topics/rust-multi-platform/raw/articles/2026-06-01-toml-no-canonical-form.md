@@ -1,6 +1,6 @@
 ---
 title: "TOML has no canonical form, unfit for signing (ALF #397)"
-source_url: https://github.com/alamparelli/alf/issues/397
+source: https://github.com/alamparelli/alf/issues/397
 type: critique
 ingested: 2026-06-01
 quality: 4

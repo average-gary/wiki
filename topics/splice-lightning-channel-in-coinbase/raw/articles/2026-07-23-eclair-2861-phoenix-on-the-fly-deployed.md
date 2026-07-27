@@ -3,9 +3,9 @@ title: "eclair #2861 + Phoenix — on-the-fly funding (splice OR dual-fund towar
 source: "https://github.com/ACINQ/eclair/pull/2861"
 source_secondary: "https://acinq.co/blog/phoenix-splicing-update"
 source_tertiary: "https://bitcoinops.org/en/topics/liquidity-advertisements/"
-type: article
+type: articles
 subtype: impl-docs
-retrieved: 2026-07-23
+ingested: 2026-07-23
 merged: 2024-09-25
 tags: [lightning, eclair, phoenix, on-the-fly-funding, splicing, dual-funding, liquidity-ads, lsp, deployed]
 credibility: high-med

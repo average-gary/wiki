@@ -2,9 +2,9 @@
 title: "NostrGameEngine — production game engine on Nostr (jMonkeyEngine, Java)"
 source: https://github.com/NostrGameEngine/ngengine
 secondary: https://ngengine.org/
-type: repo
+type: repos
 tags: [nostr, gaming, game-engine, jmonkeyengine, java, webrtc, p2p, nostrrtc, lightning, multiplatform]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: high
 quality_score: 5

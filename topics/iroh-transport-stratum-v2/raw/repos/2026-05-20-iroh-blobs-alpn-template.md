@@ -1,7 +1,7 @@
 ---
 title: "iroh-blobs — canonical ALPN protocol over iroh"
-source_url: https://github.com/n0-computer/iroh-blobs
-type: repo
+source: https://github.com/n0-computer/iroh-blobs
+type: repos
 date: 2026-05-20
 org: n0-computer
 credibility: high

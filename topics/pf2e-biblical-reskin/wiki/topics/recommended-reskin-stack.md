@@ -1,6 +1,6 @@
 ---
 title: "PF2e Biblical Reskin — recommended stack (synthesis)"
-type: topic
+category: topic
 created: 2026-05-25
 updated: 2026-05-25
 verified: 2026-05-25
@@ -10,6 +10,7 @@ compiled-from: research-round-2026-05-24
 sources:
   - all 43 raw sources from round 2026-05-24
 tags: [pf2e, christian-fantasy, biblical-reskin, remaster, sanctification, charism, lewisian, nephilim, synthesis]
+summary: "Single-page synthesis across all 6 research paths. Each section links to the deep concept article."
 ---
 
 # PF2e Biblical Reskin — recommended stack

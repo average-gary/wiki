@@ -1,7 +1,7 @@
 ---
 title: "Second's Ark/clArk docs (second.tech/docs) — the bark reference impl"
-source_url: https://second.tech/docs
-type: article
+source: https://second.tech/docs
+type: articles
 publisher: Second
 ingested: 2026-07-16
 research_path: implementations

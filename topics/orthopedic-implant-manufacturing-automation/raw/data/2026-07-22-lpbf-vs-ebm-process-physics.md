@@ -6,7 +6,7 @@ type: data
 tags: [additive-manufacturing, l-pbf, ebm, residual-stress, hip, post-processing, surface-roughness, astm-f136, hybrid]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Side-by-side of the two AM routes — L-PBF (room-temp, high residual stress, needs supports + HIP, finer resolution) vs EBM (hot vacuum, low stress, near-isotropic, rougher as-built, less post-processing). Explains why the post-processing tail (~20 hr/part for L-PBF) is the AM automation gap, and the hybrid counter-argument.
 ---
 

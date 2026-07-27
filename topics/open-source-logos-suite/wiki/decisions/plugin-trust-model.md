@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [decision, plugin, trust, sandboxing, capabilities, supply-chain]
+summary: "The plugin system is the moat extender for an OSS Logos suite. Sermon builders, denominational extensions, language packs, AI integrations, and BYO-license adapters all live there. Trust matters because plugins might:"
 sources:
   - "[[raw/articles/2026-05-27-client-obsidian-plugin-arch]]"
   - "[[raw/articles/2026-05-27-case-file-over-app]]"

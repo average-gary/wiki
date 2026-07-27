@@ -1,11 +1,13 @@
 ---
 title: Mandatory reflection window — how long the pause should last
-type: concept
+category: concept
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, ux, design-tension, friction]
+summary: "The pause-duration choice is the sharpest design tension in His Words. Too short and the prompt fails to engage System-2 deliberation; too long and the friction becomes coercive and triggers reactance. The empirical sweet spot is narrow."
 sources:
   - raw/papers/2026-06-23-psych-one-sec-self-nudge-pnas.md
   - raw/papers/2026-06-23-psych-haliburton-design-frictions-chi2024.md

@@ -1,12 +1,12 @@
 ---
 title: "EthnTuttle ↔ Fi3/DMND collaboration verdict + extended timeline"
 publication: github + delvingbitcoin
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 4
 credibility: high
 confidence: high
-tags: [EthnTuttle, Fi3, SLICE, DMND, pplns-jd, collaboration, timeline]
+tags: [ethntuttle, fi3, SLICE, dmnd, pplns-jd, collaboration, timeline]
 ---
 
 # EthnTuttle ↔ Fi3/DMND Collaboration: Light Tracking, Not Active Co-Development

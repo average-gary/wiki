@@ -1,6 +1,7 @@
 ---
 title: "HandleMiningMessagesFromClientAsync: the proxy's downstream entry point"
 source: /Users/garykrause/repos/stratum/sv2/handlers-sv2/src/mining.rs
+type: repos
 source_type: local-code
 ingested_by: path3
 ingested_at: 2026-06-01

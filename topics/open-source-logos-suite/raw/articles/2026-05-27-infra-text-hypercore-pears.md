@@ -1,7 +1,7 @@
 ---
 title: "Pears / Hypercore / Hyperdrive — Append-Only P2P Stack"
-source_url: "https://docs.pears.com/"
-type: article
+source: "https://docs.pears.com/"
+type: articles
 path: infra-text
 date_ingested: 2026-05-27
 date_published: unknown

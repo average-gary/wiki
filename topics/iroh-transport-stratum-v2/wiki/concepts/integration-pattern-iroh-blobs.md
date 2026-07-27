@@ -1,6 +1,6 @@
 ---
 title: "Integration pattern — iroh-blobs and Delta Chat as templates"
-type: concept
+category: concept
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-20
@@ -12,6 +12,7 @@ sources:
   - raw/repos/2026-05-20-iroh-examples-framed-messages.md
   - raw/articles/2026-05-20-iroh-paycode-case-study.md
 tags: [iroh, integration, alpn, pattern]
+summary: "The shape of an iroh transport integration is well-established across multiple production codebases."
 ---
 
 # Integration pattern — copy these

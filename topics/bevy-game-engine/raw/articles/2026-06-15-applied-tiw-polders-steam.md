@@ -1,9 +1,9 @@
 ---
 title: "TWIB — POLDERS Steam page, fallible commands, directional UI nav"
-source_url: https://thisweekinbevy.com/issue/2025-01-13-fallible-commands-directional-ui-navigation-and-picking-debug
+source: https://thisweekinbevy.com/issue/2025-01-13-fallible-commands-directional-ui-navigation-and-picking-debug
 source_date: 2025-01-13
 ingested: 2026-06-15
-type: article
+type: articles
 author: This Week in Bevy
 quality: 3
 credibility: medium

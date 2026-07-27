@@ -1,10 +1,12 @@
 ---
 title: "Bevy platform support"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, platforms, mobile, console, wasm, webgpu, ios, android, switch]
+summary: "Sources: Cargo features (wayland, x11, web, webgl2, webgpu, android-game-activity, android-native-activity), Bevy Cheat Book platforms, Discussion #20998 mobile export."
 ---
 
 # Bevy platform support
@@ -55,3 +57,4 @@ The repo's `README` cites `x86_64-unknown-linux-gnu` as the tier-1 platform ([[d
 - [[bevy-overview.md|Bevy overview]]
 - [[bevy-criticisms.md|Criticisms]]
 - [[bevy-rendering.md|Rendering]]
+- [[bevy-cargo-features.md|Bevy Cargo features]]

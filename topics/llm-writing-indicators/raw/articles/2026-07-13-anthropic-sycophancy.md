@@ -3,7 +3,7 @@ title: "Towards Understanding Sycophancy in Language Models"
 source: https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models
 author: Anthropic (Mrinank Sharma et al.)
 venue: Anthropic Research (2023)
-type: article
+type: articles
 tags: [llm-writing-indicators, rlhf, sycophancy, register-tells, mechanism]
 quality: 5
 confidence: high

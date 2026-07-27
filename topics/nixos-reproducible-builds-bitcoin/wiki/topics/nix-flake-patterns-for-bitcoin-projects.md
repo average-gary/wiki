@@ -1,10 +1,12 @@
 ---
 title: "Nix flake patterns for Bitcoin projects"
-type: topic
+category: topic
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [flake, patterns, fedimint, nix-bitcoin, bix, rust, cross-compile]
+summary: "The patterns currently used by Bitcoin OSS projects that have adopted Nix. Read this together with why-bitcoin-core-uses-guix-not-nix.md — Nix is not the upstream Bitcoin Core build, but flakes have caught on for several distinct use cases."
 sources:
   - "[[../../raw/repos/2026-06-15-fedimint-flake-nix.md|Fedimint flake.nix]]"
   - "[[../../raw/repos/2026-06-15-nix-bitcoin-fort-nix.md|nix-bitcoin]]"
@@ -161,3 +163,5 @@ dev-environment flake.
 - [[playbook-nix-attestation-for-bitcoin.md|Playbook: Nix-built attestation for Bitcoin Core]]
 - [[sv2-apps-oci-reproducibility-feasibility.md|sv2-apps OCI reproducibility feasibility]] — Pattern 5 in depth
 - [[fedimint-reproducible-builds.md|Fedimint reproducible builds]] — Pattern 3+5 source
+- [[lightning-node-reproducibility-under-nix.md|Lightning node reproducibility under Nix]]
+- [[../../theses/sv2-apps-can-easily-adopt-fedimint-style-oci.md|Thesis: sv2-apps could easily adopt reproducible builds for OCI containers like Fedimint]]

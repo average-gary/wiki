@@ -1,7 +1,7 @@
 ---
 title: "Home Garden Blueberries (UGA Extension Circular C715)"
-source_url: "https://fieldreport.caes.uga.edu/publications/C715/"
-type: article
+source: "https://fieldreport.caes.uga.edu/publications/C715/"
+type: articles
 path: blueberry
 date_ingested: 2026-05-26
 date_published: unknown

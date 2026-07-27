@@ -1,9 +1,9 @@
 ---
 title: "Scaling noncustodial mining payouts with CTV (jamesob, Delving Bitcoin #1753)"
 source: "https://delvingbitcoin.org/t/scaling-noncustodial-mining-payouts-with-ctv/1753"
-type: article
+type: articles
 subtype: protocol-thread
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [mining, coinbase, ctv, noncustodial-payouts, delving-bitcoin, jamesob, fanout, coinbase-maturity]
 credibility: high
 evidence_strength: primary-design-thread

@@ -1,8 +1,8 @@
 ---
 title: "ATProto account migration guide"
-url: https://atproto.com/guides/account-migration
-retrieved: 2026-06-02
-type: article
+source: https://atproto.com/guides/account-migration
+ingested: 2026-06-02
+type: articles
 ---
 
 Official ATProto documentation walking through account migration between Personal Data Servers (PDSs) using `did:plc`. The cooperative migration flow: the old PDS signs a PLC operation containing the new PDS's service location and updated keys (rather than having the user sign directly), and submits it to the PLC directory; an email-verified security token is required via `com.atproto.identity.requestPlcOperationSignature` to prevent unauthorized migrations.

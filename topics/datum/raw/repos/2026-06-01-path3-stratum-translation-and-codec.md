@@ -1,6 +1,7 @@
 ---
 title: "stratum-translation crate + codec/noise/framing/parsers wire pipeline"
 source: /Users/garykrause/repos/stratum/stratum-core/stratum-translation/src/{lib.rs,sv1_to_sv2.rs}
+type: repos
 source_secondary: /Users/garykrause/repos/stratum/sv2/codec-sv2/src/lib.rs
 source_type: local-code
 ingested_by: path3

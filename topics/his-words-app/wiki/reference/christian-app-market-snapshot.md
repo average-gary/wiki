@@ -1,11 +1,13 @@
 ---
 title: Christian app market snapshot — top apps with funding, users, pricing
-type: reference
+category: reference
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: medium
 tags: [his-words-app, market, reference]
+summary: "Apples-to-apples comparison of the top funded / largest Christian apps as of mid-2026. Includes faith apps that *do not* compete with His Words on mechanism (Bible readers, audio prayer) — the goal is showing the field His Words must occupy."
 sources:
   - raw/articles/2026-06-23-market-hallow-funding-and-growth.md
   - raw/articles/2026-06-23-market-youversion-bible-app.md

@@ -1,23 +1,24 @@
 ---
 title: "Walled translation API revocation history (2024-2026)"
-type: concept
+category: concept
 created: 2026-06-02
 updated: 2026-06-02
 verified: 2026-06-02
 volatility: warm
+summary: "The Crossway ESV API is the only widely-used self-serve walled-translation API in 2026, and its terms still contain (a) the four-doctrine conformity clause and (b) the explicit \"we reserve the right to cancel your access to the service at any time for any reason\" language — both alive and quotable a…"
 confidence: medium
 sources:
   - raw/articles/2026-06-02-esv-api-overview-terms.md
   - raw/articles/2026-06-02-esv-api-docs-portal.md
   - raw/articles/2026-06-02-crossway-statement-of-faith.md
   - raw/articles/2026-06-02-andbible-faq-esv-withdrawn.md
-  - raw/articles/2026-06-02-crosswire-sword-modules.md
+  - ../../raw/repos/2026-06-02-crosswire-sword-modules.md
   - raw/articles/2026-06-02-nlt-api-tyndale.md
   - raw/articles/2026-06-02-lockman-nasb-permissions.md
   - raw/articles/2026-06-02-csbible-permissions.md
   - raw/articles/2026-06-02-api-bible-overview.md
   - raw/articles/2026-06-02-youversion-platform-developers.md
-  - raw/articles/2026-06-02-olivetree-hub-api.md
+  - ../../raw/repos/2026-06-02-olivetree-hub-api.md
 ---
 
 # Walled translation API revocation history (2024-2026)

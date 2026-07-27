@@ -1,10 +1,12 @@
 ---
 title: "Deviation detection — job-diff + on-chain correlation"
-type: concept
+category: concept
 created: 2026-07-21
 updated: 2026-07-21
+volatility: warm
 confidence: high
 tags: [stratum-v2, deviation-detection, job-diff, on-chain-correlation, block-withholding, sybil, mempool-api, alerting]
+summary: "Turning the \"signed ≠ broadcast\" and \"served-differently\" gaps (wiki/topics/what-the-daemon-can-and-cannot-prove) into concrete alerting, plus the hard limits."
 ---
 
 # Deviation detection — job-diff + on-chain correlation
@@ -74,3 +76,4 @@ per-worker addresses exist, and it only detects *served*-differently, not
 - [[wiki/concepts/coinbase-verification-trust-model-limits]]
 - [[wiki/concepts/prior-art-coinbase-verification]]
 - [[wiki/concepts/sourcing-the-expected-value]]
+- [[../topics/reference-implementation-skeleton.md|Reference implementation skeleton (Rust / SRI)]]

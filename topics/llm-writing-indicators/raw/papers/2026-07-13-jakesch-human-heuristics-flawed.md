@@ -4,7 +4,7 @@ source: https://arxiv.org/abs/2206.07271
 doi: 10.1073/pnas.2208839120
 authors: Maurice Jakesch, Jeffrey T. Hancock, Mor Naaman
 venue: PNAS Vol. 120 No. 11 (2023); preprint arXiv:2206.07271
-type: paper
+type: papers
 tags: [llm-writing-indicators, human-detection, heuristics, false-cues]
 quality: 5
 confidence: high

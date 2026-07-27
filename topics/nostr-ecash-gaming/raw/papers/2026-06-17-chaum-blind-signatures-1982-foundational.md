@@ -1,9 +1,9 @@
 ---
 title: "Chaum (1983) — Blind Signatures for Untraceable Payments — foundational primitive"
 source: https://link.springer.com/chapter/10.1007/978-1-4757-0602-4_18
-type: paper
+type: papers
 tags: [chaum, blind-signature, foundational, cryptography, ecash, history]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: high
 quality_score: 5

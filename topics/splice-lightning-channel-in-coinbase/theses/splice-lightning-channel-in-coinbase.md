@@ -4,12 +4,15 @@ type: thesis
 status: completed
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 status_note: "verdict rendered 2026-07-23 after 5-agent thesis-mode research round (12 sources); BOLT #2 coinbase rule verified verbatim against master"
 verdict: "Mixed — Contradicted (literal) / Not viable (charitable) / Supported (narrow)"
 confidence: High
 core_claim: "The on-chain transaction that modifies a Lightning channel's funding output (a splice) can be constructed as, or embedded within, a Bitcoin coinbase transaction."
 key_variables: [coinbase-null-prevout-input, coinbase-maturity-100, lightning-splice-spends-funding, funding-output-enforceability, reorg-risk, presigning-unknown-coinbase-outpoint]
 falsification: "Fails (Reading A) if a coinbase's mandatory null-prevout single input means it cannot spend the existing funding UTXO, which a splice definitionally must. Fails (Reading B) if coinbase maturity + reorg risk make a coinbase-borne funding output unspendable/unenforceable for 100 blocks, breaking LN safety."
+tags: [thesis]
+summary: "The on-chain transaction that modifies a Lightning channel's funding output (a splice) can be constructed as, or embedded within, a Bitcoin coinbase transaction."
 ---
 
 # Thesis: I can splice a lightning channel in a coinbase transaction

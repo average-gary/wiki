@@ -1,12 +1,13 @@
 ---
 title: "Primary module support — per-unit transaction funding routing"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
 verified: 2026-06-15
 volatility: hot
 confidence: high
 tags: [fedimint, primary-module, PrimaryModuleSupport, multi-currency, ClientModule]
+summary: "Pre-#7734 the client kept a single manually-set primary_module: ModuleInstanceId. PR #7734 (\"chore: multi-currency support\") replaced that with per-unit primary modules declared by each ClientModule via supports_being_primary() -> PrimaryModuleSupport."
 ---
 
 # Primary module support
@@ -87,3 +88,4 @@ A module that returns `PrimaryModuleSupport::None` can leave these as no-ops/def
 - [[mintv2-amount-unit-config|mintv2 amount_unit config]] — concrete usage
 - [[../../raw/repos/2026-06-15-fedimint-amount-units-and-amounts-source|AmountUnit/Amounts source walk]]
 - [[../../raw/repos/2026-06-15-fedimint-server-module-trait-surface|ServerModule/ClientModule trait surface]]
+- [[server-module-trait.md|ServerModule trait — what a Fedimint module author implements (consensus side)]]

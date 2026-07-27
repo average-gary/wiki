@@ -1,10 +1,11 @@
 ---
 title: Rust-Bitcoin Project Release Cadences
-type: reference
+category: reference
 created: 2026-06-22
 updated: 2026-06-22
 verified: 2026-06-22
 volatility: warm
+summary: "Useful for predicting when to watch for TWiR-submittable releases."
 confidence: medium
 sources:
   - "[[../../raw/articles/2026-04-20-bdk-2026-q1-update|BDK Q1]]"

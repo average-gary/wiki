@@ -1,6 +1,7 @@
 ---
 title: "Drop-In Q3: Block-Found Data Flow — submitblock + DATUM upstream parallel paths"
-source_url: https://github.com/OCEAN-xyz/datum_gateway/blob/master/src/datum_submitblock.c
+source: https://github.com/OCEAN-xyz/datum_gateway/blob/master/src/datum_submitblock.c
+type: articles
 source_type: source-analysis
 upstream: OCEAN-xyz/datum_gateway
 branch: master

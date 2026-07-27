@@ -5,7 +5,7 @@ type: data
 tags: [impregnation, varnish, vpi, trickle, dip, bldc]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Method comparison (trickle/dip/VPI/roll/pour/spray) with parameters and which maps to BLDC/PMSM vs large induction.
 ---
 

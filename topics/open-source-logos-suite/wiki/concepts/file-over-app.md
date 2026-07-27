@@ -1,6 +1,6 @@
 ---
 title: File Over App
-type: concept
+category: concept
 created: 2026-05-27
 updated: 2026-05-27
 verified: 2026-05-27
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [local-first, files, obsidian, design-principle]
+summary: "The design principle that consistently produces winning knowledge apps: plain files on disk in open formats are the ground truth; the app is a view on top. Coined explicitly by Obsidian."
 sources:
   - "[[raw/articles/2026-05-27-case-file-over-app]]"
   - "[[raw/articles/2026-05-27-case-inkandswitch-local-first]]"
@@ -125,3 +126,4 @@ See [[credible-exit|Credible exit principle]].
 - [[client-architecture|Client architecture]]
 - [[decentralized-sync|Decentralized sync]]
 - [[../topics/engineering-playbook|Engineering playbook]]
+- [[identity-and-recovery.md|Identity and Recovery]]

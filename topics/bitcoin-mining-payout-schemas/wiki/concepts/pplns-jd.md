@@ -6,7 +6,8 @@ updated: 2026-07-15
 verified: 2026-07-15
 confidence: medium
 volatility: warm
-tags: [PPLNS-JD, SLICE, DMND, Demand-Pool, Stratum-V2, JD]
+tags: [pplns-jd, SLICE, dmnd, demand-pool, stratum-v2, JD]
+summary: "PPLNS variant where shares are bound to SV2 Job-Declarator-declared jobs — the miner picks the block template; the pool just counts shares."
 sources:
   - "raw/articles/2026-05-23-dmnd-demand-pool.md"
   - "raw/articles/2026-05-23-dmnd-slice-blog-pplns-jd.md"
@@ -100,3 +101,5 @@ PPLNS-JD as described above still asks the miner to *trust* the pool's window ar
 - [[tides]]
 - [[sv2-share-accounting-ext|SV2 Share Accounting Extension]] — the wire protocol that makes this scheme's payout verifiable
 - [[../topics/sv2-jd-and-payout-decoupling|SV2 Job Declaration ↔ Payout Decoupling]]
+- [[datum.md|DATUM (OCEAN template-construction)]]
+- [[parasite-pool.md|Parasite Pool]]

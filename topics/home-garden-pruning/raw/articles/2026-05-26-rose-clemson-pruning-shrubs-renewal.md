@@ -1,7 +1,7 @@
 ---
 title: "Pruning Shrubs — Renewal & One-Third Rule (Clemson HGIC)"
-source_url: "https://hgic.clemson.edu/factsheet/pruning-shrubs/"
-type: article
+source: "https://hgic.clemson.edu/factsheet/pruning-shrubs/"
+type: articles
 path: rose
 date_ingested: 2026-05-26
 date_published: unknown

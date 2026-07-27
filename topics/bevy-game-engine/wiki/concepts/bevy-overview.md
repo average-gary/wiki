@@ -1,10 +1,12 @@
 ---
 title: "Bevy overview"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, ecs, rust, game-engine, overview]
+summary: "Bevy is a refreshingly-simple, data-driven game engine and app framework, written in Rust. License: dual MIT OR Apache-2.0 (at your option). The current shipping release as of 2026-06-15 is 0.18.1 (published 2026-03-02); main branch is in the 0.19 development cycle (rc.3 published 2026-06-10)."
 ---
 
 # Bevy overview

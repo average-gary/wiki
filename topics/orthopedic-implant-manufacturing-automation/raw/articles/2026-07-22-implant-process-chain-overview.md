@@ -3,11 +3,11 @@ title: "Orthopedic implant manufacturing process chain — forming routes, QC & 
 source: https://slrmedicalconsulting.com/how-orthopedic-implants-manufactured-quality-tested/
 source_2: https://met3dp.com/orthopedic-implants20250503/
 source_3: https://www.micronsolutions.com/orthopedic-implants-manufacturing
-type: article
+type: articles
 tags: [process-chain, forging, machining, additive-manufacturing, quality-testing, passivation, sterilization, standards, cleanroom]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Three complementary overviews of the full implant chain — SLR (forming routes tied to tolerances + ASTM/ISO test standards), Met3DP (the AM route and its post-processing burden), Micron (a single-vendor snapshot of the entire station sequence in Class 7/8 cleanrooms).
 ---
 

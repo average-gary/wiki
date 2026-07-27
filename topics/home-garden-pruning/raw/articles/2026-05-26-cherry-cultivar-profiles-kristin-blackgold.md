@@ -1,7 +1,7 @@
 ---
 title: "Kristin and BlackGold Sweet Cherry Cultivar Profiles (Stark Bro's + Cummins Nursery)"
-source_url: "https://www.starkbros.com/products/fruit-trees/cherry-trees/kristin-sweet-cherry"
-type: article
+source: "https://www.starkbros.com/products/fruit-trees/cherry-trees/kristin-sweet-cherry"
+type: articles
 path: cherry
 date_ingested: 2026-05-26
 date_published: unknown

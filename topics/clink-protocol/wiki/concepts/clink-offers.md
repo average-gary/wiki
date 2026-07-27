@@ -1,12 +1,14 @@
 ---
 title: CLINK Offers (kind 21001 / noffer)
-type: concept
+category: concept
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
+summary: "Static, reusable Lightning payment codes encoded as bech32 strings (noffer1...) and exchanged over Nostr ephemeral event kind 21001. Closest analogs: LNURL-pay (LUD-06) and BOLT12 offers (lno1...)."
 confidence: high
 sources:
   - raw/articles/2026-06-09-spec-primitives-clink-offers-spec.md
-  - raw/articles/2026-06-09-comparison-clink-offers-spec.md
+  - ../../raw/repos/2026-06-09-comparison-clink-offers-spec.md
   - raw/articles/2026-06-09-security-clink-offers-spec.md
 ---
 
@@ -111,3 +113,5 @@ See [[../topics/clink-security-and-trust.md|security and trust]] for the broader
 - [[clink-wire-format.md]] — universal wire-format reference
 - [[clink-discovery-and-nip05.md]] — how clients find an noffer
 - [[../topics/clink-vs-alternatives.md]] — vs LNURL / BOLT12 / NIP-57
+- [[clink-manage.md|CLINK Manage (kind 21003 / nmanage)]]
+- [[../topics/clink-security-and-trust.md|CLINK security and trust model]]

@@ -1,6 +1,6 @@
 ---
 title: "SCITT Reference APIs (SCRAPI)"
-source_url: https://datatracker.ietf.org/doc/draft-ietf-scitt-scrapi/
+source: https://datatracker.ietf.org/doc/draft-ietf-scitt-scrapi/
 type: rfc-draft
 ingested: 2026-06-01
 quality: 4

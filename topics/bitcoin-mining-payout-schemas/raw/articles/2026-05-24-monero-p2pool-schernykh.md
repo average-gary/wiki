@@ -1,13 +1,13 @@
 ---
 title: "SChernykh Monero p2pool — design reference for p2poolv2"
 publication: github.com/SChernykh/p2pool
-url: https://github.com/SChernykh/p2pool
-type: article
+source: https://github.com/SChernykh/p2pool
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high
 confidence: high
-tags: [Monero, p2pool, SChernykh, uncle-blocks, sidechain]
+tags: [monero, p2pool, SChernykh, uncle-blocks, sidechain]
 ---
 
 # SChernykh Monero p2pool

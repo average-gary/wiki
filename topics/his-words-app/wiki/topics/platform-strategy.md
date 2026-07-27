@@ -1,11 +1,13 @@
 ---
 title: Platform strategy — iOS first, Android deferred
-type: topic
+category: topic
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, platform, strategy, ios, android]
+summary: "Decision: iOS first. Android deferred until iOS validates the interruption-rhythm thesis at ≥50k MAU + ≥40% Day-30 retention. The decision and reversibility analysis is captured in decision: iOS-first."
 sources:
   - raw/articles/2026-06-23-ios-screen-time-api-capabilities.md
   - raw/articles/2026-06-23-ios-app-store-approval-precedent.md

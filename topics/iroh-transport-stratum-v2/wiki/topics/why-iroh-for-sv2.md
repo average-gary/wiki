@@ -1,6 +1,6 @@
 ---
 title: "Why Iroh for Stratum v2"
-type: topic
+category: topic
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-20
@@ -12,6 +12,7 @@ sources:
   - raw/articles/2026-05-20-iroh-paycode-case-study.md
   - raw/articles/2026-05-20-iroh-1-0-0-rc-0.md
 tags: [iroh, sv2, motivation, design]
+summary: "A focused motivation document. The four reasons that hold up under scrutiny."
 ---
 
 # Why Iroh for Stratum v2

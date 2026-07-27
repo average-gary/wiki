@@ -2,11 +2,11 @@
 title: "Automation ROI, Volume Thresholds & Flexible-vs-Dedicated Framework (ynypm + Fastems + LinkedIn)"
 source: https://www.ynypm.com/news/Industry-News/automation-lines/When-does-automated-production-line-ROI-break-even---and-what-delays-it-most-.html
 source_2: https://www.fastems.com/high-mix-low-volume-automation/
-type: article
+type: articles
 tags: [roi, volume-threshold, payback, flexible-vs-dedicated, takt-time, digital-twin]
 credibility: low
 confidence: medium
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Quantitative volume-vs-payback crossover data + the dedicated-vs-flexible decision framework. ROI figures are vendor-illustrative, not primary-sourced.
 ---
 

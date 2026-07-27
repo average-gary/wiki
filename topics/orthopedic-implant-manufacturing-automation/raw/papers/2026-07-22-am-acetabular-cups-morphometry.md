@@ -1,11 +1,11 @@
 ---
 title: "Morphometry of 12 Commercial 3D-Printed Titanium Acetabular Cups (6 manufacturers)"
 source: https://pmc.ncbi.nlm.nih.gov/articles/PMC9639285/
-type: paper
+type: papers
 tags: [additive-manufacturing, acetabular-cup, porosity, lattice, tpms, osseointegration, depowdering, titanium]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Peer-reviewed measurement of real commercial AM titanium acetabular cups from six manufacturers — hard porosity/pore-size/strut numbers, TPMS-vs-stochastic lattice split, and the trapped-powder depowdering concern.
 ---
 

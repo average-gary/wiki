@@ -1,6 +1,6 @@
 ---
 title: Cherry Pruning — Kristin and BlackGold
-type: topic
+category: topic
 created: 2026-05-26
 updated: 2026-05-26
 verified: 2026-05-26
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [cherry, sweet-cherry, kristin, blackgold, pruning, summer-pruning, bacterial-canker]
+summary: "Both Kristin and BlackGold are *Prunus avium* sweet cherries bred at Cornell-Geneva for Eastern conditions. The single most important pruning rule for sweet cherry in the East is prune in late July, after harvest — not in the dormant season — to dramatically reduce bacterial canker (*Pseudomonas syr…"
 sources:
   - "[[raw/papers/2026-05-26-cherry-nyshs-pruning-bactericides-bacterial-canker]]"
   - "[[raw/articles/2026-05-26-cherry-osu-pnw667-training-systems]]"

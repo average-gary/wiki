@@ -1,7 +1,7 @@
 ---
 title: "m3c4j/msi-gs63vr-config — model-specific Linux notes"
 source: https://github.com/m3c4j/msi-gs63vr-config
-type: repo
+type: repos
 tags: [msi, gs63vr, optimus, bios, linux-laptop]
 date: 2026-05-21
 quality: 3

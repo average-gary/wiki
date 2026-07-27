@@ -1,8 +1,10 @@
 ---
 title: AI Plugin Architecture (C-evo pattern)
-type: concept
+category: concept
 created: 2026-06-18
 updated: 2026-06-18
+volatility: warm
+summary: "Most OSS civ-likes ship a single, in-tree AI implementation:"
 confidence: medium
 sources:
   - raw/repos/2026-06-18-c-evo.md

@@ -2,10 +2,10 @@
 title: "Ark: Offchain Transaction Batching in Bitcoin (Keer, Maffei, Argentieri, Camilleri, Avarikioti — arXiv 2605.20952)"
 authors: [Pim Keer, Matteo Maffei, Marco Argentieri, Andrew Camilleri, Zeta Avarikioti]
 publication: arXiv
-url: https://arxiv.org/abs/2605.20952
+source: https://arxiv.org/abs/2605.20952
 pdf: https://arxiv.org/pdf/2605.20952
 date: 2026-05-20
-type: paper
+type: papers
 peer_reviewed: preprint (cs.DC + cs.CR)
 ingested: 2026-05-26
 quality: 5

@@ -4,11 +4,14 @@ type: thesis
 status: investigating
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 verdict: pending
 confidence: pending
 core_claim: "For small mints (under ~1 BTC reserve), cdk-mintd + cdk-ldk-node has lower operational risk than cdk-mintd + cdk-cln or cdk-mintd + cdk-lnd, because the surface area of two-process LN ops is more failure-prone than the open-issue catalog of LDK Node at this scale."
 key_variables: [reserve_size, persistence_panic_rate, operator_skill, surface_area]
 falsification: "If even small mints suffer LDK Node panics frequently enough that they lose more sats to forced closes than CLN/LND operators lose to ops mistakes, the thesis is false."
+tags: [thesis]
+summary: "For small mints (under ~1 BTC reserve), cdk-mintd + cdk-ldk-node has lower operational risk than cdk-mintd + cdk-cln or cdk-mintd + cdk-lnd, because the surface area of two-process LN ops is more failure-prone than the open-issue catalog of LDK Node at this scale."
 ---
 
 # Thesis: LDK Node vs CLN for small mints

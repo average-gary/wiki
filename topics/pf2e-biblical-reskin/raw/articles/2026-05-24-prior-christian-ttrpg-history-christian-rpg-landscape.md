@@ -1,7 +1,7 @@
 ---
 title: "Christian tabletop RPG landscape (aggregated)"
 source: "https://html.duckduckgo.com/html/?q=list+of+Christian+tabletop+RPGs+history"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [christian-rpg, history, landscape, design-retrospective, indie]

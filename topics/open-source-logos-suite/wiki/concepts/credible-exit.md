@@ -1,6 +1,6 @@
 ---
 title: Credible Exit Principle
-type: concept
+category: concept
 created: 2026-05-27
 updated: 2026-06-02
 verified: 2026-06-02
@@ -8,6 +8,7 @@ volatility: cold
 status: active
 confidence: high
 tags: [decentralized, design-principle, atproto, bluesky, nostr]
+summary: "The honest framing for \"decentralized\" apps in 2026: users don't want decentralization, they want their data not held hostage. Bluesky's PR struggle to defend the \"decentralized\" label produced this term; it's the right design target."
 sources:
   - "[[raw/articles/2026-05-27-case-bluesky-not-decentralized]]"
   - "[[raw/articles/2026-05-27-case-anytype-any-sync]]"
@@ -134,3 +135,5 @@ That's the pitch. Decentralization is mechanism, not message.
 - [[identity-and-recovery|Identity and recovery]] — corrected 2026-06-02; Nostr is the recommended identity model
 - [[nostr-key-rotation|Nostr key-rotation: 2026 state of the art]] — the rotation gap is real; document it
 - [[../topics/engineering-playbook|Engineering playbook]]
+- [[keyhive-small-group-sync.md|Keyhive: small-group E2EE CRDT sync (Ink & Switch March 2025)]]
+- [[walled-translation-api-revocation-history.md|Walled translation API revocation history (2024-2026)]]

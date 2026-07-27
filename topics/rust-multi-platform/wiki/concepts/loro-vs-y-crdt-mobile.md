@@ -1,22 +1,23 @@
 ---
 title: "Loro vs y-crdt for Rust-native mobile CRDT sync (2026)"
-type: concept
+category: concept
 created: 2026-06-02
 updated: 2026-06-02
 verified: 2026-06-02
 volatility: hot
+summary: "As of 2026-06, Loro is the clearly more active Rust-native CRDT substrate (post-1.0, monthly releases, hardened atomic-import + malformed-blob handling in v1.12, first-party loro-swift xcframework on a v1.10.x line) while y-crdt (yrs) remains pre-1.0 (v0.18 from 2025-03; no 2025 follow-up) and its S…"
 confidence: medium
 sources:
-  - raw/articles/2026-06-02-loro-releases-1-12.md
-  - raw/articles/2026-06-02-loro-readme.md
-  - raw/articles/2026-06-02-loro-ffi.md
-  - raw/articles/2026-06-02-loro-swift-releases.md
-  - raw/articles/2026-06-02-loro-cargo-toml.md
-  - raw/articles/2026-06-02-yrs-0-18-release.md
-  - raw/articles/2026-06-02-y-crdt-readme.md
-  - raw/articles/2026-06-02-yswift-uniffi.md
-  - raw/articles/2026-06-02-yjs-v14-rc-status.md
-  - raw/articles/2026-06-02-crdt-benchmarks-dmonad.md
+  - ../../raw/repos/2026-06-02-loro-releases-1-12.md
+  - ../../raw/repos/2026-06-02-loro-readme.md
+  - ../../raw/repos/2026-06-02-loro-ffi.md
+  - ../../raw/repos/2026-06-02-loro-swift-releases.md
+  - ../../raw/repos/2026-06-02-loro-cargo-toml.md
+  - ../../raw/repos/2026-06-02-yrs-0-18-release.md
+  - ../../raw/repos/2026-06-02-y-crdt-readme.md
+  - ../../raw/repos/2026-06-02-yswift-uniffi.md
+  - ../../raw/repos/2026-06-02-yjs-v14-rc-status.md
+  - ../../raw/repos/2026-06-02-crdt-benchmarks-dmonad.md
   - raw/articles/2026-06-02-jahns-crdt-suitability.md
 ---
 

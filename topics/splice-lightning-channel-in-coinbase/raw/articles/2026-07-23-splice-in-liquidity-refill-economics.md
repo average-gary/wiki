@@ -6,9 +6,9 @@ extra_sources:
   - "https://docs.corelightning.org/reference/splicein"
   - "https://www.spark.money/research/splicing-lightning-channels"
   - "https://www.lightspark.com/glossary/splicing"
-type: article
+type: articles
 subtype: impl-docs-practitioner
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [splicing, splice-in, phoenix, acinq, core-lightning, liquidity-refill, capital-efficiency, self-custody, mining-fee]
 credibility: med-high
 evidence_strength: docs

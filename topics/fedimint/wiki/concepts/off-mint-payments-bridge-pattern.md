@@ -1,12 +1,13 @@
 ---
 title: "Off-mint payments-bridge pattern"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 confidence: high
 tags: [fedimint, fedi, mini-apps, bitsacco, chapsmart, m-pesa, payments-bridge, applied]
+summary: "The dominant production answer to \"how does a Fedimint user transact in non-BTC currency?\" is not a multi-currency mint module. It's an external Lightning-receiving service that converts BTC → local fiat via existing mobile-money rails."
 ---
 
 # Off-mint payments-bridge pattern

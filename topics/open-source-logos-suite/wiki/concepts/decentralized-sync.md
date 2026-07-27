@@ -1,6 +1,6 @@
 ---
 title: Decentralized Sync
-type: concept
+category: concept
 created: 2026-05-27
 updated: 2026-06-02
 verified: 2026-06-02
@@ -8,12 +8,13 @@ volatility: warm
 status: active
 confidence: high
 tags: [decentralized, sync, identity, atproto, nostr, automerge, yjs, did]
+summary: "For user notes, highlights, reading plans, and sermon drafts that need to travel between devices. Honest evaluation of the candidates and the recommended hybrid model."
 sources:
   - "[[raw/articles/2026-05-27-infra-sync-atproto-pds]]"
   - "[[raw/articles/2026-05-27-infra-sync-atproto-account-migration]]"
   - "[[raw/articles/2026-05-27-infra-sync-nostr-nip51]]"
   - "[[raw/articles/2026-05-27-infra-sync-automerge-repo]]"
-  - "[[raw/articles/2026-05-27-infra-sync-local-first-essay]]"
+  - "[[../../raw/papers/2026-05-27-infra-sync-local-first-essay]]"
   - "[[raw/articles/2026-05-27-case-bluesky-not-decentralized]]"
 ---
 
@@ -183,3 +184,5 @@ The reader/publisher ecosystem already exists: Yakihonne and highlighter.com for
 - [[~/wiki/topics/rust-multi-platform/wiki/concepts/loro-vs-y-crdt-mobile|Loro vs y-crdt for Rust-native mobile CRDT sync]] — substrate trajectory for v0.5+
 - [[credible-exit|Credible exit principle]]
 - [[file-over-app|File over app]]
+- [[client-architecture.md|Client Architecture]]
+- [[../reference/decentralized-infra-candidates.md|Decentralized Infra Candidates]]

@@ -1,7 +1,7 @@
 ---
 title: "Schleitheim Confession (1527) — foundational Anabaptist articles"
 source: "https://en.wikipedia.org/wiki/Schleitheim_Confession"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [denomination, anabaptist, mennonite, pacifism, peace-church, gap-closing, schleitheim]
 quality: 4

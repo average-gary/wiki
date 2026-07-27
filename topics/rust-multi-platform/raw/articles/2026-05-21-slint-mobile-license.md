@@ -1,7 +1,7 @@
 ---
 title: "Slint — iOS tech-preview, Android stable, 3-tier license with embedded royalty"
 source: https://slint.dev/pricing
-type: article
+type: articles
 tags: [slint, ui-framework, mobile, ios, android, license, embedded, royalty]
 date: 2026-05-21
 quality: 6

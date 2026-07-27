@@ -63,3 +63,5 @@ updated: 2026-06-01
 - [2026-06-01-keycloak-statefulset-data-loss](2026-06-01-keycloak-statefulset-data-loss.md)
 - [2026-06-01-toml-no-canonical-form](2026-06-01-toml-no-canonical-form.md)
 - [2026-06-01-ct-split-view-attack](2026-06-01-ct-split-view-attack.md)
+
+- [[2026-06-02-jahns-crdt-suitability.md|Jahns — "Are CRDTs suitable for shared editing?]]

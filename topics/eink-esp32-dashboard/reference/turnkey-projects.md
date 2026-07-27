@@ -1,9 +1,11 @@
 ---
 title: Turnkey & OSS Projects — clone/adapt candidates
-type: reference
+category: reference
 created: 2026-07-20
 updated: 2026-07-20
+volatility: warm
 tags: [projects, trmnl, esp32-weather-epd, esphome, maginkdash, btclock, survey]
+summary: "Existing open-source dashboards to clone/adapt rather than build from scratch, ranked by fit for a Waveshare ESP32 Driver Board Rev3 + WROOM-32E driving a mono panel."
 confidence: high
 ---
 

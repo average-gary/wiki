@@ -1,3 +1,20 @@
+---
+title: "path4 — SRI workspace layout, the stratum/sv2-apps split, and integration testing"
+source: https://github.com/stratum-mining/stratum
+url: https://github.com/stratum-mining/stratum
+type: repos
+category: repo
+language: Rust
+local_path: /Users/garykrause/repos/stratum/
+date_observed: 2026-05-28
+ingested: 2026-05-28
+volatility: warm
+credibility: high
+confidence: high
+tags: [workspace-layout, sri, stratum-mining, sv2-apps, integration-tests, role-placement, path4]
+summary: "Where a new role binary belongs in the SRI two-repo split: roles with tokio and networking go in stratum-mining/sv2-apps, while stratum-mining/stratum is libraries only (zero tokio deps, README says low-level crates only). Also covers scripts/run-integration-tests.sh and the workspace Cargo.toml."
+---
+
 # path4 - workspace layout, integration testing, sv2-apps relationship
 
 **Source type**: repos

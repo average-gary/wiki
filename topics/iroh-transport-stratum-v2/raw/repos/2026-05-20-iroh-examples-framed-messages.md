@@ -1,8 +1,8 @@
 ---
 title: "iroh-examples — framed-messages and custom-router"
-source_url: https://github.com/n0-computer/iroh-examples/tree/main/framed-messages
+source: https://github.com/n0-computer/iroh-examples/tree/main/framed-messages
 secondary_url: https://github.com/n0-computer/iroh-examples/tree/main/custom-router
-type: repo
+type: repos
 date: 2026-05-20
 org: n0-computer
 credibility: high

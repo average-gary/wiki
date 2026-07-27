@@ -1,7 +1,7 @@
 ---
 title: "iroh-blobs 0.102.0 — content-addressed blobs for iroh 1.0-rc.1"
 source: https://github.com/n0-computer/iroh-blobs, https://docs.rs/iroh-blobs/latest/iroh_blobs/
-type: repo
+type: repos
 tags: [iroh-blobs, blake3, bao, verified-streaming, fs-store, downloader]
 date: 2026-06-01
 publication_date: 2026-05-27

@@ -1,7 +1,7 @@
 ---
 title: "Paizo Licenses Overview — ORC, OGL, Compatibility, Infinite, Community Use"
 source: "https://paizo.com/licenses"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: unknown
 tags: [pf2e, licensing, orc, ogl, pathfinder-infinite, compatibility-license, primary-source]

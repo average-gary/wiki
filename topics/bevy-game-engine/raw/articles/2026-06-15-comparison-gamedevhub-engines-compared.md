@@ -1,9 +1,9 @@
 ---
 title: "Game engines compared: Godot, Unity, Unreal, Bevy and the smaller alternatives"
-source_url: https://www.gamedevhub.dev/guides/game-engines/
+source: https://www.gamedevhub.dev/guides/game-engines/
 source_date: 2026
 ingested: 2026-06-15
-type: article
+type: articles
 author: GameDevHub
 quality: 3
 credibility: medium

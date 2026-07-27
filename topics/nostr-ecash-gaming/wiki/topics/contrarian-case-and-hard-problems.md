@@ -1,10 +1,12 @@
 ---
 title: "The contrarian case: why Nostr+ecash gaming might fail"
-type: topic
+category: topic
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [synthesis, contrarian, hard-problems, security, trust-model]
+summary: "The case against this architecture is strong and largely conceded by the proponents themselves. Tabling the sceptical view honestly clarifies what these systems are good for and what they aren't."
 ---
 
 # The contrarian case: why Nostr+ecash gaming might fail

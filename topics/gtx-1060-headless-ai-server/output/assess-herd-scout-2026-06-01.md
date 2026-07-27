@@ -2,14 +2,14 @@
 title: "Repo Comparison: herd-scout vs gtx-1060-headless-ai-server + rust-multi-platform Wikis vs Market"
 type: comparison
 sources:
-  - gtx-1060-headless-ai-server/wiki/concepts/farm-vision-on-gtx-1060.md
-  - gtx-1060-headless-ai-server/wiki/concepts/gpu-bench-and-smoke-tests.md
-  - gtx-1060-headless-ai-server/wiki/concepts/gpu-thermals-and-ops.md
-  - gtx-1060-headless-ai-server/wiki/concepts/ctranslate2-quantization-on-pascal.md
-  - gtx-1060-headless-ai-server/wiki/concepts/pascal-driver-cuda-pinning.md
-  - gtx-1060-headless-ai-server/wiki/concepts/headless-ubuntu-laptop-baseline.md
-  - gtx-1060-headless-ai-server/output/playbook-gtx-1060-headless-ai-server-2026-05-21.md
-  - gtx-1060-headless-ai-server/output/plan-gs63vr-headless-server-2026-05-21.md
+  - ../wiki/concepts/farm-vision-on-gtx-1060.md
+  - ../wiki/concepts/gpu-bench-and-smoke-tests.md
+  - ../wiki/concepts/gpu-thermals-and-ops.md
+  - ../wiki/concepts/ctranslate2-quantization-on-pascal.md
+  - ../wiki/concepts/pascal-driver-cuda-pinning.md
+  - ../wiki/concepts/headless-ubuntu-laptop-baseline.md
+  - playbook-gtx-1060-headless-ai-server-2026-05-21.md
+  - plan-gs63vr-headless-server-2026-05-21.md
   - rust-multi-platform/wiki/concepts/mobile-ffi-decision-tree.md
   - rust-multi-platform/wiki/concepts/ios-xcframework-aar-pipeline.md
   - rust-multi-platform/wiki/concepts/desktop-cross-compile-and-package.md

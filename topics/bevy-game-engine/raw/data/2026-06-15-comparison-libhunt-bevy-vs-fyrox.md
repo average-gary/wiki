@@ -1,6 +1,6 @@
 ---
 title: "bevy vs Fyrox — compare differences and reviews (LibHunt)"
-source_url: https://www.libhunt.com/compare-bevy-vs-Fyrox
+source: https://www.libhunt.com/compare-bevy-vs-Fyrox
 source_date: 2026-06
 ingested: 2026-06-15
 type: data

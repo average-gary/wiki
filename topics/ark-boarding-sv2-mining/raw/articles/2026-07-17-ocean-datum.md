@@ -1,7 +1,7 @@
 ---
 title: "OCEAN / DATUM — non-custodial coinbase payout today"
 source: https://www.ocean.xyz/docs/datum
-type: article
+type: articles
 ingested: 2026-07-17
 credibility: medium
 direction: nuances

@@ -1,10 +1,11 @@
 ---
 title: Rust Bitcoin Crate Stack
-type: concept
+category: concept
 created: 2026-06-22
 updated: 2026-06-22
 verified: 2026-06-22
 volatility: warm
+summary: "Map of the active Rust Bitcoin crates as of 2026-06-22, ordered by dependency depth and download volume."
 confidence: high
 sources:
   - "[[../../raw/data/2026-06-22-crates-io-bitcoin-stack|crates.io snapshot]]"
@@ -137,3 +138,4 @@ Map of the active Rust Bitcoin crates as of 2026-06-22, ordered by dependency de
 - [[../topics/twir-rust-bitcoin-coverage-gap|TWiR Coverage Gap]]
 - [[../reference/maintainer-orgs|Maintainer Orgs]]
 - [[../reference/release-cadences|Release Cadences]]
+- [[../topics/ecosystem-state-2026.md|Rust Bitcoin Ecosystem State — 2026-06]]

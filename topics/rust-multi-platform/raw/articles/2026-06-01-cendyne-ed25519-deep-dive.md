@@ -1,6 +1,6 @@
 ---
 title: "Cendyne — Ed25519 Deep Dive Addendum"
-source_url: https://cendyne.dev/posts/2022-09-11-ed25519-deep-dive-addendum.html
+source: https://cendyne.dev/posts/2022-09-11-ed25519-deep-dive-addendum.html
 type: critique
 ingested: 2026-06-01
 date_published: 2022-09-11

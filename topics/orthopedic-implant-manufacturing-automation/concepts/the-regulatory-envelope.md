@@ -1,9 +1,11 @@
 ---
 title: The Regulatory Envelope — Why Validation, Not Robotics, Bounds Automation
-type: concept
+category: concept
 created: 2026-07-22
 updated: 2026-07-22
-tags: [regulatory, process-validation, 21cfr820, csa, iq-oq-pq, part-11, udi, qmsr, eu-mdr]
+volatility: warm
+tags: [regulatory, process-validation, 21-cfr-820, csa, iq-oq-pq, part-11, udi, qmsr, eu-mdr]
+summary: "The crux of the entire topic. The limit on automating orthopedic implant manufacturing is not robotic capability — it is the obligation to validate."
 confidence: high
 ---
 
@@ -82,3 +84,4 @@ validation — rather than a bolt-on. See [Build Playbook](../reference/build-pl
 - [Economics & Line Architecture](economics-and-line-architecture.md)
 - [Limitations & Bottlenecks](limitations-and-bottlenecks.md)
 - [Build Playbook](../reference/build-playbook.md)
+- [[finishing-and-coating-automation.md|Finishing & Coating Automation — Killing the Hand-Polish Bottleneck]]

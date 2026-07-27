@@ -3,9 +3,9 @@ title: "Bitcoin Developer Reference — coinbase input & maturity"
 source: "https://developer.bitcoin.org/reference/transactions.html"
 source_extra:
   - "https://developer.bitcoin.org/devguide/block_chain.html"
-type: article
+type: articles
 subtype: canonical-docs
-retrieved: 2026-07-23
+ingested: 2026-07-23
 tags: [bitcoin, coinbase, transaction-structure, coinbase-maturity, developer-reference]
 credibility: high
 evidence_strength: canonical-docs

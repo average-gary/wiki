@@ -1,7 +1,7 @@
 ---
 title: "W3C Bitstring Status List v1.0 — what 'real' revocation infrastructure looks like"
 source: https://www.w3.org/TR/vc-bitstring-status-list/
-type: article
+type: articles
 tags: [w3c, bitstring, vc, revocation, contrast, overkill]
 date: 2026-06-01
 publication_date: 2024

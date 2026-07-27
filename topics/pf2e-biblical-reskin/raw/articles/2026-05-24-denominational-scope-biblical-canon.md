@@ -1,7 +1,7 @@
 ---
 title: "Biblical Canon — Differences Across Christian Traditions"
 source: "https://en.wikipedia.org/wiki/Biblical_canon"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [denomination, catholic, protestant, orthodox, canon, theology, deuterocanon]

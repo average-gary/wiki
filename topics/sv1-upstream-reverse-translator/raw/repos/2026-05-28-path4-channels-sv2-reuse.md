@@ -1,3 +1,22 @@
+---
+title: "path4 — channels_sv2 crate: primitives the reverse translator reuses unchanged"
+source: https://github.com/stratum-mining/stratum/tree/main/sv2/channels-sv2
+url: https://github.com/stratum-mining/stratum/tree/main/sv2/channels-sv2
+type: repos
+category: repo
+crate_name: channels_sv2
+crate_version: 6.0.0
+language: Rust
+local_path: /Users/garykrause/repos/stratum/sv2/channels-sv2/
+date_observed: 2026-05-28
+ingested: 2026-05-28
+volatility: warm
+credibility: high
+confidence: high
+tags: [channels-sv2, sri, extended-channel, extranonce, vardiff, merkle-root, chain-tip, bip141, target, code-reuse, path4]
+summary: "Code-level reading of SRI's channels_sv2 v6.0.0. Enumerates the per-channel state primitives a reverse translator can reuse with no code change: server::extended::ExtendedChannel, ExtranonceAllocator, vardiff::classic::VardiffState, bip141::try_strip_bip141, chain_tip::ChainTip, merkle_root::merkle_root_from_path, and target::hash_rate_to_target."
+---
+
 # path4 - channels_sv2 crate (low-level repo)
 
 **Source type**: repos

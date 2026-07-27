@@ -1,9 +1,9 @@
 ---
 title: "EthnTuttle — Chaumian ecash design notes (gist) — proponent's own caveats"
 source: https://gist.github.com/EthnTuttle/6e69d0915b5b86fab15be95d09f27ae4
-type: article
+type: articles
 tags: [cashu, ethan-tuttle, design-notes, trust-model, candor, gaming-implications]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: medium
 quality_score: 3

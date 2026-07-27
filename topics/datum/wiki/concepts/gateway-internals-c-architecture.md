@@ -11,7 +11,9 @@ sources:
   - raw/articles/2026-06-01-path2-datum-api-operator-observability.md
 created: 2026-06-01
 updated: 2026-06-01
+volatility: warm
 tags: [datum, gateway, c-internals, threading, epoll, libevent, queue-seam, sv2-replacement]
+summary: "A code-level read of OCEAN-xyz/datum_gateway aimed at one specific question: what does the SV1-to-ASIC leg actually do, in code, and what would an SV2-downstream variant have to replace?"
 confidence: high
 ---
 
@@ -111,3 +113,6 @@ These are protocol-agnostic — a Rust SV2-downstream variant can reuse `channel
 - [[gateway-data-flow]] — the runtime path of a template through the system
 - [[sv2-downstream-architecture]] — the Rust reimagination of the downstream leg
 - [[datum-protocol]] — what `datum_protocol.c` actually speaks
+- [[../topics/datum-sv2-proxy-playbook.md|DATUM SV2-downstream proxy — playbook]]
+- [[drop-in-rust-port-architecture.md|Rust port architecture — workspace, modules, and LOC budget]]
+- [[drop-in-surface-inventory.md|Drop-in surface inventory — what a Rust replacement must match]]

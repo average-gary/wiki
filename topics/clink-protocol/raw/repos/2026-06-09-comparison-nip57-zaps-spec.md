@@ -1,7 +1,7 @@
 ---
 title: NIP-57 — Lightning Zaps
 source: https://github.com/nostr-protocol/nips/blob/master/57.md
-type: repo
+type: repos
 ingested: 2026-06-09
 path: comparison
 quality: 5

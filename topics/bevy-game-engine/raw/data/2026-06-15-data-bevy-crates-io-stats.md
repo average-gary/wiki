@@ -1,6 +1,6 @@
 ---
 title: "bevy crate on crates.io stats"
-source_url: https://crates.io/api/v1/crates/bevy
+source: https://crates.io/api/v1/crates/bevy
 source_date: 2026-06-15
 ingested: 2026-06-15
 type: data

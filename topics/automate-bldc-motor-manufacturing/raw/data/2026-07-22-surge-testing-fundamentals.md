@@ -7,7 +7,7 @@ type: data
 tags: [surge-test, turn-to-turn, insulation, ear, partial-discharge, ieee-522]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Quantified explanation of surge waveform analysis and automated EAR pass/fail — the core "why surge beats DC" argument for winding QC.
 ---
 

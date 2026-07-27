@@ -1,11 +1,11 @@
 ---
 title: "BLDC Motor Stator Coil Winding Process (Honest Automation)"
 source: https://www.honest-hls.com/bldc-stator-winding-process
-type: article
+type: articles
 tags: [stator-winding, needle-winding, flyer-winding, inner-rotor, outer-rotor, concentrated, distributed]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: Maps winding-machine type to rotor topology to end application, with concrete rpm/gauge/tension/QC tolerance numbers. Found independently by two research agents.
 ---
 

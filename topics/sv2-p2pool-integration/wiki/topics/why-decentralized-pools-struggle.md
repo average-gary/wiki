@@ -1,10 +1,11 @@
 ---
 title: Why decentralized pools struggle
-type: topic
+category: topic
 created: 2026-05-22
 updated: 2026-05-22
 verified: 2026-05-22
 volatility: warm
+summary: "The contrarian thread that any sv2-p2pool integration plan must address. SV2 + p2poolv2 are necessary protocol-layer work, but the constraints below are not solved by protocol alone."
 confidence: high
 sources:
   - "[[raw/articles/2026-05-22-delvingbitcoin-deterministic-tx-selection|Delving Bitcoin: deterministic tx selection]]"

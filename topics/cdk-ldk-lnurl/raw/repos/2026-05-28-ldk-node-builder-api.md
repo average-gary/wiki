@@ -1,8 +1,8 @@
 ---
 title: "lightningdevkit/ldk-node — Builder & Config API (v0.7.0)"
-type: repo
+type: repos
 source: https://docs.rs/ldk-node/0.7.0/ldk_node/struct.Builder.html
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [ldk-node, config, persistence, vss, lsp, gossip]
 summary: Authoritative enumeration of LDK Node v0.7 Builder methods and Config defaults. Settles persistence (SQLite default, fs/VSS optional), chain sources (Esplora/Electrum/Bitcoin Core RPC+REST), gossip (P2P/RGS), and LSP (LSPS1/LSPS2 client and service) options.

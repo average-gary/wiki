@@ -1,14 +1,14 @@
 ---
 title: "EthnTuttle (Ethan Tuttle) — eHash originator and Cashu/SV2 contributor"
 publication: github.com/EthnTuttle + virginiafreedom.tech + Nostr
-url: https://github.com/EthnTuttle
+source: https://github.com/EthnTuttle
 url2: https://virginiafreedom.tech
-type: article
+type: articles
 ingested: 2026-05-24
 quality: 5
 credibility: high
 confidence: high
-tags: [EthnTuttle, ehash-originator, Cashu, SV2, Iroh, Virginia-Freedom-Tech]
+tags: [ethntuttle, ehash-originator, cashu, sv2, iroh, Virginia-Freedom-Tech]
 ---
 
 # EthnTuttle (Ethan Tuttle)

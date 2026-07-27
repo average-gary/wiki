@@ -23,3 +23,5 @@ updated: 2026-06-01
 - [[single-slot-fleet-identity]] — Tailscale / K8s StatefulSet / Balena / Mender prior art; failure modes; recommendation
 - [[signed-identity-envelopes]] — TOML/CBOR/Protobuf encoding choices; three-layer versioning; ed25519 rotation idioms
 - [[append-only-audit-logs-edge-rpc]] — device-local Schneier-Kelsey + server-side CT/SCITT; witness frameworks
+
+- [[loro-vs-y-crdt-mobile.md|Loro vs y-crdt for Rust-native mobile CRDT sync (2026)]] — As of 2026-06, Loro is the clearly more active Rust-native CRDT substrate (post-1.0, monthly releases,…

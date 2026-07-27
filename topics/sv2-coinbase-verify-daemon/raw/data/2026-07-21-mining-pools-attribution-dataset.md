@@ -1,9 +1,9 @@
 ---
 title: "Mining-pool attribution datasets (bitcoin-data/mining-pools, mempool/mining-pools)"
-source_url: https://github.com/bitcoin-data/mining-pools
+source: https://github.com/bitcoin-data/mining-pools
 source_url_2: https://github.com/mempool/mining-pools
 type: data
-retrieved: 2026-07-21
+ingested: 2026-07-21
 credibility: high
 corroboration: "gap-3 + gap-4 agents"
 tags: [bitcoin, mining-pools, coinbase-tag, payout-address, attribution, dataset, address-book]

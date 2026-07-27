@@ -1,12 +1,13 @@
 ---
 title: "mintv2 amount_unit config"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
 verified: 2026-05-28
 volatility: warm
 confidence: high
 tags: [fedimint, mintv2, mint-module, amount-unit, multi-currency, joschisan]
+summary: "Per-module configuration field added to the v2 mint module by PR #8460 (joschisan, merged 2026-04-08, backported to releases/v0.11 in PR #8466)."
 ---
 
 # mintv2 amount_unit config
@@ -37,3 +38,7 @@ The combination = a federation can stand up `mintv2(btc) + mintv2(usd-synth)` an
 - [[fedimint-modules-and-instances|Fedimint modules and instances]] — module-kind / instance-id decoupling
 - [[stability-pool|Stability Pool]] — the alternative architectural path (external custom module)
 - [[../topics/fedimint-multi-currency-status|Multi-currency status]] — assembled story
+- [[../reference/cashu-comparison.md|Cashu — multi-unit Chaumian e-cash (comparison reference)]]
+- [[off-mint-payments-bridge-pattern.md|Off-mint payments-bridge pattern]]
+- [[primary-module-support.md|Primary module support — per-unit transaction funding routing]]
+- [[transaction-item-amounts.md|TransactionItemAmounts and the per-unit balance check]]

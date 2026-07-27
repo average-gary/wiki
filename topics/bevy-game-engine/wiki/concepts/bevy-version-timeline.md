@@ -1,10 +1,12 @@
 ---
 title: "Bevy version timeline"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, releases, versions, timeline, cadence]
+summary: "Cadence: roughly one minor release every ~3 months, with breaking-change migration guides; patch releases ship reactively. Source: GitHub Releases API."
 ---
 
 # Bevy version timeline
@@ -69,3 +71,11 @@ From [[bevy-twib-jan-2026.md|TWIB January 2026]]:
 - [[bevy-history.md|History]]
 - [[bevy-criticisms.md|Criticisms]]
 - [[bevy-foundation.md|Foundation]]
+- [[bevy-ecs-architecture.md|Bevy ECS architecture]]
+- [[bevy-relationships.md|Bevy Relationships]]
+- [[bevy-rendering.md|Bevy rendering]]
+- [[bevy-required-components.md|Bevy Required Components]]
+- [[bevy-scheduler.md|Bevy scheduler design]]
+- [[../topics/bevy-state-of-2026.md|State of Bevy in 2026]]
+- [[../topics/bevy-stats.md|Bevy stats reference]]
+- [[../reference/specs-and-repos.md|Reference: specs, repos, docs]]

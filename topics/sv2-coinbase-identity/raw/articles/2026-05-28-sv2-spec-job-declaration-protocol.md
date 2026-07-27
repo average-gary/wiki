@@ -1,11 +1,12 @@
 ---
 title: "Stratum V2 Specification — 06-Job-Declaration-Protocol.md"
-source_url: https://github.com/stratum-mining/sv2-spec/blob/main/06-Job-Declaration-Protocol.md
+source: https://github.com/stratum-mining/sv2-spec/blob/main/06-Job-Declaration-Protocol.md
+type: articles
 source_type: specification
 ingested: 2026-05-28
 credibility: high
 confidence: high
-tags: [stratum-v2, job-declaration-protocol, JDC, JDS, SetCustomMiningJob, DeclareMiningJob]
+tags: [stratum-v2, job-declaration-protocol, jdc, jds, SetCustomMiningJob, DeclareMiningJob]
 ---
 
 # 06 — Job Declaration Protocol (canonical SV2 spec)

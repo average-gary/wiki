@@ -7,7 +7,7 @@ type: repos
 tags: [vendor-landscape, cmo, tecomet, orchid, market-sizing, machine-tools, robotic-finishing, acme, swiss, additive-oem]
 credibility: medium
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: The consolidated ortho-CMO landscape — Tecomet+Orchid merged May 2026 (24 sites) into the dominant pure-play; market $7B→$15.3B (8.8% CAGR); full CMO roster; machine-tool builders (DMG MORI, Mazak, Willemin, Tornos/Star/Citizen, Matsuura); robotic-finishing integrator Acme (150+ systems, FANUC); metal-AM OEMs.
 ---
 

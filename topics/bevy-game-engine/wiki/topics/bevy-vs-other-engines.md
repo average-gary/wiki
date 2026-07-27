@@ -1,10 +1,12 @@
 ---
 title: "Bevy vs other game engines"
-type: topic
+category: topic
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [bevy, comparison, godot, unity, unreal, fyrox, macroquad]
+summary: "Honest comparison as of mid-2026. The short version: Bevy is not a Unity replacement. It's an ECS-first engine + framework that targets a different point in the design space."
 ---
 
 # Bevy vs other game engines
@@ -99,3 +101,4 @@ Use Macroquad/ggez when you want a focused 2D library and don't need ECS or larg
 - [[bevy-criticisms.md|Criticisms]]
 - [[bevy-production-users.md|Production users]]
 - [[bevy-ecosystem.md|Ecosystem]]
+- [[bevy-state-of-2026.md|State of Bevy in 2026]]

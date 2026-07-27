@@ -1,7 +1,7 @@
 ---
 title: "Strong's 5331 / Thayer's: Pharmakeia (φαρμακεία) — Lexicon Composite"
 source: "https://biblehub.com/greek/5331.htm + https://biblehub.com/thayers/5331.htm + https://www.blueletterbible.org/lexicon/g5331/"
-type: paper
+type: papers
 date_fetched: 2026-05-25
 tags: [pharmakeia, greek-lexicon, magic-theology, biblical-studies, gap-closing]
 quality: 4

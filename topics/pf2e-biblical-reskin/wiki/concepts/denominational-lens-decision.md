@@ -1,20 +1,21 @@
 ---
 title: "Denominational lens decision"
-type: concept
+category: concept
 created: 2026-05-25
 updated: 2026-05-25
 verified: 2026-05-25
 volatility: low
 confidence: high
 sources:
-  - "[[2026-05-24-denominational-scope-biblical-canon]]"
-  - "[[2026-05-24-denominational-scope-aerial-toll-houses]]"
-  - "[[2026-05-24-denominational-scope-theosis]]"
-  - "[[2026-05-24-denominational-scope-cessationism-continuationism]]"
-  - "[[2026-05-24-denominational-scope-mere-christianity]]"
-  - "[[2026-05-24-denominational-scope-angelic-hierarchy]]"
-  - "[[2026-05-24-denominational-scope-sacraments-purgatory]]"
+  - "[[../../raw/articles/2026-05-24-denominational-scope-biblical-canon]]"
+  - "[[../../raw/articles/2026-05-24-denominational-scope-aerial-toll-houses]]"
+  - "[[../../raw/articles/2026-05-24-denominational-scope-theosis]]"
+  - "[[../../raw/articles/2026-05-24-denominational-scope-cessationism-continuationism]]"
+  - "[[../../raw/articles/2026-05-24-denominational-scope-mere-christianity]]"
+  - "[[../../raw/articles/2026-05-24-denominational-scope-angelic-hierarchy]]"
+  - "[[../../raw/articles/2026-05-24-denominational-scope-sacraments-purgatory]]"
 tags: [denomination, catholic, protestant, orthodox, reformed, pentecostal, lewisian, canon, theology, design-meta]
+summary: "The meta-decision for any Christian-Biblical PF2e reskin: which denominational tradition frames the canon. This is not optional — every choice (which archangels are named, what the deuterocanon contributes, whether the magic-theology problem allows continuationist charisms, what counts as a \"saint\"…"
 ---
 
 # Denominational lens decision
@@ -133,6 +134,9 @@ Defers on canon (use 66 as floor). Generic archangel imagery. Brackets cessation
 - [[magic-theology-approaches]] — cessationism vs continuationism is the load-bearing connection
 - [[class-ancestry-reskin-verdicts]] — Champion causes (saint-attached vs abstract), Thaumaturge implements (relics vs not), specific sorcerer bloodlines all shift by lens
 - [[recommended-reskin-stack]] — synthesis
+- [[../reference/biblical-miracle-to-pf2e-spell-map.md|Biblical miracle ↔ PF2e Remaster spell map]]
+- [[prior-christian-rpg-lessons.md|Prior Christian TTRPG lessons (40 years of attempts)]]
+- [[../reference/yhwh-deity-template.md|YHWH deity stat block — template & per-lens fills]]
 
 ## Open questions
 

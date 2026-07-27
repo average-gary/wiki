@@ -1,8 +1,8 @@
 ---
 title: "Announcing LDK Node (LDK blog, April 2024)"
-type: article
+type: articles
 source: https://lightningdevkit.org/blog/announcing-ldk-node/
-fetched: 2026-05-28
+ingested: 2026-05-28
 published: 2024-04
 confidence: medium
 tags: [ldk-node, history, design-rationale]

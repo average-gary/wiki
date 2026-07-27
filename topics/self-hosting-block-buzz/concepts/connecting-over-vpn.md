@@ -1,10 +1,12 @@
 ---
 title: Connecting Clients & Agents Over a VPN
-type: concept
+category: concept
 tags: [buzz, vpn, websocket, wss, tls, magicdns, mcp, agents, mobile, clients]
 confidence: high
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
+summary: "How buzz's desktop, mobile, CLI, and agent clients reach the relay when it lives on a VPN — and the two things that actually break (WSS-for-an-internal-hostname, and agent network reachability)."
 ---
 
 # Connecting Clients & Agents Over a VPN

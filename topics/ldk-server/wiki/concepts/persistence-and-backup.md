@@ -1,10 +1,12 @@
 ---
 title: "Persistence and backup in LDK Server"
-type: concept
+category: concept
 created: 2026-05-26
 updated: 2026-05-26
+volatility: warm
 confidence: high
 tags: [persistence, backup, sqlite, vss, operations, fund-loss]
+summary: "LDK Server's persistence story is inherited from LDK Node. Out of the box: two SQLite files plus a key seed. Optionally: Versioned Storage Service (VSS) for client-server encrypted storage."
 ---
 
 # Persistence and backup

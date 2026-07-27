@@ -1,6 +1,6 @@
 ---
 title: "iroh Relays concept page"
-source_url: https://docs.iroh.computer/concepts/relays
+source: https://docs.iroh.computer/concepts/relays
 type: docs
 date: 2026-05-20
 org: n0-computer

@@ -1,9 +1,9 @@
 ---
 title: "Bevy's Fifth Birthday"
-source_url: https://bevy.org/news/bevys-fifth-birthday/
+source: https://bevy.org/news/bevys-fifth-birthday/
 source_date: 2025-08-10
 ingested: 2026-06-15
-type: article
+type: articles
 author: Carter Anderson / Bevy Foundation
 quality: 5
 credibility: high

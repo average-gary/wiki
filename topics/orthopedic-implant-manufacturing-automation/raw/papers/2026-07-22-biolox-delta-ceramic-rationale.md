@@ -1,11 +1,11 @@
 ---
 title: "BIOLOX delta Ceramic Femoral Heads — Material Rationale (DePuy)"
 source: https://www.bizwan.com/_mydoc/depuy/hiptech/DPY_Biolox_Delta_Material_Rationale_0612-28-500r1.pdf
-type: paper
+type: papers
 tags: [ceramics, biolox, alumina, zirconia, femoral-head, sintering, grinding, materials, transformation-toughening]
 credibility: high
 confidence: high
-retrieved: 2026-07-22
+ingested: 2026-07-22
 summary: OEM technical PDF with hard composition/grain-size/strength numbers for BIOLOX delta (ZPTA) femoral heads — explains why ceramics take the near-net-sinter-then-diamond-grind route and why finishing defects are crack initiators.
 ---
 

@@ -3,14 +3,14 @@ title: "Analysis of Bitcoin Pooled Mining Reward Systems"
 authors: [Meni Rosenfeld]
 year: 2011
 venue: arXiv (1112.4980)
-url: https://arxiv.org/abs/1112.4980
+source: https://arxiv.org/abs/1112.4980
 pdf: https://arxiv.org/pdf/1112.4980
-type: paper
+type: papers
 ingested: 2026-05-23
 quality: 5
 credibility: high
 confidence: high
-tags: [PPLNS, PPS, geometric, DGM, pool-hopping, variance, Rosenfeld]
+tags: [pplns, PPS, geometric, DGM, pool-hopping, variance, Rosenfeld]
 ---
 
 # Analysis of Bitcoin Pooled Mining Reward Systems (Rosenfeld 2011)

@@ -1,6 +1,6 @@
 ---
 title: "clArk limitations and trust model"
-type: topic
+category: topic
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high
@@ -74,6 +74,10 @@ One nuance the bark docs make explicit: the server's protection against *stealin
 - [[clark-evolution.md|Evolution — how these are being mitigated]]
 - [[../concepts/vtxo-lifetime-and-expiry.md|VTXO lifetime and expiry]]
 - [[../concepts/lightning-integration.md|Lightning integration]]
+- [[../concepts/clark-overview.md|clArk overview — covenantless Ark on today's Bitcoin]]
+- [[../concepts/dropout-and-round-abort.md|Dropout, round abort, and the griefing surface]]
+- [[../concepts/out-of-round-payments.md|Out-of-round (OOR / arkoor) payments]]
+- [[../concepts/unilateral-exit-and-timeouts.md|Unilateral exit, timeouts, and the refund path]]
 
 ## Sources
 

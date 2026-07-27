@@ -1,10 +1,12 @@
 ---
 title: Mint-as-referee
-type: concept
+category: concept
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [cashu, kirk, manastr, trust-model, escrow, validator]
+summary: "A design pattern in which a Cashu mint plays the dual role of bearer-asset issuer and game-rules validator. The mint:"
 ---
 
 # Mint-as-referee
@@ -54,3 +56,5 @@ reputation marketplace.
 - [[wiki/concepts/post-hoc-validator-pattern]]
 - Hub topic [[../../../fedimint/_index|fedimint]] (federated alternative — guardians instead
   of single mint operator, ROASTr threshold-Nostr-signing as building block)
+- [[kirk-event-kinds.md|Kirk event-kind range (9259-9263)]]
+- [[nut-11-p2pk-reward-locking.md|NUT-11 P2PK reward-locking]]

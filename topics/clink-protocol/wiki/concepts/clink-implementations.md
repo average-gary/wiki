@@ -1,8 +1,9 @@
 ---
 title: CLINK implementations and adoption
-type: concept
+category: concept
 created: 2026-06-09
 updated: 2026-06-09
+volatility: warm
 confidence: high
 sources:
   - raw/repos/2026-06-09-implementations-shocknet-clink.md

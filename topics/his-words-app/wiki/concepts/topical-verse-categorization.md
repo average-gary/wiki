@@ -1,11 +1,13 @@
 ---
 title: Topical verse categorization
-type: concept
+category: concept
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: medium
 tags: [his-words-app, content, personalization, taxonomy]
+summary: "The pause should serve a verse that is *relevant to the user's current state*, not a uniformly random selection from the canon. The mechanism is a topical taxonomy — anxiety, hope, marriage, grief, forgiveness, gratitude, doubt, etc."
 sources:
   - raw/articles/2026-06-23-competitors-psalmo.md
   - raw/articles/2026-06-23-bible-api-bible-pricing-tiers.md

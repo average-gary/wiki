@@ -3,7 +3,7 @@ title: "Mapping the Increasing Use of LLMs in Scientific Papers"
 source: https://arxiv.org/abs/2404.01268
 authors: Weixin Liang, Yaohui Zhang, Zhengxuan Wu, Haley Lepp, Wenlong Ji, Xuandong Zhao, Hancheng Cao, Sheng Liu, Siyu He, Zhi Huang, Diyi Yang, Christopher Potts, Christopher D. Manning, James Y. Zou
 venue: COLM 2024; arXiv:2404.01268 (2024)
-type: paper
+type: papers
 tags: [llm-writing-indicators, corpus-study, scientific-papers, field-variation]
 quality: 4
 confidence: high

@@ -1,7 +1,7 @@
 ---
 title: "@shocknet/clink-sdk public API surface (full map)"
 source: https://github.com/shocknet/ClinkSDK
-type: repo
+type: repos
 ingested: 2026-06-10
 path: gap-sdk
 quality: 5

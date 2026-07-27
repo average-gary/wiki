@@ -1,7 +1,7 @@
 ---
 title: "Making the Timeframe — server-rendered e-ink calendar (Stavros)"
 source: https://www.stavros.io/posts/making-the-timeframe/
-type: article
+type: articles
 tags: [server-render, calendar, google-calendar, oauth, selenium, deep-sleep, refresh-hash, esp32]
 date: 2026-07-20
 quality: 5

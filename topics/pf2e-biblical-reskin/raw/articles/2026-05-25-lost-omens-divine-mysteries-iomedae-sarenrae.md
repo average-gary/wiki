@@ -1,7 +1,7 @@
 ---
 title: "Divine Mysteries Remaster — Iomedae and Sarenrae per-deity entries"
 source: "aon-search.sh by-name 'Iomedae' / 'Sarenrae' (deity-285, deity-292)"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, remaster, lost-omens, deity-template, divine-mysteries, gap-closing]
 quality: 5

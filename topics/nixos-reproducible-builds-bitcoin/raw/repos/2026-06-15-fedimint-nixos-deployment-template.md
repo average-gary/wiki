@@ -3,7 +3,7 @@ title: "Fedimint NixOS deployment template (fedimint/nixos-deployment)"
 sources:
   - https://github.com/fedimint/nixos-deployment
   - https://github.com/fedimint/fedimint/blob/master/docs/deploying.md
-type: repo
+type: repos
 maintainer: Fedimint org
 year: 2024-2026
 ingested: 2026-06-15

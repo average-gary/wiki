@@ -1,7 +1,7 @@
 ---
 title: "Wikipedia — Freeciv (history, balance, fork landscape)"
 source: https://en.wikipedia.org/wiki/Freeciv
-type: article
+type: articles
 ingested: 2026-06-18
 quality: 4
 confidence: high

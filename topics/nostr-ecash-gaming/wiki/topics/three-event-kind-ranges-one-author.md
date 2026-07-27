@@ -1,10 +1,12 @@
 ---
 title: "Three event-kind ranges, one author — what the EthnTuttle trio reveals"
-type: topic
+category: topic
 created: 2026-06-17
 updated: 2026-06-17
+volatility: warm
 confidence: high
 tags: [synthesis, ethntuttle, kirk, manastr, nutchain, nostr-event-kinds, design-evolution]
+summary: "The on-ramp question for this wiki was simple: \"Read the nutchain / kirk / manastr trio and tell me about Nostr+ecash gaming.\""
 ---
 
 # Three event-kind ranges, one author — what the EthnTuttle trio reveals

@@ -1,9 +1,9 @@
 ---
 title: "How to Run an Ecash Mint (Bitcoin Magazine + ereignishorizont) — Nutshell + LNbits + Caddy pattern"
-type: article
+type: articles
 source: https://bitcoinmagazine.com/technical/how-to-guide-running-an-ecash-mint
 secondary_source: https://ereignishorizont.xyz/en/cashu-en/
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: medium
 tags: [cashu, deployment, nutshell, lnbits, caddy, history]
 summary: Practitioner walkthrough using nutshell (Python) as the mint, LNbits as the LN backend (which itself fronts LND/CLN), and Caddy as the reverse proxy. Older but representative of the pre-CDK-maturity DIY pattern. Confirms: no native LNURL on the mint host.

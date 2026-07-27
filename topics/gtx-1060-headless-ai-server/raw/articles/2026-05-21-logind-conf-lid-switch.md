@@ -1,7 +1,7 @@
 ---
 title: "logind.conf(5) — lid-switch directives + the external-power gotcha"
 source: https://www.man7.org/linux/man-pages/man5/logind.conf.5.html
-type: article
+type: articles
 tags: [systemd, logind, lid-switch, headless, laptop-server]
 date: 2026-05-21
 quality: 5

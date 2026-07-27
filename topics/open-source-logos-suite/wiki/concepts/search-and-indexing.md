@@ -1,6 +1,6 @@
 ---
 title: Search and Indexing
-type: concept
+category: concept
 created: 2026-05-27
 updated: 2026-05-27
 verified: 2026-05-27
@@ -8,10 +8,11 @@ volatility: warm
 status: active
 confidence: high
 tags: [search, indexing, fts5, tantivy, sqlite, morphology, syntactic-search]
+summary: "Bible-study search is fundamentally different from web search: corpora are small (a few hundred MB after lemma + morphology + syntax), but query types are rich (lemma, morphology, syntactic, NEAR, boolean). The right primitives are mature, embeddable, and free."
 sources:
   - "[[raw/articles/2026-05-27-client-sqlite-fts5]]"
-  - "[[raw/articles/2026-05-27-client-tantivy]]"
-  - "[[raw/articles/2026-05-27-client-stepbible-data]]"
+  - "[[../../raw/repos/2026-05-27-client-tantivy]]"
+  - "[[../../raw/repos/2026-05-27-client-stepbible-data]]"
   - "[[raw/articles/2026-05-27-logos-cascadia-macula-data-availability]]"
 ---
 
@@ -161,3 +162,5 @@ So a complete default install with index is well under 1 GB. Mobile-friendly.
 - [[biblical-data-licensing|Biblical data licensing]]
 - [[study-tool-ux-gap|Study-tool UX gap]]
 - [[../topics/engineering-playbook|Engineering playbook]]
+- [[ai-bible-study-tools-2026.md|AI Bible-study tools 2026: RAG, citation-grounding, hallucination guards]]
+- [[macula-syntactic-search.md|MACULA syntactic search: query DSL + indexing]]

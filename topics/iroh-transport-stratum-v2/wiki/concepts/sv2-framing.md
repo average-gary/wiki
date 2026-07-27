@@ -1,6 +1,6 @@
 ---
 title: "SV2 framing (codec_sv2)"
-type: concept
+category: concept
 created: 2026-05-20
 updated: 2026-05-20
 verified: 2026-05-20

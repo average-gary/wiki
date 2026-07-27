@@ -1,11 +1,13 @@
 ---
 title: Android API surface — UsageStatsManager, FGS, SAW
-type: reference
+category: reference
 created: 2026-06-24
 updated: 2026-06-24
+volatility: warm
 status: active
 confidence: high
 tags: [his-words-app, android, technical, api-reference]
+summary: "Reference card for the Android APIs used by the FGS poll architecture. Pulled from the four Android raw sources."
 sources:
   - raw/articles/2026-06-23-android-usage-stats-manager.md
   - raw/articles/2026-06-23-android-accessibility-service-play-policy.md

@@ -1,7 +1,7 @@
 ---
 title: Kid-Safe Phones — Gabb, Pinwheel, and Why Relay Pivoted Away
 source: https://www.gabb.com/plans/ + https://www.pinwheel.com/ + https://relaypro.com/
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, accountability, family-mode, gabb, pinwheel, relay, hardware-alternative, kid-safe-phones]
 quality: 4

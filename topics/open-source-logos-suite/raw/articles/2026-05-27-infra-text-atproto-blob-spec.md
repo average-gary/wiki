@@ -1,7 +1,7 @@
 ---
 title: "ATProto Blob Specification — PDS-Hosted, CDN-Served"
-source_url: "https://atproto.com/specs/blob"
-type: article
+source: "https://atproto.com/specs/blob"
+type: articles
 path: infra-text
 date_ingested: 2026-05-27
 date_published: unknown

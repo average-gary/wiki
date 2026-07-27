@@ -1,14 +1,14 @@
 ---
 title: "Arkade OS official docs (docs.arkadeos.com)"
-source_url: https://docs.arkadeos.com/
-type: article
+source: https://docs.arkadeos.com/
+type: articles
 publisher: Ark Labs (Arkade OS)
 ingested: 2026-07-16
 research_path: implementations
 credibility: high
 confidence: high
 quality_score: 5
-tags: [ark, arkade, batch-swap, commitment-tx, forfeit, connector, checkpoint-tx, intent, bip322, vtxo-lifecycle, musig2]
+tags: [ark, arkade, batch-swap, commitment-tx, forfeit, connector, checkpoint-tx, intent, bip-322, vtxo-lifecycle, musig2]
 summary: Authoritative prose describing the six-stage batch-swap (round) lifecycle, the two-input/two-output forfeit structure, checkpoint transactions (arkd-specific), the BIP322 intent system, and VTXO lifecycle/liveness.
 ---
 

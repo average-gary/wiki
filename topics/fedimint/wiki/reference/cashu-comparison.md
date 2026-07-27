@@ -1,12 +1,13 @@
 ---
 title: "Cashu — multi-unit Chaumian e-cash (comparison reference)"
-type: reference
+category: reference
 created: 2026-05-28
 updated: 2026-05-28
 verified: 2026-05-28
 volatility: cold
 confidence: medium
 tags: [cashu, comparison, nut-02, multi-unit, blind-signatures, single-operator]
+summary: "Cashu is the closest cousin to Fedimint: a Chaumian e-cash protocol with blind signatures, but with a single operator (mint) instead of a Fedimint-style threshold-signed federation. Cashu is interesting here because it already has multi-unit support per mint in its specification."
 ---
 
 # Cashu (comparison reference)

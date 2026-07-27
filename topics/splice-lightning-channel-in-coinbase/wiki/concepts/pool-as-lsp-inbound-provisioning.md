@@ -1,8 +1,9 @@
 ---
 title: "Pool-as-LSP: provisioning miner inbound via toward-miner channel ops"
-type: concept
+category: concept
 created: 2026-07-23
 updated: 2026-07-23
+volatility: warm
 tags: [lightning, lsp, inbound-liquidity, on-the-fly-funding, jit-channel, splicing, dual-funding, mining-pool, push-msat, fusion]
 summary: "The mechanism behind follow-up thesis #3: a funder (pool/LSP) contributing funds on ITS OWN side of a shared channel gives the counterparty (miner) inbound. Spec'd (bLIP-36 on-the-fly funding, bLIP-52 JIT, liquidity ads) and DEPLOYED as wallet-LSPs (Phoenix/eclair #2861). But 'unifying payout delivery + inbound provisioning in one on-chain footprint' is precise only in the JIT/on-the-fly variant, where an incoming payment triggers the open and the fee is netted from it — the on-chain tx supplies CAPACITY while VALUE crosses as an off-chain HTLC. Pure dual-funding/splice cannot carry value to the miner because push_msat is OMITTED from open_channel2. And no MINING POOL actually does this."
 ---

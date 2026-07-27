@@ -3,13 +3,13 @@ title: "Bitcoin Mining Pool Payout Structures: A Simple Guide"
 author: Guzman Pintos
 publication: Hashrate Index (Luxor)
 date: 2019-03-19, updated 2023-12-12
-url: https://hashrateindex.com/blog/pps-fpps-pplns-pps_plus/
-type: article
+source: https://hashrateindex.com/blog/pps-fpps-pplns-pps_plus/
+type: articles
 ingested: 2026-05-23
 quality: 5
 credibility: high
 confidence: high
-tags: [PPS, PPS+, FPPS, PPLNS, practitioner, Luxor]
+tags: [PPS, PPS+, fpps, pplns, practitioner, luxor]
 ---
 
 # Hashrate Index Practitioner Guide (Pintos / Luxor)

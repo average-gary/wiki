@@ -1,7 +1,7 @@
 ---
 title: "What if your security camera was secure? (iroh + MoQ on Raspberry Pi)"
 source: https://www.iroh.computer/blog/secure-video-everywhere
-type: article
+type: articles
 tags: [iroh, moq, raspberry-pi, camera, allowlist, identity-first]
 date: 2026-06-01
 publication_date: 2026-03-11

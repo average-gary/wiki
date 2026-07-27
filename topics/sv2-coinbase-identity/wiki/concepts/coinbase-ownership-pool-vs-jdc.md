@@ -1,10 +1,12 @@
 ---
 title: "Coinbase ownership: Pool vs JDC (SV2)"
-type: concept
+category: concept
 created: 2026-05-28
 updated: 2026-05-28
+volatility: warm
 confidence: high
-tags: [stratum-v2, JDC, JDS, JobDeclaration, coinbase, decentralization, SetCustomMiningJob]
+tags: [stratum-v2, jdc, jds, job-declaration, coinbase, decentralization, SetCustomMiningJob]
+summary: "In SV2 there are two authoritative coinbase-construction paths, sharply separated:"
 ---
 
 # Coinbase ownership: Pool-built vs JDC-built
@@ -40,3 +42,5 @@ This is the substantive difference between the thesis form and the JD form.
 - [[wiki/concepts/sv2-coinbase-scriptsig-layout]]
 - [[raw/articles/2026-05-28-sv2-spec-job-declaration-protocol]]
 - [[raw/articles/2026-05-28-ocean-datum-gateway-coinbase-tagging]] — DATUM = production exemplar of path 2
+- [[extension-0x0002-worker-tracking-tlv.md|SV2 extension 0x0002 — Worker-Specific Hashrate Tracking TLV]]
+- [[user_identity-field.md|user_identity (SV2 channel field)]]

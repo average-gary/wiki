@@ -1,7 +1,7 @@
 ---
 title: "Reddit r/Pathfinder2e — Iberian Catholic-flavored swashbuckling PF2 campaign restrictions"
 source: "https://www.reddit.com/r/Pathfinder2e/comments/xnb2i3/seeking_advice_homebrew_restrictions_for_pf2e/"
-type: article
+type: articles
 date_fetched: 2026-05-25
 tags: [pf2e, christian-homebrew, community, fan-content, gap-closing, catholic-flavor]
 quality: 3

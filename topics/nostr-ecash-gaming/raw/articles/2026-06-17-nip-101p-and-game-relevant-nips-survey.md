@@ -10,9 +10,9 @@ sources:
   - https://github.com/nostr-protocol/nips/blob/master/64.md
   - https://github.com/nostr-protocol/nips/blob/master/87.md
   - https://github.com/nostr-protocol/nips/blob/master/90.md
-type: article
+type: articles
 tags: [nostr, nips, nip-60, nip-61, nip-64, nip-87, nip-90, nip-29, nip-101p, gaming, ecash-on-nostr]
-fetched: 2026-06-17
+ingested: 2026-06-17
 confidence: high
 credibility: high
 quality_score: 4

@@ -1,6 +1,6 @@
 ---
 title: "clArk evolution — tree-signing, OOR, delegation, and the road to covenants"
-type: topic
+category: topic
 created: 2026-07-16
 updated: 2026-07-17
 confidence: high

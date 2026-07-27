@@ -2,8 +2,8 @@
 title: "stratum-mining/stratum :: sv2/noise-sv2 — reusable Rust SV2 Noise primitives"
 type: raw-source
 source_kind: repo
-source_url: https://github.com/stratum-mining/stratum/tree/main/sv2/noise-sv2
-fetched: 2026-06-24
+source: https://github.com/stratum-mining/stratum/tree/main/sv2/noise-sv2
+ingested: 2026-06-24
 path: 5
 relevance: high
 ---

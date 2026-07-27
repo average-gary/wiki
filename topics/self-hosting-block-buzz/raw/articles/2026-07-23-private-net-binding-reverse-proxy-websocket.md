@@ -5,7 +5,7 @@ extra_sources:
   - https://websocket.org/guides/infrastructure/nginx/
   - https://lumadock.com/tutorials/n8n-private-networking-vps
   - https://letsencrypt.org/docs/certificates-for-localhost/
-type: article
+type: articles
 tags: [reverse-proxy, nginx, websocket, wss, tls, private-network, postgres, redis, hardening]
 confidence: high
 ingested: 2026-07-23

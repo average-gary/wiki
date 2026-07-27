@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA DCGM-exporter — Prometheus GPU metrics"
 source: https://github.com/NVIDIA/dcgm-exporter
-type: repo
+type: repos
 tags: [monitoring, prometheus, dcgm, nvidia, gpu-metrics]
 date: 2026-05-21
 quality: 4

@@ -1,7 +1,7 @@
 ---
 title: "rustonbsd/iroh-ssh — community SSH-over-iroh"
 source: https://github.com/rustonbsd/iroh-ssh
-type: repo
+type: repos
 tags: [iroh, ssh, proxycommand, dumbpipe, allowlist-gap, community]
 date: 2026-06-01
 publication_date: 2026-05-20

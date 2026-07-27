@@ -1,7 +1,7 @@
 ---
 title: "DragonRaid design retrospective (aggregated)"
 source: "https://html.duckduckgo.com/html/?q=%22DragonRaid%22+retrospective+blog+Christian+RPG+1984"
-type: article
+type: articles
 date_fetched: 2026-05-24
 date_published: "unknown"
 tags: [christian-rpg, history, dragonraid, design-retrospective, satanic-panic]

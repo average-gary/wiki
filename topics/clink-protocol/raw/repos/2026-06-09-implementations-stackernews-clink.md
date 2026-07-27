@@ -1,7 +1,7 @@
 ---
 title: Stacker News — production CLINK adopter (third-party, send + recv shipped)
 source: https://github.com/stackernews/stacker.news
-type: repo
+type: repos
 ingested: 2026-06-09
 path: implementations
 quality: 5

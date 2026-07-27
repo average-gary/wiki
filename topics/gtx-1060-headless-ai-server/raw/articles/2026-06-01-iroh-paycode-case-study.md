@@ -1,7 +1,7 @@
 ---
 title: "iroh for payments — Paycode case study (iroh blog)"
 source: https://www.iroh.computer/blog/paycode
-type: article
+type: articles
 tags: [iroh, paycode, qr-pairing, ticket, production, dotnet, kotlin]
 date: 2026-06-01
 publication_date: 2026-03-26

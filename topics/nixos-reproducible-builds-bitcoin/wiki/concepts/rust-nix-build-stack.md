@@ -1,10 +1,12 @@
 ---
 title: "Rust+Nix build stack (buildRustPackage / naersk / crane / Flakebox / fenix)"
-type: concept
+category: concept
 created: 2026-06-15
 updated: 2026-06-15
+volatility: warm
 confidence: high
 tags: [rust, nix, crane, flakebox, fenix, naersk]
+summary: "The substrate any Bitcoin-adjacent Rust project considering Nix chooses from."
 sources:
   - "[[../../raw/articles/2026-06-15-rust-nix-tooling-stack.md|Rust+Nix tooling stack]]"
 ---

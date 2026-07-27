@@ -1,8 +1,8 @@
 ---
 title: "cashubtc/cdk — `cdk-mintd` config + setup wiring"
-type: repo
+type: repos
 source: https://github.com/cashubtc/cdk/tree/main/crates/cdk-mintd
-fetched: 2026-05-28
+ingested: 2026-05-28
 confidence: high
 tags: [cdk-mintd, config, deployment, feature-flags]
 summary: The cdk-mintd binary's TOML config schema, feature-flag matrix, and lightning-backend selection wiring. Operator-grade reference.

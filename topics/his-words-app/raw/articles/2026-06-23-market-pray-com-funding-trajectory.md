@@ -1,7 +1,7 @@
 ---
 title: Pray.com — funding, current state, audio-first model
 source: https://en.wikipedia.org/wiki/Pray.com
-type: article
+type: articles
 created: 2026-06-23
 tags: [his-words-app, market, monetization, pray-com, audio-first]
 quality: 3

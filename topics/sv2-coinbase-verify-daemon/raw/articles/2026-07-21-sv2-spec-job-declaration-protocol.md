@@ -1,11 +1,11 @@
 ---
 title: "Stratum V2 spec — 06 Job Declaration Protocol (JDC/JDS, miner-declared coinbase)"
-source_url: https://github.com/stratum-mining/sv2-spec/blob/main/06-Job-Declaration-Protocol.md
-type: article
-retrieved: 2026-07-21
+source: https://github.com/stratum-mining/sv2-spec/blob/main/06-Job-Declaration-Protocol.md
+type: articles
+ingested: 2026-07-21
 credibility: high
 corroboration: "Cited by prior-art + trust-model agents"
-tags: [stratum-v2, job-declaration, JDC, JDS, coinbase_tx_prefix, coinbase_tx_suffix, AllocateMiningJobToken, DeclareMiningJob, trust-minimization]
+tags: [stratum-v2, job-declaration, jdc, jds, coinbase_tx_prefix, coinbase_tx_suffix, AllocateMiningJobToken, DeclareMiningJob, trust-minimization]
 summary: "SV2 Job Declaration Protocol — the actual trust-minimization mechanism. JDC (miner side) declares a custom job/coinbase; JDS (pool side) validates. The pool payout is the FIRST coinbase output. This is the mechanism a passive verify-daemon is NOT."
 ---
 

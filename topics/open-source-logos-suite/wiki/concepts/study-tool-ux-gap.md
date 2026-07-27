@@ -1,6 +1,6 @@
 ---
 title: Study-Tool UX Gap
-type: concept
+category: concept
 created: 2026-05-27
 updated: 2026-05-27
 verified: 2026-05-27
@@ -8,6 +8,7 @@ volatility: warm
 status: active
 confidence: high
 tags: [logos, oss, ux, gap-analysis, sermon-builder, factbook, syntactic-search]
+summary: "The OSS Bible-software landscape has solved the data and reading layers. What it has not solved — and what Logos charges $9.99–$19.99/month for — is the integrated study-tool UX above the text. This article catalogs the gap."
 sources:
   - "[[raw/articles/2026-05-27-logos-feature-surface-synthesis]]"
   - "[[raw/articles/2026-05-27-logos-cascadia-macula-data-availability]]"
@@ -120,3 +121,6 @@ There is no OSS organization with a sustained pastor/lay-teacher product focus. 
 - [[../reference/logos-feature-surface|Logos feature surface]]
 - [[../reference/oss-bible-software-landscape|OSS Bible software landscape]]
 - [[biblical-data-licensing|Biblical data licensing]]
+- [[ai-bible-study-tools-2026.md|AI Bible-study tools 2026: RAG, citation-grounding, hallucination guards]]
+- [[macula-syntactic-search.md|MACULA syntactic search: query DSL + indexing]]
+- [[search-and-indexing.md|Search and Indexing]]

@@ -1,7 +1,7 @@
 ---
 title: "Blackberry — Clemson HGIC Factsheet"
-source_url: "https://hgic.clemson.edu/factsheet/blackberry/"
-type: article
+source: "https://hgic.clemson.edu/factsheet/blackberry/"
+type: articles
 path: blackberry
 date_ingested: 2026-05-26
 date_published: unknown

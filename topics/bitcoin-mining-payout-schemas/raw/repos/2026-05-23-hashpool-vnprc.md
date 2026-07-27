@@ -2,14 +2,14 @@
 title: "hashpool — accountless mining pool with Cashu ecash share mint"
 author: vnprc
 publication: github.com/vnprc/hashpool
-url: https://github.com/vnprc/hashpool
+source: https://github.com/vnprc/hashpool
 homepage: https://hashpool.dev
-type: repo
+type: repos
 ingested: 2026-05-23
 quality: 4
 credibility: medium
 confidence: medium
-tags: [hashpool, eHash, Cashu, ecash, blind-signature, non-custodial, SV2]
+tags: [hashpool, ehash, cashu, ecash, blind-signature, non-custodial, sv2]
 ---
 
 # Hashpool / eHash

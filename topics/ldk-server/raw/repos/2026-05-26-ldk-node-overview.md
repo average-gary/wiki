@@ -1,7 +1,7 @@
 ---
 title: "lightningdevkit/ldk-node — Overview (the layer LDK Server is built on)"
-source_url: https://github.com/lightningdevkit/ldk-node
-type: repo
+source: https://github.com/lightningdevkit/ldk-node
+type: repos
 ingested: 2026-05-26
 tags: [ldk-node, lightning, library, architecture]
 quality: 5

@@ -1,7 +1,7 @@
 ---
 title: "Unknown Horizons — unknown-horizons/unknown-horizons"
 source: https://github.com/unknown-horizons/unknown-horizons
-type: repo
+type: repos
 ingested: 2026-06-18
 quality: 4
 confidence: high

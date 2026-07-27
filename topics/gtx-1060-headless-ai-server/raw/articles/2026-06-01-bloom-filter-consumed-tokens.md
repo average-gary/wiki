@@ -1,7 +1,7 @@
 ---
 title: "Bloom and cuckoo filters — sizing for consumed-token sets"
 source: https://en.wikipedia.org/wiki/Bloom_filter
-type: article
+type: articles
 tags: [bloom-filter, cuckoo-filter, consumed-set, sizing, single-use]
 date: 2026-06-01
 quality: 4

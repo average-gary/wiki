@@ -1,7 +1,7 @@
 ---
 title: "4-runtime async Rust benchmark: tokio vs tokio-uring vs monoio vs glommio (Dec 2024)"
-source_url: https://www.cnblogs.com/piperck/p/18597976
-type: article
+source: https://www.cnblogs.com/piperck/p/18597976
+type: articles
 ingested: 2026-06-24
 quality: 4
 confidence: medium

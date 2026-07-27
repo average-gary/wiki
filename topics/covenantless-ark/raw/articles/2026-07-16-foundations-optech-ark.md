@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin Optech — Ark topic page"
-source_url: https://bitcoinops.org/en/topics/ark/
-type: article
+source: https://bitcoinops.org/en/topics/ark/
+type: articles
 publisher: Bitcoin Optech
 ingested: 2026-07-16
 research_path: foundations
