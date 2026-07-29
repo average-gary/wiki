@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [braidpool, covenants, ctv, apo, uhpo, rca, frost-critique, primary]
+summary: "McElrath's challenge thread on Delving Bitcoin posing the open problem: **how do you authorize payouts in a decentralized pool without trusting a federation, without n-of-n key aggregation breaking when miners disconnect, and without forcing every miner to sign every payout?**"
 ---
 
 # Challenge: Covenants for Braidpool — McElrath

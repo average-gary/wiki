@@ -8,6 +8,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [btc++, hashpool, vnprc, ecash, conference, video]
+summary: "vnprc (creator of hashpool) is the dominant figure for payout/accounting talks in the 2024-2025 btc++ circuit. Other named figures (Filippo Merli, Calle, Luke Dashjr) have **not** surfaced btc++-specific recorded talks on payout schemes — likely because btc++ Riga 2025 was privacy-edition and Austin 2024 was script-edition, not mining-edition."
 ---
 
 # btc++ Conference Talks — Mining Payout / Ecash

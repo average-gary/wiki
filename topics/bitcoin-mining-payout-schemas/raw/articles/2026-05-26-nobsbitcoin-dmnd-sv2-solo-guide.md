@@ -8,6 +8,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [demand-pool, dmnd, stratum-v2, job-declaration, solo, sv2-default, operational]
+summary: "The only public source with concrete endpoints/ports/binaries for DMND. Anchors what \"default operation\" actually looks like."
 ---
 
 # DMND — SV2+JD Default Operational Guide (NoBSBitcoin)

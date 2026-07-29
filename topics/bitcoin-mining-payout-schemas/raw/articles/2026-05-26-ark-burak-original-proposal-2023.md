@@ -10,6 +10,7 @@ quality: 4
 credibility: high
 confidence: high
 tags: [ark, burak, historical, mailing-list, primary, original-proposal]
+summary: "The genealogical root for the entire Ark line. Posted to bitcoin-dev May 31, 2023 by Burak Keceli (`brqgoo`). Optech newsletter #253 covered it the same day."
 ---
 
 # Ark Original Proposal — Burak Keceli (May 2023)

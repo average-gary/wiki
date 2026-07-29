@@ -8,6 +8,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [monero, p2pool, SChernykh, uncle-blocks, sidechain]
+summary: "Reference implementation in production for Monero since ~March 2021. Closest functional analog to p2poolv2; informs much of its design."
 ---
 
 # SChernykh Monero p2pool

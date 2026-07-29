@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [selfish-mining, attack, Eyal, Sirer, threshold]
+summary: "Original selfish-mining paper. Pool-vs-network attack distinct from BWH/FAW."
 ---
 
 # Majority is Not Enough — Selfish Mining (Eyal & Sirer 2014)

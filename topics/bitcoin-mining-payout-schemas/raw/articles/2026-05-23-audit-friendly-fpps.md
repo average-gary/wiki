@@ -8,6 +8,7 @@ quality: 4
 credibility: medium
 confidence: medium
 tags: [fpps, audit, auditable-FPPS, rolling-average, transparency]
+summary: "Naseri's auditable-vs-rolling-average FPPS distinction and the May 2026 production landscape. Auditable FPPS settles a 24-hour UTC interval and can be verified with 0% error; rolling-average FPPS uses a 144-block rolling fee average and is described as almost impossible to audit. Only Lincoin is named as offering the auditable variant with verification data."
 ---
 
 # Audit-Friendly vs Audit-Hostile FPPS

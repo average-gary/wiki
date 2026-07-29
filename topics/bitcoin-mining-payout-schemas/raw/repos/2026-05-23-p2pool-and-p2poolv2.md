@@ -10,6 +10,7 @@ quality: 4
 credibility: high
 confidence: high
 tags: [p2pool, p2poolv2, share-chain, decentralized-pool, on-chain-PPLNS]
+summary: "The decentralized-pool branch. p2pool was the first peer-to-peer Bitcoin pool — June 17, 2011, by forrestv. p2poolv2 is the modern revival with formal TLA+ spec."
 ---
 
 # p2pool (2011) and p2poolv2 (2024+)

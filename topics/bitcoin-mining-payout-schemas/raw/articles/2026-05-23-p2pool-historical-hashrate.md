@@ -9,6 +9,7 @@ quality: 4
 credibility: high
 confidence: medium
 tags: [p2pool, history, hashrate, asic, decline]
+summary: "p2pool peaked at ~1.5 PH/s circa late 2013/early 2014 — roughly 10-15% of network hashrate, much higher than commonly remembered — with stale rates as high as 13.7%. Tracks the bitcointalk thread-title progression from 110 GH/s through the ASIC-era decline."
 ---
 
 # p2pool Historical Hashrate (forrestv 2011-2017)

@@ -5,7 +5,7 @@ created: 2026-05-23
 confidence: high
 tags: [tides, ocean, pplns, non-custodial, Hughes-2024]
 volatility: warm
-updated: 2026-07-17
+updated: 2026-07-29
 summary: "OCEAN's payout scheme. Authored by Jason Hughes for OCEAN's launch (March 2024). Self-described as *\"what PPLNS was originally supposed to be.\"*"
 verified: 2026-07-17
 sources:
@@ -34,8 +34,18 @@ OCEAN's payout scheme. Authored by **Jason Hughes** for OCEAN's launch (March 20
 ## Custody and auditability
 
 - **Non-custodial**: payouts via the **coinbase generation transaction**. Pool never buffers BTC.
-- **Auditable**: full share log published.
-- **No protocol-level minimum payout** — pools may layer thresholds.
+- **~~Auditable: full share log published.~~ → RETRACTED 2026-07-29.** This was unsupported. No
+  primary source states that OCEAN publishes a full share log, and the 2026-07-29 attribution round
+  found no such artifact. TIDES is auditable in the weaker sense that **coinbase outputs are on-chain
+  and therefore verifiable after the fact** — which is a check on the *distribution*, not on the share
+  data that produced it. Treat per-share auditability as an open question, and note it is in tension
+  with attribution privacy: a published share log is precisely what
+  [[payout-attribution-privacy|attribution privacy]] would need to withhold.
+- **No protocol-level minimum payout** — pools may layer thresholds. (Note this sits awkwardly with
+  OCEAN's own documentation conceding that satoshi-precision rewards produce uneconomic dust and that
+  pools therefore accrue "until the sum exceeds a minimum threshold" — accrual to a threshold is a
+  hosted balance. See [[../decisions/attribution-retention-tradeoffs|Attribution Retention
+  Tradeoffs]].)
 
 ## OCEAN operational fees
 
@@ -78,6 +88,9 @@ TIDES is the *accounting* scheme; **DATUM** is the *template construction* schem
 - [[pplns-jd|SLICE / PPLNS-JD]] — the DMND sibling scheme that converges on the same N = 8 × D
 - [[sv2-share-accounting-ext|SV2 Share Accounting Extension]] — the miner-side payout-audit protocol in the DMND/SLICE line
 - [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — proposes lifting OCEAN's coinbase output-count limit via a CTV covenant commitment
+- [[coinbase-address-rotation|Coinbase Address Rotation]] ([Coinbase Address Rotation](../concepts/coinbase-address-rotation.md)) — TIDES already pays miner addresses direct from the coinbase, so it is the scheme where per-miner derived addresses would land most naturally
+- [[xpub-payout-identity|xpub Payout Identity]] — what changes if a miner's username is a wildcard descriptor; TIDES pays the derivation cost per miner *per template* because the coinbase is precomputed at work-issue time
+- [[../topics/self-blinding-pool-design-space|Self-Blinding Pool Design Space]] — TIDES as host for an attribution-minimizing pool, and the dust→accrual→custody chain its own docs concede
 - [[../topics/payout-design-space|Payout Design Space]]
 - [[datum.md|DATUM (OCEAN template-construction)]]
 - [[lottery-pplns.md|Lottery-PPLNS (Finder-Bonus Hybrid)]]
@@ -85,3 +98,5 @@ TIDES is the *accounting* scheme; **DATUM** is the *template construction* schem
 - [[parasite-pool.md|Parasite Pool]]
 - [[../reference/people.md|People — eHash / hashpool / decentralized-pool ecosystem]]
 - [[tides-variance-derivation.md|TIDES Variance — Derivation from Rosenfeld 2011]]
+- [[payout-attribution-privacy|Payout Attribution Privacy — what a pool structurally knows]]
+

@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [pplns, incentive-compatibility, mechanism-design, block-withholding, Nash]
+summary: "Formal mechanism-design counterpart to Rosenfeld 2011. Reframes pool reward design as a mechanism-design problem: which reward functions make truthful share submission a Nash equilibrium?"
 ---
 
 # Incentive Compatibility of Bitcoin Mining Pool Reward Functions (Schrijvers et al. FC'16)

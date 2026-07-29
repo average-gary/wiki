@@ -94,4 +94,5 @@ OCEAN total pool hashrate ~31.91 EH/s. **What fraction mines via DATUM**: not pu
 - [[pplns-jd|SLICE / PPLNS-JD]] — the SV2-JD competitor's payout
 - [[braidpool|Braidpool]] — also builds on SV2 + JD
 - [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — CTV addresses the coinbase-space pressure that DATUM's pool-inserted payout outputs create
+- [[xpub-payout-identity|xpub Payout Identity]] — DATUM sets the hard ceilings on any per-miner-descriptor scheme: 191-char usernames (Avalon truncates at 63, Whatsminer buffer-overflows past 127) and ~380–530 coinbase outputs, both firmware-bounded rather than consensus-bounded
 - [[payout-schema-taxonomy]]

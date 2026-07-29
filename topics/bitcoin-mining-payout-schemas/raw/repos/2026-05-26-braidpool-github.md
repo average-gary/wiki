@@ -13,6 +13,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [braidpool, dag-sharechain, mcelrath, decentralized-pool, primary-spec]
+summary: "Bob McElrath's decentralized mining pool research project. Active development through 2025-2026; McElrath remains primary committer. AGPL-3.0. 289 commits on main, 55 open issues, 34 PRs."
 ---
 
 # Braidpool — DAG Sharechain Decentralized Pool

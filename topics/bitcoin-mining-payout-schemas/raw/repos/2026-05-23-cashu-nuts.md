@@ -8,6 +8,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [cashu, NUT, bdhke, ecash, blind-signature, hashpool-substrate]
+summary: "Normative protocol spec for Cashu. The substrate hashpool implements verbatim for eHash share-token issuance."
 ---
 
 # Cashu NUTs Specification

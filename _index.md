@@ -2,14 +2,14 @@
 title: Wiki Hub
 type: hub
 created: 2026-05-20
-updated: 2026-07-27
+updated: 2026-07-29
 ---
 
 # Wiki Hub
 
 LLM-compiled knowledge base. Topic wikis live under `topics/`.
 
-- Last lint: 2026-07-27 (hub-wide with `--fix` — 37 active topics, 0 archived; 3,807 auto-fixes across 1,639 files)
+- Last lint: 2026-07-29 (`bitcoin-mining-payout-schemas` only, with `--fix` — 0 critical, 121 auto-fixes). Last hub-wide lint: 2026-07-27 (37 active topics, 0 archived; 3,807 auto-fixes across 1,639 files)
 
 ## Conventions
 

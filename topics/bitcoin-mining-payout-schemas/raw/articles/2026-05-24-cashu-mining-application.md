@@ -9,6 +9,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [cashu, ehash, ethntuttle, nut-02, keyset, Calle, primary]
+summary: "The canonical technical proposal that introduced **eHash** to the Bitcoin mining-payout discussion. EthnTuttle authored it; thread continued into January 2025 with **Calle (Cashu creator), vnprc (later hashpool implementer), Matt Corallo, davidcaseria** participating."
 ---
 
 # Ecash TIDES using Cashu and Stratum v2 (delvingbitcoin/t/870)

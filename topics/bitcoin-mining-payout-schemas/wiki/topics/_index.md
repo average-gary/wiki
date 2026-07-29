@@ -12,3 +12,4 @@ Synthesis articles drawing across the concept layer.
 - [[decentralization-and-pool-concentration|Decentralization & Pool Concentration]] — the empirical context: top-2 ≈ 49%, top-5 ≈ 78%
 - [[why-fpps-dominates-but-is-fragile|Why FPPS Dominates (and is fragile)]] — market-structure analysis + 5-year trajectory
 - [[p2poolv2-and-256-foundation|p2poolv2 ↔ 256 Foundation — the actual relationship]] — corrects the framing: Hydrapool, not p2poolv2, is the foundation's pillar
+- [[self-blinding-pool-design-space|Self-Blinding Pool Design Space]] — can a TIDES/PPLNS-JD pool take a miner-supplied xpub and then structurally avoid retaining attribution? The xpub half is buildable; the blindness half is bounded because attribution comes from validating shares, not paying them

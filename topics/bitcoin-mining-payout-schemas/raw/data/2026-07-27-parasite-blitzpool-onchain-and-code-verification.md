@@ -9,7 +9,7 @@ volatility: hot
 quality: 5
 credibility: high
 confidence: high
-tags: [parasite-pool, blitzpool, finder-bonus, lottery-pplns, coinbase-payout, on-chain-verification, corrections]
+tags: [parasite-pool, blitzpool, finder-bonus, lottery-pplns, coinbase-payout, on-chain-verification, correction]
 summary: "Primary-source verification pass that corrects three claims previously held in this wiki: Parasite's payout weighting is NOT decay-EMA (it is cumulative unpaid difficulty, no window); Parasite's 1 BTC bounty IS non-custodial (a coinbase output to a different finder address every block — only the remainder is custodial); and Parasite is at 5 mainnet blocks, not 2. Also records Blitzpool's live-pool status (no blocks yet) and the absence of any published critique of large flat finder bounties."
 ---
 

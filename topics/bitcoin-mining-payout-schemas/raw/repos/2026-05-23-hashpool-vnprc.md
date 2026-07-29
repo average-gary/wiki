@@ -10,6 +10,7 @@ quality: 4
 credibility: medium
 confidence: medium
 tags: [hashpool, ehash, cashu, ecash, blind-signature, non-custodial, sv2]
+summary: "Bitcoin mining pool that **issues a Cashu ecash bearer token (eHash) for each accepted share** instead of maintaining a per-miner share ledger. Most experimental payout-accounting model in the post-2024 wave. Status: testnet4 PoC, sole credited dev `vnprc`."
 ---
 
 # Hashpool / eHash

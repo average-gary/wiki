@@ -9,6 +9,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [vnprc, Evan, hashpool, ehash, implementer, btc++]
+summary: "Implementer of hashpool.dev — the working SV2-fork-with-Cashu-mint pool. Implements the **eHash concept originally proposed by EthnTuttle** in May 2024. btc++ speaker (3 talks 2024-2025). Triangle BitDevs co-runner."
 ---
 
 # vnprc

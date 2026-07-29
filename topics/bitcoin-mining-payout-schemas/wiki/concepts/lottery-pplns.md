@@ -5,8 +5,8 @@ created: 2026-07-27
 confidence: high
 tags: [lottery-pplns, finder-bonus, pplns, coinbase-payout, per-connection-coinbase, variance, blitzpool, parasite-pool]
 volatility: warm
-updated: 2026-07-27
-verified: 2026-07-27
+updated: 2026-07-29
+verified: 2026-07-29
 summary: "Payout family that carves a flat bounty out of the block reward for whichever miner's share solved the block, then splits the remainder by PPLNS weight. Covers the mechanism, the speculative-per-finder-coinbase requirement it imposes on the pool, the variance re-introduction it causes, and the two known implementations (Parasite Pool, Blitzpool)."
 sources:
   - "raw/repos/2026-07-27-blitzpool-finder-bonus-code-read.md"
@@ -15,6 +15,7 @@ sources:
   - "raw/repos/2026-05-26-parasitepool-para-github.md"
   - "raw/articles/2026-05-26-bitcoin-manual-parasite-pool.md"
   - "raw/articles/2026-05-26-zkshark-parasite-pool-substack.md"
+  - "raw/repos/2026-07-29-sv2-apps-xpub-coinbase-rotation-code-read.md"
 ---
 
 # Lottery-PPLNS (Finder-Bonus Hybrid)
@@ -86,6 +87,8 @@ Counter-intuitively, the attribution problem solves itself. If the coinbase's pa
 
 No session ID or connection identity is needed anywhere in the lookup — and shouldn't be. The question the ledger asks is "which distribution did this coinbase pay?", not "who submitted it." The same machinery independently supports [[pplns-jd|SV2 Job Declaration]] clients that supply their own payout outputs.
 
+Worth noting what this fingerprint does *not* depend on: the **stability** of any address in the list. It hashes the list as content, so it keeps working even if every miner's address changes every block. The component that does assume address permanence is the balance ledger, not the attribution path — see [[coinbase-address-rotation|Coinbase Address Rotation]] § Per-miner xpub usernames.
+
 ## The economic cost, quantified
 
 At the post-2024 subsidy of 3.125 BTC with a 1 BTC bonus and a 1.5% fee, measured against Blitzpool's actual distribution builder with 8 equal-weight miners:
@@ -122,6 +125,8 @@ The Bitcoin Manual's critique of Parasite Pool sharpens this: at low pool hashra
 **3. Fan-out load, not fan-out correctness.** In a codebase whose job cache is already content-addressed (payout list in the key) and whose snapshots are already fingerprint-keyed, correctness under fan-out is free. The open question is throughput: N coinbase assemblies + N script-parse passes + N Redis writes per template, against a TTL-only job cache holding roughly `4 × N` entries at a 30 s cadence with a 120 s TTL. That wants load-testing before production, and it is the number both known implementations are quietest about.
 
 **4. Halving-relative configuration.** A bonus configured as an absolute sats value silently becomes a larger fraction of the reward at every halving. Configuring it as a *fraction of the miner cut* avoids a scheduled cliff; neither known implementation does this.
+
+**5. Address-derivation cost, if payout addresses are derived rather than stored.** Per-finder coinbase construction is a *per-template, per-miner* cadence, which turns any per-miner cryptographic work into a per-template storm. This matters if miners are identified by a descriptor the pool derives from rather than by a literal address — see [[coinbase-address-rotation|Coinbase Address Rotation]]. Concretely, sv2-apps' derivation primitive re-parses its descriptor on *every* derivation (a deliberate `Send + Sync` workaround for a `RefCell` in miniscript's taproot cache); free at once-per-block, not free at once-per-miner-per-template. Storing each miner's `scriptPubKey` at registration sidesteps it entirely, at the cost of giving up rotation.
 
 ## Known implementations
 
@@ -171,3 +176,4 @@ A caveat on Parasite's remainder weighting worth noting for anyone copying the d
 - [[payout-schema-taxonomy|Payout Schema Taxonomy]]
 - [[tides|TIDES]] — non-custodial PPLNS without a lottery component, for contrast
 - [[block-withholding|Block Withholding]] — open question, not an established finding here
+- [[coinbase-address-rotation|Coinbase Address Rotation]] — the per-template/per-miner cadence this scheme imposes is what makes derived (rather than stored) payout addresses expensive; also the ledger-identity wall for xpub-keyed miners

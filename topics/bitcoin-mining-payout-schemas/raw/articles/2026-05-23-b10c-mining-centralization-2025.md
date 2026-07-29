@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [centralization, pool-concentration, AntPool-and-friends, proxy-pooling]
+summary: "Rigorous on-chain forensic analysis of pool concentration. Methodology: coinbase tags, payout addresses, template similarity. The empirical foundation for \"why payout-scheme reform matters.\""
 ---
 
 # Bitcoin Mining Centralization (b10c, 2025-04)

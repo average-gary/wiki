@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [ark, channel-factory, capital-lockup, liveness, critique, primary]
+summary: "The most quantitative public treatment of Ark's **capital-lockup and liveness costs**. Highly relevant to mining-pool payout viability."
 ---
 
 # Ark as a Channel Factory — Pickhardt + instagibbs (Dec 2025)

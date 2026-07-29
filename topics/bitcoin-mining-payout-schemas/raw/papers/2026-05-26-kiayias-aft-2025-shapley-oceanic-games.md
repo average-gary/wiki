@@ -11,6 +11,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [shapley-value, oceanic-games, formal-analysis, sybil-resistance, peer-reviewed]
+summary: "Peer-reviewed cooperative-game-theoretic analysis of pool reward design."
 ---
 
 # Pool Formation in Oceanic Games — Shapley vs Proportional (AFT 2025)

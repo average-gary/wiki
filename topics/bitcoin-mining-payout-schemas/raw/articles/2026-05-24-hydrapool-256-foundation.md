@@ -9,6 +9,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [hydrapool, 256-foundation, pplns, public-audit-api, one-click-pool]
+summary: "256 Foundation's pool-software pillar. One-click open-source Bitcoin mining pool. Built on `p2poolv2_lib` as its accounting engine but deployed as a single-operator centralized pool with non-custodial payouts."
 ---
 
 # Hydrapool

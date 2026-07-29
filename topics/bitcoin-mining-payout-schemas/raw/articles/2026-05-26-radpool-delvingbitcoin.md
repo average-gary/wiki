@@ -12,6 +12,7 @@ quality: 4
 credibility: high
 confidence: high
 tags: [radpool, dlc, frost, decentralized-fpps, jungly, novel-accounting, primary]
+summary: "Proposal by Kulpreet Singh (jungly, also p2poolv2 lead) to decentralize FPPS without inventing a new consensus protocol."
 ---
 
 # Radpool — Decentralized FPPS via DLCs and FROST

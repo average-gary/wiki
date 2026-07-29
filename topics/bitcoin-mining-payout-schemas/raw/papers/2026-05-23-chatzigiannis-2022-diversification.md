@@ -10,6 +10,7 @@ quality: 4
 credibility: high
 confidence: high
 tags: [variance, portfolio-theory, PPS, pplns, fpps, miner-strategy]
+summary: "Modern peer-reviewed update to Rosenfeld's variance analysis, recast as a portfolio-allocation problem."
 ---
 
 # Diversification Across Mining Pools (Chatzigiannis et al. 2022)

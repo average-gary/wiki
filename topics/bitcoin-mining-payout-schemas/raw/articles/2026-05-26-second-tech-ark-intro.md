@@ -10,6 +10,7 @@ quality: 4
 credibility: high
 confidence: high
 tags: [ark, second-tech, primary-spec, vtxo, transaction-tree, bark]
+summary: "Authoritative living spec from Second.tech (the Steven Roose / Erik De Smedt camp; one of two major Ark implementations). The other camp is **Ark Labs / Arkade** (Burak's lineage)."
 ---
 
 # Ark Protocol Intro — Second.tech

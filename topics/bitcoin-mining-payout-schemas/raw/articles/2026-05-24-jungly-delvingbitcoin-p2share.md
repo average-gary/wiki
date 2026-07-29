@@ -9,6 +9,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [p2poolv2, jungly, design-summary, delving-bitcoin, primary]
+summary: "In response to VzxPLnHqr's \"P2share\" proposal, Jungly (project lead) outlined the as-shipped p2poolv2 design — the most authoritative public summary outside the repo."
 ---
 
 # Jungly's p2poolv2 Design Summary (delvingbitcoin, Nov 2025)

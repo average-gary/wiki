@@ -7,6 +7,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [history, lineage, forrestv, SChernykh, braidpool, p2poolv2, pool2win]
+summary: "The four-generation lineage from forrestv (2011) to p2poolv2 (2024+)."
 ---
 
 # Decentralized Share-Chain Pool Lineage

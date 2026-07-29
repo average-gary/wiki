@@ -11,6 +11,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [pplns, PPS, geometric, DGM, pool-hopping, variance, Rosenfeld]
+summary: "The canonical academic reference for Bitcoin pool reward design. First rigorous mathematical treatment; cited by virtually every later paper and by modern pool specs (OCEAN's TIDES doc, Stratum V2 design discussions)."
 ---
 
 # Analysis of Bitcoin Pooled Mining Reward Systems (Rosenfeld 2011)

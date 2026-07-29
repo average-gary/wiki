@@ -8,6 +8,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [stratum-v2, sv2-spec, mining-protocol, job-declaration]
+summary: "Canonical wire-level spec. SRI v1.0 released March 2024."
 ---
 
 # Stratum V2 Specification

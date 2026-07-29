@@ -5,7 +5,7 @@ created: 2026-05-26
 confidence: medium
 tags: [parasite-pool, zk-shark, lottery-pplns, finder-bonus, lightning-payouts, novel-accounting, partially-custodial]
 volatility: warm
-updated: 2026-07-27
+updated: 2026-07-29
 summary: "A 2025-launched Bitcoin mining pool by pseudonymous developer zk-shark with a hybrid lottery + cumulative-proportional payout scheme: a flat 1 BTC to the block finder as their own coinbase output, remainder fanned out over Lightning."
 verified: 2026-07-27
 sources:
@@ -135,5 +135,6 @@ Stripped of the marketing, two axes are genuinely new:
 - [[pplns-jd|SLICE / PPLNS-JD]] — SV2-decentralized counterpart
 - [[ehash|eHash]] — alternative non-custodial payout layer
 - [[radpool|Radpool]] — alternative decentralized FPPS via DLCs
+- [[coinbase-address-rotation|Coinbase Address Rotation]] ([Coinbase Address Rotation](../concepts/coinbase-address-rotation.md)) — `parasitepool/para` carries the only shipped implementation of wildcard-descriptor payout rotation, and is the persistence-correctness baseline there
 - [[ark-for-mining-payouts.md|Ark for Mining Payouts]]
 - [[braidpool.md|Braidpool]]

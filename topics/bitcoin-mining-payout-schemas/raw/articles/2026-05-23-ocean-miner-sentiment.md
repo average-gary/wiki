@@ -7,6 +7,7 @@ quality: 4
 credibility: medium
 confidence: medium
 tags: [ocean, tides, sentiment, miner-feedback, Dashjr, bolt12]
+summary: "Aggregated miner-community reception of OCEAN's TIDES + DATUM since launch (March 2024). Wiki already has the heatpunks empirical thread; this captures broader sentiment."
 ---
 
 # OCEAN Miner Sentiment (2024-2026)

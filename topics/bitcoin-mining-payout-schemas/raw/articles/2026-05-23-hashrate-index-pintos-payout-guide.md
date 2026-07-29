@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [PPS, PPS+, fpps, pplns, practitioner, luxor]
+summary: "Industry-standard practitioner reference. Author is Luxor co-founder — actual pool operator, not a journalist."
 ---
 
 # Hashrate Index Practitioner Guide (Pintos / Luxor)

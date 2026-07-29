@@ -101,5 +101,8 @@ PPLNS-JD as described above still asks the miner to *trust* the pool's window ar
 - [[tides]]
 - [[sv2-share-accounting-ext|SV2 Share Accounting Extension]] — the wire protocol that makes this scheme's payout verifiable
 - [[../topics/sv2-jd-and-payout-decoupling|SV2 Job Declaration ↔ Payout Decoupling]]
+- [[xpub-payout-identity|xpub Payout Identity]] — PPLNS-JD is the natural host: its ledger key is `(slice, share_index)` with **zero identity fields**, so an xpub changes only the identity layer
+- [[payout-attribution-privacy|Payout Attribution Privacy]] — what the pool still learns from validating the shares in each slice
+- [[../topics/self-blinding-pool-design-space|Self-Blinding Pool Design Space]]
 - [[datum.md|DATUM (OCEAN template-construction)]]
 - [[parasite-pool.md|Parasite Pool]]

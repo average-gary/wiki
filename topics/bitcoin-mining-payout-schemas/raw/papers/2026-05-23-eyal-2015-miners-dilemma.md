@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [block-withholding, BWH, FAW, pool-vs-pool, Nash, attack]
+summary: "Models inter-pool **block withholding** (BWH) as a non-cooperative game where pools infiltrate each other."
 ---
 
 # The Miner's Dilemma (Eyal IEEE S&P 2015)

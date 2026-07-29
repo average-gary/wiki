@@ -8,6 +8,7 @@ quality: 4
 credibility: medium
 confidence: high
 tags: [parasite-pool, blockspace, technical-narrative, primary-adjacent]
+summary: "Industry newsletter piece authored by zk-shark himself, in technical voice. Closest thing to a primary-source spec document for Parasite Pool."
 ---
 
 # A New Mining Pool Emerges — Blockspace Media

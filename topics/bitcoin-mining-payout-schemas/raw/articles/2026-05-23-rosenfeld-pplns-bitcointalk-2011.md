@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [pplns, history, Rosenfeld, primary-source, bitcointalk]
+summary: "The thread where PPLNS was specified for Bitcoin pools. Primary historical artifact."
 ---
 
 # Original PPLNS Proposal (Rosenfeld 2011-08-28)

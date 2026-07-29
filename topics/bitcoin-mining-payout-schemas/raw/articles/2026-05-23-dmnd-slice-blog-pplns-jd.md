@@ -11,6 +11,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [dmnd, SLICE, pplns-jd, N-parameter, primary-source]
+summary: "Closes the gap on SLICE's N parameter."
 ---
 
 # DMND SLICE — Primary Spec (March 2025)

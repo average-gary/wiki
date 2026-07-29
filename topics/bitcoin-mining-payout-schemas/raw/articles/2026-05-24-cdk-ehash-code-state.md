@@ -9,6 +9,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [cdk-ehash, hashpool, mint-payment, code-state, stub-vs-shipped]
+summary: "The CDK MintPayment plugin that hashpool depends on. Wiki had inferred its README \"has no accumulating-melt-quote or BlockFound code yet.\" Confirmed and quantified May 2026."
 ---
 
 # cdk-ehash — Code-State Report

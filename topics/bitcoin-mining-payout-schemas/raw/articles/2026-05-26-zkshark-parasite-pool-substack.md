@@ -10,6 +10,7 @@ quality: 4
 credibility: medium
 confidence: high
 tags: [parasite-pool, zk-shark, primary, substack, lightning-payouts, novel-accounting]
+summary: "Founder-authored manifesto / informal whitepaper for **Parasite Pool**, a Bitcoin mining pool launched in beta in 2025 by pseudonymous developer **zk-shark** (also creator of Ordinal Maxi Biz). This is the canonical \"design rationale\" document — there is no formal whitepaper."
 ---
 
 # Parasite Pool — Founder Announcement (Substack)

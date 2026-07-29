@@ -5,9 +5,9 @@ created: 2026-05-23
 confidence: high
 tags: [PPS, pplns, fpps, PPS+, taxonomy]
 volatility: warm
-updated: 2026-07-17
+updated: 2026-07-29
 summary: "Bitcoin pool payout schemes form three categories defined by who absorbs variance:"
-verified: 2026-07-17
+verified: 2026-07-29
 sources:
   - "raw/articles/2026-05-23-dmnd-demand-pool.md"
   - "raw/articles/2026-05-23-hashrate-index-pintos-payout-guide.md"
@@ -19,6 +19,7 @@ sources:
   - "raw/repos/2026-05-23-hashpool-vnprc.md"
   - "raw/repos/2026-05-26-parasitepool-para-github.md"
   - "raw/repos/2026-07-17-coinbase-playground-readme.md"
+  - "raw/repos/2026-07-29-sv2-apps-xpub-coinbase-rotation-code-read.md"
 ---
 
 # Payout Schema Taxonomy
@@ -74,6 +75,14 @@ These are payout *layers* — orthogonal to the share-accounting scheme. They si
 - **Cashu mints** (used by [[ehash]]) — blind-signed bearer tokens, custodial mint, no soft-fork required, production.
 - **Ark / VTXO** (hypothetical, [[ark-for-mining-payouts|see article]]) — ASP-coordinated transaction-tree batching, **named once** by Second.tech as a use case (BitMag Apr 2026); structural critiques: capital lockup, expiry sweep, asymmetric exit cost, receiver-presence requirement gates it on CTV+CSFS activation.
 
+## 3d. Payout-address handling (orthogonal to the split)
+
+Not a payout scheme — this axis governs *which address* a payout output names, independently of how the amounts were computed.
+
+- **Static address** — the default nearly everywhere: one payout address forever, making pool lifetime revenue trivially totalable on chain.
+- **Coinbase address rotation** — a wildcard output descriptor (BIP-380) plus a persisted derivation index yields a fresh payout address per block found. Shipped in `parasitepool/para` (ckpool + BDK, `Durability::Immediate` persist-before-return); implemented on an unmerged sv2-apps branch for the SV2 Pool and JD-client. Guarded in both by miniscript `has_wildcard()`, because a non-wildcard descriptor parses fine and then silently returns one address forever. *See [[coinbase-address-rotation|Coinbase Address Rotation]] ([Coinbase Address Rotation](../concepts/coinbase-address-rotation.md)).*
+- **Per-miner derived addresses (unbuilt)** — miner identified by an xpub/descriptor rather than a literal address. Blocked not by derivation but by ledger identity: a balance table keyed `ON CONFLICT (address)` breaks pending-credit carry-forward when the address changes every block.
+
 ## 3. Variance-as-tradeable-asset
 
 - **eHash / hashpool** — Cashu blind-signature mint issues a bearer token per share. Token accrues BTC value during a maturity period; miner can hold (capture luck upside) or sell early on a secondary market (variance offloaded to buyer). Pool maintains no per-miner ledger. *See [[ehash]].*
@@ -108,6 +117,7 @@ These are payout *layers* — orthogonal to the share-accounting scheme. They si
 - [[../../raw/papers/2026-05-26-kiayias-aft-2025-shapley-oceanic-games|Kiayias et al. AFT'25 — Shapley value pool design]]
 - [[../../raw/repos/2026-07-17-coinbase-playground-readme|coinbase-playground README]] — CTV coinbase fanout (flat/layered trees)
 - [[../../raw/repos/2026-07-27-blitzpool-finder-bonus-code-read|Blitzpool finder-bonus code read]] — verified finder-bonus carve-out math and per-finder coinbase architecture
+- [[../../raw/repos/2026-07-29-sv2-apps-xpub-coinbase-rotation-code-read|sv2-apps xpub coinbase rotation code read]] — the payout-address axis in §3d
 
 ## See also
 
@@ -115,6 +125,7 @@ These are payout *layers* — orthogonal to the share-accounting scheme. They si
 - [[../topics/payout-design-space|Payout Design Space (synthesis)]]
 - [[../topics/sv2-jd-and-payout-decoupling|SV2 Job Declaration ↔ Payout Decoupling]]
 - [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — the on-chain fanout primitive detailed in §3b
+- [[coinbase-address-rotation|Coinbase Address Rotation]] ([Coinbase Address Rotation](../concepts/coinbase-address-rotation.md)) — the payout-address axis detailed in §3d
 - [[ark-for-mining-payouts.md|Ark for Mining Payouts]]
 - [[braidpool.md|Braidpool]]
 - [[../decisions/custody-tradeoffs.md|Custody Tradeoffs across Payout Schemes]]

@@ -12,6 +12,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [ark, formal-model, arxiv, ark-labs, tu-wien, common-prefix, peer-reviewable]
+summary: "First Bitcoin-compatible commit-chain with a **formal protocol model and security proof**. 32 pages, arXiv:2605.20952v1, posted 2026-05-20 — six days before this research round."
 ---
 
 # Ark: Offchain Transaction Batching in Bitcoin — Formal Model

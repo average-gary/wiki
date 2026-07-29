@@ -8,6 +8,7 @@ quality: 4
 credibility: high
 confidence: high
 tags: [p2poolv2, pplns, decay, alternative-payout, small-state]
+summary: "Score-based decay variant — design-doc-only, not production default. Used by the Hydrapool small-state path."
 ---
 
 # p2poolv2 — PPLNS With Decay (alternative payout)

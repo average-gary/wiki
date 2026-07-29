@@ -11,6 +11,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [vnprc, ctv, op-ctv, prototype, regtest, coinbase-fanout]
+summary: "Runnable prototype for the \"Scaling Noncustodial Mining Payouts with CTV\" proposal. Regtest only, depends on `average-gary/bitcoin-garrys-mod` (custom Core fork with CTV+CSFS)."
 ---
 
 # vnprc/coinbase-playground — CTV-Coinbase Prototype

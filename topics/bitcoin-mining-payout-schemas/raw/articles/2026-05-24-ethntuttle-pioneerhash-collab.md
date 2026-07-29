@@ -7,6 +7,7 @@ quality: 4
 credibility: high
 confidence: high
 tags: [ethntuttle, fi3, SLICE, dmnd, pplns-jd, collaboration, timeline]
+summary: "Verdict on whether EthnTuttle and Fi3/DMND actually co-develop SLICE: closer to independent tracking than collaboration. One polite drive-by PR (unmerged), a fork, and a design issue citing concrete SLICE API names — but EthnTuttle/pplns-jd is an empty 0-byte repo, so the pattern reads as planned reimplementation rather than shared work."
 ---
 
 # EthnTuttle ↔ Fi3/DMND Collaboration: Light Tracking, Not Active Co-Development

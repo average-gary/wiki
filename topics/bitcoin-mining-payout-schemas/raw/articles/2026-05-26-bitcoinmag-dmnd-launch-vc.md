@@ -10,6 +10,7 @@ quality: 4
 credibility: high
 confidence: high
 tags: [demand-pool, dmnd, vc, launch, founding-miner, business]
+summary: "Documents DMND's commercial frame at launch."
 ---
 
 # DMND Launch — Bitcoin Magazine (Mar 2025)

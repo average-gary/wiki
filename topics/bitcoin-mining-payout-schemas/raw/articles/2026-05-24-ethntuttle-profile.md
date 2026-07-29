@@ -9,6 +9,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [ethntuttle, ehash-originator, cashu, sv2, iroh, Virginia-Freedom-Tech]
+summary: "Originator of the **eHash** concept (mining-share-as-Cashu-bearer-token). Co-architect of hashpool via issue-driven protocol design. SRI Iroh/Noise transport RFC author. Founder of Virginia Freedom Tech LLC."
 ---
 
 # EthnTuttle (Ethan Tuttle)

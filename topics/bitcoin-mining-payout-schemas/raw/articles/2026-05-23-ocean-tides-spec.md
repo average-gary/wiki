@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [tides, ocean, pplns, non-custodial, payout-spec]
+summary: "Primary spec for the only post-2024 production payout scheme that publishes a full mathematical doc. Authored by Jason Hughes for OCEAN (Luke Dashjr's relaunch of the Eligius lineage). OCEAN launched March 2024."
 ---
 
 # TIDES (OCEAN Mining Pool)

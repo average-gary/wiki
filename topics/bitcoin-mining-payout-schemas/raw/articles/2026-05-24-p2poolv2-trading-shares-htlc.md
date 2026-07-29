@@ -10,6 +10,7 @@ quality: 4
 credibility: high
 confidence: medium
 tags: [p2poolv2, atomic-swap, htlc, P2WSH, P2TR, market-maker, lightning]
+summary: "How small miners (whose shares fall outside the coinbase-output cap) get paid: **HTLC outputs on the share-chain**, redeemable atomically with Bitcoin or Lightning."
 ---
 
 # p2poolv2 — Trading Shares For Bitcoin

@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [p2poolv2, accounting, pplns, code-level, source-truth]
+summary: "The actual algorithms shipped in `p2poolv2_lib/src/accounting/`. Replaces wiki framings of \"top-N\" and \"8×D\" with the real production parameters."
 ---
 
 # p2poolv2 Accounting — Code-Level Truth

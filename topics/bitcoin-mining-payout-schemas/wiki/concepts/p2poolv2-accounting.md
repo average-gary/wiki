@@ -165,5 +165,6 @@ Memory cost: O(active miners), not O(window).
 - [[tides|TIDES (OCEAN)]] — comparison: 8×D window vs p2poolv2's 133,056 work-bounded
 - [[hydrapool|Hydrapool]]
 - [[../topics/p2poolv2-and-256-foundation|p2poolv2 ↔ 256 Foundation]]
+- [[payout-attribution-privacy|Payout Attribution Privacy]] — `ShareCommitment.miner_bitcoin_address` plus a `UserIndex` (btcaddress → user_id); publishing all shares makes attribution available to *everyone*, strictly worse than a centralized pool on this axis in exchange for removing custody
 - [[braidpool.md|Braidpool]]
 - [[../reference/people.md|People — eHash / hashpool / decentralized-pool ecosystem]]

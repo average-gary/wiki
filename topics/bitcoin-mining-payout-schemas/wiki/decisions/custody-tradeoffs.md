@@ -93,3 +93,5 @@ The "custodial pool" abstracts these problems away at the cost of trust. The 202
 - [[../topics/payout-design-space]]
 - [[../topics/why-fpps-dominates-but-is-fragile]]
 - [[../concepts/ehash.md|eHash / Hashpool — Cashu ecash share tokens]]
+- [[attribution-retention-tradeoffs|Attribution Retention Tradeoffs]] — the coupled axis: FinCEN §5.4 exempts pool distributions *unless* the operator hosts wallets, so custody model and attribution posture cannot be chosen independently
+- [[../topics/self-blinding-pool-design-space|Self-Blinding Pool Design Space]]

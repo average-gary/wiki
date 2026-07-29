@@ -8,6 +8,7 @@ quality: 4
 credibility: medium
 confidence: high
 tags: [parasite-pool, bitaxe, setup, practitioner, xverse, lightning]
+summary: "Operator-facing setup guide. The only source with verbatim configuration values."
 ---
 
 # Connecting a Bitaxe to Parasite Pool — SoloSatoshi

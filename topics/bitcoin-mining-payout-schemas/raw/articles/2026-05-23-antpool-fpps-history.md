@@ -9,6 +9,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [antpool, fpps, PPS+, history, bitmain, BTC.com]
+summary: "The wiki's earlier claim that FPPS became default at AntPool ~2014 was **wrong**. Corrected timeline below."
 ---
 
 # AntPool FPPS Adoption — Corrected Timeline

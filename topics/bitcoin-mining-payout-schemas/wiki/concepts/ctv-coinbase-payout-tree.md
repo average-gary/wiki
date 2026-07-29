@@ -2,7 +2,7 @@
 title: CTV Coinbase Payout Tree
 category: concept
 created: 2026-07-17
-updated: 2026-07-17
+updated: 2026-07-29
 verified: 2026-07-17
 confidence: medium
 volatility: warm
@@ -84,6 +84,9 @@ Working **regtest** demonstration only — no mainnet, no testnet deployment, an
 - [[ark-for-mining-payouts|Ark for Mining Payouts]] ([Ark for Mining Payouts](../concepts/ark-for-mining-payouts.md)) — the CTV-coinbase → VTXO hybrid and the shared-output-tree parallel to the MuSig endgame
 - [[p2pool-share-chain|p2pool / p2poolv2]] ([p2pool / p2poolv2](../concepts/p2pool-share-chain.md)) — the P2Pool reboot the MuSig endgame targets; also solves output-cap fanout via HTLC share trading
 - [[payout-schema-taxonomy|Payout Schema Taxonomy]] ([Payout Schema Taxonomy](../concepts/payout-schema-taxonomy.md)) — where on-chain fanout primitives sit relative to share-accounting schemes
+- [[coinbase-address-rotation|Coinbase Address Rotation]] ([Coinbase Address Rotation](../concepts/coinbase-address-rotation.md)) — the other direction on coinbase output handling: rotating output *addresses* rather than reducing output *count*
+- [[coinbase-amount-linkability|Coinbase Amount Linkability]] ([Coinbase Amount Linkability](../concepts/coinbase-amount-linkability.md)) — fanout compression interacts with amount privacy: more outputs enlarge the anonymity set but a coinbase's total cannot be padded, so every decoy satoshi comes out of a real miner
+- [[xpub-payout-identity|xpub Payout Identity]] ([xpub Payout Identity](../concepts/xpub-payout-identity.md)) — the firmware-bounded ~380–530 output ceiling this primitive is designed to lift
 
 ## Sources
 

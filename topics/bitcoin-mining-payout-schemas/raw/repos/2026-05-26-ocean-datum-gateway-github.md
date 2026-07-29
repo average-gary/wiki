@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [datum, ocean, template-construction, knots, primary-spec]
+summary: "Bitcoin Ocean LLC + Jason Hughes. ~145 stars. License MIT. Currently public BETA."
 ---
 
 # OCEAN datum_gateway — Primary Spec for DATUM

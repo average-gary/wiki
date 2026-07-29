@@ -3,12 +3,13 @@ title: eHash / Hashpool — Cashu ecash share tokens
 category: concept
 created: 2026-05-23
 confidence: medium
-tags: [ehash, hashpool, cashu, blind-signature, accountless, custodial-mint]
+tags: [ehash, hashpool, cashu, blind-signature, accountless, custodial-mint, attribution, nut-293]
 volatility: warm
-updated: 2026-07-15
-summary: "Bitcoin mining pool that issues a Cashu ecash bearer token (eHash) for each accepted share instead of maintaining a per-miner share ledger. Most experimental payout-accounting model in the post-2024 wave."
-verified: 2026-07-15
+updated: 2026-07-29
+summary: "Bitcoin mining pool that issues a Cashu ecash bearer token (eHash) for each accepted share instead of maintaining a per-miner share ledger. Most experimental payout-accounting model in the post-2024 wave. Its unlinkability claim is real at the signature layer and bounded in the deployed system — see § What the mint still learns."
+verified: 2026-07-29
 sources:
+  - "raw/repos/2026-07-29-mining-privacy-prior-art-survey.md"
   - "raw/articles/2026-05-24-cashu-mining-application.md"
   - "raw/articles/2026-05-24-ethntuttle-profile.md"
   - "raw/articles/2026-05-24-hashpool-architecture-deep.md"
@@ -41,7 +42,7 @@ Status of **e-sharp**: active dev, no mainnet timeline disclosed. Status of **vn
 |---|---|---|
 | Per-miner ledger | Yes | **No** |
 | Share is | A row in a database | **A bearer token** |
-| Pool sees miner identity | Yes | **No (Cashu blind sig)** |
+| Pool sees miner identity | Yes | **Weakest link of any design — but not zero** (see § What the mint still learns) |
 | Variance bearer | Pool (FPPS) or miner (PPLNS) | **Tradeable** |
 
 > *"Instead of internally accounting for each miner's proof of work shares, hashpool issues an 'ehash' token for each share accepted by the pool."*
@@ -53,7 +54,78 @@ Status of **e-sharp**: active dev, no mainnet timeline disclosed. Status of **vn
 3. Wallet unblinds: `C = C_ - rK = k·hash_to_curve(x)`. Token = `(x, C)`.
 4. To redeem: present `(x, C)` to mint. Mint verifies `k·hash_to_curve(x) == C`, marks `x` spent.
 
-`x` is bound to the share submission. **Mint cannot link issuance-time shares to redemption-time payouts** → privacy property no FPPS/PPLNS pool offers.
+`x` is bound to the share submission. The mint cannot link an issuance-time blinded message to a
+redemption-time `(x, C)` **by the signature algebra alone** — a real privacy property that no
+FPPS/PPLNS pool offers. But cryptographic unlinkability is not the same as operator blindness, and
+the project itself says so.
+
+## What the mint still learns
+
+> **Correction to an earlier version of this article**, which stated flatly that the mint "cannot
+> link issuance-time shares to redemption-time payouts." That is true of the BDHKE signature and
+> false of the deployed system. hashpool's own `docs/poisson-proof-consolidation-plan.md`:
+>
+> "Cashu's blinding prevents linking a proof to the user who holds it. It does **not** prevent
+> temporal correlation or batch fingerprinting by the mint. Since the hashpool mint issues all
+> proofs, it knows when every proof was created and can observe when they are consumed."
+
+Concretely, the mint observes on every swap: input proof `Y` values, output amounts, timestamps,
+and the creation timestamp of each input. And the amount is not incidental — the Cashu
+mining-share proposal set
+
+```
+amount MUST equal 2^(share difficulty − keyset minimum difficulty)
+```
+
+so **the token's denomination encodes the share's exact difficulty**, and the mint is additionally
+handed `header_hash` as the payment identifier, which it "**MUST** treat … as unique payment
+identifiers and **MUST** reject duplicate shares." Duplicate rejection therefore has the mint
+retaining a per-share fingerprint. Unit strings like `"HASH-POOL1-EPOCH42"` further partition the
+anonymity set by pool and epoch.
+
+> **Correction 2026-07-29.** This paragraph previously said duplicate rejection ***requires*** the
+> mint to retain a per-share fingerprint. That overstates it: retaining raw `header_hash` is
+> **hashpool's design choice**, not a requirement of the function. A keyed single-use nullifier
+> `nf = PRF_{sk_M}(header_hash)` performs the same duplicate check while being unlinkable across
+> shares — and Cashu's own NUT-07 already uses that shape (`Y = hash_to_curve(secret)`) for spent-proof
+> checks elsewhere in the same protocol. What is true of hashpool specifically is that it retains the
+> raw value, which *is* a linkability handle. See [[nullifier-vs-pseudonym|Nullifier vs Pseudonym]].
+
+The decisive limitation is stated by the project itself:
+
+> "the hashpool faucet wallet is the only entity swapping `hash`-denomination proofs at this mint.
+> The mint knows every proof it ever issued in this unit, so all consolidation operations are
+> **trivially linkable to the same wallet regardless of timing strategy**."
+
+That plan's consolidation strategies (fixed interval → fixed threshold → uniform random →
+**Poisson**, memoryless with `interval = −ln(U) × mean` plus random subset selection) are described
+as "forward-looking" — aspirational, not achieved.
+
+**`docs/SETTLEMENT_DESIGN.md` (2026-05-13) is worse for attribution**: the on-chain payout path
+requires the miner to hand the mint a **cleartext `payout_address`** in an accumulating melt quote,
+and the pool then queries the mint for "accumulated quote balances per payout address" to build the
+coinbase. **Attribution is fully restored for anyone opting into on-chain payout.** (`EHASH_PROTOCOL.md`
+has moved to `docs/archive/`; the widely-linked `master/EHASH_PROTOCOL.md` URL now 404s.)
+
+Two further limits, both structural rather than implementation defects:
+
+- **The mint is still the share validator.** It sets the target, timestamps arrivals, and can
+  compute hashrate to within a few percent. See [[payout-attribution-privacy]] and
+  [[hashrate-inference-side-channels]].
+- **Multi-redemption and privacy are mutually exclusive.** vnprc, author of both hashpool and the
+  Cashu mining-share NUT, in delvingbitcoin #870 post #32: "You can do multiple redemptions by
+  linking the tokens to the mining share, but **in the process you destroy the privacy properties
+  of ecash.**"
+
+Standards status, for calibration: **NUT-XX Mining Share Payment Method (cashubtc/nuts PR #293) was
+opened 2025-10-10 and closed 2026-03-09** by a collaborator — incomplete/inactive, with the guidance
+that experimental payment methods should first prove adoption via CDK custom units. **There is no
+accepted spec.** The only privacy text in the whole draft was that wallets "SHOULD generate a fresh
+NUT-20 key pair per mining-share quote."
+
+None of this makes eHash worse than the alternatives — it remains the weakest share→miner link of
+any design surveyed. It means the honest claim is *"the strongest unlinkability available, bounded
+by timing, denomination, and the on-chain settlement path"* rather than *"the mint cannot link."*
 
 ## Three-component stack
 
@@ -146,6 +218,7 @@ Single-mint custody is the project's biggest risk. **Fedimint** generalizes Cash
 
 ## Sources
 
+- [[../../raw/repos/2026-07-29-mining-privacy-prior-art-survey|Mining privacy prior-art survey]] — hashpool's own consolidation plan, SETTLEMENT_DESIGN, NUT PR #293, dbtc #870 post #32
 - [[../../raw/repos/2026-05-23-hashpool-vnprc|hashpool repo (overview)]]
 - [[../../raw/repos/2026-05-23-cashu-nuts|Cashu NUTs spec]]
 - [[../../raw/articles/2026-05-24-cashu-mining-application|delvingbitcoin/t/870 — original eHash proposal]]
@@ -164,3 +237,9 @@ Single-mint custody is the project's biggest risk. **Fedimint** generalizes Cash
 - [[ark-for-mining-payouts.md|Ark for Mining Payouts]]
 - [[parasite-pool.md|Parasite Pool]]
 - [[../reference/people.md|People — eHash / hashpool / decentralized-pool ecosystem]]
+- [[payout-attribution-privacy|Payout Attribution Privacy]] — what any pool structurally knows
+- [[blind-share-accounting|Blind Share Accounting]] — why denominated one-shot tokens fit share weight badly
+- [[../topics/self-blinding-pool-design-space|Self-Blinding Pool Design Space]]
+- [[nullifier-vs-pseudonym|Nullifier vs Pseudonym — why duplicate rejection does not need identity]]
+- [[../theses/blinded-share-credit-commitment|Thesis: blinded share-credit commitment]] — the 2026-07-29 verdict round
+

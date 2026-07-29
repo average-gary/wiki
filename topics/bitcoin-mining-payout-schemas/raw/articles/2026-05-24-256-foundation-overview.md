@@ -9,6 +9,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [256-foundation, governance, hydrapool, mining-decentralization, 501c3]
+summary: "501(c)(3) public charity (**EIN 99-1662333**) focused on dismantling Bitcoin mining centralization across hardware (~90% one Chinese vendor), pools (~90% top-4), and reward custody (~40% one custodian)."
 ---
 
 # 256 Foundation

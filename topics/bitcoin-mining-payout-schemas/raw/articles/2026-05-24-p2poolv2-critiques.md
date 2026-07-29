@@ -7,6 +7,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [p2poolv2, critique, contrarian, market-maker, censorship, latency]
+summary: "Steelman critiques from primary Bitcoin developers (Antoine Poinsot, Bob McElrath, AJ Towns, plebhash, vnprc, VzxPLnHqr). Compiled from delvingbitcoin.org threads."
 ---
 
 # p2poolv2 Accounting Critiques

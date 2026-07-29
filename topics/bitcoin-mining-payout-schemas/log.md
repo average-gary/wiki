@@ -6,7 +6,7 @@
 
 - **Landmark academic paper**: Keer, Maffei, Argentieri, Camilleri, Avarikioti — "Ark: Offchain Transaction Batching in Bitcoin" (arXiv:2605.20952, 2026-05-20, 6 days before research round). First Bitcoin-compatible commit-chain with formal model and security proof. ~200 vB constant onchain commitment regardless of batch size; cooperative exit 1 output/user; unilateral O(log n) × ~150 vB/VTXO. **Does NOT discuss mining payouts.**
 - **Two-camp landscape clarified**: Second.tech (Steven Roose CEO + Erik De Smedt CTO, ex-Blockstream, $5.1M private funding, signet only, bark client) vs Ark Labs/Arkade (Burak Keceli's lineage, $7.7M cumulative incl. $5.2M Tether-led Mar 2026, Arkade live since Oct 2025). The original `ark-network` GitHub org renamed to `arkade-os`.
-- **Mining-payout pitch is one phrase in one Bitcoin Magazine article**: Apr 2026 Juan Galt profile of Second names "Mining pool payout distribution at higher frequencies" alongside payroll. **No pool operator has endorsed Ark.** No Optech newsletter, no conference talk, no second.tech blog post mentions mining. No academic paper. The "Ark > CTV for payouts" framing (AntoineP) lives entirely in the [[2026-05-26-vnprc-ctv-coinbase-delving]] thread.
+- **Mining-payout pitch is one phrase in one Bitcoin Magazine article**: Apr 2026 Juan Galt profile of Second names "Mining pool payout distribution at higher frequencies" alongside payroll. **No pool operator has endorsed Ark.** No Optech newsletter, no conference talk, no second.tech blog post mentions mining. No academic paper. The "Ark > CTV for payouts" framing (AntoineP) lives entirely in the [[raw/articles/2026-05-26-vnprc-ctv-coinbase-delving|vnprc CTV-coinbase delving]] thread.
 - **Critiques fatal for mining**: clArk (today's covenantless variant) requires presence-of-eventual-owner — pools cannot issue VTXOs to absent miners. hArk/Erk fix this but require CTV+CSFS (same activation gate as the CTV-coinbase proposals AntoineP claimed to dominate). VTXO 7-day default expiry / 4-week max — Bitaxe miners that wake intermittently lose funds to expiration sweep. Pickhardt: ASP must front capital × expiry window. roasbeef: asymmetric exit cost. Carvalho: blockspace-conservation cap on credible exits at pool population sizes.
 - **Counter to "Ark > CTV"**: covenant-free Ark can't issue to absent receivers AND is DoS-prone. Covenant-using Ark has the same activation dependency CTV-coinbase does. The "Ark > CTV" claim collapses into "Ark + CTV > CTV alone" — much weaker.
 
@@ -396,3 +396,298 @@ Also: `rotate_coinbase_address` is fail-open (on error the pool keeps mining to 
 **Provenance caveats:** unmerged, no PR review read, may never land. Commit metadata unreliable — `817a1057` is authored `Test User <test@test.com>` and the author dates are non-monotonic (`e2930150` dated 2026-01-29 sits atop `817a1057` dated 2026-03-20). Hashes and content are what's verified; treat the dates as noise. Testnet4 examples only, using `tb1q...` addresses already present upstream.
 
 Placement chosen by the operator over three alternatives (fill the empty `coinbase-rotation-bitcoin` skeleton, `sv2-coinbase-identity`, or a new repo-local `.wiki/`). Repo-local was a live option under CLAUDE.md's default-local rule, since the docs commit carries an employer email and the worktree has employer-named git remotes; hub placement is defensible because the fork is public OSS pushed to `average-gary/feat/coinbase-rotation` and the diff contains nothing internal — only commented-out generic paths and upstream testnet4 addresses. Neither the employer author line nor the remote names are reproduced in the raw source.
+
+## [2026-07-29] compile | 1 source → 1 new article, 2 updated (new: concepts/coinbase-address-rotation; updated: concepts/lottery-pplns, concepts/payout-schema-taxonomy)
+
+Compiled `raw/repos/2026-07-29-sv2-apps-xpub-coinbase-rotation-code-read.md`. The survey initially looked like 4 uncompiled sources against the "last compiled 2026-07-27" date; checking `sources:` frontmatter rather than loose filename mentions showed the three 07-27 sources were already cited, leaving exactly 1 genuinely uncompiled.
+
+**New article — `wiki/concepts/coinbase-address-rotation.md`.** Generalizes beyond the one branch by treating the shipped `parasitepool/para` implementation (recorded in the raw source) as the comparison baseline throughout. Two findings worth keeping:
+
+- **The wildcard footgun is the load-bearing detail.** A descriptor without `*` parses successfully and then returns the same address forever — no error, no signal until repeated addresses show up on chain. Both implementations independently guard it with the same miniscript `has_wildcard()` call at construction. Two codebases converging on the identical API is strong evidence that's the right place to fail, and it means **rotation without that check is broken by default**, since the broken configuration is also the most natural thing an operator would write.
+- **Index persistence is where they diverge, and sv2-apps took the option `para` rejected by name.** `para` persists before returning an address (`Durability::Immediate`, reload-on-failure); sv2-apps does `fetch_add` then a bare non-atomic `fs::write` whose failure is only `warn!`-logged. `para`'s design doc names this as rejected option B verbatim. Worst path: `load_index` is `parse().unwrap_or(default)`, so a corrupt file silently replays derivation from index 0 — reaching address reuse, the exact thing the feature exists to prevent, by the quietest available route.
+
+Also recorded upstream's **deferred alternative**: the deleted test's comment floats instantiating the descriptor with the block height instead of a counter. That would dissolve the persistence problem entirely (the height *is* the index, so nothing needs saving), at the cost of a derivation range as wide as the chain for recovery scans. Nobody has tried it; logged as an open question rather than a recommendation.
+
+**Skepticism recorded, not smoothed over.** sv2-apps justifies the feature as "quantum-resistant payout hygiene" in a TOML comment with no analysis in-tree. For P2WPKH/P2TR the pubkey is revealed **on spend, not on receive**, so rotating receive addresses bounds key exposure only under unstated assumptions about spending behavior — and a pool that consolidates rotated outputs has undone most of it. Article labels this an unexamined claim; the privacy motivation stands on its own.
+
+**Updates.** `lottery-pplns` gains implementation hazard #5: at per-finder-per-template cadence, sv2-apps' deliberate descriptor re-parse (forced because miniscript's `Descriptor` holds a `RefCell` taproot cache and isn't `Send + Sync`) turns a once-per-block cost into a per-template parse storm. Also clarified that `payouts_fingerprint` does not depend on address *stability* — the attribution path needs no change under rotation; the balance ledger does. `payout-schema-taxonomy` gains **§3d, payout-address handling**, as an axis orthogonal to the split, alongside the existing orthogonal groups (§3a template construction, §3b on-chain fanout, §3c off-chain layers) rather than as a new scheme row.
+
+**Index repairs beyond this compile's own scope.** Step 7 found a concurrent session had written 10 new raw sources and 2 new articles (`payout-attribution-privacy`, `hashrate-inference-side-channels`) into this topic at 13:41–13:47 without updating indexes or logging. Repaired the shared derived indexes to match on-disk reality — concepts index +2 entries, `wiki/_index.md` concepts 22→25 and reference 1→2, `raw/_index.md` 81→91 with per-type counts corrected (papers 9→14, repos 18→22, notes 1→3). Those two articles are **not** this compile's work and are left for that session to log. Also corrected the master index's Outputs table, which listed 1 of 4 output files.
+
+Separately, `wiki/reference/uncompiled-source-coverage.md` was wrong in both directions and is regenerated from frontmatter: **21 of 91**, not 11 of 80. The old figure counted coverage by loose filename mention, so five sources whose names appear in an article body but in no `sources:` list were scored as compiled.
+
+## [2026-07-29] research | "how do TIDES/PPLNS-JD but the user provides an xpub or similar. even if there were some blinding schema, payout amounts/shares would still be attributable by service provider. how could a service prevent storing this attribution? or blind themselves to it?" → 10 sources ingested, 8 articles compiled
+
+Question mode, 5 agents (single round, default `--sources 5`; the swarm returned 10 usable sources). This is the round whose Phase-3 ingest the 2026-07-29 rotation compile spotted mid-flight and repaired indexes for (see that entry's "Index repairs beyond this compile's own scope"); the two articles it found on disk, `payout-attribution-privacy` and `hashrate-inference-side-channels`, are logged here as this round's work.
+
+**The load-bearing finding reorders the question.** The premise in the prompt is correct and sharper than stated: payout attribution is a *consequence*, not the source. A pool's knowledge of who mined what comes from share **validation**, not from **payment** — it must check every submitted share against the miner's difficulty target to credit it at all, and from the share stream alone it recovers hashrate (`hashrate = difficulty × 2^32 / mean_inter_share_time`), session structure, timing, and transport peer. So a miner-supplied xpub and any payout-side blinding are defenses against **chain observers**, which is a real and currently-unaddressed adversary — Romiti et al. (WEIS'19) identified 92 % / 75 % / 30 % of individual miners at BTC.com / ViaBTC / AntPool from public chain data with **no pool cooperation** — but they are close to a no-op against the pool itself. The two halves have to be priced separately, which is how the synthesis article is structured.
+
+**Two structural impossibilities, both proved from primary text rather than inferred:**
+
+- **BIP 352 silent payments cannot work in a coinbase.** The shared-secret derivation sums the input private keys, `a = a_1 + ... + a_n`, and specifies "If `a = 0`, fail". A coinbase has one input with a null prevout and no private key at all — `bool IsCoinBase() const { return (vin.size() == 1 && vin[0].prevout.IsNull()); }`. The word "coinbase" appears zero times in BIP 352. This is structural, not unimplemented; BIP 380/385/389 wildcard descriptors with the BIP 44 gap limit are the workable substitute.
+- **A coinbase is a strictly easier subset-sum instance than a CoinJoin**, for three reasons that all run the wrong way: exactly one input, of publicly known value; no input shuffling to hide behind; and **no padding**, because the block subsidy plus fees is consensus-bounded, so the operator cannot inflate the total to widen the mapping set. Maurer et al. (TrustCom'17) show unequal-amount mixing "is equal to solving the subset sum problem" and that a naive instance has "only **one** non-derived mapping"; WabiSabi bounds what equal-output mixing can buy. Output splitting is the standard mitigation and here **the splitter is the pool** — it "requires knowledge of all sub-transactions," which is exactly the knowledge we were trying to remove.
+
+**On the sum constraint the prompt raises:** stated precisely, it is *near-vacuous against the pool and sharp against a chain observer*. `aᵢ/Σaⱼ` is the exact relative share weight, and `N` bounds the anonymity set — so publishing a payout set is publishing a weight distribution, whoever reads it.
+
+**The primitive that fits, and why it doesn't ship.** Share accounting needs a running weighted sum that survives adversarial arithmetic; blind signatures give a one-shot denominated bearer object. BBA+ (CCS'17) / Black-Box Wallets (PoPETs 2020, **article 0010** — distinct from 2020-0007) is the only primitive found that natively accumulates quantitative weight under blinding, and it has five blockers: ~~the Canard–Gouget impossibility (fatal for a single-operator pool), a 16-bit prototype balance against share weights around 10¹⁵, per-accumulation round cost, the ROS attack breaking blind Schnorr at roughly 256 concurrent sessions~~, and no mining-specific construction anywhere. Tor's PoW micropayment work is the nearest prior art — and notably advises that "a client is advised to **randomize its hash rate**," which is the same side channel from the other side.
+
+> **Correction, 2026-07-29 (thesis round, entry at the end of this log).** Four of those five blockers were wrong and are struck above. Canard–Gouget has the **prescription inverted** — the BBA line cites it as the reason issuer and accumulator *must* share one key (Faller et al., IMACC 2021: *"A BBA issuer and an accumulator can collude without breaking privacy. This is necessary due to an impossibility result"*), and the impossible notion is *Perfect* Anonymity, scoped to coin transfer between users. The 16-bit balance binds **redemption only** — BBW Fig. 4 p.174 shows `Proof P2 (Add)` carries no range proof. The per-accumulation cost was costed with the **spending row**: `Add` is 62 ms user / 45 ms system / 1,745 B, not 122/182/~4 kB, a 4.04× overstatement. And the ROS threshold is **ℓ = 9**, not ~256 — while ROS-breaks-ACL was **retracted by the ROS authors**, with ACL since proven concurrently secure (Kastner–Loss–Renawi, CCS 2023). Only "no mining-specific construction anywhere" survives.
+
+**Three objections survive; one widely-assumed objection does not.**
+
+Surviving: (1) **share-credit theft** is the cryptographic crux — Recabarren & Carbunar's BiteCoin attack and the Bedrock mining cookie `C_M = H²(R_M, M.uname)` are the strongest evidence that identity binding is currently what guards share credit, and a blinded variant of that cookie is unanalyzed by anyone; (2) the **dust → accrual → custody → money-transmitter** chain, where FinCEN §5.4 exempts pool distributions *unless the operator hosts wallets* and §4.5.1(a) makes an anonymizing transmitter expressly ineligible for exemption — "custody and blinding are individually survivable and jointly fatal"; (3) **compulsion**, which blocks only future-tense promises, so claims must be scoped past-tense.
+
+Not surviving: **block-withholding detection does not need attribution.** The withholding literature refutes this itself — Eyal's Miner's Dilemma turns on *registered* miners and detection already fails under full identity, Rosenfeld conceded the point in 2011, and Sybil churn defeats per-identity statistics regardless. Eligius 2014 address clustering is the single exception, and that cost belongs to address **rotation** (Part A) rather than to blinding (Part B) — worth separating, because it's the objection most likely to be raised against the wrong half.
+
+**Also: a correction to this wiki's own eHash claim.** `concepts/ehash.md` asserted flatly that the mint "cannot link issuance-time shares to redemption-time payouts." That is true of the BDHKE signature and false of the deployed system, per hashpool's own documentation: the denomination rule `amount MUST equal 2^(share difficulty − keyset minimum difficulty)` leaks difficulty, `header_hash` is retained for duplicate rejection, `SETTLEMENT_DESIGN.md` carries a cleartext `payout_address`, and hashpool states its design does "**not** prevent temporal correlation or batch fingerprinting" and that multi-token redemption is "**trivially linkable to the same wallet regardless of timing strategy**." Cashu NUT PR #293 closed 2026-03-09. The article now carries an explicit in-article correction notice rather than a silent rewrite; the comparison-table row changed from "No (Cashu blind sig)" to "Weakest link of any design — but not zero."
+
+**Where this lands: minimum-viable attribution, not blindness.** The honest claim an operator can make is a scoped, past-tense, verifiable statement about what was never collected and what was deleted — not a claim of structural inability. The playbook writes out the retain / never-collect / make-verifiable / pay / say / don't-say split.
+
+**Ingested (10):**
+- `papers/2026-07-29-recabarren-carbunar-hardening-stratum.md` — PETS'17; StraTap 1.75–6.5 % and ISP-Log 0.53–34.4 % payout-prediction error, the latter from inter-packet timestamps of the **first 50 packets only**; encryption called "not only undesirable but also ineffective"
+- `papers/2026-07-29-romiti-2019-mining-pool-payout-deanonymization.md` — WEIS'19; the 92/75/30 % table, median address reuse 20/5/2
+- `papers/2026-07-29-bba-plus-black-box-wallets.md` — CCS'17 + PoPETs 2020-0010; the only weight-accumulating blind primitive, and its five blockers
+- `papers/2026-07-29-maurer-2017-knapsack-coinjoin-arbitrary-values.md` — TrustCom'17 + WabiSabi + CoinJoin Sudoku
+- `papers/2026-07-29-withholding-detection-does-not-need-attribution.md` — Eyal, Rosenfeld, APoW, Towns; the Eligius exception
+- `repos/2026-07-29-pool-identity-vs-payout-script-conflation-code-read.md` — ckpool `username[128]` → `txnbin[48]`, public-pool `varchar(62)` PK, DATUM firmware ceilings (Avalon 63, Whatsminer overflow past 127, ~380–530 outputs), PPLNS-JD's positional ledger with zero identity fields, SV2 #697/#1652/#1720
+- `repos/2026-07-29-bip352-silent-payments-coinbase-incompatibility.md`
+- `repos/2026-07-29-mining-privacy-prior-art-survey.md` — incl. Braidpool committing `payout_address` **and miner IP** in the PoW
+- `notes/2026-07-29-self-blinding-system-architectures.md` — OHTTP (RFC 9458), split-trust relays, PCC, Private Relay, Signal SVR3, Prio/DAP, SGAxe/ÆPIC/CVM-SoK, Nitro `--debug-mode`
+- `notes/2026-07-29-fincen-td10000-regulatory-attribution-posture.md` — FIN-2019-G001 §4.2/§4.5.1/§5.4, TD 10000's validator carve-out ("mining pool" appears **zero** times in 365 pages), OFAC E.O. 14024/BitRiver, Lavabit, warrant canaries
+
+**Compiled (8 new):** `wiki/topics/self-blinding-pool-design-space` (synthesis), `wiki/concepts/payout-attribution-privacy` (threat model), `wiki/concepts/hashrate-inference-side-channels`, `wiki/concepts/coinbase-amount-linkability`, `wiki/concepts/blind-share-accounting`, `wiki/concepts/xpub-payout-identity`, `wiki/concepts/self-blinding-architectures`, `wiki/decisions/attribution-retention-tradeoffs`.
+
+**Updated (19):** `ehash` (correction, above) and `block-withholding` (new "Does detection actually need attribution?" section) substantively; See-Also / cross-link edits in `tides`, `pplns-jd`, `braidpool`, `radpool`, `p2poolv2-accounting`, `sv2-share-accounting-ext`, `datum`, `coinbase-address-rotation`, `ctv-coinbase-payout-tree`, `topics/payout-design-space`, `decisions/custody-tradeoffs`; index registrations in `wiki/concepts/_index`, `wiki/topics/_index`, `wiki/decisions/_index`, `raw/papers/_index`, `raw/repos/_index`, `raw/notes/_index`, master `_index` (Outputs row + new top-level question 7).
+
+**Output:** `output/playbook-self-blinding-pool-attribution-2026-07-29.md` (chunked writes: 1 Write + 3 Edits).
+
+**Provenance caveat that applies to the whole round:** **WebSearch was unavailable to every agent.** Discovery ran through DuckDuckGo HTML/lite, Brave, delvingbitcoin `search.json`, IACR search, and the GitHub API, with CAPTCHA throttling throughout. One agent's fetch summarizer **fabricated** a BBA+ paper title and performance table; the agent caught it and replaced the material with direct PDF reads, but treat any un-re-verified secondary summary from this round with suspicion. Confirmed dead ends: the PPLNS-JD paper at `dmnd.work` returns HTTP 404, EU TFR via EUR-Lex returns HTTP 202, DOJ Samourai/§1960 URLs return 403/404. An unverified Mimblewimble claim about dbtc #2093 is flagged in-article rather than asserted.
+
+**Negative result worth keeping:** there is **no BIP, no SV2 extension, and no ZK/MPC design for blinded share accounting** anywhere — delvingbitcoin searches return zero topics. The gap is genuine and multiply verified, not a search failure.
+
+**Progress score ~85.** 10 sources, 8 new articles, 19 files updated, ~35 cross-references, average source credibility high (5 peer-reviewed papers, 3 primary code/spec reads, 2 primary-document notes). Confidence: **high** on the two impossibility results and the validation-vs-payment reordering (primary text); **high** on the withholding refutation (the literature's own framing); **medium** on BBA+ applicability (no mining-specific construction exists, so the fit is argued rather than demonstrated); **medium-low** on the regulatory analysis (three of the four source URLs unreachable, and no authority has addressed a blinded pool).
+
+## [2026-07-29] inventory + thesis | filed derived thesis #1 as a thesis stub + 2 p1 inventory records
+
+Post-round filing of the highest-value follow-ups from the attribution-privacy round above. No new research.
+
+**New thesis stub — `wiki/theses/blinded-share-credit-commitment.md`** (`status: candidate`, `verdict: pending`). Full Phase-0 decomposition written so the thesis round doesn't have to re-derive it: core claim, key variables, testable prediction, falsification criteria, scope boundary, suggested agent angles, and known dead ends.
+
+Two things in it worth flagging as more than transcription:
+
+- **It decomposes into four sub-claims that should be verdicted separately**, because a single verdict would hide the result. (A) re-labeling resistance survives blinding — near-definitional, changing the preimage changes the hash; (B) weight aggregation survives without a pool-side persistent ID; (C) replay/duplicate arbitration survives without retaining `header_hash`; (D) enrollment gating survives via KVAC/Privacy Pass. **B and C are the thesis.** A round that only tests A returns SUPPORTED and means very little. B is hard because a commitment persistent enough to be summed *is* a pseudonym — and is re-linkable via hashrate signature, source IP, and reconnect co-timing regardless of the crypto, which is how it fails in practice rather than in theory. C is hard because nobody can re-label a share but anyone who sees one can replay it under the same `C`, and arbitrating that needs `header_hash`, itself a linkability handle.
+- **Why the thesis is live now and wasn't in 2017.** Bedrock needs the cookie in the coinbase, and in 2017 the *pool* built the coinbase. Under SV2 JD and DATUM the *miner* declares the template, so the party that would insert a self-chosen blinded commitment already controls the field. The architecture arrived after the defense did and nobody went back to connect them. Also recorded: Stratum already has a weak identity-in-the-PoW via pool-assigned `extranonce1`; Bedrock exists because a connection hijacker *inherits* the victim's `extranonce1`, so the property needs a keyed unguessable value, not merely a per-session one.
+
+An **alternative inverted framing** is recorded in-article for whoever runs it — "blinding preserves re-labeling resistance but *cannot* preserve aggregation or duplicate arbitration without a pool-side pseudonym or a miner-carried accumulator" — which is falsifiable in the direction that would actually change the design.
+
+**One detail flagged for verification rather than inherited.** The ingested source places the cookie in the coinbase's "unused previous-input-hash field," but consensus requires that field null — `COutPoint::IsNull()` needs `hash.IsNull() && n == 0xFFFFFFFF` for `IsCoinBase()`. Harmless for share validation, which never touches consensus, but ~1 share in N *is* a block. Either the scheme has a separate block-candidate path or "previous-input-hash field" means the scriptSig. Doesn't change the argument — any committed field works — but it should be checked against the paper.
+
+**New `inventory/` tree** (this topic had none; layout matches `topics/datum/inventory/`). Two `p1` question records, corresponding to the two highest-impact of the round's six gaps:
+
+- `candidates/blinded-mining-cookie-security.md` — the thesis above. Close-out condition is deliberately strict: an attack, a reduction, or a demonstration that aggregation provably needs a persistent ID (which closes it as *secure but unusable*). **A verdict on sub-claim A alone does not retire it** — that would be a false close.
+- `candidates/doj-1960-noncustodial-enforcement-theory.md` — the mechanism by which the favorable FinCEN §5.4 read gets bypassed on a criminal rather than regulatory footing. Next action routes to CourtListener/RECAP since justice.gov returned 403/404. EU TFR/MiCA is folded into this record rather than tracked separately: same retrieval problem, same article section.
+
+The other four gaps were judged **not durable enough for their own records** and left in the playbook: connection-level Sybil re-correlation (a sub-question of the cookie record), subset-sum against real coinbase payout sets, and the 404'd PPLNS-JD paper. Noted as such in `inventory/_index.md` so the absence is deliberate rather than an oversight.
+
+**Theses index restructured** — gains a "Filed theses" table (previously only free-text one-liners), plus candidate theses #6 (FinCEN/§1960) and #7 (rotation vs withholding exposure) from this round written up as one-liners since they aren't filed as stubs. Master `_index.md` gains an Inventory section link. `topics/self-blinding-pool-design-space` § objection #1 now links the thesis and the inventory record.
+
+## [2026-07-29] plan | "a mining pool that accepts an xpub or similar wildcard descriptor as a username for a miner that is used pool side to generate payouts with different coinbases each time" → output/plan-xpub-miner-identity-spec-2026-07-29.md (16 articles/sources consulted, 4 decisions, 12 sections)
+
+`--format spec`. Full six-stage pipeline: context assembly, interview, gap research, synthesis, generation, save.
+
+**Stage 1 found the wiki already nearly answers this.** `concepts/xpub-payout-identity` (compiled hours earlier by a concurrent session) opens on almost exactly the user's phrasing and concludes the construction is buildable, with the work being "entirely in decoupling the ledger key from the payout script, and in field widths." So this plan is largely an act of *committing to specifics* the wiki left open, not of discovering new ground. Four hard constraints were surfaced to the user before the interview: no pool anywhere does this (a confirmed negative result, verified against ckpool/public-pool/DATUM/SV2-reference/Ocean source rather than merely unsearched); the rotation trigger is unresolved upstream (SV2 #697, verbatim "The tricky part here is to decide when to rotate"); wildcards remain rejected in merged SV2 code even after PR #1720 shipped `coinbase_output_descriptors`; and output count is firmware-bounded at ~380–530.
+
+**Four binding decisions from the interview.**
+
+1. **Host = PPLNS-JD / SV2.** Chosen because its `Slice{...}`/`Share{...}`/`PHash` structures contain not one identity field and the ledger verifies positionally — `merkle_path(share) + share_hash == slice.root`. That is the decoupling every other scheme must retrofit. Contrast ckpool, where `username[128]` is the hash key *and* becomes `txnbin[48]` via `address_to_txn()` (maximum coupling), and public-pool, where `address varchar(62)` sits inside a composite PRIMARY KEY.
+2. **Trigger = per payout (block found).** Rationale that firmed up during generation: the Romiti attack turns on reuse of addresses *actually paid*, so an unpaid derived address buys no privacy — rotating faster than payment is pure recovery-scan cost. ~500 derivations per block found, versus per-template rotation's ~500 every 30 s.
+3. **Intake = SV2 `user_identity` only.** The user chose this over the recommended out-of-band registration + short handle. It is the decision that most simplifies the spec: `Str0_255` fits a ~150-char descriptor directly, deleting the entire firmware field-width problem class (Avalon truncating at 63, Whatsminer's documented "may damage your miner" overflow past 127, percent-encoding, ckpool's `._` split colliding with descriptor syntax `()[],'/*#`). Cost: SV2-only, no V1 path, so §10.3 states coexistence is the permanent steady state rather than a migration phase — V1 miners *cannot* migrate.
+4. **Privacy scope = honest.** Spec claims the on-chain win (Romiti et al. identified 92%/75%/30% of individual miners at BTC.com/ViaBTC/AntPool from public data alone) and states plainly that the pool learns no less, and in fact now holds a descriptor linking all of a miner's rotated addresses in one place — a linkage that did not previously exist. No blinding machinery in scope.
+
+**Stage 3 filled exactly one gap, the one that changes a decision.** Real-world gap limits, because they set recovery-scan depth: BIP-44 states 20, Sparrow defaults to 20 (40 postmix, configurable under Settings → Advanced with the caveat "don't increase it too much as your wallet loading will take longer"), BDK ships `pub const DEFAULT_LOOKAHEAD: u32 = 25`. This is what let the spec *decide* the block-height-as-index question that the rotation article records as merely deferred upstream.
+
+**Two things sharpened in generation rather than inherited from the wiki.**
+
+*Block-height-as-index is more attractive than the wiki records, and still rejected.* Its real merit is not elegance — it **deletes §5 entirely**: no `next_index`, no durability ordering, no corruption-replay hazard, and recovery needs no pool state at all. Rejected on apoelstra's objection ("might confuse wallets that don't have an 800000+ gap limit") given the 20–25 floor above. The load-bearing asymmetry, which the wiki does not state: a pool rotating *its own* address can absorb a ~900,000 index jump; a pool rotating *its miners'* addresses cannot, because the recovery party is the miner. Kept as a live alternative — if per-miner wallet tooling ships large lookaheads it becomes the better design.
+
+*`next_index` must never be rolled back.* This is new and is the most dangerous operation in the system: restoring a stale backup re-derives already-paid indices and reintroduces address reuse — the exact failure the feature exists to prevent — arrived at through an operator's own disaster-recovery procedure, most likely at 3 a.m. So §10.2 splits rollback of the *feature* (clean, flag-off) from rollback of the *state* (never), tells operators to back those two tables up on a separate restore-forward-only schedule, and gives the on-chain reconciliation floor `next_index = max(backup, 1 + max(derivation_index) seen on chain)` since `payout_derivation` records the height and script of every payment. Skipping indices is free; reusing them is not.
+
+**Carried forward as requirements, from the compile.** The `has_wildcard()` guard is written as the single most important requirement (§3.1) — a non-wildcard descriptor parses fine and then returns one address forever, and at per-miner granularity there are as many chances to miss it as there are miners, each silently-static miner looking exactly like a working one. sv2-apps' increment-then-warn-log persistence is quoted as a labelled anti-pattern, including that `load_index`'s `unwrap_or(default)` silently replays derivation from index 0 on a corrupt file. §5.3 fixes the posture: every failure mode degrades toward "don't pay" rather than "pay a reused address," and a corrupt store is a fatal startup error.
+
+**Cheapest unimplemented recommendation in the spec**: publish each miner's `highest_paid` index. A miner who knows it needs no gap-limit guessing at all, which sidesteps the principled-gap-limit-default question rather than answering it. Neither known implementation offers it. Similarly, §10.3's first monitoring row — distinct `script_pubkey` count per `payout_id` versus payout count — is a cheap query, is reported by nobody, and is the only external signal distinguishing "rotation is working" from "rotation has been a no-op for three weeks."
+
+**Inventory**: no new records. The plan consumes both active p1 candidates as constraints rather than advancing them — `blinded-mining-cookie-security` becomes §9.5 (the spec keeps a stable plaintext descriptor in `user_identity`, so the Bedrock cookie `C_M = H²(R_M, M.uname)` most likely survives unchanged, but that is an assumption and is labelled as one), and `doj-1960-noncustodial-enforcement-theory` underpins §4.4's choice to drop sub-dust amounts rather than accrue them, since accrual is a hosted balance and FinCEN §4.5.1(a) makes an anonymizing transmitter expressly ineligible for the §5.4 integral exemption — custody and rotation being individually survivable and jointly fatal.
+
+Also filed [[output/playbook-self-blinding-pool-attribution-2026-07-29|the concurrent session's playbook]] into the Outputs tables of both `_index.md` and `output/_index.md`, where it had been left unindexed.
+
+## [2026-07-29] research --mode thesis --deep | "Blinding a PoW-committed mining cookie preserves re-labeling resistance but cannot preserve share-weight aggregation or duplicate arbitration without either a pool-side persistent pseudonym or a miner-carried accumulator, making blinded share credit strictly harder than blinded payout." → verdict **MIXED** (high); 2 sources ingested, 1 new concept, 8 files corrected
+
+Thesis mode, 8 lenses (`--deep`), single round (no `--min-time`). Ran against the **inverted framing** recorded in the thesis stub, which is the falsifiable direction. Verdicted per-sub-claim rather than as a whole, per the stub's own instruction that one verdict would hide the result.
+
+**Verdict: MIXED, high confidence. The or-conjunction splits.**
+
+| # | Sub-claim | Verdict | Confidence |
+|---|---|---|---|
+| A | Re-labeling resistance survives blinding | **Unestablished, but likely** | medium |
+| B | Weight aggregation survives without a pool-side persistent ID | **Thesis SUPPORTED** | high |
+| C | Duplicate arbitration survives | **Thesis FALSIFIED** | high |
+| D | Enrollment gating survives | **SUPPORTED** | high |
+| E | Blinded credit strictly harder than blinded payout | **SUPPORTED on interactivity, NOT on cost** | high |
+
+**C is falsified by the dichotomy break the stub asked for.** A keyed share-derived **nullifier** `nf = PRF_{sk_M}(header_hash)` is pool-side state that is neither a pseudonym nor an accumulator: single-use, unlinkable across shares, no identity term. The decisive evidence is not cryptographic but three independent code reads showing deployed duplicate rejection **already carries no identity term at all** — SRI's `seen_shares: HashSet<Hash>`, Ocean/DATUM's `datum_stratum_dupes.h` (keyed on header fields, and **checked *before* attribution**), and p2pool-v2's `HashSet<&BlockHash>`. Cross-domain corroboration: Cashu NUT-07 `Y = hash_to_curve(secret)`, Zcash §3.2.3/§3.9, Tor proposal 327, Privacy Pass. New article: `wiki/concepts/nullifier-vs-pseudonym.md`.
+
+**B holds, and now on better anchoring than the wiki had.** *Anonymous Counting Tokens* (Asiacrypt 2023) §1 and `draft-ietf-privacypass-rate-limit-tokens-06` both argue per-user registered state is required to bound issuance per identity — the latter in normative RFC language, and it ships route (a), a pool-side persistent handle, with explicit anti-rotation locks. Compact E-Cash and WabiSabi each collapse into one horn.
+
+**The round's real result is that every cryptographic barrier this topic was carrying against blinded accumulation dissolved on contact with primary sources.** Five corrections, four load-bearing, propagated across 8 files:
+
+1. **Canard–Gouget was inverted, not merely misattributed.** This wiki carried it as blocker #1, "fatal for a single-operator pool." The BBA literature cites it for the **opposite** proposition. Faller et al., *Black-Box Accumulation Based on Lattices* (IMACC 2021, eprint 2021/1303), verbatim: *"A BBA issuer and an accumulator **can** collude without breaking privacy. This is necessary due to an impossibility result, cf. [12]"* — i.e. it is why the roles **must** merge into one operator. BBA+ p.1933 proves unlinkability against *"a collusion of I, AC, and V"*; BBW Def 4.1 shares `sk_I` across all three and p.171 **removes the TTP trapdoor entirely**. The impossible notion is **Perfect Anonymity** (`PA ⇒ FA ⇒ SA ⇒ WA`), one level above full unlinkability, and its predicate is *recognizing a coin you previously owned once it returns to you* — coin transfer between **users**, an antecedent a pool never satisfies. Found independently by two agents. The irony worth recording: the wiki's own BBA+ ingest **already contained the disproof two lines below the claim**. Caveat: ACNS 2008 is paywalled and unread, so the finding rests on four restatements (Faller et al., BBW p.3, P4TC, a USP MSc thesis) plus Gouget's own 2008 invited-talk abstract, which attributes coin-growth to **Chaum–Pedersen** rather than to herself. Tracked as `inventory/candidates/canard-gouget-primary-text.md` (p3 — direction settled, numbering open).
+2. **The wiki costed crediting with the spending row.** The recorded 122 ms / 182 ms / ~4 kB is BBW Table 1's **`Sub16,lin`** (redemption). Crediting is **`Add`: 62 ms user / 45 ms system / 1,745 B** — a **4.04×** overstatement of pool-side cost. Re-derived throughput: 72 cores at F2Pool's 16,000 miners per-share, 262 at solo.ckpool's *measured* `SPS1m: 5832.5` across 39,592 workers; **batched at SV2's shipped `share_batch_size = 10`, 7.2 and 17.8 cores.** Infeasible only at Foundry scale (~5,084). Both papers decline to measure the faster server side, so these are upper bounds.
+3. **The 16-bit range limit was a category error** — it binds **redemption only**. BBW Fig. 4 p.174: `Proof P2 (Add)` carries **no range proof**; only `Proof P3 (Sub)` adds one. Crediting is bounded by `2|V| < |Zp|`, ~2²⁵¹ on Curve25519, against the ~50 bits an `8 × D` window needs (`8 × 1.2623e14 = 1,009,852,056,974,944`, log₂ = 49.84) — 201 bits of headroom. BBA+ needs nothing at all. Widening redemption 16→64 bits costs **+129 B and +21.8 ms**. Also fixed an off-by-one: the wiki had `…945`.
+4. **ROS: ℓ = 9, not ~256** — eprint 2020/945 §7 p.17 gives 9 as the practical breakage threshold; the 256 figure on p.4 is the count for the seconds-long Sage attack, a different quantity. Both readings are reconciled in the ingest rather than one being deleted. And **ROS-breaks-ACL was retracted by the ROS authors** — ACL is now **proven concurrently secure** in AGM+ROM (Kastner–Loss–Renawi, CCS 2023, eprint 2023/707, Cor. 4.2). The wiki's blocker was stale in both directions.
+5. **`v` is an arbitrary field element at constant cost** — BBA+ p.1932 (*"a positive or negative value v"*), p.1931 (token size and complexity *"independent of the number of points to be transferred or stored"*). **This is what separates BBA+ from Cashu's denomination ladder, and this wiki never said it.** It is also why batching is native rather than a bolt-on — and SV2's `SubmitShares.Success` (§5.3.13) already exists *"for multiple SubmitShare messages aggregated together"* carrying **`new_shares_sum` U64, "Sum of difficulty of shares acknowledged within this batch."** That field *is* the `v` to credit. The plumbing ships; nobody has connected it.
+
+Also: **no theorem exists making stateful accumulation harder than one-shot issuance.** Searched five independent ways. Two peer-reviewed constructions measure the update within a small constant of issuance (BBW `Issue 52 ms` vs **`Add 62 ms`**; UACS Pixel `Join 76 ms` vs **`Earn 110 ms`**), Coull–Green–Hohenberger (ACM TISSEC 14(1)) achieve hidden state transitions in **constant** time, the one-show/multi-show gap is a technique tradeoff, and the blind-signature impossibility line (Lindell; Fischlin–Schröder; Pass) is entirely about **round complexity** — none of its conditions mention attributes, state, or updates. **Chaum–Pedersen, "Transferred Cash Grows in Size" (EUROCRYPT '92, LNCS 658 pp.390–407)** is the real "coins must grow" result people reach for, and it also scopes to *transferability*; BBA tokens stay constant-size precisely because the operator co-signs each increment.
+
+**Where the difficulty actually lives, after all that.** Two things, neither cryptographic:
+
+- **Interactivity** — this is the honest basis for "strictly harder," and it is the one axis where E survives. Blinded payout is a single **offline non-interactive** BIP32 `CKDpub`: one HMAC-SHA512 + one point add, tens of µs, embarrassingly parallel, 43 B amortized on-chain. Blinded credit is an **online 2-party** protocol: ~45 ms pool-side, **4–5 round trips / ≈9 messages**, 1,745 B, and **serial per token** (two in-flight `Add`s reuse serial `s` and self-incriminate through `IdentDS`). ≈900× compute, ≈41× bytes. Decisively, **interaction cannot be Fiat–Shamir'd away**: BBW p.166 relies on *"interactive proof systems, where standard rewinding techniques replace the trapdoor,"* so removing interaction reinstates the TTP the design just deleted.
+- **The hashrate side channel**, which no cryptography addresses and which batching **converts rather than removes**: `interval = batch_size / share_rate`, so a fixed `b` is a lower-sampled readout of the same quantity — and the sampling rate needed for affordability scales *against* privacy (16,000 miners on one core needs `b ≥ 72`, one credit per 12 min). Recabarren & Carbunar recover **0.53–34.4 % payout-prediction error from the inter-packet timestamps of the first 50 packets alone**, so any count-triggered boundary is a direct readout; boundaries have to be Poisson-randomized. Unquantified in any paper — BBA+/BBW measure compute and bytes and never timing privacy, R&C measure unbatched Stratum, nobody connects them. Filed as `inventory/candidates/batched-credit-timing-leak.md` (p1) and it is now this topic's most valuable open question.
+
+**Two obstacles upstream of the whole thesis, both new to this wiki.** Bedrock's `store(M.uname, K_M, R_M, target)` puts the per-miner vardiff **`target` in the same identity-keyed row** as the cookie seed, fetched via `getMParams(M.uname)` — so a pool cannot even evaluate `H²(nonce||F) < target` for an anonymous submitter. Blinding breaks share **validation**, one layer before crediting. And C **has no Bedrock baseline to lose**: `verifyJob` is stateless, doesn't consume `job_id`, writes nothing back, and *duplicate*/*replay*/*serial* never appear in that sense — so C cannot be falsified against Bedrock and had to be argued against deployed practice instead. Note also that the paper's own BiteCoin run **suppressed** the victim's share (*"sends to the pool a mangled copy of the victim's original share submission, to ensure that it is rejected"*) rather than racing it.
+
+**C's pessimism is defensible on enforcement economics, not cryptography** — BBA+/BBW catch double-spend only via a serial database scanned after the fact, and the punishment identifies a *user* to penalize. Against anonymous hashrate with nothing seizable that has no teeth. A real gap, but not the one the thesis claimed.
+
+**Ingested (2):**
+- `papers/2026-07-29-stateful-vs-oneshot-credentials-no-separation.md` — the no-separation result, the Canard–Gouget inversion with the Faller et al. verbatim quote, the Perfect-Anonymity scoping, BBW p.171 trapdoor removal, the Chaum–Pedersen wrong-target section, the ROS ℓ=9 correction and the ACL retraction.
+- `papers/2026-07-29-blinded-accumulation-cost-at-real-share-rates.md` — full BBW Table 1 p.179, the ★ Add-vs-Sub error, range-width, measured share rates with vardiff sources (`stratifier.c:6049-6087` *"Optimal rate product is 0.3"*, `TARGET_SUBMISSION_PER_SECOND = 10`), throughput tables, SV2 batching, the sub-claim-E comparison, DATUM `datum_stratum.h:155`.
+
+**New article (1):** `wiki/concepts/nullifier-vs-pseudonym.md` — including a "Where nullifiers genuinely don't help" section, since the point is a narrow one.
+
+**Corrected (8 files, beyond the thesis itself):** `concepts/blind-share-accounting` (failure-mode list shortened from five to four surviving, two new sections), `topics/self-blinding-pool-design-space` (Canard–Gouget demoted to #5 and marked RETRACTED; problem-table row B rewritten), `papers/2026-07-29-bba-plus-black-box-wallets` (correction notice, fabricated authors removed, Add/Sub table fixed), `concepts/tides` (the flat *"Auditable: full share log published"* claim retracted — on-chain **outputs** are what's published), `concepts/ehash` (*"Duplicate rejection requires"* → "has," with a note that a keyed nullifier does the same job unlinkably and Cashu NUT-07 already uses that shape), `output/playbook-self-blinding-pool-attribution-2026-07-29`, `output/plan-xpub-miner-identity-spec-2026-07-29`, plus the log entry above and master `_index.md`.
+
+**Fabricated author names removed from two files** — the BBA+ author list had picked up "Kaidel" and two "Koch"s. Correct: **Hartung, Hoffmann, Nagel, Rupp** (4 authors, CCS 2017 pp.1925–1940); Black-Box Wallets is **Hoffmann, Klooß, Raiber, Rupp** (PoPETs 2020(1):165–194, article 0010). **Root cause identified and it is a standing process hazard: WebFetch silently fails on image-based PDFs and returns confident "ABSENT" verdicts** — it reported all four Recabarren & Carbunar claims absent when all four are present in the paper. That mechanism most likely produced the fabricated title, table, and authors from the source round too. **Download and `pdftotext -layout`; never trust a fetch summarizer on a PDF.**
+
+**Inventory:** `blinded-mining-cookie-security` → **resolved**, closed on its third close-out condition in narrowed form (aggregation *does* require one of the two escapes — but not as "secure but unusable," since the accumulator horn is open and affordable). Its second condition was struck as unsatisfiable: Bedrock names no hardness assumption. Its "coupled record" note is marked **HALF RIGHT** — B does route into BBA+/BBW, and Canard–Gouget does not block it. Two spun out: `batched-credit-timing-leak` (p1) and `canard-gouget-primary-text` (p3).
+
+**Provenance caveats.** WebSearch unavailable again, as the stub predicted; discovery ran through DuckDuckGo/Brave/DBLP/OpenAlex. IACR eprint and Cloudflare returned 403s, worked around via `web.archive.org/.../id_/` raw captures and the Stanford author mirror for Bulletproofs — flagged in every ingest. Still unread: **Canard–Gouget ACNS 2008** (paywalled) and **LatInc, TDSC 2026** (paywalled). Ocean's TIDES `8 × D` window figures rest on a single unreplicated fetch (`docs.ocean.xyz` now DNS-fails) — medium confidence. No published µs/op figure for BIP32 derivation exists upstream, so the ≈900× interactivity ratio uses a constructed estimate.
+
+**Progress score ~85.** Only 2 sources ingested, which understates the round: the yield was in **corrections to existing articles** rather than new material, and 4 of the 5 corrections invalidated load-bearing claims that had already propagated into two output artifacts. Confidence **high** on C's falsification and on the collapse of the cryptographic barriers (primary text plus deployed code in three independent implementations); **medium** on A, which remains an argument rather than a finding, and on the Canard–Gouget numbering pending the paywalled text.
+
+## [2026-07-29] lint | 19 checks, 0 critical, 6 warnings, 4 suggestions, 1 candidate, 121 auto-fixed
+
+Post-thesis-round pass with `--fix`. Two structural repairs stand out as real drift rather than
+bookkeeping. **79 of 94 raw sources were missing `summary:`** — a required field,
+and not this round's regression: 531 of 1,310 raw files hub-wide share the gap. All 79 filled, 74
+inferred from each file's first prose paragraph and 5 hand-written where the file opens on a table or a
+verdict heading. **Nine of eleven wiki articles carrying "See also" links had one-way links** — 26
+missing backlinks, added across 11 articles, most of them pointing into the four articles this
+round's writes touched most.
+
+The coverage backlog was regenerated to **16 of 94** (from 21 of 91): the denominator grew by the
+round's three ingests and five sources came off the list. What remains is not scattered — 15 of the 16
+were ingested 2026-05-23 → 05-26 in the topic's founding eHash/DMND/p2pool-v2 sweep and have never
+been cited, so the backlog is one uncompiled round rather than incidental drift.
+
+Two inventory enum values were off-schema and are now canonical: `kind: source` →
+`ingest-candidate`, and `status: resolved` → `ingested` (the schema's terminal value; the
+`resolved: 2026-07-29` date field carries the "when," and both indexes now say "answered" in prose so
+the change doesn't read as a downgrade). Tag hygiene collapsed 10 near-duplicate pairs across 8 files
+— case drift (`ACL`/`acl`, `KVAC`/`kvac`, `BiteCoin`/`bitecoin`, `ROS-attack`/`ros-attack`),
+plural drift (`critiques`, `corrections`, `denominations`, `blind-signatures`), and hyphen drift
+(`bip380`, `bip389`). 485 distinct tags → 475, zero near-duplicate groups remaining.
+
+One broken link and one broken anchor fixed: a bare `[[2026-05-26-vnprc-ctv-coinbase-delving]]` in a
+historical log entry, and `[[coinbase-address-rotation#Ledger identity breaks]]`, which pointed at an
+`###` sub-heading and now targets its `##` parent. All 190 `sources:` refs resolve; all 41 wiki
+articles carry provenance; every directory index matches disk.
+
+**Not fixed, deliberately.** `config.md` is absent (9 of 36 topics share this, so no
+`freshness_threshold` is set and the default 70 applies) — manufacturing one would invent scope
+boundaries. Three raw `type:` values sit outside the C2 enum: `lessons-learned` on one note and
+`video` on the two btc++ catalogs. The alias tables that would canonicalize them are empty by design,
+`raw/videos/` exists in 12 topics and `wiki/decisions/` in 10, and `type: decision` on both decision
+articles is likewise hub-wide (8 files) — these are conventions the schema hasn't caught up to, not
+this topic's bug, and rewriting them here would fork the hub. Two empty directories warned only, never
+deleted: `raw/images/` and `wiki/prompts/` (the latter's dead index row was dropped). One project
+candidate: 5 loose `plan-*` outputs, 3 of them explicitly `status: superseded` versions of the same
+lottery-PPLNS design.
+
+Freshness: 40 of 41 articles at or above threshold, median 85. The one flag is
+`uncompiled-source-coverage` at 50 — it is lint's own generated backlog, has no `verified:` field by
+nature, and scores low because `compiled-from: conversation` rebases on two dimensions instead of
+four. Not a content problem.
+
+## [2026-07-29] plan --revise | "height as derivation index; finder bonus out of scope; V1 via the SV2 Translator" → output/plan-xpub-miner-identity-spec-2026-07-29.md (3 operator decisions applied, 3 direct code reads, 21 sections edited, 1 new section)
+
+Three decisions from the operator, applied to the spec generated earlier the same day. Each one made
+the design smaller, which is the reportable result.
+
+**1. The derivation index is the block height being mined.** `payout_script(desc, H) =
+desc.at_derivation_index(H).script_pubkey()` — a pure function of `(descriptor, height)`, with no
+pool-side state on the payout path. This deleted the entire derivation-store section: the durable
+`next_index` with its persist-before-return ordering, atomic writes, fatal-on-corrupt startup, the
+halt-don't-degrade failure matrix, three regtest tests, three monitoring metrics, and — the one that
+mattered most — **the never-roll-back-`next_index` hazard**, under which restoring a stale backup
+re-derives already-paid indices and reintroduces address reuse *through the operator's own disaster
+recovery procedure*. The riskiest part of the spec became its shortest. Three secondary consequences
+fell out: derivation is idempotent per height, so orphans and template refreshes cost nothing and the
+per-template rotation question dissolves rather than being answered; receipt-writing left the critical
+path (a failed write is now a warning, since receipts are reconstructible from the chain, where under
+a counter it had to abort the payout); and recovery survives the pool's death, because the miner needs
+only the descriptor and the list of heights the pool won, both public.
+
+I had **rejected** height indexing in the first draft on consumer-wallet gap limits. The operator's
+reframing was that the pool's hit blocks are easily sourceable, so a miner can check just those
+blocks — which converts the gap limit from a blocker into a documented tooling requirement. The
+numbers didn't change; the judgment about whether the cost is acceptable did. The cost is now stated
+plainly and pinned as an executable test: **a bare seed restore finds nothing.** Sparrow's gap limit
+is a *depth* past the last used index (20, 40 postmix), BDK's `DEFAULT_LOOKAHEAD` is 25, and neither
+reaches ~900,000 by configuration; recovery is `bitcoin-cli deriveaddresses "<desc>" '[H,H]'` for a
+single block or `importdescriptors` with an explicit absolute `range` plus rescan. §8.2 asserts the
+seed restore *does* fail, so nobody later "fixes" it by accident.
+
+Rejected on the way: the **pool's own block ordinal** (1st, 2nd, 3rd block found) — genuinely
+tempting since it gives small consecutive indices *and* idempotence, but it reintroduces a persisted
+counter that stays correct only if never restored stale, which is precisely the failure class this
+revision exists to delete. Height is already public; an ordinal is pool-attested.
+
+**2. Finder bonus is out of scope.** Not merely a scope trim — it is load-bearing under height
+indexing. Because index is a pure function of height, a miner has **exactly one** derivable address in
+block `H`, so any scheme paying a miner twice in one block cannot be expressed: you either merge the
+rows or emit two outputs paying the *same* address, which is address reuse inside a single
+transaction. With the bonus out, PPLNS gives one weight per miner and this is free.
+`merge_by_payout_id()` and `PRIMARY KEY (block_height, payout_id)` stay in as the backstop, because
+this is the constraint a future finder bonus would silently violate — and
+[[wiki/concepts/lottery-pplns|Lottery-PPLNS]] hazard #1 already documents that exact duplicate-merge
+bug in Blitzpool's PPLNS ledger apply. Under height indexing that bug stops being an accounting slip
+and becomes a privacy regression.
+
+**3. V1 miners are not excluded** — they reach the pool through the **SV2 Translator**, correcting the
+first draft's "SV2 only, no V1 path." Verified in `miner-apps/translator/src/lib/config.rs`:
+`Upstream.user_identity: String` is configured per upstream, so the descriptor lives in a TOML file on
+a machine the operator controls. This **inverts** the firmware problem rather than solving it — Avalon
+truncating at 63, Whatsminer overflowing past 127 ("may damage your miner"), percent-encoding of
+`()[]/*#`, ckpool's `username[128]` — none of it applies, because the descriptor never enters miner
+firmware. The residual cost is real and now documented: one `user_identity` per upstream means all V1
+rigs behind one Translator share one `payout_id` and one payout. Per-rig separation costs a Translator
+per rig group.
+
+**The one thing this revision made more complex came from reading the code, not from the three
+decisions.** `stratum-apps/src/payout.rs` shows `PayoutMode::try_from` **splitting `user_identity` on
+`/`** for its `sri/solo/<addr>` and `sri/donate/<pct>/<addr>` grammar, while
+`address_part_from_user_identity()` splits on `.`. A wildcard descriptor contains six `/`, and the
+Translator appends `.minerN`. New §3.2.1 records this: the two languages are disjoint only if you
+commit to **descriptor-parse-first precedence**, which the existing code already happens to have,
+since it tries the address/descriptor parse before the `/` split. A descriptor's checksum is delimited
+by `#` not `.`, so the worker suffix strips cleanly — but that needs an explicit test rather than an
+assumption, because the dangerous failure is a truncation that still parses. Also confirmed
+`xpub_derivation.rs:140`'s `if !descriptor.has_wildcard()` guard is present in the branch; §3.1 is
+built on it, with the probe range moved from `[0, 2^31-1]` to the **current tip height** and beyond,
+since index 0 is never used under height indexing and probing it proves nothing about the operating
+range.
+
+Structural: renumbered the duplicated `### 4.3` to §4.3.1 and repaired two cross-refs in §0 that
+pointed at the pre-revision section numbering. §12 re-annotated — the sv2-apps persistence
+anti-pattern is now cited as §5.1's *warning* rather than a requirement to follow, and the two
+gap-limit figures now ground an accepted cost rather than a rejected option. §13 revision history
+added so the first draft's design is recoverable from the file itself.

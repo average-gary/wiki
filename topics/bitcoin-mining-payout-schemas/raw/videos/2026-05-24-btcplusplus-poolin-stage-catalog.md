@@ -9,6 +9,7 @@ quality: 4
 credibility: high
 confidence: high
 tags: [btc++, Poolin-Stage, Austin-2025, payout, mining]
+summary: "btc++ Austin (May 7-9, 2025, the 'mempool edition') was the only btc++ event with a dedicated Poolin' Stage. Key finding: individual talks were never uploaded standalone — they exist only inside four long livestream archives with no per-speaker chapter timestamps, so citing a specific talk means citing a timecode in a 5-7 hour stream."
 ---
 
 # btc++ Poolin' Stage Catalog

@@ -8,6 +8,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [PioneerHash, ethntuttle, ehash, github-org, integration-vehicle]
+summary: "GitHub organization that aggregates the eHash technology stack as a coordinated set of forks + originals. **Created 2025-10-23.** Last updated 2026-03-24. 12 public repos. Public membership: **none surfaced** (privacy flag)."
 ---
 
 # PioneerHash (GitHub org)

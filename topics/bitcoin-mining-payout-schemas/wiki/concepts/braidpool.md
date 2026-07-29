@@ -93,6 +93,8 @@ This last critique is the canonical McElrath ↔ jungly dispute and is the reaso
 - [[radpool]] — competing decentralized FPPS (the FROST design McElrath critiques)
 - [[parasite-pool]] — non-decentralized novel scheme for contrast
 - [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)) — CTV-only coinbase fanout; a different covenant target than Braidpool's APO+CTV UHPO, and the target of Braidpool's "CTV-only pools aren't pools" critique
+- [[payout-attribution-privacy|Payout Attribution Privacy]] — Braidpool is the maximal-attribution end of the spectrum: `BraidpoolMetadata` commits `payout_address` **and miner IP** into the PoW, gossiped to all peers and retained forever
+- [[../topics/self-blinding-pool-design-space|Self-Blinding Pool Design Space]] — and mcelrath's explicit rejection of privacy in favor of verifiability
 - [[payout-schema-taxonomy]]
 - [[ark-for-mining-payouts.md|Ark for Mining Payouts]]
 - [[datum.md|DATUM (OCEAN template-construction)]]

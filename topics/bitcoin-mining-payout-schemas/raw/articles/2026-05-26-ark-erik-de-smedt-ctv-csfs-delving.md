@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [ark, ctv, csfs, erk, hark, roasbeef, critique, primary]
+summary: "Erik De Smedt's primary technical writeup defining **Erk** (async, single-input/output VTXOs) and **hArk** (async, multi-input) variants. roasbeef (Olaoluwa Osuntokun, Lightning Labs CTO) provides substantive critique."
 ---
 
 # Evolving Ark with CTV and CSFS — Delving (Apr 2025)

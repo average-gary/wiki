@@ -8,6 +8,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [p2poolv2, uncle, share-chain, DAG-lite]
+summary: "p2poolv2 share-chain is **chain-with-uncles** (DAG-lite), not full DAG (Braidpool). Each share may reference up to 3 uncles."
 ---
 
 # p2poolv2 Uncle Blocks

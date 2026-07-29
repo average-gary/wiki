@@ -6,6 +6,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [parasite-pool, on-chain-analysis, coinbase, dispute, mempool-space, primary]
+summary: "Investigation of `Distortions81`'s December 2025 [`parasite.wtf scam`](https://github.com/mweinberg/stratum-speed-test/issues/4) claim against the operator-side mechanics. Verified against the two known mainnet Parasite blocks."
 ---
 
 # Parasite Pool Coinbase — On-Chain Analysis

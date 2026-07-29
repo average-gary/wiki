@@ -64,5 +64,6 @@ McElrath disputes the "no consensus required" framing, arguing that **accurate r
 - [[fpps]] — what Radpool decentralizes
 - [[p2pool-share-chain]] — same author's parallel project
 - [[parasite-pool]] — alternative novel scheme with very different design philosophy (custodial LN vs DLC federation)
+- [[payout-attribution-privacy|Payout Attribution Privacy]] — Radpool *multiplies* attribution rather than reducing it: "Verifiable Share Ownership" requires broadcasting username + sequence_no syndicate-wide, so N operators learn what one would have
 - [[payout-schema-taxonomy]]
 - [[braidpool.md|Braidpool]]

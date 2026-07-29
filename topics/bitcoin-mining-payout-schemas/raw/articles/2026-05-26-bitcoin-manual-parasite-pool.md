@@ -10,6 +10,7 @@ quality: 4
 credibility: medium
 confidence: high
 tags: [parasite-pool, practitioner, critique, economics]
+summary: "Highest-signal practitioner explainer on Parasite Pool. Mixes mechanics description with quantitative economic critique — the only article in the source corpus that surfaces the bootstrapping math."
 ---
 
 # Parasite Pool — The Bitcoin Manual

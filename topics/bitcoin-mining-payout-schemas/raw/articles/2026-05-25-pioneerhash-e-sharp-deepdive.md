@@ -8,6 +8,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [e-sharp, PioneerHash, ethntuttle, ehash, jdc, cashu, sub-pool, canonical]
+summary: "PioneerHash/e-sharp is **not \"another eHash repo\"** — it is the canonical, materially-more-advanced implementation of the eHash design. It supersedes vnprc/hashpool's testnet4-only state on multiple dimensions: shipped code, formal specs, dual-mode (solo + pool) operation, and active development cadence."
 ---
 
 # e-sharp — The Canonical eHash Workspace

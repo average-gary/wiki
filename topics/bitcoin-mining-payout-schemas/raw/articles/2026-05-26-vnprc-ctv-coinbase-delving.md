@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [vnprc, ctv, op-ctv, covenants, non-custodial, antoine-poinsot, ark, primary]
+summary: "Proposal: use OP_CTV to put a single small commitment in the coinbase that commits to a fanout transaction tree. Fanout sits in mempool during the 100-block coinbase maturity window and gets mined as fee rates allow."
 ---
 
 # Scaling Noncustodial Mining Payouts with CTV — vnprc

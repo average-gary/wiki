@@ -10,6 +10,7 @@ quality: 3
 credibility: medium
 confidence: high
 tags: [parasite-pool, news, mainnet, validation, coindesk]
+summary: "Independent third-party validation of Parasite Pool operating in production."
 ---
 
 # CoinDesk — "Plebs Eat First": Parasite Finds Second Block

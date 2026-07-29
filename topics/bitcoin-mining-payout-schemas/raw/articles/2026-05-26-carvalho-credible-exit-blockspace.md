@@ -11,6 +11,7 @@ quality: 3
 credibility: medium
 confidence: medium
 tags: [ark, lightning, scaling, exit-cost, blockspace, critique]
+summary: "Formal version of the unilateral-exit-cost critique that applies to **all layer-2 protocols** (Lightning, Ark, channel factories, statechains). Headline argument: **\"Static block-weight accounting bound for unilateral L1 enforcement across 1-day, 14-day, and 28-day windows.\"**"
 ---
 
 # Credible Exit and the Law of Conservation of Blockspace — Carvalho (May 2026)

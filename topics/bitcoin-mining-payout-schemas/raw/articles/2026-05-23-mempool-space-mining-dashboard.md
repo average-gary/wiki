@@ -8,6 +8,7 @@ quality: 4
 credibility: high
 confidence: high
 tags: [data, hashrate, pool-share, centralization]
+summary: "Live data — last block 950,671. Network hashrate **979.18 EH/s**, difficulty **136.61T**."
 ---
 
 # Pool Hashrate Distribution (mempool.space, May 2026)

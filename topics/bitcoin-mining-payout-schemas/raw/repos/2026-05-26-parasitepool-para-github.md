@@ -13,6 +13,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [parasite-pool, repo, rust, ckpool, stratum-v1, primary]
+summary: "Canonical reference implementation for Parasite Pool. CC0-licensed, actively developed (v0.5.3 Dec 2025; latest commit May 2026). ~51 stars, 12 forks, 28 open issues."
 ---
 
 # parasitepool/para — The Parasite Toolkit

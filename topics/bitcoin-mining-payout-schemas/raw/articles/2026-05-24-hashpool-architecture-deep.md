@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [hashpool, architecture, cdk, mint, settlement, epoch, block-found]
+summary: "Code-level architecture from the canonical project sources. Companion to the higher-level [[../repos/2026-05-23-hashpool-vnprc|hashpool repo notes]]."
 ---
 
 # hashpool Architecture Deep-Dive

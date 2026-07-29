@@ -9,6 +9,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [ark-labs, arkade, tether, funding, two-camp, primary]
+summary: "The **other** Ark camp. Establishes the two-camp landscape: Second.tech (Roose) vs Ark Labs/Arkade (Burak's lineage)."
 ---
 
 # Ark Labs $5.2M Tether-Led Raise (Mar 2026)

@@ -6,7 +6,8 @@ ingested: 2026-05-24
 quality: 4
 credibility: medium
 confidence: high
-tags: [hashpool, ehash, critiques, custodial, dleq, variance, mint-as-counterparty]
+tags: [hashpool, ehash, critique, custodial, dleq, variance, mint-as-counterparty]
+summary: "The wiki's existing `eHash` concept article notes custodial mint, no proof-of-liabilities, mint can rugpull. This article deepens the critique surface based on primary-source pushback."
 ---
 
 # hashpool / eHash Critiques (Deepened)

@@ -97,6 +97,8 @@ A "claim your hashrate share in an off-chain layer (Ark VTXO)" SV2 extension con
 - [[../topics/sv2-jd-and-payout-decoupling|SV2 Job Declaration ↔ Payout Decoupling]] — the protocol split that makes miner-verifiable payout possible
 - [[tides|TIDES (OCEAN)]] — the other non-custodial PPLNS scheme converging on N = 8 × D
 - [[payout-schema-taxonomy|Payout Schema Taxonomy]] — where verifiable PPLNS-JD sits in the overall map
+- [[payout-attribution-privacy|Payout Attribution Privacy]] — the extension's `Slice`/`Share`/`PHash` types carry **zero identity fields**, making it the one already-decoupled ledger in the ecosystem
+- [[xpub-payout-identity|xpub Payout Identity]] — why that decoupling makes this the natural host for a miner-supplied descriptor
 
 ## Sources
 

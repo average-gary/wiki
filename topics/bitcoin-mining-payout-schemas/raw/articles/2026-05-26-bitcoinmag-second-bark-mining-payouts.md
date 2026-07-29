@@ -10,6 +10,7 @@ quality: 5
 credibility: high
 confidence: high
 tags: [ark, second-tech, bark, mining-payouts, bitcoin-magazine, the-only-news, primary]
+summary: "The only mainstream news article that explicitly names mining-pool payouts as an Ark use case — one phrase, 'Mining pool payout distribution at higher frequencies,' in an April 2026 Juan Galt profile of Second (Steven Roose, Erik De Smedt, ex-Blockstream, $5.1M private round). Across Optech, conference talks, and the whole 2024-2026 Ark corpus this is the entire public footprint."
 ---
 
 # Second's Bark — Bitcoin Magazine (Apr 2026)

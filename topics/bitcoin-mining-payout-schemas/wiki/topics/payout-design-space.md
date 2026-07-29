@@ -126,6 +126,8 @@ This article synthesizes [[../../raw/_index|all 14 ingested sources]]; primary c
 - [[sv2-jd-and-payout-decoupling|SV2 JD ↔ Payout Decoupling]]
 - [[decentralization-and-pool-concentration|Decentralization & Pool Concentration]]
 - [[../decisions/custody-tradeoffs|Custody Tradeoffs]]
+- [[self-blinding-pool-design-space|Self-Blinding Pool Design Space]] — a sixth dimension the 5-way decomposition doesn't cover: how much attribution the operator retains, and whether it can structurally decline to
+- [[../decisions/attribution-retention-tradeoffs|Attribution Retention Tradeoffs]]
 - [[../concepts/ehash.md|eHash / Hashpool — Cashu ecash share tokens]]
 - [[../concepts/hydrapool.md|Hydrapool — 256 Foundation pool]]
 - [[../concepts/p2pool-share-chain.md|p2pool / p2poolv2 — share-chain accounting]]

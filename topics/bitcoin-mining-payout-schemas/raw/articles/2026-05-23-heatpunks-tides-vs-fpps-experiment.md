@@ -10,6 +10,7 @@ quality: 4
 credibility: medium
 confidence: medium
 tags: [tides, fpps, empirical, ocean, braiins, variance]
+summary: "Rare empirical head-to-head: same hashrate split between OCEAN (TIDES) and Braiins (FPPS) over months, sat-counted by the operator."
 ---
 
 # TIDES vs FPPS Empirical Experiment (heatpunks 2025)

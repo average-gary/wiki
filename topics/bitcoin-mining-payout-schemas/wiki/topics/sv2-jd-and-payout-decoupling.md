@@ -94,3 +94,5 @@ Job Declaration removes the pool's control over *template content*, but the pool
 - Sister wiki: [[../../../iroh-transport-stratum-v2/_index|iroh-transport-stratum-v2]] — alternative SV2 transport
 - [[decentralization-and-pool-concentration.md|Decentralization & Pool Concentration]]
 - [[../concepts/payout-schema-taxonomy.md|Payout Schema Taxonomy]]
+- [[self-blinding-pool-design-space|Self-Blinding Pool Design Space]]
+

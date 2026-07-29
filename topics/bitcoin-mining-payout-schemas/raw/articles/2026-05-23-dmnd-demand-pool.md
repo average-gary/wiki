@@ -8,6 +8,7 @@ quality: 4
 credibility: medium
 confidence: medium
 tags: [dmnd, demand-pool, SLICE, pplns-jd, stratum-v2]
+summary: "Production Stratum V2 pool. Markets itself as the first SV2 pool with end-to-end encrypted binary protocol and miner-side block templates. Operator: Guru Protocol Ltd (England & Wales)."
 ---
 
 # Demand Pool (DMND) — SLICE / PPLNS-JD
