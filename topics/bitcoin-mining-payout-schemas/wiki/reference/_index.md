@@ -43,7 +43,16 @@ See [[../../raw/papers/_index|raw/papers]] for full notes.
 
 - [[../../../sv2-p2pool-integration/_index|sv2-p2pool-integration]]
 - [[../../../iroh-transport-stratum-v2/_index|iroh-transport-stratum-v2]] — relevant for EthnTuttle's SRI Iroh RFC
-- [[../../../coinbase-rotation-bitcoin/_index|coinbase-rotation-bitcoin]]
+- [[../../../sv2-coinbase-identity/_index|sv2-coinbase-identity]] — SV2 coinbase construction, `JobFactory`, Pool-vs-JDC coinbase ownership
+
+## Coinbase rotation
+
+Rotation of the payout scriptPubKey (fresh address per block) is covered **inside this topic** rather than in a separate wiki:
+
+- [[../../raw/repos/2026-07-29-sv2-apps-xpub-coinbase-rotation-code-read|sv2-apps xpub/wildcard-descriptor rotation @ e2930150]] — the SV2-native Rust implementation (`XpubDerivator`, miniscript `has_wildcard()` gate, rotation on `SubmitSolution`)
+- `REPOS/para/.wiki/output/plan-coinbase-rotation-2026-06-24.md` + `pr-body-coinbase-rotation.md` — the shipped ckpool + BDK design (local wiki, not in this hub)
+
+The former `coinbase-rotation-bitcoin` hub topic was an empty 0-file skeleton and was removed 2026-07-29.
 
 ## Coverage
 

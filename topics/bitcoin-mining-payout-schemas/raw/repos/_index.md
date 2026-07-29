@@ -17,6 +17,7 @@ type: raw-index
 - [[2026-07-14-demand-share-accounting-ext-github|demand-open-source/share-accounting-ext — SV2 extension for miner-verifiable PPLNS-JD payouts]]
 - [[2026-07-27-blitzpool-server-rust-github|warioishere/blitzpool-server-rust — non-custodial in-coinbase payout pool]] — Solo/PPLNS/Group-Solo/Blockparty, 37-crate Rust, AGPL; multi-output PPLNS coinbase, signed pending ledger, coinbase weight-budget autoscaler
 - [[2026-07-27-blitzpool-finder-bonus-code-read|Blitzpool finder-bonus mechanics — code-level read @ 7815884]] — verified from a local clone, not the README: the bonus carve-out math, why per-finder coinbase construction is already the architecture, measured per-connection cost, and the missing duplicate-address merge in the PPLNS ledger apply
+- [[2026-07-29-sv2-apps-xpub-coinbase-rotation-code-read|xpub/wildcard-descriptor coinbase rotation in sv2-apps @ e2930150]] — unmerged `feat/coinbase-rotation` branch: reusable `XpubDerivator` primitive (miniscript `has_wildcard()` gate, `AtomicU32` index, flat-file persistence), reverses upstream's deliberate no-wildcards decision, rotates on `SubmitSolution` in both Pool and JDC; pool-single-address only, not per-miner xpub usernames
 
 ## coinbase-playground collection (git, ingested 2026-07-17)
 

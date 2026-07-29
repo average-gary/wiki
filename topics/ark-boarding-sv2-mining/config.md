@@ -40,4 +40,4 @@ demand-open-source SV2 share-accounting extension are public OSS (MIT/Apache).
 - `covenantless-ark` — the clArk mechanics this thesis builds on (n-of-n batch output, VTXO tree, liveness/receiver-DoS).
 - `sighash-anyprevout-bip118` — the coinbase-presigning wall this thesis routes around by signing post-block-found.
 - `musig2-signing-ceremonies` — the interactive n-of-n ceremony (rounds, framing, dropout) that the SV2 extension would carry.
-- `sv2-coinbase-identity`, `sv2-p2pool-integration`, `bitcoin-mining-payout-schemas`, `coinbase-rotation-bitcoin` — the mining/payout context.
+- `sv2-coinbase-identity`, `sv2-p2pool-integration`, `bitcoin-mining-payout-schemas` — the mining/payout context. (Coinbase-rotation material lives under `bitcoin-mining-payout-schemas`; the former `coinbase-rotation-bitcoin` skeleton was removed 2026-07-29.)

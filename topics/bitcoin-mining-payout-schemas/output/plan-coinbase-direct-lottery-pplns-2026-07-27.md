@@ -2,6 +2,8 @@
 title: "Plan: a fully coinbase-direct lottery-PPLNS on Blitzpool"
 type: plan
 format: roadmap
+status: superseded
+superseded_by: "plan-lottery-pplns-1776-rewiring-2026-07-28.md"
 generated: 2026-07-27
 base_commit: 7815884c7c531561e1302ca311070d09f97c1c3c
 repo: warioishere/blitzpool-server-rust (AGPL-3.0-or-later)
@@ -19,6 +21,8 @@ summary: "Implementation roadmap for the payout scheme nobody currently ships: a
 ---
 
 # Plan: a fully coinbase-direct lottery-PPLNS on Blitzpool
+
+> **Superseded** by [the 2026-07-28 revision](plan-lottery-pplns-1776-rewiring-2026-07-28.md), which sets the bounty at 1.776 BTC and drops the proof-of-ownership option. Note in particular that this document's characterisation of the duplicate-finder ledger hazard as "accounting drift, not a crash" is **incorrect** — it is a hard `ON CONFLICT DO UPDATE` transaction abort. See the revision's correction.
 
 > Generated from the [bitcoin-mining-payout-schemas](../_index.md) wiki — 9 articles consulted, 3 new measurements taken against a pinned clone at `7815884`.
 
