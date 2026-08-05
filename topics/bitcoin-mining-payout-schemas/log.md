@@ -691,3 +691,206 @@ pointed at the pre-revision section numbering. §12 re-annotated — the sv2-app
 anti-pattern is now cited as §5.1's *warning* rather than a requirement to follow, and the two
 gap-limit figures now ground an accepted cost rather than a rejected option. §13 revision history
 added so the first draft's design is recoverable from the file itself.
+
+## [2026-07-29] plan --revise (2) | "Translator passthrough of the miner's own descriptor; Bedrock question closed" → output/plan-xpub-miner-identity-spec-2026-07-29.md (2 corrections, 4 new code reads, §9.5 rewritten, §3.2 rewritten)
+
+Two corrections to the same-day revision, one from the operator and one from this wiki's own thesis
+round. Both changed the spec rather than confirming it.
+
+**1. V1 identity is Translator *passthrough*, not Translator *configuration*.** The operator's intended
+design: the V1 miner sets its own `mining.authorize` username to the descriptor, and the Translator
+forwards that identity to the upstream SV2 channel unmodified — a proxy, not the owner of payout
+identity. This is strictly better than what the first revision described, because it gives **per-rig
+payout identity** instead of one identity per Translator upstream, and it preserves the property that
+actually matters: each miner controls its own payout descriptor.
+
+**Reading the clone showed the current Translator cannot do this, for three independent reasons.** A
+spec that assumed configuration-as-passthrough would have shipped a design that silently pays the
+wrong descriptor, so §3.2 is now a three-change modification spec rather than a TOML recipe:
+
+- `sv1/sv1_server/mod.rs:975–984` — `open_extended_mining_channel()` reads `self.user_identity()`, an
+  `Arc<OnceLock<String>>` populated once from `Upstream.user_identity` in TOML, and appends
+  `.miner{N}` from an `AtomicUsize`. The miner's own username is never consulted, and this is the value
+  the pool runs `PayoutMode::try_from` against. **Under the current code every V1 rig behind a
+  Translator is paid to the operator's configured descriptor.**
+- `sv1/sv1_server/mod.rs:529–546` — the upstream channel opens on the *first* downstream message
+  (`if is_first_message { handle_open_channel_request(…) }`), with the V1 handshake queued behind it.
+  So `mining.authorize` has not arrived when the identity reaching the pool is chosen. Passthrough
+  requires **deferring the channel open past authorize** — a handshake-ordering change, not a field
+  swap, and the reason this ships as its own migration phase (§10.1 Phase 2.5) after the pool side is
+  proven.
+- `downstream_message_handler.rs:209` + `utils.rs:273` — the one path that *does* carry the miner's own
+  username, `data.user_identity = tlv_compatible_username(name)`, is
+  `const MAX_USER_IDENTITY_BYTES: usize = 32` with warn-and-truncate. A ~150-char descriptor is cut
+  mid-xpub. And it travels only as a per-share TLV (non-aggregated mode, extension negotiated), which
+  the pool then **discards**: `if let Some(_user_identity) = user_identity { /* …to enhance monitoring
+  of individual miners in the future */ }` (`pool/…/mining_message_handler.rs:919`). So even the
+  32-byte path never reaches payout resolution.
+
+**Fail-closed, usefully.** A descriptor truncated at 32 bytes loses its closing paren and `#checksum`,
+so it **fails to parse** rather than deriving a wrong address, and §3.1's hard-fail gate turns that
+into a channel-open rejection. Don't rely on it — raise the cap — but the dangerous
+silent-truncation case is closed by the descriptor grammar itself. Pinned as §8.2 #8.
+
+**A claim from the first revision is withdrawn.** That revision said routing V1 through the Translator
+"deletes the entire firmware field-width problem class." **True only for operator-set identity.** Under
+passthrough the descriptor is typed into the rig, so Avalon's 63-char truncation, Whatsminer's overflow
+past 127, and firmware percent-encoding of `()[]/*#` all bind again — and 63 chars cannot hold a
+~150-char descriptor even in the short form (`wpkh(xpub…/0/*)#cksum`, ~120). §3.2 now presents both as
+an explicit operator tradeoff rather than picking one: **operator-set identity works on any V1 rig
+today and pays one descriptor per farm; passthrough gives per-rig separation but is
+firmware-dependent.** Support both — passthrough when the authorized username parses as a descriptor,
+configured value otherwise — and let the operator choose per deployment. New open question #4 replaces
+the old per-rig-cost question: nobody has surveyed which fielded V1 firmware can actually hold a
+descriptor-length username.
+
+One precedent found that settles a sub-question: the code **already exempts** `sri/`-prefixed
+identities from the `.miner{N}` suffix, commented *"SRI patterns use `/`-delimited segments for payout
+mode parsing, so appending a suffix would break pool-side validation"* (issue #369). Descriptor
+identities need the identical exemption for the identical reason.
+
+**2. §9.5's Bedrock question is closed, and the closure favours this plan.** The section still read
+"whether it survives is unanalyzed by anyone" and cited `candidates/blinded-mining-cookie-security.md`
+as an *active* record. Both stale: the 2026-07-29 thesis round resolved it (verdict **MIXED**) and the
+record is `resolved: 2026-07-29`. Three findings from that round now stated in §9.5:
+
+- The cookie property depends on the value being **unforgeable and miner-bound**, not on being a
+  human-readable name — so a stable plaintext descriptor substitutes for `M.uname` with nothing
+  changed in the construction.
+- Bedrock is a **weaker baseline than this wiki previously credited**: no hardness assumption (§7.1 is
+  a work-equivalence argument), cookie rotation only on block-find at **~7.44 years for an S7** (the
+  paper's own figure), and prevout-hash placement is consensus-invalid for the share that *is* a block.
+  Less to preserve than the first draft assumed.
+- The obstacle the thesis actually found is **one this design never incurs**: Bedrock keys the vardiff
+  target on identity (`store(M.uname, K_M, R_M, target)` fetched via `getMParams(M.uname)`), so
+  blinding breaks share *validation* a layer before crediting. This spec keeps identity in the clear,
+  so vardiff, dedup, and crediting all work untouched.
+
+**And the thesis is the argument for this plan's scope.** What survives MIXED is architectural, not
+cryptographic: blinded credit is strictly harder than blinded payout *because crediting is an online
+interactive protocol while payout is an offline non-interactive derivation* — BBW p.166 relies on
+rewinding and cannot be Fiat–Shamir'd away — plus an unquantified hashrate side channel that batching
+converts (`interval = b / share_rate`) rather than removes. So the tractable half is exactly the half
+this spec does: **payout blinding is offline BIP-32 derivation and needs no protocol at all**, which is
+what §5 is. Agreed with the operator that there is no better option available here; §9.2's pool-side
+no-op is the plan's honest boundary, not a gap in it.
+
+Open question #2 struck (closed), #4 replaced. The two thesis follow-ups that did spin out —
+`batched-credit-timing-leak` (p1) and `canard-gouget-primary-text` (p3) — are noted as **not bearing on
+this spec**, since both concern blinded credit. The remaining top gap is now #3, **descriptor rotation
+by the miner**: the only state in the design and the only path that can pay a miner an address they no
+longer watch.
+
+Also: §1 diagram and §1.1 components updated (Translator marked "requires modification, 3 changes"),
+§8.2 grew from 8 tests to 10 (passthrough byte-for-byte, two-rigs-two-payout_ids as the test that
+proves passthrough actually happened, truncation-fails-closed, config-fallback-still-works), §10.1
+gained Phase 2.5, §10.3 gained a monitoring row for "channels whose `user_identity` equals the
+configured value when passthrough is enabled" — the silent version of the #1 failure.
+
+## [2026-07-30] plan | Spec revision 4 — identity is miner-managed; share retention by accumulated difficulty
+
+Two operator corrections, the first of which was a **unit error** in my draft of this same revision and
+the more consequential of the two.
+
+**1. `N = 8 × D` is a share count, not a block count.** The draft wrote "~8 blocks of work, ~80
+minutes." That holds only for a pool with 100% of network hashrate. The window is **eight times the
+network difficulty expressed in accumulated share difficulty** — TIDES states N as scaling with D with
+*no fixed share count*, and the share-accounting extension's boundary is a difficulty accumulation
+walked back from the block, not a block tally. Time-to-fill therefore scales inversely with the pool's
+own hashrate: ~13 hours at 10%, **~5.5 days at 1%**, ~55 days at 0.1%. A small pool's window is weeks of
+wall-clock. Any retention policy written against blocks or a clock silently discards shares that are
+still owed payment, which makes this exactly the kind of error that would have shipped as a quiet
+underpayment bug. §2.5 now carries the hashrate→time table so the unit cannot be misread again.
+
+**2. Retention must exceed the current window, because an upward retarget grows the window backwards.**
+This requirement did not exist in any prior revision. `D` changes every 2016 blocks; when it rises the
+window reaches further back into share history than it did before, so shares that sat just outside it
+fall back inside. Pruning to exactly the current window is a correctness bug that manifests **only after
+an upward adjustment** — it ships and sits quiet until a retarget. Bitcoin clamps retargets to 4×, so
+`32 × D` of accumulated share difficulty is the worst-case-safe floor at the current `D`, expressed in
+difficulty (never a clock or a block count) and re-evaluated each period. §10.3 gained a monitoring row
+for the margin between the oldest retained share and the window edge; §10.2 gained the matching restore
+caution, which is the one that actually costs something — a ledger pruned under a lower `D` and then
+restored can leave owed shares simply absent.
+
+**3. Identity management is the miner's responsibility, and rotation is off the table as a pool
+concern.** Per the operator: a distinct descriptor is a distinct user, *including a new descriptor
+arriving on the same connection from the same physical miner*. The pool credits it as a new user and
+does not link, migrate, or reconcile identities. §2.5 is rewritten from "a descriptor change creates a
+new account" into a **retention** section — the rotation framing, the mid-window two-output overlap
+discussion, the drain-the-window advice, and the two rotation regtests are all **removed**, not
+relocated. §4.3.1's merge granularity keeps its justification (`payout_id`, because anything coarser
+requires the identity-linking this design refuses to perform) without the rotation example. §8.2 #11/#12
+are replaced with tests for the two things that *do* need pinning: that the window boundary is
+difficulty-accumulated rather than block-counted (a share older than 8 blocks but inside the window must
+be paid), and that an upward retarget pulls previously-outside shares back in and pays them.
+
+**4. Retention is now bounded rather than indefinite.** The draft had recorded never-expiring
+`miner_identity` as an unresolved tension with §9.2's attribution-minimizing posture. It resolves
+cleanly: rows must outlive any share that can still be paid, and past the retarget-safe horizon a pool
+**may** prune — which §9.2 argues for. Correctness sets a floor, not a mandate to keep everything
+forever.
+
+Propagated: §0 scope (out-of-scope is now "any linking, migration, or reconciliation between miner
+identities"), frontmatter (`payout_window` states the unit explicitly with a NOT-8-blocks guard, plus
+`share_retention` and `miner_identity_policy`), header note, summary, §13 revision 4. Open questions
+still 5 live of 7. Validated: no duplicate headings, all `§` cross-refs resolve, all frontmatter sources
+and wikilinks resolve, publishability grep clean. 757 lines.
+
+## [2026-07-30] ll | "PPLNS window units, share retention, and where pool responsibility ends" → raw/notes/2026-07-30-ll-pplns-window-units-and-identity-boundaries.md (6 lessons, 2 articles updated)
+
+Session-derived, from revising the xpub-identity spec to revision 4. Two of the six are corrections to
+**my own errors** caught by the operator, and both were unit/scope errors rather than reasoning errors:
+
+1. **`N = 8 × D` is accumulated share difficulty, not 8 blocks.** I wrote "~8 blocks of work, ~80
+   minutes" — valid only at 100% network hashrate. Converting a difficulty-denominated window to
+   wall-clock requires dividing by the *pool's* hashrate: ~13 h at 10%, **~5.5 days at 1%**, ~55 days at
+   0.1%. A ~100× error for a small pool, landing as under-retention. The wiki already said it plainly
+   (TIDES: *"N scales with D (no fixed share count)"*) and I misread it.
+2. **An upward difficulty retarget grows the window backwards.** Operator-supplied mechanism. `D` moves
+   every 2016 blocks; when it rises, the walk back from the block reaches further into share history,
+   pulling previously-outside shares back inside. Pruning to the current edge is a bug whose first
+   symptom is one retarget away. Retarget clamp is 4×, so `32 × D` is the worst-case-safe floor.
+3. **Distinct payout identity = distinct user**, including a new identity on the same connection from the
+   same hardware. "These two identities are probably one person" is not knowledge the pool has, so every
+   feature premised on it is out of scope by construction.
+4. **Pool duty ends at correct payment plus publication.** Paying the wrong party is a defect; paying the
+   right party somewhere they don't watch is not, and every mitigation for it (accrual, withholding) is
+   worse — it trades a docs gap for the FinCEN custody trigger.
+5. **Translator `Aggregated` mode makes per-device identity unrepresentable**, not merely unimplemented:
+   one channel, one `user_identity` upstream, and the per-share identity TLV is non-aggregated-only *and*
+   discarded pool-side. A mode requirement, not an effort estimate.
+6. **Process**: a spec section that keeps growing to "solve" a declared non-goal is accreting mechanism,
+   not rigor. I documented an out-of-scope overlap case across three turns — consequence analysis,
+   disclosure obligation, operator advice, two regtests, a monitoring row — while a load-bearing *unit*
+   elsewhere was still wrong. Remove out-of-scope analysis rather than demoting it to a caveat.
+
+Articles updated (append-only): `wiki/concepts/pplns.md` gained a "Window units" section carrying rules 1
+and 2 in general form (they apply to any `k × D` window, not just this spec);
+`wiki/concepts/xpub-payout-identity.md` gained "The V1 path is gated on Translator aggregation mode" with
+the `utils.rs:180-215` / `AGGREGATED_CHANNEL_ID` / `mining_message_handler.rs:919` citations. Both
+back-reference the note; both `updated`/`verified` bumped to 2026-07-30.
+
+No inventory records created — lessons 1/2 are now compiled rules in `pplns.md` with no pending action,
+3/4/6 are decided policy, and 5 is an input to the in-flight Translator workflow rather than a separate
+watch item.
+
+## [2026-07-30] plan | "xpub-identity spec, fifth revision — Translator passthrough + pool payout path verified against code" → output/plan-xpub-miner-identity-spec-2026-07-29.md (1 code read of HEAD e2930150, 15 claims retracted, 5 plan-changing corrections)
+
+Revised the spec against an exhaustive multi-agent read of the `sv2-apps-coinbase-rotation` clone, adversarially verified. The read **contradicted** the shipped spec in fifteen places rather than merely adding to it, so this is a revision and not an appendix.
+
+**The blocking finding.** A valid, untruncated wildcard descriptor supplied as `user_identity` is paid **100% to the pool** today. `PayoutMode::try_from` has no descriptor arm; `script_from_address` wraps its input as `addr(<descriptor>)`, which cannot parse; the `/`-split then yields `NoPayoutMode`, which the pool maps to `PayoutMode::FullDonation` — one output, the entire block value, to the pool's own script, persisted for the connection's lifetime, no error returned and nothing logged. Both prior revisions assumed an unrecognized identity would be *rejected*. It is silently expropriated. The fail-closed fix is now non-optional Phase 1 work and must land before a descriptor is delivered to any pool, testing included.
+
+**The structural finding.** The Translator was never the bottleneck. `Downstream.payout_mode` is one slot per **TCP connection**, blind-overwritten on every channel open and never cleared on close; extended channels inherit the group job, which never rebuilds the coinbase. So N devices on one connection collapse to the last-opened identity from the next `NewTemplate` onward. Each channel's *first* job **is** built from its own parsed mode — which is why a first-job test passes while production mispays — and there is no regression test for the collapse anywhere in the repo (every case in `pool_solo_mining.rs` uses one identity per connection; the two-channel case uses the same identity for both). Translator work: 3 changes → **7**. Pool-side work: **6 more, and larger**, and a prerequisite for any multi-channel connection — which reverses the fourth revision's Phase 2 / Phase 2.5 ordering.
+
+**`aggregate_channels = false` is structural, not a knob.** `AggregatedState::NoChannel` is the only arm reaching the upstream sender, every channel id collapses to `AGGREGATED_CHANNEL_ID = u32::MAX`, and devices are separated only by a translator-minted 2-byte `local_index`. Per-device payout identity is *unrepresentable* in aggregated mode however either side is refactored, so a Translator in that mode must refuse descriptor identities at startup rather than silently pay them all to one script. `aggregate_channels` is required with no default, so the guard is cheap.
+
+**Two prescriptions withdrawn.** (1) Raising `MAX_USER_IDENTITY_BYTES` is actively harmful — the normative constant lives in external crates, and raising the local mirror converts warn-and-truncate into a `UserIdentity::new` error that maps to a hard disconnect, dropping every descriptor-carrying V1 rig on its first share. The route is *around*: `data.authorized_worker_name` already holds the untruncated username, and `Str0255`'s 255 bytes is the real binding limit. (2) Key-origin information must be **stripped** during normalization, because `wpkh([fp/84h/0h/0h]xpub…/0/*)` and `wpkh(xpub…/0/*)` produce different `payout_id`s and **byte-identical** `scriptPubKey`s — `PRIMARY KEY (block_height, payout_id)` passes it, so the distinctness assert has to run on derived scripts.
+
+**Measured, not estimated.** Shortest wildcard forms under miniscript 13.0.0: `tr(xpub…/*)` = **126** bytes, `pkh` = 127, `wpkh` = 128; raw-compressed-pubkey wildcards rejected. No descriptor fits under Avalon's 63-char truncation, closing open question #4's shortening sub-question as a negative.
+
+**Substrate caveat recorded.** This clone is a solo/donate coinbase-templating pool, not a reward-sharing one: `coinbase_outputs` is exhaustive and maxes at two outputs, share accounting is per-channel monotonic counters with no window, a found block forwards the finding channel's coinbase verbatim (winner-take-all), and `grep -i pplns` returns zero hits. The spec's PPLNS-facing sections (§4.3, §4.3.1, §4.5, §7.2) therefore rest on the wiki articles alone and are un-verifiable against this code.
+
+Scope held: the read proposed restoring a mid-window descriptor-rotation/co-appearance analysis as a new §5.3. Not applied — identity management is the miner's responsibility per the operator's standing decision. Only the funds-misdirection half was kept, as a pool-side correctness defect (an in-band re-key hijacking sibling channels' payouts), not as a rotation-semantics question.
+
+Nothing was executed and the integration suite was not run — all conclusions are static reads plus standalone miniscript parser probes. Ten residual risks recorded rather than resolved; the load-bearing one is whether per-channel coinbase templating is confined to this repo's pool code or requires an upstream `channels_sv2` change, which is the difference between a week and a quarter on §3.2.3 item 4.

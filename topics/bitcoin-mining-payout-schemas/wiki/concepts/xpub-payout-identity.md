@@ -5,9 +5,9 @@ created: 2026-07-29
 confidence: high
 tags: [xpub, output-descriptor, bip-380, bip-389, bip-44, gap-limit, ckpool, public-pool, datum, tides, pplns-jd, firmware-limits, field-width]
 volatility: warm
-updated: 2026-07-29
+updated: 2026-07-30
 summary: "What mechanically changes when a miner's stratum username is a wildcard descriptor rather than an address: the ledger key must split from the payout script, rotation triggers are unresolved upstream, and every identity field in every codebase is too narrow."
-verified: 2026-07-29
+verified: 2026-07-30
 sources:
   - "raw/repos/2026-07-29-pool-identity-vs-payout-script-conflation-code-read.md"
   - "raw/repos/2026-07-29-bip352-silent-payments-coinbase-incompatibility.md"
@@ -102,6 +102,29 @@ per-miner.** Confirmed negative result: **no pool anywhere accepts an xpub, outp
 payment code as a miner's payout identity**, verified against source for ckpool, public-pool,
 DATUM, the SV2 reference apps, and Ocean's docs.
 
+## The V1 path is gated on Translator aggregation mode
+
+V1 miners can in principle reach a descriptor-identity pool through the SV2 Translator, with the
+descriptor as the `mining.authorize` username forwarded upstream. **Aggregation mode decides whether
+per-device identity is even representable**, and it is a mode requirement rather than an effort
+estimate ([[../../raw/notes/2026-07-30-ll-pplns-window-units-and-identity-boundaries|lesson 5,
+2026-07-30]]):
+
+- `TproxyMode::Aggregated` shares *"a single extended Sv2 channel"* across all downstream V1
+  connections, distinguishing devices by extranonce_prefix while *"presenting them as a single entity
+  to the upstream server"* (`translator/src/lib/utils.rs:180-215`); every channel id collapses to
+  `AGGREGATED_CHANNEL_ID = u32::MAX` (`utils.rs:36`, `downstream_message_handler.rs:117-118`). One
+  upstream channel carries one `user_identity`, and the pool parses payout identity from the
+  channel-open `user_identity` — so per-device descriptors are **unrepresentable** in this mode no
+  matter how the Translator is refactored.
+- The only per-device identity path — the `TLV_FIELD_TYPE_USER_IDENTITY` per-share TLV — is emitted
+  only in non-aggregated mode and is then **discarded by the pool**
+  (`pool/src/lib/channel_manager/mining_message_handler.rs:919`: `if let Some(_user_identity) =
+  user_identity { /* …in the future */ }`).
+
+General form of the trap: before designing per-device semantics on top of a proxy, check whether the
+proxy multiplexes devices onto one upstream session.
+
 ## What it buys, and what it does not
 
 **Buys**: defeats the Romiti et al. attack, which turns on payout-address reuse (median 20 reuses
@@ -132,4 +155,5 @@ is an on-chain privacy upgrade and a **pool-side privacy no-op**.
 - [[../topics/self-blinding-pool-design-space|Self-Blinding Pool Design Space]]
 - [[block-withholding|Block Withholding (BWH) and FAW]]
 - [[sv2-share-accounting-ext|SV2 Share Accounting Extension]]
+- [[../../raw/notes/2026-07-30-ll-pplns-window-units-and-identity-boundaries|Lessons: window units, share retention, identity boundaries]] — the Translator aggregation constraint above, and where pool responsibility for payout identity ends
 

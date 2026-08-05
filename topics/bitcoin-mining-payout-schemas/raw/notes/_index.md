@@ -2,7 +2,7 @@
 title: Notes Index
 type: raw-index
 created: 2026-07-18
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 # Notes
@@ -12,6 +12,7 @@ Session-derived lessons-learned and working notes (learned by doing/analyzing, n
 | Note | Date | Lessons | Summary |
 |---|---|---|---|
 | [[2026-07-18-ll-proxy-held-vtxo-ark-sv2-extension|Proxy-held VTXO keys + SV2 Ark-claim extension]] | 2026-07-18 | 4 | Proxy holding VTXO keys neutralizes Ark's receiver-presence + expiry blockers (unlocks clArk sans CTV/CSFS) but reshuffles custody; a trust-reducing SV2 claim extension must carry VTXO leaf/path + exclusivity proof, not just the amount. |
+| [[2026-07-30-ll-pplns-window-units-and-identity-boundaries\|PPLNS window units, share retention, identity boundaries]] | 2026-07-30 | 6 | `N = 8 × D` is accumulated share difficulty, not 8 blocks — a ~100× retention error for a 1% pool (~5.5 days, not ~80 min). Upward difficulty retargets grow the window *backwards*, so retention must cover `4 × N`. Distinct payout identity = distinct user, even on one connection. Translator `Aggregated` mode makes per-device identity structurally unrepresentable. |
 
 ## Cross-domain source notes (2026-07-29)
 
