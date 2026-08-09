@@ -3,15 +3,20 @@ title: "Spec: a pool that accepts a wildcard descriptor as miner identity and de
 type: plan
 format: spec
 generated: 2026-07-29
-revised: 2026-07-30
+revised: 2026-08-09
 confidence: medium
 host_scheme: PPLNS-JD / SV2 (share-accounting-ext type 32)
 rotation_trigger: block height as derivation index (stateless)
-descriptor_intake: SV2 user_identity (V1 via Translator passthrough — 7 Translator changes §3.2.2 + 6 pool-side changes §3.2.3; requires aggregate_channels = false)
-blocking_defect: a valid descriptor in user_identity is paid 100% to the pool today (NoPayoutMode → FullDonation) — must be fixed in Phase 1 before any descriptor can be delivered (§3.2.3)
+derivation_path: "POOL-FIXED, not miner-selectable (§4.6) — recommended `wpkh(<xpub>/0/*)`, i.e. BIP-84 P2WPKH at `m/84'/0'/0'/0/H`. Held in ONE named constant. Makes the §4.5 weight budget a constant, closes the §2.2 payout_id collision class permanently, and turns §3.1's three assertions into invariants over a pool constant. P2WPKH over P2TR because regtest P2TR is 64 chars against a 62-char cap (§4.3.2) and 124 WU vs 172 buys ~39% more outputs"
+identity_model: "sum type `PayoutIdentity = Static { address } | Rotating { descriptor, payout_id }` — `payout_id()` is the ledger and mode key and is height-invariant; `script_at(height)` is the payout script and varies. `Static::script_at` ignores height (§2.0)"
+descriptor_intake: "bare xpub/tpub is the RECOMMENDED intake form (111 chars, no delimiter collisions, origin-info hazard unrepresentable); the pool builds `wpkh(<xpub>/0/*)` itself. Full-descriptor intake stays supported. SV2 user_identity; V1 via Translator passthrough — 7 Translator changes §3.2.2 + 6 pool-side changes §3.2.3; requires aggregate_channels = false"
+validation_requirement: "THREE assertions, not one — has_wildcard() AND no hardened step AND !is_multipath(). `at_derivation_index()` PANICS on a hardened step; has_wildcard() alone is measured-insufficient (§3.1)"
+credential_rule: "parse with `Xpub::from_str` FIRST; never propagate miniscript error text for a bare-string field — a bare xprv produces a 131-char error embedding the full 111-char private key (§3.1.1)"
+blocking_defect: "UPSTREAM SRI/sv2-apps ONLY — `PayoutMode::try_from` has no descriptor arm, so a valid descriptor resolves to NoPayoutMode → FullDonation = 100% of the block to the pool, silently. This is a property of the sv2-apps clone read in §12, NOT of every pool; a pool whose no-payout path is 'serve no job' does not have it (§3.2.3)"
 payout_window: N = 8 × D in accumulated share difficulty (NOT 8 blocks) — per TIDES and SLICE
 share_retention: by accumulated difficulty, past the window edge to survive a 4× upward retarget (§2.5)
 miner_identity_policy: distinct descriptor = distinct user; no linking or migration, miner-managed (§2.5)
+measured_with: "bitcoin 0.32.102 + miniscript 13.1.0 via an isolated crate, 2026-08-09 — intake lengths, the derive-time PANIC, the credential leak, derived-address widths vs a 62-char column, derivation cost, and the origin-info hazard reproduced (§12)"
 sources:
   - "wiki/concepts/xpub-payout-identity.md"
   - "wiki/concepts/coinbase-address-rotation.md"
@@ -34,18 +39,20 @@ sources:
   - "raw/repos/2026-07-29-sv2-apps-xpub-coinbase-rotation-code-read.md"
   - "raw/repos/2026-07-29-bip352-silent-payments-coinbase-incompatibility.md"
   - "raw/papers/2026-07-29-romiti-2019-mining-pool-payout-deanonymization.md"
-summary: "Technical spec for a pool taking a BIP-380 wildcard descriptor as SV2 user_identity and deriving each miner's coinbase scriptPubKey at index = the block height being mined. Height indexing makes derivation a pure function of (descriptor, height): no pool-side index state, no persistence ordering, no rotation trigger, and recovery survives the pool's death. Hosted on PPLNS-JD because its Slice/Share ledger is already identity-free. V1 miners reach it through SV2 Translator passthrough — the miner sets its own username to the descriptor and the Translator forwards it unmodified — which needs 7 Translator changes and, larger, 6 pool-side changes: payout identity is scoped to the TCP connection rather than the channel, so N devices behind one Translator collapse to the last-opened identity from the next NewTemplate onward. Per-device payout additionally requires aggregate_channels = false, which is a structural requirement and not a tuning knob. One blocking defect found by code read: a valid untruncated descriptor in user_identity resolves to NoPayoutMode, which the pool maps to FullDonation — 100% of the block to the pool, silently, for the connection's lifetime. Identity is miner-managed: a distinct descriptor is a distinct user with no pool-side linking or migration. The pool's obligation is share retention, and the window is N = 8 × D in *accumulated share difficulty* — not 8 blocks, so a 1% pool's window is ~5.5 days of wall-clock — with retention extending past the window edge because an upward difficulty retarget grows the window backwards. Thirteen sections: descriptor grammar and the load-bearing has_wildcard() rejection, the payout_id/script split, the user_identity grammar collision on '/', and an honest privacy scope — this defeats Romiti et al. on chain and is a pool-side no-op."
+summary: "Technical spec for a pool taking a miner-supplied extended public key as SV2 user_identity and deriving each miner's coinbase scriptPubKey at index = the block height being mined. Identity is a **sum type**, `Static { address } | Rotating { descriptor, payout_id }`: `payout_id()` answers the ledger-key and mode-key questions and is height-invariant, `script_at(height)` answers the payout-script question and varies per block. `Static::script_at` ignores height, which the type states rather than a comment hoping for it — the rejected alternative, one struct with `descriptor: Option<…>`, turns `descriptor.is_some()` into a mode test that actually answers 'did someone populate this field?', and a both-set state pays whichever branch the reader checks. The recommended intake is a **bare xpub** (111 chars, zero collisions with the 13 delimiters descriptor and username grammars split on) with the pool building `wpkh(<xpub>/0/*)` itself: origin-key information is then unrepresentable, which closes a hazard where two spellings of one wallet hash to two ledger rows while deriving one script. Height indexing makes derivation a pure function of (descriptor, height): no pool-side index state, no persistence ordering, no rotation trigger, and recovery survives the pool's death. Hosted on PPLNS-JD because its Slice/Share ledger is already identity-free. V1 miners reach it through SV2 Translator passthrough — the miner sets its own username to the descriptor and the Translator forwards it unmodified — which needs 7 Translator changes and, larger, 6 pool-side changes: payout identity is scoped to the TCP connection rather than the channel, so N devices behind one Translator collapse to the last-opened identity from the next NewTemplate onward. Per-device payout additionally requires aggregate_channels = false, which is a structural requirement and not a tuning knob. Validation needs THREE assertions and not the one both known implementations make: `at_derivation_index()` on a wildcard descriptor with a hardened step **panics** rather than returning Err (miniscript 13.1.0 `descriptor/key.rs:868`), so `has_wildcard()` alone is measured-insufficient. And a bare `xprv` pasted into a descriptor field produces a parse error whose text **embeds the full 111-character private key**, so the intake must try `Xpub::from_str` first and must never propagate miniscript error text for a bare-string field. One blocking defect found by code read, and it belongs to **upstream SRI / sv2-apps and not to pools generally**: `PayoutMode::try_from` has no descriptor arm, so a valid untruncated descriptor in user_identity resolves to NoPayoutMode, which that pool maps to FullDonation — 100% of the block to the pool, silently, for the connection's lifetime. A pool whose unresolvable-payout answer is 'serve no job' has no equivalent. Identity is miner-managed: a distinct descriptor is a distinct user with no pool-side linking or migration. The pool's obligation is share retention, and the window is N = 8 × D in *accumulated share difficulty* — not 8 blocks, so a 1% pool's window is ~5.5 days of wall-clock — with retention extending past the window edge because an upward difficulty retarget grows the window backwards. Thirteen sections: descriptor grammar and the load-bearing has_wildcard() rejection, the payout_id/script split, the user_identity grammar collision on '/', and an honest privacy scope — this defeats Romiti et al. on chain and is a pool-side no-op."
 ---
 
-# Spec: wildcard-descriptor miner identity with height-indexed coinbase derivation
+# Spec: xpub miner identity with height-indexed coinbase derivation
 
-> Generated from the [bitcoin-mining-payout-schemas](../_index.md) wiki — 15 articles, 4 raw sources, and 2 prior outputs consulted, plus an exhaustive multi-agent code read of the `sv2-apps-coinbase-rotation` clone at HEAD `e2930150` (§12). **Revised four times**: to height-as-index (§4), which deleted the derivation-store section entirely, with finder bonus moved out of scope; then to **V1 Translator passthrough** (§3.2); then (2026-07-30) to put identity management on the miner and replace it with a **share-retention** requirement (§2.5), the window being `N = 8 × D` in *accumulated share difficulty*; then (2026-07-30, fifth) to correct §3.2 against the code — the Translator work is **7 changes not 3**, the pool-side work is **6 more and larger**, `aggregate_channels = false` is a hard requirement, the 32-byte cap must be **left alone**, and a valid descriptor is **paid 100% to the pool today**. Open questions #2 and #3 are **closed**. See §13.
+> Generated from the [bitcoin-mining-payout-schemas](../_index.md) wiki — 15 articles, 4 raw sources, and 2 prior outputs consulted, plus an exhaustive multi-agent code read of the `sv2-apps-coinbase-rotation` clone at HEAD `e2930150` (§12). **Revised five times**: to height-as-index (§4), which deleted the derivation-store section entirely, with finder bonus moved out of scope; then to **V1 Translator passthrough** (§3.2); then (2026-07-30) to put identity management on the miner and replace it with a **share-retention** requirement (§2.5), the window being `N = 8 × D` in *accumulated share difficulty*; then (2026-07-30, fifth) to correct §3.2 against the code — the Translator work is **7 changes not 3**, the pool-side work is **6 more and larger**, `aggregate_channels = false` is a hard requirement, and the 32-byte cap must be **left alone**. **Sixth revision (2026-08-09)**: identity becomes an explicit **sum type** `Static | Rotating` (§2.0), which supersedes the `addr(<address>)` sentinel; **bare xpub** becomes the recommended intake form (§2.3a); validation grows from one assertion to **three**, because `at_derivation_index()` *panics* rather than erroring on a hardened step (§3.1); a **credential-leak** rule is added (§3.1.1); and the `FullDonation` defect is **re-attributed to upstream SRI** rather than to pools generally (§3.2.3). Everything numeric in that revision was measured, not estimated — see §12's measurement block. **Seventh revision (2026-08-09)**: one operator decision — the **derivation path and script type are pool-fixed** (§4.6), recommended `wpkh(<xpub>/0/*)` at `m/84'/0'/0'/0/H`, which makes the coinbase weight budget a constant, closes the `payout_id` collision class permanently, and turns §3.1's three assertions into invariants over a pool constant. Open questions #2 and #3 are **closed**; OQ8 is **sharpened** by it and OQ4 is untouched. See §13.
 
 ## 0. Summary and scope
 
-A miner authenticates to the pool with a **BIP-380 wildcard output descriptor** (e.g. `wpkh(xpub…/0/*)`) instead of a literal address. When the pool builds a coinbase for block height `H`, each paid miner's output pays `descriptor.at_derivation_index(H)`. No miner is paid the same address twice, because no height repeats.
+A miner authenticates to the pool with an **extended public key** — a bare `xpub`/`tpub` is the recommended form (§2.3a) and a full BIP-380 wildcard descriptor such as `wpkh(xpub…/0/*)` remains accepted — instead of a literal address. When the pool builds a coinbase for block height `H`, each paid miner's output pays `descriptor.at_derivation_index(H)`. No miner is paid the same address twice, because no height repeats.
 
-**The load-bearing property is that derivation is a pure function of `(descriptor, height)`.** The pool stores no index, advances no counter, and persists nothing on the payout path. This one choice deletes an entire class of failure — see §4.1 for what it buys and §4.2 for the cost you are accepting.
+**Identity is a sum type, not a string with optional decoration** (§2.0). A pool that overloads one identity string as ledger key, mode key, and payout script is correct only for as long as the payout script is constant. Rotation ends that, so the two roles are split into two methods on two variants: `payout_id()` is height-invariant, `script_at(height)` is not, and the `Static` variant's `script_at` ignores height by construction.
+
+**The load-bearing property is that derivation is a pure function of `(descriptor, height)`.** The pool stores no index, advances no counter, and persists nothing on the payout path. This one choice deletes an entire class of failure — see §4.1 for what it buys and §4.2 for the cost you are accepting. Measured 2026-08-09 against miniscript 13.1.0: 1,000 derivations at one height return byte-identical scripts, and 5,000 consecutive heights return 5,000 distinct scripts.
 
 **Host scheme: PPLNS-JD / SV2** with `share-accounting-ext` (extension type 32). This is chosen because it is the only surveyed scheme whose ledger is *already* decoupled: its `Slice{number_of_shares, difficulty, fees, root, job_id}` and `Share{nonce, ntime, version, extranonce, job_id, share_index, merkle_path}` structures contain **not one identity field**, and the ledger primary key is positional — `(slice, share_index)`, verified by `merkle_path(share) + share_hash == slice.root`. Every other scheme must retrofit a decoupling that PPLNS-JD gets for free. ckpool by contrast converts `username[128]` *directly into* the payout script via `address_to_txn()` into `txnbin[48]`; public-pool makes `address varchar(62)` part of a composite `PRIMARY KEY`.
 
@@ -117,15 +124,96 @@ Two structural properties carry the design:
 
 ## 2. Data model
 
+### 2.0 The core identity model: `Static | Rotating`
+
+**This is the spec's central type and every other section is downstream of it.** Earlier revisions assumed identity was a descriptor and treated a static-address miner as a descriptor-shaped special case. That is backwards. The right frame is that a pool's identity string is doing **three** jobs at once, and rotation splits them:
+
+| Role | What reads it | Must it vary with height? |
+|---|---|---|
+| **1. Ledger key** | balance rows, group membership, per-worker share counters | **Never.** A key that moves loses the balance. |
+| **2. Mode key** | "which payout mode is this miner on?" | **Never.** A miner does not change mode by being paid. |
+| **3. Payout script** | the coinbase output's `scriptPubKey` | **Every block**, under rotation. |
+
+Those three coincide **only because the address is static**. A pool that keys a balance table on the same string it converts to a script is not making an error — it is relying on an equality that holds until the day it doesn't. Rotation is that day: with `wpkh(xpub/0/*)`, role 3 varies per block while roles 1 and 2 must not vary at all.
+
+So the identity is a sum type:
+
+```rust
+pub enum PayoutIdentity {
+    /// A literal address. The payout script does not depend on height.
+    Static { address: AddressId },
+    /// An xpub-derived wallet. The payout script is a function of height;
+    /// the ledger key is not.
+    Rotating {
+        descriptor: Box<Descriptor<DescriptorPublicKey>>,
+        payout_id: AddressId,
+    },
+}
+
+impl PayoutIdentity {
+    /// Roles 1 and 2 — the ledger key and the mode key. HEIGHT-INVARIANT
+    /// by signature: there is no height to pass.
+    pub fn payout_id(&self) -> &AddressId { … }
+
+    /// Role 3 — the coinbase script. `Static` ignores `height`.
+    pub fn script_at(&self, height: u32, net: Network) -> Result<ScriptBuf, IdentityError> { … }
+}
+```
+
+Two properties do the work, and both are properties of the *type*, not of anyone's discipline:
+
+- **`payout_id()` takes no height.** A caller that wants a ledger key cannot accidentally get a per-block value, because there is no argument through which height could enter.
+- **`Static::script_at` ignores its `height` argument.** "This miner's address does not rotate" is stated by the variant instead of by a comment hoping the next reader honours it. There is no state in which a `Static` identity is asked for height `H` and returns something height-dependent.
+
+#### The rejected alternative, and why it is worse than it looks
+
+```rust
+// REJECTED
+pub struct PayoutIdentity {
+    address: String,
+    descriptor: Option<Descriptor<DescriptorPublicKey>>,
+}
+```
+
+This compiles, is shorter, and is the shape a codebase drifts into when rotation is added to an existing address field. Three reasons not to:
+
+1. **`descriptor.is_some()` reads as a mode test and answers a different question.** It looks like "is this miner rotating?" It actually answers "did some code path populate this field?" Those are the same value only while every writer is correct. A `None` on a rotating miner silently pays the static address forever; a `Some` on a static miner silently rotates a miner who never asked to.
+2. **The both-set state is representable and pays whichever branch the reader checks.** With `address` and `descriptor` both populated and disagreeing, there is no single answer to "where does this miner get paid" — the answer depends on which function the money happens to flow through. The sum type cannot express that state at all.
+3. **It does not separate the roles.** Both variants of the struct still hand out one `address: String` for the ledger *and* for the script, so the original conflation survives the refactor. The whole point was to split roles 1–2 from role 3, and this shape doesn't.
+
+**The precedent is recorded, not hypothetical.** The Blitzpool codebase's own `CLAUDE.md` documents 2026-08-03: a found block's settlement inputs were stamped by `if resolved.mode == MiningMode::GroupSolo`, one mode fell out of the `if`, and roughly half of that mode's blocks lost their settlement inputs for good. Several reviews passed over the line. The rule that came out of it generalizes exactly to this decision:
+
+> Branch on a mode with `match`, never with `if mode ==`. An `if` cannot be exhaustive, so it is where a mode goes missing without anything complaining. The same goes for `is_some()` on a per-mode field: it reads as a mode test and answers a different question.
+
+`match identity { Static{..} => …, Rotating{..} => … }` is exhaustive; `if identity.descriptor.is_some()` is not. Adding a third identity kind later (a payment code, a covenant tree) breaks the `match` at compile time and slips through the `if` at runtime.
+
+#### What this supersedes
+
+Two things in earlier revisions exist only to work around the absence of this type, and §2.3 and §10.1 are amended accordingly:
+
+- The `addr(<address>)` **sentinel** for existing static miners (§10.1 Phase 0) — the `Static` variant carries that meaning in the type.
+- The **"reject `addr(bc1q…)` at this endpoint"** rule (§2.3) — under the sum type, an address-shaped intake *is* a well-typed identity, just not a `Rotating` one.
+
+See §2.3's amended table and §10.1's amended Phase 0.
+
 ### 2.1 Identity record
 
 ```sql
 CREATE TABLE miner_identity (
     payout_id        BLOB PRIMARY KEY,   -- 32-byte tagged hash of normalized descriptor (§2.2)
-    descriptor       TEXT NOT NULL,      -- normalized, checksummed, ~150 chars typical
+    kind             TEXT NOT NULL,      -- 'static' | 'rotating' — the §2.0 discriminant
+    descriptor       TEXT,               -- NULL iff kind='static'; else canonical, checksummed
+    address          TEXT,               -- NULL iff kind='rotating'
     created_at       INTEGER NOT NULL,
     last_paid_at     INTEGER
 );
+-- The CHECK that makes the both-set state unrepresentable in SQL too, since
+-- the database cannot hold a Rust enum:
+--   CHECK ((kind='static'   AND address IS NOT NULL AND descriptor IS NULL)
+--       OR (kind='rotating' AND descriptor IS NOT NULL AND address IS NULL))
+-- Without it the schema re-admits exactly the struct-with-Option state §2.0
+-- rejects, one layer down. `kind` is read with a total match, never with
+-- `descriptor IS NOT NULL`.
 -- No next_index. No highest_paid. Index is the block height; there is no
 -- derivation state to store, advance, back up, or restore incorrectly.
 
@@ -138,8 +226,9 @@ CREATE TABLE payout_receipt (          -- audit + miner receipt; append-only, NO
 );
 ```
 
-Four deliberate choices:
+Five deliberate choices:
 
+- **`kind` is a stored discriminant, not an inferred one.** A schema that says "rotating if `descriptor IS NOT NULL`" has imported §2.0's rejected alternative into SQL. The `CHECK` constraint above is what makes the both-set state a write error rather than a payout ambiguity.
 - **`payout_id` is the primary key, not the address.** This is the whole point. A schema doing `ON CONFLICT (address) DO UPDATE` keys balances on address *globally*, so a miner whose address changes every block writes a new row every block and pending-credit carry-forward silently stops working. That failure is silent accounting drift, not a crash.
 - **`derivation_index` is gone as a column** — it would be an exact duplicate of `block_height`. The old `UNIQUE (payout_id, derivation_index)` constraint is likewise gone: with index ≡ height, the primary key already enforces it. The invariant "no index is paid twice" stops being something to *check* and becomes something the design cannot express. That is the single largest correctness win of this revision.
 - **`payout_receipt` is an audit table, not a recovery dependency.** In the counter design, losing this table meant losing the ability to reconstruct which indices had been paid. Here it is pure convenience: a miner who knows the pool's found-block heights can re-derive every script themselves, and those heights are on the public chain forever (§6).
@@ -154,21 +243,72 @@ payout_id = SHA256(SHA256("pool/payout-id/v1") || normalized_descriptor_without_
 Normalize before hashing: strip the `#checksum` suffix, lowercase hex, and **strip key-origin information entirely** — not merely canonicalize its spacing. Two textually different spellings of the same descriptor **must** yield the same `payout_id`, or a miner silently splits into two ledger identities and loses accrued credit.
 
 > **Why origin *presence*, not just origin spacing.** `wpkh([d34db33f/84h/0h/0h]xpub6ER…/0/*)` and `wpkh(xpub6ER…/0/*)` wrap the same xpub. Spacing canonicalization leaves them textually distinct, so they hash to **different `payout_id`s** — while `at_derivation_index(H).script_pubkey()` returns **byte-identical** scripts. That produces two coinbase outputs paying the same address in one transaction: precisely the failure §4.3.1 exists to prevent, and §4.3.1's `PRIMARY KEY (block_height, payout_id)` backstop **passes** it, because the `payout_id`s differ. Reachable two ways with no bug anywhere — a miner adding or removing origin info between sessions, or one operator configuring two rigs inconsistently. Origin-only variants of one xpub must be **one** `payout_id`, and §4.3's assembly additionally asserts script distinctness *after* derivation (§4.3.1) because no `payout_id`-level check can catch this class.
+>
+> **Reproduced 2026-08-09, not reasoned.** Against miniscript 13.1.0: the two strings differ, the derived `scriptPubKey`s at height 900,000 are identical, and the `payout_id`s (sha256 over the canonical descriptor text, base58) differ. Keying the ledger on descriptor text therefore splits one wallet into two balance rows that pay the same address — a miner's accrued credit divides in half across two accounts, with no bug anywhere in the pool.
+>
+> **The strongest available fix is not better normalization — it is a narrower intake.** A bare-xpub intake (§2.3a) **cannot express origin information at all**, so the whole hazard class becomes unrepresentable rather than normalized-away. Normalization is a rule that can be got wrong; an intake grammar that has no syntax for the thing cannot be. This is a stronger argument for xpub intake than any byte count.
 
-### 2.3 Descriptor acceptance grammar
+#### `payout_id` encoding — measured against a 62-character identity column
 
-Accepted: **unhardened, single-path, wildcard-terminated**, exactly one wildcard, no private keys.
+Many pool schemas hold identity in a fixed-width column (public-pool's `address varchar(62)`; Blitzpool's `AddressId`, capped at 62 by shape validation). A hash-based `payout_id` is a **column-compatible** identity if and only if its text encoding fits. Measured 2026-08-09 over `sha256`/`ripemd160` of one canonical descriptor:
+
+| Encoding | Length | Fits a 62-char identity column? |
+|---|---|---|
+| `sha256` **hex** | **64** | **NO** — the obvious first choice is the one that forces a migration |
+| `sha256` base58 | 44 | yes |
+| `ripemd160` hex | 40 | yes |
+| `ripemd160` base58 | 27 | yes |
+
+Both base58 forms are ASCII-alphanumeric and pass a non-empty / ≤62 / ASCII-graphic shape validator unchanged, and are deterministic across re-parse of the descriptor. **So a pool can adopt rotating identity without migrating its identity columns — but only if it does not hex-encode a sha256.** That is a two-character decision (`hex` vs `base58`) standing between "no schema migration" and "migrate every identity column in the schema." Spend the sentence to write it down.
+
+### 2.3 Intake acceptance grammar
+
+Accepted as `Rotating`: a **bare xpub/tpub** (preferred — §2.3a), or an **unhardened, single-path, wildcard-terminated** descriptor with exactly one wildcard and no private keys. Accepted as `Static`: a literal address.
 
 | Form | Verdict | Why |
 |---|---|---|
-| `wpkh(xpub…/0/*)`, `tr(xpub…/0/*)`, `pkh(…/*)` | **accept** | The target shape |
-| `wpkh(xpub…)` — no wildcard | **reject** | §3.1 — the load-bearing rejection |
-| `.../0h/*` or `.../0'/*` — hardened step | **reject** | Pool holds only public key material; cannot derive through a hardened step |
-| `<0;1>` multipath (BIP-389) | **reject** | The receive/change pair is meaningless for a coinbase, which is always "receive" |
-| any `xprv`/`tprv` | **reject, do not log the string** | Pool must never hold spending authority. Treat as a credential leak: reject, emit a redacted diagnostic, never write the value to logs or the DB |
-| `addr(bc1q…)` | **reject at this endpoint** | Static addresses are a valid pool feature but not *this* feature; a static miner must not silently get a "rotating" identity |
+| **bare `xpub…` / `tpub…`** | **accept → `Rotating`** (recommended) | §2.3a. The pool wraps it as `wpkh(<xpub>/0/*)` itself. Measured: parses, `has_wildcard() == true` |
+| `wpkh(xpub…/0/*)`, `tr(xpub…/0/*)`, `pkh(…/*)` | **accept → `Rotating`** | The explicit shape, kept as the escape hatch for a miner who needs a script type other than the pool-fixed default (§4.6). Not the recommended path |
+| `wpkh(xpub…)` — no wildcard | **reject** | §3.1 — the load-bearing rejection. Measured: parses fine and then returns **one** address across heights 900,000 / 900,001 / 900,002 / 1,000,000 |
+| `.../0h/*` or `.../0'/*` — hardened step | **reject** | Pool holds only public key material. **And it must be rejected at intake specifically because `at_derivation_index()` PANICS on it** — see §3.1 |
+| `<0;1>` multipath (BIP-389) | **reject** | The receive/change pair is meaningless for a coinbase, which is always "receive". Measured: `at_derivation_index()` returns `Err("multipath key cannot be a DerivedDescriptorKey")` |
+| any `xprv`/`tprv` | **reject, and do not propagate the parser's error text** | Pool must never hold spending authority — and a bare `xprv` parsed as a descriptor produces an error string that **contains the whole private key**. See §3.1.1 |
+| `ypub…` / `zpub…` (SLIP-132) | **reject with a specific error, or translate explicitly** | Measured: `Xpub::from_str` rejects both with `"unknown version magic bytes"`. They are 111 chars like an xpub and look valid to a miner, so a generic "invalid xpub" is a support ticket. Never pass through untranslated |
+| a literal address (`bc1q…`, `1…`, `3…`) | **accept → `Static`** *(amended — see below)* | Under §2.0 this is a well-typed identity, not a rejection. It is simply not a `Rotating` one |
+| `addr(bc1q…)` | **accept as `Static`, or reject as redundant** — operator's choice, but **never** as `Rotating` | *(amended — see below)* |
 | BIP-352 silent payment address | **reject — structurally impossible** | See §2.4 |
-| `sh(wpkh(…/*))`, `multi(…/*)` | **accept if the implementation can derive it**; reject otherwise | Fail closed rather than derive a script you cannot construct |
+| `sh(wpkh(…/*))`, `wsh(pkh(…/*))` | **accept if the implementation can derive it**; reject otherwise | Fail closed rather than derive a script you cannot construct. Measured: both parse with `has_wildcard() == true` |
+
+> **Amended in revision 6 — the `addr()` rejection is superseded, and this is the substantive change.** Revisions 1–5 said `addr(bc1q…)` must be *rejected at this endpoint*, with the reasoning that "a static miner must not silently get a rotating identity." That reasoning was sound and the mechanism was wrong: it defended a type distinction by **policing an input string**, because no type carried the distinction. Under §2.0 the distinction is in the type — `Static` and `Rotating` are different variants and no input can produce the wrong one by accident — so the endpoint-level rejection is defending something that is now structurally guaranteed.
+>
+> What survives, and it is the part that mattered: **an address-shaped intake must never construct `Rotating`.** That is now a total `match` on the parsed intake rather than a rejection rule, and it cannot be forgotten the way a validation branch can. The `addr()` wrapper itself is redundant under the sum type — it carries no information the variant doesn't — so accepting it as `Static` and rejecting it as unnecessary are equally defensible; what is not defensible is treating it as descriptor-shaped and letting it reach the rotating path.
+>
+> The corresponding change to §10.1 Phase 0 is below in §10.1: the plan to backfill existing miners as `addr(<address>)` **"static, do not derive" sentinels is withdrawn**. A sentinel is a value that means "do not do the thing," which is a comment enforced by a string. `kind = 'static'` in §2.1 says the same thing to the type system, and the `CHECK` constraint makes the contradictory state unwritable.
+
+### 2.3a Bare xpub is the recommended intake form
+
+The measured case for taking a bare `xpub` and letting the **pool** build `wpkh(<xpub>/0/*)`, rather than asking the miner for a descriptor.
+
+**It fits where a descriptor does not.** Measured 2026-08-09 against the real crates (lengths in characters; canonicalization adds exactly `#` + 8 checksum chars, confirmed on all five script types):
+
+| Intake form | Chars | Avalon (truncates at 63) | Whatsminer (127) |
+|---|---|---|---|
+| **bare xpub / tpub** | **111** | no | **fits — 16 chars spare for `.worker`** |
+| `tr(xpub/*)` + checksum | 126 | no | fits (1 char spare) |
+| `pkh(xpub/*)` + checksum | 127 | no | fits (0 spare) |
+| `wpkh(xpub/*)` + checksum | 128 | no | **no** |
+| `wpkh(xpub/0/*)` + checksum | 130 | no | **no** |
+| `wpkh([origin]xpub/0/*)` + checksum | 150 | no | **no** |
+
+Two things to read off it. **Avalon's 63 is unreachable by anything that carries an xpub at all** — 111 is the base58check floor for extended keys, so no amount of shortening helps and the previous revisions' "closed negative" on descriptor shortening extends to xpubs unchanged. But **Whatsminer's 127 is reachable by a bare xpub and not by the pool's natural `wpkh(...)` form**, with 16 characters left over — enough for a `.worker` suffix in the conventional `<identity>.<worker>` username grammar. That is the difference between "per-device V1 identity works on this firmware" and "it doesn't," and it is decided entirely by who assembles the descriptor.
+
+**It makes the origin-info hazard unrepresentable.** §2.2's hazard is that `wpkh([fp/84h/0h/0h]xpub/0/*)` and `wpkh(xpub/0/*)` derive one script and hash to two `payout_id`s, splitting a wallet across two ledger rows. A bare-xpub intake **has no syntax for origin information**, so the two spellings cannot both arrive. This is a stronger guarantee than normalization: normalization is a rule someone can get wrong in a later refactor, and an absent grammar production is not.
+
+**It makes the three validation assertions unreachable by construction.** §3.1 requires rejecting no-wildcard, hardened-step, and multipath descriptors. All three are properties of a *path the miner supplied*. If the miner supplies only a key and the pool supplies the path, the pool's own path is a constant it controls — the assertions still belong in the constructor as defence-in-depth, but no miner input can reach them.
+
+**It has zero collisions with any delimiter in play.** Measured: a base58 xpub contains none of `. / ( ) [ ] * # ' , < > ;` — 13 delimiters spanning the SV1 `<addr>.<worker>` split, the `sri/solo/<addr>` payout-mode grammar, and descriptor syntax itself. Both xpub and tpub are strictly ASCII-alphanumeric. §3.2.1's grammar-collision problem, which is the whole reason that section exists, **does not arise for a bare-xpub intake**: there is nothing to collide.
+
+**The costs, stated.** The miner cannot choose their own script type, and cannot express a non-default derivation path. **Both are now deliberate — §4.6 fixes the path and script type pool-side, and gives the three correctness reasons that turn this cost into a feature.** Both are why full-descriptor intake stays supported rather than being replaced. And one input hazard gets *worse*, not better: **`xpub` and `xprv` are both 111 characters and share only two leading characters** (measured), so a miner pasting the wrong one produces a string of exactly the right length. §3.1.1 is the mitigation and it is not optional.
 
 ### 2.4 BIP-352 silent payments cannot work here
 
@@ -209,28 +349,56 @@ Retention beyond that is not required for payout correctness. `miner_identity` r
 
 ## 3. Intake API
 
-### 3.1 The load-bearing validation: reject descriptors without a wildcard
+### 3.1 The load-bearing validation: THREE assertions, not one
 
-**This is the single most important requirement in the spec.**
+**This is the single most important requirement in the spec**, and revision 6 corrects its content: `has_wildcard()` alone is **measured-insufficient**, and one of the cases it misses **panics** rather than returning an error.
 
-A descriptor without a wildcard — `wpkh(<xpub>)`, `tr(<xpub>)` — **parses successfully and then returns the same address forever.** Nothing errors. The rotation code runs on every block, derives, writes bytes identical to what was already there, and the operator's only signal is noticing repeated addresses on chain weeks later.
+#### 3.1.a Why the wildcard check is load-bearing
+
+A descriptor without a wildcard — `wpkh(<xpub>)`, `tr(<xpub>)` — **parses successfully and then returns the same address forever.** Nothing errors. The rotation code runs on every block, derives, writes bytes identical to what was already there, and the operator's only signal is noticing repeated addresses on chain weeks later. Measured 2026-08-09: `wpkh(<xpub>)` derived at heights 900,000 / 900,001 / 900,002 / 1,000,000 yields **one distinct address**.
 
 Both known rotation implementations independently guard this with the same API — miniscript's `has_wildcard()`, checked at construction and hard-failing. Two codebases converging on the identical call is strong evidence it is the right place to fail. **A rotation implementation without this check is broken by default**, because the broken configuration is also the most natural thing an operator or miner would write.
 
 At per-miner granularity the exposure multiplies: there are as many opportunities to miss it as there are miners, and each silently-static miner looks exactly like a working one.
 
+#### 3.1.b `has_wildcard()` is not sufficient, and the gap is a panic
+
+Measured against miniscript 13.1.0. All three inputs below **parse**, and all three report `has_wildcard() == true`:
+
+| Input | `has_wildcard()` | no hardened step | `is_multipath()` | `at_derivation_index(900_000)` |
+|---|---|---|---|---|
+| `wpkh(xpub/0/*)` | true | true | false | `Ok` |
+| `wpkh(xpub/0h/*)` | true | **false** | false | ***PANIC*** |
+| `wpkh(xpub/<0;1>/*)` | true | true | **true** | `Err("multipath key cannot be a DerivedDescriptorKey")` |
+
+The panic is at `miniscript-13.1.0/src/descriptor/key.rs:868`, with the message *"The key should not contain any wildcards at this point: HardenedStep"*. It is **not** an `Err` a `?` can carry — a hardened-step descriptor that reaches derivation **unwinds the calling task**. On a coinbase-build path that is not a rejected miner; it is a build that does not complete.
+
+So the constructor must assert **all three** properties, and this is a hard requirement, not a style preference:
+
 ```rust
 fn validate_descriptor(s: &str) -> Result<Descriptor<DescriptorPublicKey>, IntakeError> {
+    // Bare-string fields: see §3.1.1 — Xpub::from_str FIRST, and never
+    // propagate the miniscript error text for a bare-string intake.
     let d: Descriptor<DescriptorPublicKey> = s.parse()
-        .map_err(|e| IntakeError::Unparseable(e))?;
-    if d.to_string().contains("prv") { return Err(IntakeError::PrivateKeyOffered) } // redacted diagnostic
-    if !d.has_wildcard()             { return Err(IntakeError::NoWildcard) }        // §3.1 — hard fail
-    if d.is_multipath()              { return Err(IntakeError::MultipathRejected) }
-    if has_hardened_steps(&d)        { return Err(IntakeError::HardenedStepRejected) }
-    d.sanity_check().map_err(IntakeError::Insane)?;
+        .map_err(|_| IntakeError::Unparseable)?;   // NOTE: error text DROPPED
+
+    // The THREE assertions. has_wildcard() alone is not enough (measured).
+    if !d.has_wildcard() {
+        return Err(IntakeError::NoWildcard);        // §3.1.a — silently static
+    }
+    if !d.for_each_key(|k| !k.has_hardened_step()) {
+        return Err(IntakeError::HardenedStepRejected); // PANICS at derive if it gets through
+    }
+    if d.is_multipath() {
+        return Err(IntakeError::MultipathRejected);    // Err at derive, but reject early anyway
+    }
+
+    d.sanity_check().map_err(|_| IntakeError::Insane)?;
+
     // Probe at the CURRENT TIP HEIGHT and far beyond it — not at 0. Under height
     // indexing, index 0 is never used, and a descriptor that derives at 0 but not
     // at ~900_000 would pass a naive check and then fail at block-found.
+    // Safe to call ONLY because the hardened-step assertion is above it.
     let tip = current_tip_height();
     for probe in [tip, tip + 210_000, (1u32 << 31) - 1] {
         d.at_derivation_index(probe)?.script_pubkey();
@@ -238,6 +406,40 @@ fn validate_descriptor(s: &str) -> Result<Descriptor<DescriptorPublicKey>, Intak
     Ok(d)
 }
 ```
+
+Two ordering constraints in that function are load-bearing and easy to reorder by accident:
+
+- **The hardened-step assertion must precede the probe loop.** The probe loop is the thing that panics. Putting the probes first — which reads as "just try it and see" — converts a rejectable input into an unwind.
+- **The three assertions replace, and do not supplement, "probe and catch."** Catching the panic is not an equivalent: `catch_unwind` on a coinbase-build path is a much larger claim about task state than a validation branch, and a `panic = "abort"` profile removes the option entirely.
+
+Note what §2.3a buys here: with a **bare-xpub** intake the pool supplies the path, so no miner input can produce a hardened step, a multipath spec, or a missing wildcard. The assertions stay in the constructor — they are cheap and they document the invariant — but the reachable surface is empty by construction. That is the difference between a validated input and an unrepresentable one.
+
+Also measured: derivation at the unhardened ceiling `2^31 - 1` = 2,147,483,647 succeeds; at `2^31` it errors with *"key with hardened derivation steps cannot be a DerivedDescriptorKey"*. The keyspace claim in the next paragraph is therefore checked, not assumed.
+
+### 3.1.1 The credential-leak rule: parse with `Xpub::from_str` first
+
+**A bare `xprv` pasted into an identity field produces a parse error whose text embeds the entire private key.** Measured 2026-08-09 against miniscript 13.1.0:
+
+| What was parsed | Error length | Does the error text contain the key? |
+|---|---|---|
+| bare `xprv…` as a descriptor | **131 chars** | ***YES*** — `unrecognized name 'xprv9yszF…'`, the full 111-char key |
+| `wpkh(xprv…/0/*)` | 52 chars | no |
+| `tr(xprv…/*)` | 52 chars | no |
+| `wpkh(xprv…)` | 52 chars | no |
+| `Xpub::from_str(xprv…)` | — | **no** — `"unknown version magic bytes: [4, 136, 173, 228]"` |
+| `DescriptorPublicKey::from_str(xprv…)` | — | **no** |
+
+Read the shape of that carefully, because it is the opposite of the intuitive one. The **wrapped** forms — the ones that look like a mistake a careful miner would make — are safe. The **bare** form is the leaking one, and bare is exactly what §2.3a recommends accepting. The mechanism is that miniscript's bare-key path reports the unrecognized token *by echoing it*, and a bare key is one token.
+
+Compounding it: **`xpub` and `xprv` are both 111 characters and share only two leading characters** (measured). Nothing about the length or the general look of the string tells a miner they pasted the wrong one, and nothing about it tells a log-reviewer either.
+
+Three requirements follow:
+
+1. **Parse a bare-string intake with `Xpub::from_str` first.** It rejects `xprv` with a version-magic error that contains no key material, and it rejects `ypub`/`zpub` the same way. Only after it succeeds should the string be composed into a descriptor.
+2. **Never propagate miniscript's error text for a bare-string field** — not into a log, not into an SV2 error message, not into a database column, not into a metric label. Map it to a unit error kind at the boundary (`IntakeError::Unparseable` above carries no payload for exactly this reason). Error text for *wrapped* descriptor intake is safe by measurement, but "safe for one of two intake paths" is not a rule anyone maintains correctly; drop it for both.
+3. **Detect the credential case explicitly and say so.** A miner who pastes an `xprv` needs to be told they pasted a private key — that is the one diagnostic worth emitting, and it can be emitted from the `Xpub::from_str` failure without ever having the string in a formatted message. Treat it as a security event: the key should be presumed compromised and the miner told to move funds.
+
+The previous revisions' rule here was `if d.to_string().contains("prv")` on the *parsed* descriptor. That is strictly worse: it runs **after** the parse that leaks, and it inspects a re-serialized string rather than the input.
 
 The probe range matters more here than in the counter design, and differently. Under a counter, indices start at 0 and creep upward, so probing 0 is representative. Under height indexing **index 0 is never used** — the first address a miner is ever paid at is ~900,000. Probing the tip, the tip plus roughly four years of blocks, and the unhardened ceiling `2^31-1` proves the descriptor works in the range it will actually be used in. Accepting a descriptor and *then* discovering at block-found that it cannot be derived means the pool has already accepted work it cannot pay for.
 
@@ -266,6 +468,8 @@ match (parts.next(), parts.next(), parts.next(), parts.next()) {
 ```
 
 **A wildcard descriptor is full of `/`** — `wpkh([d34db33f/84h/0h/0h]xpub…/0/*)` contains six. The two grammars share a delimiter, which is the kind of thing that works in testing and breaks on a real descriptor.
+
+> **A bare-xpub intake (§2.3a) does not have this problem at all.** Measured 2026-08-09: a base58 xpub contains **none** of `. / ( ) [ ] * # ' , < > ;` and is strictly ASCII-alphanumeric. It is safe in the `sri/solo/<addr>` `/`-grammar and in the `<address>.<worker>` `.`-grammar simultaneously, with no precedence rule required and no ordering to get wrong. Everything in the rest of this section is the cost of accepting descriptor **text** on a channel whose identity field already has a grammar. If a pool takes only bare xpubs, §3.2.1 collapses to nothing — which is one of the strongest practical arguments in §2.3a.
 
 What saves it is ordering, and the existing code has the right *shape* but not the right *content*: `PayoutMode::try_from` tries `script_from_address(addr)` **first** and only falls through to `split('/')` if that fails — but `script_from_address` wraps its input as `addr(<input>)` (`stratum-apps/src/payout.rs:429-436`), which cannot parse a `wpkh(...)`, so today a descriptor falls through the `/`-split to `NoPayoutMode` and then to `FullDonation` (§3.2.3). The precedence slot exists; the descriptor arm that belongs in it does not. So the rule for this spec is explicit:
 
@@ -314,14 +518,18 @@ Read against the clone at HEAD `e2930150`, three reasons, each verified:
 
 | Constraint | Value | Binding on the payout path? |
 |---|---|---|
-| Typical wildcard descriptor | ~150 bytes | — |
-| Shortest wildcard form with checksum (`tr(xpub…/*)`) | 126 | No shorter form exists; a raw-compressed-pubkey wildcard is rejected by miniscript outright |
-| SV2 `user_identity` (`Str0255`) | **255** | **Yes — this is the binding limit.** `mining_sv2-11.0.0/src/open_channel.rs:131` |
+| **bare xpub / tpub** | **111** (measured) | The shortest intake that carries an extended key at all — base58check leaves no slack |
+| `tr(xpub…/*)` + checksum | **126** (measured) | Shortest *descriptor* form; a raw-compressed-pubkey wildcard is rejected by miniscript outright |
+| `wpkh(xpub…/0/*)` + checksum | **130** (measured) | The natural pool form, and the one that overflows Whatsminer |
+| `wpkh([origin]xpub…/0/*)` + checksum | **150** (measured) | The "typical" figure earlier revisions quoted |
+| Descriptor canonicalization overhead | **exactly +9** (`#` + 8), measured on all 5 script types | Add it before comparing against any cap |
+| SV2 `user_identity` (`Str0255`) | **255** | **Yes — this is the binding limit at the protocol layer.** `mining_sv2-11.0.0/src/open_channel.rs:131` |
 | Translator `tlv_compatible_username` | 32 | **No.** Normative SV2 limit for the 0x0002 TLV only, on a path the pool discards. Do **not** raise it — see below |
-| **Avalon firmware** | truncates at **63** | **Yes** under passthrough — too short for any wildcard descriptor |
-| **Whatsminer firmware** | overflow past 127 ("may damage your miner") | **Yes** under passthrough — too short, and dangerous |
-| Firmware percent-encoding | mangles `()[]/*#` | **Yes** — descriptors are full of these |
-| ckpool `username[128]`, splits on `._` | 127 usable | Not on this path |
+| **Avalon firmware** | truncates at **63** | **Unreachable by anything carrying an xpub.** 111 is the floor, so this is a hard exclusion, not a budget |
+| **Whatsminer firmware** | overflow past 127 ("may damage your miner") | **Yes, and this is the one the intake form decides.** bare xpub (111) **fits with 16 spare**; `wpkh(…)#cksum` (130) does **not** |
+| Firmware percent-encoding | mangles `()[]/*#` | **Yes for descriptors; not for a bare xpub**, which contains none of them (measured, §2.3a) |
+| A 62-char identity **column** (public-pool `varchar(62)`, and similar) | 62 | **Not for the intake** — but see §2.2 for `payout_id` encodings and §4.3.2 for *derived address* widths, both of which do land on it |
+| ckpool `username[128]`, splits on `._` | 127 usable | Not on this path — but note a bare xpub at 111 fits it and a descriptor does not |
 
 **The 32-byte cap must be left alone, and the spec's previous prescription to raise it is withdrawn.** Three reasons:
 
@@ -387,7 +595,15 @@ The failure mode is the dangerous kind: each channel's **first** job at open IS 
 
 Two more pool-side defects on the descriptor path:
 
-- **A valid, untruncated descriptor is paid 100% to the pool today.** `PayoutMode::try_from` (`stratum-apps/src/payout.rs:229-284`) has no descriptor arm: `script_from_address` wraps its input as `addr(<descriptor>)` (`:429-436`), which cannot parse a `wpkh(...)`, and the `/`-split then yields first segment `wpkh([<fingerprint>` rather than `sri`, hitting `_ => Err(NoPayoutMode)` at `:283`. The pool maps that to `FullDonation` (`mining_message_handler.rs:145`, `:391`), which emits one output for the entire value to the pool script (`payout.rs:99-104`), persists per-connection, and re-applies on every template. No error is returned and the arm logs nothing. **This is a wrong-payment bug, not a missing feature**, and it is mode-independent. The descriptor machinery already works — `CoinbaseRewardScript::from_descriptor` accepts wildcards directly at `stratum-apps/src/config_helpers/coinbase_output/mod.rs:45-61` with `has_wildcard()` at `:143` — it is simply never called on `user_identity`.
+- **A valid, untruncated descriptor is paid 100% to the pool — in the `sv2-apps` clone read in §12, and there specifically.** `PayoutMode::try_from` (`stratum-apps/src/payout.rs:229-284`) has no descriptor arm: `script_from_address` wraps its input as `addr(<descriptor>)` (`:429-436`), which cannot parse a `wpkh(...)`, and the `/`-split then yields first segment `wpkh([<fingerprint>` rather than `sri`, hitting `_ => Err(NoPayoutMode)` at `:283`. The pool maps that to `FullDonation` (`mining_message_handler.rs:145`, `:391`), which emits one output for the entire value to the pool script (`payout.rs:99-104`), persists per-connection, and re-applies on every template. No error is returned and the arm logs nothing. **This is a wrong-payment bug, not a missing feature**, and it is mode-independent. The descriptor machinery already works — `CoinbaseRewardScript::from_descriptor` accepts wildcards directly at `stratum-apps/src/config_helpers/coinbase_output/mod.rs:45-61` with `has_wildcard()` at `:143` — it is simply never called on `user_identity`.
+
+  > **Attribution corrected in revision 6, and the correction matters for anyone reading this spec against a different pool.** `PayoutMode`, `NoPayoutMode` and `FullDonation` are **SRI / `sv2-apps` types**. Revisions 5 and earlier stated the defect in a way that reads as a property of "the pool" generally; it is a property of *that implementation's choice of default for an unresolvable payout identity*. Grepped 2026-08-09 against an unrelated production pool codebase (Blitzpool, `feat/xpub-identity` at `f070414`): `NoPayoutMode` and `FullDonation` appear **nowhere**, and its unresolvable-payout answer is a `ResolvedPayouts::none()` that causes the pool to **serve no job at all** — the miner keeps hashing whatever job it holds, and nobody is paid wrongly.
+  >
+  > The generalizable requirement is therefore about the *default*, not about the type names:
+  >
+  > **An identity the pool cannot resolve to a payout script must never fall back to a payout that goes somewhere else.** The two acceptable answers are *reject the channel* and *serve no job*. "Pay it to the pool" is a wrong-payment default wearing the costume of a fallback, and it is silent by construction because the miner is still receiving work.
+  >
+  > Read as a design rule that is what §5.2's failure posture already says. Read as a bug report it applies to `sv2-apps` and must be fixed there before any descriptor can be delivered to that pool (§10.1 Phase 1) — but a pool whose no-payout path already withholds the job does not have this defect and does not need that phase.
 - **`coinbase_outputs()` maxes at two outputs.** `payout.rs:59-105` is exhaustive over `PayoutMode`: Solo/LegacySolo → one output for the full value, Donate → two, FullDonation → one. There is no variant and no loop over miners. `grep -i pplns` across the repo returns zero hits. So §4's N-output design has **no substrate in this clone** and rests on the [[../wiki/concepts/sv2-share-accounting-ext|share-accounting extension]] articles alone.
 
 The required pool changes, in dependency order. **Items 1–4 are prerequisites for any multi-channel connection to pay correctly — descriptor or not.** This is a proposed refactor, not existing behaviour; the anchors are verified.
@@ -407,9 +623,17 @@ There is no regression test for any of this. Every case in `integration-tests/te
 
 ### 3.2.4 The firmware tradeoff
 
-**Firmware ceilings apply on the passthrough path**, and this is the honest cost of miner-set versus operator-set identity. Under passthrough the descriptor is typed into the rig, so field widths come back: Avalon truncates at 63, Whatsminer overflows past 127, and percent-encoding mangles `()[]/*#`. The shortest wildcard form with a checksum is `tr(xpub…/*)` at **126 bytes** — measured against `miniscript` 13.0.0, the version pinned in `stratum-apps/Cargo.lock` — so **no descriptor form gets under 63**, and the previous revision's hope that dropping the origin prefix "helps" is arithmetically dead.
+**Firmware ceilings apply on the passthrough path**, and this is the honest cost of miner-set versus operator-set identity. Under passthrough the identity is typed into the rig, so field widths come back: Avalon truncates at 63, Whatsminer overflows past 127, and percent-encoding mangles `()[]/*#`.
 
-State the tradeoff to operators rather than letting them discover it: **operator-set (config) identity works on any V1 rig today and pays one descriptor for the whole farm; miner-set (passthrough) identity gives per-device payout separation but requires firmware that can hold a ~150-byte username without truncating or percent-encoding it.** Support both — passthrough when the authorized username parses as a descriptor, configured value otherwise — and the operator picks per deployment. One caveat on the config path: a descriptor in the Translator's TOML `Upstream.user_identity` is hard-failed at startup only when `verify_payout = true` (`config.rs:143-167` → `lib/mod.rs:78-92`), which defaults false and is false in all eight shipped examples. Without change #2 above, the config path with a descriptor donates the whole farm's blocks to the pool.
+**Revision 6 splits this row in two, because the intake form changes the answer.** Measured against `bitcoin 0.32.102` + `miniscript 13.1.0`:
+
+- **No form reaches Avalon's 63.** A bare xpub is 111 and that is the base58check floor for an extended key; the shortest descriptor is `tr(xpub…/*)#cksum` at 126. Dropping the origin prefix does not help, and neither does any other shortening. **Closed negative, and it now covers xpubs as well as descriptors.**
+- **Whatsminer's 127 is the boundary the intake form decides.** A bare xpub is **111 — it fits, with 16 characters spare for a `.worker` suffix.** The pool's natural `wpkh(xpub/0/*)#cksum` is **130 — it does not.** So per-device V1 identity on Whatsminer firmware is *possible* under bare-xpub intake and *impossible* under descriptor intake. Previous revisions concluded "only a bare `tr()` gets under 127," which was correct about descriptors and missed the option of not sending a descriptor at all.
+- **A bare xpub is immune to percent-encoding** — it contains none of `()[]/*#` (measured).
+
+State the tradeoff to operators rather than letting them discover it: **operator-set (config) identity works on any V1 rig today and pays one identity for the whole farm; miner-set (passthrough) identity gives per-device payout separation but requires firmware that can hold the identity string.** Under bare-xpub intake that requirement is 111 characters plus the worker suffix, which Whatsminer meets and Avalon does not; under descriptor intake it is 126–150, which neither meets. Support both intake forms and both identity sources — passthrough when the authorized username parses as an xpub or a descriptor, configured value otherwise — and the operator picks per deployment.
+
+> **One consequence of pool-assembled descriptors that belongs here rather than in §2.3a**: if the pool chooses the script wrapper, the pool chooses the miner's **output weight**. P2WPKH and P2TR are not the same size in a coinbase — a weight-budgeted payout scheme sees a different number of payable miners depending on which wrapper the pool picked. A pool defaulting to `tr(...)` for aesthetics silently shrinks its own output budget relative to `wpkh(...)`. Pick the default deliberately and record why. One caveat on the config path: a descriptor in the Translator's TOML `Upstream.user_identity` is hard-failed at startup only when `verify_payout = true` (`config.rs:143-167` → `lib/mod.rs:78-92`), which defaults false and is false in all eight shipped examples. Without change #2 above, the config path with a descriptor donates the whole farm's blocks to the pool.
 
 > **The worker-suffix collision.** The Translator appends `.miner{N}` to the configured identity (`sv1_server/mod.rs:980-984`), and `sv2-apps` parses `user_identity` by splitting on `.` — `address_part_from_user_identity()` does `split_once('.').map(|(address, _)| address)` (`stratum-apps/src/payout.rs:438-443`). The code **already skips** the suffix for `sri/`-prefixed identities (issue #369). **Descriptor identities need the same exemption at both injection sites** — `sv1_server/mod.rs:980` and `sv2/channel_manager/mod.rs:507`. A descriptor's checksum is delimited by `#` not `.`, so a suffix does in fact strip cleanly and the descriptor is recovered byte-for-byte — verified — but relying on that means relying on the `.` split running before descriptor parsing. Take the exemption. **Test it explicitly** (§8.1).
 
@@ -418,12 +642,16 @@ State the tradeoff to operators rather than letting them discover it: **operator
 | Condition | SV2 response | Operator signal |
 |---|---|---|
 | No wildcard | `OpenMiningChannel.Error{ code: "invalid-descriptor-no-wildcard" }` | **WARN** — most likely miner mistake |
-| Unparseable | `…Error{ code: "invalid-descriptor" }` | INFO |
-| Private key offered | `…Error{ code: "invalid-descriptor" }` — do not echo the string | **ERROR**, redacted |
-| Hardened / multipath | `…Error{ code: "invalid-descriptor-unsupported-form" }` | INFO |
+| Unparseable | `…Error{ code: "invalid-descriptor" }` | INFO — **carry no parser text** (§3.1.1) |
+| **Private key offered (`xprv`/`tprv`)** | `…Error{ code: "private-key-offered" }` — **never echo the string, and never format the parser's error** | **ERROR**, redacted. Treat as a security event: the key must be presumed compromised and the miner told to move funds (§3.1.1) |
+| **`ypub` / `zpub` (SLIP-132)** | `…Error{ code: "slip132-not-supported" }` | INFO — a distinct code, not "invalid xpub". Measured: `Xpub::from_str` rejects with *"unknown version magic bytes"*, and the string is 111 chars and looks right to the miner |
+| **Hardened step** | `…Error{ code: "invalid-descriptor-unsupported-form" }` | INFO — **and this rejection is mandatory, not cosmetic**: `at_derivation_index()` **panics** on it (§3.1.b) |
+| Multipath | `…Error{ code: "invalid-descriptor-unsupported-form" }` | INFO |
 | Descriptor un-derivable at height | `…Error{ code: "invalid-descriptor" }` | **ERROR** — should be impossible after §3.1 probes |
 
 Rejection is at **channel open**, before any share is accepted. Never accept work from a miner whose payout cannot be constructed.
+
+**And never substitute a payout the miner did not ask for.** The two acceptable answers to an unresolvable identity are *reject the channel* and *serve no job*; paying it anywhere else — to the pool, to a fallback address, to the previous identity on the connection — is a wrong payment, not a degraded mode. See §3.2.3's re-attributed `FullDonation` note for what that looks like when it ships.
 
 ## 4. Payout path — height as the derivation index
 
@@ -516,6 +744,26 @@ So: `merge_by_payout_id()` is **mandatory**, the `PRIMARY KEY (block_height, pay
 
 **The requirement is per `payout_id`, and deliberately not per operator.** The pool has no basis for asserting that two descriptors belong to the same person and no business inferring it — a distinct `payout_id` is a distinct user (§2.5), full stop. Merging by anything coarser than `payout_id` would require exactly the identity-linking this design refuses to perform.
 
+### 4.3.2 Derived-address widths land on the identity column, and one of them overflows
+
+A separate width question from §3.2.1c's, and it is the one that bites at *payout* time rather than intake time. Any pool that stores derived payout addresses — in a receipt table, an audit row, a per-block payout list — is storing a string it did not choose the width of. Measured 2026-08-09 at derivation index 900,000, against a **62-character** identity column (public-pool's `varchar(62)`; also the shape cap in the Blitzpool codebase referenced in §12):
+
+| Script type | mainnet | testnet | regtest |
+|---|---|---|---|
+| P2WPKH | 42 ✓ | 42 ✓ | 44 ✓ |
+| **P2TR** | **62 ✓ — zero bytes spare** | **62 ✓ — zero bytes spare** | **64 ✗ OVERFLOWS** |
+| P2PKH | 34 ✓ | 34 ✓ | 34 ✓ |
+| P2SH-WPKH | 34 ✓ | 35 ✓ | 35 ✓ |
+
+Two conclusions, and the second is the useful one.
+
+**P2TR on mainnet fits with exactly zero characters spare.** A 62-char column was almost certainly sized *for* a mainnet P2TR address, so this is not a coincidence — but it means the column has no headroom whatsoever and any prefix change, any wrapper, any `:` disambiguator appended to a stored address breaks it.
+
+**P2TR on regtest is 64 characters and does not fit** — `bcrt1p…` carries a 4-character HRP where mainnet carries 2. This is a **pre-existing latent break for any P2TR payout in regtest**, entirely independent of rotation: it is reachable today by a static P2TR miner on a regtest harness, and rotation neither causes it nor is required to trigger it. Two implications worth separating:
+
+- A pool with a local regtest test suite that has never used a P2TR address has an untested overflow, not a working case. Rotation makes it *more* likely to be hit, because a `tr(xpub/*)` intake produces P2TR addresses for every block rather than only when a miner chooses one.
+- Because the break predates the feature, it must not be fixed *inside* it. Widening a column as part of a rotation PR buries a standalone bug in a feature diff, which is how a fix becomes invisible to the person auditing either one.
+
 ### 4.4 Dust and the accrual trap
 
 Sub-dust amounts are **dropped, not accrued.** This is a deliberate and costly choice, and it is the regulatory hinge of the whole design.
@@ -534,18 +782,49 @@ If the paid-miner count approaches the ceiling, the levers are a higher dust flo
 
 **The concrete mechanism at the sv2-apps layer is `coinbase_output_constraints`, and it is sized wrong for N outputs.** It is sent to the Template Provider **once at startup**, budgeted as one configured output plus `OFFSET_ADDITIONAL_SIZE = 43` and `OFFSET_MAX_SIGOPS = 4` (`stratum-apps/src/coinbase_output_constraints.rs:18`, `:27`) — i.e. sized for a 1→1 script *substitution*, not for a growing output set. It must be recomputed and re-sent whenever the output **set size** changes (§3.2.3 item 6). The arithmetic suggests this binds much earlier than 380–530: a p2wpkh-configured pool gets 31 + 43 = 74 bytes of budget, while even two p2tr outputs need 2 × 43 = 86. The Template Provider's enforcement path was not traced, so treat that as arithmetic rather than a measurement — but if it does reject, item 6 is a blocker and not an optimization.
 
+### 4.6 The derivation path is pool-fixed, not miner-selectable
+
+**Decision (2026-08-09): the pool publishes one derivation path and one script type, and every `Rotating` identity uses it.** With a bare-xpub intake (§2.3a) the pool wraps the key itself, so this is the natural reading of that section rather than an addition to it — but it is a separate decision, it is money-visible, and every prior revision left it open. Recommended concrete choice: **`wpkh(<xpub>/0/*)` — BIP-84, P2WPKH, external chain**, so the miner's payout at height `H` is `m/84'/0'/0'/0/H` of the xpub they supplied.
+
+The motivating reason is that it is **conveyable**. A miner needs one sentence to know where their money goes, and can verify a payout with any wallet that imports a descriptor, with no pool-specific tooling and no support ticket. A per-miner path is not a feature to that miner; it is a thing they must record correctly or lose. But three correctness consequences follow, and they are why this is in §4 rather than in the UX section.
+
+**It makes the coinbase weight budget a constant.** Per-output weight depends on script type — measured in a production implementation as P2WPKH 124 WU, P2SH 128, P2PKH 136, P2WSH 172, P2TR 172. A scheme whose output count is bounded by a weight budget (§4.5) must compute that bound from a script type it knows. If miners chose script types, the bound would depend on the *mix* of types among currently-paid miners, which changes block to block. That is the difference between a constant the pool asserts once at startup and a quantity that must be recomputed — and under a ledger-free payout model, an output folded away for want of budget is a miner's whole share, with nothing that remembers it was owed. §12's host codebase makes this concrete: its group-join ceiling is a *constructor argument* on the service precisely so there is no way to wire the service without it.
+
+**It closes the §2.2 collision class permanently rather than by convention.** A pool-fixed path means the descriptor string is a pure function of the xpub, so one key yields exactly one canonical descriptor and therefore exactly one `payout_id`. Miner-selectable paths reintroduce the hazard through a different door: the same xpub at `/0/*` and at `/1/*` is two identities that a miner will reasonably believe is one, and the ledger will hold two balances for them.
+
+**It turns §3.1's three assertions into invariants.** No-wildcard, hardened-step and multipath are all properties of a supplied path. When the pool supplies the path, all three are statements about a pool constant — so they belong in a unit test over that constant, and they remain in the constructor only as defence against a future refactor. Keep them: the hardened-step case **panics** rather than erroring (§3.1), and a constant is exactly the kind of thing someone edits without re-reading the function that consumes it.
+
+**Why P2WPKH rather than P2TR**, given P2TR is the modern default: §4.3.2 measured a regtest P2TR address at **64 characters against a 62-character identity cap**, and a mainnet one at exactly 62 with zero spare. P2WPKH is 42–44 everywhere, and 124 WU against P2TR's 172 buys ~39% more outputs from the same weight budget. A pool that wants P2TR should widen its identity columns *first*, as a standalone change (§4.3.2's second bullet), and should know it is choosing the tighter weight budget deliberately. This is a recommendation, not a requirement of the design — the requirement is that the choice be **fixed and published**.
+
+**The costs, stated plainly.** A miner who wants Taproot payouts cannot have them, and a miner whose wallet exports only a `zpub` (SLIP-132, signalling P2WPKH-in-P2SH) has a script-type expectation the pool will not honour — which is what makes OQ8 a real UX question rather than a formality. Full-descriptor intake (§2.3) stays supported for exactly this reason: it is the escape hatch for a miner who needs a different script type, and it remains the *non*-recommended path. And a fixed path is fixed: changing it later re-derives every rotating miner's address, so it must live in **one named constant** whose blast radius is greppable, not inlined at each construction site.
+
+**What this does not fix.** Avalon's 63-character truncation is untouched — 111 is the base58check floor for any extended key (§2.3a), and no path choice shortens it. Pool-fixing makes the *rest* of the intake trivial, which sharpens rather than answers OQ4: the honest statement to operators is still that per-device V1 identity is firmware-dependent, and that the Avalon class needs an operator-set farm-wide identity or a short-handle indirection this spec does not design.
+
 ## 5. Derivation — stateless by construction
 
 This section replaces what was, in the counter design, the largest and most dangerous part of the spec. It is now short, and that is the point.
 
 ```rust
 /// Derive a miner's payout script for the block being mined.
-/// Pure function of (descriptor, height). No state, no I/O, no failure
-/// mode other than a descriptor that should never have been accepted.
-fn payout_script(desc: &Descriptor<DescriptorPublicKey>, height: u32)
-    -> Result<ScriptBuf, DeriveError>
-{
-    Ok(desc.at_derivation_index(height)?.script_pubkey())
+/// Total over the identity kind (§2.0) — a `match`, so a third identity
+/// variant added later fails to compile rather than falling through.
+/// `Static` ignores `height` and that is the point: the type states it.
+impl PayoutIdentity {
+    pub fn script_at(&self, height: u32, net: Network)
+        -> Result<ScriptBuf, IdentityError>
+    {
+        match self {
+            // No height. Not "height is ignored here by convention" —
+            // there is no derivation to index.
+            PayoutIdentity::Static { address } => address_to_script(net, address),
+
+            // Pure function of (descriptor, height). Safe to call only
+            // because §3.1's three assertions ran at construction: a
+            // hardened step reaching this line PANICS (measured).
+            PayoutIdentity::Rotating { descriptor, .. } =>
+                Ok(descriptor.at_derivation_index(height)?.script_pubkey()),
+        }
+    }
 }
 ```
 
@@ -556,6 +835,10 @@ fn payout_script(desc: &Descriptor<DescriptorPublicKey>, height: u32)
 - No transactional store, no `Durability::Immediate`, no write-temp-then-rename.
 - No fatal-on-corrupt-startup path, because there is no index file to corrupt.
 - No "abort the payout if the write fails," because there is no write.
+
+**Also absent, and this is the §2.0 dividend: no `if descriptor.is_some()`.** The branch that decides whether a miner rotates is the `match` above, which the compiler checks for totality. There is no reachable state in which a rotating miner is paid statically or a static miner is paid at a derived script, because neither is expressible.
+
+**Both purity claims are measured, not asserted** (2026-08-09, miniscript 13.1.0): 1,000 derivations at height 900,123 produce byte-identical scripts (idempotence), and 5,000 consecutive heights produce 5,000 distinct scripts (no collision). Those are the two properties every downstream claim in §4.1, §6 and §7.1 rests on.
 
 ### 5.1 What the counter design got wrong, kept as a warning
 
@@ -638,13 +921,20 @@ That is why §4.1 claims portability: the per-template derivation storm that [[.
 
 ### 7.2 Budget
 
-| Operation | Frequency | Target |
-|---|---|---|
-| Descriptor validation + 3 probes (§3.1) | Per channel open | < 5 ms |
-| `payout_script()` — pure derivation, no I/O | Per paid miner per block | < 1 ms |
-| Full payout resolution, 500 miners | Per block found | < 500 ms |
+| Operation | Frequency | Target | **Measured 2026-08-09** |
+|---|---|---|---|
+| Descriptor validation + 3 probes (§3.1) | Per channel open | < 5 ms | ~0.1 ms implied (3 derivations + one parse) — two orders under target |
+| `script_at()` — pure derivation, no I/O | Per paid miner per block | < 1 ms | **~32–34 µs** from a pre-parsed `Descriptor` |
+| Same, with a re-parse or `format!`+parse in flight | — | — | **~45–48 µs**, a steady **1.4×** — so the parse is ~13 µs and **secp256k1 dominates** |
+| Full payout resolution, 500 miners | Per block found | < 500 ms | **~16–17 ms** at one height, and cacheable per height |
 
 No durability commit appears in this table. That absence is the performance story.
+
+The ranges are deliberate: two runs of the same harness on the same machine gave 32.4 µs and 34.2 µs per derivation, so a single figure to three digits would be false precision. **The 1.4× ratio reproduced exactly across both runs**, which is the number the design conclusion actually rests on.
+
+**Two things the measurement settles.** First, the 500-miner row has ~30× headroom, so derivation cost is not a design constraint at PPLNS scale — a claim previous revisions could only assert. Second, and more usefully, **the sv2-apps re-parse anti-pattern costs 1.4×, not the order of magnitude §7.1 implies.** The parse is ~13 µs against ~33 µs of elliptic-curve work, so caching the parsed `Descriptor` is worth doing and is *not* the thing standing between this design and viability. If a per-template derivation storm ever becomes a real cost, the lever is a **script cache keyed on `(payout_id, height)`** — sound only because derivation is idempotent (measured above) — and not the parse cache. Optimizing the parse first would be optimizing under a third of the cost.
+
+Caveat: single-thread figures from one machine (`--release`, Apple Silicon, `bitcoin 0.32.102` / `miniscript 13.1.0`). Treat the *ratios* as portable and the absolute microseconds as indicative.
 
 **Caveat on the 500-miner row: nothing in the read clone exercises anything near it.** `PayoutMode::coinbase_outputs` (`stratum-apps/src/payout.rs:59-105`) is exhaustive over the enum and maxes at **two** outputs (Donate); Solo/LegacySolo pay the whole block value to one output; there is no loop over miners, and `grep -i pplns` across the repo returns zero hits. This budget is a design target for the PPLNS host described in §0, not a measurement against existing code. See §12.
 
@@ -668,6 +958,16 @@ Height indexing **deletes three of the counter design's most important tests** (
 - **The two identity fields carry different values, deliberately.** Assert the channel-open `user_identity` is byte-for-byte `authorized_worker_name` (`downstream_message_handler.rs:207`, untruncated) **and** that `data.user_identity` stays ≤ 32 bytes (`:209`), and that no value over 32 bytes ever reaches `UserIdentity::new`. This is the rewrite of `integration-tests/tests/extensions.rs:121`, which currently asserts `"user_identity.miner1"` and will fail under §3.2.2 item 2 — correctly.
 - **`payout_id` normalization**: textual variants of one descriptor collide; genuinely different descriptors do not. **Include origin-info variants specifically** — `wpkh([fp/84h/0h/0h]xpub…/0/*)` and `wpkh(xpub…/0/*)` over one xpub must yield **one** `payout_id` (§2.2), because they derive identical scripts and no downstream check catches them.
 - **`merge_by_payout_id()`** collapses two rows for one miner into one summed output (§4.3.1), even though no in-scope scheme produces them.
+
+**Added in the sixth revision — the tests for §2.0, §3.1 and §3.1.1.** Each one exists because a measurement showed the failure is reachable, and each is written so it cannot pass on a precondition that silently did not hold.
+
+- **All three §3.1 assertions, one test each, asserting on error kind.** The `has_wildcard()` case is the pre-existing one. The two new ones:
+  - **A hardened step must be rejected *before* derivation.** `wpkh([fp/84h/0h/0h]xpub…/0h/*)` — hardened in the *derivation* path, not the origin — must return `IntakeError::HardenedStepRejected`. The negative control is what makes this test worth writing: with the check removed, `at_derivation_index()` **panics** (measured — `miniscript-13.1.0/src/descriptor/key.rs:868`), so the test must be paired with a `#[should_panic]`-style demonstration or an explicit comment recording the panic site. A rejection test that would merely return `Err` without the guard proves nothing; this one distinguishes "returns an error" from "takes down the process that was building a coinbase."
+  - **A multipath descriptor must be rejected at intake.** `wpkh(xpub…/<0;1>/*)` parses successfully and `has_wildcard()` returns `true`, so the first assertion passes it through. Assert `IntakeError::MultipathRejected`, and assert **specifically** that `has_wildcard()` alone would have admitted it — otherwise the test looks redundant with assertion 1 and someone will delete it.
+- **The credential-leak test (§3.1.1).** Feed a bare `xprv` and assert the returned error string contains **neither** the input nor any substring of it longer than a few characters. Do the same for a descriptor wrapping an `xprv`. Measured: the raw parser error is **131 characters and contains the full key material**, so this test fails against the naive `map_err(|e| e.to_string())` and passes only once the error is replaced with a fixed string. Pair it with a positive control — a *malformed* (non-credential) input must still produce a useful, specific error — so the fix cannot be "return a constant for everything," which would be untestable and unusable.
+- **The sum type's unrepresentable states, tested as compile-fail rather than runtime.** There is no runtime test for "a `Static` identity was paid at a derived script," because §2.0 makes it inexpressible. What *is* worth pinning is a `trybuild`-style compile-fail case: adding a third variant to `PayoutIdentity` must break every `match` over it. This is the executable form of CLAUDE.md's rule — the value of the sum type is exactly that the compiler enumerates the sites, and a test that asserts the compiler still does so is the only way that property survives a future refactor that reaches for `Option` again.
+- **`Static::script_at` ignores height.** One assertion, two heights, identical script. Trivial to write and it is the type-level claim made executable: if someone later "unifies" the two arms into a single derivation path, this is the test that fires.
+- **Derived-address width against the widest network prefix (§4.3.2).** Derive a P2TR script at some height, render it as a `bcrt1p…` regtest address, and assert its length against whatever the identity column's cap actually is. Measured: **64 characters**, which overflows a 62-character cap. Write this test even though no in-scope regtest currently pays P2TR — the reason it is worth writing is precisely that nothing exercises the path today, so the break is latent and will surface as a truncation or an insert failure in whichever unrelated change first enables a taproot payout.
 
 ### 8.2 Integration / regtest — the tests that matter
 
@@ -748,7 +1048,11 @@ The pool almost certainly already has miners authenticating with literal address
 
 The previous revision put all Translator work in a single Phase 2.5 sequenced **after** the pool side, on the reasoning that "the pool cannot distinguish a translated channel from a native one, so nothing about the pool's correctness depends on this landing." **That reasoning is withdrawn.** It is sound with respect to channel *provenance* and false with respect to channel *count*: a Translator in NonAggregated mode puts N channels on ONE upstream TCP connection, and the pool's connection-scoped `payout_mode` (`pool-apps/pool/src/lib/downstream/mod.rs:72`) collapses them regardless of provenance. The pool-side per-channel work is a **Phase 2 prerequisite**, not a Phase 2.5 follow-on.
 
-**Phase 0 — schema, no behavior change.** Add `miner_identity` and `payout_receipt`; backfill one row per existing miner with a synthetic `payout_id` and their literal address stored as `addr(<address>)`, which §2.3 rejects at the descriptor-intake endpoint and therefore reads unambiguously as "static, do not derive." Nothing observable changes; independently revertible.
+**Phase 0 — schema, no behavior change.** Add `miner_identity` and `payout_receipt`; backfill one row per existing miner with a synthetic `payout_id`, `kind = 'static'`, and their literal address in the `address` column.
+
+> **The `addr(<address>)` sentinel is withdrawn.** Previous revisions backfilled the literal address as `addr(<address>)` and relied on §2.3 rejecting that form at the intake endpoint, so it "reads unambiguously as *static, do not derive*." Under §2.0 there is nothing left for it to signal: `PayoutIdentity::Static { address }` **is** the statement, checked by the compiler at every use site rather than inferred by a reader from a string that a validator elsewhere happens to reject. The sentinel had two costs worth naming. It stored the address in a column typed for descriptors, so `SELECT descriptor` returned a value that was deliberately un-parseable — the schema said "descriptor" and the data said "not one." And its safety was **non-local**: it depended on a rejection rule in a different module continuing to reject a form the payout path would otherwise happily try to derive from. That is the same shape as the defect CLAUDE.md records for 2026-08-03 — a correctness property carried by a convention rather than by a type. The `CHECK` constraint in §2.1 replaces it with a local, database-enforced statement of the same fact.
+>
+> Consequence for the migration: the backfill is a straight column copy with a literal `kind`, and it needs **no** coordination with the intake validator's reject list. That is one fewer cross-module invariant to keep alive, and it is why this revision could delete §2.3's `addr()` rejection rationale rather than restate it.
 
 **Phase 1 — intake behind a flag, plus the fail-open fix.** Ship §3 validation with descriptor acceptance disabled by default; enable on signet or testnet4 first. **New and non-optional in this phase:** add the descriptor arm to `PayoutMode::try_from` (`stratum-apps/src/payout.rs:229-284`) and remove the `NoPayoutMode → FullDonation` default for descriptor-shaped identities (`mining_message_handler.rs:145`, `:391`). Today a valid descriptor in `user_identity` is paid **100% to the pool, silently, for the connection's lifetime** — so this must land before any code path can deliver a descriptor to the pool, or the feature's first success is a donated block. Gating tests: §8.2 #1, #5, and the new "valid descriptor is never silently donated" unit test.
 
@@ -796,6 +1100,10 @@ The failure modes are silent, so each of these is the only external signal for a
 | `PRIMARY KEY (block_height, payout_id)` violations | A duplicate payout row — §4.3.1's structural requirement being violated |
 | Coinbase output count and serialized byte size per block | Approaching the §4.5 firmware ceiling |
 | Oldest retained share's distance (in accumulated difficulty) from the current window edge | The §2.5 retention floor. If this margin shrinks below what a 4× upward retarget could consume, the next adjustment silently drops shares that are still owed. Re-evaluate at every retarget. |
+| **`miner_identity` rows violating the §2.1 `CHECK`** — count, expected identically zero | The §10.1 Phase 0 replacement for the withdrawn `addr()` sentinel. A nonzero count means a write path is constructing a half-populated identity row, which is the struct-with-`Option` shape leaking back in through the database even though the Rust type forbids it. Cheap query, and it is the only place the sum type is *not* self-enforcing |
+| **Intake rejections by `IntakeError` kind, with `HardenedStepRejected` broken out** | §3.1 assertion 2. This row is not about miner UX: a hardened step that gets past intake **panics** in `at_derivation_index()`, so a rising count here is the guard doing its job, and a *zero* count alongside process aborts in coinbase assembly means the guard is not where it is assumed to be |
+| **Derived-address length vs. the identity column width, per network** | §4.3.2. One number, and it changes when the network or the output type changes rather than gradually — so alert on the value, not a trend. Regtest P2TR is 64 characters against a 62-character cap |
+| Descriptor-parse errors whose message length exceeds the fixed-string budget | §3.1.1. A parse error that is longer than the constant it is supposed to be **is** the credential leak, and the length check catches it without an operator having to read a log line containing a private key to discover that fact |
 
 Rows that the counter design needed and this one does not: index-advance rate, derivation-store commit latency, and store error rate. Removing monitoring surface is a real benefit — each of those was a metric an operator had to understand to run the system safely.
 
@@ -806,10 +1114,13 @@ The first row deserves emphasis: it is a cheap independent recomputation, no exi
 1. **A principled recovery-range default.** What index window should miner docs recommend for `importdescriptors`? Derivable from the pool's age and block rate, and now a *documentation* question rather than the correctness question it was under a counter. The old "principled gap-limit default" question — which `para` names as open and sv2-apps ignores — dissolves here rather than getting answered.
 2. ~~**Does the mining cookie survive?**~~ **Closed** — resolved by the 2026-07-29 thesis round in this design's favour, and no longer an open question. See the rewritten §9.5. The two follow-ups that *did* spin out of it are `batched-credit-timing-leak` (p1 — the hashrate side channel under batching, unquantified in any paper) and `canard-gouget-primary-text` (p3), and **neither bears on this spec**, because both are about *blinded* credit and this design keeps identity in the clear.
 3. ~~**Descriptor rotation by the miner.**~~ **Closed — not a pool concern, and now confirmed *forced* rather than merely trivial.** Identity management is the miner's responsibility. A distinct descriptor is a distinct user, including on the same connection from the same hardware, and the pool neither links nor migrates across identities (§2.5). The code read closes the transport half outright: SV2 has **no re-key message.** `user_identity` is read at exactly two sites, both channel-open (`pool-apps/pool/src/lib/channel_manager/mining_message_handler.rs:100`, `:337`); `UpdateChannel` carries only `channel_id`, `nominal_hash_rate`, `maximum_target` (`mining_sv2-11.0.0/src/update_channel.rs:12-35`); and the per-share identity TLV is discarded (`:919-921`). A new descriptor is a new channel, which behind a Translator is a reconnect. Nothing about signalling needs designing and there is no migration to build. **One thing did come out of this question and is not closed with it:** in current pool code a device can present a second identity *in-band with no reconnect* by opening another channel, which re-points every sibling device on that connection. That is a funds-misdirection defect, not a rotation question — specified as §3.2.3 items 3–5 with a §5.2 halt condition and tests #8b/#8c.
-4. **Firmware headroom for descriptor usernames.** Passthrough (§3.2) puts a ~150-byte descriptor in the rig's username field, and Avalon truncates at 63 while Whatsminer overflows past 127. Nobody has surveyed which V1 firmware in the field can actually hold it. **The shortening sub-question is now closed and the answer is no**: measured against `miniscript` 13.0.0, the shortest wildcard forms with a checksum are `tr(xpub…/*)` = **126** bytes, `pkh(xpub…/*)` = 127, `wpkh(xpub…/*)` = 128, and a raw-compressed-pubkey wildcard is rejected outright ("public keys must be 64, 66 or 130 characters in size"), so no shorter wildcard form exists. **No descriptor gets under Avalon's 63, and only a bare `tr()` gets under Whatsminer's 127.** Shortening is not a lever. The field survey remains open, and until someone runs it the honest statement to operators is that per-device V1 identity is firmware-dependent.
+4. **Firmware headroom for descriptor usernames.** Passthrough (§3.2) puts a ~150-byte descriptor in the rig's username field, and Avalon truncates at 63 while Whatsminer overflows past 127. Nobody has surveyed which V1 firmware in the field can actually hold it. **The shortening sub-question is now closed and the answer is no**: measured against `miniscript` 13.0.0, the shortest wildcard forms with a checksum are `tr(xpub…/*)` = **126** bytes, `pkh(xpub…/*)` = 127, `wpkh(xpub…/*)` = 128, and a raw-compressed-pubkey wildcard is rejected outright ("public keys must be 64, 66 or 130 characters in size"), so no shorter wildcard form exists. **No descriptor gets under Avalon's 63, and only a bare `tr()` gets under Whatsminer's 127.** Shortening is not a lever *within descriptor syntax*. **Amended in the sixth revision:** it is a lever across intake *forms* — a bare xpub is **111 characters** measured (§2.3a), which clears Whatsminer's 127 with room for a `.worker` suffix and still does not clear Avalon's 63. So the answer sharpens from "shortening is not a lever" to "**shortening buys Whatsminer, and nothing buys Avalon.**" The 63-character ceiling is below the 111-character floor of any BIP-32 extended key, so no encoding choice reaches it and the only paths for an Avalon rig are the operator-set configured identity (one identity for the farm) or a pool-side short-handle indirection that this spec does not design. The field survey remains open, and until someone runs it the honest statement to operators is that per-device V1 identity is firmware-dependent.
 5. **Wallet tooling for sparse-index descriptors.** The gap is real and general: no consumer wallet handles "scan these 40 specific indices out of 900,000." Height indexing would be strictly better with it, and it is a plausible contribution to Sparrow or BDK.
 6. **Subset-sum against real coinbase payout sets.** The CoinJoin literature transfers by argument; nobody has run the attack on actual coinbase distributions.
 7. **Does an `sri/...` payout mode compose with a descriptor identity?** §3.2.1 mandates precedence, not composition. Whether a miner should be able to say "descriptor identity *and* 10% donation" is unspecified, and the current grammar cannot express it.
+8. **Should bare-xpub intake accept SLIP-132 prefixes (`ypub` / `zpub`)?** **Sharpened by §4.6, not closed by it.** §2.3a recommends bare xpub as the intake form and §4.6 now *fixes* the script type pool-side, which makes SLIP-132's script-type signalling not merely redundant but **actively contradicted**: a `zpub` signals P2WPKH-nested-in-P2SH, and a pool-fixed `wpkh()` wrapper will not honour it. So the UX question gains a correctness edge — accepting a `zpub` and silently deriving native P2WPKH pays the miner at addresses their wallet's own script-type expectation says it will not watch. A miner who exports from a wallet that emits `zpub` will paste it, and rejecting it looks like the pool not supporting their wallet. The options are reject with a message naming the fix, or accept and normalize to `xpub` before storing. **Not resolved here because the choice is UX, not correctness:** SLIP-132 re-encodes the same key material under a different version byte, so either branch derives identical scripts. What must *not* happen is accepting a `zpub` and storing it verbatim, which would make two `payout_id`s for one key — the §2.2 collision class this revision just closed for origin info.
+9. **Is a per-`(payout_id, height)` script cache worth its invalidation surface?** §7.2 measures ~16–17 ms for 500 miners at one height, which is ~30× under budget, so the answer today is no. The question is live only if a scheme derives per-template rather than per-block. Recording it because the *shape* of the answer is already fixed by §5: the cache is sound because derivation is idempotent (measured), and it must be keyed on height, so a cache that outlives a height is a wrong-payment bug rather than a stale-read. Anyone who reaches for this optimization should read §5.1 first.
+10. **Where does the identity-column width actually get enforced?** §4.3.2 establishes that a regtest P2TR address is 64 characters against a 62-character cap. Whether the correct fix is widening the column, or never storing a *derived* address in an identity column at all, depends on a host codebase's schema and is deliberately left to the implementation plan. The general principle is the one worth carrying: **a column sized for a payout identity is not sized for a derived address**, and rotation is what makes those two things different.
 
 ## 12. Sources consulted
 
@@ -874,6 +1185,23 @@ A multi-agent read of both sides, adversarially verified. It **retracted fifteen
 
 *What was not done:* no code was executed and the integration suite was not run. Everything above is static reading plus standalone `miniscript` 13.0.0 parser probes. `integration-tests/lib/mod.rs:369-523` does parameterize `aggregate_channels`, and `integration-tests/tests/extensions.rs:41-44` comments that `aggregate_channels = false` is what makes TLV fields appear — consistent with the reading, unexecuted. There is also **no regression test anywhere for the collapse**: every case in `pool_solo_mining.rs` uses one identity per connection, and the two-channel case at `:309`/`:431` uses the same `"cool_miner/worker.1"` for both.
 
+**Executed measurement (2026-08-09, sixth revision) — the first numbers in this spec that came from running code**
+
+Every figure in §3.1, §3.1.1, §3.2.1, §3.2.1c, §4.3.2 and §7.2 that is labelled *measured* comes from a standalone 17-section harness — one binary, `bitcoin 0.32.102` + `miniscript 13.1.0`, `cargo run --release`, no workspace, no pool code. It is preserved rather than described, so the numbers are re-runnable: the harness lives in the implementing repo's local wiki at **`.wiki/artifacts/xpub-measure/`** as an isolated crate with its own empty `[workspace]` table, deliberately not wired into any workspace build — it depends on `bitcoin` and `miniscript` only and reproduces standalone in any clone.
+
+This closes the fifth revision's *"nothing was executed"* caveat for the parser-behaviour and cost claims. It does **not** close it for the pool-side claims: nothing in §3.2.2, §3.2.3 or §10.1 was executed, and those still rest on static reading.
+
+What running it changed, as distinct from confirmed:
+
+- **`has_wildcard()` is one of three necessary checks, not the check.** The prior revisions built §3.1 on `has_wildcard()` alone, inherited from `xpub_derivation.rs:140`. Measured: a multipath `<0;1>` descriptor and a descriptor with a hardened step in its derivation path **both** return `has_wildcard() == true`. The hardened case then **panics** at `descriptor/key.rs:868` on `at_derivation_index()` — an abort inside coinbase assembly, not an error return. This is the single most consequential result of the run, and it was not predicted by any prior revision.
+- **The parser echoes private key material into its error text.** Feeding a bare `xprv` produces a **131-character** error string containing the full key. Any `map_err(|e| e.to_string())` on the intake path writes a spendable secret to the log — §3.1.1. Also unpredicted.
+- **Bare-xpub intake is measurably the narrower attack surface**, which is why §2.3a promotes it from an alternative to the recommendation. The origin-info collision the fifth revision found (two textual forms, identical `scriptPubKey`, two `payout_id`s) was reproduced; a bare xpub cannot express origin info at all, so the collision class is **empty by construction** rather than closed by a normalizer.
+- **The re-parse anti-pattern is a 1.4× cost, not an order of magnitude** (§7.2). ~32–34 µs per derivation pre-parsed vs ~45–48 µs with a re-parse or `format!`+parse in flight; secp256k1 dominates. The ratio reproduced exactly across two runs while the absolute figures moved ~5%, so **1.4× is the claim and the microseconds are context.** The fifth revision's framing implied the parse was the expensive part. It is under a third.
+- **Purity is confirmed, not assumed**: 1,000 derivations at one height produce byte-identical scripts; 5,000 consecutive heights produce 5,000 distinct scripts. §5's two load-bearing properties.
+- **Derived-address widths were tabulated per network and output type** (§4.3.2), which is how the regtest-P2TR **64** vs 62-character-cap overflow surfaced. It is a latent break in any host whose identity column is 62 characters, and it is invisible until something pays P2TR on regtest.
+
+Caveat on the cost figures: single-thread, one machine, Apple Silicon. Ratios are portable; absolute microseconds are indicative. The behavioural results (the panic, the leak, the collision, the widths) are properties of `miniscript 13.1.0` and are not machine-dependent.
+
 **Prior thesis round (2026-07-29)**
 - [[report-blinded-share-credit-thesis-2026-07-29|Report: is blinded share credit strictly harder than blinded payout?]] and [[../wiki/theses/blinded-share-credit-commitment|the thesis]] — verdict **MIXED**. Rewrote §9.5 from "unanalyzed by anyone" to a resolved question, and supplies the argument for why this plan's scope is the tractable one: payout blinding is offline non-interactive derivation, share-credit blinding is an online two-party protocol with an unquantified timing leak and a broken identity-keyed vardiff. Also the source of §9.5's Bedrock corrections (no hardness assumption; ~7.44-year S7 cookie rotation; prevout placement consensus-invalid for the share that is a block).
 
@@ -919,3 +1247,18 @@ The one thing this revision made *more* complex is §3.2.1, and it came from rea
 Also measured rather than estimated: the shortest wildcard descriptor forms are `tr(xpub…/*)` at **126** bytes, `pkh` at 127, `wpkh` at 128, with raw-compressed-pubkey wildcards rejected by the parser — so the open question about shortening a descriptor under Avalon's 63-char truncation is **closed negative** (§11 OQ4). Open question #3 moves from "trivially closed" to "closed and *forced*": an in-band re-key on a shared connection would hijack sibling channels' payouts under today's code, which is a pool-side correctness defect (§3.2.3, §5.2) rather than a rotation-semantics question.
 
 Ten residual risks are recorded rather than resolved; the load-bearing one is whether per-channel coinbase templating is confined to this repo's pool code or requires an upstream `channels_sv2` change, which is the difference between a week and a quarter on §3.2.3 item 4. Nothing was executed — see §12's *what was not done*.
+
+**2026-08-09 (sixth revision)** — the identity model is restated as a **sum type**, and the parser claims are **measured** rather than read. Six changes, four of which alter the design and two of which correct the record.
+
+1. **`PayoutIdentity` is `Static | Rotating`, not a struct with an optional descriptor** (§2.0, and consequently §2.1's DDL, §2.3, §5, §8.1, §10.1 Phase 0, §10.3). Prior revisions never named the identity type; the natural reading of their prose is `struct { address: String, descriptor: Option<Descriptor> }`, and every implementation of that shape branches on `descriptor.is_some()`. That expression **reads as "is this miner rotating?" and answers "did someone populate this field?"** — two different questions, and a row with both fields set pays whichever branch the reader happened to check. The sum type deletes the ambiguity by making it inexpressible: `script_at()` is a total `match`, `Static::script_at` ignores height *by type* rather than by comment, and adding a third payout kind later breaks every use site at compile time instead of defaulting one of them. The precedent is not hypothetical — CLAUDE.md's 2026-08-03 entry records a real money bug where `if resolved.mode == MiningMode::GroupSolo` silently excluded a second mode from stamping its settlement inputs, and notes that *"the `match` that replaced it would not have compiled with a mode missing."* This revision's version of that lesson is that **`is_some()` on a per-mode field is the same defect wearing a different keyword.**
+2. **Two rejection scaffolds are superseded, not deleted quietly** (§2.3, §10.1 Phase 0). §2.3's rejection of `addr(bc1q…)` and Phase 0's backfill of existing miners as `addr(<address>)` "static, do not derive" sentinels both existed to encode staticness in a *string*, checked by a validator in another module. `PayoutIdentity::Static` encodes it in the type and the §2.1 `CHECK` encodes it in the schema, so both scaffolds are redundant — and both are recorded here as withdrawn with their reasoning, because a silently-vanished rejection rule is how a future revision reintroduces one. This is CLAUDE.md rule 3 applied to a spec instead of a codebase: when an assumption dies, hunt its scaffolding the same day.
+3. **`has_wildcard()` is necessary but not sufficient — and the missing check guards a panic** (§3.1, §8.1, §10.3). Measured against `miniscript 13.1.0`: a hardened step in the derivation path and a multipath `<0;1>` descriptor **both** pass `has_wildcard()`, and the hardened one then **panics** at `descriptor/key.rs:868` inside `at_derivation_index()`. Every prior revision built intake validation on the single `has_wildcard()` guard copied from `xpub_derivation.rs:140`. Intake now requires **three** assertions, and the panic is why the hardened-step one is not a style preference: the failure lands as a process abort during coinbase assembly.
+4. **The intake parser leaks private keys into its error text** (§3.1.1, new). A bare `xprv` fed to the descriptor parser yields a **131-character** error containing the full key. The idiomatic `map_err(|e| e.to_string())` therefore writes spendable key material to the pool's logs, and "reject xprv" — which every prior revision listed — does not by itself prevent it, because the rejection *is* the error being formatted. The rule is to parse with `Xpub::from_str` first and never propagate parser error text from an intake path.
+5. **Bare xpub becomes the recommended intake form** (§2.3a, new; §2.2, §2.3, §3.2.1c). Descriptors remain accepted. The argument is that a bare xpub cannot express the two things that caused the fifth revision's hardest findings — origin information (whose two textual forms derive identical scripts under different `payout_id`s) and multipath — so the collision class is **empty by construction** instead of closed by a normalizer that must keep working. It is also shorter on the wire, which matters against the firmware ceilings in §3.2.4. Narrower intake beat better normalization here, and that generalizes.
+6. **The `FullDonation` defect is upstream SRI's, not any given pool's** (§3.2.3, §10.1 Phase 1, §10.3). The fifth revision's blocking finding is real and is restated unchanged for the SRI/sv2-apps code it was read from. What is corrected is the implied scope: it is a property of `PayoutMode` → `NoPayoutMode` → `FullDonation` in `stratum-apps`, and a host pool with a different resolver does not inherit it. Verified by grep against one such host, where `NoPayoutMode` and `FullDonation` return **zero hits** and the analogous unresolved-identity path is "serve no job" rather than "pay the pool." The general requirement survives the correction and is the part to carry forward: **an unrecognized payout identity must fail closed, and "closed" must mean no job — never a substituted payout.** A pool inheriting the SRI resolver must ship the fix before any descriptor can reach it; a pool that does not must still audit its own unresolved-identity path against that requirement, because the defect class is the default, not the exception.
+
+**2026-08-09 (seventh revision — one operator decision)** — **the derivation path and script type are pool-fixed** (§4.6, new; §2.3, §2.3a, §11 OQ8). Every prior revision left the choice open, and §2.3a listed "the miner cannot choose their own script type" as a *cost* of bare-xpub intake. It is now a decision, made for conveyability — a miner needs one sentence to know where their money goes and can verify a payout with any descriptor-importing wallet — and it pays for itself three times in correctness: the coinbase weight budget (§4.5) becomes a constant rather than a function of the currently-paid miners' script-type mix; the §2.2 `payout_id` collision class closes permanently, because one key now yields exactly one canonical descriptor, where miner-selectable paths would reintroduce it via the same xpub at `/0/*` and `/1/*`; and §3.1's three assertions become invariants over a pool constant rather than input validation. Recommended concrete choice is **`wpkh(<xpub>/0/*)` — BIP-84 P2WPKH, `m/84'/0'/0'/0/H`** — because §4.3.2's measured regtest P2TR width (64 against a 62-char cap) makes P2TR the migration-first option, and 124 WU against 172 buys ~39% more outputs from the same budget. The requirement is that the choice be fixed, published, and held in **one named constant**; the specific script type is a recommendation. Full-descriptor intake stays as the escape hatch and stays non-recommended. OQ8 (SLIP-132) is **sharpened rather than closed** — a pool-fixed `wpkh()` wrapper actively contradicts a `zpub`'s script-type signal, so silently accepting one derives addresses the miner's wallet does not expect to watch. Avalon's 63-char ceiling is untouched and OQ4 stays open.
+
+Also measured rather than asserted (§12's measurement block, harness preserved and re-runnable): derivation purity in both directions — 1,000 derivations at one height are byte-identical, 5,000 consecutive heights are 5,000 distinct scripts; the re-parse penalty is **1.4×**, not the order of magnitude §7.1's framing implied, because secp256k1 dominates the parse ~33 µs to ~13 µs; 500 miners at one height cost **~16–17 ms**, ~30× under the §7.2 budget; and derived-address widths per network put **regtest P2TR at 64 characters against a 62-character identity cap** (§4.3.2), a latent overflow that nothing exercises until something pays taproot on regtest.
+
+What this revision did **not** do: nothing on the pool-side path (§3.2.2, §3.2.3, §10.1) was executed. Those claims are still the fifth revision's static reading, and the parts of §7.2 and §4.3 that concern a PPLNS host remain un-verifiable against the clone that was read — see §12's *substrate caveat*, which stands.
