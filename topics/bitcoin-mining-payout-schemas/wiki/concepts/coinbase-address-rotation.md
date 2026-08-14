@@ -145,6 +145,32 @@ sv2-apps also **reverses a deliberate upstream decision**. The branch deletes an
 
 That alternative is worth weighing: it dissolves this article's entire § Index persistence section. Its cost is that the derivation range becomes as large as the block height, making descriptor recovery scans correspondingly wide.
 
+### The recovery-scan cost is specific to BIP 32 derivation, not to height-as-index
+
+**Added 2026-08-14.** The wide-scan cost above — and the gap-limit collision recorded against
+block-height instantiation throughout this wiki — is a property of using the height as a **BIP 32
+child index**, not of using the height. The two roles are categorically different:
+
+- **As a child index** (BIP 380 wildcard descriptor): recovery walks `i = 0, 1, 2, …` and stops
+  after 20 consecutive misses per BIP 44's gap limit. A pool winning one block in 800,000 leaves
+  799,999-wide holes. Fatal, exactly as this section states.
+- **As an ECDH nonce** (stealth/silent-payment-style derivation, occupying the slot `input_hash`
+  fills in BIP 352): the receiver never scans forward. Given block *H*, they compute the single
+  candidate for *that* height and compare against the block's outputs. Unmined heights are never
+  enumerated, so **there is no gap to limit** and skipped blocks cost nothing.
+
+So "self-synchronizing at the cost of gaps" is only half true — the self-synchronization survives
+in both constructions, and the gap cost appears in only one. The nonce also need not be secret:
+BIP 352's `input_hash` is fully public, and the height is hashed *together with* the shared secret.
+
+This does not make height-as-index viable for descriptors, which is what both implementations here
+use. It means open question 2 below should be split in two, because the recovery-scan tradeoff
+nobody has written down does not exist for the ECDH variant. See
+[[../../raw/notes/2026-08-14-ll-coinbase-silent-payments-ecdh-nonce|Lessons: coinbase silent
+payments]] lesson 2 — and note the separate blocker that gates the ECDH variant in a coinbase at
+all: a coinbase input carries no public key, so there is no sender point to ECDH with unless one is
+supplied deliberately (fee output at index 0, or an ephemeral key in the scriptSig).
+
 ## Open questions
 
 1. **Is the quantum framing sound?** Neither source analyzes it. Given that P2WPKH/P2TR reveal the pubkey on spend, rotation of receive addresses bounds exposure only under assumptions about spending behavior that no source states.

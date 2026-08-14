@@ -74,6 +74,42 @@ and the driver was payout-address reuse (median 20 / 5 / 2 respectively). **What
 any reduction in operator knowledge. Worse, the pool now holds the descriptor that links all of a
 miner's rotated addresses together.
 
+### Update 2026-08-14 — the BIP 352 exclusion is narrower than stated, and the gap-limit blocker doesn't apply to ECDH
+
+Two corrections to the bullets above, from
+[[../../raw/notes/2026-08-14-ll-coinbase-silent-payments-ecdh-nonce|Lessons: coinbase silent payments]]:
+
+1. **"No input private key `a`" is the right blocker; "constant outpoint" is not.** A coinbase fails
+   BIP 352 on the *shared secret* — no prevout scriptPubKey, no witness, no scriptSig pubkey, so
+   nothing to read `A` from and the eligibility gate fails first. It does **not** fail on the nonce:
+   BIP 34 *mandates* the block height in the coinbase scriptSig, which is shared, non-circular, and
+   consensus-uniquely monotonic — a **better** nonce than `outpoint_L`. The structural claim holds
+   for BIP 352 v0 as written (still zero occurrences of "coinbase" in its 524 lines, re-verified
+   against `bip-0352.mediawiki` v1.1.1), but it is an *absent sender pubkey*, which a purpose-built
+   key can supply, not an *absent nonce*, which nothing could.
+2. **The BIP 44 gap limit of 20 does not bind an ECDH nonce.** It binds a BIP 32 child index in a
+   forward-scanned chain. A nonce mixed into a shared secret is computed once for the height in
+   hand, so unmined heights are never enumerated. Greg Maxwell's height-as-index is fatal under
+   BIP 32/BIP 380 and free under a stealth construction — see
+   [[../concepts/coinbase-address-rotation#The recovery-scan cost is specific to BIP 32 derivation, not to height-as-index|Coinbase Address Rotation]].
+
+Together these open a Part A variant this article had ruled out: a coinbase-native stealth payout
+where the pool publishes a per-block ephemeral `A` (33 B in the scriptSig) or reuses its own P2TR fee
+output at index 0, and hashers derive from `hash(input_hash · a · B_scan || height || k)`. It is
+**unbuilt and unspecified** — the confirmed negative result that no pool accepts a payment code
+still stands, and this would need its own silent-payments version byte.
+
+Two things it changes for this article. **It is the first Part A mechanism with a forward-secrecy
+knob**: an ephemeral `A` has no spending role, so the pool can *erase* it once the block is found,
+which is § Compulsion's "data never collected" applied to receiver privacy — whereas reusing the fee
+output forecloses that permanently, since the pool must retain `a` to spend its own fee and any later
+compromise or subpoena of the treasury key retroactively deanonymizes every hasher in every block it
+signed for. And it **avoids the new linkage Part A otherwise introduces**: there is no descriptor for
+the pool to hold, so it does not gain a token linking a miner's rotated addresses together.
+
+It does not touch Part B. The pool still computes the payouts, so this defends against third-party
+chain observers only — the same boundary as the rest of Part A.
+
 ## Part B — the blinding half
 
 ### What amounts actually leak
