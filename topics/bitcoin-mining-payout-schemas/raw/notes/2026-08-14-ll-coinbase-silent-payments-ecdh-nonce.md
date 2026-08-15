@@ -3,23 +3,28 @@ title: "Lessons Learned: coinbase silent payments — the blocker is the sender 
 type: notes
 source: session
 date: 2026-08-14
-tags: [lessons-learned, bip352, silent-payments, coinbase, bip34, ecdh, stealth-address, gap-limit, extranonce, forward-secrecy, coinbase-address-rotation, light-client, negative-result]
-lesson_count: 7
+tags: [lessons-learned, bip352, silent-payments, coinbase, bip34, ecdh, stealth-address, gap-limit, extranonce, forward-secrecy, coinbase-address-rotation, light-client, negative-result, sender-side-key-split, out-of-band-notification, witness-commitment]
+lesson_count: 8
 category: notes
 confidence: high
 volatility: warm
 verified: 2026-08-14
-summary: "BIP 352's coinbase incompatibility decomposes into two independent failures, and the wiki had been treating them as one. The nonce half (constant null outpoint) is fixable and the coinbase is better supplied than an ordinary tx — BIP 34 mandates the block height. The shared-secret half (no input pubkey A) is the real structural blocker. Separating them dissolves the BIP 44 gap-limit collision that had been recorded as a blocker on block-height-as-index: a gap limit binds a BIP 32 child index, never an ECDH nonce."
+summary: "BIP 352's coinbase incompatibility decomposes into two independent failures, and the wiki had been treating them as one. The nonce half (constant null outpoint) is fixable and the coinbase is better supplied than an ordinary tx — BIP 34 mandates the block height. The shared-secret half (no input pubkey A) is the real structural blocker. Separating them dissolves the BIP 44 gap-limit collision that had been recorded as a blocker on block-height-as-index: a gap limit binds a BIP 32 child index, never an ECDH nonce. BIP 352 also fuses the sender's ECDH key with its signing key, and the split cannot be derived (a derivable second key is unlocked by the first; a non-derivable one is unusable by its owner) — so it costs transmitted bytes, and a pool's stratum session is the out-of-band channel that lets those bytes be free on-chain."
 ---
 
 # Lessons Learned: coinbase silent payments — the blocker is the sender pubkey, not the outpoint
 
 > Extracted from a 2026-08-14 Socratic seminar on BIP 352 (`bitcoin/bips@60f5b33`,
 > `bip-0352.mediawiki` v1.1.1) exploring whether a coinbase can carry silent payments to hashers,
-> with receiver privacy (not payer privacy) as the goal. Seven lessons. Three refine claims already
-> in this wiki; two are negative results closing options the wiki had listed as unexplored; two are
+> with receiver privacy (not payer privacy) as the goal. Eight lessons. Three refine claims already
+> in this wiki; two are negative results closing options the wiki had listed as unexplored; three are
 > new design findings. Nothing was implemented or tested — all conclusions are primary-source reads
 > of BIP 352 / BIP 34 / BIP 141 plus in-session derivation.
+>
+> Lesson 8 supersedes Lesson 5's variant recommendation: the sender-side ECDH/spend key split that
+> BIP 352 fuses is what makes "the pool's fee key is well guarded" and "does ECDH every block"
+> compatible again, and a pool's stratum session is the out-of-band channel that makes the split
+> free on-chain.
 
 ## Lesson 1: A coinbase fails BIP 352 on the *shared secret*, not on the *nonce* — and the wiki had these fused
 
@@ -129,3 +134,36 @@ Residual items recorded: even-Y negation is required since scanners read x-only 
 **Root cause**: `bip-0352.mediawiki:305` groups recipients **by `B_scan`** and caps each group at `K_max`. Distinct hashers have distinct scan keys, so each occupies its own group of size 1. The cap binds only when one recipient takes many outputs in one transaction. The number that *does* bind is block weight — and the BIP's own rationale for choosing 2323 is that it is the maximum P2TR output count in a 100 kvB transaction, so the two limits coincide numerically for unrelated reasons.
 **Fix**: Restated the ceiling as weight-derived. A pool paying more than roughly 2,300 hashers per block needs batching regardless of BIP 352, which is the same conclusion the wiki already reaches from firmware and DATUM limits — those bite far earlier.
 **Rule**: `K_max` is a per-scan-key output cap and is non-binding across distinct payees; quote it as such. When a privacy-protocol limit and a consensus limit share a number, check whether one was *derived from* the other before treating them as independent constraints.
+
+## Lesson 8: BIP 352 fuses the sender's ECDH key with its signing key, and splitting them cannot be free — but a pool has the out-of-band channel that makes it free anyway
+
+**Category**: discovery
+**Context**: Asked directly why the *receiver* gets a scan/spend split and whether the same math works on the sender side. It does, and the reason the BIP doesn't offer it turns out to be the same reason the fee-output variant is stuck.
+
+**The receiver's split works because `B_spend` enters additively as a public point.** In `P_k = B_spend + t_k·G` with `t_k = H(ecdh ‖ k)`, the online scanner computes candidate outputs from `B_spend` and `b_scan` alone, and the cold signer computes `b_spend + t_k` from `b_spend` and a handed-over `t_k` alone. Two disjoint secrets, neither sufficient, one output. `bip-0352.mediawiki:109` gives the motive: `b` would otherwise have to be online.
+
+**The sender's key carries two roles and the BIP fuses them deliberately.** `a` is both the **ECDH participant** (`ecdh = input_hash·a·B_scan`) and the **signature authority** over the inputs. `:244` is explicit that these are one key — *"The sender uses the private key corresponding to the taproot output key (i.e. the tweaked private key)"* — and `:99`'s footnote gives the reason: the receiver must reconstruct `A` **from chain data alone**, and the only pubkeys a transaction exposes are its input pubkeys, which by definition *are* the spending keys. `A` therefore costs zero marginal bytes and light-client scanning is 33 B/tx (`:466`). The sender-side split is not unimplemented; it is structurally excluded by the discovery mechanism.
+
+**The split math itself is sound.** Introduce a dedicated send-scan key `a_send`, `A_send = a_send·G`, for ECDH only, keeping `a_1…a_n` for signing only: sender computes `ecdh = input_hash·a_send·B_scan`, receiver computes `ecdh = input_hash·b_scan·A_send`. DH symmetry carries it. One thing must move with the key: `input_hash` must commit to `A_send` rather than `A`, because the `why_include_A` attack at `:92` — choosing `a′ = input_hash·a / input_hash′` to replay a shared secret and force address reuse — transposes verbatim to `a_send`, so the commitment has to bind whichever key is actually in the product.
+
+**The security asymmetry is exactly parallel to the receiver's, and this is the point.** `a_send` computes `t_k`, but spending still requires `b_spend + t_k`. So compromise of the online sender key costs **privacy, never money** — whereas in the fee-output variant `a` *is* money. That is the whole reason to want the split.
+
+**Symptom**: The natural next question — can `A_send` be *derived* from `A` so the split costs nothing? — has a clean negative answer, and it is worth stating as a dichotomy because it forecloses a whole family of "clever" designs.
+
+**Root cause**: The receiver needs `A_send = f(A, public data)` evaluable in the group, and the sender needs `dlog(A_send)`. In the generic group model any group element efficiently computable from `A` and public points is a linear combination of them, so:
+
+- **`f` group-linear** — `A_send = s·A + T` for public `s`, `T` — gives `a_send = s·a + t`. The sender knows it, and so does **anyone who ever learns `a`**. Forward secrecy and delegation both evaporate; the split is cosmetic.
+- **`f` not group-linear** — e.g. hash-to-curve over `ser(A) ‖ h` — leaves *nobody* knowing the dlog, sender included. Unusable.
+
+No third case. **`a_send` must be independent key material, and independent key material must be transmitted.** The 33 bytes are the price of the split, not an unoptimized implementation.
+
+**This names the real asymmetry, and it is not cryptographic.** The receiver's split is free because it rides an **out-of-band channel** — the silent payment address, 66 bytes of pubkey material, paid once, off-chain. A general sender has no channel to a scanner it cannot even identify, so its key material must go on-chain, per transaction. Channel availability, not mathematics, is what gives the receiver a split and denies the sender one.
+
+**Fix**: A pool is **not anonymous to its payees** — it holds a stratum/SV2 session with every one of them — so it has the channel a general sender lacks, and can take the sender-side split at **zero on-chain bytes**. Batch of ephemeral ECDH keys indexed by block height, pubkey list served over stratum or as a static file, each secret erased once its payout matures. Forward secret for past blocks, and no funds ever depend on those keys. Two constraints that must be recorded with it:
+
+- **The list cannot be compressed to a single published seed.** `A_H = A_0 + H(A_0 ‖ H)·G` is precisely the group-linear case above, so `a_0` unlocks every epoch. Irreducibly 33 B per epoch; it merely need not be *on-chain*. Batch size is the retention knob — 1,000 blocks ≈ 33 kB and ≈ one week of *prospective* exposure, zero retrospective.
+- **The pubkey list is a linkability trust surface, not a theft one.** A pool serving different lists to different miners partitions them, undetectably from chain data. Needs one public copy or a committed batch root.
+
+**Two corrections to the on-chain variants this supersedes.** First, the 33-byte on-chain fallback is cheaper than the scriptSig row claimed: `bip-0141.mediawiki:74` allows *"39th byte onwards: Optional data with no consensus meaning"* on the witness-commitment output, which every segwit block already carries — so `A_send` costs exactly 33 B / 132 WU appended there, with **no new output and no contention** against BIP 34's height, the extranonce, and pool tags for the 2–100 byte scriptSig budget. Second, `:480-486` already sanctions skipping discovery entirely via an encrypted out-of-band notification carrying `H(ecdh ‖ k)`, the outpoint and the amount — but `:495` marks the trap: a key that was not *actually* derived per the protocol breaks seed restore, *"unsafe — no implementation should ever allow this."* Notification is an optimization layered over a scannable construction, never a substitute for one, so the scanning path must exist even where the channel is perfect.
+
+**Rule**: When a stealth protocol gives one party a key split and not the other, check whether the obstruction is cryptographic or merely a missing out-of-band channel — the receiver's scan/spend split is free only because the address carries it, and any party that already has a session with its counterparty (a pool with its miners, a merchant with its customers) can claim the same split on the sender side at zero on-chain cost. Corollary, worth applying before designing any "free" key separation: a second key whose public half is derivable from the first is unlocked by the first, and one whose public half is not derivable is unusable by its own owner — so key separation always costs transmitted bytes, and the only real design freedom is *which channel* pays.

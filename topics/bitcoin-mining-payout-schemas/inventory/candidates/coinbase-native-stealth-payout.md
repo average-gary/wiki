@@ -6,7 +6,7 @@ priority: p2
 created: 2026-08-14
 updated: 2026-08-14
 last_checked: 2026-08-14
-next_action: "Decide the sender-point variant — now down to two live options (33 B ephemeral key in coinbase scriptSig vs. 0-byte one-time hot key at txOut[0] swept at maturity; the pool's real fee key is out, since cold/threshold custody and per-block ECDH are mutually exclusive). Then write it as a diff against BIP 352's Sender/Receiver sections — eligibility rule, input_hash substitute, scanning algorithm with BIP 34 height as nonce."
+next_action: "Write test vectors in Python against bip-0352/reference.py for the sender-side split (dedicated a_send, input_hash re-bound to A_send, BIP 34 height as nonce, null-prevout coinbase) — an executable check must exist before any spec text. Leading variant is the out-of-band A_send list indexed by height (0 on-chain bytes); on-chain fallback is the witness-commitment optional-data field at bip-0141.mediawiki:74, not the scriptSig."
 sources:
   - raw/notes/2026-08-14-ll-coinbase-silent-payments-ecdh-nonce.md
   - raw/repos/2026-07-29-bip352-silent-payments-coinbase-incompatibility.md
@@ -62,11 +62,30 @@ The open design decision is where `A` comes from, and the two variants are not e
 
 | Variant | Marginal cost | Forward secrecy | Operational cost |
 |---|---|---|---|
-| Ephemeral key in coinbase scriptSig | 33 B non-witness (132 WU, ~0.003% of a block) | **Yes** — erase `a` at block-found | CSPRNG call only; competes for the 2–100 B scriptSig budget against BIP 34's ~4 B, extranonce, pool tags, merged-mining tags |
-| Pool P2TR fee output at `txOut[0]` | **0 bytes** | **No, permanently** — pool must retain `a` to spend its fee | **Contradicts its own defense** — see below |
+| **Out-of-band `A_send` list, indexed by height** ← **leading** | **0 bytes on-chain** (33 B/epoch over stratum) | **Yes** — erase each `a_send` at maturity | Pool must serve a pubkey list and hold unused secrets; list is a linkability trust surface |
+| Ephemeral key in witness-commitment output, byte 39+ | 33 B / 132 WU, no new output | **Yes** — erase `a_send` at block-found | CSPRNG call only; `bip-0141.mediawiki:74` optional-data field, no scriptSig contention |
+| Ephemeral key in coinbase scriptSig | 33 B / 132 WU | **Yes** | Competes for the 2–100 B scriptSig budget against BIP 34's ~4 B, extranonce, pool tags, merged-mining tags — **superseded by the row above** |
+| Pool P2TR fee output at `txOut[0]` | 0 bytes | **No, permanently** — pool must retain `a` to spend its fee | **Contradicts its own defense** — see below |
 | Fee output as one-time hot key, swept then erased | 0 bytes | After ~100-block maturity | A sweep tx per block; loses key-only retroactive payout audit |
 
-Session recommendation was the scriptSig ephemeral: the objection that reusing the real fee output
+**The framing that reorders this table: BIP 352 fuses the sender's ECDH key with its signing key,
+and a pool can un-fuse them for free.** `:244` uses *the spending key* for ECDH because `:99` requires
+the receiver to reconstruct `A` from chain data alone, and the only pubkeys a transaction exposes are
+its input pubkeys. Give the sender a dedicated `a_send` used only for ECDH (`ecdh = input_hash·a_send·B_scan`,
+with `input_hash` re-bound to `A_send` per the `why_include_A` attack at `:92`) and compromise of the
+online key costs **privacy, never money** — the same downgrade the receiver's `b_scan` buys.
+
+It cannot be made free by derivation, and this closes a family of designs rather than one: the
+receiver needs `A_send = f(A, public data)` evaluable in the group while the sender needs
+`dlog(A_send)`, so in the generic group model either `f` is linear (`A_send = s·A + T` ⇒
+`a_send = s·a + t`, unlocked by anyone who ever learns `a` — cosmetic) or it is not (hash-to-curve ⇒
+nobody knows the dlog, sender included — unusable). **Key separation always costs transmitted bytes;
+the only design freedom is which channel pays.** The receiver's split is free because the silent
+payment address carries 66 B of pubkey off-chain. A pool has the same kind of channel — a stratum/SV2
+session with every payee — which a general anonymous sender does not, hence row 1.
+
+Session recommendation *before* the sender-split framing was the scriptSig ephemeral, now demoted to
+row 3: the objection that reusing the real fee output
 leaves no fingerprint doesn't bite, because hasher outputs are indistinguishable taproot keys either
 way and the only thing tagged is the pool, which is already public.
 
