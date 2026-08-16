@@ -6,7 +6,7 @@ priority: p2
 created: 2026-08-14
 updated: 2026-08-14
 last_checked: 2026-08-14
-next_action: "Write test vectors in Python against bip-0352/reference.py for the sender-side split (dedicated a_send, input_hash re-bound to A_send, BIP 34 height as nonce, null-prevout coinbase) — an executable check must exist before any spec text. Leading variant is the out-of-band A_send list indexed by height (0 on-chain bytes); on-chain fallback is the witness-commitment optional-data field at bip-0141.mediawiki:74, not the scriptSig."
+next_action: "Write the spec diff against BIP 352's Sender/Receiver sections (close-out condition 1) — the executable check now exists and passes (~/repos/sp-coinbase-vectors/, 9 cases: 4 positive, 5 negative controls, all green; bips clone untouched). Settle in the diff: fresh hash tags (SP-Coinbase/Inputs, SP-Coinbase/SharedSecret) vs. BIP0352 tag reuse, and the silent-payments version byte from bip-0352.mediawiki:152-176. Leading variant is the out-of-band A_send list indexed by height (0 on-chain bytes); on-chain fallback is the witness-commitment optional-data field at bip-0141.mediawiki:74, not the scriptSig."
 sources:
   - raw/notes/2026-08-14-ll-coinbase-silent-payments-ecdh-nonce.md
   - raw/repos/2026-07-29-bip352-silent-payments-coinbase-incompatibility.md
@@ -48,7 +48,26 @@ Two properties make it worth more than the descriptor path it would replace:
 
 ## Current State
 
-**Open — unbuilt and unspecified.** The construction closes on paper; nothing exists.
+**Open — unspecified, but the executable check exists and passes.** The construction closes on
+paper and now also in code: `~/repos/sp-coinbase-vectors/` (2026-08-14) holds JSON test vectors
+mirroring `send_and_receive_test_vectors.json`'s schema plus an assert-based runner — baseline
+(28 vendored BIP352 vectors, unmodified `reference.py`) green, then 11 cases: the split in an
+ordinary tx, the coinbase native case (null prevout, BIP 34 height nonce), the N=5 fan-out with
+the drop-output contrast against `:319`, nonce distinctness both directions, five negative
+controls that each demonstrate their failure mode (vanilla BIP352's `:193` gate rejecting the
+coinbase; constant-null-outpoint nonce colliding across blocks; the `:92` replay transposed when
+`input_hash` omits the key or binds a static third key, and killed by binding `A_send`; odd-Y
+`A_send` scan miss with negation omitted; the group-linear compressed list `A_H = A_0 +
+H(A_0‖H)·G` yielding every epoch secret from `a_0`), and case 11: `A_send` conveyed by the fee
+output itself as a bare 1-of-2 multisig (see the table). **The construction was not broken in any way
+the note didn't anticipate** — every negative control failed exactly where Lesson 8 said it would.
+One small finding the note didn't state: the transposed `:92` attack survives the even-Y rule —
+the attacker's scalar must merely be ground to even Y (try the next height), so parity is no
+defense; only binding `input_hash` to `A_send` is. Two decisions are flagged, not settled: fresh
+hash tags (`SP-Coinbase/Inputs`, `SP-Coinbase/SharedSecret`) were used to domain-separate from
+BIP 352 rather than reusing `BIP0352/*`; and bech32m/address versioning was skipped entirely
+(raw `(B_scan, B_spend)` hex), since the version byte at `:152-176` is an unresolved question.
+`A_send` is modeled x-only on the wire with the `:299` even-Y rule transposed (case 8 pins it).
 
 **Shape**: a one-payer fan-out. `txOut[0]` (the pool's fee output) is the payer of record for
 `txOut[1..N]`, each `n` a **distinct paid miner**. One sender point `A`, one nonce (the height),
@@ -64,7 +83,26 @@ The open design decision is where `A` comes from, and the two variants are not e
 |---|---|---|---|
 | **Out-of-band `A_send` list, indexed by height** ← **leading** | **0 bytes on-chain** (33 B/epoch over stratum) | **Yes** — erase each `a_send` at maturity | Pool must serve a pubkey list and hold unused secrets; list is a linkability trust surface |
 | Ephemeral key in witness-commitment output, byte 39+ | 33 B / 132 WU, no new output | **Yes** — erase `a_send` at block-found | CSPRNG call only; `bip-0141.mediawiki:74` optional-data field, no scriptSig contention |
-| Ephemeral key in coinbase scriptSig | 33 B / 132 WU | **Yes** | Competes for the 2–100 B scriptSig budget against BIP 34's ~4 B, extranonce, pool tags, merged-mining tags — **superseded by the row above** |
+| Bare 1-of-2 multisig fee output: `OP_1 <A_send> <A_pool> OP_2 CHECKMULTISIG` | +37 B vs P2TR ≈ 148 WU, no new output | **Yes** — erase `a_send` at block-found (`a_pool` signs 1-of-2 alone; `a_send` never signs) | Fee output leaves the taproot set (standard, ≤3 keys, but rare in coinbases); only the pool's own output is fingerprinted. **Executable: case 11.** |
+| Ephemeral key in coinbase scriptSig | 33 B / 132 WU | **Yes** | Was demoted for budget contention — **contention dissolved 2026-08-14: the A_send push IS the pool tag** (scriptSig = height ‖ extranonce ‖ push33(A_send), 46 B total, nothing else). With the list served publicly, "tag == entry H of pool X's list" is unforgeable attribution. Keep clear of rolled extranonce bytes (Lesson 4). **Executable: case 12.** |
+
+**Can the fee output carry `A_send` while `a_pool` (not `a_send`) spends it?** As a *taproot*
+output: **no** — a P2TR output exposes exactly one group element and that element's discrete log
+is the keypath spending secret, so "scanner can read `A_send` from the output" and "holder of
+`a_send` can spend the output" are the same property. The escapes all fail: `A_send` as internal
+key with `a_pool` in a script leaf hides `A_send` until the output is *spent* (scanners scan
+unspent outputs); committing `A_send` into the tweak is one-way; deriving `A_send` publicly from
+`A_pool` is the group-linear case — with the *treasury key* as the seed, worse than case 9. But as
+a **bare 1-of-2 multisig** it works, because bare multisig is the one output type that reveals its
+keys while `m = 1` lets either holder sign alone: the scanner parses key 0, the pool spends with
+`a_pool`, and `a_send` is erasable at block-found. Cost is +37 B over a P2TR fee output (≈148 WU),
+16 WU dearer than the witness-commitment slot, which is why that slot stays ranked first among
+on-chain carriers. **And yes — the scriptSig works as a carrier too** (the row above): with
+`A_send` in *any* data field (scriptSig or witness commitment), the fee output is completely
+unconstrained — the pool pays itself to whatever it wants. The one hard rule is Lesson 4's:
+`A_send` must sit in the template-fixed portion of the scriptSig, never overlapping the extranonce
+bytes miners roll. Naming caution: three keypairs now coexist — pool spend `a_pool`, send-ECDH
+`a_send`, miner `b_scan`/`b_spend`; don't let "the spend key" drift between them.
 | Pool P2TR fee output at `txOut[0]` | 0 bytes | **No, permanently** — pool must retain `a` to spend its fee | **Contradicts its own defense** — see below |
 | Fee output as one-time hot key, swept then erased | 0 bytes | After ~100-block maturity | A sweep tx per block; loses key-only retroactive payout audit |
 
