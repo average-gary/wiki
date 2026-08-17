@@ -6,7 +6,7 @@ priority: p2
 created: 2026-08-14
 updated: 2026-08-16
 last_checked: 2026-08-16
-next_action: "Write the spec diff against BIP 352's Sender/Receiver sections (close-out condition 1) — the executable check now exists, passes, and is published: https://github.com/average-gary/sp-coinbase-vectors (11 cases: 4 positive, 5 negative controls, 2 carriers, all green; bips clone untouched). Settle in the diff: fresh hash tags (SP-Coinbase/Inputs, SP-Coinbase/SharedSecret) vs. BIP0352 tag reuse, and the silent-payments version byte from bip-0352.mediawiki:152-176. Leading variant is the out-of-band A_send list indexed by height (0 on-chain bytes); on-chain carriers are the witness-commitment optional-data field at bip-0141.mediawiki:74 and the scriptSig-as-pool-tag (case 12), the latter no longer demoted for budget contention."
+next_action: "Write the spec diff against BIP 352's Sender/Receiver sections (close-out condition 1) — the executable check now exists, passes, and is published: https://github.com/average-gary/sp-coinbase-vectors (11 cases: 4 positive, 5 negative controls, 2 carriers, all green; bips clone untouched). Settle in the diff: fresh hash tags (SP-Coinbase/Inputs, SP-Coinbase/SharedSecret) vs. BIP0352 tag reuse, and the silent-payments version byte from bip-0352.mediawiki:152-176. Leading variant is the out-of-band A_send list indexed by height (0 on-chain bytes); the leading on-chain carrier is the scriptSig-as-pool-tag (case 12), checked against the SV2 spec 2026-08-16: ~62 B left for the Extended Extranonce against a 64 B protocol ceiling, extranonce-disjointness enforced structurally by coinbase_tx_prefix/suffix, and 0 marginal cost since the Template Provider reserves all 100 B regardless. The bare 1-of-2 multisig carrier is REJECTED (m=1 makes a_send sufficient to spend the pool's fee; m=2 makes it un-erasable). Remaining measurement: empirical mainnet scriptSig occupancy alongside merge-mining commitments."
 sources:
   - raw/notes/2026-08-14-ll-coinbase-silent-payments-ecdh-nonce.md
   - raw/repos/2026-07-29-bip352-silent-payments-coinbase-incompatibility.md
@@ -60,8 +60,10 @@ controls that each demonstrate their failure mode (vanilla BIP352's `:193` gate 
 coinbase; constant-null-outpoint nonce colliding across blocks; the `:92` replay transposed when
 `input_hash` omits the key or binds a static third key, and killed by binding `A_send`; odd-Y
 `A_send` scan miss with negation omitted; the group-linear compressed list `A_H = A_0 +
-H(A_0‖H)·G` yielding every epoch secret from `a_0`), and case 11: `A_send` conveyed by the fee
-output itself as a bare 1-of-2 multisig (see the table). **The construction was not broken in any way
+H(A_0‖H)·G` yielding every epoch secret from `a_0`), and two carriers: case 11, `A_send` conveyed by
+the fee output as a bare 1-of-2 multisig — **now labelled REJECTED, see the table**, mechanics
+pinned but the carrier is dead — and case 12, the scriptSig-as-pool-tag, which is the surviving
+on-chain option. **The construction was not broken in any way
 the note didn't anticipate** — every negative control failed exactly where Lesson 8 said it would.
 One small finding the note didn't state: the transposed `:92` attack survives the even-Y rule —
 the attacker's scalar must merely be ground to even Y (try the next height), so parity is no
@@ -85,8 +87,8 @@ The open design decision is where `A` comes from, and the two variants are not e
 |---|---|---|---|
 | **Out-of-band `A_send` list, indexed by height** ← **leading** | **0 bytes on-chain** (33 B/epoch over stratum) | **Yes** — erase each `a_send` at maturity | Pool must serve a pubkey list and hold unused secrets; list is a linkability trust surface |
 | Ephemeral key in witness-commitment output, byte 39+ | 33 B / 132 WU, no new output | **Yes** — erase `a_send` at block-found | CSPRNG call only; `bip-0141.mediawiki:74` optional-data field, no scriptSig contention |
-| Bare 1-of-2 multisig fee output: `OP_1 <A_send> <A_pool> OP_2 CHECKMULTISIG` | +37 B vs P2TR ≈ 148 WU, no new output | **Yes** — erase `a_send` at block-found (`a_pool` signs 1-of-2 alone; `a_send` never signs) | Fee output leaves the taproot set (standard, ≤3 keys, but rare in coinbases); only the pool's own output is fingerprinted. **Executable: case 11.** |
-| Ephemeral key in coinbase scriptSig | 33 B / 132 WU | **Yes** | Was demoted for budget contention — **contention dissolved 2026-08-14: the A_send push IS the pool tag** (scriptSig = height ‖ extranonce ‖ push33(A_send), 46 B total, nothing else). With the list served publicly, "tag == entry H of pool X's list" is unforgeable attribution. Keep clear of rolled extranonce bytes (Lesson 4). **Executable: case 12.** |
+| ~~Bare 1-of-2 multisig fee output: `OP_1 <A_send> <A_pool> OP_2 CHECKMULTISIG`~~ **REJECTED 2026-08-16** | +37 B vs P2TR ≈ 148 WU (moot) | **No** — `m = 1` makes `a_send` *sufficient* to spend the fee, so erasure doesn't help: theft of the privacy key is theft of money | **Dead both ways.** `m = 1`: whoever gets `a_send` takes the pool's fee, voiding "losing this key costs privacy, never funds." `m = 2`: `a_send` must sign, so it can never be erased. Mechanics still pinned by case 11, now labelled REJECTED. |
+| **Ephemeral key in coinbase scriptSig, AS the pool tag** ← **leading on-chain carrier** | **0 marginal bytes** — SV2's Template Provider already reserves the full 100 B / 400 WU scriptSig unconditionally, used or not | **Yes** | Was demoted for budget contention — **contention dissolved 2026-08-14: the A_send push IS the pool tag** (scriptSig = height ‖ extranonce ‖ push33(A_send), 46 B total, nothing else). With the list served publicly, "tag == entry H of pool X's list" is unforgeable attribution. Keep clear of rolled extranonce bytes (Lesson 4). **Executable: case 12.** |
 
 **Can the fee output carry `A_send` while `a_pool` (not `a_send`) spends it?** As a *taproot*
 output: **no** — a P2TR output exposes exactly one group element and that element's discrete log
@@ -94,12 +96,21 @@ is the keypath spending secret, so "scanner can read `A_send` from the output" a
 `a_send` can spend the output" are the same property. The escapes all fail: `A_send` as internal
 key with `a_pool` in a script leaf hides `A_send` until the output is *spent* (scanners scan
 unspent outputs); committing `A_send` into the tweak is one-way; deriving `A_send` publicly from
-`A_pool` is the group-linear case — with the *treasury key* as the seed, worse than case 9. But as
-a **bare 1-of-2 multisig** it works, because bare multisig is the one output type that reveals its
-keys while `m = 1` lets either holder sign alone: the scanner parses key 0, the pool spends with
-`a_pool`, and `a_send` is erasable at block-found. Cost is +37 B over a P2TR fee output (≈148 WU),
-16 WU dearer than the witness-commitment slot, which is why that slot stays ranked first among
-on-chain carriers. **And yes — the scriptSig works as a carrier too** (the row above): with
+`A_pool` is the group-linear case — with the *treasury key* as the seed, worse than case 9. As a
+**bare 1-of-2 multisig** it appeared to work, because bare multisig reveals its keys while `m = 1`
+lets either holder sign alone — and **this was wrong, corrected 2026-08-16 by user objection.**
+"Either holder can sign alone" *includes the holder of `a_send`*. `m = 1` makes the erasable privacy
+key **sufficient to spend the pool's fee**, so its compromise costs funds, which is precisely the
+property the sender-side split exists to prevent and precisely why the taproot carrier was rejected
+one paragraph up. Bare multisig separates visibility from spendability *mechanically* but not
+*economically*: `a_send` still authorizes money. `m = 2` inverts the failure — `a_send` must sign,
+so it cannot be erased until the fee is spent, destroying the forward secrecy. **No value of `m`
+works, and the +37 B figure is moot.** The generalization worth keeping, which subsumes both the
+taproot and multisig rejections: **`A_send` must never appear in a scriptPubKey that controls money
+— it belongs in a data field, never in a spending condition.** The error is instructive about
+method: the multisig row was written from "what can a scanner read?" and never re-asked "what can
+this key now authorize?" **The scriptSig carrier is unaffected and is now the leading on-chain
+option** (the row above): with
 `A_send` in *any* data field (scriptSig or witness commitment), the fee output is completely
 unconstrained — the pool pays itself to whatever it wants. The one hard rule is Lesson 4's:
 `A_send` must sit in the template-fixed portion of the scriptSig, never overlapping the extranonce
@@ -148,6 +159,52 @@ maturity.
 Settled in-session, not open: the **extranonce is ruled out** as the nonce — miners roll it during
 PoW search, so deriving outputs from it forces a template rebuild plus EC math per roll. Prev-hash
 is template-fixed and remains available as a mix-in for the same-height-reorg case.
+
+## Stratum V2 fit — checked 2026-08-16
+
+With the multisig carrier dead, the scriptSig-as-pool-tag is the only on-chain option left, so it
+was checked against the SV2 spec (`stratum-mining/sv2-spec`, raw markdown; `stratumprotocol.org`
+itself returns HTTP 403 to fetchers). **It fits, with room, and one finding is stronger than
+"fits."**
+
+- **There is no pool-tag field in SV2.** The tag is not protocol-level — it is simply bytes the pool
+  chooses to place in the scriptSig region it controls. So "does the tag have room?" is really "does
+  the scriptSig have room, and can the pool pin bytes the miner won't roll?" Yes to both.
+- **Extranonce-disjointness is structural under SV2, not conventional.** For extended channels the
+  coinbase is assembled as `coinbase_tx_prefix ‖ extranonce_prefix ‖ extranonce ‖
+  coinbase_tx_suffix` (`05-Mining-Protocol` §5.4.1.6). The rolled region is *defined* as the gap
+  between the two pool-set halves, so `A_send` in `coinbase_tx_suffix` **cannot** be rolled. Lesson
+  4's hand-written invariant, which case 12 asserts by construction, is enforced by the message
+  format itself. This is the single best argument for the scriptSig over the witness-commitment
+  slot: no discipline is required to keep the constraint.
+- **The bytes are pre-paid, so the marginal on-chain cost is zero, not 34.** A Template Provider
+  MUST reserve the worst-case **400 WU / 100 B for `scriptSig` unconditionally**
+  (`07-Template-Distribution-Protocol`, fixed/variable-field tables and the reservation formula:
+  "the worst-case 400 weight units for `scriptSig` field"). The reservation is taken at
+  template-build time whether the pool uses the bytes or not — unused scriptSig bytes are *not*
+  returned to fee-paying transactions. So spending 34 of the 100 displaces nothing. This retires the
+  "33 B/block on-chain cost" line item that ranked the scriptSig third in the table above.
+- **Budget arithmetic.** 100 B consensus cap − ~4 B BIP 34 height push (`NewTemplate.coinbase_prefix`
+  is "up to 8 bytes (not including the length byte)"; ~4 B at current heights) − 34 B
+  `push33(A_send)` = **~62 B remaining** for the full Extended Extranonce. SV2's own ceiling is
+  **64 B** (`extranonce_prefix` `B0_32` + `extranonce` `B0_32`), so the leftover is within 2 B of the
+  most the protocol can address, and practical allocations of 8–16 B leave 4–8× headroom.
+- **Two real constraints, neither fatal.** `coinbase_tx_prefix` carries the `scriptSig length` field,
+  and **all channels in a group channel MUST share one full-extranonce size** (§5.1.2.1) — so the
+  34 B shrinks extranonce space *uniformly across the group*, and can't be varied per channel.
+  `A_send` rotates every block but its *length* is constant, so `scriptSig length` is stable and no
+  per-block renegotiation is triggered.
+- **Job Declaration mode is out of scope, and this is a genuine scope limit.** Under JD the *JDC*
+  (miner side) builds `coinbase_tx_prefix`/`coinbase_tx_suffix` (`06-Job-Declaration-Protocol`
+  §6.4), so the pool cannot place `A_send` in the scriptSig at all. JD also doesn't pay miners
+  per-output — the pool takes a single output from `AllocateMiningJobToken.Success` — so per-hasher
+  coinbase payouts presuppose a **pool-controlled template** either way. Worth stating in the spec
+  diff rather than discovering later.
+
+**Unverified, and the one thing left to measure:** empirical mainnet scriptSig occupancy. The
+arithmetic above assumes the pool's only other scriptSig content is the height and the extranonce.
+A Namecoin-style AuxPoW commitment is ~44 B (4 B magic + 32 B hash + 4 + 4), which still fits
+(4 + 44 + 8 + 34 = 90 ≤ 100) but leaves little slack. Someone should sample real coinbases.
 
 ## Close-out Condition
 
