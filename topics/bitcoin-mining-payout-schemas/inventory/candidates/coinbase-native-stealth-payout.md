@@ -4,9 +4,9 @@ kind: question
 status: open
 priority: p2
 created: 2026-08-14
-updated: 2026-08-16
-last_checked: 2026-08-16
-next_action: "Write the spec diff against BIP 352's Sender/Receiver sections (close-out condition 1) — the executable check now exists, passes, and is published: https://github.com/average-gary/sp-coinbase-vectors (11 cases: 4 positive, 5 negative controls, 2 carriers, all green; bips clone untouched). Settle in the diff: fresh hash tags (SP-Coinbase/Inputs, SP-Coinbase/SharedSecret) vs. BIP0352 tag reuse, and the silent-payments version byte from bip-0352.mediawiki:152-176. Leading variant is the out-of-band A_send list indexed by height (0 on-chain bytes); the leading on-chain carrier is the scriptSig-as-pool-tag (case 12), checked against the SV2 spec 2026-08-16: ~62 B left for the Extended Extranonce against a 64 B protocol ceiling, extranonce-disjointness enforced structurally by coinbase_tx_prefix/suffix, and 0 marginal cost since the Template Provider reserves all 100 B regardless. The bare 1-of-2 multisig carrier is REJECTED (m=1 makes a_send sufficient to spend the pool's fee; m=2 makes it un-erasable). Carrier settled 2026-08-16 against pinned SRI source: the SV2 pool tag is a real field (pool_tag_string / config pool_signature) with pool_len <= 64 B of headroom, and A_send must be bech32 or base64url encoded (it is a UTF-8 String; hex x-only is exactly 64 = zero slack, compressed hex fails at 102, standard base64 is disqualified since / is the tag delimiter) — or patch the tag to Vec<u8> and recover ~20 B. Next code step: port the per-block rotation PLUMBING from ~/repos/stratum-mining-worktrees/sv2-apps-coinbase-rotation (SharedLock-wrapped coinbase state, re-read per template) to the tag, but NOT XpubDerivator — BIP 32 unhardened derivation is case 9 verbatim. Remaining measurement: empirical mainnet scriptSig occupancy alongside merge-mining commitments."
+updated: 2026-08-17
+last_checked: 2026-08-17
+next_action: "Write the spec diff against BIP 352's Sender/Receiver sections (close-out condition 1) — that is now the ONLY outstanding work on the code side, because the executable check exists, passes, and is publicly runnable with no toolchain at https://average-gary.github.io/sp-coinbase-vectors/ (source: https://github.com/average-gary/sp-coinbase-vectors; 11 cases: 4 positive, 5 negative controls, 2 carriers, all green locally; 9 of 11 in-browser on CPython/wasm via Pyodide against vendored MIT secp256k1lab; bips clone untouched). Do NOT read the browser run as independent verification — it is the same Python, so it buys reproducibility only; the independent check is the separate ~40-line JavaScript reimplementation of case 12 in index.html §7, and the 2 cases that cannot run in a browser are exactly the ones executing unmodified upstream reference.py, so the page cannot prove agreement with BIP 352 itself. Settle in the diff: fresh hash tags (SP-Coinbase/Inputs, SP-Coinbase/SharedSecret) vs. BIP0352 tag reuse, and the silent-payments version byte from bip-0352.mediawiki:152-176. Leading variant is the out-of-band A_send list indexed by height (0 on-chain bytes); the leading on-chain carrier is the scriptSig-as-pool-tag (case 12), checked against the SV2 spec 2026-08-16: ~62 B left for the Extended Extranonce against a 64 B protocol ceiling, extranonce-disjointness enforced structurally by coinbase_tx_prefix/suffix, and 0 marginal cost since the Template Provider reserves all 100 B regardless. The bare 1-of-2 multisig carrier is REJECTED (m=1 makes a_send sufficient to spend the pool's fee; m=2 makes it un-erasable). Carrier settled 2026-08-16 against pinned SRI source: the SV2 pool tag is a real field (pool_tag_string / config pool_signature) with pool_len <= 64 B of headroom, and A_send must be bech32 or base64url encoded (it is a UTF-8 String; hex x-only is exactly 64 = zero slack, compressed hex fails at 102, standard base64 is disqualified since / is the tag delimiter) — or patch the tag to Vec<u8> and recover ~20 B. Next code step: port the per-block rotation PLUMBING from ~/repos/stratum-mining-worktrees/sv2-apps-coinbase-rotation (SharedLock-wrapped coinbase state, re-read per template) to the tag, but NOT XpubDerivator — BIP 32 unhardened derivation is case 9 verbatim. Remaining measurement: empirical mainnet scriptSig occupancy alongside merge-mining commitments."
 sources:
   - raw/notes/2026-08-14-ll-coinbase-silent-payments-ecdh-nonce.md
   - raw/notes/2026-08-16-ll-sv2-pool-tag-asend-carrier.md
@@ -247,3 +247,65 @@ Any one of:
   two-address clustering, the only withholding detection that has worked in production. That cost is
   already recorded against Part A and applies here unchanged — see
   [[../../wiki/concepts/block-withholding|Block Withholding]].
+
+## Runnable in a browser — 2026-08-17
+
+The barrier to review is no longer "clone two repos and have Python 3." The published page at
+<https://average-gary.github.io/sp-coinbase-vectors/> runs the vectors **two ways**, and the
+distinction between them is the whole epistemic content of this section. (Status at time of
+writing: §7 is live at commit `a90ecc5`; §8 and `vendor/` were written and verified locally this
+round and go live when that commit is pushed — checked 2026-08-17, `vendor/secp256k1lab/__init__.py`
+still 404s on Pages until then.)
+
+- **§7, always on, no dependencies at all.** ~40 lines of `BigInt` secp256k1 plus the browser's own
+  `crypto.subtle` SHA-256, reimplementing case 12 from the displayed formulas and reproducing all
+  nine values. This is the **independent** check.
+- **§8, on a button press, never on page load.** The *actual* `sp_coinbase.py` and `run_tests.py`
+  executed by CPython 3.14.2 compiled to WebAssembly (Pyodide `v314.0.4`, ~6 MB from jsDelivr,
+  SRI-pinned at `index.html:661-662` — note the pin covers the 19 KB loader only; the wasm and
+  stdlib it then fetches carry no integrity check). It imports the curve maths from `vendor/`:
+  byte-identical copies of `secp256k1lab` (MIT), `bitcoin_utils.py` (BSD-2-Clause) and
+  `ripemd160.py` (MIT), with both licences and their attribution recorded in `vendor/README.md`.
+
+**Running the same Python in WebAssembly buys reproducibility, not independence** — a second run of
+one implementation reproduces its author's misreadings faithfully. The claim is worth stating
+because the reverse is an easy thing to believe about a green tick in a browser. The JavaScript
+rewrite is the thing that carries independence, and it earned that description during development:
+it **found a real bug**. `B_spend` was being decompressed by lifting its x-coordinate to the even-Y
+root and discarding the `02`/`03` parity prefix, so an odd-Y spend key produced the wrong point.
+Nine of ten values still matched and only `P_0` diverged — the exact signature of a
+serialization-convention error, and exactly the failure class a re-run of the same code cannot
+surface. Fixed at `index.html:547` (`decompress()`, which now honours the prefix).
+
+**What the page therefore cannot prove.** 9 of the 11 cases run in the browser; the other two, plus
+the 28-vector baseline, execute **unmodified upstream `reference.py`**, which is deliberately not
+vendored — a local copy could not evidence agreement with the original, which is the only thing it
+is there for. So the browser establishes internal recomputation from the givens, that each miner's
+key spends its own output, and that the negative controls fail as claimed; it does **not** establish
+agreement with BIP 352. That still needs a bips clone and a terminal, and the page says so in a
+highlighted box rather than in a footnote.
+
+**Vendored-vs-upstream drift is guarded four ways**, because a stale `vendor/` would mean the
+published page showing green ticks over code nobody reviewed:
+
+1. `run_tests.check_vendored_files_pristine()` (`run_tests.py:385`) sha256-compares every vendored
+   file against the clone's **current HEAD**, not the commit pinned in `vendor/README.md`, so
+   upstream moving fails loudly rather than silently. It also asserts `vendor/reference.py` does not
+   exist and sweeps for unlisted `.py` files (a per-file loop alone would pass vacuously on an
+   emptied directory).
+2. A subprocess import with `BIPS_REPO=/nonexistent` (`run_tests.py:425`) — byte-identical files can
+   still be an *incomplete* set, and a new import in `sp_coinbase.py` would otherwise break in the
+   browser and nowhere else.
+3. `check_page_pyodide_file_list()` (`run_tests.py:460`) asserts the page's `PY_FILES` are relative
+   (an absolute path 404s under the `/sp-coinbase-vectors/` project base), git-tracked, and cover
+   the needed set — plus that `.nojekyll` is committed, since Jekyll drops `_`-prefixed paths and
+   would hide `vendor/secp256k1lab/__init__.py` alone.
+4. `test_wasm.mjs` boots the same Pyodide build headlessly in node, mounting **the page's own**
+   `PY_FILES` list rather than a second copy, and whitelists only the skips that legitimately cannot
+   run in a browser. Verified 2026-08-17: 9 cases green, no clone in reach.
+
+Skip semantics are deliberately asymmetric: a clone-less run at a *terminal* exits **1** even with
+everything green, because nothing in it was checked against upstream BIP 352 (`--allow-skips` to
+accept it); under `sys.platform == "emscripten"` it exits 0, since there the absence is structural
+(`run_tests.py:537`). Local full run 2026-08-17: baseline + 11 cases + 3 guards, all `PASS`, bips
+clone byte-identical.
