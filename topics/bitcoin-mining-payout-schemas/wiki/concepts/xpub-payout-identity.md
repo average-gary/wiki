@@ -137,6 +137,19 @@ still sets every target, still measures hashrate to within a few percent, and no
 holds the descriptor that links *all* of a miner's rotated addresses together. An xpub username
 is an on-chain privacy upgrade and a **pool-side privacy no-op**.
 
+### Why the descriptor engine can't be borrowed for the stealth variant
+
+**Added 2026-08-16.** A concrete instance of the no-op above. BIP 32 unhardened derivation — what a
+wildcard descriptor performs — is `a_i = a_par + H(K_par ‖ i)`, so the parent secret regenerates every
+child. For a *payout* key that is the point: the pool must be able to spend, and recovery from a seed
+is a feature. For the sender-side ECDH key in the silent-payment coinbase variant it is fatal, because
+that key's entire value is that it can be **destroyed** — one parent secret would retroactively unmask
+every payout the pool ever made. Same derivation, opposite requirement, which is why the stealth
+variant needs independent CSPRNG keys with an erasure schedule rather than a descriptor. The rotation
+*plumbing* still ports; only the key source doesn't. See
+[[../../raw/notes/2026-08-16-ll-sv2-pool-tag-asend-carrier|Lessons: SV2 pool tag as A_send carrier]]
+lesson 2 and [[coinbase-address-rotation]].
+
 ## Sources
 
 - [[../../raw/repos/2026-07-29-pool-identity-vs-payout-script-conflation-code-read|Identity-vs-payout-script code read]]

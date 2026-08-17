@@ -171,6 +171,37 @@ payments]] lesson 2 — and note the separate blocker that gates the ECDH varian
 all: a coinbase input carries no public key, so there is no sender point to ECDH with unless one is
 supplied deliberately (fee output at index 0, or an ephemeral key in the scriptSig).
 
+### The rotation plumbing is reusable; the derivation is not, and they invert
+
+**Added 2026-08-16.** A second, sharper reason wildcard descriptors don't transfer to the ECDH
+variant above. Reading the rotation branch's key source
+(`stratum-apps/src/config_helpers/xpub_derivation.rs:212`, `descriptor.at_derivation_index(index)`
+on `wpkh(xpub.../0/*)`), BIP 32 **unhardened** derivation is `a_i = a_par + H(K_par ‖ i)` — an
+additive tweak by a publicly computable scalar. That is algebraically the *same construction* as the
+group-linear key list already proven fatal for an ECDH sender key, where holding one parent secret
+recovers every child and retroactively unmasks every past payout.
+
+The trap is that the same machinery is *correct* for what it was written for. The two keys invert on
+one requirement:
+
+| | pool payout key (this article) | ECDH sender key `a_send` |
+|---|---|---|
+| recoverable from a seed | **required** — the pool must be able to spend | **fatal** — the pool must be able to destroy |
+| correct engine | BIP 32 wildcard descriptor | independent CSPRNG + erasure schedule |
+
+So when reusing a rotation mechanism, separate its **plumbing** (the `SharedLock`-wrapped coinbase
+state mutated at runtime and re-read per template) from its **key derivation** (where secrets come
+from). The plumbing ports; the derivation must not.
+
+A related correction to § What the trigger actually is, for the ECDH variant specifically:
+`rotate_coinbase_address()` fires only when *this pool* finds a block, which reads as too coarse but
+isn't a correctness problem there. Because the height is bound into the shared secret, outputs differ
+every block even with a static sender key — so rotation cadence bounds **forward-secrecy
+granularity** only, not address freshness. Worth stating as "one key's exposure reveals every block
+it covered" rather than asserting a required frequency. See
+[[../../raw/notes/2026-08-16-ll-sv2-pool-tag-asend-carrier|Lessons: SV2 pool tag as A_send carrier]]
+lessons 2 and 3.
+
 ## Open questions
 
 1. **Is the quantum framing sound?** Neither source analyzes it. Given that P2WPKH/P2TR reveal the pubkey on spend, rotation of receive addresses bounds exposure only under assumptions about spending behavior that no source states.
