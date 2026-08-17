@@ -1,14 +1,14 @@
 ---
 title: Candidates
 type: index
-updated: 2026-08-14
+updated: 2026-08-16
 ---
 
 # Candidates (5 — 4 active/open, 1 closed)
 
 | File | Kind | Status | Priority | Next Action | Updated |
 |------|------|--------|----------|-------------|---------|
-| [coinbase-native-stealth-payout.md](coinbase-native-stealth-payout.md) | question | open | p2 | Write the spec diff against BIP 352's Sender/Receiver sections (close-out condition 1) — executable check exists and passes (`~/repos/sp-coinbase-vectors/`, 11 cases green). Settle in the diff: fresh hash tags vs. BIP0352 tag reuse; version byte from `bip-0352.mediawiki:152-176`. | 2026-08-14 |
+| [coinbase-native-stealth-payout.md](coinbase-native-stealth-payout.md) | question | open | p2 | Write the spec diff against BIP 352's Sender/Receiver sections (close-out condition 1) — executable check exists, passes, and is published ([average-gary/sp-coinbase-vectors](https://github.com/average-gary/sp-coinbase-vectors), 11 cases green). Settle in the diff: fresh hash tags vs. BIP0352 tag reuse; version byte from `bip-0352.mediawiki:152-176`. | 2026-08-16 |
 | [batched-credit-timing-leak.md](batched-credit-timing-leak.md) | question | active | p1 | Quantify hashrate recoverability from batched credit timing — simulate fixed vs Poisson-randomized boundaries at `b ∈ {10, 72, 1271}` against R&C's 0.53–34.4 % ISP-Log baseline. | 2026-07-29 |
 | [doj-1960-noncustodial-enforcement-theory.md](doj-1960-noncustodial-enforcement-theory.md) | question | active | p1 | Retrieve the Samourai §1960 theory from CourtListener/RECAP (justice.gov 403/404) and reconcile against FinCEN §5.4. | 2026-07-29 |
 | [canard-gouget-primary-text.md](canard-gouget-primary-text.md) | ingest-candidate | active | p3 | Obtain Canard & Gouget, *"Anonymity in Transferable E-Cash,"* ACNS 2008 pp.207–223 via institutional access; confirm the theorem number and exact scope. | 2026-07-29 |

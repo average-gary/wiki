@@ -4,9 +4,9 @@ kind: question
 status: open
 priority: p2
 created: 2026-08-14
-updated: 2026-08-14
-last_checked: 2026-08-14
-next_action: "Write the spec diff against BIP 352's Sender/Receiver sections (close-out condition 1) — the executable check now exists and passes (~/repos/sp-coinbase-vectors/, 9 cases: 4 positive, 5 negative controls, all green; bips clone untouched). Settle in the diff: fresh hash tags (SP-Coinbase/Inputs, SP-Coinbase/SharedSecret) vs. BIP0352 tag reuse, and the silent-payments version byte from bip-0352.mediawiki:152-176. Leading variant is the out-of-band A_send list indexed by height (0 on-chain bytes); on-chain fallback is the witness-commitment optional-data field at bip-0141.mediawiki:74, not the scriptSig."
+updated: 2026-08-16
+last_checked: 2026-08-16
+next_action: "Write the spec diff against BIP 352's Sender/Receiver sections (close-out condition 1) — the executable check now exists, passes, and is published: https://github.com/average-gary/sp-coinbase-vectors (11 cases: 4 positive, 5 negative controls, 2 carriers, all green; bips clone untouched). Settle in the diff: fresh hash tags (SP-Coinbase/Inputs, SP-Coinbase/SharedSecret) vs. BIP0352 tag reuse, and the silent-payments version byte from bip-0352.mediawiki:152-176. Leading variant is the out-of-band A_send list indexed by height (0 on-chain bytes); on-chain carriers are the witness-commitment optional-data field at bip-0141.mediawiki:74 and the scriptSig-as-pool-tag (case 12), the latter no longer demoted for budget contention."
 sources:
   - raw/notes/2026-08-14-ll-coinbase-silent-payments-ecdh-nonce.md
   - raw/repos/2026-07-29-bip352-silent-payments-coinbase-incompatibility.md
@@ -49,7 +49,9 @@ Two properties make it worth more than the descriptor path it would replace:
 ## Current State
 
 **Open — unspecified, but the executable check exists and passes.** The construction closes on
-paper and now also in code: `~/repos/sp-coinbase-vectors/` (2026-08-14) holds JSON test vectors
+paper and now also in code, published 2026-08-16 at
+[average-gary/sp-coinbase-vectors](https://github.com/average-gary/sp-coinbase-vectors)
+(local: `~/repos/sp-coinbase-vectors/`, 2026-08-14). It holds JSON test vectors
 mirroring `send_and_receive_test_vectors.json`'s schema plus an assert-based runner — baseline
 (28 vendored BIP352 vectors, unmodified `reference.py`) green, then 11 cases: the split in an
 ordinary tx, the coinbase native case (null prevout, BIP 34 height nonce), the N=5 fan-out with
