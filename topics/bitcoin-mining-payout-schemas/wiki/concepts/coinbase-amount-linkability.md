@@ -102,6 +102,31 @@ negative results from the primary-source read: **zero occurrences of "coinbase" 
 lines**, and no proposal anywhere for a coinbase-specific tweak substitute. See
 [[xpub-payout-identity]] for what *does* work (BIP 32/380 descriptors) and what it costs.
 
+### Correction to the section above — the impossibility argument does not hold
+
+**Added 2026-08-24.** The reasoning is *"a coinbase has no input private key, so there is no `a`, so
+there is no shared secret."* Sound about BIP 352 **as written**; unsound as an impossibility result,
+because it assumes `a` must come from the inputs. It need not. Supplying a dedicated sender key
+`a_send` deliberately — published in the coinbase rather than recovered from an input — closes the
+construction, with the BIP 34 block height substituting for the outpoint nonce. That variant now
+exists in executable form ([average-gary/sp-coinbase-vectors](https://github.com/average-gary/sp-coinbase-vectors),
+runnable at <https://average-gary.github.io/sp-coinbase-vectors/>) and is tracked by
+[[../../inventory/candidates/coinbase-native-stealth-payout|the coinbase-native stealth payout
+candidate]]. The "zero occurrences of coinbase in BIP 352" finding stands, and is in fact the point:
+the case is **unspecified, not impossible**.
+
+**What survives is this article's actual thesis — silent payments rescue *address* linkability, never
+*amount* linkability.** The two are independent channels. A hashrate provider with a stable share of
+the pool receives a proportionally stable share of every payout, so an observer computes
+`amount_i / T` from public data and obtains a fingerprint persisting across blocks **without any
+address ever repeating**. Hashrate moves slowly and pool hashrate is heavy-tailed, so the largest
+providers are the easiest to track. So § *The ceiling on what amount-hiding can achieve* binds the
+stealth variant exactly as it binds every other scheme here: the WabiSabi bound is not evaded by
+rotating keys. Fresh-per-block addresses remain worth having — address reuse is the channel Romiti et
+al. exploited — but they are a partial defense and should not be described as more. See
+[[../../raw/notes/2026-08-24-ll-jd-coinbase-control-amount-linkability|Lessons: SV2 coinbase control
+and amount linkability]] lesson 6.
+
 ## Sources
 
 - [[../../raw/papers/2026-07-29-maurer-2017-knapsack-coinjoin-arbitrary-values|Maurer et al. (TrustCom 2017), WabiSabi, CoinJoin Sudoku]]

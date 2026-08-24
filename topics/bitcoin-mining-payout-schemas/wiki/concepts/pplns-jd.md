@@ -88,6 +88,45 @@ These are **complementary, not competing**. TIDES + DATUM is OCEAN's version of 
 
 PPLNS-JD as described above still asks the miner to *trust* the pool's window arithmetic. The [[sv2-share-accounting-ext|SV2 Share Accounting Extension]] (extension type 32) closes that gap: it is a wire protocol letting a miner **audit** a reward window by spot-sampling slices and shares and proving each one — share PoW validity, merkle inclusion in the slice root, that summed share difficulty does not exceed the slice's, and that share fees stay within the slice's reference-job fees plus a delta. It is the on-the-wire counterpart to the theoretical PPLNS-with-Job-Declaration design (lorbax/pplns-with-job-declaration) that this article's N = 8 × D discussion draws on. Reference implementation: the `demand-share-accounting-ext` Rust crate (v0.0.13, pre-1.0; activation handshake still TODO). It reduces — but does not fully eliminate — trust in the pool, since a single audit samples only part of the window.
 
+## Non-custodial payouts under JD: who actually controls the coinbase
+
+**Added 2026-08-24.** Base JDP cannot express multi-miner coinbase payouts at all, and the reason is an
+ordering constraint rather than an oversight: `AllocateMiningJobToken.Success` fixes the coinbase
+outputs *before* `NewTemplate` reveals the template revenue `T` that the amounts depend on. What base
+JDP negotiates is only **where the pool gets paid**, not whom it pays — §6.4.3 has the pool reserve the
+**first** output as the pool payout output, requires JDC to allocate sats into it, and constrains any
+further pool-added outputs to **0 value**. So the reward flows to one pool output and per-miner
+distribution happens elsewhere.
+
+`sv2-spec` **PR #203** (extension `0x0003`, "Non-Custodial Payouts", open, supersedes the closed #195
+and #202) resolves it by having the pool publish `SetPayoutDistribution`: per-miner outputs plus
+**relative weights**, with absolute amounts computed deterministically once `T` is known
+(`amount[i] = floor(weight[i]·T/W)`, `pay_P` absorbing dust pruning and rounding). Validation is
+recompute-and-compare. It targets non-debt accounting explicitly — PPLNS, SLICE, TIDES — and says
+PPS/FPPS pools SHOULD NOT use it, which makes it directly relevant to this article.
+
+Three findings worth recording for anyone building on it:
+
+- **The two JD modes differ on scriptSig visibility, and one cannot host a pool tag at all.**
+  Full-Template (`DeclareMiningJob` §6.4.4) carries `coinbase_tx_prefix` + `coinbase_tx_suffix`, so the
+  pool *sees* the scriptSig and can reject a declaration. Coinbase-only (`SetCustomMiningJob` §5.3.18)
+  carries only `coinbase_prefix` (≤8 B, the BIP 34 height), `nSequence`, `coinbase_tx_outputs`,
+  `locktime` and `merkle_path` — no arbitrary scriptSig bytes, so the pool can neither specify nor
+  validate a tag. Neither mode has a pool → JDC field for scriptSig content, so the pool has
+  **approval** authority in one mode and **specification** authority in neither.
+- **Its own §9.2 names the privacy cost:** the distribution is pool-wide, so *"every JDC learns the
+  payout scripts and relative weights of the Pool's top miners,"* with "use fewer payout slots" as the
+  offered mitigation. That is a leak-versus-non-custodiality dial rather than a fixable bug — see the
+  impossibility note below.
+- **The disclosure cannot be engineered away.** The JDC must hash the coinbase, the extranonce sits
+  inside the scriptSig, and everything after it must be re-hashed per roll — so the prefix could in
+  principle be collapsed to a SHA-256 midstate but the **suffix cannot**, and the outputs live in the
+  suffix. The bytes one would most want to withhold are structurally the ones that must be handed
+  over.
+
+See [[../../raw/notes/2026-08-24-ll-jd-coinbase-control-amount-linkability|Lessons: SV2 coinbase
+control and amount linkability]] lessons 3 and 4.
+
 ## Sources
 
 - [[../../raw/articles/2026-05-23-dmnd-demand-pool|DMND / Demand Pool article]]
