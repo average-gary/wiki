@@ -232,6 +232,12 @@
       "created": "2026-08-10",
       "status": "active",
       "summary": "COLDCARD — Coinkite's Bitcoin hardware wallet, from the firmware repo's own design docs and release histories @ 43b2139. Dual secure elements (ATECC608 + DS28C36B from different vendors) with the seed-encryption key split across MCU/SE1/SE2, pairing secrets in PCROP-firewalled bootloader flash, and SE2 deliberately unable to validate a PIN so all rate limiting rests on SE1. PIN prefix/suffix entry with two-BIP39-word anti-phishing, Trick PINs, BIP-85 duress wallets, Delta Mode, Fast Wipe/Fast Brick. Backup and secret transfer (AES-256 7z backups, Seed XOR, Key Teleport over ECDH+BBQr, temporary seeds and the Seed Vault). Signing behaviour and limits (PSBT/multisig ceilings, SIGHASH policy, BIP-322 proof of reserves, BIP-137 message signing, Spending Policy/CCC). Platform and supply chain (STM32L4 memory map, bootloader, PSRAM-staged upgrades with the SE1 world checksum, Docker reproducible builds). Includes the live 2021–July 2026 poor-entropy advisory and its per-line fixed versions."
+    },
+    "quantum-computing-limits": {
+      "path": "topics/quantum-computing-limits",
+      "created": "2026-09-01",
+      "status": "active",
+      "summary": "Fundamental — not engineering — ceilings on quantum computation. Theories in which complex Hilbert Space is a continuum idealisation of something discrete (Palmer's Rational Quantum Mechanics, Buniy/Hsu/Zee, Carroll, 't Hooft), the resulting qubit information capacity N_max where a bit budget growing as N×L meets a Hilbert-space dimension growing as 2^(N+1)−2, gravity as the scale-setter via Diósi-Penrose collapse (L = ceil(E_P/E_G), so QM is the singular limit at G=0), and cosmological information bounds (Lloyd, Davies' N_Davies ≈ 400). Covers the falsification path (which algorithms need maximal superposition — QFT/Shor's — versus low-dimensional-subspace systems like BCS superconductors), the predicted discretised-shot-noise signature, and downstream consequences for Shor's against RSA-2048 and ECDSA secp256k1. Founding source: Palmer, arXiv:2510.02877v3 (PNAS-accepted), predicting advantage saturates at ~1,000 perfect qubits. Minority position — the no-ceiling baseline (Gidney resource estimates, vendor roadmaps) is a known gap."
     }
   },
   "local_wikis": [

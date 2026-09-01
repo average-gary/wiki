@@ -2,7 +2,7 @@
 title: Wiki Hub
 type: hub
 created: 2026-05-20
-updated: 2026-08-10
+updated: 2026-09-01
 ---
 
 # Wiki Hub
@@ -59,6 +59,8 @@ LLM-compiled knowledge base. Topic wikis live under `topics/`.
 - [frostsnap](topics/frostsnap/_index.md) — [Frostsnap](https://frostsnap.com) FROST threshold-Schnorr Bitcoin self-custody on distributed, daisy-chainable ESP32-C3 devices with a Flutter coordinator app. Architecture (`frostsnap_core`/`comms`/`coordinator`, `flutter_rust_bridge`), keygen with verifiable host entropy, coordinator authentication via share images + the reconstructed root polynomial image, the `rootkey`/`appkey` derivation tree, the `frost_backup` 25-BIP39-word share format (polynomial + words checksums, fingerprint grinding), ESP32 Secure Boot v2 provisioning + genuine-device certificates, the `frostsnap-thaw` emergency xpriv/descriptor recovery path, and the project's three-clause threat model with its malicious-backup/ransom carve-out. Adjacent to `musig2-signing-ceremonies` (FROST t-of-n vs MuSig2 n-of-n).
 
 - [coldcard](topics/coldcard/_index.md) — [COLDCARD](https://coldcard.com) (Coinkite) Bitcoin hardware wallet, from the firmware repo's own design docs + per-model release histories @ `43b2139`. Dual secure elements (Microchip ATECC608 + Maxim DS28C36B, different vendors by design) with the seed-encryption key split across MCU/SE1/SE2, 32-byte pairing secrets in PCROP-firewalled bootloader flash, and SE2 deliberately unable to validate a PIN so all rate limiting rests on SE1. PIN prefix/suffix entry with the two-BIP39-word anti-phishing evil-maid check, Trick PINs, BIP-85 duress wallets, Delta Mode, Fast Wipe/Fast Brick. Backup + secret transfer (AES-256 7z backups, Seed XOR, Key Teleport over ECDH/BBQr, temporary seeds + Seed Vault). Signing limits (PSBT/multisig ceilings, SIGHASH policy, BIP-322 PoR, BIP-137 msg signing, Spending Policy/CCC). Platform (STM32L4 memory map, bootloader, PSRAM-staged upgrades + SE1 world checksum, Docker repro builds). Carries the live 2021–July 2026 poor-entropy advisory (fixed: 5.6.0 Mk4/Mk5, 1.5.0Q, 4.2.0 Mk3, 6.6.0 Edge). Adjacent to `frostsnap` (single-device hardening vs splitting the key across locations).
+
+- [quantum-computing-limits](topics/quantum-computing-limits/_index.md) — Fundamental (not engineering) ceilings on quantum computation. Theories where complex Hilbert Space is a continuum idealisation of something discrete — Palmer's **Rational Quantum Mechanics (RaQM)**, Buniy/Hsu/Zee, Carroll's finite QM, 't Hooft's cellular automata — and the **qubit information capacity** that falls out when a bit budget growing as `N × L` meets a Hilbert-space dimension growing as `2^(N+1) − 2`, giving `N_max ≈ log₂ L`. Gravity as the scale-setter: equating state reduction with Diósi-Penrose collapse gives `L = ⌈E_P/E_G⌉`, so QM is the **singular limit at G = 0**. Estimates `N_max ≈ 200` (quantum dot) / `300` (photonic) / `400` (ion trap), never above `≈ 1,000` — hence the falsifiable prediction that algorithms needing maximal superposition (QFT, Shor's) **saturate in advantage at ~1,000 perfect qubits and RSA-2048 is never factored**. Also cosmological information bounds (Lloyd, Davies' independent `N_Davies ≈ 400`), the BCS-superconductor rebuttal, the predicted discretised-shot-noise signature, and downstream consequences for Shor's against RSA and **ECDSA secp256k1**. Founding source: Palmer, arXiv:2510.02877v3, PNAS-accepted. *Minority position — the no-ceiling baseline (Gidney's ~1M noisy qubits, vendor roadmaps) is a recorded gap, not agreement.*
 
 ## Local Topics
 
