@@ -8,7 +8,7 @@ Last updated: 2026-10-02
 
 - Sources: 71 raw documents (46 articles, 8 papers, 17 data)
 - Articles: 15 compiled wiki articles (8 concepts, 4 topics, 3 references)
-- Outputs: 0 generated artifacts
+- Outputs: 1 generated artifact (business plan, Markdown + PDF)
 - Research rounds: 3
 - Last compiled: 2026-10-02
 - Last lint: never
@@ -16,6 +16,7 @@ Last updated: 2026-10-02
 ## Quick Navigation
 
 - **Start here: [Mobile Beef Processing Business Plan](wiki/topics/mobile-beef-business-plan.md)**
+- **Business plan PDF: [output/business-plan-mobile-beef-2026-10-02.pdf](output/business-plan-mobile-beef-2026-10-02.pdf)**
 - **Operating model: [Cooler-Backed Mobile Model](wiki/topics/cooler-backed-mobile-model.md)**
 - **Funding: [Grant and Financing Opportunities](wiki/topics/grant-and-financing-opportunities.md)**
 - [All Sources](raw/_index.md)
