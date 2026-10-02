@@ -239,6 +239,12 @@
       "status": "active",
       "summary": "Fundamental — not engineering — ceilings on quantum computation. Theories in which complex Hilbert Space is a continuum idealisation of something discrete (Palmer's Rational Quantum Mechanics, Buniy/Hsu/Zee, Carroll, 't Hooft), the resulting qubit information capacity N_max where a bit budget growing as N×L meets a Hilbert-space dimension growing as 2^(N+1)−2, gravity as the scale-setter via Diósi-Penrose collapse (L = ceil(E_P/E_G), so QM is the singular limit at G=0), and cosmological information bounds (Lloyd, Davies' N_Davies ≈ 400). Covers the falsification path (which algorithms need maximal superposition — QFT/Shor's — versus low-dimensional-subspace systems like BCS superconductors), the predicted discretised-shot-noise signature, and downstream consequences for Shor's against RSA-2048 and ECDSA secp256k1. Founding source: Palmer, arXiv:2510.02877v3 (PNAS-accepted), predicting advantage saturates at ~1,000 perfect qubits. Minority position — the no-ceiling baseline (Gidney resource estimates, vendor roadmaps) is a known gap."
     },
+    "mining-pool-architecture": {
+      "path": "topics/mining-pool-architecture",
+      "created": "2026-09-21",
+      "status": "active",
+      "summary": "Software architecture and design of Bitcoin mining pool servers — connection layer (long-lived TCP fan-in, event loop vs async, SO_REUSEPORT sharding), work distribution and job-push latency, share-validation/accounting pipelines, template sourcing (getwork -> GBT -> SV2 Template Provider -> Core Mining IPC), implementation survey (ckpool, public-pool, Miningcore, NOMP, eloipool, sv2-apps roles, Braiins, Ocean/DATUM, p2pool), operations, failure modes, and the sizing numbers that constrain each choice. Payout schemas, SV2 crate internals, p2pool/DATUM internals and scale-test methodology stay in their own topics."
+    },
     "mobile-beef-processing": {
       "path": "topics/mobile-beef-processing",
       "created": "2026-10-02",

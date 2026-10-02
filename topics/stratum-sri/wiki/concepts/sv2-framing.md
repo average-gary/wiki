@@ -5,7 +5,7 @@ sources:
   - raw/articles/2026-05-28-stratum-sri-sv2-framing-sv2-readme.md
   - raw/articles/2026-05-28-stratum-sri-sv2-framing-sv2-benches.md
 created: 2026-05-28
-updated: 2026-07-17
+updated: 2026-09-02
 tags: [sv2, framing-sv2, framing, header, channel-msg, no-std]
 aliases: ["framing_sv2", "Sv2Frame", "channel_msg bit"]
 confidence: high
@@ -75,6 +75,7 @@ The crate has one feature flag, `with_buffer_pool`, which routes framing allocat
 - [[sv2-extensions|SV2 Extensions]] ([SV2 Extensions](sv2-extensions.md)) — the `extension_type` field framing routes on
 - [[sv2-extensions-negotiation|SV2 Extensions Negotiation (0x0001)]] ([SV2 Extensions Negotiation](sv2-extensions-negotiation.md)) — its messages carry `extension_type = 0x0001` in this header
 - [[stratum-core-umbrella|stratum-core Umbrella Crate]] ([stratum-core Umbrella Crate](../topics/stratum-core-umbrella.md)) — re-exports `framing_sv2`
+- [[spec-as-security-surface|Specification as Security Surface]] ([Specification as Security Surface](spec-as-security-surface.md)) — the `extension_type` namespace has no spec-level collision defense
 
 ## Sources
 

@@ -1,0 +1,26 @@
+# data Index
+
+> Raw data sources for mining-pool-architecture.
+
+Last updated: 2026-09-22
+
+## Contents
+
+| File | Summary | Tags | Updated |
+|------|---------|------|---------|
+| [2026-09-21-pool-scale-and-sizing-constants.md](2026-09-21-pool-scale-and-sizing-constants.md) | Sizing constants with the headline derived figure corrected. Network state 2026-09: 945.80 EH/s, difficulty 132.76 T (cross-checked self-consistent), Foundry 233.7 EH/s / 23.4%, top 3 ~60%. Canonical difficulty math confirmed. Nonce exhaustion at 100 TH/s: 43 µs bare, 720 s with version rolling. **CORRECTED**: the widely-quoted "~1.09M shares/sec" for a top pool is an artefact of assuming a uniform difficulty — vardiff makes aggregate share rate `connections / interval`, with **no hashrate term**, so ~2,300 shares/sec at 23,000 connections. Also corrected: per-share validation is ~1 µs (standard) to ~10 µs (extended), not 50–100 µs, and Schnorr is per-connection not per-share — so 1M shares/sec needs single-digit cores, not 100. | sizing-constants, network-hashrate, difficulty-math, shares-per-second, vardiff-as-control-variable, nonce-exhaustion, validation-cost, derived-figures | 2026-09-21 |
+| [2026-09-21-sv2-claimed-performance-gains-vendor.md](2026-09-21-sv2-claimed-performance-gains-vendor.md) | **`confidence: low`, `do_not_cite_as_fact`.** The figures the SV2 project publishes for itself: 60%/70% bandwidth reduction; job latency 228 ms → 57.7 ms → 2.44 ms; block propagation 96.3 ms → 3.44 ms; share acceptance 99.8% → 100%; "up to 7.4% profit increase". No methodology, dataset or replication found. Two are implausible: 0% stale cannot hold for any protocol (staleness comes from network propagation, not wire format), and 2.44 ms is below plausible WAN RTT — most likely a *local* Job Declaration path compared against a *WAN* V1 path. Recorded with a per-claim verification path so they can be tested rather than cited. | stratum-v2, performance-claims, vendor-marketing, unverified, methodology-missing, bandwidth-reduction, stale-share-rate | 2026-09-21 |
+| [2026-09-22-production-pool-database-architectures.md](2026-09-22-production-pool-database-architectures.md) | **Closes round 1's schema gap — five schemas with DDL.** The result is a natural experiment: every production design avoids row-by-row per-share INSERT, and **MPOS, the one that does it** (primary key + four secondary indexes, no batching), **is the only one with a documented scaling failure** (~1–2k miners). BTCPool puts **Kafka** between validation and storage with two opposite topic configs — shares batched 10k/1 s/Snappy, `SolvedShare` at **1 ms uncompressed** — and its MySQL holds only hourly/daily aggregates. Miningcore keeps raw rows but via **binary `COPY`** into a `shares` table with **no PRIMARY KEY**. Redis pools keep no share rows at all and merge orphaned rounds back via Lua. | btcpool, kafka, miningcore, postgresql, binary-copy, partitioning, mpos, scaling-limit, redis, aggregation, retention | 2026-09-22 |
+| [2026-09-22-sv2-benchmark-reports-measured.md](2026-09-22-sv2-benchmark-reports-measured.md) | **RETRACTS round 1's 'no benchmark exists' claim.** Two empirical SV1-vs-SV2 benchmarks on real ASICs (Sep 2024: 6× S19k Pro/10 d; Oct 2025: 10× S21Imm/3.8 d) with a reusable public Docker harness. Oct 2025: job latency 142 ms → **7.33 ms**; block propagation 50.5 ms → **1.43 ms**; acceptance 98.7% → 100% (0 stale of 164,408 vs SV1's 1.34%). **Bandwidth is a trade, not a win** — SV2 higher at the farm, lower at the pool. And critically, the SV2 project's published figures (228 → 57.7 → 2.44 ms) **do not appear in either report**, so the marketing claims have a different, unidentified provenance. testnet4 only, 6–10 ASICs, non-independent evaluator. | benchmark, sv1-vs-sv2, job-latency, block-propagation, stale-shares, reusable-harness, retraction, claim-provenance | 2026-09-22 |
+| [2026-09-22-ingest-engines-and-durability-tradeoffs.md](2026-09-22-ingest-engines-and-durability-tradeoffs.md) | Engine benchmarks with a **correction** and an **over-engineering warning**. Corrected: a widely-cited '3–4k rows/sec' is the *margin* by which TimescaleDB beat PostgreSQL, not PostgreSQL's ceiling — binary `COPY` of small rows runs ~10⁵/sec, so conclusions built on it understate Postgres ~50×. Useful content: comparable **durability windows** (PostgreSQL `synchronous_commit=off` ≈600 ms with no corruption risk; Redis AOF everysec 1 s; ClickHouse `async_insert` 50–200 ms and `insert_quorum=0` acks before replication), QuestDB's 640k rows/sec at 10M cardinality where TimescaleDB fell to 50k, and the index warning that one index can cost 100× on insert. | ingest-benchmarks, postgresql, synchronous-commit, redis-aof, durability-window, batching, index-cost, questdb, clickhouse, over-engineering | 2026-09-22 |
+
+## Categories
+
+- **sizing**: pool-scale-and-sizing-constants
+- **claims-audit**: sv2-claimed-performance-gains-vendor
+
+## Recent Changes
+
+- 2026-09-22: Research round 2 additions (see rows dated 2026-09-22).
+
+- 2026-09-21: Two data files ingested in research round 1. Both required correction or downgrading from the researching agent's original scores — the sizing file preserves the erroneous figures alongside the corrections so the errors stay auditable.

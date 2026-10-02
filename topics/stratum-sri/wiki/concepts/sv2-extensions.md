@@ -5,7 +5,7 @@ sources:
   - raw/articles/2026-05-28-stratum-sri-sv2-extensions-sv2-readme.md
   - raw/articles/2026-07-17-sv2-spec-extensions-negotiation.md
 created: 2026-05-28
-updated: 2026-07-17
+updated: 2026-09-02
 tags: [sv2, extensions-sv2, tlv, extensions-negotiation, worker-hashrate]
 aliases: ["extensions_sv2", "Sv2 extensions", "TLV"]
 confidence: high
@@ -53,6 +53,7 @@ When the [[sri-pull-request-themes|recent PR series]] ([recent PR series](../ref
 - [[sv2-message-handlers|SV2 Message Handlers]] ([SV2 Message Handlers](sv2-message-handlers.md)) — `Extensions` handler dispatches extension messages
 - [[sv2-mining-subprotocol|SV2 Mining Subprotocol]] ([SV2 Mining Subprotocol](../topics/sv2-mining-subprotocol.md)) — `SubmitSharesExtended` is where Worker-Specific Hashrate Tracking TLVs live
 - [[stratum-core-umbrella|stratum-core Umbrella Crate]] ([stratum-core Umbrella Crate](../topics/stratum-core-umbrella.md)) — re-exports `extensions_sv2`
+- [[spec-as-security-surface|Specification as Security Surface]] ([Specification as Security Surface](spec-as-security-surface.md)) — why an ambiguous extension clause is this crate's problem to absorb
 
 ## Sources
 

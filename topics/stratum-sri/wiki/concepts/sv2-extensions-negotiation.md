@@ -5,7 +5,7 @@ sources:
   - raw/articles/2026-07-17-sv2-spec-extensions-negotiation.md
   - raw/notes/2026-07-17-sv2-spec-issue-95-unknown-extensions.md
 created: 2026-07-17
-updated: 2026-07-17
+updated: 2026-09-02
 tags: [sv2, sv2-spec, extensions-sv2, extension-negotiation, extension-0x0001, request-extensions, setup-connection]
 aliases: ["Extensions Negotiation", "RequestExtensions", "extension 0x0001", "0x0001-extensions-negotiation"]
 confidence: high
@@ -69,6 +69,8 @@ Extension `0x0001` is best understood against the alternatives that were argued 
 - **Positive-ACK only (jakubtrnka).** Since the spec already mandates negotiation, a peer should simply "assume the peer doesn't support my extension unless it receives a positive acknowledgement." He argued for minimizing protocol states (a "pending" state awaiting an ACK that never arrives is a bug magnet) and noted that on a single async connection you always defer handling anyway, so a NACK buys little. His tentative recommendation reserved `message_id == 0` as a per-extension negotiation message and `message_id == 255` as an ACK, treating any non-ACK response as a NACK.
 - **Explicit but richer NACK (rrybarczyk).** Argued the clarity of an explicit ACK/NACK outweighs the latency (extension setup is infrequent), that a timeout is needed *either way* because messages can be delayed by connection prioritization, and that a NACK could carry an `error_code` and `reason_string` so a sender could retry with a different version. Also raised extension-lifecycle questions (override, add-mid-session, stop-all).
 
+Read as a case study rather than as history, #95 is the clearest local instance of [[spec-as-security-surface|specification as security surface]] ([specification as security surface](spec-as-security-surface.md)): §3.4 stated the obligation as a MUST and left the mechanism unstated, and three competent implementers derived three non-interoperable wire behaviors from it.
+
 The merged `0x0001` design lands between these: it is a **positive-ACK model** — the client learns support from `RequestExtensions.Success`, matching jakubtrnka's "assume unsupported until ACK" and "ignore if not implemented" defaults — but it keeps an explicit **error** message (rrybarczyk's clarity argument) that additionally reports server-*required* extensions. It does **not** adopt the universal per-extension `0xff` NACK frame, and it replaces per-extension probing with a single batched request declared up front. The unresolved lifecycle questions from the issue (stopping or overriding an active extension) are left to individual extensions, consistent with Fi3's preference for per-extension stop mechanisms.
 
 ## Significance for SRI
@@ -80,6 +82,7 @@ Extension `0x0001` is the wire contract implemented by the SRI [[sv2-extensions|
 - [[sv2-extensions|SV2 Extensions]] ([SV2 Extensions](sv2-extensions.md)) — the `extensions_sv2` crate that implements this negotiation plus the TLV utilities extensions reuse
 - [[sv2-framing|SV2 Framing]] ([SV2 Framing](sv2-framing.md)) — the `extension_type` frame field that carries `0x0001`
 - [[sv2-message-handlers|SV2 Message Handlers]] ([SV2 Message Handlers](sv2-message-handlers.md)) — the `Extensions` handler that dispatches these messages
+- [[spec-as-security-surface|Specification as Security Surface]] ([Specification as Security Surface](spec-as-security-surface.md)) — #95 as a worked example of an unstated mechanism, and the §2-vs-§4 field-name drift in this spec
 
 ## Sources
 

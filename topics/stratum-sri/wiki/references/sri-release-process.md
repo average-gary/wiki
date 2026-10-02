@@ -6,7 +6,7 @@ sources:
   - raw/articles/2026-05-28-stratum-sri-contributing.md
   - raw/repos/2026-05-28-stratum-sri.md
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-09-02
 tags: [sri, release, versioning, semver, branches, tags, contributing]
 aliases: ["RELEASE.md rule", "SRI versioning"]
 confidence: high
@@ -99,6 +99,7 @@ Changelogs are auto-generated on each release page. Maintainers add contextual n
 - [[sri-crate-map|SRI Crate Map]] ([SRI Crate Map](sri-crate-map.md)) — current per-crate versions
 - [[sri-pull-request-themes|SRI Pull Request Themes]] ([SRI Pull Request Themes](sri-pull-request-themes.md)) — recent commit context including #2158/#2160
 - [[stratum-core-umbrella|stratum-core Umbrella Crate]] ([stratum-core Umbrella Crate](../topics/stratum-core-umbrella.md)) — the crate that triggered the reverted exception
+- [[spec-as-security-surface|Specification as Security Surface]] ([Specification as Security Surface](../concepts/spec-as-security-surface.md)) — SECURITY.md's supported-version table rests on this versioning discipline, and covers only shipped code
 
 ## Sources
 
