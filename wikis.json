@@ -238,6 +238,12 @@
       "created": "2026-09-01",
       "status": "active",
       "summary": "Fundamental — not engineering — ceilings on quantum computation. Theories in which complex Hilbert Space is a continuum idealisation of something discrete (Palmer's Rational Quantum Mechanics, Buniy/Hsu/Zee, Carroll, 't Hooft), the resulting qubit information capacity N_max where a bit budget growing as N×L meets a Hilbert-space dimension growing as 2^(N+1)−2, gravity as the scale-setter via Diósi-Penrose collapse (L = ceil(E_P/E_G), so QM is the singular limit at G=0), and cosmological information bounds (Lloyd, Davies' N_Davies ≈ 400). Covers the falsification path (which algorithms need maximal superposition — QFT/Shor's — versus low-dimensional-subspace systems like BCS superconductors), the predicted discretised-shot-noise signature, and downstream consequences for Shor's against RSA-2048 and ECDSA secp256k1. Founding source: Palmer, arXiv:2510.02877v3 (PNAS-accepted), predicting advantage saturates at ~1,000 perfect qubits. Minority position — the no-ceiling baseline (Gidney resource estimates, vendor roadmaps) is a known gap."
+    },
+    "mobile-beef-processing": {
+      "path": "topics/mobile-beef-processing",
+      "created": "2026-10-02",
+      "status": "active",
+      "summary": "Business plan research for a custom-exempt mobile beef slaughter-and-cutting business backed by a hanging/aging cooler in Virginia's Shenandoah Valley (Winchester/Frederick County), three rounds / 71 sources. The model: the mobile unit kills on the owner's farm and later cuts and packages while docked at a company-owned cooler. It is legal on a free VDACS Custom Permit. Cutting labor caps two people at ~6-10 head/week (~8 man-hours per custom beef), at ~$800-1,100/head. Covers the regulatory models (custom-exempt vs USDA vs Virginia state; Virginia is not in CIS), equipment (kill-and-cut unit from $300k Sentinel 53 ft; kill-only trailers $72k-$115k; cooler sizing ~12-17 sq ft per hanging beef), the cooler site (a conditional 'slaughterhouse' use in Frederick County RA; farm-building exemption; private well OK), waste (on-farm offal composting likely exempt; blood and wash water are DEQ industrial wastes; public sewer preferred; one renderer statewide), the Valley processor landscape and state plan RD894 (18-24 month waits), MSU case studies and failure modes, insurance, and grants/financing (AFID fits the cooler; Farm Credit + VSBFA debt; FSA operating loans barred)."
     }
   },
   "local_wikis": [
