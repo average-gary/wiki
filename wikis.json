@@ -244,12 +244,6 @@
       "created": "2026-09-21",
       "status": "active",
       "summary": "Software architecture and design of Bitcoin mining pool servers — connection layer (long-lived TCP fan-in, event loop vs async, SO_REUSEPORT sharding), work distribution and job-push latency, share-validation/accounting pipelines, template sourcing (getwork -> GBT -> SV2 Template Provider -> Core Mining IPC), implementation survey (ckpool, public-pool, Miningcore, NOMP, eloipool, sv2-apps roles, Braiins, Ocean/DATUM, p2pool), operations, failure modes, and the sizing numbers that constrain each choice. Payout schemas, SV2 crate internals, p2pool/DATUM internals and scale-test methodology stay in their own topics."
-    },
-    "mobile-beef-processing": {
-      "path": "topics/mobile-beef-processing",
-      "created": "2026-10-02",
-      "status": "active",
-      "summary": "Business plan research for a custom-exempt mobile beef slaughter-and-cutting business backed by a hanging/aging cooler in Virginia's Shenandoah Valley (Winchester/Frederick County), three rounds / 71 sources. The model: the mobile unit kills on the owner's farm and later cuts and packages while docked at a company-owned cooler. It is legal on a free VDACS Custom Permit. Cutting labor caps two people at ~6-10 head/week (~8 man-hours per custom beef), at ~$800-1,100/head. Covers the regulatory models (custom-exempt vs USDA vs Virginia state; Virginia is not in CIS), equipment (kill-and-cut unit from $300k Sentinel 53 ft; kill-only trailers $72k-$115k; cooler sizing ~12-17 sq ft per hanging beef), the cooler site (a conditional 'slaughterhouse' use in Frederick County RA; farm-building exemption; private well OK), waste (on-farm offal composting likely exempt; blood and wash water are DEQ industrial wastes; public sewer preferred; one renderer statewide), the Valley processor landscape and state plan RD894 (18-24 month waits), MSU case studies and failure modes, insurance, and grants/financing (AFID fits the cooler; Farm Credit + VSBFA debt; FSA operating loans barred)."
     }
   },
   "local_wikis": [
@@ -298,6 +292,15 @@
       "status": "active",
       "sensitivity": "company-proprietary",
       "summary": "Repo-local wiki for deploying block/buzz on the internal bitcoin-node host (AWS EC2, x86_64, Ubuntu 24.04), reachable only over the corporate VPN (AWS Security Group gated). Host-specific application of the hub topic self-hosting-block-buzz: coexistence with bitcoind/electrs, RAM/swap sizing, one-port (3000) SG exposure, ws:// pilot transport, closed-relay + team onboarding, DIY backups/upgrade hazards. Employer-specific infra details kept out of the public hub per conventions."
+    },
+    {
+      "name": "mobile-beef-processing",
+      "path": "/Users/garykrause/repos/mobile-beef-plan/.wiki",
+      "created": "2026-10-02",
+      "moved-from-hub": "2026-10-03",
+      "status": "active",
+      "repo": "https://github.com/average-gary/mobile-beef-plan",
+      "summary": "Business plan research for a custom-exempt mobile beef slaughter-and-cutting business backed by a hanging/aging cooler in Virginia's Shenandoah Valley (Winchester/Frederick County), three rounds / 71 sources. The model: the mobile unit kills on the owner's farm and later cuts and packages while docked at a company-owned cooler. It is legal on a free VDACS Custom Permit. Cutting labor caps two people at ~6-10 head/week (~8 man-hours per custom beef), at ~$800-1,100/head. Covers the regulatory models (custom-exempt vs USDA vs Virginia state; Virginia is not in CIS), equipment (kill-and-cut unit from $300k Sentinel 53 ft; kill-only trailers $72k-$115k; cooler sizing ~12-17 sq ft per hanging beef), the cooler site (a conditional 'slaughterhouse' use in Frederick County RA; farm-building exemption; private well OK), waste (on-farm offal composting likely exempt; blood and wash water are DEQ industrial wastes; public sewer preferred; one renderer statewide), the Valley processor landscape and state plan RD894 (18-24 month waits), MSU case studies and failure modes, insurance, and grants/financing (AFID fits the cooler; Farm Credit + VSBFA debt; FSA operating loans barred). Moved to its own public repo (average-gary/mobile-beef-plan) on 2026-10-03 alongside an interactive GitHub Pages planning site."
     }
   ]
 }
