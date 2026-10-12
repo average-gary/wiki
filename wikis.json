@@ -301,6 +301,16 @@
       "status": "active",
       "repo": "https://github.com/average-gary/mobile-beef-plan",
       "summary": "Business plan research for a custom-exempt mobile beef slaughter-and-cutting business backed by a hanging/aging cooler in Virginia's Shenandoah Valley (Winchester/Frederick County), three rounds / 71 sources. The model: the mobile unit kills on the owner's farm and later cuts and packages while docked at a company-owned cooler. It is legal on a free VDACS Custom Permit. Cutting labor caps two people at ~6-10 head/week (~8 man-hours per custom beef), at ~$800-1,100/head. Covers the regulatory models (custom-exempt vs USDA vs Virginia state; Virginia is not in CIS), equipment (kill-and-cut unit from $300k Sentinel 53 ft; kill-only trailers $72k-$115k; cooler sizing ~12-17 sq ft per hanging beef), the cooler site (a conditional 'slaughterhouse' use in Frederick County RA; farm-building exemption; private well OK), waste (on-farm offal composting likely exempt; blood and wash water are DEQ industrial wastes; public sewer preferred; one renderer statewide), the Valley processor landscape and state plan RD894 (18-24 month waits), MSU case studies and failure modes, insurance, and grants/financing (AFID fits the cooler; Farm Credit + VSBFA debt; FSA operating loans barred). Moved to its own public repo (average-gary/mobile-beef-plan) on 2026-10-03 alongside an interactive GitHub Pages planning site."
+    },
+    {
+      "name": "wall-e-robot-build",
+      "path": "/Users/garykrause/repos/wall-e-build/.wiki",
+      "created": "2026-10-09",
+      "moved-from-hub": "2026-10-12",
+      "status": "active",
+      "sensitivity": "public-oss",
+      "repo": "https://github.com/average-gary/wall-e-build",
+      "summary": "What it takes to build a functional WALL-E robot with the film's features: treaded drivetrain, extending limited-DOF arms + grippers, inner storage bay + front hatch, head/binocular-eye/neck mechanism with fold-into-body, solar charging, batteries, compute/sensors/autonomy, existing builds, cost tiers and feasibility limits. Trash compaction and expressive-motion animation are out of scope. 59 sources, 13 articles including a 52-decision design trade-offs register and a phased build plan. Moved to its own public repo (average-gary/wall-e-build) on 2026-10-12 alongside a GitHub Pages site."
     }
   ]
 }

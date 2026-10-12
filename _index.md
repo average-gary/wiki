@@ -73,6 +73,7 @@ LLM-compiled knowledge base. Topic wikis live under `topics/`.
 - **para** at `/Users/garykrause/repos/para/.wiki` — `parasitepool/para` Rust crate + co-vendored `ckpool` C fork. Grounded in hub topics `sv2-coinbase-identity`, `bitcoin-mining-payout-schemas`, `datum`. Public-OSS sensitivity. Created 2026-06-23.
 - **buzz-infra** at `/Users/garykrause/repos/buzz-infra/.wiki` — Deploying block/buzz on the internal `bitcoin-node` host (AWS EC2, VPN-gated). Host-specific application of hub topic `self-hosting-block-buzz`. *Sensitivity: company-proprietary.* Created 2026-07-23.
 - **mobile-beef-processing** at `/Users/garykrause/repos/mobile-beef-plan/.wiki` — Business plan + research for a custom-exempt mobile beef harvest-and-cutting business backed by a hanging/aging cooler (Shenandoah Valley, VA): 71 sources, 15 articles, business plan PDF, interactive GitHub Pages site. Public repo `average-gary/mobile-beef-plan`; moved from the hub 2026-10-03 (history preserved via `git subtree`).
+- **wall-e-robot-build** at `/Users/garykrause/repos/wall-e-build/.wiki` — What it would take to build a functional WALL-E (treads, extending gripping arms, storage bay, camera-eye head, solar, autonomy): 59 sources, 13 articles, a 52-decision trade-offs register, a phased build plan, and a GitHub Pages site. Public repo `average-gary/wall-e-build`; moved from the hub 2026-10-12.
 
 ## Archived Topics
 
