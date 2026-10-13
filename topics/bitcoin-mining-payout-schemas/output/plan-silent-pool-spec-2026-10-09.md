@@ -7,6 +7,7 @@ updated: 2026-10-12
 status: current
 supersedes: none
 changelog:
+  - "2026-10-12 (c): §11.8 reversed — Ark-tier key derivation ADOPTED per DESIGN.md (separate hot B_ark, domain-separated tweaks); §11.4 gains SetArkIdentity {B_ark, M, D}, SetArkPayout becomes the fallback; §11.5 agent holds b_ark and an external-key table. Code-read corrections recorded as implementation notes (mailbox needs M+D; stock bark drops derived keys)."
   - "2026-10-12 (b): PR #203 impact pass (workflow, 110 agents): pins by SHA (47dbedd; bitcoin_core_sv2 block_reserved_weight fix), §3.5 publication bullet re-timed to ledger apply, §4.6 settlement-reads-mined-coinbase rule + O11, §11.9 conservation identity corrected, §2.4.2 OP_RETURN 46 B/184 WU, §8.4 full-mempool step 9, §11.2 weight_P composition note."
   - "2026-10-12: added §11 Sub-threshold Ark rail (both template modes, SPc extension for the Ark address, spc-agent collapsing translator+JDC+payout agent, single-seed recovery, SP-derived-key appendix); resolved §10 O6; §1 note on spc-agent."
 companion: output/plan-spc-pool-pplns-jd-silent-payments-2026-10-09.md
@@ -745,11 +746,14 @@ The coinbase leg is unchanged in both modes; the Ark leg is purely pool-side set
 
 ### 11.4 Identity transport — the SPc extension
 
+**Derivation first (per `DESIGN.md`, §11.8).** The Ark destination is derived per block from the coinbase ECDH; the miner never sends a per-payout address. The extension carries the miner's **static** Ark material once; a literal address is the fallback for wallets that cannot hold derived keys.
+
 `user_identity` remains the SP address and nothing else. Ark material travels in a project-defined SV2 extension negotiated via `0x0001` (identifier `0x5350` — "SP"; renumber if assigned):
 
 | Msg | Dir | Fields | Semantics |
 |---|---|---|---|
-| `SetArkPayout` | C→S | `ark_address: STR0_255` | Register/replace the channel's Ark payout address. Pool validates: bech32m; HRP matches network; version `p` (bark v1); `ark_id` == configured server; policy `Pubkey`; ≥ 1 `ServerMailbox` delivery. |
+| `SetArkIdentity` | C→S | `b_ark_pub: B033` (optional; absent ⇒ `B_ark = B_spend`, cold — discouraged), `mailbox_pubkey: B033`, `mailbox_dh: B033` (`D = b_ark·S_m` for the pool's configured server) | Register once the static material the pool needs to derive and deliver per-block Ark payouts (§11.8). Pool validates the points and that `mailbox_dh` targets its configured server; `SetArkIdentity.Success` / `.Error{invalid-point, wrong-ark-server}`. |
+| `SetArkPayout` | C→S | `ark_address: STR0_255` | **Fallback** for wallets that cannot hold derived keys: register/replace a literal Ark payout address. Pool validates: bech32m; HRP matches network; version `p` (bark v1); `ark_id` == configured server; policy `Pubkey`; ≥ 1 `ServerMailbox` delivery. |
 | `SetArkPayout.Success` | S→C | — | Address accepted; applies to all future settlements for this `sp_id`. |
 | `SetArkPayout.Error` | S→C | `error_code: STR0_255` | `invalid-ark-address`, `wrong-ark-server`, `unsupported-policy`, `no-delivery`. Fail closed — nothing is sent to a rejected address; earnings accrue as pending. |
 | `ArkPayoutNotice` | S→C | `block_hash: U256, sats: U64, vtxo_id: B0_64, expiry_height: U32` | Sent after each successful arkoor send so the agent can reconcile without waiting for mailbox sync (§11.6). |
@@ -758,11 +762,11 @@ A miner MAY send `SetArkPayout` at any time (e.g., a fresh address every block);
 
 ### 11.5 Miner side (`spc-agent`)
 
-One binary (§1 note). Holds **`b_scan`** (to verify its own `P` in every job/distribution, §3.6) and a **bark wallet seed**; it MUST NOT hold `b_spend`. Consequence worth stating: compromise of the agent exposes privacy and the sub-threshold float only — never a coinbase output.
+One binary (§1 note). Holds **`b_scan`** (to verify its own `P` in every job/distribution, §3.6), **`b_ark`** (§11.8) and a **bark wallet seed**; it MUST NOT hold `b_spend`. Consequence worth stating: compromise of the agent exposes privacy and the sub-threshold float only — never a coinbase output.
 
-- **Single-seed recovery.** Derive the bark wallet seed from the miner's SP master seed (BIP 85-style child, e.g. `m/83696968'/…` or `tagged_hash("SPc/ArkSeed", master)`), so one backup recovers both rails. This achieves the "one identity" goal without SP-deriving VTXO keys (Appendix 11.8).
-- **Register.** On connect: `bark.new_address()` → `SetArkPayout`. Rotate per block or per `N` (operator choice; the server links everything to the mailbox anyway).
-- **Receive.** Subscribe to the mailbox; validate each VTXO (ARK #2) and that its policy key is wallet-owned; record against the `ArkPayoutNotice`.
+- **Single-seed recovery.** Derive the bark wallet seed from the miner's SP master seed (BIP 85-style child, e.g. `m/83696968'/…` or `tagged_hash("SPc/ArkSeed", master)`), so one backup recovers both rails; `B_ark` (§11.8) is a separate child under the same seed.
+- **Register.** On connect: `SetArkIdentity { B_ark, M, D }` once (§11.4; all derived from the agent's seed, `b_ark` hot). Fallback for a non-derived wallet: `bark.new_address()` → `SetArkPayout`.
+- **Receive.** For each block the pool found, compute `t_ark` from that coinbase's `A_send` and insert `u = b_ark + t_ark` into the external-key table (§11.8 item 2); subscribe to the mailbox (or the per-block mailbox `M_H`, §11.8 item 3); validate each VTXO (ARK #2) and that its policy key is now wallet-owned; record against the `ArkPayoutNotice`.
 - **Refresh.** Auto-refresh at `vtxo_refresh_expiry_threshold` (bark default 144 blocks before expiry, inside the free window). Optional `ark_refresh_on_receive_above_sats`: refresh immediately (`refresh/counterparty`) for payouts above a size the miner cares about, shedding the sender+server trust early at 0.2–0.5 %.
 - **Dormancy.** The agent runs while the miner mines; a miner that stops for > 28 days with unrefreshed VTXOs is swept (ToS: "no obligation to return"). The agent MUST warn at shutdown if unrefreshed VTXOs exist and SHOULD offer `--offboard-on-exit <address>` (cooperative on-chain payment of the whole Ark balance, one tx) for anyone going dark.
 
@@ -776,13 +780,27 @@ and alarms otherwise. Type-32 covers "what was I owed"; the two receipts cover "
 
 Ark payouts are **trustodial for up to 28 days**: safe if either the pool (sender) or the Ark server is honest; the pool deliberately uses a server it does not control so that this remains a 1-of-2 assumption. The Ark server sees the pool-wallet → miner-mailbox graph and every amount; Second publishes no privacy policy. The amount channel is open on both rails (§0). Swept VTXOs are unrecoverable.
 
-### 11.8 Appendix — SP-derived Ark receiver key (evaluated, not adopted)
+### 11.8 Ark-tier key derivation — adopted per `DESIGN.md` (2026-10-12)
 
-Construction: `P' = B_spend + H(ecdh ‖ 1)·G` with the same per-height `ecdh` as §2.3; address minted by the pool via `Builder::delivery(ServerMailbox{ blinded })` with `blinded = M + D + t·S_m`, where `M` is the miner's mailbox pubkey and `D = b_spend·S_m` a static ECDH the miner supplies once (blinding is linear: `Blinded = M + v·S_m`, DH point unhashed — [key-side read](../raw/repos/2026-10-12-bark-key-management-mailbox-blinding-sp-derived-vtxo.md) §2).
+The Ark destination is derived from the **same per-block ECDH** as the coinbase output, domain-separated by tier (`DESIGN.md` at the repo root; prototype `spc_ark/`):
 
-Feasibility: protocol and server accept it unchanged; **bark-wallet needs an external-VTXO-key table** consulted by `pubkey_keypair` / `get_vtxo_key` / `find_signable_clause` (today a `P'` VTXO is dropped on receive — "not owned by this wallet" — and rejected on import); signing is already a trait over a plain `Keypair`.
+```
+ecdh      = input_hash · a_send · B_scan          (= input_hash · b_scan · A_send on the miner side)
+t_onchain = H(ecdh ‖ "spc" ‖ k)   →  P = B_spend + t_onchain·G     (coinbase tier, §2.3)
+t_ark     = H(ecdh ‖ "ark" ‖ k)   →  U = B_ark   + t_ark·G         (Ark tier: the VTXO `Pubkey` policy)
+```
 
-Not adopted because: (i) VTXO keys are hot by construction (refresh/forfeit/arkoor cosign), so this puts **`b_spend` hot** — the opposite of SPc's key split; (ii) the server unblinds every delivery to the per-seed mailbox `M`, so per-payout key freshness hides nothing from the only observer of off-chain VTXOs; (iii) the miner must still hand over `M` and `D` — it is not a single identity, and `D` runs `b_spend` through an ECDH with a third-party point, outside BIP 352's threat model. Single-seed recovery is obtained more simply by §11.5. Revisit only if a reviewer wants per-payout VTXO key separation from the pool's view, which §11.5's rotation already provides.
+- **`B_ark` is a separate key under the miner's seed, held hot** by `spc-agent` (DESIGN.md open question 2, resolved toward separation): VTXO keys sign refreshes, forfeits and arkoor cosigns, so they cannot be cold; `b_spend` stays cold and is never used on the Ark tier.
+- **Never reuse `t` across tiers** — `P − U` would expose `B_ark − B_spend` (DESIGN.md's warning). The tags do this; `k` stays per-output within a tier as in BIP 352. Tag strings are placeholders pending the SPc spec's tagging convention (§2.3 uses `BIP0352/*`).
+- The miner recomputes `ecdh` for every block the pool found (`A_send` is public in that block's coinbase), so it finds Ark payouts for blocks where it was below threshold with no notification required; `ArkPayoutNotice` (§11.4) is a convenience.
+
+What the bark code read ([key-side read](../raw/repos/2026-10-12-bark-key-management-mailbox-blinding-sp-derived-vtxo.md)) adds — DESIGN.md's open questions 2 and 4, answered against `c419159f`:
+
+1. **Mailbox delivery needs two static points from the miner.** bark blinds the mailbox id as `Blinded = M + v·S_m` (`M` = recipient's per-seed mailbox pubkey, `v` = VTXO secret, `S_m` = server mailbox key) and the server unblinds to `M`. The pool lacks `v = b_ark + t_ark`, but by linearity needs only `D = b_ark·S_m`: `Blinded = M + D + t_ark·S_m`. So `SetArkIdentity` (§11.4) carries `B_ark`, `M`, `D` **once**; nothing per payout, nothing published. `BlindedMailboxIdentifier::from_pubkey(U)` — the prototype's current placeholder in `build_bark_address` — is not deliverable and is replaced by `Address::builder().delivery(ServerMailbox { blinded })` with the value above.
+2. **The receiving wallet needs an external-key table.** Stock bark resolves keys only via `m/350'/0'/idx` and drops a VTXO to `U` as "not owned by this wallet"; `spc-agent`'s embedded wallet inserts `u = b_ark + t_ark` for each found block before matching. Signing is already abstracted over a plain `Keypair`, so nothing else changes.
+3. **Linkage at the server is via the mailbox, not the key.** A fresh `U` per payout hides nothing from the Ark server while every delivery unblinds to one `M`. Optional hardening, available only because the agent is ours: derive a per-block mailbox `M_H = M + H(ecdh ‖ "mbx")·G` (secret `m + …`, hot) and read one mailbox per found block; the server then sees unrelated mailboxes and unrelated keys, leaving the timing/amount correlation DESIGN.md already lists as irreducible.
+
+Supersedes the same-day evaluation that had rejected derivation: its objection (i) is void with a separate hot `B_ark`; (ii) is addressed by per-block mailboxes or consciously accepted; (iii) is a one-time registration over the authenticated SV2 session, not an identity bundle.
 
 ### 11.9 Tests (extend §8)
 
