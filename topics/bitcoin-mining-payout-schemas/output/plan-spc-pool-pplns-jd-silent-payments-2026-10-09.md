@@ -6,6 +6,7 @@ generated: 2026-10-09
 updated: 2026-10-12
 status: current
 changelog:
+  - "2026-10-12 (b): license MIT OR Apache-2.0; Decision 5 / Phase 0 / R13 updated — Blitzpool math re-implemented, not ported."
   - "2026-10-12: PR #203 impact pass — Phase 4 spc-jdc becomes a fork of warioishere/sv2-apps@90b3e3d (+ stratum@9be4023); pins by SHA; R3 reworded; OP_RETURN cost 46 B/184 WU; watch record keyed on headRefOid."
 goal: "Net-new mining pool: PPLNS-JD / SLICE accounting, Blitzpool's coinbase-direct architecture as the reference, BIP 352 silent-payment address as the SV2 user_identity, A_send carried in the coinbase (SPc). Both pool-template and Job-Declaration modes in v1, SPc-enforcing Translator and JDC shipped with it, share-accounting extension (type 32) served in v1."
 sources:
@@ -84,7 +85,7 @@ The one unifying trick that keeps this tractable: in pool-template mode every sh
 ### Decision 5: Non-custodial-to-the-sat via Blitzpool's signed pending ledger + weight-budget trim, keyed by `sp_id`
 
 **Context**: [Blitzpool](../raw/repos/2026-07-27-blitzpool-server-rust-github.md): trimmed/sub-dust sats → pending credit, bonus recipient picks matching debit, balances sum ≈ 0; greedy keep-largest trim against a weight budget so the coinbase never exceeds the reservation core was told; autoscaler 50 000 WU floor, ±15 % steps; confirmation-gated (depth 3) orphan-safe apply, idempotent via history `UNIQUE`. Known landmine: PPLNS ledger apply has **no duplicate-address merge** ([finder-bonus code read](../raw/repos/2026-07-27-blitzpool-finder-bonus-code-read.md) §8). Taproot dust 330 sats; firmware/DATUM output ceilings bite before `K_max`.
-**Decision**: adopt the pattern, port the math (`bp-pplns/src/distribution.rs` is AGPL — **re-implement**, don't vendor, unless the pool is AGPL too; decide license in Phase 0). Ledger rows key on `sp_id`, so one miner never produces two outputs in one block (one `P_i` per `(sp_id, height)` — the finder-bonus two-rows-one-address hazard from [Lottery-PPLNS](../wiki/concepts/lottery-pplns.md) cannot arise; no finder bonus in v1 anyway). Under JD, PR #203 gives the same semantics natively: `dust_limits[i]` prune, `weight_P` absorbs pending/under-threshold miners, `pay_P` absorbs rounding — the pool's `payout` role books the pruned amounts as pending credits keyed by `sp_id`.
+**Decision**: adopt the pattern, **re-implement** the math from the spec (§4.6/§4.8) — `bp-pplns/src/distribution.rs` is AGPL and is not ported; silent-pool is MIT OR Apache-2.0 (decided 2026-10-12). Ledger rows key on `sp_id`, so one miner never produces two outputs in one block (one `P_i` per `(sp_id, height)` — the finder-bonus two-rows-one-address hazard from [Lottery-PPLNS](../wiki/concepts/lottery-pplns.md) cannot arise; no finder bonus in v1 anyway). Under JD, PR #203 gives the same semantics natively: `dust_limits[i]` prune, `weight_P` absorbs pending/under-threshold miners, `pay_P` absorbs rounding — the pool's `payout` role books the pruned amounts as pending credits keyed by `sp_id`.
 **Consequences**: Postgres tables `sp_identity`, `slice`, `distribution_snapshot`, `ledger_history`, `pending_balance`. No per-share rows — slices are the aggregation unit ([share accounting & durability](../../mining-pool-architecture/wiki/concepts/share-accounting-and-durability.md): nobody in production writes one row per share).
 
 ### Decision 6: Blitzpool-style role split from day one (interview choice)
@@ -112,7 +113,7 @@ The one unifying trick that keeps this tractable: in pool-template mode every sh
 **Tasks**:
 - [ ] `docs/spc-spec.md`: diff against BIP 352 Sender/Receiver sections. Settle: hash tags (`SP-Coinbase/Inputs`, `SP-Coinbase/SharedSecret` — fresh, as the vectors use, vs `BIP0352/*` reuse); `A_send` serialization (x-only + even-Y, per vectors case 8; or compressed 33 B in `OP_RETURN`); `input_hash = tagged_hash(ser32(height) ‖ ser(A_send))`; `k = 0` always (one output per `(sp_id, height)`); both carriers and the scanner precedence; `H` and `H−1` scan tolerance.
 - [ ] Decide amendment-vs-new-BIP posture (optout's question) — recommend **new informational BIP referencing 352**, since the eligibility gate at `bip-0352:193` is explicitly violated.
-- [ ] License decision (AGPL-3.0 to permit porting Blitzpool math vs MIT/Apache and re-implement).
+- [x] License decision: **MIT OR Apache-2.0** (2026-10-12) — matches every dependency; Blitzpool math re-implemented, not ported.
 - [ ] Cargo workspace: `spc-crypto`, `spc-scan`, `spc-accounting`, `spc-pool`, `spc-jds`, `spc-translator`, `spc-jdc`, `spc-share-ext`. Pin `stratum-core`/`sv2-apps` commits in `UPSTREAM_DEPS.md` (Blitzpool's practice).
 - [ ] Testnet choice: testnet4 or signet (`tsp` HRP); regtest harness via `sv2-tp` or bitcoin-core IPC.
 **Dependencies**: none.
@@ -218,8 +219,7 @@ The one unifying trick that keeps this tractable: in pool-template mode every sh
 | R10 | `demand-share-accounting-ext` is pre-1.0 on a forked codec; port cost unknown | [SV2 Share Accounting Extension](../wiki/concepts/sv2-share-accounting-ext.md) | Budgeted 3 weeks; message set is small; keep type 32 and numbering; log deltas. |
 | R11 | `front` restart loses the open slice and `seen_shares` | [share accounting & durability](../../mining-pool-architecture/wiki/concepts/share-accounting-and-durability.md) | Accept bounded loss (`ponytail:` note); reject shares for pre-restart jobs; v2: checkpoint open slice. |
 | R12 | 330-sat P2TR dust prunes small miners every block; pending credits accumulate without a payout rail | Blitzpool README; OP's dust note | Pending carry-forward pays once ≥ dust; document; Lightning/BOLT12 rail is explicitly v2. |
-| R13 | Blitzpool is AGPL-3.0; porting its math into a non-AGPL repo is a license problem | [Blitzpool raw](../raw/repos/2026-07-27-blitzpool-server-rust-github.md) | Phase 0 decides; default: re-implement from the README description (the math is public and small). |
-
+| R13 | Blitzpool is AGPL-3.0; porting its math into a non-AGPL repo is a license problem | Blitzpool raw | **Resolved 2026-10-12**: silent-pool is MIT OR Apache-2.0; ledger/trim/autoscaler re-implemented from spec §4.6/§4.8 under a clean-room rule (spec §7.6); Blitzpool cited as provenance only. |
 ## Open Questions
 
 - **BIP posture**: amendment to BIP 352 or a new BIP that references it? (optout). The construction violates `bip-0352:193`'s eligibility gate, which argues for a new informational BIP. Decide in Phase 0.

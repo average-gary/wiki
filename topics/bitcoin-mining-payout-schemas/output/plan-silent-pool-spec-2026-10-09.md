@@ -7,6 +7,7 @@ updated: 2026-10-12
 status: current
 supersedes: none
 changelog:
+  - "2026-10-12 (d): license changed to MIT OR Apache-2.0; §7.6 rewritten — Blitzpool patterns re-implemented from the spec, no AGPL code ported, clean-room rule added."
   - "2026-10-12 (c): §11.8 reversed — Ark-tier key derivation ADOPTED per DESIGN.md (separate hot B_ark, domain-separated tweaks); §11.4 gains SetArkIdentity {B_ark, M, D}, SetArkPayout becomes the fallback; §11.5 agent holds b_ark and an external-key table. Code-read corrections recorded as implementation notes (mailbox needs M+D; stock bark drops derived keys)."
   - "2026-10-12 (b): PR #203 impact pass (workflow, 110 agents): pins by SHA (47dbedd; bitcoin_core_sv2 block_reserved_weight fix), §3.5 publication bullet re-timed to ledger apply, §4.6 settlement-reads-mined-coinbase rule + O11, §11.9 conservation identity corrected, §2.4.2 OP_RETURN 46 B/184 WU, §8.4 full-mempool step 9, §11.2 weight_P composition note."
   - "2026-10-12: added §11 Sub-threshold Ark rail (both template modes, SPc extension for the Ark address, spc-agent collapsing translator+JDC+payout agent, single-seed recovery, SP-derived-key appendix); resolved §10 O6; §1 note on spc-agent."
@@ -19,7 +20,7 @@ decisions_from_interview:
   - "Share-accounting extension (type 32) in v1, pool-defined where the spec is unfinished"
   - "Hash tags: reuse BIP0352/Inputs and BIP0352/SharedSecret"
   - "A_send: x-only 32 B on the wire, even-Y normalisation"
-  - "License: AGPL-3.0-or-later (Blitzpool math may be ported)"
+  - "License: MIT OR Apache-2.0 (changed 2026-10-12 from AGPL-3.0-or-later — Blitzpool math is re-implemented from §4.6/§4.8, not ported; matches SRI, bark, extensions_sv2 and the spc_ark prototype)"
   - "a_send cadence: per block height in both modes"
 sources:
   - output/plan-spc-pool-pplns-jd-silent-payments-2026-10-09.md
@@ -99,7 +100,7 @@ Out of scope for v0.1: BIP 352 labels; a Lightning/BOLT12 rail for pending credi
 | `spc-jdc` | Job Declarator Client with `0x0003`; builds outputs per PR #203 §4; verifies own `P_i` in the distribution | `sv2-apps/miner-apps/jd-client` |
 | `spc-crypto` | BIP 352 address parsing, `sp_id`, SPc derivation and scanning, zeroising key types | new (`secp256k1`, `bitcoin` crates) |
 | `spc-scan` | library + CLI: find and export SPc payouts from blocks or header+branch+coinbase triples | new |
-| `spc-accounting` | pure, I/O-free: slices, window, SLICE scores, pending ledger, trim, autoscaler, output builder | new; math ported from Blitzpool `bp-pplns` (AGPL) |
+| `spc-accounting` | pure, I/O-free: slices, window, SLICE scores, pending ledger, trim, autoscaler, output builder | new; ledger/trim/autoscaler re-implemented from §4.6/§4.8 (Blitzpool patterns, no code) |
 | `spc-share-ext` | extension type 32 messages on current `stratum-core` codec; server + sampling verifier | `demand-open-source/share-accounting-ext` |
 
 **Miner-side consolidation (added 2026-10-12).** `spc-translator` and `spc-jdc` are listed separately because that is how SRI ships them; since this project writes the miner side itself, they SHOULD be **one binary, `spc-agent`**: SV1/SV2 downstream listener, optional JDC (own `bitcoind`, declares to the pool), payout verifier (§3.6), and the Ark-rail agent of §11.5. One process, one config, one seed.
@@ -373,7 +374,7 @@ Equivalently `payout(sᵢ) = r·score_d(sᵢ) + F_S·score_f(sᵢ)` with `F_S = 
 
 `Σ raw = 329 174 998`; `pool = T − Σ = 3 325 002` (= 1 % fee 3 325 000 + 2 sats rounding). Carol's S₂ fee share (20.9 %) exceeds her S₂ difficulty share (20 %) because she declared higher-fee transactions — the SLICE property. This table is a fixture in `spc-accounting/tests/worked_example.rs`.
 
-### 4.6 Pending ledger (ported from Blitzpool `bp-pplns`, AGPL)
+### 4.6 Pending ledger (Blitzpool `bp-pplns` pattern, re-implemented)
 
 ```
 owed(id)  = raw(id) + pending(id)                      # pending ≥ 0 (no finder bonus ⇒ no debits; unsigned)
@@ -599,7 +600,7 @@ listen = "0.0.0.0:34255"                   # SV1 ASICs point here; their usernam
 ### 7.1 Workspace
 
 ```
-silent-pool/                      AGPL-3.0-or-later
+silent-pool/                      MIT OR Apache-2.0
   Cargo.toml                      workspace; rust-toolchain pinned to sv2-apps'
   crates/spc-crypto               secp256k1, bitcoin, bech32, zeroize            (no I/O)
   crates/spc-scan                 lib + bin                                       (bitcoin RPC optional)
@@ -616,7 +617,7 @@ silent-pool/                      AGPL-3.0-or-later
   testing/regtest-harness
 ```
 
-**`UPSTREAM_DEPS.md` pins (added 2026-10-12).** Pin SHAs, never branches. `sv2-spec` PR #203 @ `47dbedd` — its single commit (2026-09-10) and the commit warioishere/stratum#1 and warioishere/sv2-apps#3 implement. `bitcoin_core_sv2` MUST be pinned at a commit containing the shared `block_reserved_weight(size) = max(1168 + 4·size, 2000)` helper in `unix_capnp/mod.rs` (it patches both `v30x` and `v31x` `bootstrap_template_ipc_client_from_coinbase_output_constraints`; warioishere/sv2-apps#2 @ `ec35ac8`, carried as `4e526de` in #3's branch, or its upstream merge) in **both** `spc-pool` (`[template] source = "ipc"`) and `spc-agent`/`spc-jdc` (`[tp]`). Upstream `sv2-apps` `main` (as of 2026-10-12) and tag `v0.8.0` still reserve `max(4·size, 2000)` — none of the 1168 WU of header, tx count, coinbase fixed fields, 100 B scriptSig and witness commitment once `coinbase_output_max_additional_size > 208 B` — and are excluded; a `0x0003` JDC that reserves the exact output size got `bad-blk-weight` on mainnet with 42 outputs and a full mempool. `source = "sv2-tp"` needs no pin (it reserves `1168 + 400 + 4·size`). If `spc-jdc` is forked from warioishere/sv2-apps#3 (roadmap Phase 4), pin `warioishere/sv2-apps @ 90b3e3d` and `warioishere/stratum @ 9be4023` (`extensions_sv2` 0.3.1, MIT OR Apache-2.0); #3's `stratum-apps/Cargo.toml` pins `stratum-core` by branch, so re-pin by SHA. `warioishere/blitzpool-server-rust @ b48998f` (release 2.4.1) is the reference `0x0003` JDS for reading, not porting; the frontmatter pin `7815884` stays as the provenance of the `bp-pplns` math §7.6 ports.
+**`UPSTREAM_DEPS.md` pins (added 2026-10-12).** Pin SHAs, never branches. `sv2-spec` PR #203 @ `47dbedd` — its single commit (2026-09-10) and the commit warioishere/stratum#1 and warioishere/sv2-apps#3 implement. `bitcoin_core_sv2` MUST be pinned at a commit containing the shared `block_reserved_weight(size) = max(1168 + 4·size, 2000)` helper in `unix_capnp/mod.rs` (it patches both `v30x` and `v31x` `bootstrap_template_ipc_client_from_coinbase_output_constraints`; warioishere/sv2-apps#2 @ `ec35ac8`, carried as `4e526de` in #3's branch, or its upstream merge) in **both** `spc-pool` (`[template] source = "ipc"`) and `spc-agent`/`spc-jdc` (`[tp]`). Upstream `sv2-apps` `main` (as of 2026-10-12) and tag `v0.8.0` still reserve `max(4·size, 2000)` — none of the 1168 WU of header, tx count, coinbase fixed fields, 100 B scriptSig and witness commitment once `coinbase_output_max_additional_size > 208 B` — and are excluded; a `0x0003` JDC that reserves the exact output size got `bad-blk-weight` on mainnet with 42 outputs and a full mempool. `source = "sv2-tp"` needs no pin (it reserves `1168 + 400 + 4·size`). If `spc-jdc` is forked from warioishere/sv2-apps#3 (roadmap Phase 4), pin `warioishere/sv2-apps @ 90b3e3d` and `warioishere/stratum @ 9be4023` (`extensions_sv2` 0.3.1, MIT OR Apache-2.0); #3's `stratum-apps/Cargo.toml` pins `stratum-core` by branch, so re-pin by SHA. `warioishere/blitzpool-server-rust @ b48998f` (release 2.4.1) is the reference `0x0003` JDS for reading, not porting; the frontmatter pin `7815884` stays as the provenance of the `bp-pplns` patterns §7.6 re-implements.
 
 ### 7.2 Key types and zeroisation
 
@@ -634,9 +635,9 @@ Block settlement runs in one Postgres transaction: `INSERT block_found … ON CO
 
 `channels-sv2/src/server/jobs/factory.rs`: `pool_tag_string: Option<String>` → `pool_tag: Option<Vec<u8>>`; the `Sv2/<pool>/<miner>/` ASCII framing is dropped when `pool_tag.len() == 32` and the push is emitted as `OP_PUSHBYTES_32`. `fits_script_sig_budget` keeps its conservative 8-byte-height check; `ScriptSigSizeTooLarge` still fails at channel setup, not at block submission ([08-16 L5](../raw/notes/2026-08-16-ll-sv2-pool-tag-asend-carrier.md)). Upstreamable as a standalone change ("binary pool tags"), independent of SPc ([08-24 L7](../raw/notes/2026-08-24-ll-jd-coinbase-control-amount-linkability.md) — pitch the change so it stands without the proposal).
 
-### 7.6 Ported Blitzpool code (AGPL compliance)
+### 7.6 Blitzpool-derived design (no code ported)
 
-`bp-pplns/src/distribution.rs` (5-phase builder, trim, pending carry), `bp-pplns-engine` autoscaler, and the snapshot-fingerprint + confirmation-watcher patterns are ported with attribution in `NOTICE`. The ledger key changes from `address` to `sp_id`; the finder-bonus inputs are deleted rather than left as `None`; the `suppress_matching_debits` branch goes with them (no debits exist).
+The pending-credit ledger, keep-largest weight-budget trim, autoscaler constants, payout-list fingerprint, confirmation-gated idempotent apply and the vouching invariant are **patterns and parameters taken from Blitzpool's README and this wiki's code reads**, re-implemented here from §4.6 / §4.8 / §7.4 — not copied from `bp-pplns`, which is AGPL-3.0-or-later. Clean-room rule for implementers: write from the spec text and its proptests, do not read `crates/bp-pplns/src/distribution.rs` while doing so. Differences from Blitzpool are deliberate: the ledger key is `sp_id` not `address`; there is no finder bonus and therefore no debit side (`pending` is unsigned); withheld value lands in `pay_P` (`WithheldValue::ToPool` shape, §11.2). Blitzpool is cited as provenance (`7815884`) and as the `0x0003` JDS reading reference (`b48998f`, §7.1); no `NOTICE` obligation arises.
 
 ## 8. Testing strategy
 
