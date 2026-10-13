@@ -5,9 +5,9 @@ created: 2026-05-26
 confidence: medium
 tags: [ark, vtxo, second-tech, ark-labs, mining-payouts, hypothetical-payout-layer]
 volatility: warm
-updated: 2026-07-17
-summary: "TL;DR: Ark is a Bitcoin off-chain transaction-batching protocol with two competing implementations and a fresh formal academic spine (Keer-Maffei-Avarikioti arXiv 2026)."
-verified: 2026-07-17
+updated: 2026-10-10
+summary: "TL;DR: Ark is a Bitcoin off-chain transaction-batching protocol with two competing implementations and a fresh formal academic spine (Keer-Maffei-Avarikioti arXiv 2026). Status update Oct 2026: one live pool (ArkPool) pays over bark; Second still silent on mining; payer==ASP and expiry inheritance are the sharpened objections."
+verified: 2026-10-10
 sources:
   - "raw/articles/2026-05-26-ark-burak-original-proposal-2023.md"
   - "raw/articles/2026-05-26-ark-erik-de-smedt-ctv-csfs-delving.md"
@@ -19,6 +19,11 @@ sources:
   - "raw/articles/2026-05-26-vnprc-ctv-coinbase-delving.md"
   - "raw/papers/2026-05-26-keer-maffei-ark-formal-arxiv.md"
   - "raw/repos/2026-07-17-coinbase-playground-readme.md"
+  - "raw/articles/2026-10-10-arkpool-bitaxe-pool-ark-payouts.md"
+  - "raw/articles/2026-10-10-second-docs-pricing-lifetime-server-tos.md"
+  - "raw/articles/2026-10-10-bark-releases-oct5-exploit-ecosystem-jul-oct-2026.md"
+  - "raw/articles/2026-10-10-ark-oor-trust-payer-equals-asp-critiques.md"
+  - "raw/repos/2026-10-10-bark-barkd-openapi-source-boat001.md"
 ---
 
 # Ark for Mining Payouts
@@ -42,7 +47,7 @@ The mining-payout angle for Ark surfaced via [[../../raw/articles/2026-05-26-vnp
 | Funding | $5.1M private (Apr 2026) | $7.7M cumulative; **Tether-led $5.2M** Mar 2026 |
 | Pitch | Payments / payroll / **mining payouts** / Lightning | Stablecoins / programmable finance |
 | Repo | `gitlab.com/ark-bitcoin/bark` | `github.com/arkade-os` |
-| Mainnet | "Soon" Apr 2026; signet only | Arkade live since Oct 2025 |
+| Mainnet | **Live 2026-06-09** (bark); 0.7.1 Sep 2026 | Arkade beta Oct 2025; **no release since 2026-08-25** |
 | Variant | clArk (covenantless) + hArk (hash-locked, CTV+CSFS) | Arkade variants |
 | Mining payouts | Named once (BitMag Apr 2026) | Not mentioned |
 
@@ -149,6 +154,19 @@ Per [[../../raw/papers/2026-05-26-keer-maffei-ark-formal-arxiv|Keer-Maffei-Avari
 - No conference talk applies Ark to mining payouts.
 - No BIP exists for Ark.
 - ErikDeSmedt's CTV-coinbase → VTXO hybrid is a 1-paragraph forum suggestion; no spec, no code beyond [[../../raw/repos/2026-05-26-vnprc-coinbase-playground-github|vnprc/coinbase-playground]] regtest prototype. As of the 2026-07-17 collection snapshot that prototype implements a flat CTV coinbase tree (~319-output TRUC ceiling, 330-sat anchor, 1 sat/vB) and a layered/nested tree, and its stated endgame — an **n-of-n MuSig locking script at each tree node** with leaf owners trading outputs off-chain to consolidate subtrees — is structurally the same shared-output transaction tree Ark uses for VTXOs. *See [[ctv-coinbase-payout-tree|CTV Coinbase Payout Tree]] ([CTV Coinbase Payout Tree](../concepts/ctv-coinbase-payout-tree.md)).*
+
+## Status update (October 2026)
+
+The May 2026 verdict above — "no pool, no spec, no code" — is now partly out of date, and the correction runs in both directions:
+
+- **A pool exists.** [ArkPool](../../raw/articles/2026-10-10-arkpool-bitaxe-pool-ark-payouts.md) (launched 2026-10-02) pays Bitaxe miners hourly over Ark via bark on Second's mainnet server, 1-sat minimum — anonymous, closed-backend, 1 362 sats paid all-time, "not affiliated with or endorsed by Second". The receiver-presence objection (§1 above) is answered for **arkoor** payments: the server mailbox delivers to offline and even never-registered recipients ([bark source read](../../raw/repos/2026-10-10-bark-barkd-openapi-source-boat001.md)). It is *not* answered for round-issued VTXOs, which is why the De Smedt CTV-tree hybrid still needs a soft fork.
+- **Second still has not endorsed the use case.** Blog, docs, issues, talks July–October 2026: zero mining mentions ([timeline](../../raw/articles/2026-10-10-bark-releases-oct5-exploit-ecosystem-jul-oct-2026.md)). The April 2026 Bitcoin Magazine sentence remains the only first-party statement besides De Smedt's 2025 Delving comment.
+- **The expiry objection (§2) is sharper than recorded**: recipients inherit the *sender's* expiry; refresh is free only in the last 2 days so the rational miner holds ~26 days of sender+server trust; delegated refresh is "dependent on the Ark server's signature only" and must be scheduled while online; the ToS says swept funds "MAY BE CLAIMED BY US … NO OBLIGATION TO RETURN" ([Second docs](../../raw/articles/2026-10-10-second-docs-pricing-lifetime-server-tos.md)).
+- **New objection: payer == ASP.** If the pool runs its own `captaind`, arkoor's "at least one party honest" assumption collapses to one party (ademan, Delving 2026-08-18 — [critiques](../../raw/articles/2026-10-10-ark-oor-trust-payer-equals-asp-critiques.md)). The rail is safer on a third-party server.
+- **First mainnet incident**: 2026-10-05 boarding-flow exploit, 0.75 BTC of Second's liquidity, brief downtime, Oct 6 DoS on Lightning receives.
+- **Arkade has stalled** (no release since Aug 25, no blog since March, Boltz bridge gone Aug 3); the standards track moved to `instagibbs/boats`.
+
+Full treatment: [[ark-sub-threshold-payout-rail|Ark (bark) as a Sub-Threshold Payout Rail]] and [[payout-threshold-economics|Payout Threshold Economics]].
 
 ## Sources
 

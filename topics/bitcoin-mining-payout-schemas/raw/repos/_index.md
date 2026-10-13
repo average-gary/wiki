@@ -19,6 +19,11 @@ type: raw-index
 - [[2026-07-27-blitzpool-finder-bonus-code-read|Blitzpool finder-bonus mechanics — code-level read @ 7815884]] — verified from a local clone, not the README: the bonus carve-out math, why per-finder coinbase construction is already the architecture, measured per-connection cost, and the missing duplicate-address merge in the PPLNS ledger apply
 - [[2026-07-29-sv2-apps-xpub-coinbase-rotation-code-read|xpub/wildcard-descriptor coinbase rotation in sv2-apps @ e2930150]] — unmerged `feat/coinbase-rotation` branch: reusable `XpubDerivator` primitive (miniscript `has_wildcard()` gate, `AtomicU32` index, flat-file persistence), reverses upstream's deliberate no-wildcards decision, rotates on `SubmitSolution` in both Pool and JDC; pool-single-address only, not per-miner xpub usernames
 
+## Ark sub-threshold payout rail (2026-10-10)
+
+- [[2026-10-12-bark-key-management-mailbox-blinding-sp-derived-vtxo|bark key management, mailbox blinding formula, receive/import gates, VtxoSigner @ c419159f]] — can a VTXO key be SP-derived? feasible with a wallet key table; not adopted (hot-key mismatch, per-seed mailbox)
+- [[2026-10-10-bark-barkd-openapi-source-boat001|bark 0.7.1 — barkd OpenAPI, arkoor/mailbox/address source, server config, BOAT-001]] — sender-side read: one send per miner, server-bound 130-char addresses, expiry inheritance
+
 ## Attribution privacy round (2026-07-29)
 
 - [[2026-07-29-pool-identity-vs-payout-script-conflation-code-read|Identity-vs-payout-script conflation — ckpool, public-pool, DATUM, TIDES, share-accounting-ext]] — ckpool's `username[128]` *is* the scriptPubKey via `address_to_txn()`; public-pool's `varchar(62)` primary key; DATUM's firmware ceilings (Avalon 63, Whatsminer overflow past 127, ~380–530 outputs); PPLNS-JD's positional ledger with zero identity fields; SV2 #697/#1652/#1720 on wildcards

@@ -5,6 +5,22 @@ type: raw-index
 
 # Articles
 
+## sv2-spec PR #203 implementation status (2026-10-12)
+
+- [[2026-10-11-sv2-spec-pr203-0x0003-implementations-and-thread|sv2-spec PR #203 — 0x0003 reference implementation announced (warioishere, 2026-10-11) + the Sep 10–11 fixed-output/custody thread]] — stratum#1 (`extensions_sv2`), sv2-apps#3 (JDC), #1/#2 bug fixes (chain-tip stall; `block_reserved_weight = max(1168 + 4·size, 2000)`), Blitzpool JDS 2.4.1; spec text frozen at 47dbedd
+
+## Ark sub-threshold payout rail (2026-10-10)
+
+- [[2026-10-10-second-docs-pricing-lifetime-server-tos|Second docs — pricing tiers, VTXO lifetime, delegated refresh, captaind self-hosting, ToS]]
+- [[2026-10-10-arkpool-bitaxe-pool-ark-payouts|ArkPool — first live pool paying miners over Ark (bark, Second mainnet), hourly, 1-sat min]]
+- [[2026-10-10-ocean-payout-threshold-bolt12-coinbase-outputs|OCEAN 2^20 threshold, BOLT12 fallback, measured coinbase outputs; Braiins/Luxor thresholds]]
+- [[2026-10-10-bark-releases-oct5-exploit-ecosystem-jul-oct-2026|bark 0.4.0→0.7.1, 2026-10-05 exploit, forum incidents, Arkade stall, BOATs, soft-fork status]]
+- [[2026-10-10-ark-oor-trust-payer-equals-asp-critiques|Arkoor trust critiques — payer == ASP, delegation, privacy, 'trustodial']]
+
+## Silent payments coinbase (2026-10-09)
+
+- [[2026-10-09-delving-silent-payments-coinbase-thread|delvingbitcoin t/2833 — Silent Payments Coinbase (SPc) thread + replies]]
+
 ## Modern pools (2024-2026)
 
 - [[2026-05-23-ocean-tides-spec|OCEAN TIDES spec (Hughes 2024)]]

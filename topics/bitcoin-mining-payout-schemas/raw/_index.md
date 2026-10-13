@@ -2,17 +2,17 @@
 title: Raw Sources Index
 type: raw-index
 created: 2026-05-23
-updated: 2026-07-29
+updated: 2026-10-12
 ---
 
 # Raw Sources
 
-- [[articles/_index|Articles]] (49) — blog posts, vendor specs, news, empirical writeups, profiles
+- [[articles/_index|Articles]] (55) — blog posts, vendor specs, news, empirical writeups, profiles
 - [[papers/_index|Papers]] (17) — peer-reviewed academic papers
-- [[repos/_index|Repos]] (22) — code repositories, formal specs
+- [[repos/_index|Repos]] (24) — code repositories, formal specs
 - [[videos/_index|Videos]] (2) — conference talks
 - [[notes/_index|Notes]] (3) — session-derived lessons-learned, regulatory and architecture notes
-- [[data/_index|Data]] (1) — on-chain queries, API pulls, code sweeps at pinned refs
+- [[data/_index|Data]] (2) — on-chain queries, API pulls, code sweeps at pinned refs
 
 ## Stats
 

@@ -2,7 +2,7 @@
 title: PPLNS-JD / SLICE
 category: concept
 created: 2026-05-23
-updated: 2026-07-15
+updated: 2026-10-12
 verified: 2026-07-15
 confidence: medium
 volatility: warm
@@ -126,6 +126,8 @@ Three findings worth recording for anyone building on it:
 
 See [[../../raw/notes/2026-08-24-ll-jd-coinbase-control-amount-linkability|Lessons: SV2 coinbase
 control and amount linkability]] lessons 3 and 4.
+
+**Implementation status (2026-10-12).** PR #203's text has not moved since its single commit `47dbedd` (2026-09-10). On 2026-10-11 warioishere (Blitzpool) reported runnable code pinned to that commit: `extensions_sv2` messages/TLV/payout math ([warioishere/stratum#1](https://github.com/warioishere/stratum/pull/1), `9be4023`, MIT/Apache) and an SRI **JDC** ([warioishere/sv2-apps#3](https://github.com/warioishere/sv2-apps/pull/3), `90b3e3d`), run on mainnet against **Blitzpool's JDS** (release 2.4.1, `b48998f`, AGPL) in both JD modes — self-reported, no artifacts. Two unrelated SRI bugs surfaced: the coinbase-only JDC stops sending custom jobs after a chain-tip update (#1), and `bitcoin_core_sv2` reserves only `max(4·size, 2000)` WU for the coinbase instead of TDP's `1168 + 4·size`, so a 42-output coinbase with a full mempool fails `bad-blk-weight` (#2). No SRI JDS implements `0x0003` yet. Two thread items could still move text: TheBlueMatt's unanswered question on paying only a subset of static `additional_outputs` (would relax §7's no-partial-payment MUST) and a requested §9.3 sentence. Full record: [[../../raw/articles/2026-10-11-sv2-spec-pr203-0x0003-implementations-and-thread|raw]].
 
 ## Sources
 
